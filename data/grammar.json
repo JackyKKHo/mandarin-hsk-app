@@ -1,0 +1,308 @@
+[
+  {
+    "id": "hsk1_gram_001",
+    "hskLevel": 1,
+    "title": "是 (shì) — To Be",
+    "pattern": "Subject + 是 + Noun",
+    "explanation": "是 (shì) is the verb 'to be'. It links a subject to a noun or noun phrase. Unlike English, 是 is NOT used before adjectives — use 很 instead.",
+    "examples": [
+      {"chinese": "我是学生。", "pinyin": "Wǒ shì xuésheng.", "english": "I am a student."},
+      {"chinese": "她是老师。", "pinyin": "Tā shì lǎoshī.", "english": "She is a teacher."},
+      {"chinese": "这是我的书。", "pinyin": "Zhè shì wǒ de shū.", "english": "This is my book."}
+    ],
+    "notes": "Don't say 天气是好 ✗. Use 天气很好 ✓. 是 is only for nouns, not adjectives.",
+    "tags": ["copula", "verb", "essential"]
+  },
+  {
+    "id": "hsk1_gram_002",
+    "hskLevel": 1,
+    "title": "不是 (bú shì) — Negative 'To Be'",
+    "pattern": "Subject + 不是 + Noun",
+    "explanation": "Place 不 before 是 to negate it. 不 (bù) becomes bú before a 4th-tone syllable in speech, but the character stays 不 in writing.",
+    "examples": [
+      {"chinese": "我不是老师。", "pinyin": "Wǒ bú shì lǎoshī.", "english": "I am not a teacher."},
+      {"chinese": "这不是我的书。", "pinyin": "Zhè bú shì wǒ de shū.", "english": "This is not my book."}
+    ],
+    "tags": ["negation", "copula", "essential"]
+  },
+  {
+    "id": "hsk1_gram_003",
+    "hskLevel": 1,
+    "title": "有 / 没有 — Have / Don't Have",
+    "pattern": "Subject + 有 / 没有 + Object",
+    "explanation": "有 (yǒu) means 'have' or 'there is/are'. Its only negation is 没有 (méiyǒu) — never 不有. 有 also expresses existence.",
+    "examples": [
+      {"chinese": "我有一只猫。", "pinyin": "Wǒ yǒu yī zhī māo.", "english": "I have a cat."},
+      {"chinese": "我没有钱。", "pinyin": "Wǒ méiyǒu qián.", "english": "I don't have money."},
+      {"chinese": "桌子上有一本书。", "pinyin": "Zhuōzi shàng yǒu yī běn shū.", "english": "There is a book on the table."}
+    ],
+    "notes": "NEVER say 不有 ✗ — the negation of 有 is always 没有.",
+    "tags": ["verb", "possession", "existence", "essential"]
+  },
+  {
+    "id": "hsk1_gram_004",
+    "hskLevel": 1,
+    "title": "很 + Adjective — Predicate Adjectives",
+    "pattern": "Subject + 很 + Adjective",
+    "explanation": "Adjectives in Chinese can be predicates without 是. They are usually preceded by 很 (hěn). In this position 很 is often grammatically required rather than meaning 'very'.",
+    "examples": [
+      {"chinese": "今天天气很好。", "pinyin": "Jīntiān tiānqì hěn hǎo.", "english": "The weather is good today."},
+      {"chinese": "她很漂亮。", "pinyin": "Tā hěn piàoliang.", "english": "She is beautiful."},
+      {"chinese": "这本书很有意思。", "pinyin": "Zhè běn shū hěn yǒu yìsi.", "english": "This book is very interesting."}
+    ],
+    "notes": "Omitting 很 implies a comparison: 今天天气好 can mean 'today's weather is good (compared to yesterday)'.",
+    "tags": ["adjective", "predicate", "essential"]
+  },
+  {
+    "id": "hsk1_gram_005",
+    "hskLevel": 1,
+    "title": "的 (de) — Possessive / Attributive",
+    "pattern": "Noun / Pronoun + 的 + Noun",
+    "explanation": "的 (de) marks possession (like 's in English) and links adjectives or clauses to nouns.",
+    "examples": [
+      {"chinese": "我的书", "pinyin": "wǒ de shū", "english": "my book"},
+      {"chinese": "老师的名字", "pinyin": "lǎoshī de míngzi", "english": "the teacher's name"},
+      {"chinese": "漂亮的衣服", "pinyin": "piàoliang de yīfú", "english": "beautiful clothes"}
+    ],
+    "notes": "With close relationships 的 can be dropped: 我妈妈 is natural for 'my mum'.",
+    "tags": ["particle", "possessive", "essential"]
+  },
+  {
+    "id": "hsk1_gram_006",
+    "hskLevel": 1,
+    "title": "吗 (ma) — Yes/No Questions",
+    "pattern": "Statement + 吗？",
+    "explanation": "Add 吗 to the end of any statement to make it a yes/no question. No word-order change is needed.",
+    "examples": [
+      {"chinese": "你是学生吗？", "pinyin": "Nǐ shì xuésheng ma?", "english": "Are you a student?"},
+      {"chinese": "你喝茶吗？", "pinyin": "Nǐ hē chá ma?", "english": "Do you drink tea?"},
+      {"chinese": "他有猫吗？", "pinyin": "Tā yǒu māo ma?", "english": "Does he have a cat?"}
+    ],
+    "tags": ["question", "particle", "essential"]
+  },
+  {
+    "id": "hsk1_gram_007",
+    "hskLevel": 1,
+    "title": "不 (bù) — Negation",
+    "pattern": "Subject + 不 + Verb / Adjective",
+    "explanation": "不 negates verbs and adjectives in the present/future or for general statements. For past actions, use 没 instead.",
+    "examples": [
+      {"chinese": "我不喝咖啡。", "pinyin": "Wǒ bù hē kāfēi.", "english": "I don't drink coffee."},
+      {"chinese": "今天不冷。", "pinyin": "Jīntiān bù lěng.", "english": "It's not cold today."},
+      {"chinese": "他不是我的朋友。", "pinyin": "Tā bú shì wǒ de péngyǒu.", "english": "He is not my friend."}
+    ],
+    "notes": "Use 没 for past actions: 我没去 ✓ (I didn't go). 不 is for habit, present, and future.",
+    "tags": ["negation", "essential"]
+  },
+  {
+    "id": "hsk1_gram_008",
+    "hskLevel": 1,
+    "title": "也 (yě) — Also / Too",
+    "pattern": "Subject + 也 + Verb / Adjective",
+    "explanation": "也 means 'also' or 'too' and always comes BEFORE the verb — never at the end of a sentence.",
+    "examples": [
+      {"chinese": "我也是学生。", "pinyin": "Wǒ yě shì xuésheng.", "english": "I am also a student."},
+      {"chinese": "她也喜欢吃苹果。", "pinyin": "Tā yě xǐhuān chī píngguǒ.", "english": "She also likes eating apples."}
+    ],
+    "notes": "我也去 ✓ (I'm also going). NOT 我去也 ✗ — 也 goes before the verb, not after.",
+    "tags": ["adverb", "essential"]
+  },
+  {
+    "id": "hsk1_gram_009",
+    "hskLevel": 1,
+    "title": "都 (dōu) — All / Both",
+    "pattern": "Subject (plural) + 都 + Verb",
+    "explanation": "都 means 'all' or 'both' and must come BEFORE the verb. The subject it refers to must precede 都.",
+    "examples": [
+      {"chinese": "我们都是学生。", "pinyin": "Wǒmen dōu shì xuésheng.", "english": "We are all students."},
+      {"chinese": "他们都喜欢吃水果。", "pinyin": "Tāmen dōu xǐhuān chī shuǐguǒ.", "english": "They all like eating fruit."},
+      {"chinese": "我和她都去。", "pinyin": "Wǒ hé tā dōu qù.", "english": "Both she and I are going."}
+    ],
+    "notes": "他们都来了 ✓, not 都他们来了 ✗ — the subject must come first.",
+    "tags": ["adverb", "essential"]
+  },
+  {
+    "id": "hsk1_gram_010",
+    "hskLevel": 1,
+    "title": "在 (zài) — Location",
+    "pattern": "Subject + 在 + Place",
+    "explanation": "在 marks location ('be at / in'). It can also act as a preposition before a verb phrase: 我在北京工作 (I work in Beijing).",
+    "examples": [
+      {"chinese": "我在北京。", "pinyin": "Wǒ zài Běijīng.", "english": "I am in Beijing."},
+      {"chinese": "书在桌子上。", "pinyin": "Shū zài zhuōzi shàng.", "english": "The book is on the table."},
+      {"chinese": "他在学校工作。", "pinyin": "Tā zài xuéxiào gōngzuò.", "english": "He works at the school."}
+    ],
+    "tags": ["verb", "preposition", "location", "essential"]
+  },
+  {
+    "id": "hsk1_gram_011",
+    "hskLevel": 1,
+    "title": "了 (le) — Completion",
+    "pattern": "Verb + 了",
+    "explanation": "了 after a verb marks a completed action. It is about completion, not strictly past tense — a future action can also be 'completed'.",
+    "examples": [
+      {"chinese": "我吃了午饭。", "pinyin": "Wǒ chī le wǔfàn.", "english": "I have eaten lunch."},
+      {"chinese": "他去了北京。", "pinyin": "Tā qù le Běijīng.", "english": "He went to Beijing."},
+      {"chinese": "昨天下雨了。", "pinyin": "Zuótiān xià yǔ le.", "english": "It rained yesterday."}
+    ],
+    "notes": "了 at sentence-end can also signal a change of state: 他来了 means 'He has arrived (he wasn't here before)'.",
+    "tags": ["particle", "aspect", "completion"]
+  },
+  {
+    "id": "hsk1_gram_012",
+    "hskLevel": 1,
+    "title": "Measure Words (量词 liàngcí)",
+    "pattern": "Number + Measure Word + Noun",
+    "explanation": "A measure word must sit between a number and a noun. Different nouns require different measure words. 个 (gè) is the most common and works as a fallback.",
+    "examples": [
+      {"chinese": "三本书", "pinyin": "sān běn shū", "english": "three books (本 for bound volumes)"},
+      {"chinese": "两个朋友", "pinyin": "liǎng gè péngyǒu", "english": "two friends (个 general)"},
+      {"chinese": "一杯茶", "pinyin": "yī bēi chá", "english": "one cup of tea (杯 for cups)"},
+      {"chinese": "五张纸", "pinyin": "wǔ zhāng zhǐ", "english": "five sheets of paper (张 for flat things)"}
+    ],
+    "notes": "Use 两 (liǎng) not 二 (èr) before measure words: 两个 ✓, 二个 ✗.",
+    "tags": ["measure-word", "grammar", "essential"]
+  },
+  {
+    "id": "hsk1_gram_013",
+    "hskLevel": 1,
+    "title": "想 (xiǎng) — Want To",
+    "pattern": "Subject + 想 + Verb",
+    "explanation": "想 before a verb expresses desire: 'want to' or 'would like to'. It is a modal verb followed directly by another verb.",
+    "examples": [
+      {"chinese": "我想去北京。", "pinyin": "Wǒ xiǎng qù Běijīng.", "english": "I want to go to Beijing."},
+      {"chinese": "你想吃什么？", "pinyin": "Nǐ xiǎng chī shénme?", "english": "What do you want to eat?"},
+      {"chinese": "她想学汉语。", "pinyin": "Tā xiǎng xué Hànyǔ.", "english": "She wants to learn Chinese."}
+    ],
+    "tags": ["modal", "desire"]
+  },
+  {
+    "id": "hsk1_gram_014",
+    "hskLevel": 1,
+    "title": "能 vs 会 — Two Ways to Say 'Can'",
+    "pattern": "Subject + 能 / 会 + Verb",
+    "explanation": "Both mean 'can' but differ: 会 (huì) = learned skill (know how to); 能 (néng) = circumstantial or physical ability (be able to in this situation).",
+    "examples": [
+      {"chinese": "我会说汉语。", "pinyin": "Wǒ huì shuō Hànyǔ.", "english": "I can speak Chinese. (learned skill)"},
+      {"chinese": "你能帮我吗？", "pinyin": "Nǐ néng bāng wǒ ma?", "english": "Can you help me? (is it possible?)"},
+      {"chinese": "我今天不能来。", "pinyin": "Wǒ jīntiān bù néng lái.", "english": "I can't come today. (circumstance)"}
+    ],
+    "notes": "If you learned it → 会. If it depends on the situation or physical possibility → 能.",
+    "tags": ["modal", "ability"]
+  },
+  {
+    "id": "hsk1_gram_015",
+    "hskLevel": 1,
+    "title": "Time Word Position",
+    "pattern": "Time + Subject + Verb  OR  Subject + Time + Verb",
+    "explanation": "Time words in Chinese are flexible — they go at the sentence start or after the subject. They can NEVER go after the verb.",
+    "examples": [
+      {"chinese": "今天我去学校。", "pinyin": "Jīntiān wǒ qù xuéxiào.", "english": "Today I go to school."},
+      {"chinese": "我今天去学校。", "pinyin": "Wǒ jīntiān qù xuéxiào.", "english": "I go to school today."},
+      {"chinese": "明天他来我家。", "pinyin": "Míngtiān tā lái wǒ jiā.", "english": "Tomorrow he'll come to my home."}
+    ],
+    "notes": "我去学校今天 ✗ — time words cannot go at the end of a sentence.",
+    "tags": ["time", "word-order", "essential"]
+  },
+  {
+    "id": "hsk2_gram_001",
+    "hskLevel": 2,
+    "title": "比 (bǐ) — Comparison",
+    "pattern": "A + 比 + B + Adjective",
+    "explanation": "比 compares two things. The adjective describes A relative to B. Do NOT use 很 before the adjective in a 比 sentence.",
+    "examples": [
+      {"chinese": "他比我高。", "pinyin": "Tā bǐ wǒ gāo.", "english": "He is taller than me."},
+      {"chinese": "今天比昨天冷。", "pinyin": "Jīntiān bǐ zuótiān lěng.", "english": "Today is colder than yesterday."},
+      {"chinese": "苹果比西瓜小。", "pinyin": "Píngguǒ bǐ xīguā xiǎo.", "english": "Apples are smaller than watermelons."}
+    ],
+    "notes": "他比我很高 ✗ — no 很 in comparisons. For 'much taller' say 他比我高多了.",
+    "tags": ["comparison", "essential"]
+  },
+  {
+    "id": "hsk2_gram_002",
+    "hskLevel": 2,
+    "title": "从...到... — From...To...",
+    "pattern": "从 + Start + 到 + End",
+    "explanation": "从 (cóng) means 'from' and 到 (dào) means 'to'. Together they express a range of place, time, or amount.",
+    "examples": [
+      {"chinese": "从北京到上海很远。", "pinyin": "Cóng Běijīng dào Shànghǎi hěn yuǎn.", "english": "From Beijing to Shanghai is very far."},
+      {"chinese": "我从早上八点到下午五点工作。", "pinyin": "Wǒ cóng zǎoshang bā diǎn dào xiàwǔ wǔ diǎn gōngzuò.", "english": "I work from 8 am to 5 pm."}
+    ],
+    "tags": ["preposition", "range"]
+  },
+  {
+    "id": "hsk2_gram_003",
+    "hskLevel": 2,
+    "title": "因为...所以... — Because...Therefore...",
+    "pattern": "因为 + Reason，所以 + Result",
+    "explanation": "因为 (yīnwèi) = 'because', 所以 (suǒyǐ) = 'therefore / so'. In Chinese both halves are often stated together, unlike English where you only use one.",
+    "examples": [
+      {"chinese": "因为下雨，所以我不去。", "pinyin": "Yīnwèi xià yǔ, suǒyǐ wǒ bù qù.", "english": "Because it's raining, I won't go."},
+      {"chinese": "因为我很忙，所以我没来。", "pinyin": "Yīnwèi wǒ hěn máng, suǒyǐ wǒ méi lái.", "english": "Because I was busy, I didn't come."}
+    ],
+    "notes": "You can use either word alone, but using both is the most natural pattern.",
+    "tags": ["conjunction", "cause-effect"]
+  },
+  {
+    "id": "hsk2_gram_004",
+    "hskLevel": 2,
+    "title": "但是 (dànshì) — But / However",
+    "pattern": "Clause 1，但是 + Clause 2",
+    "explanation": "但是 connects two contrasting ideas. The shorter 但 (dàn) is also common, especially in writing.",
+    "examples": [
+      {"chinese": "他很忙，但是很高兴。", "pinyin": "Tā hěn máng, dànshì hěn gāoxìng.", "english": "He is very busy, but very happy."},
+      {"chinese": "我想去，但是没有时间。", "pinyin": "Wǒ xiǎng qù, dànshì méiyǒu shíjiān.", "english": "I want to go, but I don't have time."}
+    ],
+    "tags": ["conjunction", "contrast"]
+  },
+  {
+    "id": "hsk2_gram_005",
+    "hskLevel": 2,
+    "title": "一边...一边... — Doing Two Things at Once",
+    "pattern": "Subject + 一边 + Verb1，一边 + Verb2",
+    "explanation": "一边...一边... expresses two simultaneous actions: 'while doing X, also doing Y'. Both verbs should be ongoing activities.",
+    "examples": [
+      {"chinese": "他一边吃饭，一边看电视。", "pinyin": "Tā yībiān chīfàn, yībiān kàn diànshì.", "english": "He eats while watching TV."},
+      {"chinese": "我喜欢一边听音乐，一边学习。", "pinyin": "Wǒ xǐhuān yībiān tīng yīnyuè, yībiān xuéxí.", "english": "I like studying while listening to music."}
+    ],
+    "tags": ["concurrent-actions", "adverb"]
+  },
+  {
+    "id": "hsk2_gram_006",
+    "hskLevel": 2,
+    "title": "正在 (zhèngzài) — Progressive",
+    "pattern": "Subject + 正在 + Verb (+ 呢)",
+    "explanation": "正在 marks an action in progress right now, like the English '-ing' form. 呢 can optionally follow for extra emphasis.",
+    "examples": [
+      {"chinese": "他正在看书。", "pinyin": "Tā zhèngzài kàn shū.", "english": "He is currently reading."},
+      {"chinese": "我正在吃饭呢。", "pinyin": "Wǒ zhèngzài chīfàn ne.", "english": "I'm eating right now."},
+      {"chinese": "她正在打电话。", "pinyin": "Tā zhèngzài dǎ diànhuà.", "english": "She is on the phone."}
+    ],
+    "tags": ["aspect", "progressive"]
+  },
+  {
+    "id": "hsk2_gram_007",
+    "hskLevel": 2,
+    "title": "先...然后... — First...Then...",
+    "pattern": "Subject + 先 + Verb1，然后 + Verb2",
+    "explanation": "先 (xiān) = 'first', 然后 (ránhòu) = 'then / afterwards'. Together they sequence two actions.",
+    "examples": [
+      {"chinese": "我先吃饭，然后去学校。", "pinyin": "Wǒ xiān chīfàn, ránhòu qù xuéxiào.", "english": "I'll eat first, then go to school."},
+      {"chinese": "先写作业，然后看电视。", "pinyin": "Xiān xiě zuòyè, ránhòu kàn diànshì.", "english": "Do homework first, then watch TV."}
+    ],
+    "tags": ["sequence", "conjunction"]
+  },
+  {
+    "id": "hsk2_gram_008",
+    "hskLevel": 2,
+    "title": "还是 (háishi) — Or (in Questions)",
+    "pattern": "A + 还是 + B？",
+    "explanation": "还是 is used in choice questions ('A or B?'). It is different from 或者 (huòzhě), which is 'or' in statements.",
+    "examples": [
+      {"chinese": "你喝茶还是咖啡？", "pinyin": "Nǐ hē chá háishi kāfēi?", "english": "Do you drink tea or coffee?"},
+      {"chinese": "你去北京还是上海？", "pinyin": "Nǐ qù Běijīng háishi Shànghǎi?", "english": "Are you going to Beijing or Shanghai?"}
+    ],
+    "notes": "还是 = 'or' in questions. 或者 = 'or' in statements. Don't mix them up.",
+    "tags": ["question", "conjunction"]
+  }
+]
