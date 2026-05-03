@@ -4,7 +4,7 @@ import vocab from '../data/vocab'
 import type { VocabItem } from '../types'
 import AudioButton from '../components/AudioButton'
 import TonedPinyin from '../components/TonedPinyin'
-import { useDismissed } from '../hooks/useDismissed'
+import { useSRS, type SRSQuality } from '../hooks/useSRS'
 
 type Stage = 'idle' | 'studying' | 'complete'
 
@@ -20,45 +20,41 @@ function shuffle<T>(arr: T[]): T[] {
 export default function PracticePage() {
   const { level } = useParams<{ level: string }>()
   const currentLevel = Number(level) || 1
-  const { dismissed, dismiss, clearLevel } = useDismissed()
+  const { review, isDue, getCard } = useSRS()
 
   const levelWords = useMemo(
     () => vocab.filter(w => w.hskLevel === currentLevel),
     [currentLevel]
   )
 
-  const activeWords = useMemo(
-    () => levelWords.filter(w => !dismissed.has(w.id)),
-    [levelWords, dismissed]
+  const due = useMemo(
+    () => levelWords.filter(w => isDue(w.id)),
+    [levelWords, isDue]
   )
 
-  const dismissedCount = levelWords.length - activeWords.length
+  const notDue = useMemo(
+    () => levelWords.filter(w => !isDue(w.id)),
+    [levelWords, isDue]
+  )
 
   const [stage, setStage] = useState<Stage>('idle')
   const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
-  const [got, setGot] = useState(0)
-  const [missed, setMissed] = useState(0)
+  const [counts, setCounts] = useState({ again: 0, good: 0, easy: 0 })
 
-  function start() {
-    setQueue(shuffle(activeWords))
+  function start(dueOnly: boolean) {
+    const words = dueOnly ? shuffle(due) : [...shuffle(due), ...shuffle(notDue)]
+    setQueue(words)
     setIndex(0)
     setFlipped(false)
-    setGot(0)
-    setMissed(0)
+    setCounts({ again: 0, good: 0, easy: 0 })
     setStage('studying')
   }
 
-  function answer(correct: boolean) {
-    if (correct) setGot(g => g + 1)
-    else setMissed(m => m + 1)
-    advance()
-  }
-
-  function tooEasy() {
-    dismiss(queue[index].id)
-    setGot(g => g + 1)
+  function answer(quality: SRSQuality) {
+    review(queue[index].id, quality)
+    setCounts(c => ({ ...c, [quality]: c[quality] + 1 }))
     advance()
   }
 
@@ -77,42 +73,43 @@ export default function PracticePage() {
         <Link to={`/hsk/${currentLevel}`} className="back-link">← HSK {currentLevel}</Link>
         <div className="practice-start-card">
           <div className="practice-start-level">HSK {currentLevel}</div>
-          <h2>Flashcard Practice</h2>
+          <h2>Spaced Repetition</h2>
           {levelWords.length === 0 ? (
             <p className="empty-state">No vocabulary yet for this level.</p>
-          ) : activeWords.length === 0 ? (
-            <>
-              <p className="practice-start-desc">
-                You've marked all {levelWords.length} words as too easy.
-              </p>
-              <button
-                className="btn-secondary"
-                onClick={() => clearLevel(levelWords.map(w => w.id))}
-              >
-                Reset — show all words
-              </button>
-            </>
           ) : (
             <>
+              <div className="srs-stats">
+                <div className="srs-stat">
+                  <span className="srs-stat-num due-num">{due.length}</span>
+                  <span className="srs-stat-label">due today</span>
+                </div>
+                <div className="srs-stat">
+                  <span className="srs-stat-num">{notDue.length}</span>
+                  <span className="srs-stat-label">scheduled</span>
+                </div>
+                <div className="srs-stat">
+                  <span className="srs-stat-num">{levelWords.length}</span>
+                  <span className="srs-stat-label">total</span>
+                </div>
+              </div>
+
               <p className="practice-start-desc">
-                {activeWords.length} card{activeWords.length !== 1 ? 's' : ''}, shuffled. Tap each card to
-                reveal pinyin and meaning, then mark whether you knew it.
+                Tap to reveal, then rate how well you knew it. Cards you know well appear less often; harder cards come back sooner.
               </p>
-              {dismissedCount > 0 && (
-                <p className="dismissed-info">
-                  {dismissedCount} word{dismissedCount !== 1 ? 's' : ''} hidden (too easy)
-                  {' · '}
-                  <button
-                    className="link-btn"
-                    onClick={() => clearLevel(levelWords.map(w => w.id))}
-                  >
-                    Reset
+
+              <div className="start-btns">
+                {due.length > 0 && (
+                  <button className="btn-primary" onClick={() => start(true)}>
+                    Study due ({due.length})
                   </button>
-                </p>
-              )}
-              <button className="btn-primary" onClick={start}>
-                Start practice
-              </button>
+                )}
+                <button
+                  className={due.length > 0 ? 'btn-secondary' : 'btn-primary'}
+                  onClick={() => start(false)}
+                >
+                  Study all ({levelWords.length})
+                </button>
+              </div>
             </>
           )}
         </div>
@@ -121,8 +118,9 @@ export default function PracticePage() {
   }
 
   if (stage === 'complete') {
-    const total = got + missed
-    const pct = total > 0 ? Math.round((got / total) * 100) : 0
+    const total = counts.again + counts.good + counts.easy
+    const correct = counts.good + counts.easy
+    const pct = total > 0 ? Math.round((correct / total) * 100) : 0
     return (
       <div className="practice-page">
         <div className="practice-complete-card">
@@ -130,15 +128,14 @@ export default function PracticePage() {
             {pct}%
           </div>
           <h2>Session complete</h2>
-          <p className="complete-detail">
-            <span className="got-count">{got} correct</span>
-            {' · '}
-            <span className="missed-count">{missed} to review</span>
-            {' · '}
-            {total} total
-          </p>
+          <div className="srs-result-row">
+            <span className="srs-easy-count">⚡ {counts.easy} easy</span>
+            <span className="got-count">✓ {counts.good} good</span>
+            <span className="missed-count">↩ {counts.again} again</span>
+          </div>
+          <p className="complete-subtext">Cards are scheduled for future review based on your ratings.</p>
           <div className="complete-actions">
-            <button className="btn-primary" onClick={start}>Practice again</button>
+            <button className="btn-primary" onClick={() => start(false)}>Practice again</button>
             <Link to={`/hsk/${currentLevel}`} className="btn-secondary">Back to browser</Link>
           </div>
         </div>
@@ -147,6 +144,7 @@ export default function PracticePage() {
   }
 
   const word = queue[index]
+  const card = getCard(word.id)
   const progressPct = (index / queue.length) * 100
 
   return (
@@ -157,9 +155,11 @@ export default function PracticePage() {
         </Link>
         <span className="practice-counter">{index + 1} / {queue.length}</span>
         <span className="practice-score-inline">
-          <span className="got-count">✓ {got}</span>
+          <span className="srs-easy-count">⚡{counts.easy}</span>
           {' '}
-          <span className="missed-count">✗ {missed}</span>
+          <span className="got-count">✓{counts.good}</span>
+          {' '}
+          <span className="missed-count">↩{counts.again}</span>
         </span>
       </div>
 
@@ -178,6 +178,11 @@ export default function PracticePage() {
         <div className={`flashcard${flipped ? ' flipped' : ''}`}>
           <div className="flashcard-face flashcard-front">
             <div className="fc-chinese">{word.simplified}</div>
+            {card && (
+              <div className="fc-srs-badge">
+                {card.reps === 0 ? 'new' : `${card.interval}d`}
+              </div>
+            )}
             <div className="fc-tap-hint">tap to reveal</div>
           </div>
 
@@ -213,13 +218,20 @@ export default function PracticePage() {
 
       {flipped ? (
         <div className="answer-area">
-          <div className="answer-btns">
-            <button className="btn-missed" onClick={() => answer(false)}>✗ Try again</button>
-            <button className="btn-got" onClick={() => answer(true)}>✓ Got it</button>
+          <div className="srs-answer-btns">
+            <button className="btn-again" onClick={() => answer('again')}>
+              <span className="srs-btn-label">Again</span>
+              <span className="srs-btn-sub">&lt;1d</span>
+            </button>
+            <button className="btn-good" onClick={() => answer('good')}>
+              <span className="srs-btn-label">Good</span>
+              <span className="srs-btn-sub">{card ? `${Math.round(card.interval * (card.easeFactor))}d` : '3d'}</span>
+            </button>
+            <button className="btn-easy" onClick={() => answer('easy')}>
+              <span className="srs-btn-label">Easy</span>
+              <span className="srs-btn-sub">{card ? `${Math.round(card.interval * card.easeFactor * 1.3)}d` : '4d'}</span>
+            </button>
           </div>
-          <button className="btn-too-easy" onClick={tooEasy}>
-            Don't show again — too easy
-          </button>
         </div>
       ) : (
         <p className="flip-hint">tap the card to reveal</p>
