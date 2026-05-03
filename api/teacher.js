@@ -14,10 +14,11 @@ export default async function handler(req, res) {
     return res.status(405).send('Method not allowed')
   }
 
-  const { message, context } = req.body
+  try {
+  const { message, context } = req.body ?? {}
 
   if (!message) {
-    return res.status(400).send('Missing message')
+    return res.status(400).send(`Missing message — body: ${JSON.stringify(req.body)}`)
   }
 
   const anthropicKey = process.env.ANTHROPIC_API_KEY
@@ -81,4 +82,7 @@ export default async function handler(req, res) {
   res.setHeader('Content-Type', 'audio/mpeg')
   res.setHeader('X-Teacher-Text', encodeURIComponent(teacherText))
   res.send(audioBuffer)
+  } catch (e) {
+    return res.status(500).send(`Unhandled error: ${e.message}`)
+  }
 }
