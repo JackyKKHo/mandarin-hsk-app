@@ -12,13 +12,13 @@ interface Props {
   context: WordContext
 }
 
-type Mode = 'idle' | 'thinking' | 'speaking'
+type Mode = 'idle' | 'listening' | 'thinking' | 'speaking'
 
 export default function TeacherButton({ context }: Props) {
   const [mode, setMode] = useState<Mode>('idle')
   const [teacherText, setTeacherText] = useState('')
   const [input, setInput] = useState('')
-  const inputRef = useRef<HTMLInputElement>(null)
+  const recognitionRef = useRef<any>(null)
 
   async function askTeacher(message: string) {
     if (!message.trim()) return
@@ -54,33 +54,93 @@ export default function TeacherButton({ context }: Props) {
     }
   }
 
+  function startListening() {
+    const SpeechRecognitionAPI = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition
+    if (!SpeechRecognitionAPI) {
+      alert('Voice input is not supported in this browser. Try Chrome.')
+      return
+    }
+
+    const recognition = new SpeechRecognitionAPI()
+    recognition.lang = 'en-US'
+    recognition.continuous = false
+    recognition.interimResults = true
+
+    recognition.onstart = () => setMode('listening')
+
+    recognition.onresult = (e: any) => {
+      const transcript = Array.from(e.results)
+        .map((r: any) => r[0].transcript)
+        .join('')
+      setInput(transcript)
+    }
+
+    recognition.onend = () => {
+      const finalInput = recognitionRef.current?.lastTranscript
+      if (finalInput) {
+        askTeacher(finalInput)
+      } else {
+        setMode('idle')
+      }
+    }
+
+    recognition.onerror = () => setMode('idle')
+
+    recognition.addEventListener('result', (e: any) => {
+      const transcript = Array.from(e.results)
+        .map((r: any) => r[0].transcript)
+        .join('')
+      if (recognitionRef.current) {
+        recognitionRef.current.lastTranscript = transcript
+      }
+    })
+
+    recognitionRef.current = recognition
+    recognitionRef.current.lastTranscript = ''
+    recognition.start()
+  }
+
+  function stopListening() {
+    recognitionRef.current?.stop()
+  }
+
   function handleKeyDown(e: React.KeyboardEvent) {
     if (e.key === 'Enter') askTeacher(input)
   }
 
+  const isDisabled = mode === 'thinking' || mode === 'speaking'
   const placeholder = mode === 'thinking'
     ? 'Lin Wei is thinking...'
     : mode === 'speaking'
     ? 'Lin Wei is speaking...'
+    : mode === 'listening'
+    ? 'Listening...'
     : `Ask Lin Wei about "${context.simplified}"...`
 
   return (
     <div className="teacher-section">
       <div className="teacher-input-row">
         <input
-          ref={inputRef}
           className="teacher-input"
           type="text"
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder={placeholder}
-          disabled={mode !== 'idle'}
+          disabled={isDisabled}
         />
+        <button
+          className={`teacher-mic-btn${mode === 'listening' ? ' listening' : ''}`}
+          onClick={mode === 'listening' ? stopListening : startListening}
+          disabled={isDisabled}
+          title={mode === 'listening' ? 'Stop recording' : 'Speak your question'}
+        >
+          {mode === 'listening' ? '⏹' : '🎙️'}
+        </button>
         <button
           className={`teacher-send-btn mode-${mode}`}
           onClick={() => askTeacher(input || `Give me a tip for remembering "${context.simplified}" and use it in a natural sentence.`)}
-          disabled={mode !== 'idle'}
+          disabled={isDisabled || mode === 'listening'}
           title="Ask teacher"
         >
           {mode === 'thinking' ? '💭' : mode === 'speaking' ? '🔊' : '➤'}

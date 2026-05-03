@@ -733,3 +733,21 @@ body {
 }
 .teacher-send-btn:hover:not(:disabled) { background: #b8860b; }
 .teacher-send-btn:disabled { opacity: 0.6; cursor: default; }
+
+.teacher-mic-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid #e0d5c5;
+  background: #fdfaf6;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+.teacher-mic-btn:hover:not(:disabled) { background: #f5ede0; border-color: #d4a017; }
+.teacher-mic-btn.listening { background: #fde8e8; border-color: #c0392b; animation: pulse 1.2s infinite; }
+.teacher-mic-btn:disabled { opacity: 0.5; cursor: default; }
