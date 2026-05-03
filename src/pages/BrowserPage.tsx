@@ -90,9 +90,11 @@ export default function BrowserPage() {
           {words.length} word{words.length !== 1 ? 's' : ''}
         </span>
         {levelCounts[currentLevel] > 0 && (
-          <Link to={`/practice/${currentLevel}`} className="btn-practice">
-            Practice
-          </Link>
+          <>
+            <Link to={`/practice/${currentLevel}`} className="btn-practice">Flashcards</Link>
+            <Link to={`/quiz/${currentLevel}`} className="btn-practice btn-practice-quiz">Quiz</Link>
+            <Link to={`/write/${currentLevel}`} className="btn-practice btn-practice-write">Write</Link>
+          </>
         )}
       </div>
 

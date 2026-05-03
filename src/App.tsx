@@ -8,6 +8,8 @@ import StopAudioOnNavigate from './components/StopAudioOnNavigate'
 import FavouritesPage from './pages/FavouritesPage'
 import SearchPage from './pages/SearchPage'
 import StatsPage from './pages/StatsPage'
+import QuizPage from './pages/QuizPage'
+import WritingPage from './pages/WritingPage'
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="/favourites" element={<FavouritesPage />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/stats" element={<StatsPage />} />
+        <Route path="/quiz/:level" element={<QuizPage />} />
+        <Route path="/write/:level" element={<WritingPage />} />
       </Routes>
     </BrowserRouter>
   )
