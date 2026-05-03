@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 
 interface WordContext {
   simplified: string
@@ -11,74 +11,33 @@ interface Props {
   context: WordContext
 }
 
-type Mode = 'idle' | 'listening' | 'thinking' | 'speaking'
+type Mode = 'idle' | 'thinking' | 'speaking'
+
+const PROMPTS = [
+  "Give me a tip for remembering this word and use it in a natural sentence.",
+  "How would a native speaker use this word in everyday conversation?",
+  "Give me a memory trick for this word and an example sentence.",
+  "What's a common mistake learners make with this word?",
+]
 
 export default function TeacherButton({ context }: Props) {
   const [mode, setMode] = useState<Mode>('idle')
   const [teacherText, setTeacherText] = useState('')
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null)
-  const chunksRef = useRef<Blob[]>([])
+  const [promptIndex, setPromptIndex] = useState(0)
 
   const modeLabel: Record<Mode, string> = {
     idle: '🎙️ Ask Teacher',
-    listening: '⏹️ Stop',
     thinking: '💭 Thinking...',
-    speaking: '🔊 Speaking...',
+    speaking: '🔊 Lin Wei is speaking...',
   }
 
   async function handleClick() {
-    if (mode === 'listening') {
-      mediaRecorderRef.current?.stop()
-      return
-    }
     if (mode !== 'idle') return
 
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
-      const recorder = new MediaRecorder(stream)
-      chunksRef.current = []
-
-      recorder.ondataavailable = e => chunksRef.current.push(e.data)
-      recorder.onstop = async () => {
-        stream.getTracks().forEach(t => t.stop())
-        setMode('thinking')
-
-        // Use Web Speech API to transcribe locally (free)
-        const SpeechRecognitionAPI = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition
-        const recognition = SpeechRecognitionAPI ? new SpeechRecognitionAPI() : null
-
-        if (!recognition) {
-          await askTeacher("Can you introduce yourself and give me a tip for this word?")
-          return
-        }
-
-        recognition.lang = 'en-US'
-        recognition.onresult = async (e: any) => {
-          const transcript = e.results[0][0].transcript
-          await askTeacher(transcript)
-        }
-        recognition.onerror = async () => {
-          await askTeacher("Can you give me a tip for remembering this word?")
-        }
-
-        const blob = new Blob(chunksRef.current, { type: 'audio/webm' })
-        const audioUrl = URL.createObjectURL(blob)
-        const audio = new Audio(audioUrl)
-        recognition.start()
-        audio.play()
-      }
-
-      mediaRecorderRef.current = recorder
-      recorder.start()
-      setMode('listening')
-    } catch {
-      // Microphone denied — fall back to a default prompt
-      await askTeacher("Can you give me a tip for remembering this word?")
-    }
-  }
-
-  async function askTeacher(message: string) {
+    const message = PROMPTS[promptIndex % PROMPTS.length]
+    setPromptIndex(i => i + 1)
     setMode('thinking')
+
     try {
       const res = await fetch('/api/teacher', {
         method: 'POST',
@@ -97,14 +56,8 @@ export default function TeacherButton({ context }: Props) {
         const blob = await res.blob()
         const url = URL.createObjectURL(blob)
         const audio = new Audio(url)
-        audio.onended = () => {
-          setMode('idle')
-          URL.revokeObjectURL(url)
-        }
-        audio.onerror = () => {
-          setMode('idle')
-          URL.revokeObjectURL(url)
-        }
+        audio.onended = () => { setMode('idle'); URL.revokeObjectURL(url) }
+        audio.onerror = () => { setMode('idle'); URL.revokeObjectURL(url) }
         audio.play()
       } else {
         const data = await res.json()
@@ -121,7 +74,7 @@ export default function TeacherButton({ context }: Props) {
       <button
         className={`teacher-btn mode-${mode}`}
         onClick={handleClick}
-        disabled={mode === 'thinking' || mode === 'speaking'}
+        disabled={mode !== 'idle'}
       >
         {modeLabel[mode]}
       </button>
