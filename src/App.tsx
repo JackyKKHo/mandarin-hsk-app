@@ -6,6 +6,7 @@ import GrammarListPage from './pages/GrammarListPage'
 import GrammarDetailPage from './pages/GrammarDetailPage'
 import StopAudioOnNavigate from './components/StopAudioOnNavigate'
 import FavouritesPage from './pages/FavouritesPage'
+import SearchPage from './pages/SearchPage'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/grammar/:level" element={<GrammarListPage />} />
         <Route path="/grammar/point/:id" element={<GrammarDetailPage />} />
         <Route path="/favourites" element={<FavouritesPage />} />
+        <Route path="/search" element={<SearchPage />} />
       </Routes>
     </BrowserRouter>
   )

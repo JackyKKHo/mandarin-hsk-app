@@ -25,6 +25,7 @@ html.dark {
   --text: #e8eaf0;
   --muted: #9099b0;
   --shadow: 0 2px 8px rgba(0,0,0,0.4);
+  --red-light: #2d0f0e;
 }
 
 html.dark body { background: var(--bg); color: var(--text); }
@@ -45,6 +46,16 @@ html.dark .immersion-option:hover { background: #22263a; }
 html.dark .badge-pos, html.dark .badge-level { background: #22263a; color: var(--muted); }
 html.dark .examples-section h3 { color: var(--muted); }
 html.dark .card-english, html.dark .card-pinyin { color: var(--muted); }
+html.dark .btn-again { background: #2d0a0a; }
+html.dark .btn-good  { background: #0d2d1a; }
+html.dark .btn-easy  { background: #0d1a3d; }
+html.dark .grammar-notes { background: #1e1c0d; border-color: #3d3800; }
+html.dark .flashcard-front, html.dark .flashcard-back { background: var(--surface); }
+html.dark .practice-start-card, html.dark .practice-complete-card { background: var(--surface); }
+html.dark .vocab-card.learned { opacity: 0.55; }
+html.dark .syl-ok    { background: #0a1a10; }
+html.dark .syl-tone  { background: #1a1600; }
+html.dark .syl-wrong { background: #1a0a0a; }
 
 .tone-1 { color: var(--tone-1); }
 .tone-2 { color: var(--tone-2); }
@@ -154,6 +165,29 @@ body {
   font-size: 0.82rem;
   color: var(--muted);
   white-space: nowrap;
+}
+
+/* Global search page */
+.search-page-hero {
+  padding: 1.25rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.search-input-lg {
+  font-size: 1.1rem !important;
+  padding: 0.75rem 1.1rem !important;
+}
+.search-hint {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* ── Vocab grid ── */

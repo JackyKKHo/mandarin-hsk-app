@@ -8,6 +8,7 @@ export default function AppHeader() {
   const { dark, toggle } = useDarkMode()
   const section = pathname.startsWith('/grammar') ? 'grammar'
     : pathname.startsWith('/favourites') ? 'favourites'
+    : pathname.startsWith('/search') ? 'search'
     : 'vocab'
 
   return (
@@ -19,6 +20,9 @@ export default function AppHeader() {
         </Link>
         <Link to="/grammar/1" className={`app-nav-link${section === 'grammar' ? ' active' : ''}`}>
           Grammar
+        </Link>
+        <Link to="/search" className={`app-nav-link${section === 'search' ? ' active' : ''}`}>
+          🔍
         </Link>
         <Link to="/favourites" className={`app-nav-link${section === 'favourites' ? ' active' : ''}`}>
           ★{favourites.size > 0 && <span className="fav-count">{favourites.size}</span>}
