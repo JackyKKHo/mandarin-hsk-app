@@ -12,6 +12,7 @@ import QuizPage from './pages/QuizPage'
 import WritingPage from './pages/WritingPage'
 import ListeningPage from './pages/ListeningPage'
 import FillBlankPage from './pages/FillBlankPage'
+import PronunciationPage from './pages/PronunciationPage'
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/write/:level" element={<WritingPage />} />
         <Route path="/listen/:level" element={<ListeningPage />} />
         <Route path="/fill/:level" element={<FillBlankPage />} />
+        <Route path="/pronunciation" element={<PronunciationPage />} />
       </Routes>
     </BrowserRouter>
   )

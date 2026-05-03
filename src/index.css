@@ -1833,3 +1833,351 @@ html.dark .teacher-chat-name { color: #f5a623; }
   color: #333;
   margin: 0;
 }
+
+/* ─── Pronunciation page ──────────────────────────────────────────────────── */
+
+.pron-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+
+.pron-hero {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+}
+.pron-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--red);
+  margin: 0 0 0.4rem;
+}
+.pron-title-zh {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #b8860b;
+  margin-left: 0.5rem;
+}
+.pron-subtitle {
+  color: var(--muted);
+  font-size: 0.97rem;
+  margin: 0;
+}
+
+.pron-section {
+  margin-top: 2.5rem;
+}
+.pron-section-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  border-bottom: 2.5px solid var(--red);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.7rem;
+}
+html.dark .pron-section-title { color: #f5f5f5; }
+.pron-section-zh {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #b8860b;
+  margin-left: 0.4rem;
+}
+.pron-section-desc {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.55;
+}
+
+/* Tone cards */
+.tone-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.9rem;
+}
+.tone-card {
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  padding: 0.9rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tone-card-1 { border-top: 3px solid #e74c3c; }
+.tone-card-2 { border-top: 3px solid #e67e22; }
+.tone-card-3 { border-top: 3px solid #27ae60; }
+.tone-card-4 { border-top: 3px solid #2980b9; }
+.tone-card-0 { border-top: 3px solid #7f8c8d; }
+html.dark .tone-card { background: var(--card); border-color: #2e2e2e; }
+
+.tone-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+}
+.tone-num {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--red);
+  line-height: 1;
+}
+.tone-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #444;
+}
+html.dark .tone-name { color: #ccc; }
+.tone-zh {
+  font-size: 0.78rem;
+  color: #b8860b;
+  margin-left: auto;
+}
+
+.tone-contour-wrap {
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 0.3rem;
+}
+.tone-card-1 .tone-contour-svg { color: #e74c3c; }
+.tone-card-2 .tone-contour-svg { color: #e67e22; }
+.tone-card-3 .tone-contour-svg { color: #27ae60; }
+.tone-card-4 .tone-contour-svg { color: #2980b9; }
+.tone-card-0 .tone-contour-svg { color: #7f8c8d; }
+.tone-contour-svg { width: 100%; height: 60px; }
+
+.tone-desc {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.tone-example-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  width: 100%;
+}
+.tone-example-btn:hover { background: #fdf5e8; border-color: #d4a017; }
+.tone-example-btn.playing { background: #fff5cc; border-color: #d4a017; }
+html.dark .tone-example-btn { background: #1e1e1e; border-color: #2e2e2e; }
+html.dark .tone-example-btn:hover { background: #2a1e00; border-color: #d4a017; }
+.tone-ex-char {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1;
+}
+.tone-ex-pinyin {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #b8860b;
+}
+.tone-ex-en {
+  font-size: 0.72rem;
+  color: var(--muted);
+  flex: 1;
+}
+.tone-play-icon {
+  font-size: 0.75rem;
+  margin-left: auto;
+}
+
+/* Initials / Finals grids */
+.pron-group {
+  margin-bottom: 1.2rem;
+}
+.pron-group-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.pron-items-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+.pron-item-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 0.6rem 0.7rem;
+  cursor: pointer;
+  min-width: 72px;
+  text-align: center;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+.pron-item-btn:hover { border-color: var(--red); box-shadow: 0 2px 8px rgba(192,57,43,0.12); }
+.pron-item-btn.playing { background: #fff0f0; border-color: var(--red); }
+html.dark .pron-item-btn { background: #1e1e1e; border-color: #2e2e2e; }
+html.dark .pron-item-btn:hover { border-color: var(--red); }
+html.dark .pron-item-btn.playing { background: #2e1010; }
+.pron-item-main {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--red);
+  line-height: 1;
+}
+.pron-item-char {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1;
+}
+html.dark .pron-item-char { color: #eee; }
+.pron-item-tip {
+  font-size: 0.65rem;
+  color: var(--muted);
+  line-height: 1.3;
+  max-width: 90px;
+}
+
+/* Chart */
+.chart-tone-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+.chart-tone-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.chart-tone-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.chart-tone-btn:hover { border-color: var(--red); }
+.chart-tone-btn.active { background: var(--red); color: white; border-color: var(--red); }
+.chart-tone-mark { font-size: 1rem; }
+
+.chart-scroll { overflow-x: auto; }
+
+.chart-sub {
+  margin-bottom: 2rem;
+}
+.chart-sub-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.pron-table {
+  border-collapse: collapse;
+  min-width: 100%;
+  font-size: 0.78rem;
+}
+.pron-th-init {
+  background: var(--red);
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.4rem 0.5rem;
+  text-align: center;
+  min-width: 34px;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+.pron-th-fin {
+  background: #fdf5e8;
+  color: #b8860b;
+  font-weight: 700;
+  padding: 0.35rem 0.4rem;
+  text-align: center;
+  min-width: 52px;
+  border-bottom: 2px solid #f0d8a8;
+  white-space: nowrap;
+}
+html.dark .pron-th-fin { background: #1e1800; color: #d4a017; border-color: #3d2e00; }
+.pron-td-init {
+  background: #fdf5e8;
+  color: #b8860b;
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  border-right: 2px solid #f0d8a8;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  white-space: nowrap;
+}
+html.dark .pron-td-init { background: #1e1800; border-color: #3d2e00; }
+.pron-td {
+  padding: 0.2rem;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+.pron-td-empty {
+  padding: 0.2rem;
+  text-align: center;
+  color: var(--border);
+  font-size: 0.7rem;
+  border: 1px solid var(--border);
+}
+
+.chart-cell-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  background: transparent;
+  border: 1.5px solid transparent;
+  border-radius: 6px;
+  padding: 0.2rem 0.3rem;
+  cursor: pointer;
+  width: 100%;
+  min-width: 44px;
+  transition: background 0.1s, border-color 0.1s;
+}
+.chart-cell-btn:hover { background: #fff0f0; border-color: var(--red); }
+.chart-cell-btn.playing { background: #ffe0e0; border-color: var(--red); }
+html.dark .chart-cell-btn:hover { background: #2e1010; }
+html.dark .chart-cell-btn.playing { background: #3e1818; }
+.chart-cell-syl {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+html.dark .chart-cell-syl { color: #e0e0e0; }
+.chart-cell-char {
+  font-size: 0.92rem;
+  color: var(--red);
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .tone-cards { grid-template-columns: 1fr 1fr; }
+  .pron-title { font-size: 1.4rem; }
+  .chart-cell-syl { font-size: 0.65rem; }
+  .chart-cell-char { font-size: 0.8rem; }
+  .pron-table { font-size: 0.7rem; }
+}
