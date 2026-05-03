@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import vocab from '../data/vocab'
 import AppHeader from '../components/AppHeader'
@@ -8,6 +9,23 @@ import { useFavourites } from '../hooks/useFavourites'
 export default function FavouritesPage() {
   const { favourites, toggleFavourite } = useFavourites()
   const words = vocab.filter(w => favourites.has(w.id))
+  const [practiceOpen, setPracticeOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    function handle(e: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) setPracticeOpen(false)
+    }
+    document.addEventListener('mousedown', handle)
+    return () => document.removeEventListener('mousedown', handle)
+  }, [])
+
+  // Store favourite IDs in sessionStorage so practice pages can read them
+  function openPractice(path: string) {
+    sessionStorage.setItem('practice-ids', JSON.stringify([...favourites]))
+    setPracticeOpen(false)
+    window.location.href = path
+  }
 
   return (
     <div className="browser-page">
@@ -15,6 +33,28 @@ export default function FavouritesPage() {
       <div className="browser-controls">
         <h2 className="page-title">★ Favourites</h2>
         <span className="result-count">{words.length} word{words.length !== 1 ? 's' : ''}</span>
+        {words.length >= 4 && (
+          <div className="practice-menu-wrap" ref={menuRef}>
+            <button className="btn-practice practice-menu-trigger" onClick={() => setPracticeOpen(o => !o)}>
+              Practice ▾
+            </button>
+            {practiceOpen && (
+              <div className="practice-menu-dropdown">
+                {[
+                  { path: '/practice/favourites', label: '🃏 Flashcards', sub: 'Spaced repetition' },
+                  { path: '/quiz/favourites',     label: '❓ Quiz',        sub: 'Multiple choice' },
+                  { path: '/listen/favourites',   label: '🔊 Listening',   sub: 'Hear & identify' },
+                  { path: '/fill/favourites',     label: '✏️ Fill blank',   sub: 'Complete sentences' },
+                ].map(({ path, label, sub }) => (
+                  <button key={path} className="practice-menu-item" style={{ width: '100%', textAlign: 'left', border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => openPractice(path)}>
+                    <span className="pmi-label">{label}</span>
+                    <span className="pmi-sub">{sub}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {words.length === 0 ? (

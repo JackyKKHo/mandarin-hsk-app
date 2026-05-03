@@ -1398,7 +1398,190 @@ html.dark .stroke-chars { background: var(--surface); }
   .flashcard { height: 320px; }
 }
 
-/* ── Teacher ── */
+/* ── Teacher chat ── */
+.teacher-wrap { margin-top: 1.25rem; }
+
+.teacher-open-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  border: 1.5px solid #e0d5c5;
+  border-radius: var(--radius);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #b8860b;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s, background 0.15s;
+  position: relative;
+}
+.teacher-open-btn:hover { border-color: #d4a017; background: #fdfaf6; }
+html.dark .teacher-open-btn { border-color: #3d2e00; color: #f5a623; }
+html.dark .teacher-open-btn:hover { background: #1e1800; }
+
+.teacher-avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: #d4a017;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.teacher-badge {
+  margin-left: auto;
+  background: var(--red);
+  color: white;
+  border-radius: 99px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+}
+
+.teacher-chat {
+  border: 1.5px solid #e0d5c5;
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+html.dark .teacher-chat { border-color: #3d2e00; }
+
+.teacher-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  background: #fdfaf6;
+  border-bottom: 1px solid #f0e6d3;
+}
+html.dark .teacher-chat-header { background: #1e1800; border-color: #3d2e00; }
+
+.teacher-avatar-sm {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: #d4a017;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.teacher-chat-name { font-weight: 700; font-size: 0.88rem; color: #b8860b; }
+html.dark .teacher-chat-name { color: #f5a623; }
+
+.teacher-close-btn {
+  background: none; border: none; cursor: pointer;
+  color: var(--muted); font-size: 0.9rem; padding: 0.1rem 0.3rem;
+  border-radius: 4px; margin-left: 0.25rem;
+}
+.teacher-close-btn:hover { background: var(--border); }
+
+.teacher-messages {
+  flex: 1;
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: var(--bg);
+}
+
+.teacher-welcome {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.55;
+  padding: 0.5rem;
+}
+.teacher-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+}
+.teacher-suggestion {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font-family: inherit;
+  transition: border-color 0.12s, background 0.12s;
+}
+.teacher-suggestion:hover { border-color: #d4a017; background: #fdfaf6; }
+
+.chat-bubble-row {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-end;
+}
+.cb-user    { flex-direction: row-reverse; }
+.cb-teacher { flex-direction: row; }
+
+.chat-avatar {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: #d4a017;
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 0.55rem 0.85rem;
+  border-radius: 14px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  position: relative;
+}
+.bubble-user    { background: var(--red); color: white; border-bottom-right-radius: 4px; }
+.bubble-teacher { background: var(--surface); border: 1px solid var(--border); color: var(--text); border-bottom-left-radius: 4px; }
+
+.chat-replay-btn {
+  background: none; border: none; cursor: pointer;
+  font-size: 0.78rem; opacity: 0.6; padding: 0 0.15rem;
+  vertical-align: middle; margin-left: 0.3rem;
+}
+.chat-replay-btn:hover { opacity: 1; }
+
+.chat-typing {
+  display: flex; align-items: center; gap: 4px;
+  padding: 0.55rem 0.85rem;
+  min-width: 50px;
+}
+.typing-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--muted);
+  animation: typingBounce 1.2s ease-in-out infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+  30% { transform: translateY(-5px); opacity: 1; }
+}
+
+.teacher-clear-btn {
+  background: none; border: none; border-top: 1px solid var(--border);
+  width: 100%; padding: 0.4rem; font-size: 0.75rem; color: var(--muted);
+  cursor: pointer; font-family: inherit;
+}
+.teacher-clear-btn:hover { color: var(--text); background: var(--bg); }
+
+/* Keep old .teacher-section for now */
 .teacher-section {
   margin-top: 1.5rem;
   padding-top: 1.25rem;

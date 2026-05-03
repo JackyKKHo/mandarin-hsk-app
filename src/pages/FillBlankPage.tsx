@@ -1,11 +1,11 @@
 import { useState, useMemo, useRef, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import vocab from '../data/vocab'
 import type { VocabItem } from '../types'
 import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
 import { useSRS } from '../hooks/useSRS'
 import { useStreak } from '../hooks/useStreak'
+import { usePracticeWords } from '../hooks/usePracticeWords'
 
 type Stage = 'idle' | 'question' | 'feedback' | 'complete'
 type AnswerMode = 'type' | 'pick'
@@ -44,14 +44,10 @@ function buildQuestion(word: VocabItem, pool: VocabItem[]): Question | null {
 
 export default function FillBlankPage() {
   const { level } = useParams<{ level: string }>()
-  const currentLevel = Number(level) || 1
   const { review } = useSRS()
   const { recordStudy } = useStreak()
-
-  const levelWords = useMemo(() =>
-    vocab.filter(w => w.hskLevel === currentLevel && w.examples.length > 0),
-    [currentLevel]
-  )
+  const { words: allLevelWords, title, backPath } = usePracticeWords(level)
+  const levelWords = useMemo(() => allLevelWords.filter(w => w.examples.length > 0), [allLevelWords])
 
   const [stage, setStage] = useState<Stage>('idle')
   const [mode, setMode] = useState<AnswerMode>('pick')
@@ -121,9 +117,9 @@ export default function FillBlankPage() {
   if (stage === 'idle') {
     return (
       <div className="practice-page">
-        <Link to={`/hsk/${currentLevel}`} className="back-link">← HSK {currentLevel}</Link>
+        <Link to={backPath} className="back-link">← {title}</Link>
         <div className="practice-start-card">
-          <div className="practice-start-level">HSK {currentLevel}</div>
+          <div className="practice-start-level">{title}</div>
           <h2>Fill in the Blank</h2>
           {levelWords.length < 4 ? (
             <p className="empty-state">Not enough words with example sentences yet.</p>
@@ -165,7 +161,7 @@ export default function FillBlankPage() {
           </div>
           <div className="complete-actions">
             <button className="btn-primary" onClick={start}>Play again</button>
-            <Link to={`/hsk/${currentLevel}`} className="btn-secondary">Back</Link>
+            <Link to={backPath} className="btn-secondary">Back</Link>
           </div>
         </div>
       </div>
@@ -182,7 +178,7 @@ export default function FillBlankPage() {
   return (
     <div className="practice-page">
       <div className="practice-topbar">
-        <Link to={`/hsk/${currentLevel}`} className="back-link" style={{ marginBottom: 0 }}>← HSK {currentLevel}</Link>
+        <Link to={backPath} className="back-link" style={{ marginBottom: 0 }}>← {title}</Link>
         <span className="practice-counter">{index + 1} / {queue.length}</span>
         <span className="practice-score-inline">
           <span className="got-count">✓{score.correct}</span>{' '}

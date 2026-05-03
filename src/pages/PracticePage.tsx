@@ -1,11 +1,11 @@
 import { useState, useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import vocab from '../data/vocab'
 import type { VocabItem } from '../types'
 import AudioButton from '../components/AudioButton'
 import TonedPinyin from '../components/TonedPinyin'
 import { useSRS, type SRSQuality } from '../hooks/useSRS'
 import { useStreak } from '../hooks/useStreak'
+import { usePracticeWords } from '../hooks/usePracticeWords'
 
 type Stage = 'idle' | 'studying' | 'complete'
 
@@ -20,24 +20,12 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function PracticePage() {
   const { level } = useParams<{ level: string }>()
-  const currentLevel = Number(level) || 1
   const { review, isDue, getCard } = useSRS()
   const { streak, recordStudy } = useStreak()
+  const { words: levelWords, title, backPath } = usePracticeWords(level)
 
-  const levelWords = useMemo(
-    () => vocab.filter(w => w.hskLevel === currentLevel),
-    [currentLevel]
-  )
-
-  const due = useMemo(
-    () => levelWords.filter(w => isDue(w.id)),
-    [levelWords, isDue]
-  )
-
-  const notDue = useMemo(
-    () => levelWords.filter(w => !isDue(w.id)),
-    [levelWords, isDue]
-  )
+  const due = useMemo(() => levelWords.filter(w => isDue(w.id)), [levelWords, isDue])
+  const notDue = useMemo(() => levelWords.filter(w => !isDue(w.id)), [levelWords, isDue])
 
   const [stage, setStage] = useState<Stage>('idle')
   const [queue, setQueue] = useState<VocabItem[]>([])
@@ -73,9 +61,9 @@ export default function PracticePage() {
   if (stage === 'idle') {
     return (
       <div className="practice-page">
-        <Link to={`/hsk/${currentLevel}`} className="back-link">← HSK {currentLevel}</Link>
+        <Link to={backPath} className="back-link">← {title}</Link>
         <div className="practice-start-card">
-          <div className="practice-start-level">HSK {currentLevel}</div>
+          <div className="practice-start-level">{title}</div>
           <h2>Spaced Repetition</h2>
           {levelWords.length === 0 ? (
             <p className="empty-state">No vocabulary yet for this level.</p>
@@ -143,7 +131,7 @@ export default function PracticePage() {
           <p className="complete-subtext">Cards are scheduled for future review based on your ratings.</p>
           <div className="complete-actions">
             <button className="btn-primary" onClick={() => start(false)}>Practice again</button>
-            <Link to={`/hsk/${currentLevel}`} className="btn-secondary">Back to browser</Link>
+            <Link to={backPath} className="btn-secondary">Back to browser</Link>
           </div>
         </div>
       </div>
@@ -157,8 +145,8 @@ export default function PracticePage() {
   return (
     <div className="practice-page">
       <div className="practice-topbar">
-        <Link to={`/hsk/${currentLevel}`} className="back-link" style={{ marginBottom: 0 }}>
-          ← HSK {currentLevel}
+        <Link to={backPath} className="back-link" style={{ marginBottom: 0 }}>
+          ← {title}
         </Link>
         <span className="practice-counter">{index + 1} / {queue.length}</span>
         <span className="practice-score-inline">

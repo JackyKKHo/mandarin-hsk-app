@@ -1,9 +1,9 @@
-import { useState, useMemo, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import vocab from '../data/vocab'
 import type { VocabItem } from '../types'
 import { useSRS } from '../hooks/useSRS'
 import { useStreak } from '../hooks/useStreak'
+import { usePracticeWords } from '../hooks/usePracticeWords'
 import TonedPinyin from '../components/TonedPinyin'
 
 type Stage = 'idle' | 'question' | 'feedback' | 'complete'
@@ -35,11 +35,9 @@ async function fetchTTS(text: string): Promise<string | null> {
 
 export default function ListeningPage() {
   const { level } = useParams<{ level: string }>()
-  const currentLevel = Number(level) || 1
   const { review } = useSRS()
   const { recordStudy } = useStreak()
-
-  const levelWords = useMemo(() => vocab.filter(w => w.hskLevel === currentLevel), [currentLevel])
+  const { words: levelWords, title, backPath } = usePracticeWords(level)
 
   const [stage, setStage] = useState<Stage>('idle')
   const [questionType, setQuestionType] = useState<QuestionType>('char')
@@ -108,9 +106,9 @@ export default function ListeningPage() {
   if (stage === 'idle') {
     return (
       <div className="practice-page">
-        <Link to={`/hsk/${currentLevel}`} className="back-link">← HSK {currentLevel}</Link>
+        <Link to={backPath} className="back-link">← {title}</Link>
         <div className="practice-start-card">
-          <div className="practice-start-level">HSK {currentLevel}</div>
+          <div className="practice-start-level">{title}</div>
           <h2>Listening Practice</h2>
           {levelWords.length === 0 ? (
             <p className="empty-state">No vocabulary yet for this level.</p>
@@ -161,7 +159,7 @@ export default function ListeningPage() {
           </div>
           <div className="complete-actions">
             <button className="btn-primary" onClick={start}>Play again</button>
-            <Link to={`/hsk/${currentLevel}`} className="btn-secondary">Back to browser</Link>
+            <Link to={backPath} className="btn-secondary">Back to browser</Link>
           </div>
         </div>
       </div>
@@ -174,8 +172,8 @@ export default function ListeningPage() {
   return (
     <div className="practice-page">
       <div className="practice-topbar">
-        <Link to={`/hsk/${currentLevel}`} className="back-link" style={{ marginBottom: 0 }}>
-          ← HSK {currentLevel}
+        <Link to={backPath} className="back-link" style={{ marginBottom: 0 }}>
+          ← {title}
         </Link>
         <span className="practice-counter">{index + 1} / {queue.length}</span>
         <span className="practice-score-inline">

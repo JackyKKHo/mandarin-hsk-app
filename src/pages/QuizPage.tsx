@@ -1,11 +1,11 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import vocab from '../data/vocab'
 import type { VocabItem } from '../types'
 import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
 import { useSRS } from '../hooks/useSRS'
 import { useStreak } from '../hooks/useStreak'
+import { usePracticeWords } from '../hooks/usePracticeWords'
 
 type Mode = 'zh→en' | 'en→zh' | 'pinyin→zh'
 type Stage = 'idle' | 'question' | 'feedback' | 'complete'
@@ -30,11 +30,9 @@ function truncate(s: string, n = 55): string {
 
 export default function QuizPage() {
   const { level } = useParams<{ level: string }>()
-  const currentLevel = Number(level) || 1
   const { review } = useSRS()
   const { recordStudy } = useStreak()
-
-  const levelWords = useMemo(() => vocab.filter(w => w.hskLevel === currentLevel), [currentLevel])
+  const { words: levelWords, title, backPath } = usePracticeWords(level)
 
   const [stage, setStage] = useState<Stage>('idle')
   const [mode, setMode] = useState<Mode>('zh→en')
@@ -87,9 +85,9 @@ export default function QuizPage() {
   if (stage === 'idle') {
     return (
       <div className="practice-page">
-        <Link to={`/hsk/${currentLevel}`} className="back-link">← HSK {currentLevel}</Link>
+        <Link to={backPath} className="back-link">← {title}</Link>
         <div className="practice-start-card">
-          <div className="practice-start-level">HSK {currentLevel}</div>
+          <div className="practice-start-level">{title}</div>
           <h2>Multiple Choice Quiz</h2>
           {levelWords.length === 0 ? (
             <p className="empty-state">No vocabulary yet for this level.</p>
@@ -133,8 +131,8 @@ export default function QuizPage() {
           </div>
           <div className="complete-actions">
             <button className="btn-primary" onClick={start}>Play again</button>
-            <Link to={`/practice/${currentLevel}`} className="btn-secondary">Flashcards</Link>
-            <Link to={`/hsk/${currentLevel}`} className="btn-secondary">Browse words</Link>
+            <Link to={backPath === '/favourites' ? '/practice/favourites' : `/practice/${level}`} className="btn-secondary">Flashcards</Link>
+            <Link to={backPath} className="btn-secondary">Browse words</Link>
           </div>
         </div>
       </div>
@@ -148,8 +146,8 @@ export default function QuizPage() {
   return (
     <div className="practice-page">
       <div className="practice-topbar">
-        <Link to={`/hsk/${currentLevel}`} className="back-link" style={{ marginBottom: 0 }}>
-          ← HSK {currentLevel}
+        <Link to={backPath} className="back-link" style={{ marginBottom: 0 }}>
+          ← {title}
         </Link>
         <span className="practice-counter">{index + 1} / {queue.length}</span>
         <span className="practice-score-inline">

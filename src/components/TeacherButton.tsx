@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { playAudio } from '../audio'
 
 interface WordContext {
@@ -12,27 +12,44 @@ interface Props {
   context: WordContext
 }
 
-type Mode = 'idle' | 'listening' | 'thinking' | 'speaking'
+interface Message {
+  role: 'user' | 'teacher'
+  text: string
+  audioBlob?: Blob
+}
+
+type Status = 'idle' | 'listening' | 'thinking' | 'speaking'
 type ImmersionLevel = 'beginner' | 'intermediate' | 'advanced'
 
 const IMMERSION_LABELS: Record<ImmersionLevel, string> = {
-  beginner: '🇬🇧 Beginner',
+  beginner:     '🇬🇧 Beginner',
   intermediate: '🌏 Intermediate',
-  advanced: '🇨🇳 Advanced',
+  advanced:     '🇨🇳 Advanced',
 }
 
-function getImmersionLevel(): ImmersionLevel {
+function getImmersion(): ImmersionLevel {
   return (localStorage.getItem('immersionLevel') as ImmersionLevel) || 'intermediate'
 }
 
 export default function TeacherButton({ context }: Props) {
-  const [mode, setMode] = useState<Mode>('idle')
-  const [teacherText, setTeacherText] = useState('')
+  const [open, setOpen] = useState(false)
+  const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
-  const [immersion, setImmersion] = useState<ImmersionLevel>(getImmersionLevel)
+  const [status, setStatus] = useState<Status>('idle')
+  const [immersion, setImmersion] = useState<ImmersionLevel>(getImmersion)
   const [showImmersionMenu, setShowImmersionMenu] = useState(false)
-  const lang = 'zh-CN'
+
   const recognitionRef = useRef<any>(null)
+  const bottomRef = useRef<HTMLDivElement>(null)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [messages, status])
+
+  useEffect(() => {
+    if (open) setTimeout(() => inputRef.current?.focus(), 100)
+  }, [open])
 
   function setImmersionLevel(level: ImmersionLevel) {
     localStorage.setItem('immersionLevel', level)
@@ -40,159 +57,213 @@ export default function TeacherButton({ context }: Props) {
     setShowImmersionMenu(false)
   }
 
-  async function askTeacher(message: string) {
-    if (!message.trim()) return
-    setMode('thinking')
+  async function send(message: string) {
+    if (!message.trim() || status !== 'idle') return
+    const userMsg: Message = { role: 'user', text: message }
+    const newMessages = [...messages, userMsg]
+    setMessages(newMessages)
     setInput('')
-    setShowImmersionMenu(false)
+    setStatus('thinking')
+
+    // Only send last 10 messages to keep context manageable
+    const history = newMessages.slice(-10)
 
     try {
       const res = await fetch('/api/teacher', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message, context, immersion }),
+        body: JSON.stringify({
+          message,
+          context,
+          immersion,
+          history: history.slice(0, -1), // exclude the message we're sending
+        }),
       })
 
       if (!res.ok) throw new Error('Teacher API failed')
 
       const contentType = res.headers.get('Content-Type') ?? ''
-      const text = decodeURIComponent(res.headers.get('X-Teacher-Text') ?? '')
-      setTeacherText(text)
+      const teacherText = decodeURIComponent(res.headers.get('X-Teacher-Text') ?? '')
 
       if (contentType.includes('audio')) {
-        setMode('speaking')
         const blob = await res.blob()
+        setMessages(prev => [...prev, { role: 'teacher', text: teacherText, audioBlob: blob }])
+        setStatus('speaking')
         const audio = playAudio(blob)
-        audio.onended = () => setMode('idle')
-        audio.onerror = () => setMode('idle')
+        audio.onended = () => setStatus('idle')
+        audio.onerror = () => setStatus('idle')
       } else {
         const data = await res.json()
-        setTeacherText(data.text)
-        setMode('idle')
+        setMessages(prev => [...prev, { role: 'teacher', text: data.text }])
+        setStatus('idle')
       }
     } catch {
-      setMode('idle')
+      setMessages(prev => [...prev, { role: 'teacher', text: 'Sorry, I had trouble connecting. Please try again.' }])
+      setStatus('idle')
     }
   }
 
   function startListening() {
     const SpeechRecognitionAPI = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition
-    if (!SpeechRecognitionAPI) {
-      alert('Voice input is not supported in this browser. Try Chrome.')
-      return
-    }
+    if (!SpeechRecognitionAPI) return
 
-    const recognition = new SpeechRecognitionAPI()
-    recognition.lang = lang
-    recognition.continuous = true
-    recognition.interimResults = true
-
+    const rec = new SpeechRecognitionAPI()
+    rec.lang = 'zh-CN'
+    rec.continuous = true
+    rec.interimResults = true
     let silenceTimer: ReturnType<typeof setTimeout> | null = null
 
-    recognition.onstart = () => setMode('listening')
-
-    recognition.onresult = (e: any) => {
-      const transcript = Array.from(e.results).map((r: any) => r[0].transcript).join('')
-      setInput(transcript)
-      if (recognitionRef.current) recognitionRef.current.lastTranscript = transcript
-
-      // Reset silence timer — stop 2.5s after last speech
+    rec.onstart = () => setStatus('listening')
+    rec.onresult = (e: any) => {
+      const t = Array.from(e.results).map((r: any) => r[0].transcript).join('')
+      setInput(t)
       if (silenceTimer) clearTimeout(silenceTimer)
-      silenceTimer = setTimeout(() => recognition.stop(), 2500)
+      silenceTimer = setTimeout(() => rec.stop(), 2500)
     }
-
-    recognition.onend = () => {
+    rec.onend = () => {
       if (silenceTimer) clearTimeout(silenceTimer)
-      const finalInput = recognitionRef.current?.lastTranscript
-      if (finalInput) askTeacher(finalInput)
-      else setMode('idle')
+      const final = recognitionRef.current?.lastTranscript
+      if (final) send(final)
+      else setStatus('idle')
     }
-
-    recognition.onerror = () => setMode('idle')
-
-    recognition.addEventListener('result', (e: any) => {
-      const transcript = Array.from(e.results).map((r: any) => r[0].transcript).join('')
-      if (recognitionRef.current) recognitionRef.current.lastTranscript = transcript
+    rec.onerror = () => setStatus('idle')
+    rec.addEventListener('result', (e: any) => {
+      const t = Array.from(e.results).map((r: any) => r[0].transcript).join('')
+      if (recognitionRef.current) recognitionRef.current.lastTranscript = t
     })
-
-    recognitionRef.current = recognition
+    recognitionRef.current = rec
     recognitionRef.current.lastTranscript = ''
-    recognition.start()
+    rec.start()
   }
 
-  function stopListening() { recognitionRef.current?.stop() }
-
-  function handleKeyDown(e: React.KeyboardEvent) {
-    if (e.key === 'Enter') askTeacher(input)
+  function replayAudio(blob: Blob) {
+    setStatus('speaking')
+    const audio = playAudio(blob)
+    audio.onended = () => setStatus('idle')
   }
 
-  const isDisabled = mode === 'thinking' || mode === 'speaking'
-  const placeholder = mode === 'thinking' ? 'Lin Wei is thinking...'
-    : mode === 'speaking' ? 'Lin Wei is speaking...'
-    : mode === 'listening' ? 'Listening...'
-    : `Ask Lin Wei about "${context.simplified}"...`
+  const busy = status !== 'idle'
 
   return (
-    <div className="teacher-section">
-      <div className="teacher-header">
-        <span className="teacher-label">Lin Wei 老师</span>
-        <div className="immersion-picker">
-          <button
-            className="immersion-trigger"
-            onClick={() => setShowImmersionMenu(m => !m)}
-            disabled={isDisabled}
-            title="Set Chinese immersion level"
-          >
-            {IMMERSION_LABELS[immersion]} ▾
-          </button>
-          {showImmersionMenu && (
-            <div className="immersion-menu">
-              {(Object.keys(IMMERSION_LABELS) as ImmersionLevel[]).map(level => (
-                <button
-                  key={level}
-                  className={`immersion-option${immersion === level ? ' active' : ''}`}
-                  onClick={() => setImmersionLevel(level)}
-                >
-                  {IMMERSION_LABELS[level]}
-                </button>
-              ))}
+    <div className="teacher-wrap">
+      {!open ? (
+        <button className="teacher-open-btn" onClick={() => setOpen(true)}>
+          <span className="teacher-avatar">林</span>
+          <span>Ask Lin Wei 老师</span>
+          {messages.length > 0 && <span className="teacher-badge">{messages.length}</span>}
+        </button>
+      ) : (
+        <div className="teacher-chat">
+          {/* Header */}
+          <div className="teacher-chat-header">
+            <span className="teacher-avatar-sm">林</span>
+            <span className="teacher-chat-name">Lin Wei 老师</span>
+            <div className="immersion-picker" style={{ marginLeft: 'auto' }}>
+              <button
+                className="immersion-trigger"
+                onClick={() => setShowImmersionMenu(m => !m)}
+                disabled={busy}
+              >
+                {IMMERSION_LABELS[immersion]} ▾
+              </button>
+              {showImmersionMenu && (
+                <div className="immersion-menu">
+                  {(Object.keys(IMMERSION_LABELS) as ImmersionLevel[]).map(level => (
+                    <button
+                      key={level}
+                      className={`immersion-option${immersion === level ? ' active' : ''}`}
+                      onClick={() => setImmersionLevel(level)}
+                    >
+                      {IMMERSION_LABELS[level]}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
+            <button className="teacher-close-btn" onClick={() => setOpen(false)}>✕</button>
+          </div>
+
+          {/* Messages */}
+          <div className="teacher-messages">
+            {messages.length === 0 && (
+              <div className="teacher-welcome">
+                <p>你好！I'm Lin Wei. Ask me anything about <strong>{context.simplified}</strong> — pronunciation, usage, cultural notes, memory tricks…</p>
+                <div className="teacher-suggestions">
+                  {[
+                    `How do I remember ${context.simplified}?`,
+                    `Give me a natural example sentence`,
+                    `What's the cultural context?`,
+                  ].map(s => (
+                    <button key={s} className="teacher-suggestion" onClick={() => send(s)}>{s}</button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {messages.map((m, i) => (
+              <div key={i} className={`chat-bubble-row ${m.role === 'user' ? 'cb-user' : 'cb-teacher'}`}>
+                {m.role === 'teacher' && <span className="chat-avatar">林</span>}
+                <div className={`chat-bubble ${m.role === 'user' ? 'bubble-user' : 'bubble-teacher'}`}>
+                  <span>{m.text}</span>
+                  {m.role === 'teacher' && m.audioBlob && (
+                    <button
+                      className="chat-replay-btn"
+                      onClick={() => replayAudio(m.audioBlob!)}
+                      title="Replay audio"
+                    >🔊</button>
+                  )}
+                </div>
+              </div>
+            ))}
+
+            {status === 'thinking' && (
+              <div className="chat-bubble-row cb-teacher">
+                <span className="chat-avatar">林</span>
+                <div className="chat-bubble bubble-teacher chat-typing">
+                  <span className="typing-dot" /><span className="typing-dot" /><span className="typing-dot" />
+                </div>
+              </div>
+            )}
+            <div ref={bottomRef} />
+          </div>
+
+          {/* Input */}
+          <div className="teacher-input-row">
+            <input
+              ref={inputRef}
+              className="teacher-input"
+              type="text"
+              value={input}
+              onChange={e => setInput(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter') send(input) }}
+              placeholder={
+                status === 'listening' ? 'Listening…' :
+                status === 'thinking' ? 'Lin Wei is thinking…' :
+                'Ask something…'
+              }
+              disabled={busy}
+            />
+            <button
+              className={`teacher-mic-btn${status === 'listening' ? ' listening' : ''}`}
+              onClick={status === 'listening' ? () => recognitionRef.current?.stop() : startListening}
+              disabled={status === 'thinking' || status === 'speaking'}
+              title="Voice input"
+            >
+              {status === 'listening' ? '⏹' : '🎙️'}
+            </button>
+            <button
+              className={`teacher-send-btn mode-${status}`}
+              onClick={() => send(input || `Tell me something interesting about "${context.simplified}"`)}
+              disabled={busy}
+            >
+              {status === 'thinking' ? '💭' : status === 'speaking' ? '🔊' : '➤'}
+            </button>
+          </div>
+
+          {messages.length > 0 && (
+            <button className="teacher-clear-btn" onClick={() => setMessages([])}>Clear conversation</button>
           )}
         </div>
-      </div>
-
-      <div className="teacher-input-row">
-        <input
-          className="teacher-input"
-          type="text"
-          value={input}
-          onChange={e => setInput(e.target.value)}
-          onKeyDown={handleKeyDown}
-          placeholder={placeholder}
-          disabled={isDisabled}
-        />
-        <button
-          className={`teacher-mic-btn${mode === 'listening' ? ' listening' : ''}`}
-          onClick={mode === 'listening' ? stopListening : startListening}
-          disabled={isDisabled}
-          title={mode === 'listening' ? 'Stop recording' : 'Speak your question'}
-        >
-          {mode === 'listening' ? '⏹' : '🎙️'}
-        </button>
-        <button
-          className={`teacher-send-btn mode-${mode}`}
-          onClick={() => askTeacher(input || `Give me a tip for remembering "${context.simplified}" and use it in a natural sentence.`)}
-          disabled={isDisabled || mode === 'listening'}
-          title="Ask teacher"
-        >
-          {mode === 'thinking' ? '💭' : mode === 'speaking' ? '🔊' : '➤'}
-        </button>
-      </div>
-
-      {teacherText && (
-        <p className="teacher-text">
-          <span className="teacher-name">Lin Wei:</span> {teacherText}
-        </p>
       )}
     </div>
   )
