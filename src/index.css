@@ -656,6 +656,102 @@ html.dark .qf-wrong   { background: #2d0a0a; }
 .writing-hint { font-size: 0.82rem; color: var(--muted); }
 .writing-next-btn { width: 100%; }
 
+/* Practice mode dropdown */
+.practice-menu-wrap { position: relative; }
+.practice-menu-trigger { white-space: nowrap; }
+.practice-menu-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  min-width: 200px;
+  z-index: 100;
+  overflow: hidden;
+}
+.practice-menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.12s;
+}
+.practice-menu-item:last-child { border-bottom: none; }
+.practice-menu-item:hover { background: var(--bg); }
+.pmi-label { font-size: 0.9rem; font-weight: 600; }
+.pmi-sub   { font-size: 0.75rem; color: var(--muted); }
+
+/* Fill in the blank */
+.fillblank-sentence-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.fbs-english { font-size: 0.82rem; color: var(--muted); font-style: italic; }
+.fbs-sentence {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.1rem;
+}
+.fbs-blank {
+  display: inline-block;
+  min-width: 2ch;
+  border-bottom: 2.5px solid var(--red);
+  text-align: center;
+  font-weight: 700;
+  color: var(--red);
+  padding: 0 0.15rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+.fbs-blank.blank-correct { color: #27ae60; border-color: #27ae60; }
+.fbs-blank.blank-wrong   { color: var(--red); border-color: var(--red); }
+.fbs-pinyin { font-size: 0.82rem; color: var(--muted); }
+.fbs-audio-row { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+.fbs-hint-btn {
+  background: none;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+  color: var(--muted);
+  font-family: inherit;
+}
+.fbs-hint-btn:hover { border-color: var(--muted); color: var(--text); }
+.fbs-hint { font-size: 0.82rem; color: var(--muted); }
+.fillblank-type-area {
+  display: flex;
+  gap: 0.5rem;
+}
+.fillblank-input {
+  flex: 1;
+  padding: 0.6rem 0.9rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1.1rem;
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.fillblank-input:focus { border-color: var(--red); }
+.opt-english-sub { font-size: 0.72rem; color: var(--muted); display: block; margin-top: 0.15rem; }
+.fbs-typed-was { font-size: 0.82rem; opacity: 0.75; }
+
 /* Listening page */
 .listening-prompt {
   background: var(--surface);

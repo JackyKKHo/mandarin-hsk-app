@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useRef, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import vocab from '../data/vocab'
 import AudioButton from '../components/AudioButton'
@@ -14,8 +14,20 @@ export default function BrowserPage() {
   const navigate = useNavigate()
   const currentLevel = Number(level) || 1
   const [search, setSearch] = useState('')
+  const [practiceOpen, setPracticeOpen] = useState(false)
+  const practiceRef = useRef<HTMLDivElement>(null)
   const { learned } = useProgress()
   const { isFavourite, toggleFavourite } = useFavourites()
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (practiceRef.current && !practiceRef.current.contains(e.target as Node)) {
+        setPracticeOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClick)
+    return () => document.removeEventListener('mousedown', handleClick)
+  }, [])
 
   const levelCounts = useMemo(
     () => Object.fromEntries(LEVELS.map(l => [l, vocab.filter(w => w.hskLevel === l).length])),
@@ -90,12 +102,27 @@ export default function BrowserPage() {
           {words.length} word{words.length !== 1 ? 's' : ''}
         </span>
         {levelCounts[currentLevel] > 0 && (
-          <>
-            <Link to={`/practice/${currentLevel}`} className="btn-practice">Flashcards</Link>
-            <Link to={`/quiz/${currentLevel}`} className="btn-practice btn-practice-quiz">Quiz</Link>
-            <Link to={`/write/${currentLevel}`} className="btn-practice btn-practice-write">Write</Link>
-            <Link to={`/listen/${currentLevel}`} className="btn-practice btn-practice-listen">Listen</Link>
-          </>
+          <div className="practice-menu-wrap" ref={practiceRef}>
+            <button className="btn-practice practice-menu-trigger" onClick={() => setPracticeOpen(o => !o)}>
+              Practice ▾
+            </button>
+            {practiceOpen && (
+              <div className="practice-menu-dropdown">
+                {[
+                  { to: `/practice/${currentLevel}`, label: '🃏 Flashcards', sub: 'Spaced repetition' },
+                  { to: `/quiz/${currentLevel}`,     label: '❓ Quiz',        sub: 'Multiple choice' },
+                  { to: `/listen/${currentLevel}`,   label: '🔊 Listening',   sub: 'Hear & identify' },
+                  { to: `/fill/${currentLevel}`,     label: '✏️ Fill blank',   sub: 'Complete sentences' },
+                  { to: `/write/${currentLevel}`,    label: '✍️ Writing',      sub: 'Stroke order tracing' },
+                ].map(({ to, label, sub }) => (
+                  <Link key={to} to={to} className="practice-menu-item" onClick={() => setPracticeOpen(false)}>
+                    <span className="pmi-label">{label}</span>
+                    <span className="pmi-sub">{sub}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         )}
       </div>
 
