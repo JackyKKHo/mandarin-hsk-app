@@ -18,6 +18,7 @@ export default function TeacherButton({ context }: Props) {
   const [mode, setMode] = useState<Mode>('idle')
   const [teacherText, setTeacherText] = useState('')
   const [input, setInput] = useState('')
+  const [lang, setLang] = useState<'en-US' | 'zh-CN'>('en-US')
   const recognitionRef = useRef<any>(null)
 
   async function askTeacher(message: string) {
@@ -62,7 +63,7 @@ export default function TeacherButton({ context }: Props) {
     }
 
     const recognition = new SpeechRecognitionAPI()
-    recognition.lang = 'en-US'
+    recognition.lang = lang
     recognition.continuous = false
     recognition.interimResults = true
 
@@ -119,6 +120,18 @@ export default function TeacherButton({ context }: Props) {
 
   return (
     <div className="teacher-section">
+      <div className="teacher-lang-toggle">
+        <button
+          className={`lang-btn${lang === 'en-US' ? ' active' : ''}`}
+          onClick={() => setLang('en-US')}
+          disabled={mode !== 'idle'}
+        >EN</button>
+        <button
+          className={`lang-btn${lang === 'zh-CN' ? ' active' : ''}`}
+          onClick={() => setLang('zh-CN')}
+          disabled={mode !== 'idle'}
+        >中文</button>
+      </div>
       <div className="teacher-input-row">
         <input
           className="teacher-input"
