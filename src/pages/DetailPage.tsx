@@ -3,6 +3,7 @@ import vocab from '../data/vocab'
 import AudioButton from '../components/AudioButton'
 import TeacherButton from '../components/TeacherButton'
 import TonedPinyin from '../components/TonedPinyin'
+import PronunciationChecker from '../components/PronunciationChecker'
 import { useDismissed } from '../hooks/useDismissed'
 import { useProgress } from '../hooks/useProgress'
 import { useFavourites } from '../hooks/useFavourites'
@@ -110,6 +111,8 @@ export default function DetailPage() {
             ))}
           </section>
         )}
+
+        <PronunciationChecker target={word.simplified} />
 
         <TeacherButton context={{
           simplified: word.simplified,

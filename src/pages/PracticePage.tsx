@@ -5,6 +5,7 @@ import type { VocabItem } from '../types'
 import AudioButton from '../components/AudioButton'
 import TonedPinyin from '../components/TonedPinyin'
 import { useSRS, type SRSQuality } from '../hooks/useSRS'
+import { useStreak } from '../hooks/useStreak'
 
 type Stage = 'idle' | 'studying' | 'complete'
 
@@ -21,6 +22,7 @@ export default function PracticePage() {
   const { level } = useParams<{ level: string }>()
   const currentLevel = Number(level) || 1
   const { review, isDue, getCard } = useSRS()
+  const { streak, recordStudy } = useStreak()
 
   const levelWords = useMemo(
     () => vocab.filter(w => w.hskLevel === currentLevel),
@@ -60,6 +62,7 @@ export default function PracticePage() {
 
   function advance() {
     if (index + 1 >= queue.length) {
+      recordStudy()
       setStage('complete')
     } else {
       setIndex(i => i + 1)
@@ -78,7 +81,10 @@ export default function PracticePage() {
             <p className="empty-state">No vocabulary yet for this level.</p>
           ) : (
             <>
-              <div className="srs-stats">
+              {streak > 0 && (
+            <div className="streak-badge">🔥 {streak} day streak</div>
+          )}
+          <div className="srs-stats">
                 <div className="srs-stat">
                   <span className="srs-stat-num due-num">{due.length}</span>
                   <span className="srs-stat-label">due today</span>
@@ -133,6 +139,7 @@ export default function PracticePage() {
             <span className="got-count">✓ {counts.good} good</span>
             <span className="missed-count">↩ {counts.again} again</span>
           </div>
+          {streak > 0 && <div className="streak-badge">🔥 {streak} day streak</div>}
           <p className="complete-subtext">Cards are scheduled for future review based on your ratings.</p>
           <div className="complete-actions">
             <button className="btn-primary" onClick={() => start(false)}>Practice again</button>
