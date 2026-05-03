@@ -10,7 +10,9 @@ interface Props {
 export default function AudioButton({ text, audioUrl, label }: Props) {
   const [playing, setPlaying] = useState(false)
 
-  async function play() {
+  async function play(e: React.MouseEvent) {
+    e.preventDefault()
+    e.stopPropagation()
     if (playing) return
     setPlaying(true)
 
@@ -30,7 +32,7 @@ export default function AudioButton({ text, audioUrl, label }: Props) {
   return (
     <button
       className={`audio-btn${playing ? ' playing' : ''}`}
-      onClick={play}
+      onClick={(e) => play(e)}
       aria-label={label ?? `Play audio for ${text}`}
       title="Play pronunciation"
     >
