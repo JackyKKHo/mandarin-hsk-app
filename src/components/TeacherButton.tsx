@@ -44,8 +44,8 @@ export default function TeacherButton({ context }: Props) {
         setMode('thinking')
 
         // Use Web Speech API to transcribe locally (free)
-        const recognition = new (window as any).webkitSpeechRecognition?.() ||
-          new (window as any).SpeechRecognition?.()
+        const SpeechRecognitionAPI = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition
+        const recognition = SpeechRecognitionAPI ? new SpeechRecognitionAPI() : null
 
         if (!recognition) {
           await askTeacher("Can you introduce yourself and give me a tip for this word?")
