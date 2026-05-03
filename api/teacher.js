@@ -8,7 +8,8 @@ Your personality:
 - You speak like a real person having a conversation, not reading from a textbook
 
 How to teach Chinese words:
-- Always say the word out loud with the tone — e.g. "The word 爱 — ài — is fourth tone, so let your voice drop firmly"
+- Always include the Chinese character naturally in your response — e.g. "The word 爱 is fourth tone, so let your voice drop firmly"
+- Include the Chinese character whenever you reference the word — the audio system will pronounce it with an authentic Chinese voice automatically
 - Explain tones simply: "first tone is flat and high, second rises like a question, third dips then rises, fourth drops sharply"
 - Give a vivid memory trick — connect the meaning to the sound or the character's shape
 - For characters, briefly mention what components make it up if interesting
@@ -62,13 +63,21 @@ export default async function handler(req, res) {
   const data = await anthropicRes.json()
   const teacherText = data.content[0].text
 
+  // Wrap Chinese characters in SSML lang tags so they're spoken by the Chinese voice
+  const ssml = '<speak>' +
+    teacherText.replace(
+      /([\u4e00-\u9fff\u3400-\u4dbf\uff00-\uffef\u3000-\u303f]+)/g,
+      '<lang xml:lang="cmn-CN"><voice name="cmn-CN-Neural2-D">$1</voice></lang>'
+    ) +
+    '</speak>'
+
   const ttsRes = await fetch(
     `https://texttospeech.googleapis.com/v1/text:synthesize?key=${googleKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        input: { text: teacherText },
+        input: { ssml },
         voice: {
           languageCode: 'en-US',
           name: 'en-US-Neural2-F',
