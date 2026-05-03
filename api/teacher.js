@@ -70,8 +70,8 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         input: { text: teacherText },
         voice: {
-          languageCode: 'en-US',
-          name: 'en-US-Studio-O',
+          languageCode: 'cmn-CN',
+          name: 'cmn-CN-Chirp3-HD-Aoede',
           ssmlGender: 'FEMALE',
         },
         audioConfig: {
