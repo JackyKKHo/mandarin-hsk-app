@@ -94,6 +94,7 @@ export default function BrowserPage() {
             <Link to={`/practice/${currentLevel}`} className="btn-practice">Flashcards</Link>
             <Link to={`/quiz/${currentLevel}`} className="btn-practice btn-practice-quiz">Quiz</Link>
             <Link to={`/write/${currentLevel}`} className="btn-practice btn-practice-write">Write</Link>
+            <Link to={`/listen/${currentLevel}`} className="btn-practice btn-practice-listen">Listen</Link>
           </>
         )}
       </div>
