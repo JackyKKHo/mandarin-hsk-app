@@ -84,17 +84,25 @@ export default function TeacherButton({ context }: Props) {
 
     const recognition = new SpeechRecognitionAPI()
     recognition.lang = lang
-    recognition.continuous = false
+    recognition.continuous = true
     recognition.interimResults = true
+
+    let silenceTimer: ReturnType<typeof setTimeout> | null = null
 
     recognition.onstart = () => setMode('listening')
 
     recognition.onresult = (e: any) => {
       const transcript = Array.from(e.results).map((r: any) => r[0].transcript).join('')
       setInput(transcript)
+      if (recognitionRef.current) recognitionRef.current.lastTranscript = transcript
+
+      // Reset silence timer — stop 2.5s after last speech
+      if (silenceTimer) clearTimeout(silenceTimer)
+      silenceTimer = setTimeout(() => recognition.stop(), 2500)
     }
 
     recognition.onend = () => {
+      if (silenceTimer) clearTimeout(silenceTimer)
       const finalInput = recognitionRef.current?.lastTranscript
       if (finalInput) askTeacher(finalInput)
       else setMode('idle')
