@@ -6,6 +6,39 @@ interface Props {
   label?: string
 }
 
+function speakWithVoices(text: string, onEnd: () => void) {
+  const synth = window.speechSynthesis
+  synth.cancel()
+
+  function doSpeak() {
+    const utterance = new SpeechSynthesisUtterance(text)
+    utterance.lang = 'zh-CN'
+    utterance.rate = 0.85
+
+    const voices = synth.getVoices()
+    const chinese = voices.find(v => v.lang.startsWith('zh'))
+    if (chinese) utterance.voice = chinese
+
+    utterance.onend = onEnd
+    utterance.onerror = onEnd
+    synth.speak(utterance)
+  }
+
+  const voices = synth.getVoices()
+  if (voices.length > 0) {
+    doSpeak()
+  } else {
+    synth.onvoiceschanged = () => {
+      synth.onvoiceschanged = null
+      doSpeak()
+    }
+    // iOS fallback: voices may never fire the event, try after short delay
+    setTimeout(() => {
+      if (synth.getVoices().length > 0) doSpeak()
+    }, 250)
+  }
+}
+
 export default function AudioButton({ text, audioUrl, label }: Props) {
   const [playing, setPlaying] = useState(false)
 
@@ -22,14 +55,8 @@ export default function AudioButton({ text, audioUrl, label }: Props) {
     }
 
     if (!window.speechSynthesis) return
-    window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(text)
-    utterance.lang = 'zh-CN'
-    utterance.rate = 0.85
     setPlaying(true)
-    utterance.onend = () => setPlaying(false)
-    utterance.onerror = () => setPlaying(false)
-    window.speechSynthesis.speak(utterance)
+    speakWithVoices(text, () => setPlaying(false))
   }
 
   return (
