@@ -71,13 +71,13 @@ export default async function handler(req, res) {
         input: { text: teacherText },
         voice: {
           languageCode: 'en-US',
-          name: 'en-US-Neural2-F',
+          name: 'en-US-Studio-O',
           ssmlGender: 'FEMALE',
         },
         audioConfig: {
           audioEncoding: 'MP3',
-          speakingRate: 0.95,
-          pitch: 1.0,
+          speakingRate: 1.0,
+          pitch: 0.0,
         },
       }),
     }
