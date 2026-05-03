@@ -5,6 +5,7 @@ import PracticePage from './pages/PracticePage'
 import GrammarListPage from './pages/GrammarListPage'
 import GrammarDetailPage from './pages/GrammarDetailPage'
 import StopAudioOnNavigate from './components/StopAudioOnNavigate'
+import FavouritesPage from './pages/FavouritesPage'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/practice/:level" element={<PracticePage />} />
         <Route path="/grammar/:level" element={<GrammarListPage />} />
         <Route path="/grammar/point/:id" element={<GrammarDetailPage />} />
+        <Route path="/favourites" element={<FavouritesPage />} />
       </Routes>
     </BrowserRouter>
   )

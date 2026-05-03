@@ -4,11 +4,15 @@ import AudioButton from '../components/AudioButton'
 import TeacherButton from '../components/TeacherButton'
 import TonedPinyin from '../components/TonedPinyin'
 import { useDismissed } from '../hooks/useDismissed'
+import { useProgress } from '../hooks/useProgress'
+import { useFavourites } from '../hooks/useFavourites'
 
 export default function DetailPage() {
   const { id } = useParams<{ id: string }>()
   const word = vocab.find(w => w.id === id)
   const { dismissed, dismiss, undismiss } = useDismissed()
+  const { isLearned, markLearned, unmarkLearned } = useProgress()
+  const { isFavourite, toggleFavourite } = useFavourites()
 
   if (!word) {
     return (
@@ -19,6 +23,9 @@ export default function DetailPage() {
     )
   }
 
+  const learned = isLearned(word.id)
+  const fav = isFavourite(word.id)
+
   return (
     <div className="detail-page">
       <Link to={`/hsk/${word.hskLevel}`} className="back-link">
@@ -28,11 +35,20 @@ export default function DetailPage() {
       <div className="detail-card">
         <div className="detail-header">
           <div className="detail-chinese">{word.simplified}</div>
-          <AudioButton
-            text={word.simplified}
-            audioUrl={word.audio.wordAudioUrl}
-            label={`Play pronunciation of ${word.simplified}`}
-          />
+          <div className="detail-actions">
+            <button
+              className={`action-btn fav-btn${fav ? ' active' : ''}`}
+              onClick={() => toggleFavourite(word.id)}
+              title={fav ? 'Remove from favourites' : 'Add to favourites'}
+            >
+              {fav ? '★' : '☆'}
+            </button>
+            <AudioButton
+              text={word.simplified}
+              audioUrl={word.audio.wordAudioUrl}
+              label={`Play pronunciation of ${word.simplified}`}
+            />
+          </div>
         </div>
 
         <TonedPinyin pinyin={word.pinyin} className="detail-pinyin" />
@@ -40,6 +56,12 @@ export default function DetailPage() {
         <div className="detail-meta">
           <span className="badge badge-pos">{word.partOfSpeech}</span>
           <span className="badge badge-level">HSK {word.hskLevel}</span>
+          <button
+            className={`badge ${learned ? 'badge-learned' : 'badge-mark-learned'}`}
+            onClick={() => learned ? unmarkLearned(word.id) : markLearned(word.id)}
+          >
+            {learned ? '✓ Learned · Undo' : 'Mark learned'}
+          </button>
           {dismissed.has(word.id) ? (
             <button
               className="badge badge-dismissed"

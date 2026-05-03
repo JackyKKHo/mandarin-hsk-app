@@ -4,6 +4,8 @@ import vocab from '../data/vocab'
 import AudioButton from '../components/AudioButton'
 import AppHeader from '../components/AppHeader'
 import TonedPinyin from '../components/TonedPinyin'
+import { useProgress } from '../hooks/useProgress'
+import { useFavourites } from '../hooks/useFavourites'
 
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -12,11 +14,22 @@ export default function BrowserPage() {
   const navigate = useNavigate()
   const currentLevel = Number(level) || 1
   const [search, setSearch] = useState('')
+  const { learned } = useProgress()
+  const { isFavourite, toggleFavourite } = useFavourites()
 
   const levelCounts = useMemo(
     () => Object.fromEntries(LEVELS.map(l => [l, vocab.filter(w => w.hskLevel === l).length])),
     []
   )
+
+  const levelLearnedCounts = useMemo(
+    () => Object.fromEntries(LEVELS.map(l => [l, vocab.filter(w => w.hskLevel === l && learned.has(w.id)).length])),
+    [learned]
+  )
+
+  const currentLevelTotal = levelCounts[currentLevel] || 1
+  const currentLevelLearned = levelLearnedCounts[currentLevel] || 0
+  const progressPct = Math.round((currentLevelLearned / currentLevelTotal) * 100)
 
   const words = useMemo(() => {
     const levelWords = vocab.filter(w => w.hskLevel === currentLevel)
@@ -55,6 +68,15 @@ export default function BrowserPage() {
         ))}
       </nav>
 
+      {currentLevelLearned > 0 && (
+        <div className="level-progress">
+          <div className="level-progress-bar">
+            <div className="level-progress-fill" style={{ width: `${progressPct}%` }} />
+          </div>
+          <span className="level-progress-label">{currentLevelLearned} / {currentLevelTotal} learned ({progressPct}%)</span>
+        </div>
+      )}
+
       <div className="browser-controls">
         <input
           className="search-input"
@@ -83,17 +105,24 @@ export default function BrowserPage() {
       ) : (
         <div className="vocab-grid">
           {words.map(word => (
-            <Link key={word.id} to={`/word/${word.id}`} className="vocab-card">
+            <Link key={word.id} to={`/word/${word.id}`} className={`vocab-card${learned.has(word.id) ? ' learned' : ''}`}>
               <div className="card-chinese">{word.simplified}</div>
               <TonedPinyin pinyin={word.pinyin} className="card-pinyin" />
               <div className="card-english">{word.english}</div>
               <div className="card-footer">
                 <span className="card-pos">{word.partOfSpeech}</span>
-                <AudioButton
-                  text={word.simplified}
-                  audioUrl={word.audio.wordAudioUrl}
-                  label={`Play ${word.simplified}`}
-                />
+                <div style={{ display: 'flex', gap: '0.3rem' }}>
+                  <button
+                    className={`action-btn fav-btn${isFavourite(word.id) ? ' active' : ''}`}
+                    onClick={e => { e.preventDefault(); e.stopPropagation(); toggleFavourite(word.id) }}
+                    title={isFavourite(word.id) ? 'Remove from favourites' : 'Add to favourites'}
+                  >{isFavourite(word.id) ? '★' : '☆'}</button>
+                  <AudioButton
+                    text={word.simplified}
+                    audioUrl={word.audio.wordAudioUrl}
+                    label={`Play ${word.simplified}`}
+                  />
+                </div>
               </div>
             </Link>
           ))}

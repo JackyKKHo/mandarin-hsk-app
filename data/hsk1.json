@@ -8,7 +8,13 @@
     "pinyinNumbered": "",
     "english": "love",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我爱我的家人。",
+        "pinyin": "Wǒ ài wǒ de jiārén.",
+        "english": "I love my family."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24,7 +30,13 @@
     "pinyinNumbered": "",
     "english": "love",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的爱好是读书。",
+        "pinyin": "Wǒ de àihào shì dúshū.",
+        "english": "My hobby is reading books."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -40,7 +52,13 @@
     "pinyinNumbered": "",
     "english": "old man",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的爸爸很高。",
+        "pinyin": "Wǒ de bàba hěn gāo.",
+        "english": "My dad is very tall."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -56,7 +74,13 @@
     "pinyinNumbered": "",
     "english": "white",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一只白猫。",
+        "pinyin": "Zhè shì yī zhī bái māo.",
+        "english": "This is a white cat."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -72,7 +96,13 @@
     "pinyinNumbered": "",
     "english": "det.: eight",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有八个苹果。",
+        "pinyin": "Wǒ yǒu bā ge píngguǒ.",
+        "english": "I have eight apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -88,7 +118,13 @@
     "pinyinNumbered": "",
     "english": "daytime",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我白天工作，晚上休息。",
+        "pinyin": "Wǒ báitian gōngzuò, wǎnshang xiūxi.",
+        "english": "I work during the daytime and rest in the evening."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -104,7 +140,13 @@
     "pinyinNumbered": "",
     "english": "m.[event]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天都要上班。",
+        "pinyin": "Wǒ měi tiān dōu yào shàng bān.",
+        "english": "I have to go to work every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -120,7 +162,13 @@
     "pinyinNumbered": "",
     "english": "cent",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这件衣服一百块钱。",
+        "pinyin": "Zhè jiàn yīfu yībǎi kuài qián.",
+        "english": "This piece of clothing costs one hundred yuan."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -136,7 +184,13 @@
     "pinyinNumbered": "",
     "english": "particle: used to show mild imperative or uncertainty",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们一起去公园吧。",
+        "pinyin": "Wǒmen yīqǐ qù gōngyuán ba.",
+        "english": "Let's go to the park together."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -152,7 +206,13 @@
     "pinyinNumbered": "",
     "english": "det.: half",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我吃了半个苹果。",
+        "pinyin": "Wǒ chīle bàn ge píngguǒ.",
+        "english": "I ate half an apple."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -168,7 +228,13 @@
     "pinyinNumbered": "",
     "english": "half a year",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我半年前去了北京。",
+        "pinyin": "Wǒ bànnián qián qùle běi jīng.",
+        "english": "I went to Beijing half a year ago."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -184,7 +250,13 @@
     "pinyinNumbered": "",
     "english": "half of the day",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们半天没有看到他。",
+        "pinyin": "Wǒmen bàntiān méiyǒu kàndào tā.",
+        "english": "We didn't see him for half the day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -200,7 +272,13 @@
     "pinyinNumbered": "",
     "english": "help",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你能帮我吗？",
+        "pinyin": "Nǐ néng bāng wǒ ma?",
+        "english": "Can you help me?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -216,7 +294,13 @@
     "pinyinNumbered": "",
     "english": "assist",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你能帮忙吗？",
+        "pinyin": "Nǐ néng bāngmáng ma?",
+        "english": "Can you help me?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -232,7 +316,13 @@
     "pinyinNumbered": "",
     "english": "wrap",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我用纸包礼物。",
+        "pinyin": "Wǒ yòng zhǐ bāo lǐwù.",
+        "english": "I wrap the gift with paper."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -248,7 +338,13 @@
     "pinyinNumbered": "",
     "english": "steamed stuffed bun",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃包子。",
+        "pinyin": "Wǒ xǐhuān chī bāozi.",
+        "english": "I like to eat steamed buns."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -264,7 +360,13 @@
     "pinyinNumbered": "",
     "english": "m.[container]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喝一杯水。",
+        "pinyin": "Wǒ hē yī bēi shuǐ.",
+        "english": "I drink a cup of water."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -280,7 +382,13 @@
     "pinyinNumbered": "",
     "english": "tumbler",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢这个杯子。",
+        "pinyin": "Wǒ xǐhuān zhège bēizi.",
+        "english": "I like this tumbler."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -296,7 +404,13 @@
     "pinyinNumbered": "",
     "english": "north",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我家在学校的北边。",
+        "pinyin": "Wǒ jiā zài xuéxiào de běibian.",
+        "english": "My home is to the north of the school."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -312,7 +426,13 @@
     "pinyinNumbered": "",
     "english": "det.: this",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这本书很有意思。",
+        "pinyin": "Zhè běn shū hěn yǒu yìsi.",
+        "english": "This book is very interesting."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -328,7 +448,13 @@
     "pinyinNumbered": "",
     "english": "capital of Red China",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我来自北京。",
+        "pinyin": "Wǒ lái zì Běijīng.",
+        "english": "I am from Beijing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -344,7 +470,13 @@
     "pinyinNumbered": "",
     "english": "atomic number 97",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我家在北边。",
+        "pinyin": "Wǒ jiā zài běi biān.",
+        "english": "My home is in the north."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -360,7 +492,13 @@
     "pinyinNumbered": "",
     "english": "book",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一个新的本子。",
+        "pinyin": "Wǒ yǒu yīgè xīn de běnzi.",
+        "english": "I have a new book."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -376,7 +514,13 @@
     "pinyinNumbered": "",
     "english": "don't",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "别忘了带钥匙。",
+        "pinyin": "Bié wàng le dài yàoshi.",
+        "english": "Don't forget to bring the keys."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -392,7 +536,13 @@
     "pinyinNumbered": "",
     "english": "else",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢苹果，别的水果我不太喜欢。",
+        "pinyin": "Wǒ xǐhuān píngguǒ, biéde shuǐguǒ wǒ búhuì xǐhuān.",
+        "english": "I like apples, but I don't really like other fruits."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -408,7 +558,13 @@
     "pinyinNumbered": "",
     "english": "others",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "别人的书我不能拿。",
+        "pinyin": "Biéren de shū wǒ búnéng náǎ.",
+        "english": "I cannot take other people's books."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -424,7 +580,13 @@
     "pinyinNumbered": "",
     "english": "disease",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我昨天生病了，所以没有去上班。",
+        "pinyin": "Wǒ zuótiān shēngbìng le, suǒyǐ méiyǒu qù shàngbān.",
+        "english": "I got sick yesterday, so I didn't go to work."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -440,7 +602,13 @@
     "pinyinNumbered": "",
     "english": "shut-in",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "医生在看病人。",
+        "pinyin": "Yīshēng zài kàn bìngrén.",
+        "english": "The doctor is examining the patient."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -456,7 +624,13 @@
     "pinyinNumbered": "",
     "english": "compared with",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我比你高。",
+        "pinyin": "Wǒ bǐ nǐ gāo.",
+        "english": "I am taller than you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -472,7 +646,13 @@
     "pinyinNumbered": "",
     "english": "not very/too",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个房间不大，但很舒服。",
+        "pinyin": "Zhège fángjiān bùdà, dàn hěn shūfu.",
+        "english": "This room is not very big, but it's very comfortable."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -488,7 +668,13 @@
     "pinyinNumbered": "",
     "english": "you're welcome",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "谢谢你的帮助。不客气，这是我应该做的。",
+        "pinyin": "Xièxiè nǐ de bāngzhù. Bù kèqì, zhè shì wǒ yīnggāi zuò de.",
+        "english": "Thank you for your help. You're welcome, it's what I should do."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -504,7 +690,13 @@
     "pinyinNumbered": "",
     "english": "need not",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你不用担心,我会帮你。",
+        "pinyin": "Nǐ búyòng dānxīn, wǒ huì bāng nǐ.",
+        "english": "You don't need to worry, I will help you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -520,7 +712,13 @@
     "pinyinNumbered": "",
     "english": "vegetable",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃绿色的菜。",
+        "pinyin": "Wǒ xǐhuān chī lǜsè de cài.",
+        "english": "I like to eat green vegetables."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -536,7 +734,13 @@
     "pinyinNumbered": "",
     "english": "incorrect",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个答案不对。",
+        "pinyin": "Zhège dá'àn búduì.",
+        "english": "This answer is incorrect."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -552,7 +756,13 @@
     "pinyinNumbered": "",
     "english": "be short",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我差一块钱买这个。",
+        "pinyin": "Wǒ chà yī kuài qián mǎi zhège.",
+        "english": "I'm short one yuan to buy this."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -568,7 +778,13 @@
     "pinyinNumbered": "",
     "english": "non",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我不喜欢喝咖啡。",
+        "pinyin": "Wǒ bù xǐhuān hē kāfēi.",
+        "english": "I don't like drinking coffee."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -584,7 +800,13 @@
     "pinyinNumbered": "",
     "english": "tea",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢喝茶。",
+        "pinyin": "Wǒ xǐhuān hē chá.",
+        "english": "I like to drink tea."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -600,7 +822,13 @@
     "pinyinNumbered": "",
     "english": "oftentimes",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我常常喝茶。",
+        "pinyin": "Wǒ chángcháng hē chá.",
+        "english": "I often drink tea."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -616,7 +844,13 @@
     "pinyinNumbered": "",
     "english": "often",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我常常喝茶。",
+        "pinyin": "Wǒ chángcháng hē chá.",
+        "english": "I often drink tea."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -632,7 +866,13 @@
     "pinyinNumbered": "",
     "english": "vehicle",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的车很新。",
+        "pinyin": "Wǒ de chē hěn xīn.",
+        "english": "My car is very new."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -648,7 +888,13 @@
     "pinyinNumbered": "",
     "english": "sing",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢唱歌。",
+        "pinyin": "Wǒ xǐhuān chàng gē.",
+        "english": "I like to sing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -664,7 +910,13 @@
     "pinyinNumbered": "",
     "english": "Car",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的包在车上。",
+        "pinyin": "Wǒ de bāo zài chē shang.",
+        "english": "My bag is in the car."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -680,7 +932,13 @@
     "pinyinNumbered": "",
     "english": "ticket (for train/bus)",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我买了一张去北京的车票。",
+        "pinyin": "Wǒ mǎile yī zhāng qù Běijīng de chēpiào.",
+        "english": "I bought a ticket to Beijing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -696,7 +954,13 @@
     "pinyinNumbered": "",
     "english": "cry",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "小鸟在唱歌。",
+        "pinyin": "Xiǎo niǎo zài chàng gē.",
+        "english": "The little bird is singing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -712,7 +976,13 @@
     "pinyinNumbered": "",
     "english": "feed",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天吃早饭。",
+        "pinyin": "Wǒ měi tiān chī zǎofàn.",
+        "english": "I eat breakfast every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -728,7 +998,13 @@
     "pinyinNumbered": "",
     "english": "station",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在车站等你。",
+        "pinyin": "Wǒ zài chēzhàn děng nǐ.",
+        "english": "I'm waiting for you at the station."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -744,7 +1020,13 @@
     "pinyinNumbered": "",
     "english": "feed",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天都要吃饭。",
+        "pinyin": "Wǒ měi tiān dōu yào chī fàn.",
+        "english": "I have to eat every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -760,7 +1042,13 @@
     "pinyinNumbered": "",
     "english": "come forward",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请你出来玩。",
+        "pinyin": "Qǐng nǐ chūlái wán.",
+        "english": "Please come out and play."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -776,7 +1064,13 @@
     "pinyinNumbered": "",
     "english": "produce",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我出去了。",
+        "pinyin": "Wǒ chūqù le.",
+        "english": "I went out."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -792,7 +1086,13 @@
     "pinyinNumbered": "",
     "english": "go_out",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我想出去玩。",
+        "pinyin": "Wǒ xiǎng chūqu wán.",
+        "english": "I want to go out and play."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -808,7 +1108,13 @@
     "pinyinNumbered": "",
     "english": "bed",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的床很舒服。",
+        "pinyin": "Wǒ de chuáng hěn shūfu.",
+        "english": "My bed is very comfortable."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -824,7 +1130,13 @@
     "pinyinNumbered": "",
     "english": "order",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我第一次来这里。",
+        "pinyin": "Wǒ dì yī cì lái zhèlǐ.",
+        "english": "This is my first time coming here."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -840,7 +1152,13 @@
     "pinyinNumbered": "",
     "english": "to wear",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我穿了一件蓝色的衣服。",
+        "pinyin": "Wǒ chuānle yī jiàn lánsè de yīfu.",
+        "english": "I wore a blue shirt."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -856,7 +1174,13 @@
     "pinyinNumbered": "",
     "english": "wrong",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我写错了一个字。",
+        "pinyin": "Wǒ xiěcuò le yī gè zì.",
+        "english": "I wrote a character wrong."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -872,7 +1196,13 @@
     "pinyinNumbered": "",
     "english": "from",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我从家里去学校。",
+        "pinyin": "Wǒ cóng jiālǐ qù xuéxiào.",
+        "english": "I go to school from home."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -888,7 +1218,13 @@
     "pinyinNumbered": "",
     "english": "generalized verb of doing with specific meaning determined by its object",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天打篮球。",
+        "pinyin": "Wǒ měitiān dǎ lánqiú.",
+        "english": "I play basketball every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -904,7 +1240,13 @@
     "pinyinNumbered": "",
     "english": "to take a taxi (in town)",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我今天打车去机场。",
+        "pinyin": "Wǒ jīntiān dǎchē qù jīchǎng.",
+        "english": "I'm taking a taxi to the airport today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -920,7 +1262,13 @@
     "pinyinNumbered": "",
     "english": "make telephone call",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天都给妈妈打电话。",
+        "pinyin": "Wǒ měitiān dōu gěi māma dǎ diànhuà.",
+        "english": "I call my mom every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -936,7 +1284,13 @@
     "pinyinNumbered": "",
     "english": "unscrew",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请打开门。",
+        "pinyin": "Qǐng dǎ kāi mén.",
+        "english": "Please open the door."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -952,7 +1306,13 @@
     "pinyinNumbered": "",
     "english": "play a ball game using arms/hands",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢和朋友一起打球。",
+        "pinyin": "Wǒ xǐhuān hé péngyou yìqǐ dǎqiú.",
+        "english": "I like to play ball games with friends."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -968,7 +1328,13 @@
     "pinyinNumbered": "",
     "english": "university",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我想去北京大学读书。",
+        "pinyin": "Wǒ xiǎng qù Běijīng Dàxué dúshū.",
+        "english": "I want to study at Peking University."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -984,7 +1350,13 @@
     "pinyinNumbered": "",
     "english": "great",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一个大苹果。",
+        "pinyin": "Zhè shì yī gè dà píngguǒ.",
+        "english": "This is a big apple."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1000,7 +1372,13 @@
     "pinyinNumbered": "",
     "english": "man",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他是一个大学生。",
+        "pinyin": "Tā shì yīgè dàxuéshēng.",
+        "english": "He is a university student."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1016,7 +1394,13 @@
     "pinyinNumbered": "",
     "english": "to get",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我得到了一个礼物。",
+        "pinyin": "Wǒ dé dào le yī ge lǐwù.",
+        "english": "I got a gift."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1032,7 +1416,13 @@
     "pinyinNumbered": "",
     "english": "up until",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们工作到晚上六点。",
+        "pinyin": "Wǒmen gōngzuò dào wǎnshang liù diǎn.",
+        "english": "We work until 6 o'clock in the evening."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1048,7 +1438,13 @@
     "pinyinNumbered": "",
     "english": "conj.: and so on",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃苹果、香蕉等水果。",
+        "pinyin": "Wǒ xǐhuān chī píngguǒ, xiāngjiāo děng shuǐguǒ.",
+        "english": "I like to eat apples, bananas, and other fruits."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1064,7 +1460,13 @@
     "pinyinNumbered": "",
     "english": "location",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们在哪个地点见面？",
+        "pinyin": "Wǒmen zài nǎge dìdiǎn jiànmiàn?",
+        "english": "Where should we meet?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1080,7 +1482,13 @@
     "pinyinNumbered": "",
     "english": "the earth",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "小猫在地上睡觉。",
+        "pinyin": "Xiǎo māo zài dì shang shuìjiào.",
+        "english": "The kitten is sleeping on the ground."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1096,7 +1504,13 @@
     "pinyinNumbered": "",
     "english": "country",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢这个地方。",
+        "pinyin": "Wǒ xǐhuān zhège dìfang.",
+        "english": "I like this place."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1112,7 +1526,13 @@
     "pinyinNumbered": "",
     "english": "on the ground",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书在地上。",
+        "pinyin": "Wǒ de shū zài dìshang.",
+        "english": "My book is on the ground."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1128,7 +1548,13 @@
     "pinyinNumbered": "",
     "english": "particle: emphasizing an action/situation",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我是认真的。",
+        "pinyin": "Wǒ shì rènzhēn de.",
+        "english": "I am serious."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1144,7 +1570,13 @@
     "pinyinNumbered": "",
     "english": "map",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一张中国地图。",
+        "pinyin": "Zhè shì yī zhāng Zhōngguó dìtú.",
+        "english": "This is a map of China."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1160,7 +1592,13 @@
     "pinyinNumbered": "",
     "english": "brother",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的弟弟。",
+        "pinyin": "Zhè shì wǒ de dìdi.",
+        "english": "This is my younger brother."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1176,7 +1614,13 @@
     "pinyinNumbered": "",
     "english": "mansion",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一个很大的第。",
+        "pinyin": "Zhè shì yī ge hěn dà de dì.",
+        "english": "This is a very large mansion."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1192,7 +1636,13 @@
     "pinyinNumbered": "",
     "english": "m.[proximation]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "现在差不多三点了。",
+        "pinyin": "Xiànzài chàbuduō sān diǎn le.",
+        "english": "It's almost three o'clock now."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1208,7 +1658,13 @@
     "pinyinNumbered": "",
     "english": "blower",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我需要打电话。",
+        "pinyin": "Wǒ xūyào dǎ diànhuà.",
+        "english": "I need to make a phone call."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1224,7 +1680,13 @@
     "pinyinNumbered": "",
     "english": "electricity",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个房间没有电。",
+        "pinyin": "Zhège fángjiān méiyǒu diàn.",
+        "english": "This room has no electricity."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1240,7 +1702,13 @@
     "pinyinNumbered": "",
     "english": "electronic computer",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一台电脑。",
+        "pinyin": "Wǒ yǒu yī tái diànnǎo.",
+        "english": "I have a computer."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1256,7 +1724,13 @@
     "pinyinNumbered": "",
     "english": "set",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我家里有一台电视机。",
+        "pinyin": "Wǒ jiālǐ yǒu yī tái diànshìjī.",
+        "english": "I have a television set at home."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1272,7 +1746,13 @@
     "pinyinNumbered": "",
     "english": "cinematography",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢看电影。",
+        "pinyin": "Wǒ xǐhuān kàn diànyǐng.",
+        "english": "I like to watch movies."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1288,7 +1768,13 @@
     "pinyinNumbered": "",
     "english": "TV",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢看电视。",
+        "pinyin": "Wǒ xǐhuān kàn diànshì.",
+        "english": "I like to watch TV."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1304,7 +1790,13 @@
     "pinyinNumbered": "",
     "english": "cinema",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我想去电影院看电影。",
+        "pinyin": "Wǒ xiǎng qù diànyǐng yuàn kàn diànyǐng.",
+        "english": "I want to go to the cinema to watch a movie."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1320,7 +1812,13 @@
     "pinyinNumbered": "",
     "english": "east",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "公园在学校的东边。",
+        "pinyin": "Gōngyuán zài xuéxiào de dōngbiān.",
+        "english": "The park is on the east side of the school."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1336,7 +1834,13 @@
     "pinyinNumbered": "",
     "english": "east",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我家在城市的东边。",
+        "pinyin": "Wǒ jiā zài chéngshì de dōngbiān.",
+        "english": "My home is on the east side of the city."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1352,7 +1856,13 @@
     "pinyinNumbered": "",
     "english": "thing",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个东西很便宜。",
+        "pinyin": "Zhège dōngxi hěn piányi.",
+        "english": "This thing is very cheap."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1368,7 +1878,13 @@
     "pinyinNumbered": "",
     "english": "concuss",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "不要动那个杯子。",
+        "pinyin": "búyào dòng nàge bēizi.",
+        "english": "Don't move that cup."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1384,7 +1900,13 @@
     "pinyinNumbered": "",
     "english": "demeanor",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他的动作很快。",
+        "pinyin": "Tā de dòngzuò hěn kuài.",
+        "english": "His movements are very fast."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1400,7 +1922,13 @@
     "pinyinNumbered": "",
     "english": "study",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天读书。",
+        "pinyin": "Wǒ měi tiān dú shū.",
+        "english": "I read books every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1416,7 +1944,13 @@
     "pinyinNumbered": "",
     "english": "all",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们都喜欢吃饭。",
+        "pinyin": "Wǒmen dōu xǐhuān chīfàn.",
+        "english": "We all like to eat."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1432,7 +1966,13 @@
     "pinyinNumbered": "",
     "english": "read",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢读书。",
+        "pinyin": "Wǒ xǐhuān dú shū.",
+        "english": "I like to read."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1448,7 +1988,13 @@
     "pinyinNumbered": "",
     "english": "be unfair to",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我迟到了，对不起。",
+        "pinyin": "Wǒ chídào le, duìbuqǐ.",
+        "english": "I'm late, I'm sorry."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1464,7 +2010,13 @@
     "pinyinNumbered": "",
     "english": "many",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有很多朋友。",
+        "pinyin": "Wǒ yǒu hěn duō péngyou.",
+        "english": "I have many friends."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1480,7 +2032,13 @@
     "pinyinNumbered": "",
     "english": "det.: how many",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果多少钱？",
+        "pinyin": "Zhège píngguǒ duōshao qián?",
+        "english": "How much is this apple?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1496,7 +2054,13 @@
     "pinyinNumbered": "",
     "english": "viscount",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的儿子。",
+        "pinyin": "Zhè shì wǒ de érzi.",
+        "english": "This is my son."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1512,7 +2076,13 @@
     "pinyinNumbered": "",
     "english": "starve",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我很饿，想吃饭。",
+        "pinyin": "Wǒ hěn è, xiǎng chīfàn.",
+        "english": "I'm very hungry and want to eat."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1528,7 +2098,13 @@
     "pinyinNumbered": "",
     "english": "correct",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你说得对。",
+        "pinyin": "Nǐ shuō de duì.",
+        "english": "You're right."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1544,7 +2120,13 @@
     "pinyinNumbered": "",
     "english": "det.: two",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有两个苹果，你要一个吗？",
+        "pinyin": "Wǒ yǒu liǎng gè píngguǒ, nǐ yào yī gè ma?",
+        "english": "I have two apples, do you want one?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1560,7 +2142,13 @@
     "pinyinNumbered": "",
     "english": "food",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃米饭。",
+        "pinyin": "Wǒ xǐhuān chī mǐfàn.",
+        "english": "I like to eat rice."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1576,7 +2164,13 @@
     "pinyinNumbered": "",
     "english": "restraurant",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢去这家饭店吃饭。",
+        "pinyin": "Wǒ xǐhuān qù zhè jiā fàndiàn chīfàn.",
+        "english": "I like to eat at this restaurant."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1592,7 +2186,13 @@
     "pinyinNumbered": "",
     "english": "apartment",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的房间。",
+        "pinyin": "Zhè shì wǒ de fángjiān.",
+        "english": "This is my apartment."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1608,7 +2208,13 @@
     "pinyinNumbered": "",
     "english": "building (of less than three stories)",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的房子。",
+        "pinyin": "Zhè shì wǒ de fángzi.",
+        "english": "This is my house."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1624,7 +2230,13 @@
     "pinyinNumbered": "",
     "english": "loose",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请放松，没有问题。",
+        "pinyin": "Qǐng fàng松, méiyǒu wèntí.",
+        "english": "Please relax, there's no problem."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1640,7 +2252,13 @@
     "pinyinNumbered": "",
     "english": "have a day off",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "明天我们放假，可以睡懒觉。",
+        "pinyin": "Míngtiān wǒmen fàng jià, kěyǐ shuì lǎn jiào.",
+        "english": "Tomorrow we have a day off, so we can sleep in."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1656,7 +2274,13 @@
     "pinyinNumbered": "",
     "english": "hover in the air",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "小鸟在天空飞。",
+        "pinyin": "Xiǎo niǎo zài tiānkōng fēi.",
+        "english": "A small bird is flying in the sky."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1672,7 +2296,13 @@
     "pinyinNumbered": "",
     "english": "have winter holidays",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天放学了，我很开心。",
+        "pinyin": "Jīntiān fàng xué le, wǒ hěn kāixīn.",
+        "english": "School is over today, and I'm very happy."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1688,7 +2318,13 @@
     "pinyinNumbered": "",
     "english": "aerocraft",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我想坐飞机去北京。",
+        "pinyin": "Wǒ xiǎng zuò fēijī qù Běijīng.",
+        "english": "I want to take a plane to Beijing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1704,7 +2340,13 @@
     "pinyinNumbered": "",
     "english": "extraordinary",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天天气非常好。",
+        "pinyin": "Jīntiān tiānqì fēicháng hǎo.",
+        "english": "The weather is extraordinary/very good today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1720,7 +2362,13 @@
     "pinyinNumbered": "",
     "english": "m.[general]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果分成两部分。",
+        "pinyin": "Zhège píngguǒ fēnchéng liǎng bùfen.",
+        "english": "This apple is divided into two parts."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1736,7 +2384,13 @@
     "pinyinNumbered": "",
     "english": "wind",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天风很大。",
+        "pinyin": "Jīntiān fēng hěn dà.",
+        "english": "The wind is very strong today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1752,7 +2406,13 @@
     "pinyinNumbered": "",
     "english": "do",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你今天干什么呢？",
+        "pinyin": "Nǐ jīntiān gàn shénme ne?",
+        "english": "What are you doing today?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1768,7 +2428,13 @@
     "pinyinNumbered": "",
     "english": "clean",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的房间很干净。",
+        "pinyin": "Wǒ de fángjiān hěn gānjìng.",
+        "english": "My room is very clean."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1784,7 +2450,13 @@
     "pinyinNumbered": "",
     "english": "glad",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我很高兴见到你。",
+        "pinyin": "Wǒ hěn gāoxìng jiàndào nǐ.",
+        "english": "I'm very glad to see you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1800,7 +2472,13 @@
     "pinyinNumbered": "",
     "english": "tall",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个男生很高。",
+        "pinyin": "Zhège nánshēng hěn gāo.",
+        "english": "This boy is very tall."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1816,7 +2494,13 @@
     "pinyinNumbered": "",
     "english": "tell",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "妈妈告诉我要好好学习。",
+        "pinyin": "Māma gàosu wǒ yào hǎohāo xuéxí.",
+        "english": "Mom told me to study hard."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1832,7 +2516,13 @@
     "pinyinNumbered": "",
     "english": "big brother",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的哥哥。",
+        "pinyin": "Zhè shì wǒ de gēge.",
+        "english": "This is my big brother."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1848,7 +2538,13 @@
     "pinyinNumbered": "",
     "english": "song",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢唱歌。",
+        "pinyin": "Wǒ xǐhuān chànggē.",
+        "english": "I like to sing songs."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1864,7 +2560,13 @@
     "pinyinNumbered": "",
     "english": "do something",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你现在干什么呢？",
+        "pinyin": "Nǐ xiànzài gànshénme ne?",
+        "english": "What are you doing right now?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1880,7 +2582,13 @@
     "pinyinNumbered": "",
     "english": "piece",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一个苹果。",
+        "pinyin": "Wǒ yǒu yī gè píngguǒ.",
+        "english": "I have one apple."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1896,7 +2604,13 @@
     "pinyinNumbered": "",
     "english": "give",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我给你一个苹果。",
+        "pinyin": "Wǒ gěi nǐ yī ge píngguǒ.",
+        "english": "I give you an apple."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1912,7 +2626,13 @@
     "pinyinNumbered": "",
     "english": "with",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我跟你一起去。",
+        "pinyin": "Wǒ gēn nǐ yīqǐ qù.",
+        "english": "I'll go with you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1928,7 +2648,13 @@
     "pinyinNumbered": "",
     "english": "navvy",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那个工人在工作。",
+        "pinyin": "Nàge gōngrén zài gōngzuò.",
+        "english": "That worker is working."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1944,7 +2670,13 @@
     "pinyinNumbered": "",
     "english": "work",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天都要去工作。",
+        "pinyin": "Wǒ měitiān dōu yào qù gōngzuò.",
+        "english": "I have to go to work every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1960,7 +2692,13 @@
     "pinyinNumbered": "",
     "english": "shut",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请关上门。",
+        "pinyin": "Qǐng guānshang mén.",
+        "english": "Please shut the door."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1976,7 +2714,13 @@
     "pinyinNumbered": "",
     "english": "to close (a door)",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请关上门。",
+        "pinyin": "Qǐng guānshàng mén.",
+        "english": "Please close the door."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -1992,7 +2736,13 @@
     "pinyinNumbered": "",
     "english": "surname Guo",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "国是我的姓氏。",
+        "pinyin": "Guó shì wǒ de xìngshì.",
+        "english": "Guo is my surname."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2008,7 +2758,13 @@
     "pinyinNumbered": "",
     "english": "sirkar",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "中国是一个大国家。",
+        "pinyin": "Zhōngguó shì yīgè dà guójiā.",
+        "english": "China is a large country."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2024,7 +2780,13 @@
     "pinyinNumbered": "",
     "english": "expensive",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个手机很贵。",
+        "pinyin": "Zhège shǒujī hěn guì.",
+        "english": "This phone is very expensive."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2040,7 +2802,13 @@
     "pinyinNumbered": "",
     "english": "overseas",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的朋友在国外工作。",
+        "pinyin": "Wǒ de péngyou zài guówài gōngzuò.",
+        "english": "My friend works overseas."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2056,7 +2824,13 @@
     "pinyinNumbered": "",
     "english": "still",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你还是要多喝水。",
+        "pinyin": "Nǐ háishi yào duō hē shuǐ.",
+        "english": "You still need to drink more water."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2072,7 +2846,13 @@
     "pinyinNumbered": "",
     "english": "kid",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个孩子很聪明。",
+        "pinyin": "Zhège háizi hěn cōngming.",
+        "english": "This kid is very smart."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2088,7 +2868,13 @@
     "pinyinNumbered": "",
     "english": "conj.: furthermore",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一个苹果,还有一个橙子。",
+        "pinyin": "Wǒ yǒu yī gè píngguǒ, háiyǒu yī gè chéngzi.",
+        "english": "I have an apple, and furthermore I have an orange."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2104,7 +2890,13 @@
     "pinyinNumbered": "",
     "english": "[aspect]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我吃过北京烤鸭。",
+        "pinyin": "Wǒ chīguò běi jīng kǎo yā.",
+        "english": "I have eaten Peking duck before."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2120,7 +2912,13 @@
     "pinyinNumbered": "",
     "english": "Chinese language",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢学汉语。",
+        "pinyin": "Wǒ xǐhuān xué Hànyǔ.",
+        "english": "I like to study Chinese language."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2136,7 +2934,13 @@
     "pinyinNumbered": "",
     "english": "still",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我还要一杯咖啡。",
+        "pinyin": "Wǒ háiyào yībēi kāfēi.",
+        "english": "I still want another cup of coffee."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2152,7 +2956,13 @@
     "pinyinNumbered": "",
     "english": "Chinese character",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢学习汉字。",
+        "pinyin": "Wǒ xǐhuān xuéxí Hànzì.",
+        "english": "I like learning Chinese characters."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2168,7 +2978,13 @@
     "pinyinNumbered": "",
     "english": "good",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果很好吃。",
+        "pinyin": "Zhège píngguǒ hěn hǎochī.",
+        "english": "This apple tastes very good."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2184,7 +3000,13 @@
     "pinyinNumbered": "",
     "english": "delicious",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果很好吃。",
+        "pinyin": "Zhège píngguǒ hěn hǎochī.",
+        "english": "This apple is very delicious."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2200,7 +3022,13 @@
     "pinyinNumbered": "",
     "english": "embarrassed",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他在课堂上说错话了，看起来很好看。",
+        "pinyin": "Tā zài kètáng shang shuō cuòhuà le, kàn qǐlái hěn hǎokàn.",
+        "english": "He said something wrong in class and looked very embarrassed."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2216,7 +3044,13 @@
     "pinyinNumbered": "",
     "english": "pleasant to hear",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个音乐很好听。",
+        "pinyin": "Zhège yīnyuè hěn hǎotīng.",
+        "english": "This music is very pleasant to listen to."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2232,7 +3066,13 @@
     "pinyinNumbered": "",
     "english": "interesting",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个游戏真好玩儿！",
+        "pinyin": "Zhège yóuxì zhēn hǎowánr!",
+        "english": "This game is really fun!"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2248,7 +3088,13 @@
     "pinyinNumbered": "",
     "english": "m.[general]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的电话号是13812345678。",
+        "pinyin": "Wǒ de diànhuà hào shì 13812345678.",
+        "english": "My phone number is 13812345678."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2264,7 +3110,13 @@
     "pinyinNumbered": "",
     "english": "drink",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喝水。",
+        "pinyin": "Wǒ hē shuǐ.",
+        "english": "I drink water."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2280,7 +3132,13 @@
     "pinyinNumbered": "",
     "english": "and",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢苹果和香蕉。",
+        "pinyin": "Wǒ xǐhuān píngguǒ hé xiāngjiāo.",
+        "english": "I like apples and bananas."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2296,7 +3154,13 @@
     "pinyinNumbered": "",
     "english": "pretty",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果很红。",
+        "pinyin": "Zhège píngguǒ hěn hóng.",
+        "english": "This apple is pretty red."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2312,7 +3176,13 @@
     "pinyinNumbered": "",
     "english": "rear",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我坐在他的后面。",
+        "pinyin": "Wǒ zuò zài tā de hòumiàn.",
+        "english": "I sit behind him."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2328,7 +3198,13 @@
     "pinyinNumbered": "",
     "english": "back",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书包在椅子后边。",
+        "pinyin": "Wǒ de shūbāo zài yǐzi hòubian.",
+        "english": "My backpack is behind the chair."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2344,7 +3220,13 @@
     "pinyinNumbered": "",
     "english": "words",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你说什么话呢？",
+        "pinyin": "Nǐ shuō shénme huà ne?",
+        "english": "What are you talking about?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2360,7 +3242,13 @@
     "pinyinNumbered": "",
     "english": "the day after tomorrow",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "后天我们去公园玩。",
+        "pinyin": "hòutiān wǒmen qù gōngyuán wán.",
+        "english": "The day after tomorrow we will go play in the park."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2376,7 +3264,13 @@
     "pinyinNumbered": "",
     "english": "spoiled",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果坏了，不能吃。",
+        "pinyin": "Zhège píngguǒ huài le, búnéng chī.",
+        "english": "This apple is spoiled and cannot be eaten."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2392,7 +3286,13 @@
     "pinyinNumbered": "",
     "english": "answer",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "老师问了一个问题，我举手回答。",
+        "pinyin": "Lǎoshī wènle yīgè wèntí, wǒ júshǒu huídá.",
+        "english": "The teacher asked a question, and I raised my hand to answer."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2408,7 +3308,13 @@
     "pinyinNumbered": "",
     "english": "return",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我今天下午回家。",
+        "pinyin": "Wǒ jīntiān xiàwǔ huí jiā.",
+        "english": "I'm returning home this afternoon."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2424,7 +3330,13 @@
     "pinyinNumbered": "",
     "english": "spend",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我花了很多钱买书。",
+        "pinyin": "Wǒ huāle hěnduō qián mǎi shū.",
+        "english": "I spent a lot of money buying books."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2440,7 +3352,13 @@
     "pinyinNumbered": "",
     "english": "remount",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我回到家里吃饭。",
+        "pinyin": "Wǒ huídào jiāli chīfàn.",
+        "english": "I returned home to eat."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2456,7 +3374,13 @@
     "pinyinNumbered": "",
     "english": "return home",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我今天很累，想回家休息。",
+        "pinyin": "Wǒ jīntiān hěn lèi, xiǎng huí jiā xi休息.",
+        "english": "I'm very tired today and want to go home and rest."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2472,7 +3396,13 @@
     "pinyinNumbered": "",
     "english": "go_home",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我要回去了。",
+        "pinyin": "Wǒ yào huíqu le.",
+        "english": "I need to go home now."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2488,7 +3418,13 @@
     "pinyinNumbered": "",
     "english": "come back",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "妈妈下班后回来了。",
+        "pinyin": "Māma xiàbān hòu huílai le.",
+        "english": "Mom came back after work."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2504,7 +3440,13 @@
     "pinyinNumbered": "",
     "english": "to be able",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我会说中文。",
+        "pinyin": "Wǒ huì shuō zhōngwén.",
+        "english": "I can speak Chinese."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2520,7 +3462,13 @@
     "pinyinNumbered": "",
     "english": "choo-choo",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢坐火车。",
+        "pinyin": "Wǒ xǐhuān zuò huǒchē.",
+        "english": "I like to take the train."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2536,7 +3484,13 @@
     "pinyinNumbered": "",
     "english": "landing field",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们去机场接你。",
+        "pinyin": "Wǒmen qù jīchǎng jiē nǐ.",
+        "english": "We're going to the airport to pick you up."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2552,7 +3506,13 @@
     "pinyinNumbered": "",
     "english": "(chicken) egg",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我早上吃了一个鸡蛋。",
+        "pinyin": "Wǒ zǎoshang chīle yī ge jīdàn.",
+        "english": "I ate an egg this morning."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2568,7 +3528,13 @@
     "pinyinNumbered": "",
     "english": "air ticket",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我买了一张去北京的机票。",
+        "pinyin": "Wǒ mǎile yī zhāng qù běi jīng de jīpiào.",
+        "english": "I bought an air ticket to Beijing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2584,7 +3550,13 @@
     "pinyinNumbered": "",
     "english": "det.: how many",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你有几个朋友？",
+        "pinyin": "Nǐ yǒu jǐ ge péngyou?",
+        "english": "How many friends do you have?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2600,7 +3572,13 @@
     "pinyinNumbered": "",
     "english": "come to mind",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我记得你的名字。",
+        "pinyin": "Wǒ jìde nǐ de míngzì.",
+        "english": "I remember your name."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2616,7 +3594,13 @@
     "pinyinNumbered": "",
     "english": "to remember",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你要记住我的电话号码。",
+        "pinyin": "Nǐ yào jìzhu wǒ de diànhuà hàomǎ.",
+        "english": "You need to remember my phone number."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2632,7 +3616,13 @@
     "pinyinNumbered": "",
     "english": "family",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的家很大。",
+        "pinyin": "Wǒ de jiā hěn dà.",
+        "english": "My family is very large."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2648,7 +3638,13 @@
     "pinyinNumbered": "",
     "english": "write down",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我记得你的名字。",
+        "pinyin": "Wǒ jìde nǐ de míngzi.",
+        "english": "I remember your name."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2664,7 +3660,13 @@
     "pinyinNumbered": "",
     "english": "home",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我家里有一只猫。",
+        "pinyin": "Wǒ jiālǐ yǒu yī zhī māo.",
+        "english": "I have a cat at home."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2680,7 +3682,13 @@
     "pinyinNumbered": "",
     "english": "meet",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们明天见面好吗？",
+        "pinyin": "Wǒmen míngtiān jiànmiàn hǎo ma?",
+        "english": "Shall we meet tomorrow?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2696,7 +3704,13 @@
     "pinyinNumbered": "",
     "english": "teach",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "老师教我们英语。",
+        "pinyin": "Lǎoshī jiāo wǒmen yīngyǔ.",
+        "english": "The teacher teaches us English."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2712,7 +3726,13 @@
     "pinyinNumbered": "",
     "english": "relation",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的家人都很好。",
+        "pinyin": "Wǒ de jiārén dōu hěn hǎo.",
+        "english": "My family members are all very well."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2728,7 +3748,13 @@
     "pinyinNumbered": "",
     "english": "locality",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在房间里看书。",
+        "pinyin": "Wǒ zài fángjiān lǐ kànshū.",
+        "english": "I am reading a book in the room."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2744,7 +3770,13 @@
     "pinyinNumbered": "",
     "english": "see",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我看见你了。",
+        "pinyin": "Wǒ kànjiàn nǐ le.",
+        "english": "I saw you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2760,7 +3792,13 @@
     "pinyinNumbered": "",
     "english": "to be called",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我叫王明。",
+        "pinyin": "Wǒ jiào Wáng Míng.",
+        "english": "My name is Wang Ming."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2776,7 +3814,13 @@
     "pinyinNumbered": "",
     "english": "teaching block",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们的教学楼很大。",
+        "pinyin": "Wǒmen de jiàoxuélóu hěn dà.",
+        "english": "Our teaching block is very big."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2792,7 +3836,13 @@
     "pinyinNumbered": "",
     "english": "introduce",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我来介绍一下我的朋友。",
+        "pinyin": "Wǒ lái jièshào yīxià wǒ de péngyou.",
+        "english": "Let me introduce my friend to you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2808,7 +3858,13 @@
     "pinyinNumbered": "",
     "english": "this year",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今年天气很好。",
+        "pinyin": "Jīnnián tiānqì hěn hǎo.",
+        "english": "The weather is very nice this year."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2824,7 +3880,13 @@
     "pinyinNumbered": "",
     "english": "sis",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的姐姐在北京。",
+        "pinyin": "Wǒ de jiějie zài Běijīng.",
+        "english": "My older sister is in Beijing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2840,7 +3902,13 @@
     "pinyinNumbered": "",
     "english": "today",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天天气很好。",
+        "pinyin": "Jīntiān tiānqì hěn hǎo.",
+        "english": "The weather is very nice today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2856,7 +3924,13 @@
     "pinyinNumbered": "",
     "english": "enter",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请进来。",
+        "pinyin": "Qǐng jìnlái.",
+        "english": "Please come in."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2872,7 +3946,13 @@
     "pinyinNumbered": "",
     "english": "come in",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请进来坐。",
+        "pinyin": "Qǐng jìn lai zuò.",
+        "english": "Please come in and sit down."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2888,7 +3968,13 @@
     "pinyinNumbered": "",
     "english": "enter",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请进去，老师在里面。",
+        "pinyin": "Qǐng jìnqu, lǎoshī zài lǐmiàn.",
+        "english": "Please go in, the teacher is inside."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2904,7 +3990,13 @@
     "pinyinNumbered": "",
     "english": "then",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我吃完饭就去睡觉。",
+        "pinyin": "Wǒ chīwán fàn jiù qù shuìjiào.",
+        "english": "I'll go to sleep right after I finish eating."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2920,7 +4012,13 @@
     "pinyinNumbered": "",
     "english": "imagine",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我觉得这个很好吃。",
+        "pinyin": "Wǒ juéde zhège hěn hǎochī.",
+        "english": "I think this tastes really good."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2936,7 +4034,13 @@
     "pinyinNumbered": "",
     "english": "det.: nine",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有九个苹果。",
+        "pinyin": "Wǒ yǒu jiǔ ge píngguǒ.",
+        "english": "I have nine apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2952,7 +4056,13 @@
     "pinyinNumbered": "",
     "english": "open",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请开门。",
+        "pinyin": "Qǐng kāi mén.",
+        "english": "Please open the door."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2968,7 +4078,13 @@
     "pinyinNumbered": "",
     "english": "to drive a car",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天开车去上班。",
+        "pinyin": "Wǒ měi tiān kāi chē qù shàngbān.",
+        "english": "I drive to work every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2984,7 +4100,13 @@
     "pinyinNumbered": "",
     "english": "hold/attend meeting",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "明天我们要开会。",
+        "pinyin": "míngtiān wǒmen yào kāihuì.",
+        "english": "We need to hold a meeting tomorrow."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3000,7 +4122,13 @@
     "pinyinNumbered": "",
     "english": "kid",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你别开玩笑了，这是真的。",
+        "pinyin": "Nǐ bié kāi wánxiào le, zhè shì zhēn de.",
+        "english": "Stop kidding, this is real."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3016,7 +4144,13 @@
     "pinyinNumbered": "",
     "english": "see",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我看电视。",
+        "pinyin": "Wǒ kàn diànshì.",
+        "english": "I watch TV."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3032,7 +4166,13 @@
     "pinyinNumbered": "",
     "english": "to visit a doctor",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我今天要去医院看病。",
+        "pinyin": "Wǒ jīntiān yào qù yīyuàn kàn bìng.",
+        "english": "I need to go to the hospital to see a doctor today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3048,7 +4188,13 @@
     "pinyinNumbered": "",
     "english": "view",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我看到一只小猫。",
+        "pinyin": "Wǒ kàndào yī zhī xiǎo māo.",
+        "english": "I saw a small cat."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3064,7 +4210,13 @@
     "pinyinNumbered": "",
     "english": "study",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我明天要考试。",
+        "pinyin": "Wǒ míngtiān yào kǎoshì.",
+        "english": "I have an exam tomorrow."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3080,7 +4232,13 @@
     "pinyinNumbered": "",
     "english": "seeing",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我看见一只小狗。",
+        "pinyin": "Wǒ kànjiàn yī zhī xiǎo gǒu.",
+        "english": "I saw a small dog."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3096,7 +4254,13 @@
     "pinyinNumbered": "",
     "english": "examination",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "明天我有一个考试。",
+        "pinyin": "míngtiān wǒ yǒu yīgè kǎoshì。",
+        "english": "I have an examination tomorrow."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3112,7 +4276,13 @@
     "pinyinNumbered": "",
     "english": "thirsty",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我很渴，想喝水。",
+        "pinyin": "Wǒ hěn kě, xiǎng hē shuǐ.",
+        "english": "I'm very thirsty and want to drink water."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3128,7 +4298,13 @@
     "pinyinNumbered": "",
     "english": "subject",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢数学课。",
+        "pinyin": "Wǒ xǐhuān shùxué kè.",
+        "english": "I like math class."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3144,7 +4320,13 @@
     "pinyinNumbered": "",
     "english": "text edition",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的课本在书包里。",
+        "pinyin": "Wǒ de kèběn zài shūbāo lǐ.",
+        "english": "My textbook is in my backpack."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3160,7 +4342,13 @@
     "pinyinNumbered": "",
     "english": "text",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这篇课文很简单。",
+        "pinyin": "Zhè piān kèwén hěn jiǎndān.",
+        "english": "This text is very simple."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3176,7 +4364,13 @@
     "pinyinNumbered": "",
     "english": "m.[general]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一张口。",
+        "pinyin": "Wǒ yǒu yī zhāng kǒu。",
+        "english": "I have one mouth."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3192,7 +4386,13 @@
     "pinyinNumbered": "",
     "english": "m.[general]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一块巧克力。",
+        "pinyin": "Wǒ yǒu yī kuài qiǎokèlì.",
+        "english": "I have a piece of chocolate."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3208,7 +4408,13 @@
     "pinyinNumbered": "",
     "english": "fast",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我吃饭很快。",
+        "pinyin": "Wǒ chīfàn hěn kuài.",
+        "english": "I eat very fast."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3224,7 +4430,13 @@
     "pinyinNumbered": "",
     "english": "to",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我来帮你。",
+        "pinyin": "Wǒ lái bāng nǐ.",
+        "english": "I'll help you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3240,7 +4452,13 @@
     "pinyinNumbered": "",
     "english": "arrive",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他来到了学校。",
+        "pinyin": "Tā láidào le xuéxiào.",
+        "english": "He arrived at school."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3256,7 +4474,13 @@
     "pinyinNumbered": "",
     "english": "old",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的老师很好。",
+        "pinyin": "Wǒ de lǎoshī hěn hǎo.",
+        "english": "My teacher is very good."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3272,7 +4496,13 @@
     "pinyinNumbered": "",
     "english": "oldster",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那个老人每天都在公园里散步。",
+        "pinyin": "Nàge lǎorén měitiān dōu zài gōngyuán lǐ sànbù.",
+        "english": "That old man takes a walk in the park every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3288,7 +4518,13 @@
     "pinyinNumbered": "",
     "english": "rabbi",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的老师很好。",
+        "pinyin": "Wǒ de lǎoshī hěn hǎo.",
+        "english": "My teacher is very nice."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3304,7 +4540,13 @@
     "pinyinNumbered": "",
     "english": "entirely",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我吃完了。",
+        "pinyin": "Wǒ chīwán le.",
+        "english": "I finished eating."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3320,7 +4562,13 @@
     "pinyinNumbered": "",
     "english": "tire",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我今天很累。",
+        "pinyin": "Wǒ jīntiān hěn lèi.",
+        "english": "I am very tired today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3336,7 +4584,13 @@
     "pinyinNumbered": "",
     "english": "cool",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天天气很冷。",
+        "pinyin": "Jīntiān tiānqì hěn lěng.",
+        "english": "The weather is very cold today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3352,7 +4606,13 @@
     "pinyinNumbered": "",
     "english": "inside",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书在包里。",
+        "pinyin": "Wǒ de shū zài bāo lǐ.",
+        "english": "My book is in the bag."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3368,7 +4628,13 @@
     "pinyinNumbered": "",
     "english": "inside",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的钥匙在包里边。",
+        "pinyin": "Wǒ de yàoshì zài bāo lǐbian.",
+        "english": "My keys are inside the bag."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3384,7 +4650,13 @@
     "pinyinNumbered": "",
     "english": "det.: two",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有两个苹果。",
+        "pinyin": "Wǒ yǒu liǎng ge píngguǒ.",
+        "english": "I have two apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3400,7 +4672,13 @@
     "pinyinNumbered": "",
     "english": "det.: zero",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "温度是零下五度。",
+        "pinyin": "Wēndù shì líng xià wǔ dù.",
+        "english": "The temperature is five degrees below zero."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3416,7 +4694,13 @@
     "pinyinNumbered": "",
     "english": "det.: six",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有六个苹果。",
+        "pinyin": "Wǒ yǒu liù ge píngguǒ.",
+        "english": "I have six apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3432,7 +4716,13 @@
     "pinyinNumbered": "",
     "english": "storey",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我住在五楼。",
+        "pinyin": "Wǒ zhù zài wǔ lóu.",
+        "english": "I live on the fifth floor."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3448,7 +4738,13 @@
     "pinyinNumbered": "",
     "english": "upstairs",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的朋友住在楼上。",
+        "pinyin": "Wǒ de péngyou zhù zài lóushàng.",
+        "english": "My friend lives upstairs."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3464,7 +4760,13 @@
     "pinyinNumbered": "",
     "english": "downstairs",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的朋友在楼下等我。",
+        "pinyin": "Wǒ de péngyou zài lóuxià děng wǒ.",
+        "english": "My friend is waiting for me downstairs."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3480,7 +4782,13 @@
     "pinyinNumbered": "",
     "english": "crossing",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在路口等你。",
+        "pinyin": "Wǒ zài lùkǒu děng nǐ.",
+        "english": "I'm waiting for you at the crossing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3496,7 +4804,13 @@
     "pinyinNumbered": "",
     "english": "on the road",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在路上看到一只小狗。",
+        "pinyin": "Wǒ zài lùshang kàndào yī zhī xiǎo gǒu.",
+        "english": "I saw a small dog on the road."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3512,7 +4826,13 @@
     "pinyinNumbered": "",
     "english": "mummy",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我爱我的妈妈。",
+        "pinyin": "Wǒ ài wǒ de māma.",
+        "english": "I love my mummy."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3528,7 +4848,13 @@
     "pinyinNumbered": "",
     "english": "drive",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在马路上走。",
+        "pinyin": "Wǒ zài mǎlù shang zǒu.",
+        "english": "I am walking on the road."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3544,7 +4870,13 @@
     "pinyinNumbered": "",
     "english": "road",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这条路很长。",
+        "pinyin": "Zhè tiáo lù hěn cháng.",
+        "english": "This road is very long."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3560,7 +4892,13 @@
     "pinyinNumbered": "",
     "english": "in a short time",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我马上来帮你。",
+        "pinyin": "Wǒ mǎshàng lái bāng nǐ.",
+        "english": "I'll come help you right away."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3576,7 +4914,13 @@
     "pinyinNumbered": "",
     "english": "pick up",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我去买菜。",
+        "pinyin": "Wǒ qù mǎi cài.",
+        "english": "I'm going to buy vegetables."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3592,7 +4936,13 @@
     "pinyinNumbered": "",
     "english": "particle: calling for agreement or disagreement",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你好吗？",
+        "pinyin": "Nǐ hǎo ma?",
+        "english": "How are you?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3608,7 +4958,13 @@
     "pinyinNumbered": "",
     "english": "tardy",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他走得很慢。",
+        "pinyin": "Tā zǒu de hěn màn.",
+        "english": "He walks very slowly."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3624,7 +4980,13 @@
     "pinyinNumbered": "",
     "english": "hurry",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天我很忙，没有时间休息。",
+        "pinyin": "Jīntiān wǒ hěn máng, méiyǒu shíjiān xi休xi.",
+        "english": "I'm very busy today and don't have time to rest."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3640,7 +5002,13 @@
     "pinyinNumbered": "",
     "english": "Mao",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的笔掉毛了。",
+        "pinyin": "Wǒ de bǐ diào máo le.",
+        "english": "The hair on my brush is falling out."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3656,7 +5024,13 @@
     "pinyinNumbered": "",
     "english": "not",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我没有钱。",
+        "pinyin": "Wǒ méiyǒu qián.",
+        "english": "I don't have money."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3672,7 +5046,13 @@
     "pinyinNumbered": "",
     "english": "it doesn't matter",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你弄坏了没关系，不用担心。",
+        "pinyin": "Nǐ nònghuài le méiguānxi, búyòng dānxīn.",
+        "english": "It doesn't matter that you broke it, don't worry."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3688,7 +5068,13 @@
     "pinyinNumbered": "",
     "english": "nothing",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你好吗？没什么，很好。",
+        "pinyin": "Nǐ hǎo ma? Méi shénme, hěn hǎo.",
+        "english": "How are you? Nothing much, I'm doing well."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3704,7 +5090,13 @@
     "pinyinNumbered": "",
     "english": "not have",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我没有钱。",
+        "pinyin": "Wǒ méiyou qián.",
+        "english": "I don't have money."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3720,7 +5112,13 @@
     "pinyinNumbered": "",
     "english": "to have spare time",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "周末我没事儿，我们一起去公园玩吧。",
+        "pinyin": "Zhōumò wǒ méishìr, wǒmen yīqǐ qù gōngyuán wán ba.",
+        "english": "I have spare time on the weekend. Let's go to the park together."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3736,7 +5134,13 @@
     "pinyinNumbered": "",
     "english": "little_sister",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的妹妹。",
+        "pinyin": "Zhè shì wǒ de mèimei.",
+        "english": "This is my little sister."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3752,7 +5156,13 @@
     "pinyinNumbered": "",
     "english": "door",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请关上门。",
+        "pinyin": "Qǐng guānshang mén.",
+        "english": "Please close the door."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3768,7 +5178,13 @@
     "pinyinNumbered": "",
     "english": "porch",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在门口等你。",
+        "pinyin": "Wǒ zài ménkǒu děng nǐ.",
+        "english": "I'm waiting for you at the porch."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3784,7 +5200,13 @@
     "pinyinNumbered": "",
     "english": "entrance/admission ticket",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这张门票多少钱？",
+        "pinyin": "Zhè zhāng ménpiào duōshao qián?",
+        "english": "How much is this ticket?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3800,7 +5222,13 @@
     "pinyinNumbered": "",
     "english": "(cooked) rice",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃米饭。",
+        "pinyin": "Wǒ xǐhuān chī mǐfàn.",
+        "english": "I like to eat rice."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3816,7 +5244,13 @@
     "pinyinNumbered": "",
     "english": "pluralizer after pronouns and nouns of persons",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们是学生。",
+        "pinyin": "Wǒmen shì xuésheng.",
+        "english": "We are students."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3832,7 +5266,13 @@
     "pinyinNumbered": "",
     "english": "bun",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃面包。",
+        "pinyin": "Wǒ xǐhuān chī miànbāo.",
+        "english": "I like to eat buns."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3848,7 +5288,13 @@
     "pinyinNumbered": "",
     "english": "noodles",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃面条儿。",
+        "pinyin": "Wǒ xǐhuān chī miàntiáor.",
+        "english": "I like to eat noodles."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3864,7 +5310,13 @@
     "pinyinNumbered": "",
     "english": "first_name",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你的名字是什么？",
+        "pinyin": "Nǐ de míngzi shì shénme?",
+        "english": "What is your name?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3880,7 +5332,13 @@
     "pinyinNumbered": "",
     "english": "clarify",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你明白我的意思吗？",
+        "pinyin": "Nǐ míngbai wǒ de yìsi ma?",
+        "english": "Do you understand what I mean?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3896,7 +5354,13 @@
     "pinyinNumbered": "",
     "english": "next year",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "明年我要去中国。",
+        "pinyin": "Míngnián wǒ yào qù Zhōngguó.",
+        "english": "Next year I want to go to China."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3912,7 +5376,13 @@
     "pinyinNumbered": "",
     "english": "tomorrow",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "明天我们去公园。",
+        "pinyin": "Míngtiān wǒmen qù gōngyuán.",
+        "english": "Tomorrow we will go to the park."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3928,7 +5398,13 @@
     "pinyinNumbered": "",
     "english": "det.: which",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你喜欢哪个？",
+        "pinyin": "Nǐ xǐhuān nǎ ge?",
+        "english": "Which one do you like?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3944,7 +5420,13 @@
     "pinyinNumbered": "",
     "english": "where",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你的书在哪里？",
+        "pinyin": "Nǐ de shū zài nǎli?",
+        "english": "Where is your book?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3960,7 +5442,13 @@
     "pinyinNumbered": "",
     "english": "where",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你的钥匙在哪儿？",
+        "pinyin": "Nǐ de yàoshi zài nǎr?",
+        "english": "Where is your key?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3976,7 +5464,13 @@
     "pinyinNumbered": "",
     "english": "det.: which",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你喜欢吃哪些水果？",
+        "pinyin": "Nǐ xǐhuān chī nǎxiē shuǐguǒ?",
+        "english": "Which fruits do you like to eat?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3992,7 +5486,13 @@
     "pinyinNumbered": "",
     "english": "take",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请拿一杯水给我。",
+        "pinyin": "Qǐng ná yī bēi shuǐ gěi wǒ.",
+        "english": "Please take a cup of water for me."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4008,7 +5508,13 @@
     "pinyinNumbered": "",
     "english": "beyond",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书在那边。",
+        "pinyin": "Wǒ de shū zài nàbian.",
+        "english": "My book is over there."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4024,7 +5530,13 @@
     "pinyinNumbered": "",
     "english": "det.: that",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那是我的书。",
+        "pinyin": "Nà shì wǒ de shū.",
+        "english": "That is my book."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4040,7 +5552,13 @@
     "pinyinNumbered": "",
     "english": "that place",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的朋友在那里。",
+        "pinyin": "Wǒ de péngyou zài nàlǐ.",
+        "english": "My friend is over there."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4056,7 +5574,13 @@
     "pinyinNumbered": "",
     "english": "det.: those",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那些书是我的。",
+        "pinyin": "Nàxiē shū shì wǒ de.",
+        "english": "Those books are mine."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4072,7 +5596,13 @@
     "pinyinNumbered": "",
     "english": "breasts",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "妈妈给宝宝喝奶。",
+        "pinyin": "Māmā gěi bǎobao hē nǎi.",
+        "english": "Mom gives the baby milk to drink."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4088,7 +5618,13 @@
     "pinyinNumbered": "",
     "english": "that place",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书在那儿。",
+        "pinyin": "Wǒ de shū zài nàr.",
+        "english": "My book is over there."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4104,7 +5640,13 @@
     "pinyinNumbered": "",
     "english": "nanna",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的奶奶很喜欢我。",
+        "pinyin": "Wǒ de nǎinai hěn xǐhuān wǒ.",
+        "english": "My nanna likes me very much."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4120,7 +5662,13 @@
     "pinyinNumbered": "",
     "english": "boy",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那个男孩儿叫小明。",
+        "pinyin": "Nàge nánháir jiào Xiǎomíng.",
+        "english": "That boy is called Xiaoming."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4136,7 +5684,13 @@
     "pinyinNumbered": "",
     "english": "boyfriend",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的男朋友。",
+        "pinyin": "Zhè shì wǒ de nánpéngyou.",
+        "english": "This is my boyfriend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4152,7 +5706,13 @@
     "pinyinNumbered": "",
     "english": "baron",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一个男孩。",
+        "pinyin": "Zhè shì yī gè nánhái.",
+        "english": "This is a boy."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4168,7 +5728,13 @@
     "pinyinNumbered": "",
     "english": "brother",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的男生朋友。",
+        "pinyin": "Zhè shì wǒ de nánshēng péngyou.",
+        "english": "This is my male friend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4184,7 +5750,13 @@
     "pinyinNumbered": "",
     "english": "Yugoslavia",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我来自南方。",
+        "pinyin": "Wǒ lái zì nánfāng.",
+        "english": "I come from the south."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4200,7 +5772,13 @@
     "pinyinNumbered": "",
     "english": "male",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那个男人很高。",
+        "pinyin": "Nàge nánren hěn gāo.",
+        "english": "That man is very tall."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4216,7 +5794,13 @@
     "pinyinNumbered": "",
     "english": "south",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我家在公园的南边。",
+        "pinyin": "Wǒ jiā zài gōngyuán de nánbian.",
+        "english": "My home is on the south side of the park."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4232,7 +5816,13 @@
     "pinyinNumbered": "",
     "english": "particle: marking quesitons about subject already mentioned; indicating strong affirmation",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你呢？你好吗？",
+        "pinyin": "Nǐ ne? Nǐ hǎo ma?",
+        "english": "What about you? How are you?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4248,7 +5838,13 @@
     "pinyinNumbered": "",
     "english": "make difficulties",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个题目很难。",
+        "pinyin": "Zhège tímù hěn nán.",
+        "english": "This question is very difficult."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4264,7 +5860,13 @@
     "pinyinNumbered": "",
     "english": "you",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你好吗？",
+        "pinyin": "Nǐ hǎo ma?",
+        "english": "How are you?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4280,7 +5882,13 @@
     "pinyinNumbered": "",
     "english": "can or to be capable of",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我能说中文。",
+        "pinyin": "Wǒ néng shuō Zhōngwén.",
+        "english": "I can speak Chinese."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4296,7 +5904,13 @@
     "pinyinNumbered": "",
     "english": "you",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你们好！",
+        "pinyin": "Nǐmen hǎo!",
+        "english": "Hello, you all!"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4312,7 +5926,13 @@
     "pinyinNumbered": "",
     "english": "you",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "您好,请问您叫什么名字?",
+        "pinyin": "Nín hǎo, qǐngwèn nín jiào shénme míngzi?",
+        "english": "Hello, may I ask what is your name?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4328,7 +5948,13 @@
     "pinyinNumbered": "",
     "english": "cow's milk",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天喝牛奶。",
+        "pinyin": "Wǒ měi tiān hē niúnǎi.",
+        "english": "I drink milk every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4344,7 +5970,13 @@
     "pinyinNumbered": "",
     "english": "girl",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一个女孩。",
+        "pinyin": "Zhè shì yī gè nǚ hái.",
+        "english": "This is a girl."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4360,7 +5992,13 @@
     "pinyinNumbered": "",
     "english": "year",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我今年二十岁。",
+        "pinyin": "Wǒ jīnnián èrshí suì.",
+        "english": "I am twenty years old this year."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4376,7 +6014,13 @@
     "pinyinNumbered": "",
     "english": "girl",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一个女孩儿。",
+        "pinyin": "Zhè shì yī gè nǚháir.",
+        "english": "This is a girl."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4392,7 +6036,13 @@
     "pinyinNumbered": "",
     "english": "daughter",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的女儿。",
+        "pinyin": "Zhè shì wǒ de nǚér.",
+        "english": "This is my daughter."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4408,7 +6058,13 @@
     "pinyinNumbered": "",
     "english": "schoolgirl",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那个女生是我的朋友。",
+        "pinyin": "Nàge nǚshēng shì wǒ de péngyou.",
+        "english": "That schoolgirl is my friend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4424,7 +6080,13 @@
     "pinyinNumbered": "",
     "english": "jane",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的女朋友。",
+        "pinyin": "zhè shì wǒ de nǚpéngyou。",
+        "english": "This is my girlfriend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4440,7 +6102,13 @@
     "pinyinNumbered": "",
     "english": "by the side of",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的朋友坐在我旁边。",
+        "pinyin": "Wǒ de péngyou zuò zài wǒ pángbiān.",
+        "english": "My friend is sitting by my side."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4456,7 +6124,13 @@
     "pinyinNumbered": "",
     "english": "travel",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "小孩在公园里跑。",
+        "pinyin": "Xiǎohái zài gōngyuán lǐ pǎo.",
+        "english": "The child is running in the park."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4472,7 +6146,13 @@
     "pinyinNumbered": "",
     "english": "jade",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她是一个女人。",
+        "pinyin": "Tā shì yīgè nǚrén.",
+        "english": "She is a woman."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4488,7 +6168,13 @@
     "pinyinNumbered": "",
     "english": "amigo",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他是我的好朋友。",
+        "pinyin": "Tā shì wǒ de hǎo péngyou.",
+        "english": "He is my good friend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4504,7 +6190,13 @@
     "pinyinNumbered": "",
     "english": "ticket",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我买了一张电影票。",
+        "pinyin": "Wǒ mǎile yī zhāng diànyǐng piào.",
+        "english": "I bought a movie ticket."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4520,7 +6212,13 @@
     "pinyinNumbered": "",
     "english": "det.: seven",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有七个苹果。",
+        "pinyin": "Wǒ yǒu qī ge píngguǒ.",
+        "english": "I have seven apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4536,7 +6234,13 @@
     "pinyinNumbered": "",
     "english": "uprise",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天早上七点起床。",
+        "pinyin": "Wǒ měi tiān zǎo shang qī diǎn qǐ chuáng.",
+        "english": "I get up at seven o'clock every morning."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4552,7 +6256,13 @@
     "pinyinNumbered": "",
     "english": "[aspect]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我起来了。",
+        "pinyin": "Wǒ qǐlái le.",
+        "english": "I got up."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4568,7 +6278,13 @@
     "pinyinNumbered": "",
     "english": "[aspect]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我起床了。",
+        "pinyin": "Wǒ qǐchuáng le.",
+        "english": "I got up."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4584,7 +6300,13 @@
     "pinyinNumbered": "",
     "english": "automotive vehicle",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一辆汽车。",
+        "pinyin": "Zhè shì yī liàng qìchē.",
+        "english": "This is a car."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4600,7 +6322,13 @@
     "pinyinNumbered": "",
     "english": "front",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我坐在你的前面。",
+        "pinyin": "Wǒ zuò zài nǐ de qiánmiàn.",
+        "english": "I sit in front of you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4616,7 +6344,13 @@
     "pinyinNumbered": "",
     "english": "front",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的家在前边。",
+        "pinyin": "Wǒ de jiā zài qiánbian.",
+        "english": "My house is in front."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4632,7 +6366,13 @@
     "pinyinNumbered": "",
     "english": "copper coin",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一些钱。",
+        "pinyin": "Wǒ yǒu yīxiē qián.",
+        "english": "I have some money."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4648,7 +6388,13 @@
     "pinyinNumbered": "",
     "english": "purse",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的钱包在家里。",
+        "pinyin": "Wǒ de qiánbāo zài jiāli.",
+        "english": "My purse is at home."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4664,7 +6410,13 @@
     "pinyinNumbered": "",
     "english": "request",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请坐。",
+        "pinyin": "Qǐng zuò.",
+        "english": "Please sit down."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4680,7 +6432,13 @@
     "pinyinNumbered": "",
     "english": "the day before yesterday",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "前天我去了公园。",
+        "pinyin": "Qiántiān wǒ qùle gōngyuán.",
+        "english": "The day before yesterday I went to the park."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4696,7 +6454,13 @@
     "pinyinNumbered": "",
     "english": "vacate",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我明天要请假，因为我生病了。",
+        "pinyin": "Wǒ míngtiān yào qǐngjià, yīnwèi wǒ shēngbìng le.",
+        "english": "I need to take leave tomorrow because I'm sick."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4712,7 +6476,13 @@
     "pinyinNumbered": "",
     "english": "Excuse me",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请问，厕所在哪里？",
+        "pinyin": "Qǐngwèn, cèsuǒ zài nǎlǐ?",
+        "english": "Excuse me, where is the bathroom?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4728,7 +6498,13 @@
     "pinyinNumbered": "",
     "english": "'please come in'",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请进，我们在这里。",
+        "pinyin": "Qǐngjìn, wǒmen zài zhèlǐ.",
+        "english": "Please come in, we are here."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4744,7 +6520,13 @@
     "pinyinNumbered": "",
     "english": "Sitting",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请坐，喝茶。",
+        "pinyin": "Qǐng zuò, hē chá.",
+        "english": "Please sit down and have some tea."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4760,7 +6542,13 @@
     "pinyinNumbered": "",
     "english": "ball",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢踢球。",
+        "pinyin": "Wǒ xǐhuān tī qiú.",
+        "english": "I like to play ball/football."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4776,7 +6564,13 @@
     "pinyinNumbered": "",
     "english": "last year",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "去年我去了北京。",
+        "pinyin": "Qùnián wǒ qùle běi jīng.",
+        "english": "Last year I went to Beijing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4792,7 +6586,13 @@
     "pinyinNumbered": "",
     "english": "hot",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天天气很热。",
+        "pinyin": "Jīntiān tiānqì hěn rè.",
+        "english": "The weather is very hot today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4808,7 +6608,13 @@
     "pinyinNumbered": "",
     "english": "person",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一个人。",
+        "pinyin": "Zhè shì yī gè rén.",
+        "english": "This is a person."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4824,7 +6630,13 @@
     "pinyinNumbered": "",
     "english": "know",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我认识他。",
+        "pinyin": "Wǒ rènshi tā.",
+        "english": "I know him."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4840,7 +6652,13 @@
     "pinyinNumbered": "",
     "english": "serious",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我认真学习汉语。",
+        "pinyin": "Wǒ rènzhēn xuéxí Hànyǔ.",
+        "english": "I study Chinese seriously."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4856,7 +6674,13 @@
     "pinyinNumbered": "",
     "english": "to go",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我今天去公园。",
+        "pinyin": "Wǒ jīntiān qù gōngyuán.",
+        "english": "I'm going to the park today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4872,7 +6696,13 @@
     "pinyinNumbered": "",
     "english": "m.[standard]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天是星期一，我们要上班。",
+        "pinyin": "Jīntiān shì xīngqīyī, wǒmen yào shàngbān.",
+        "english": "Today is Monday, we have to go to work."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4888,7 +6718,13 @@
     "pinyinNumbered": "",
     "english": "calendar",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天的日期是几号？",
+        "pinyin": "Jīntiān de rìqī shì jǐ hào?",
+        "english": "What is today's date?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4904,7 +6740,13 @@
     "pinyinNumbered": "",
     "english": "pulp",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃肉。",
+        "pinyin": "Wǒ xǐhuān chī ròu.",
+        "english": "I like to eat meat."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4920,7 +6762,13 @@
     "pinyinNumbered": "",
     "english": "Shan",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这座山很高。",
+        "pinyin": "Zhè zuò shān hěn gāo.",
+        "english": "This mountain is very high."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4936,7 +6784,13 @@
     "pinyinNumbered": "",
     "english": "department store",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我和妈妈去商场买衣服。",
+        "pinyin": "Wǒ hé māma qù shāngchǎng mǎi yīfu.",
+        "english": "My mom and I went to the department store to buy clothes."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4952,7 +6806,13 @@
     "pinyinNumbered": "",
     "english": "on",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "书在桌子上。",
+        "pinyin": "Shū zài zhuōzi shang.",
+        "english": "The book is on the desk."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4968,7 +6828,13 @@
     "pinyinNumbered": "",
     "english": "det.: three",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有三个苹果。",
+        "pinyin": "Wǒ yǒu sān gè píngguǒ.",
+        "english": "I have three apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4984,7 +6850,13 @@
     "pinyinNumbered": "",
     "english": "concern",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢在那个商店买东西。",
+        "pinyin": "Wǒ xǐhuān zài nàge shāngdiàn mǎi dōngxi.",
+        "english": "I like to buy things at that store."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5000,7 +6872,13 @@
     "pinyinNumbered": "",
     "english": "start work",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天早上八点上班。",
+        "pinyin": "Wǒ měi tiān zǎo shang bā diǎn shàng bān.",
+        "english": "I start work at 8 o'clock every morning."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5016,7 +6894,13 @@
     "pinyinNumbered": "",
     "english": "to get on or into (a bus",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们一起上车吧。",
+        "pinyin": "Wǒmen yīqǐ shàngchē ba.",
+        "english": "Let's get on the bus together."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5032,7 +6916,13 @@
     "pinyinNumbered": "",
     "english": "attend class",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天八点上课。",
+        "pinyin": "Wǒ měi tiān bā diǎn shàng kè.",
+        "english": "I attend class at eight o'clock every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5048,7 +6938,13 @@
     "pinyinNumbered": "",
     "english": "to go online",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天都要上网。",
+        "pinyin": "Wǒ měitiān dōu yào shàng wǎng.",
+        "english": "I go online every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5064,7 +6960,13 @@
     "pinyinNumbered": "",
     "english": "the top",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "书在桌子上边。",
+        "pinyin": "Shū zài zhuōzi shàngbian.",
+        "english": "The book is on top of the desk."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5080,7 +6982,13 @@
     "pinyinNumbered": "",
     "english": "attend school",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天都要上学。",
+        "pinyin": "Wǒ měitiān dōu yào shàng xué.",
+        "english": "I have to attend school every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5096,7 +7004,13 @@
     "pinyinNumbered": "",
     "english": "morning",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我上午有课。",
+        "pinyin": "Wǒ shàngwǔ yǒu kè.",
+        "english": "I have class in the morning."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5112,7 +7026,13 @@
     "pinyinNumbered": "",
     "english": "lack",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的钱太少了。",
+        "pinyin": "Wǒ de qián tài shǎo le.",
+        "english": "I have too little money."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5128,7 +7048,13 @@
     "pinyinNumbered": "",
     "english": "last time",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "上次我去北京，玩得很开心。",
+        "pinyin": "Shàngcì wǒ qù Běijīng, wán de hěn kāixīn.",
+        "english": "Last time I went to Beijing, I had a lot of fun."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5144,7 +7070,13 @@
     "pinyinNumbered": "",
     "english": "on the body",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我身上有钱。",
+        "pinyin": "Wǒ shēnshang yǒu qián.",
+        "english": "I have money on me."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5160,7 +7092,13 @@
     "pinyinNumbered": "",
     "english": "who",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你是谁？",
+        "pinyin": "Nǐ shì shéi?",
+        "english": "Who are you?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5176,7 +7114,13 @@
     "pinyinNumbered": "",
     "english": "soma",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的身体很健康。",
+        "pinyin": "Wǒ de shēntǐ hěn jiànkāng.",
+        "english": "My body is very healthy."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5192,7 +7136,13 @@
     "pinyinNumbered": "",
     "english": "come down",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我昨天生病了，所以没有去上班。",
+        "pinyin": "Wǒ zuótiān shēngbìng le, suǒyǐ méiyǒu qù shàngbān.",
+        "english": "I came down with an illness yesterday, so I didn't go to work."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5208,7 +7158,13 @@
     "pinyinNumbered": "",
     "english": "get angry",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他生气了，因为我迟到了。",
+        "pinyin": "Tā shēng qì le, yīnwèi wǒ chídào le.",
+        "english": "He got angry because I was late."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5224,7 +7180,13 @@
     "pinyinNumbered": "",
     "english": "det.: ten",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有十个苹果。",
+        "pinyin": "Wǒ yǒu shí gè píngguǒ.",
+        "english": "I have ten apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5240,7 +7202,13 @@
     "pinyinNumbered": "",
     "english": "day",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我小的时候很喜欢玩。",
+        "pinyin": "Wǒ xiǎo de shíhou hěn xǐhuān wán.",
+        "english": "When I was little, I really liked to play."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5256,7 +7224,13 @@
     "pinyinNumbered": "",
     "english": "moment",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我现在没有时间。",
+        "pinyin": "Wǒ xiànzài méiyǒu shíjiān.",
+        "english": "I don't have time right now."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5272,7 +7246,13 @@
     "pinyinNumbered": "",
     "english": "responsibility",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的事。",
+        "pinyin": "Zhè shì wǒ de shì.",
+        "english": "This is my responsibility."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5288,7 +7268,13 @@
     "pinyinNumbered": "",
     "english": "offer",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你要不要试试这个蛋糕？",
+        "pinyin": "Nǐ yào bu yào shìshi zhège dàngāo?",
+        "english": "Do you want to try this cake?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5304,7 +7290,13 @@
     "pinyinNumbered": "",
     "english": "birthday",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天是我的生日。",
+        "pinyin": "Jīntiān shì wǒ de shēngri.",
+        "english": "Today is my birthday."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5320,7 +7312,13 @@
     "pinyinNumbered": "",
     "english": "is or isn't",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你是不是很累？",
+        "pinyin": "Nǐ shìbùshì hěn léi?",
+        "english": "Are you very tired?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5336,7 +7334,13 @@
     "pinyinNumbered": "",
     "english": "is",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我是学生。",
+        "pinyin": "Wǒ shì xuésheng.",
+        "english": "I am a student."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5352,7 +7356,13 @@
     "pinyinNumbered": "",
     "english": "cell phone",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的手机在这里。",
+        "pinyin": "Wǒ de shǒujī zài zhèlǐ.",
+        "english": "My cell phone is here."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5368,7 +7378,13 @@
     "pinyinNumbered": "",
     "english": "hand",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我用手写字。",
+        "pinyin": "Wǒ yòng shǒu xiězì.",
+        "english": "I write characters with my hand."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5384,7 +7400,13 @@
     "pinyinNumbered": "",
     "english": "bag",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书包在床上。",
+        "pinyin": "Wǒ de shūbāo zài chuángshang.",
+        "english": "My bag is on the bed."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5400,7 +7422,13 @@
     "pinyinNumbered": "",
     "english": "volume",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一本很好的书。",
+        "pinyin": "Zhè shì yī běn hěn hǎo de shū.",
+        "english": "This is a very good book."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5416,7 +7444,13 @@
     "pinyinNumbered": "",
     "english": "bookstore",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢去书店买书。",
+        "pinyin": "Wǒ xǐhuān qù shūdiàn mǎi shū.",
+        "english": "I like to go to the bookstore to buy books."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5432,7 +7466,13 @@
     "pinyinNumbered": "",
     "english": "wood",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那是一棵大树。",
+        "pinyin": "Nà shì yī k棵 dà shù.",
+        "english": "That is a big tree."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5448,7 +7488,13 @@
     "pinyinNumbered": "",
     "english": "water",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喝水。",
+        "pinyin": "Wǒ hē shuǐ.",
+        "english": "I drink water."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5464,7 +7510,13 @@
     "pinyinNumbered": "",
     "english": "fruit",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃水果。",
+        "pinyin": "Wǒ xǐhuān chī shuǐguǒ.",
+        "english": "I like to eat fruit."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5480,7 +7532,13 @@
     "pinyinNumbered": "",
     "english": "sleep",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天晚上都睡八小时。",
+        "pinyin": "Wǒ měitiān wǎnshang dōu shuì bā xiǎoshí.",
+        "english": "I sleep eight hours every night."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5496,7 +7554,13 @@
     "pinyinNumbered": "",
     "english": "speak",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我想说你好。",
+        "pinyin": "Wǒ xiǎng shuō nǐ hǎo.",
+        "english": "I want to say hello to you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5512,7 +7576,13 @@
     "pinyinNumbered": "",
     "english": "philosophize",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他喜欢说话。",
+        "pinyin": "Tā xǐhuān shuōhuà.",
+        "english": "He likes to talk."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5528,7 +7598,13 @@
     "pinyinNumbered": "",
     "english": "turn_in",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我很累，现在要去睡觉了。",
+        "pinyin": "Wǒ hěn lèi, xiànzài yào qù shuì jiào le.",
+        "english": "I'm very tired, I need to go to bed now."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5544,7 +7620,13 @@
     "pinyinNumbered": "",
     "english": "accompaniment",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我送你一个礼物。",
+        "pinyin": "Wǒ sòng nǐ yī gè lǐwù.",
+        "english": "I'll give you a gift."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5560,7 +7642,13 @@
     "pinyinNumbered": "",
     "english": "det.: four",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有四个苹果。",
+        "pinyin": "Wǒ yǒu sì ge píngguǒ.",
+        "english": "I have four apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5576,7 +7664,13 @@
     "pinyinNumbered": "",
     "english": "year (for crops)",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我今年二十岁。",
+        "pinyin": "Wǒ jīnnián èrshí suì.",
+        "english": "I am twenty years old this year."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5592,7 +7686,13 @@
     "pinyinNumbered": "",
     "english": "they",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他们是我的朋友。",
+        "pinyin": "Tāmen shì wǒ de péngyou.",
+        "english": "They are my friends."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5608,7 +7708,13 @@
     "pinyinNumbered": "",
     "english": "anything",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你想吃什么？",
+        "pinyin": "Nǐ xiǎng chī shénme?",
+        "english": "What do you want to eat?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5624,7 +7730,13 @@
     "pinyinNumbered": "",
     "english": "she",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她是我的朋友。",
+        "pinyin": "Tā shì wǒ de péngyou.",
+        "english": "She is my friend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5640,7 +7752,13 @@
     "pinyinNumbered": "",
     "english": "they (female)",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她们是我的朋友。",
+        "pinyin": "Tāmen shì wǒ de péngyou.",
+        "english": "They are my friends."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5656,7 +7774,13 @@
     "pinyinNumbered": "",
     "english": "m.[standard]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天天气很好。",
+        "pinyin": "Jīntiān tiānqì hěn hǎo.",
+        "english": "The weather is very nice today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5672,7 +7796,13 @@
     "pinyinNumbered": "",
     "english": "he",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他是我的朋友。",
+        "pinyin": "Tā shì wǒ de péngyou.",
+        "english": "He is my friend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5688,7 +7818,13 @@
     "pinyinNumbered": "",
     "english": "excessively",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果太甜了。",
+        "pinyin": "Zhège píngguǒ tài tián le.",
+        "english": "This apple is too sweet."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5704,7 +7840,13 @@
     "pinyinNumbered": "",
     "english": "sky",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天天气很好。",
+        "pinyin": "Jīntiān tiānqì hěn hǎo.",
+        "english": "The weather is very nice today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5720,7 +7862,13 @@
     "pinyinNumbered": "",
     "english": "hear",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我听到了一个声音。",
+        "pinyin": "Wǒ tīngdào le yī ge shēngyīn.",
+        "english": "I heard a sound."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5736,7 +7884,13 @@
     "pinyinNumbered": "",
     "english": "hear",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我听见了一个声音。",
+        "pinyin": "Wǒ tīngjiàn le yī gè shēngyīn.",
+        "english": "I heard a sound."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5752,7 +7906,13 @@
     "pinyinNumbered": "",
     "english": "dictate",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "老师让我们听写一些简单的词。",
+        "pinyin": "Lǎoshī ràng wǒmen tīngxiě yīxiē jiǎndān de cí.",
+        "english": "The teacher asked us to do a dictation of some simple words."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5768,7 +7928,13 @@
     "pinyinNumbered": "",
     "english": "hear",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢听音乐。",
+        "pinyin": "Wǒ xǐhuān tīng yīnyuè.",
+        "english": "I like to listen to music."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5784,7 +7950,13 @@
     "pinyinNumbered": "",
     "english": "library",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢去图书馆看书。",
+        "pinyin": "Wǒ xǐhuān qù túshūguǎn kànshū.",
+        "english": "I like going to the library to read books."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5800,7 +7972,13 @@
     "pinyinNumbered": "",
     "english": "outside",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在外面等你。",
+        "pinyin": "Wǒ zài wàimiàn děng nǐ.",
+        "english": "I'm waiting for you outside."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5816,7 +7994,13 @@
     "pinyinNumbered": "",
     "english": "outside",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "外边下雨了，我们在家里玩。",
+        "pinyin": "Wàibian xiàyǔ le, wǒmen zài jiālǐ wán.",
+        "english": "It's raining outside, so we're playing at home."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5832,7 +8016,13 @@
     "pinyinNumbered": "",
     "english": "class fellow",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的同学叫李明。",
+        "pinyin": "Wǒ de tóngxué jiào Lǐ Míng.",
+        "english": "My classmate is called Li Ming."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5848,7 +8038,13 @@
     "pinyinNumbered": "",
     "english": "foreign",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一个外国朋友。",
+        "pinyin": "Wǒ yǒu yī gè wàiguó péngyou.",
+        "english": "I have a foreign friend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5864,7 +8060,13 @@
     "pinyinNumbered": "",
     "english": "to play",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢和朋友玩儿。",
+        "pinyin": "Wǒ xǐhuān hé péngyou wánr.",
+        "english": "I like to play with friends."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5880,7 +8082,13 @@
     "pinyinNumbered": "",
     "english": "far on in time",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天晚上我们一起吃饭。",
+        "pinyin": "Jīntiān wǎnshang wǒmen yìqǐ chīfàn.",
+        "english": "We'll eat dinner together this evening."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5896,7 +8104,13 @@
     "pinyinNumbered": "",
     "english": "evening meal",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们一起吃晚饭吧。",
+        "pinyin": "Wǒmen yìqǐ chī wǎnfàn ba.",
+        "english": "Let's eat dinner together."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5912,7 +8126,13 @@
     "pinyinNumbered": "",
     "english": "evening",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我晚上喜欢看电视。",
+        "pinyin": "Wǒ wǎnshang xǐhuān kàn diànshì.",
+        "english": "I like to watch TV in the evening."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5928,7 +8148,13 @@
     "pinyinNumbered": "",
     "english": "online",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在网上买了一本书。",
+        "pinyin": "Wǒ zài wǎngshàng mǎi le yī běn shū.",
+        "english": "I bought a book online."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5944,7 +8170,13 @@
     "pinyinNumbered": "",
     "english": "online friend",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的网友来自中国。",
+        "pinyin": "Wǒ de wǎngyǒu láizì Zhōngguó.",
+        "english": "My online friend is from China."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5960,7 +8192,13 @@
     "pinyinNumbered": "",
     "english": "foreign language",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢学外语。",
+        "pinyin": "Wǒ xǐhuān xué wàiyǔ.",
+        "english": "I like to study foreign languages."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5976,7 +8214,13 @@
     "pinyinNumbered": "",
     "english": "misremember",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我忘记了你的名字。",
+        "pinyin": "Wǒ wàngjìle nǐ de míngzì.",
+        "english": "I forgot your name."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5992,7 +8236,13 @@
     "pinyinNumbered": "",
     "english": "forget",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我忘了你的名字。",
+        "pinyin": "Wǒ wàngle nǐ de míngzì.",
+        "english": "I forgot your name."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6008,7 +8258,13 @@
     "pinyinNumbered": "",
     "english": "ask",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你好，我想问你一个问题。",
+        "pinyin": "Nǐ hǎo, wǒ xiǎng wèn nǐ yī ge wèntí.",
+        "english": "Hello, I want to ask you a question."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6024,7 +8280,13 @@
     "pinyinNumbered": "",
     "english": "we",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们一起去吃饭吧。",
+        "pinyin": "Wǒmen yìqǐ qù chīfàn ba.",
+        "english": "Let's go eat together."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6040,7 +8302,13 @@
     "pinyinNumbered": "",
     "english": "I",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我叫李明。",
+        "pinyin": "Wǒ jiào Lǐ Míng.",
+        "english": "My name is Li Ming."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6056,7 +8324,13 @@
     "pinyinNumbered": "",
     "english": "det.: five",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有五个苹果。",
+        "pinyin": "Wǒ yǒu wǔ ge píngguǒ.",
+        "english": "I have five apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6072,7 +8346,13 @@
     "pinyinNumbered": "",
     "english": "lunch",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天十二点吃午饭。",
+        "pinyin": "Wǒ měi tiān shí'èr diǎn chī wǔfàn.",
+        "english": "I eat lunch at twelve o'clock every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6088,7 +8368,13 @@
     "pinyinNumbered": "",
     "english": "W",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我家在城市的西边。",
+        "pinyin": "Wǒ jiā zài chéngshì de xībien.",
+        "english": "My home is on the west side of the city."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6104,7 +8390,13 @@
     "pinyinNumbered": "",
     "english": "west",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "公园在学校的西边。",
+        "pinyin": "Gōngyuán zài xuéxiào de xībian.",
+        "english": "The park is to the west of the school."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6120,7 +8412,13 @@
     "pinyinNumbered": "",
     "english": "wash",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天早上洗脸。",
+        "pinyin": "Wǒ měi tiān zǎo shang xǐ liǎn.",
+        "english": "I wash my face every morning."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6136,7 +8434,13 @@
     "pinyinNumbered": "",
     "english": "toilet",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "洗手间在哪里？",
+        "pinyin": "Xǐshǒujiān zài nǎlǐ?",
+        "english": "Where is the toilet?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6152,7 +8456,13 @@
     "pinyinNumbered": "",
     "english": "like",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃苹果。",
+        "pinyin": "Wǒ xǐhuān chī píngguǒ.",
+        "english": "I like to eat apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6168,7 +8478,13 @@
     "pinyinNumbered": "",
     "english": "under (condition/fact etc.)",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "在老师的下,我们学习了新的汉字。",
+        "pinyin": "Zài lǎoshī de xiàzhǐ xià, wǒmen xuéxí le xīn de hànzì.",
+        "english": "Under the teacher's guidance, we learned new Chinese characters."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6184,7 +8500,13 @@
     "pinyinNumbered": "",
     "english": "get_off",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我五点下班。",
+        "pinyin": "Wǒ wǔ diǎn xià bān.",
+        "english": "I get off work at five o'clock."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6200,7 +8522,13 @@
     "pinyinNumbered": "",
     "english": "under",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书在桌子下边。",
+        "pinyin": "Wǒ de shū zài zhuōzi xiàbian.",
+        "english": "My book is under the table."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6216,7 +8544,13 @@
     "pinyinNumbered": "",
     "english": "get off/out of vehicle",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们到了，请下车。",
+        "pinyin": "Wǒmen dàole, qǐng xiàchē.",
+        "english": "We've arrived, please get out of the vehicle."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6232,7 +8566,13 @@
     "pinyinNumbered": "",
     "english": "next time",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "下次我们一起去公园。",
+        "pinyin": "Xiàcì wǒmen yīqǐ qù gōngyuán.",
+        "english": "Next time let's go to the park together."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6248,7 +8588,13 @@
     "pinyinNumbered": "",
     "english": "finish class",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "下课了，我们一起去玩。",
+        "pinyin": "Xià kè le, wǒmen yīqǐ qù wán.",
+        "english": "Class is over, let's go play together."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6264,7 +8610,13 @@
     "pinyinNumbered": "",
     "english": "afternoon",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "下午我们一起去公园玩。",
+        "pinyin": "Xiàwǔ wǒmen yìqǐ qù gōngyuán wán.",
+        "english": "In the afternoon, we'll go to the park together to play."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6280,7 +8632,13 @@
     "pinyinNumbered": "",
     "english": "rain",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天下雨了，我们不能去公园。",
+        "pinyin": "Jīntiān xiàyǔ le, wǒmen búnéng qù gōngyuán.",
+        "english": "It's raining today, so we can't go to the park."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6296,7 +8654,13 @@
     "pinyinNumbered": "",
     "english": "earlier",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你先吃饭，我等一下。",
+        "pinyin": "Nǐ xiān chīfàn, wǒ děng yīxià.",
+        "english": "You eat first, I'll wait a moment."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6312,7 +8676,13 @@
     "pinyinNumbered": "",
     "english": "doctor of Chinese medicine",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我去看了中医先生。",
+        "pinyin": "Wǒ qù kànle zhōngyī xiānsheng.",
+        "english": "I went to see a Chinese medicine doctor."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6328,7 +8698,13 @@
     "pinyinNumbered": "",
     "english": "think",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我想喝水。",
+        "pinyin": "Wǒ xiǎng hē shuǐ.",
+        "english": "I want to drink water."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6344,7 +8720,13 @@
     "pinyinNumbered": "",
     "english": "now",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "现在几点了？",
+        "pinyin": "Xiànzài jǐ diǎn le?",
+        "english": "What time is it now?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6360,7 +8742,13 @@
     "pinyinNumbered": "",
     "english": "small",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一个小狗。",
+        "pinyin": "Wǒ yǒu yī ge xiǎo gǒu.",
+        "english": "I have a small dog."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6376,7 +8764,13 @@
     "pinyinNumbered": "",
     "english": "child",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那个小孩儿很可爱。",
+        "pinyin": "Nàge xiǎoháir hěn kěài.",
+        "english": "That child is very cute."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6392,7 +8786,13 @@
     "pinyinNumbered": "",
     "english": "Signorina",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这位小姐是我的朋友。",
+        "pinyin": "Zhè wèi xiǎojiě shì wǒ de péngyou.",
+        "english": "This young lady is my friend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6408,7 +8808,13 @@
     "pinyinNumbered": "",
     "english": "hour",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天学习两个小时。",
+        "pinyin": "Wǒ měi tiān xuéxí liǎng ge xiǎoshí.",
+        "english": "I study for two hours every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6424,7 +8830,13 @@
     "pinyinNumbered": "",
     "english": "child (adult address to child)",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "小朋友，你好！",
+        "pinyin": "Xiǎopéngyǒu, nǐ hǎo!",
+        "english": "Hello, child!"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6440,7 +8852,13 @@
     "pinyinNumbered": "",
     "english": "primary school",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的妹妹在小学读书。",
+        "pinyin": "Wǒ de mèimei zài xiǎoxué dúshū.",
+        "english": "My younger sister studies at primary school."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6456,7 +8874,13 @@
     "pinyinNumbered": "",
     "english": "(primary) pupil",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我是小学生，我很喜欢上学。",
+        "pinyin": "Wǒ shì xiǎo xuésheng, wǒ hěn xǐhuān shàng xué.",
+        "english": "I am a primary pupil, and I really like going to school."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6472,7 +8896,13 @@
     "pinyinNumbered": "",
     "english": "smile",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她很开心，一直在笑。",
+        "pinyin": "Tā hěn kāixīn, yīzhí zài xiào.",
+        "english": "She is very happy and keeps smiling."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6488,7 +8918,13 @@
     "pinyinNumbered": "",
     "english": "description",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天写日记。",
+        "pinyin": "Wǒ měi tiān xiě rìjì.",
+        "english": "I write in my diary every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6504,7 +8940,13 @@
     "pinyinNumbered": "",
     "english": "thank",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "谢谢你的帮助。",
+        "pinyin": "Xièxie nǐ de bāngzhù.",
+        "english": "Thank you for your help."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6520,7 +8962,13 @@
     "pinyinNumbered": "",
     "english": "new",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我买了一件新衣服。",
+        "pinyin": "Wǒ mǎi le yī jiàn xīn yīfu.",
+        "english": "I bought a new piece of clothing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6536,7 +8984,13 @@
     "pinyinNumbered": "",
     "english": "New Year",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "新年快乐！",
+        "pinyin": "Xīnnián kuàilè!",
+        "english": "Happy New Year!"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6552,7 +9006,13 @@
     "pinyinNumbered": "",
     "english": "Sunday",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "星期天我喜欢和朋友一起玩。",
+        "pinyin": "Xīngqītiān wǒ xǐhuān hé péngyou yìqǐ wán.",
+        "english": "On Sunday I like to play with friends."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6568,7 +9028,13 @@
     "pinyinNumbered": "",
     "english": "Sunday",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "星期日我和家人一起去公园。",
+        "pinyin": "Xīngqīrì wǒ hé jiārén yìqǐ qù gōngyuán.",
+        "english": "On Sunday, I go to the park with my family."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6584,7 +9050,13 @@
     "pinyinNumbered": "",
     "english": "Sunday",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "星期天我喜欢和家人一起去公园。",
+        "pinyin": "Xīngqītiān wǒ xǐhuān hé jiārén yīqǐ qù gōngyuán.",
+        "english": "On Sunday, I like to go to the park with my family."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6600,7 +9072,13 @@
     "pinyinNumbered": "",
     "english": "go",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们现在去公园，好吗？",
+        "pinyin": "Wǒmen xiànzài qù gōngyuán, hǎo ma?",
+        "english": "Shall we go to the park now?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6616,7 +9094,13 @@
     "pinyinNumbered": "",
     "english": "repose",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我累了，需要休息一下。",
+        "pinyin": "Wǒ lèi le, xūyào xiūxi yīxià.",
+        "english": "I'm tired and need to rest for a while."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6632,7 +9116,13 @@
     "pinyinNumbered": "",
     "english": "academic",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我是学生。",
+        "pinyin": "Wǒ shì xuésheng.",
+        "english": "I am a student."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6648,7 +9138,13 @@
     "pinyinNumbered": "",
     "english": "study",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天学英语。",
+        "pinyin": "Wǒ měitiān xué yīngyǔ.",
+        "english": "I study English every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6664,7 +9160,13 @@
     "pinyinNumbered": "",
     "english": "study",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天学习中文。",
+        "pinyin": "Wǒ měitiān xuéxí zhōngwén.",
+        "english": "I study Chinese every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6680,7 +9182,13 @@
     "pinyinNumbered": "",
     "english": "seminary",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天去学校。",
+        "pinyin": "Wǒ měi tiān qù xuéxiào.",
+        "english": "I go to school every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6696,7 +9204,13 @@
     "pinyinNumbered": "",
     "english": "seminary",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在音乐学院学习。",
+        "pinyin": "Wǒ zài yīnyuè xuéyuàn xuéxí.",
+        "english": "I study at the music academy."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6712,7 +9226,13 @@
     "pinyinNumbered": "",
     "english": "want",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我要喝水。",
+        "pinyin": "Wǒ yào hē shuǐ.",
+        "english": "I want to drink water."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6728,7 +9248,13 @@
     "pinyinNumbered": "",
     "english": "grandad",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我爷爷很老了。",
+        "pinyin": "Wǒ yéye hěn lǎo le.",
+        "english": "My grandad is very old."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6744,7 +9270,13 @@
     "pinyinNumbered": "",
     "english": "page",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这本书有一百页。",
+        "pinyin": "Zhè běn shū yǒu yībǎi yè.",
+        "english": "This book has one hundred pages."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6760,7 +9292,13 @@
     "pinyinNumbered": "",
     "english": "clothes",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的衣服很漂亮。",
+        "pinyin": "Wǒ de yīfu hěn piàoliang.",
+        "english": "My clothes are very beautiful."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6776,7 +9314,13 @@
     "pinyinNumbered": "",
     "english": "also",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢吃苹果，他也喜欢吃苹果。",
+        "pinyin": "Wǒ xǐhuān chī píngguǒ, tā yě xǐhuān chī píngguǒ.",
+        "english": "I like to eat apples, and he also likes to eat apples."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6792,7 +9336,13 @@
     "pinyinNumbered": "",
     "english": "Galen",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我爸爸是医生。",
+        "pinyin": "Wǒ bàba shì yīshēng.",
+        "english": "My father is a doctor."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6808,7 +9358,13 @@
     "pinyinNumbered": "",
     "english": "spital",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我去医院看医生了。",
+        "pinyin": "Wǒ qù yīyuàn kàn yīshēng le.",
+        "english": "I went to the hospital to see a doctor."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6824,7 +9380,13 @@
     "pinyinNumbered": "",
     "english": "det.: one",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一个苹果。",
+        "pinyin": "Wǒ yǒu yī ge píngguǒ.",
+        "english": "I have one apple."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6840,7 +9402,13 @@
     "pinyinNumbered": "",
     "english": "a moment",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你先坐一会儿，我马上回来。",
+        "pinyin": "Nǐ xiān zuò yīhuìr, wǒ mǎshang huílái.",
+        "english": "You sit for a moment first, I'll be back right away."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6856,7 +9424,13 @@
     "pinyinNumbered": "",
     "english": "together",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们一块儿吃饭吧。",
+        "pinyin": "Wǒmen yīkuàir chīfàn ba.",
+        "english": "Let's eat together."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6872,7 +9446,13 @@
     "pinyinNumbered": "",
     "english": "(used after a verb) give it a go",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你尝一下儿这个苹果。",
+        "pinyin": "Nǐ cháng yīxiàr zhège píngguǒ.",
+        "english": "Try this apple."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6888,7 +9468,13 @@
     "pinyinNumbered": "",
     "english": "det.: one half",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果的一半是红色的。",
+        "pinyin": "Zhège píngguǒ de yībàn shì hóngsè de.",
+        "english": "Half of this apple is red."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6904,7 +9490,13 @@
     "pinyinNumbered": "",
     "english": "at the same time",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我一边吃饭一边看电视。",
+        "pinyin": "Wǒ yībiān chīfàn yībiān kàn diànshì.",
+        "english": "I watch TV while eating at the same time."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6920,7 +9512,13 @@
     "pinyinNumbered": "",
     "english": "det.: a little bit",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有点儿累了。",
+        "pinyin": "Wǒ yǒudiǎnr lèi le.",
+        "english": "I'm a little bit tired."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6936,7 +9534,13 @@
     "pinyinNumbered": "",
     "english": "in_chorus",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们一起吃饭吧。",
+        "pinyin": "Wǒmen yīqǐ chīfàn ba.",
+        "english": "Let's eat together."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6952,7 +9556,13 @@
     "pinyinNumbered": "",
     "english": "det.: some",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我想买一些水果。",
+        "pinyin": "Wǒ xiǎng mǎi yīxiē shuǐguǒ.",
+        "english": "I want to buy some fruit."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6968,7 +9578,13 @@
     "pinyinNumbered": "",
     "english": "same",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们的书包一样。",
+        "pinyin": "Wǒmen de shūbāo yīyàng.",
+        "english": "Our backpacks are the same."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6984,7 +9600,13 @@
     "pinyinNumbered": "",
     "english": "det : some",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "有的学生喜欢踢球。",
+        "pinyin": "Yǒude xuésheng xǐhuān tī qiú.",
+        "english": "Some students like to play football."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7000,7 +9622,13 @@
     "pinyinNumbered": "",
     "english": "have",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有一个苹果。",
+        "pinyin": "Wǒ yǒu yī ge píngguǒ.",
+        "english": "I have an apple."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7016,7 +9644,13 @@
     "pinyinNumbered": "",
     "english": "well-known",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "迪士尼很有名。",
+        "pinyin": "Díshìní hěn yǒuming.",
+        "english": "Disney is very well-known."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7032,7 +9666,13 @@
     "pinyinNumbered": "",
     "english": "with",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我用筷子吃饭。",
+        "pinyin": "Wǒ yòng kuàizi chīfàn.",
+        "english": "I eat with chopsticks."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7048,7 +9688,13 @@
     "pinyinNumbered": "",
     "english": "from time to time",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有时候喜欢喝茶。",
+        "pinyin": "Wǒ yǒushíhou xǐhuān hē chá.",
+        "english": "I like to drink tea from time to time."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7064,7 +9710,13 @@
     "pinyinNumbered": "",
     "english": "kind_of",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天有些冷。",
+        "pinyin": "Jīntiān yǒuxiē lěng.",
+        "english": "It's kind of cold today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7080,7 +9732,13 @@
     "pinyinNumbered": "",
     "english": "belong",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个工具很有用。",
+        "pinyin": "Zhège gōngjù hěn yǒuyòng.",
+        "english": "This tool is very useful."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7096,7 +9754,13 @@
     "pinyinNumbered": "",
     "english": "right side as side of precedence",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的右边是我的朋友。",
+        "pinyin": "Wǒ de yòubiān shì wǒ de péngyou.",
+        "english": "My right side is my friend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7112,7 +9776,13 @@
     "pinyinNumbered": "",
     "english": "right side",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书在右边。",
+        "pinyin": "Wǒ de shū zài yòubian.",
+        "english": "My book is on the right side."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7128,7 +9798,13 @@
     "pinyinNumbered": "",
     "english": "rain",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天下雨了，我不想出去。",
+        "pinyin": "Jīntiān xiàyǔ le, wǒ búxiǎng chūqù.",
+        "english": "It rained today, and I don't want to go out."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7144,7 +9820,13 @@
     "pinyinNumbered": "",
     "english": "m.[standard]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果三块钱，五块钱一斤。",
+        "pinyin": "Zhège píngguǒ sān kuài qián, wǔ kuài qián yī jīn.",
+        "english": "This apple costs three yuan, five yuan per catty."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7160,7 +9842,13 @@
     "pinyinNumbered": "",
     "english": "far",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "学校离我家很远。",
+        "pinyin": "Xuéxiào lí wǒ jiā hěn yuǎn.",
+        "english": "The school is very far from my home."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7176,7 +9864,13 @@
     "pinyinNumbered": "",
     "english": "moon",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天晚上的月亮很漂亮。",
+        "pinyin": "Jīntiān wǎnshang de yuèliàng hěn piàoliang.",
+        "english": "The moon tonight is very beautiful."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7192,7 +9886,13 @@
     "pinyinNumbered": "",
     "english": "again",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我再喝一杯茶。",
+        "pinyin": "Wǒ zài hē yī bēi chá.",
+        "english": "I'll drink another cup of tea."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7208,7 +9908,13 @@
     "pinyinNumbered": "",
     "english": "good-bye",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "好的,明天见。再见!",
+        "pinyin": "Hǎo de, míngtiān jiàn. Zàijiàn!",
+        "english": "Okay, see you tomorrow. Goodbye!"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7224,7 +9930,13 @@
     "pinyinNumbered": "",
     "english": "in",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在家里。",
+        "pinyin": "Wǒ zài jiālǐ.",
+        "english": "I am at home."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7240,7 +9952,13 @@
     "pinyinNumbered": "",
     "english": "At home",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我今天在家休息。",
+        "pinyin": "Wǒ jīntiān zàijiā xiūxi.",
+        "english": "I'm resting at home today."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7256,7 +9974,13 @@
     "pinyinNumbered": "",
     "english": "early",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天早上七点起床。",
+        "pinyin": "Wǒ měitiān zǎoshang qī diǎn qǐchuáng.",
+        "english": "I wake up at seven o'clock every morning."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7272,7 +9996,13 @@
     "pinyinNumbered": "",
     "english": "breakfast",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天吃早饭。",
+        "pinyin": "Wǒ měitiān chī zǎofàn.",
+        "english": "I eat breakfast every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7288,7 +10018,13 @@
     "pinyinNumbered": "",
     "english": "early morning",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我早上喝咖啡。",
+        "pinyin": "Wǒ zǎoshang hē kāfēi.",
+        "english": "I drink coffee in the early morning."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7304,7 +10040,13 @@
     "pinyinNumbered": "",
     "english": "how",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你怎么了？",
+        "pinyin": "Nǐ zěnme le?",
+        "english": "What's wrong with you?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7320,7 +10062,13 @@
     "pinyinNumbered": "",
     "english": "to stand",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我站在这里等你。",
+        "pinyin": "Wǒ zhàn zài zhèlǐ děng nǐ.",
+        "english": "I'm standing here waiting for you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7336,7 +10084,13 @@
     "pinyinNumbered": "",
     "english": "look for",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在找我的钥匙。",
+        "pinyin": "Wǒ zài zhǎo wǒ de yàoshi.",
+        "english": "I am looking for my keys."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7352,7 +10106,13 @@
     "pinyinNumbered": "",
     "english": "light upon",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我找到了我的钥匙。",
+        "pinyin": "Wǒ zhǎodào le wǒ de yaoshi.",
+        "english": "I found my keys."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7368,7 +10128,13 @@
     "pinyinNumbered": "",
     "english": "this side",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请坐这边。",
+        "pinyin": "Qǐng zuò zhèbiān.",
+        "english": "Please sit on this side."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7384,7 +10150,13 @@
     "pinyinNumbered": "",
     "english": "now",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我的书。",
+        "pinyin": "Zhè shì wǒ de shū.",
+        "english": "This is my book."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7400,7 +10172,13 @@
     "pinyinNumbered": "",
     "english": "this place",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这里很安静。",
+        "pinyin": "Zhèlǐ hěn ānjìng.",
+        "english": "This place is very quiet."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7416,7 +10194,13 @@
     "pinyinNumbered": "",
     "english": "now",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们这儿有很多人。",
+        "pinyin": "Wǒmen zhèr yǒu hěnduō rén.",
+        "english": "There are many people here."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7432,7 +10216,13 @@
     "pinyinNumbered": "",
     "english": "det.: these",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这些书很有意思。",
+        "pinyin": "Zhèxiē shū hěn yǒu yìsi.",
+        "english": "These books are very interesting."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7448,7 +10238,13 @@
     "pinyinNumbered": "",
     "english": "[aspect]",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我正在看着天空。",
+        "pinyin": "Wǒ zhèngzài kànzhe tiānkōng.",
+        "english": "I am looking at the sky."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7464,7 +10260,13 @@
     "pinyinNumbered": "",
     "english": "really",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这真的很好吃。",
+        "pinyin": "Zhè zhēn de hěn hǎochī.",
+        "english": "This is really delicious."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7480,7 +10282,13 @@
     "pinyinNumbered": "",
     "english": "really",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这真的很好吃！",
+        "pinyin": "Zhè zhēn de hěn hǎochī!",
+        "english": "This is really delicious!"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7496,7 +10304,13 @@
     "pinyinNumbered": "",
     "english": "precisely",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "现在正是下午三点。",
+        "pinyin": "Xiànzài zhèng shì xiàwǔ sān diǎn.",
+        "english": "It is precisely three o'clock in the afternoon right now."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7512,7 +10326,13 @@
     "pinyinNumbered": "",
     "english": "course of",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我正在吃饭。",
+        "pinyin": "Wǒ zhèngzài chīfàn.",
+        "english": "I am eating right now."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7528,7 +10348,13 @@
     "pinyinNumbered": "",
     "english": "tell",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你知道我的名字吗？",
+        "pinyin": "Nǐ zhīdào wǒ de míngzì ma?",
+        "english": "Do you know my name?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7544,7 +10370,13 @@
     "pinyinNumbered": "",
     "english": "lear",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "学习知识很重要。",
+        "pinyin": "Xuéxí zhīshi hěn zhòngyào.",
+        "english": "Learning knowledge is very important."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7560,7 +10392,13 @@
     "pinyinNumbered": "",
     "english": "Cathay",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我来自中国。",
+        "pinyin": "Wǒ lái zì Zhōngguó.",
+        "english": "I come from China."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7576,7 +10414,13 @@
     "pinyinNumbered": "",
     "english": "center",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在公司中工作。",
+        "pinyin": "Wǒ zài gōngsī zhōng gōngzuò.",
+        "english": "I work in a company."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7592,7 +10436,13 @@
     "pinyinNumbered": "",
     "english": "center",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我坐在中间。",
+        "pinyin": "Wǒ zuò zài zhōngjiān.",
+        "english": "I sit in the middle."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7608,7 +10458,13 @@
     "pinyinNumbered": "",
     "english": "Chinese",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我学中文。",
+        "pinyin": "Wǒ xué Zhōngwén.",
+        "english": "I study Chinese."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7624,7 +10480,13 @@
     "pinyinNumbered": "",
     "english": "noon",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我中午吃饭。",
+        "pinyin": "Wǒ zhōngwǔ chīfàn.",
+        "english": "I eat lunch at noon."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7640,7 +10502,13 @@
     "pinyinNumbered": "",
     "english": "middle_school",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我哥哥在中学读书。",
+        "pinyin": "Wǒ gēge zài zhōngxué dúshū.",
+        "english": "My older brother is studying at middle school."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7656,7 +10524,13 @@
     "pinyinNumbered": "",
     "english": "middle-school student",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他是一个中学生，每天都要上学。",
+        "pinyin": "Tā shì yīgè zhōngxuéshēng, měitiān dōu yào shàngxué.",
+        "english": "He is a middle-school student and has to go to school every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7672,7 +10546,13 @@
     "pinyinNumbered": "",
     "english": "heavy",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个箱子很重，我搬不动。",
+        "pinyin": "Zhège xiāngzi hěn zhòng, wǒ bān bu dòng.",
+        "english": "This suitcase is very heavy, I can't move it."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7688,7 +10568,13 @@
     "pinyinNumbered": "",
     "english": "important",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "健康很重要。",
+        "pinyin": "Jiànkāng hěn zhòngyào.",
+        "english": "Health is very important."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7704,7 +10590,13 @@
     "pinyinNumbered": "",
     "english": "inhabit",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我住在北京。",
+        "pinyin": "Wǒ zhù zài Běijīng.",
+        "english": "I live in Beijing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7720,7 +10612,13 @@
     "pinyinNumbered": "",
     "english": "prepare",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我准备吃饭了。",
+        "pinyin": "Wǒ zhǔnbèi chīfàn le.",
+        "english": "I'm preparing to eat now."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7736,7 +10634,13 @@
     "pinyinNumbered": "",
     "english": "mahogany",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是一张桌子。",
+        "pinyin": "Zhè shì yī zhāng zhuōzi.",
+        "english": "This is a table."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7752,7 +10656,13 @@
     "pinyinNumbered": "",
     "english": "graphic symbol",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个字很难写。",
+        "pinyin": "Zhège zì hěn nán xiě.",
+        "english": "This character is very difficult to write."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7768,7 +10678,13 @@
     "pinyinNumbered": "",
     "english": "son",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他有一个儿子。",
+        "pinyin": "Tā yǒu yī gè érzi.",
+        "english": "He has a son."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7784,7 +10700,13 @@
     "pinyinNumbered": "",
     "english": "scram",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你快走！",
+        "pinyin": "Nǐ kuài zǒu!",
+        "english": "You scram! / Get out of here!"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7800,7 +10722,13 @@
     "pinyinNumbered": "",
     "english": "most",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这是我最喜欢的书。",
+        "pinyin": "Zhè shì wǒ zuì xǐhuān de shū.",
+        "english": "This is my favorite book."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7816,7 +10744,13 @@
     "pinyinNumbered": "",
     "english": "go away",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我每天走路去上班。",
+        "pinyin": "Wǒ měi tiān zǒu lù qù shàng bān.",
+        "english": "I walk to work every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7832,7 +10766,13 @@
     "pinyinNumbered": "",
     "english": "had better",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你最好早点睡觉。",
+        "pinyin": "Nǐ zuìhǎo zǎodiǎn shuìjiào.",
+        "english": "You'd better go to bed early."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7848,7 +10788,13 @@
     "pinyinNumbered": "",
     "english": "final",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "最后我们去公园玩。",
+        "pinyin": "Zuìhòu wǒmen qù gōngyuán wán.",
+        "english": "Finally, we went to the park to play."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7864,7 +10810,13 @@
     "pinyinNumbered": "",
     "english": "yesterday",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "昨天我吃了很好吃的饭。",
+        "pinyin": "Zuótiān wǒ chīle hěn hǎochī de fàn.",
+        "english": "Yesterday I ate very delicious food."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7880,7 +10832,13 @@
     "pinyinNumbered": "",
     "english": "left",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书在左边。",
+        "pinyin": "Wǒ de shū zài zuǒbian.",
+        "english": "My book is on the left."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7896,7 +10854,13 @@
     "pinyinNumbered": "",
     "english": "left side",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的书在左边。",
+        "pinyin": "Wǒ de shū zài zuǒbiān.",
+        "english": "My book is on the left side."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7912,7 +10876,13 @@
     "pinyinNumbered": "",
     "english": "sit",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请坐。",
+        "pinyin": "Qǐng zuò.",
+        "english": "Please sit."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7928,7 +10898,13 @@
     "pinyinNumbered": "",
     "english": "subside",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请坐下，我们开始上课。",
+        "pinyin": "Qǐng zuòxià, wǒmen kāishǐ shàngkè.",
+        "english": "Please sit down, we're starting class."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7944,7 +10920,13 @@
     "pinyinNumbered": "",
     "english": "make",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我在做饭。",
+        "pinyin": "Wǒ zài zuò fàn.",
+        "english": "I am making food."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
