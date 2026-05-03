@@ -4,6 +4,7 @@ import AudioButton from '../components/AudioButton'
 import TeacherButton from '../components/TeacherButton'
 import TonedPinyin from '../components/TonedPinyin'
 import PronunciationChecker from '../components/PronunciationChecker'
+import StrokeOrder from '../components/StrokeOrder'
 import { useDismissed } from '../hooks/useDismissed'
 import { useProgress } from '../hooks/useProgress'
 import { useFavourites } from '../hooks/useFavourites'
@@ -111,6 +112,8 @@ export default function DetailPage() {
             ))}
           </section>
         )}
+
+        <StrokeOrder characters={word.simplified} />
 
         <PronunciationChecker target={word.simplified} />
 

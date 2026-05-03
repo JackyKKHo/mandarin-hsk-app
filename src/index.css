@@ -190,6 +190,139 @@ body {
   line-height: 1.6;
 }
 
+/* Stats page */
+.stats-page {
+  padding: 1.25rem 1rem 3rem;
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.stats-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.stats-hero-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+@media (min-width: 480px) {
+  .stats-hero-row { grid-template-columns: repeat(4, 1fr); }
+}
+.stats-hero-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+}
+.stats-hero-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+.stats-hero-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.stats-hero-sub {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.today-badge { color: #27ae60 !important; font-weight: 600; }
+.stats-link { color: var(--red); text-decoration: none; }
+.stats-link:hover { text-decoration: underline; }
+
+.stats-overall {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.stats-overall-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.stats-bar-track {
+  height: 8px;
+  background: var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+  position: relative;
+}
+.stats-bar-sm { height: 6px; }
+.stats-bar-fill {
+  height: 100%;
+  background: var(--red);
+  border-radius: 99px;
+  transition: width 0.4s ease;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+.stats-bar-reviewed {
+  height: 100%;
+  background: #dce3f5;
+  border-radius: 99px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+html.dark .stats-bar-reviewed { background: #22263a; }
+
+.stats-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.stats-level-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.stats-level-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.stats-level-name {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--text);
+  text-decoration: none;
+  min-width: 3rem;
+}
+.stats-level-name:hover { color: var(--red); }
+.stats-level-counts {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.slc-learned { color: var(--red); font-weight: 600; }
+.slc-due     { color: #e67e22; font-weight: 600; }
+.slc-total   { color: var(--muted); }
+.stats-practice-btn {
+  margin-left: auto;
+  font-size: 0.78rem;
+  color: var(--red);
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.stats-practice-btn:hover { text-decoration: underline; }
+
 /* ── Vocab grid ── */
 .vocab-grid {
   display: grid;
@@ -773,6 +906,55 @@ html.dark .syl-wrong { background: #1a0a0a; }
   transition: color 0.15s, background 0.15s;
 }
 .pronun-retry:hover { color: var(--text); background: var(--surface); }
+
+/* Stroke order */
+.stroke-order-section {
+  margin-top: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.stroke-order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55rem 1rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.stroke-order-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.stroke-order-actions { display: flex; gap: 0.4rem; }
+.stroke-btn {
+  padding: 0.25rem 0.65rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  color: var(--text);
+  font-family: inherit;
+  transition: border-color 0.15s, color 0.15s;
+}
+.stroke-btn:hover:not(:disabled) { border-color: var(--red); color: var(--red); }
+.stroke-btn:disabled { opacity: 0.4; cursor: default; }
+.stroke-chars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--surface);
+}
+.stroke-char-wrap svg { display: block; }
+.stroke-missing { padding: 0.75rem 1rem; font-size: 0.82rem; color: var(--muted); }
+html.dark .stroke-order-section { border-color: var(--border); }
+html.dark .stroke-order-header { background: #13161f; }
+html.dark .stroke-chars { background: var(--surface); }
 
 /* Complete screen */
 .practice-complete-card {

@@ -7,6 +7,7 @@ import GrammarDetailPage from './pages/GrammarDetailPage'
 import StopAudioOnNavigate from './components/StopAudioOnNavigate'
 import FavouritesPage from './pages/FavouritesPage'
 import SearchPage from './pages/SearchPage'
+import StatsPage from './pages/StatsPage'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/grammar/point/:id" element={<GrammarDetailPage />} />
         <Route path="/favourites" element={<FavouritesPage />} />
         <Route path="/search" element={<SearchPage />} />
+        <Route path="/stats" element={<StatsPage />} />
       </Routes>
     </BrowserRouter>
   )

@@ -9,6 +9,7 @@ export default function AppHeader() {
   const section = pathname.startsWith('/grammar') ? 'grammar'
     : pathname.startsWith('/favourites') ? 'favourites'
     : pathname.startsWith('/search') ? 'search'
+    : pathname.startsWith('/stats') ? 'stats'
     : 'vocab'
 
   return (
@@ -23,6 +24,9 @@ export default function AppHeader() {
         </Link>
         <Link to="/search" className={`app-nav-link${section === 'search' ? ' active' : ''}`}>
           🔍
+        </Link>
+        <Link to="/stats" className={`app-nav-link${section === 'stats' ? ' active' : ''}`}>
+          📊
         </Link>
         <Link to="/favourites" className={`app-nav-link${section === 'favourites' ? ' active' : ''}`}>
           ★{favourites.size > 0 && <span className="fav-count">{favourites.size}</span>}
