@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         input: { text },
         voice: {
           languageCode: 'cmn-CN',
-          name: 'cmn-CN-Wavenet-D',
+          name: 'cmn-CN-Neural2-D',
           ssmlGender: 'FEMALE',
         },
         audioConfig: {
