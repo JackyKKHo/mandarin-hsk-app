@@ -21,6 +21,7 @@ export default async function handler(req, res) {
   }
 
   const anthropicKey = process.env.ANTHROPIC_API_KEY
+  const googleKey = process.env.GOOGLE_TTS_API_KEY
 
   const contextNote = context
     ? `The student is currently studying the word: "${context.simplified}" (${context.pinyin}) meaning "${context.english}" — HSK Level ${context.hskLevel}.`
@@ -49,34 +50,35 @@ export default async function handler(req, res) {
   const data = await anthropicRes.json()
   const teacherText = data.content[0].text
 
-  const voiceId = process.env.ELEVENLABS_VOICE_ID
-  const elevenKey = process.env.ELEVENLABS_API_KEY
-
-  const ttsRes = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}/stream`, {
-    method: 'POST',
-    headers: {
-      'xi-api-key': elevenKey,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      text: teacherText,
-      model_id: 'eleven_multilingual_v2',
-      voice_settings: {
-        stability: 0.5,
-        similarity_boost: 0.85,
-        style: 0.3,
-        use_speaker_boost: true,
-      },
-    }),
-  })
+  const ttsRes = await fetch(
+    `https://texttospeech.googleapis.com/v1/text:synthesize?key=${googleKey}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        input: { text: teacherText },
+        voice: {
+          languageCode: 'en-US',
+          name: 'en-US-Wavenet-F',
+          ssmlGender: 'FEMALE',
+        },
+        audioConfig: {
+          audioEncoding: 'MP3',
+          speakingRate: 0.95,
+          pitch: 1.0,
+        },
+      }),
+    }
+  )
 
   if (!ttsRes.ok) {
     return res.status(200).json({ text: teacherText })
   }
 
+  const ttsData = await ttsRes.json()
+  const audioBuffer = Buffer.from(ttsData.audioContent, 'base64')
+
   res.setHeader('Content-Type', 'audio/mpeg')
   res.setHeader('X-Teacher-Text', encodeURIComponent(teacherText))
-
-  const arrayBuffer = await ttsRes.arrayBuffer()
-  res.send(Buffer.from(arrayBuffer))
+  res.send(audioBuffer)
 }
