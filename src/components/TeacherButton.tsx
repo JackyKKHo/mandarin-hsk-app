@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { playAudio } from '../audio'
 
 interface WordContext {
   simplified: string
@@ -13,30 +14,16 @@ interface Props {
 
 type Mode = 'idle' | 'thinking' | 'speaking'
 
-const PROMPTS = [
-  "Give me a tip for remembering this word and use it in a natural sentence.",
-  "How would a native speaker use this word in everyday conversation?",
-  "Give me a memory trick for this word and an example sentence.",
-  "What's a common mistake learners make with this word?",
-]
-
 export default function TeacherButton({ context }: Props) {
   const [mode, setMode] = useState<Mode>('idle')
   const [teacherText, setTeacherText] = useState('')
-  const [promptIndex, setPromptIndex] = useState(0)
+  const [input, setInput] = useState('')
+  const inputRef = useRef<HTMLInputElement>(null)
 
-  const modeLabel: Record<Mode, string> = {
-    idle: '🎙️ Ask Teacher',
-    thinking: '💭 Thinking...',
-    speaking: '🔊 Lin Wei is speaking...',
-  }
-
-  async function handleClick() {
-    if (mode !== 'idle') return
-
-    const message = PROMPTS[promptIndex % PROMPTS.length]
-    setPromptIndex(i => i + 1)
+  async function askTeacher(message: string) {
+    if (!message.trim()) return
     setMode('thinking')
+    setInput('')
 
     try {
       const res = await fetch('/api/teacher', {
@@ -54,11 +41,9 @@ export default function TeacherButton({ context }: Props) {
       if (contentType.includes('audio')) {
         setMode('speaking')
         const blob = await res.blob()
-        const url = URL.createObjectURL(blob)
-        const audio = new Audio(url)
-        audio.onended = () => { setMode('idle'); URL.revokeObjectURL(url) }
-        audio.onerror = () => { setMode('idle'); URL.revokeObjectURL(url) }
-        audio.play()
+        const audio = playAudio(blob)
+        audio.onended = () => setMode('idle')
+        audio.onerror = () => setMode('idle')
       } else {
         const data = await res.json()
         setTeacherText(data.text)
@@ -69,15 +54,38 @@ export default function TeacherButton({ context }: Props) {
     }
   }
 
+  function handleKeyDown(e: React.KeyboardEvent) {
+    if (e.key === 'Enter') askTeacher(input)
+  }
+
+  const placeholder = mode === 'thinking'
+    ? 'Lin Wei is thinking...'
+    : mode === 'speaking'
+    ? 'Lin Wei is speaking...'
+    : `Ask Lin Wei about "${context.simplified}"...`
+
   return (
     <div className="teacher-section">
-      <button
-        className={`teacher-btn mode-${mode}`}
-        onClick={handleClick}
-        disabled={mode !== 'idle'}
-      >
-        {modeLabel[mode]}
-      </button>
+      <div className="teacher-input-row">
+        <input
+          ref={inputRef}
+          className="teacher-input"
+          type="text"
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={handleKeyDown}
+          placeholder={placeholder}
+          disabled={mode !== 'idle'}
+        />
+        <button
+          className={`teacher-send-btn mode-${mode}`}
+          onClick={() => askTeacher(input || `Give me a tip for remembering "${context.simplified}" and use it in a natural sentence.`)}
+          disabled={mode !== 'idle'}
+          title="Ask teacher"
+        >
+          {mode === 'thinking' ? '💭' : mode === 'speaking' ? '🔊' : '➤'}
+        </button>
+      </div>
       {teacherText && (
         <p className="teacher-text">
           <span className="teacher-name">Lin Wei:</span> {teacherText}

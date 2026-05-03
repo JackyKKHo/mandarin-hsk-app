@@ -698,3 +698,38 @@ body {
   color: #b8860b;
   margin-right: 0.3rem;
 }
+
+.teacher-input-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.teacher-input {
+  flex: 1;
+  padding: 0.55rem 0.9rem;
+  border: 1.5px solid #e0d5c5;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fdfaf6;
+}
+.teacher-input:focus { border-color: #d4a017; }
+.teacher-input:disabled { opacity: 0.6; background: #f5f5f5; }
+.teacher-send-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #d4a017;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.teacher-send-btn:hover:not(:disabled) { background: #b8860b; }
+.teacher-send-btn:disabled { opacity: 0.6; cursor: default; }

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { playAudio } from '../audio'
 
 interface Props {
   text: string
@@ -18,17 +19,9 @@ export default function AudioButton({ text, audioUrl, label }: Props) {
       const res = await fetch(src)
       if (!res.ok) throw new Error('TTS failed')
       const blob = await res.blob()
-      const url = URL.createObjectURL(blob)
-      const audio = new Audio(url)
-      audio.onended = () => {
-        setPlaying(false)
-        URL.revokeObjectURL(url)
-      }
-      audio.onerror = () => {
-        setPlaying(false)
-        URL.revokeObjectURL(url)
-      }
-      audio.play()
+      const audio = playAudio(blob)
+      audio.onended = () => setPlaying(false)
+      audio.onerror = () => setPlaying(false)
     } catch {
       setPlaying(false)
     }
