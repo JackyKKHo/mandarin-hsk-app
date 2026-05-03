@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import vocab from '../data/vocab'
 import AudioButton from '../components/AudioButton'
+import TeacherButton from '../components/TeacherButton'
 import TonedPinyin from '../components/TonedPinyin'
 import { useDismissed } from '../hooks/useDismissed'
 
@@ -87,6 +88,13 @@ export default function DetailPage() {
             ))}
           </section>
         )}
+
+        <TeacherButton context={{
+          simplified: word.simplified,
+          pinyin: word.pinyin,
+          english: word.english,
+          hskLevel: word.hskLevel,
+        }} />
 
         {word.tags.length > 0 && (
           <div className="tags-section">

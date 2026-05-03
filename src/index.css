@@ -656,3 +656,45 @@ body {
   .fc-chinese { font-size: 4rem; }
   .flashcard { height: 320px; }
 }
+
+/* ── Teacher ── */
+.teacher-section {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #f0e6d3;
+}
+.teacher-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  background: #e8f4fd;
+  color: #1a6fa8;
+}
+.teacher-btn:hover:not(:disabled) { background: #d0eaf8; transform: scale(1.02); }
+.teacher-btn:disabled { opacity: 0.6; cursor: default; }
+.teacher-btn.mode-listening { background: #fde8e8; color: #c0392b; animation: pulse 1.2s infinite; }
+.teacher-btn.mode-thinking  { background: #f5f0ff; color: #6c3fcf; }
+.teacher-btn.mode-speaking  { background: #e8fdf0; color: #1a7a44; }
+@keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:0.6 } }
+.teacher-text {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #fafaf7;
+  border-left: 3px solid #d4a017;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #333;
+}
+.teacher-name {
+  font-weight: 700;
+  color: #b8860b;
+  margin-right: 0.3rem;
+}

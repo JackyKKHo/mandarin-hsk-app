@@ -6,57 +6,32 @@ interface Props {
   label?: string
 }
 
-function speakWithVoices(text: string, onEnd: () => void) {
-  const synth = window.speechSynthesis
-  synth.cancel()
-
-  function doSpeak() {
-    const utterance = new SpeechSynthesisUtterance(text)
-    utterance.lang = 'zh-CN'
-    utterance.rate = 0.85
-
-    const voices = synth.getVoices()
-    const chinese = voices.find(v => v.lang.startsWith('zh'))
-    if (chinese) utterance.voice = chinese
-
-    utterance.onend = onEnd
-    utterance.onerror = onEnd
-    synth.speak(utterance)
-  }
-
-  const voices = synth.getVoices()
-  if (voices.length > 0) {
-    doSpeak()
-  } else {
-    synth.onvoiceschanged = () => {
-      synth.onvoiceschanged = null
-      doSpeak()
-    }
-    // iOS fallback: voices may never fire the event, try after short delay
-    setTimeout(() => {
-      if (synth.getVoices().length > 0) doSpeak()
-    }, 250)
-  }
-}
-
 export default function AudioButton({ text, audioUrl, label }: Props) {
   const [playing, setPlaying] = useState(false)
 
-  function play() {
+  async function play() {
     if (playing) return
-
-    if (audioUrl) {
-      const audio = new Audio(audioUrl)
-      setPlaying(true)
-      audio.onended = () => setPlaying(false)
-      audio.onerror = () => setPlaying(false)
-      audio.play()
-      return
-    }
-
-    if (!window.speechSynthesis) return
     setPlaying(true)
-    speakWithVoices(text, () => setPlaying(false))
+
+    try {
+      const src = audioUrl ?? `/api/tts?text=${encodeURIComponent(text)}`
+      const res = await fetch(src)
+      if (!res.ok) throw new Error('TTS failed')
+      const blob = await res.blob()
+      const url = URL.createObjectURL(blob)
+      const audio = new Audio(url)
+      audio.onended = () => {
+        setPlaying(false)
+        URL.revokeObjectURL(url)
+      }
+      audio.onerror = () => {
+        setPlaying(false)
+        URL.revokeObjectURL(url)
+      }
+      audio.play()
+    } catch {
+      setPlaying(false)
+    }
   }
 
   return (
