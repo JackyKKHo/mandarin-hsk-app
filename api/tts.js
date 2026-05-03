@@ -31,7 +31,7 @@ export default async function handler(req) {
 
   if (!res.ok) {
     const err = await res.text()
-    return new Response(`ElevenLabs error: ${err}`, { status: res.status })
+    return new Response(`ElevenLabs error (${res.status}): ${err}`, { status: 500 })
   }
 
   return new Response(res.body, {
