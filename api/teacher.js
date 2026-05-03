@@ -12,7 +12,9 @@ Format rules (IMPORTANT — this is spoken audio):
 - No bullet points, no lists, no markdown
 - Speak conversationally as if chatting face to face
 - When demonstrating Chinese pronunciation, say the word slowly and clearly
-- Always respond in English unless demonstrating a Chinese word or phrase`
+- Always respond in English unless demonstrating a Chinese word or phrase
+- The student may speak or type in English or Chinese — handle both naturally
+- If they speak Chinese to you, acknowledge it warmly and respond in English with feedback on what they said`
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
