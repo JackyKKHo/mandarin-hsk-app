@@ -26,11 +26,17 @@ export default async function handler(req, res) {
   }
 
   try {
-  const { message, context } = req.body ?? {}
+  const { message, context, immersion = 'intermediate' } = req.body ?? {}
 
   if (!message) {
     return res.status(400).send(`Missing message — body: ${JSON.stringify(req.body)}`)
   }
+
+  const immersionNote = {
+    beginner: `Respond mostly in English. Only include Chinese characters when saying the target word itself. Keep it very accessible.`,
+    intermediate: `Mix English and Chinese naturally. Say key phrases in Chinese, give English explanations. Include pinyin for any Chinese you use.`,
+    advanced: `Respond mostly in Chinese (Mandarin). Use English only to clarify meaning when essential. Speak to the student as if they are nearly fluent.`,
+  }[immersion] || ''
 
   const anthropicKey = process.env.ANTHROPIC_API_KEY
   const googleKey = process.env.GOOGLE_TTS_API_KEY
@@ -49,7 +55,7 @@ export default async function handler(req, res) {
     body: JSON.stringify({
       model: 'claude-haiku-4-5',
       max_tokens: 150,
-      system: SYSTEM_PROMPT + (contextNote ? `\n\n${contextNote}` : ''),
+      system: SYSTEM_PROMPT + (contextNote ? `\n\n${contextNote}` : '') + (immersionNote ? `\n\nImmersion level instruction: ${immersionNote}` : ''),
       messages: [{ role: 'user', content: message }],
     }),
   })
