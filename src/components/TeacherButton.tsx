@@ -148,7 +148,7 @@ export default function TeacherButton({ context }: Props) {
     <div className="teacher-wrap">
       {!open ? (
         <button className="teacher-open-btn" onClick={() => setOpen(true)}>
-          <span className="teacher-avatar">林</span>
+          <img src="/lin-wei.svg" alt="Lin Wei" className="teacher-avatar" />
           <span>Ask Lin Wei 老师</span>
           {messages.length > 0 && <span className="teacher-badge">{messages.length}</span>}
         </button>
@@ -156,7 +156,7 @@ export default function TeacherButton({ context }: Props) {
         <div className="teacher-chat">
           {/* Header */}
           <div className="teacher-chat-header">
-            <span className="teacher-avatar-sm">林</span>
+            <img src="/lin-wei.svg" alt="Lin Wei" className="teacher-avatar-sm" />
             <span className="teacher-chat-name">Lin Wei 老师</span>
             <div className="immersion-picker" style={{ marginLeft: 'auto' }}>
               <button
@@ -202,7 +202,7 @@ export default function TeacherButton({ context }: Props) {
 
             {messages.map((m, i) => (
               <div key={i} className={`chat-bubble-row ${m.role === 'user' ? 'cb-user' : 'cb-teacher'}`}>
-                {m.role === 'teacher' && <span className="chat-avatar">林</span>}
+                {m.role === 'teacher' && <img src="/lin-wei.svg" alt="Lin Wei" className="chat-avatar" />}
                 <div className={`chat-bubble ${m.role === 'user' ? 'bubble-user' : 'bubble-teacher'}`}>
                   <span>{m.text}</span>
                   {m.role === 'teacher' && m.audioBlob && (
@@ -218,7 +218,7 @@ export default function TeacherButton({ context }: Props) {
 
             {status === 'thinking' && (
               <div className="chat-bubble-row cb-teacher">
-                <span className="chat-avatar">林</span>
+                <img src="/lin-wei.svg" alt="Lin Wei" className="chat-avatar" />
                 <div className="chat-bubble bubble-teacher chat-typing">
                   <span className="typing-dot" /><span className="typing-dot" /><span className="typing-dot" />
                 </div>

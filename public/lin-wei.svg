@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff5e6"/>
+      <stop offset="100%" stop-color="#fde8c8"/>
+    </radialGradient>
+    <radialGradient id="faceGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fddbb4"/>
+      <stop offset="100%" stop-color="#f5c28a"/>
+    </radialGradient>
+    <radialGradient id="cheekGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f4a0a0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f4a0a0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="circle">
+      <circle cx="100" cy="100" r="98"/>
+    </clipPath>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#c0392b" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="99" fill="#c0392b"/>
+  <circle cx="100" cy="100" r="95" fill="#e74c3c"/>
+  <circle cx="100" cy="100" r="92" fill="url(#bgGrad)"/>
+
+  <!-- Gold decorative ring pattern -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#d4a017" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <g clip-path="url(#circle)">
+
+    <!-- Body / qipao collar -->
+    <ellipse cx="100" cy="185" rx="52" ry="28" fill="#c0392b"/>
+    <ellipse cx="100" cy="172" rx="44" ry="22" fill="#a93226"/>
+    <!-- Collar detail -->
+    <path d="M78 168 Q100 158 122 168 L118 175 Q100 165 82 175 Z" fill="#d4a017"/>
+    <!-- Collar knot buttons -->
+    <circle cx="100" cy="162" r="3" fill="#f5d76e"/>
+    <circle cx="100" cy="155" r="2.5" fill="#f5d76e"/>
+    <!-- Qipao pattern dots -->
+    <circle cx="87" cy="172" r="2" fill="#e74c3c" opacity="0.7"/>
+    <circle cx="113" cy="172" r="2" fill="#e74c3c" opacity="0.7"/>
+    <circle cx="93" cy="180" r="1.5" fill="#e74c3c" opacity="0.5"/>
+    <circle cx="107" cy="180" r="1.5" fill="#e74c3c" opacity="0.5"/>
+
+    <!-- Neck -->
+    <rect x="90" y="148" width="20" height="22" rx="8" fill="url(#faceGrad)"/>
+
+    <!-- Hair — back layer -->
+    <ellipse cx="100" cy="90" rx="46" ry="52" fill="#1a1a1a"/>
+
+    <!-- Face -->
+    <ellipse cx="100" cy="98" rx="38" ry="42" fill="url(#faceGrad)"/>
+
+    <!-- Ears -->
+    <ellipse cx="62" cy="100" rx="7" ry="9" fill="#f5c28a"/>
+    <ellipse cx="138" cy="100" rx="7" ry="9" fill="#f5c28a"/>
+    <ellipse cx="62" cy="100" rx="4" ry="6" fill="#f0b07a"/>
+    <ellipse cx="138" cy="100" rx="4" ry="6" fill="#f0b07a"/>
+
+    <!-- Ear stud — gold -->
+    <circle cx="62" cy="102" r="2.5" fill="#d4a017"/>
+    <circle cx="138" cy="102" r="2.5" fill="#d4a017"/>
+
+    <!-- Hair — front/top with elegant updo shape -->
+    <path d="M56 95 Q54 68 72 58 Q86 50 100 48 Q114 50 128 58 Q146 68 144 95 Q138 70 100 66 Q62 70 56 95 Z" fill="#1a1a1a"/>
+
+    <!-- Hair bun -->
+    <ellipse cx="100" cy="50" rx="18" ry="12" fill="#2c2c2c"/>
+    <ellipse cx="100" cy="48" rx="15" ry="9" fill="#1a1a1a"/>
+
+    <!-- Hairpin — gold -->
+    <line x1="84" y1="44" x2="116" y2="56" stroke="#d4a017" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="84" cy="44" r="4" fill="#d4a017"/>
+    <circle cx="84" cy="44" r="2" fill="#f5d76e"/>
+    <!-- Hairpin flower petals -->
+    <circle cx="79" cy="40" r="3" fill="#e74c3c" opacity="0.9"/>
+    <circle cx="84" cy="37" r="3" fill="#e74c3c" opacity="0.9"/>
+    <circle cx="89" cy="40" r="3" fill="#e74c3c" opacity="0.9"/>
+    <circle cx="84" cy="44" r="2.5" fill="#f5d76e"/>
+
+    <!-- Side hair wisps -->
+    <path d="M62 88 Q58 95 60 105" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M138 88 Q142 95 140 105" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Eyebrows -->
+    <path d="M78 83 Q85 79 92 81" stroke="#3d2314" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M108 81 Q115 79 122 83" stroke="#3d2314" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Eyes — almond shaped -->
+    <ellipse cx="85" cy="91" rx="10" ry="7" fill="white"/>
+    <ellipse cx="115" cy="91" rx="10" ry="7" fill="white"/>
+
+    <!-- Iris -->
+    <circle cx="86" cy="91" r="6" fill="#3d2314"/>
+    <circle cx="114" cy="91" r="6" fill="#3d2314"/>
+
+    <!-- Pupil shine -->
+    <circle cx="87" cy="91" r="4" fill="#1a0a06"/>
+    <circle cx="115" cy="91" r="4" fill="#1a0a06"/>
+    <circle cx="89" cy="88" r="2" fill="white" opacity="0.8"/>
+    <circle cx="117" cy="88" r="2" fill="white" opacity="0.8"/>
+
+    <!-- Eye upper lid line -->
+    <path d="M75 87 Q85 84 95 87" stroke="#3d2314" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M105 87 Q115 84 125 87" stroke="#3d2314" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Lashes -->
+    <line x1="76" y1="87" x2="73" y2="84" stroke="#3d2314" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="94" y1="87" x2="96" y2="84" stroke="#3d2314" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="106" y1="87" x2="104" y2="84" stroke="#3d2314" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="124" y1="87" x2="127" y2="84" stroke="#3d2314" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <path d="M98 101 Q100 107 102 101" stroke="#d4956a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="96" cy="107" rx="3.5" ry="2.5" fill="#d4956a" opacity="0.4"/>
+    <ellipse cx="104" cy="107" rx="3.5" ry="2.5" fill="#d4956a" opacity="0.4"/>
+
+    <!-- Cheek blush -->
+    <ellipse cx="74" cy="106" rx="11" ry="7" fill="url(#cheekGrad)"/>
+    <ellipse cx="126" cy="106" rx="11" ry="7" fill="url(#cheekGrad)"/>
+
+    <!-- Mouth — gentle smile -->
+    <path d="M89 117 Q100 125 111 117" stroke="#c0635a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M92 117 Q100 122 108 117" fill="#e07060" opacity="0.8"/>
+    <!-- Upper lip definition -->
+    <path d="M93 116 Q97 113 100 115 Q103 113 107 116" stroke="#c0635a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+
+  </g>
+
+  <!-- Outer decorative text ring hint -->
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#d4a017" stroke-width="1" opacity="0.5"/>
+
+  <!-- Small 师 character badge -->
+  <circle cx="156" cy="44" r="14" fill="#c0392b" filter="url(#shadow)"/>
+  <circle cx="156" cy="44" r="13" fill="#e74c3c"/>
+  <circle cx="156" cy="44" r="11" fill="none" stroke="#d4a017" stroke-width="1"/>
+  <text x="156" y="49" text-anchor="middle" font-family="serif" font-size="14" fill="#f5d76e" font-weight="bold">师</text>
+</svg>

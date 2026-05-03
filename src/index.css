@@ -1423,14 +1423,11 @@ html.dark .teacher-open-btn { border-color: #3d2e00; color: #f5a623; }
 html.dark .teacher-open-btn:hover { background: #1e1800; }
 
 .teacher-avatar {
-  width: 32px; height: 32px;
+  width: 36px; height: 36px;
   border-radius: 50%;
-  background: #d4a017;
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 700;
-  display: flex; align-items: center; justify-content: center;
+  object-fit: cover;
   flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18);
 }
 .teacher-badge {
   margin-left: auto;
@@ -1462,14 +1459,11 @@ html.dark .teacher-chat { border-color: #3d2e00; }
 html.dark .teacher-chat-header { background: #1e1800; border-color: #3d2e00; }
 
 .teacher-avatar-sm {
-  width: 26px; height: 26px;
+  width: 30px; height: 30px;
   border-radius: 50%;
-  background: #d4a017;
-  color: white;
-  font-size: 0.78rem;
-  font-weight: 700;
-  display: flex; align-items: center; justify-content: center;
+  object-fit: cover;
   flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18);
 }
 .teacher-chat-name { font-weight: 700; font-size: 0.88rem; color: #b8860b; }
 html.dark .teacher-chat-name { color: #f5a623; }
@@ -1527,15 +1521,12 @@ html.dark .teacher-chat-name { color: #f5a623; }
 .cb-teacher { flex-direction: row; }
 
 .chat-avatar {
-  width: 24px; height: 24px;
+  width: 28px; height: 28px;
   border-radius: 50%;
-  background: #d4a017;
-  color: white;
-  font-size: 0.72rem;
-  font-weight: 700;
-  display: flex; align-items: center; justify-content: center;
+  object-fit: cover;
   flex-shrink: 0;
   align-self: flex-end;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18);
 }
 
 .chat-bubble {
