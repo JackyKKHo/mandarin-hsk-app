@@ -4,10 +4,12 @@ import DetailPage from './pages/DetailPage'
 import PracticePage from './pages/PracticePage'
 import GrammarListPage from './pages/GrammarListPage'
 import GrammarDetailPage from './pages/GrammarDetailPage'
+import StopAudioOnNavigate from './components/StopAudioOnNavigate'
 
 export default function App() {
   return (
     <BrowserRouter>
+      <StopAudioOnNavigate />
       <Routes>
         <Route path="/" element={<Navigate to="/hsk/1" replace />} />
         <Route path="/hsk/:level" element={<BrowserPage />} />
