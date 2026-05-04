@@ -21,6 +21,8 @@ export default function AppHeader() {
     : pathname.startsWith('/stats') ? 'stats'
     : pathname.startsWith('/pronunciation') ? 'pronunciation'
     : pathname.startsWith('/keyboard') ? 'keyboard'
+    : pathname.startsWith('/course') ? 'course'
+    : pathname.startsWith('/dialogue') ? 'dialogues'
     : 'vocab'
 
   return (
@@ -34,6 +36,12 @@ export default function AppHeader() {
       <nav className="app-nav">
         <Link to="/hsk/1" className={`app-nav-link${section === 'vocab' ? ' active' : ''}`}>
           Vocabulary
+        </Link>
+        <Link to="/course" className={`app-nav-link${section === 'course' ? ' active' : ''}`}>
+          Course
+        </Link>
+        <Link to="/dialogues" className={`app-nav-link${section === 'dialogues' ? ' active' : ''}`}>
+          Dialogues
         </Link>
         <Link to="/grammar/1" className={`app-nav-link${section === 'grammar' ? ' active' : ''}`}>
           Grammar

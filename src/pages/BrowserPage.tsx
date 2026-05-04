@@ -18,6 +18,7 @@ export default function BrowserPage() {
   const navigate = useNavigate()
   const currentLevel = Number(level) || 1
   const [search, setSearch] = useState('')
+  const [sort, setSort] = useState<'default' | 'unlearned' | 'az'>('default')
   const [practiceOpen, setPracticeOpen] = useState(false)
   const [unlockBanner, setUnlockBanner] = useState<number | null>(null)
   const practiceRef = useRef<HTMLDivElement>(null)
@@ -63,14 +64,18 @@ export default function BrowserPage() {
 
   const words = useMemo(() => {
     const q = search.trim().toLowerCase()
-    if (!q) return levelWords
-    return levelWords.filter(
-      w =>
-        w.simplified.includes(search.trim()) ||
-        w.pinyin.toLowerCase().includes(q) ||
-        w.english.toLowerCase().includes(q)
-    )
-  }, [levelWords, search])
+    let result = q
+      ? levelWords.filter(
+          w =>
+            w.simplified.includes(search.trim()) ||
+            w.pinyin.toLowerCase().includes(q) ||
+            w.english.toLowerCase().includes(q)
+        )
+      : [...levelWords]
+    if (sort === 'unlearned') result.sort((a, b) => (learned.has(a.id) ? 1 : 0) - (learned.has(b.id) ? 1 : 0))
+    else if (sort === 'az') result.sort((a, b) => a.pinyin.localeCompare(b.pinyin))
+    return result
+  }, [levelWords, search, sort, learned])
 
   function switchLevel(l: number) {
     setSearch('')
@@ -137,6 +142,17 @@ export default function BrowserPage() {
           onChange={e => setSearch(e.target.value)}
           aria-label="Search vocabulary"
         />
+        <div className="sort-control">
+          {(['default', 'unlearned', 'az'] as const).map(s => (
+            <button
+              key={s}
+              className={`sort-btn${sort === s ? ' active' : ''}`}
+              onClick={() => setSort(s)}
+            >
+              {s === 'default' ? 'Default' : s === 'unlearned' ? 'Unlearned first' : 'A–Z'}
+            </button>
+          ))}
+        </div>
         <span className="result-count">
           {loading ? '…' : `${words.length} word${words.length !== 1 ? 's' : ''}`}
         </span>

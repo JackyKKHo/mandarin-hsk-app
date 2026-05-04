@@ -16,6 +16,10 @@ import FillBlankPage from './pages/FillBlankPage'
 import PronunciationPage from './pages/PronunciationPage'
 import ReviewPage from './pages/ReviewPage'
 import PinyinKeyboardPage from './pages/PinyinKeyboardPage'
+import CoursePage from './pages/CoursePage'
+import LessonPage from './pages/LessonPage'
+import DialoguesPage from './pages/DialoguesPage'
+import DialoguePage from './pages/DialoguePage'
 import WelcomePage, { shouldShowWelcome } from './pages/WelcomePage'
 
 export default function App() {
@@ -41,6 +45,10 @@ export default function App() {
         <Route path="/pronunciation" element={<PronunciationPage />} />
         <Route path="/review" element={<ReviewPage />} />
         <Route path="/keyboard" element={<PinyinKeyboardPage />} />
+        <Route path="/course" element={<CoursePage />} />
+        <Route path="/course/:lessonId" element={<LessonPage />} />
+        <Route path="/dialogues" element={<DialoguesPage />} />
+        <Route path="/dialogue/:id" element={<DialoguePage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>
