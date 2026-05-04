@@ -46,7 +46,7 @@ export default function AuthModal({ onClose }: Props) {
         {step === 'email' ? (
           <>
             <h2 style={styles.title}>Sign in</h2>
-            <p style={styles.sub}>We'll send a 6-digit code to your email.</p>
+            <p style={styles.sub}>We'll send a sign-in code to your email.</p>
             <form onSubmit={handleSend} style={styles.form}>
               <input
                 style={styles.input}
