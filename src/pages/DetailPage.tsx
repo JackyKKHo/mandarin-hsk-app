@@ -116,7 +116,34 @@ export default function DetailPage() {
           )}
         </div>
 
-        <div className="detail-english">{word.english}</div>
+        {word.meanings && word.meanings.length > 0 ? (
+          <section className="meanings-section">
+            {word.meanings.map((m, i) => (
+              <div key={i} className="meaning-item">
+                <div className="meaning-row">
+                  <span className="meaning-num">{i + 1}</span>
+                  <span className="meaning-def">{m.definition}</span>
+                </div>
+                <div className="meaning-example">
+                  <div className="meaning-ex-row">
+                    <div className="meaning-ex-content">
+                      <div className="example-chinese">{m.example.chinese}</div>
+                      <TonedPinyin pinyin={m.example.pinyin} className="example-pinyin" />
+                      <div className="example-english">{m.example.english}</div>
+                    </div>
+                    <AudioButton
+                      text={m.example.chinese}
+                      audioUrl={null}
+                      label={`Play example`}
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </section>
+        ) : (
+          <div className="detail-english">{word.english}</div>
+        )}
 
         {word.traditional !== word.simplified && (
           <div className="detail-traditional">
@@ -124,7 +151,7 @@ export default function DetailPage() {
           </div>
         )}
 
-        {word.examples.length > 0 && (
+        {!word.meanings && word.examples.length > 0 && (
           <section className="examples-section">
             <h3>Example sentences</h3>
             {word.examples.map((ex, i) => (

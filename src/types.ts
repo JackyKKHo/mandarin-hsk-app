@@ -21,6 +21,11 @@ export interface Example {
   english: string
 }
 
+export interface Meaning {
+  definition: string
+  example: Example
+}
+
 export interface VocabItem {
   id: string
   hskLevel: number
@@ -30,6 +35,7 @@ export interface VocabItem {
   pinyinNumbered: string
   english: string
   partOfSpeech: string
+  meanings?: Meaning[]
   examples: Example[]
   tags: string[]
   audio: {
