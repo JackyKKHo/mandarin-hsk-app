@@ -15,6 +15,7 @@ import ListeningPage from './pages/ListeningPage'
 import FillBlankPage from './pages/FillBlankPage'
 import PronunciationPage from './pages/PronunciationPage'
 import ReviewPage from './pages/ReviewPage'
+import PinyinKeyboardPage from './pages/PinyinKeyboardPage'
 import WelcomePage, { shouldShowWelcome } from './pages/WelcomePage'
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/fill/:level" element={<FillBlankPage />} />
         <Route path="/pronunciation" element={<PronunciationPage />} />
         <Route path="/review" element={<ReviewPage />} />
+        <Route path="/keyboard" element={<PinyinKeyboardPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>

@@ -20,6 +20,7 @@ export default function AppHeader() {
     : pathname.startsWith('/search') ? 'search'
     : pathname.startsWith('/stats') ? 'stats'
     : pathname.startsWith('/pronunciation') ? 'pronunciation'
+    : pathname.startsWith('/keyboard') ? 'keyboard'
     : 'vocab'
 
   return (
@@ -39,6 +40,9 @@ export default function AppHeader() {
         </Link>
         <Link to="/pronunciation" className={`app-nav-link${section === 'pronunciation' ? ' active' : ''}`}>
           🗣️
+        </Link>
+        <Link to="/keyboard" className={`app-nav-link${section === 'keyboard' ? ' active' : ''}`} title="Pinyin keyboard guide">
+          ⌨️
         </Link>
         <Link to="/search" className={`app-nav-link${section === 'search' ? ' active' : ''}`}>
           🔍

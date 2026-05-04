@@ -120,7 +120,11 @@ export default function BrowserPage() {
           <div className="level-progress-bar">
             <div className="level-progress-fill" style={{ width: `${progressPct}%` }} />
           </div>
-          <span className="level-progress-label">{currentLevelLearned} / {currentLevelTotal} learned ({progressPct}%)</span>
+          <span className="level-progress-label">
+            {progressPct >= 90 && currentLevelLearned < currentLevelTotal
+              ? `Almost there! Only ${currentLevelTotal - currentLevelLearned} words left`
+              : `${currentLevelLearned} / ${currentLevelTotal} learned (${progressPct}%)`}
+          </span>
         </div>
       )}
 
