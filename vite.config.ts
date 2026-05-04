@@ -9,9 +9,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico'],
       manifest: {
-        name: '汉语 Chinese Study',
-        short_name: 'Chinese HSK',
-        description: 'HSK vocabulary, grammar, and practice for Mandarin learners',
+        name: 'Mandarin Daily',
+        short_name: 'Mandarin Daily',
+        description: 'Learn Mandarin Chinese with flashcards, quizzes, and pronunciation guides for all HSK levels.',
         theme_color: '#c0392b',
         background_color: '#f4f5f7',
         display: 'standalone',
@@ -52,6 +52,7 @@ export default defineConfig({
     }),
   ],
   build: {
+    chunkSizeWarningLimit: 900,
     rollupOptions: {
       output: {
         manualChunks: {
