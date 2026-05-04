@@ -92,7 +92,11 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   padding: 0.55rem 1.25rem;
+  border: none;
   border-bottom: 3px solid transparent;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
   transition: color 0.15s, border-color 0.15s;
 }
 .app-nav-link:hover  { color: white; }
@@ -1407,10 +1411,6 @@ html.dark .stroke-chars { background: var(--surface); }
     padding: 0.45rem 0.7rem;
     white-space: nowrap;
     flex-shrink: 0;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
   }
 
   /* Browser controls: stack search above practice button */
