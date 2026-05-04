@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useAuth } from '../context/AuthContext'
 
 interface Props {
@@ -6,49 +6,92 @@ interface Props {
 }
 
 export default function AuthModal({ onClose }: Props) {
-  const { sendMagicLink } = useAuth()
+  const { sendOtp, verifyOtp } = useAuth()
   const [email, setEmail] = useState('')
+  const [code, setCode] = useState('')
+  const [step, setStep] = useState<'email' | 'code'>('email')
   const [error, setError] = useState('')
-  const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
+  const codeRef = useRef<HTMLInputElement>(null)
 
-  async function handleSubmit(e: React.FormEvent) {
+  useEffect(() => {
+    if (step === 'code') codeRef.current?.focus()
+  }, [step])
+
+  async function handleSend(e: React.FormEvent) {
     e.preventDefault()
     setError('')
     setLoading(true)
-    const { error } = await sendMagicLink(email)
+    const { error } = await sendOtp(email)
     setLoading(false)
     if (error) setError(error)
-    else setSent(true)
+    else setStep('code')
+  }
+
+  async function handleVerify(e: React.FormEvent) {
+    e.preventDefault()
+    setError('')
+    setLoading(true)
+    const { error } = await verifyOtp(email, code.trim())
+    setLoading(false)
+    if (error) setError(error)
+    else onClose()
   }
 
   return (
     <div style={styles.overlay} onClick={onClose}>
       <div style={styles.modal} onClick={e => e.stopPropagation()}>
         <button style={styles.close} onClick={onClose}>✕</button>
-        <h2 style={styles.title}>Sign in</h2>
-        <p style={styles.sub}>We'll email you a magic link — no password needed.</p>
 
-        {sent ? (
-          <p style={styles.success}>
-            Check your inbox for a sign-in link. You can close this.
-          </p>
+        {step === 'email' ? (
+          <>
+            <h2 style={styles.title}>Sign in</h2>
+            <p style={styles.sub}>We'll send a 6-digit code to your email.</p>
+            <form onSubmit={handleSend} style={styles.form}>
+              <input
+                style={styles.input}
+                type="email"
+                placeholder="your@email.com"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                required
+                autoFocus
+              />
+              {error && <p style={styles.error}>{error}</p>}
+              <button style={styles.submit} type="submit" disabled={loading}>
+                {loading ? 'Sending…' : 'Send code'}
+              </button>
+            </form>
+          </>
         ) : (
-          <form onSubmit={handleSubmit} style={styles.form}>
-            <input
-              style={styles.input}
-              type="email"
-              placeholder="your@email.com"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required
-              autoFocus
-            />
-            {error && <p style={styles.error}>{error}</p>}
-            <button style={styles.submit} type="submit" disabled={loading}>
-              {loading ? 'Sending…' : 'Send magic link'}
-            </button>
-          </form>
+          <>
+            <h2 style={styles.title}>Enter code</h2>
+            <p style={styles.sub}>Check {email} for a 6-digit code.</p>
+            <form onSubmit={handleVerify} style={styles.form}>
+              <input
+                ref={codeRef}
+                style={{ ...styles.input, ...styles.codeInput }}
+                type="text"
+                inputMode="numeric"
+                placeholder="000000"
+                value={code}
+                onChange={e => setCode(e.target.value.replace(/\D/g, '').slice(0, 6))}
+                maxLength={6}
+                required
+              />
+              {error && <p style={styles.error}>{error}</p>}
+              <button style={styles.submit} type="submit" disabled={loading || code.length < 6}>
+                {loading ? 'Verifying…' : 'Sign in'}
+              </button>
+              <button
+                type="button"
+                style={styles.toggle}
+                onClick={() => { setStep('email'); setCode(''); setError('') }}
+              >
+                ← Use a different email
+              </button>
+            </form>
+          </>
         )}
       </div>
     </div>
@@ -74,11 +117,16 @@ const styles: Record<string, React.CSSProperties> = {
   input: {
     padding: '0.65rem 0.9rem', borderRadius: 8, fontSize: '1rem',
     border: '1px solid var(--border, #ddd)', background: 'var(--input-bg, #f9f9f9)',
+    color: 'var(--text)',
   },
+  codeInput: { fontSize: '1.75rem', textAlign: 'center', letterSpacing: '0.4em', fontWeight: 700 },
   submit: {
     padding: '0.7rem', borderRadius: 8, fontSize: '1rem', fontWeight: 600,
     background: '#e85d2f', color: '#fff', border: 'none', cursor: 'pointer', marginTop: 4,
   },
   error: { color: '#c00', fontSize: '0.875rem', margin: 0 },
-  success: { color: '#090', fontSize: '0.9rem', lineHeight: 1.5 },
+  toggle: {
+    background: 'none', border: 'none', color: 'var(--muted, #888)',
+    cursor: 'pointer', fontSize: '0.85rem', textAlign: 'left', padding: 0,
+  },
 }

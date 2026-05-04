@@ -6,7 +6,8 @@ interface AuthContextValue {
   user: User | null
   session: Session | null
   loading: boolean
-  sendMagicLink: (email: string) => Promise<{ error: string | null }>
+  sendOtp: (email: string) => Promise<{ error: string | null }>
+  verifyOtp: (email: string, token: string) => Promise<{ error: string | null }>
   signOut: () => Promise<void>
 }
 
@@ -32,11 +33,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return () => subscription.unsubscribe()
   }, [])
 
-  async function sendMagicLink(email: string) {
+  async function sendOtp(email: string) {
     const { error } = await supabase.auth.signInWithOtp({
       email,
-      options: { emailRedirectTo: window.location.origin },
+      options: { shouldCreateUser: true },
     })
+    return { error: error?.message ?? null }
+  }
+
+  async function verifyOtp(email: string, token: string) {
+    const { error } = await supabase.auth.verifyOtp({ email, token, type: 'email' })
     return { error: error?.message ?? null }
   }
 
@@ -45,7 +51,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, session, loading, sendMagicLink, signOut }}>
+    <AuthContext.Provider value={{ user, session, loading, sendOtp, verifyOtp, signOut }}>
       {children}
     </AuthContext.Provider>
   )
