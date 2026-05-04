@@ -15,6 +15,7 @@ import ListeningPage from './pages/ListeningPage'
 import FillBlankPage from './pages/FillBlankPage'
 import PronunciationPage from './pages/PronunciationPage'
 import ReviewPage from './pages/ReviewPage'
+import WelcomePage, { shouldShowWelcome } from './pages/WelcomePage'
 
 export default function App() {
   return (
@@ -22,7 +23,8 @@ export default function App() {
     <BrowserRouter>
       <StopAudioOnNavigate />
       <Routes>
-        <Route path="/" element={<Navigate to="/hsk/1" replace />} />
+        <Route path="/" element={<Navigate to={shouldShowWelcome() ? '/welcome' : '/hsk/1'} replace />} />
+        <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/hsk/:level" element={<BrowserPage />} />
         <Route path="/word/:id" element={<DetailPage />} />
         <Route path="/practice/:level" element={<PracticePage />} />
