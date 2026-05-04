@@ -45,11 +45,11 @@ export default function AppHeader() {
           {dark ? '☀️' : '🌙'}
         </button>
         {user ? (
-          <button className="app-nav-link" onClick={signOut} title={user.email}>
+          <button className="app-nav-link app-nav-signout" onClick={signOut} title={user.email}>
             Sign out
           </button>
         ) : (
-          <button className="app-nav-link" onClick={() => setShowAuth(true)}>
+          <button className="app-nav-link app-nav-signin" onClick={() => setShowAuth(true)}>
             Sign in
           </button>
         )}

@@ -75,8 +75,8 @@ export default function AuthModal({ onClose }: Props) {
                 inputMode="numeric"
                 placeholder="000000"
                 value={code}
-                onChange={e => setCode(e.target.value.replace(/\D/g, '').slice(0, 6))}
-                maxLength={6}
+                onChange={e => setCode(e.target.value.replace(/\s/g, '').slice(0, 8))}
+                maxLength={8}
                 required
               />
               {error && <p style={styles.error}>{error}</p>}

@@ -101,6 +101,15 @@ body {
 }
 .app-nav-link:hover  { color: white; }
 .app-nav-link.active { color: white; border-bottom-color: white; }
+.app-nav-signin {
+  color: white;
+  background: rgba(255,255,255,0.15) !important;
+  border-radius: 6px;
+  margin: 0.3rem 0.25rem;
+  padding: 0.3rem 0.9rem !important;
+}
+.app-nav-signin:hover { background: rgba(255,255,255,0.25) !important; }
+.app-nav-signout { color: rgba(255,255,255,0.5) !important; font-size: 0.78rem; }
 
 /* ── Level tabs ── */
 .level-tabs {
