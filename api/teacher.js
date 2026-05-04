@@ -3,7 +3,7 @@ import Anthropic from '@anthropic-ai/sdk'
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 // Rate limit: 20 requests per IP per hour
-const LIMIT = 20
+const LIMIT = 50
 const WINDOW_MS = 60 * 60 * 1000
 const ipMap = new Map()
 
