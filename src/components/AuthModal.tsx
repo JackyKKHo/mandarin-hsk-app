@@ -6,71 +6,50 @@ interface Props {
 }
 
 export default function AuthModal({ onClose }: Props) {
-  const { signIn, signUp } = useAuth()
-  const [mode, setMode] = useState<'signin' | 'signup'>('signin')
+  const { sendMagicLink } = useAuth()
   const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
   const [error, setError] = useState('')
-  const [message, setMessage] = useState('')
+  const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setError('')
-    setMessage('')
     setLoading(true)
-
-    const fn = mode === 'signin' ? signIn : signUp
-    const { error } = await fn(email, password)
-
+    const { error } = await sendMagicLink(email)
     setLoading(false)
-    if (error) {
-      setError(error)
-    } else if (mode === 'signup') {
-      setMessage('Check your email to confirm your account.')
-    } else {
-      onClose()
-    }
+    if (error) setError(error)
+    else setSent(true)
   }
 
   return (
     <div style={styles.overlay} onClick={onClose}>
       <div style={styles.modal} onClick={e => e.stopPropagation()}>
         <button style={styles.close} onClick={onClose}>✕</button>
-        <h2 style={styles.title}>{mode === 'signin' ? 'Sign in' : 'Create account'}</h2>
-        <p style={styles.sub}>Sync your progress across devices</p>
+        <h2 style={styles.title}>Sign in</h2>
+        <p style={styles.sub}>We'll email you a magic link — no password needed.</p>
 
-        <form onSubmit={handleSubmit} style={styles.form}>
-          <input
-            style={styles.input}
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            required
-          />
-          <input
-            style={styles.input}
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            required
-            minLength={6}
-          />
-          {error && <p style={styles.error}>{error}</p>}
-          {message && <p style={styles.success}>{message}</p>}
-          <button style={styles.submit} type="submit" disabled={loading}>
-            {loading ? 'Loading…' : mode === 'signin' ? 'Sign in' : 'Create account'}
-          </button>
-        </form>
-
-        <button
-          style={styles.toggle}
-          onClick={() => { setMode(m => m === 'signin' ? 'signup' : 'signin'); setError(''); setMessage('') }}
-        >
-          {mode === 'signin' ? "Don't have an account? Sign up" : 'Already have an account? Sign in'}
-        </button>
+        {sent ? (
+          <p style={styles.success}>
+            Check your inbox for a sign-in link. You can close this.
+          </p>
+        ) : (
+          <form onSubmit={handleSubmit} style={styles.form}>
+            <input
+              style={styles.input}
+              type="email"
+              placeholder="your@email.com"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              required
+              autoFocus
+            />
+            {error && <p style={styles.error}>{error}</p>}
+            <button style={styles.submit} type="submit" disabled={loading}>
+              {loading ? 'Sending…' : 'Send magic link'}
+            </button>
+          </form>
+        )}
       </div>
     </div>
   )
@@ -101,9 +80,5 @@ const styles: Record<string, React.CSSProperties> = {
     background: '#e85d2f', color: '#fff', border: 'none', cursor: 'pointer', marginTop: 4,
   },
   error: { color: '#c00', fontSize: '0.875rem', margin: 0 },
-  success: { color: '#090', fontSize: '0.875rem', margin: 0 },
-  toggle: {
-    marginTop: '1rem', background: 'none', border: 'none',
-    color: '#e85d2f', cursor: 'pointer', fontSize: '0.875rem', width: '100%',
-  },
+  success: { color: '#090', fontSize: '0.9rem', lineHeight: 1.5 },
 }
