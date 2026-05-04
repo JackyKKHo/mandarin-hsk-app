@@ -42,19 +42,22 @@ async function fixLevel(level) {
       `${j + 1}. ${w.simplified} (${w.pinyin}) [${w.partOfSpeech}]`
     ).join('\n')
 
-    const prompt = `You are writing vocabulary definitions for a ${LEVEL_CONTEXT[level]} Mandarin learner.
+    const prompt = `You are writing dictionary definitions for a ${LEVEL_CONTEXT[level]} Mandarin learner.
 
 For each word, produce up to 3 meanings. Each meaning needs:
-- A short English definition (1–5 words, no trailing punctuation)
+- A concise English definition using standard dictionary wording (1–4 words)
 - A natural Chinese example sentence using that meaning
 - Pinyin for the example (with tone marks)
 - English translation of the example
 
-Rules:
-- Only include multiple meanings if the word has genuinely distinct uses (e.g. different parts of speech, or meanings that could confuse a learner)
-- Example sentences should feel natural and real, not textbook-stiff
-- Example sentences should use vocabulary appropriate for HSK${level} learners
-- Correct any wrong definitions — base meanings on standard modern Mandarin usage
+CRITICAL rules for definitions:
+- Use standard English dictionary words, NOT descriptions or paraphrases
+- Good: "book", "television", "movie", "teacher", "big", "not"
+- Bad: "written work to read", "programs you watch on TV", "story with moving pictures"
+- If the English word IS the definition (book=book, teacher=teacher), just use that word
+- Only give multiple meanings for words with genuinely distinct uses
+- Example sentences should feel natural, not textbook-stiff
+- Example vocabulary should suit HSK${level} level
 
 Words:
 ${wordList}
@@ -64,7 +67,7 @@ Return ONLY a JSON array with one object per word (${batch.length} total), in or
   {
     "meanings": [
       {
-        "def": "short English definition",
+        "def": "concise dictionary definition",
         "ex_zh": "Chinese example sentence",
         "ex_py": "Pinyin with tone marks",
         "ex_en": "English translation"
