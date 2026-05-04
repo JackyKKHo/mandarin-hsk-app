@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import vocab from '../data/vocab'
 import TonedPinyin from '../components/TonedPinyin'
+import { useVocab } from '../hooks/useVocab'
 import AudioButton from '../components/AudioButton'
 import { useSRS } from '../hooks/useSRS'
 import { useStreak } from '../hooks/useStreak'
@@ -21,11 +21,12 @@ type Stage = 'idle' | 'front' | 'back' | 'complete'
 export default function ReviewPage() {
   const { isDue, review, getCard } = useSRS()
   const { recordStudy } = useStreak()
+  const { words: allWords } = useVocab()
 
   const dueWords = useMemo(
-    () => shuffle(vocab.filter(w => isDue(w.id))),
+    () => shuffle(allWords.filter(w => isDue(w.id))),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    []
+    [allWords]
   )
 
   const [stage, setStage] = useState<Stage>('idle')

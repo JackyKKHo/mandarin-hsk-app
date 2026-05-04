@@ -1,5 +1,4 @@
 import { useParams, Link } from 'react-router-dom'
-import vocab from '../data/vocab'
 import AudioButton from '../components/AudioButton'
 import TeacherButton from '../components/TeacherButton'
 import TonedPinyin from '../components/TonedPinyin'
@@ -8,13 +7,26 @@ import StrokeOrder from '../components/StrokeOrder'
 import { useDismissed } from '../hooks/useDismissed'
 import { useProgress } from '../hooks/useProgress'
 import { useFavourites } from '../hooks/useFavourites'
+import { useVocab } from '../hooks/useVocab'
+import { levelFromId } from '../data/vocabLoader'
 
 export default function DetailPage() {
   const { id } = useParams<{ id: string }>()
-  const word = vocab.find(w => w.id === id)
+  const level = id ? levelFromId(id) : 1
+  const { words, loading } = useVocab(level)
+  const word = words.find(w => w.id === id)
   const { dismissed, dismiss, undismiss } = useDismissed()
   const { isLearned, markLearned, unmarkLearned } = useProgress()
   const { isFavourite, toggleFavourite } = useFavourites()
+
+  if (loading) {
+    return (
+      <div className="detail-page">
+        <Link to="/" className="back-link">← Back</Link>
+        <p className="empty-state">Loading…</p>
+      </div>
+    )
+  }
 
   if (!word) {
     return (

@@ -32,7 +32,7 @@ export default function QuizPage() {
   const { level } = useParams<{ level: string }>()
   const { review } = useSRS()
   const { recordStudy } = useStreak()
-  const { words: levelWords, title, backPath } = usePracticeWords(level)
+  const { words: levelWords, title, backPath, loading } = usePracticeWords(level)
 
   const [stage, setStage] = useState<Stage>('idle')
   const [mode, setMode] = useState<Mode>('zh→en')
@@ -89,7 +89,9 @@ export default function QuizPage() {
         <div className="practice-start-card">
           <div className="practice-start-level">{title}</div>
           <h2>Multiple Choice Quiz</h2>
-          {levelWords.length === 0 ? (
+          {loading ? (
+            <p className="empty-state">Loading…</p>
+          ) : levelWords.length === 0 ? (
             <p className="empty-state">No vocabulary yet for this level.</p>
           ) : (
             <>

@@ -22,7 +22,7 @@ export default function PracticePage() {
   const { level } = useParams<{ level: string }>()
   const { review, isDue, getCard } = useSRS()
   const { streak, recordStudy } = useStreak()
-  const { words: levelWords, title, backPath } = usePracticeWords(level)
+  const { words: levelWords, title, backPath, loading } = usePracticeWords(level)
 
   const due = useMemo(() => levelWords.filter(w => isDue(w.id)), [levelWords, isDue])
   const notDue = useMemo(() => levelWords.filter(w => !isDue(w.id)), [levelWords, isDue])
@@ -65,7 +65,9 @@ export default function PracticePage() {
         <div className="practice-start-card">
           <div className="practice-start-level">{title}</div>
           <h2>Spaced Repetition</h2>
-          {levelWords.length === 0 ? (
+          {loading ? (
+            <p className="empty-state">Loading…</p>
+          ) : levelWords.length === 0 ? (
             <p className="empty-state">No vocabulary yet for this level.</p>
           ) : (
             <>

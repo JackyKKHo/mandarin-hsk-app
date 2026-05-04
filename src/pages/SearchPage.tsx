@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import vocab from '../data/vocab'
 import AppHeader from '../components/AppHeader'
+import { useVocab } from '../hooks/useVocab'
 import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
 import { useFavourites } from '../hooks/useFavourites'
@@ -11,6 +11,7 @@ const MAX_RESULTS = 80
 export default function SearchPage() {
   const [query, setQuery] = useState('')
   const { isFavourite, toggleFavourite } = useFavourites()
+  const { words: vocab } = useVocab()
 
   const results = useMemo(() => {
     const q = query.trim()
@@ -22,7 +23,7 @@ export default function SearchPage() {
       w.pinyin.toLowerCase().includes(ql) ||
       w.english.toLowerCase().includes(ql)
     ).slice(0, MAX_RESULTS)
-  }, [query])
+  }, [query, vocab])
 
   return (
     <div className="browser-page">

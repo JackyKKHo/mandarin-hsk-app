@@ -1,14 +1,15 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import vocab from '../data/vocab'
 import AppHeader from '../components/AppHeader'
+import { useVocab } from '../hooks/useVocab'
 import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
 import { useFavourites } from '../hooks/useFavourites'
 
 export default function FavouritesPage() {
   const { favourites, toggleFavourite } = useFavourites()
-  const words = vocab.filter(w => favourites.has(w.id))
+  const { words: allWords } = useVocab()
+  const words = allWords.filter(w => favourites.has(w.id))
   const [practiceOpen, setPracticeOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
 

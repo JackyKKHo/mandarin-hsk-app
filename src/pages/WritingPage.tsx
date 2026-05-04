@@ -1,8 +1,8 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import HanziWriter from 'hanzi-writer'
-import vocab from '../data/vocab'
 import TonedPinyin from '../components/TonedPinyin'
+import { useVocab } from '../hooks/useVocab'
 
 type Stage = 'idle' | 'writing' | 'complete'
 
@@ -21,9 +21,10 @@ export default function WritingPage() {
   const { level } = useParams<{ level: string }>()
   const currentLevel = Number(level) || 1
 
+  const { words: vocabLevel } = useVocab(currentLevel)
   const levelWords = useMemo(() =>
-    vocab.filter(w => w.hskLevel === currentLevel && [...w.simplified].every(c => /\p{Script=Han}/u.test(c))),
-    [currentLevel]
+    vocabLevel.filter(w => [...w.simplified].every(c => /\p{Script=Han}/u.test(c))),
+    [vocabLevel]
   )
 
   const [stage, setStage] = useState<Stage>('idle')

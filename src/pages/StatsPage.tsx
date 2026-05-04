@@ -1,14 +1,15 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import vocab from '../data/vocab'
 import AppHeader from '../components/AppHeader'
 import { useProgress } from '../hooks/useProgress'
 import { useFavourites } from '../hooks/useFavourites'
 import { useStreak } from '../hooks/useStreak'
 import { useSRS } from '../hooks/useSRS'
+import { useVocab } from '../hooks/useVocab'
+import { LEVEL_COUNTS } from '../data/vocabLoader'
 
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-const TOTAL = vocab.length
+const TOTAL = Object.values(LEVEL_COUNTS).reduce((a, b) => a + b, 0)
 
 function today() {
   return new Date().toISOString().slice(0, 10)
@@ -19,6 +20,7 @@ export default function StatsPage() {
   const { favourites } = useFavourites()
   const { streak, lastDate } = useStreak()
   const { isDue, getCard } = useSRS()
+  const { words: vocab } = useVocab()
 
   const totalLearned = learned.size
   const totalPct = Math.round((totalLearned / TOTAL) * 100)
@@ -32,9 +34,9 @@ export default function StatsPage() {
         const c = getCard(w.id)
         return c && c.reps > 0
       }).length
-      return { level: l, total: words.length, learned: learnedCount, due: dueCount, reviewed: reviewedCount }
+      return { level: l, total: LEVEL_COUNTS[l], learned: learnedCount, due: dueCount, reviewed: reviewedCount }
     }),
-    [learned, isDue, getCard]
+    [vocab, learned, isDue, getCard]
   )
 
   const totalDue = levelStats.reduce((s, l) => s + l.due, 0)

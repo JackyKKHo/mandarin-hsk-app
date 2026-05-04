@@ -37,7 +37,7 @@ export default function ListeningPage() {
   const { level } = useParams<{ level: string }>()
   const { review } = useSRS()
   const { recordStudy } = useStreak()
-  const { words: levelWords, title, backPath } = usePracticeWords(level)
+  const { words: levelWords, title, backPath, loading: vocabLoading } = usePracticeWords(level)
 
   const [stage, setStage] = useState<Stage>('idle')
   const [questionType, setQuestionType] = useState<QuestionType>('char')
@@ -110,7 +110,9 @@ export default function ListeningPage() {
         <div className="practice-start-card">
           <div className="practice-start-level">{title}</div>
           <h2>Listening Practice</h2>
-          {levelWords.length === 0 ? (
+          {vocabLoading ? (
+            <p className="empty-state">Loading…</p>
+          ) : levelWords.length === 0 ? (
             <p className="empty-state">No vocabulary yet for this level.</p>
           ) : (
             <>

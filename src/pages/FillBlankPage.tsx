@@ -46,7 +46,7 @@ export default function FillBlankPage() {
   const { level } = useParams<{ level: string }>()
   const { review } = useSRS()
   const { recordStudy } = useStreak()
-  const { words: allLevelWords, title, backPath } = usePracticeWords(level)
+  const { words: allLevelWords, title, backPath, loading } = usePracticeWords(level)
   const levelWords = useMemo(() => allLevelWords.filter(w => w.examples.length > 0), [allLevelWords])
 
   const [stage, setStage] = useState<Stage>('idle')
@@ -121,7 +121,9 @@ export default function FillBlankPage() {
         <div className="practice-start-card">
           <div className="practice-start-level">{title}</div>
           <h2>Fill in the Blank</h2>
-          {levelWords.length < 4 ? (
+          {loading ? (
+            <p className="empty-state">Loading…</p>
+          ) : levelWords.length < 4 ? (
             <p className="empty-state">Not enough words with example sentences yet.</p>
           ) : (
             <>
