@@ -66,21 +66,21 @@ export default function AuthModal({ onClose }: Props) {
         ) : (
           <>
             <h2 style={styles.title}>Enter code</h2>
-            <p style={styles.sub}>Check {email} for a 6-digit code.</p>
+            <p style={styles.sub}>Check {email} for your sign-in code.</p>
             <form onSubmit={handleVerify} style={styles.form}>
               <input
                 ref={codeRef}
                 style={{ ...styles.input, ...styles.codeInput }}
                 type="text"
                 inputMode="numeric"
-                placeholder="000000"
+                placeholder="00000000"
                 value={code}
                 onChange={e => setCode(e.target.value.replace(/\s/g, '').slice(0, 8))}
                 maxLength={8}
                 required
               />
               {error && <p style={styles.error}>{error}</p>}
-              <button style={styles.submit} type="submit" disabled={loading || code.length < 6}>
+              <button style={styles.submit} type="submit" disabled={loading || code.length < 8}>
                 {loading ? 'Verifying…' : 'Sign in'}
               </button>
               <button
@@ -105,7 +105,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   modal: {
     background: 'var(--bg, #fff)', borderRadius: 12, padding: '2rem',
-    width: '100%', maxWidth: 360, position: 'relative', boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
+    width: '100%', maxWidth: 400, position: 'relative', boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
   },
   close: {
     position: 'absolute', top: 12, right: 12, background: 'none',
@@ -119,7 +119,7 @@ const styles: Record<string, React.CSSProperties> = {
     border: '1px solid var(--border, #ddd)', background: 'var(--input-bg, #f9f9f9)',
     color: 'var(--text)',
   },
-  codeInput: { fontSize: '1.75rem', textAlign: 'center', letterSpacing: '0.4em', fontWeight: 700 },
+  codeInput: { fontSize: '1.75rem', textAlign: 'center', letterSpacing: '0.25em', fontWeight: 700, padding: '0.75rem' },
   submit: {
     padding: '0.7rem', borderRadius: 8, fontSize: '1rem', fontWeight: 600,
     background: '#e85d2f', color: '#fff', border: 'none', cursor: 'pointer', marginTop: 4,
