@@ -80,7 +80,8 @@ export default function TeacherButton({ context }: Props) {
         }),
       })
 
-      if (!res.ok) throw new Error('Teacher API failed')
+      if (res.status === 429) throw new Error('rate_limit')
+      if (!res.ok) throw new Error('api_error')
 
       const contentType = res.headers.get('Content-Type') ?? ''
       const teacherText = decodeURIComponent(res.headers.get('X-Teacher-Text') ?? '')
@@ -97,8 +98,11 @@ export default function TeacherButton({ context }: Props) {
         setMessages(prev => [...prev, { role: 'teacher', text: data.text }])
         setStatus('idle')
       }
-    } catch {
-      setMessages(prev => [...prev, { role: 'teacher', text: 'Sorry, I had trouble connecting. Please try again.' }])
+    } catch (e: any) {
+      const msg = e?.message === 'rate_limit'
+        ? "You've reached the hourly limit for Lin Wei. Try again in a bit!"
+        : 'Sorry, I had trouble connecting. Please try again.'
+      setMessages(prev => [...prev, { role: 'teacher', text: msg }])
       setStatus('idle')
     }
   }

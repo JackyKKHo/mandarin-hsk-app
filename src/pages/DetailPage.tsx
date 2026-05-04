@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import AudioButton from '../components/AudioButton'
 import TeacherButton from '../components/TeacherButton'
 import TonedPinyin from '../components/TonedPinyin'
@@ -12,9 +12,13 @@ import { levelFromId } from '../data/vocabLoader'
 
 export default function DetailPage() {
   const { id } = useParams<{ id: string }>()
+  const navigate = useNavigate()
   const level = id ? levelFromId(id) : 1
   const { words, loading } = useVocab(level)
-  const word = words.find(w => w.id === id)
+  const wordIndex = words.findIndex(w => w.id === id)
+  const word = wordIndex >= 0 ? words[wordIndex] : undefined
+  const prevWord = wordIndex > 0 ? words[wordIndex - 1] : null
+  const nextWord = wordIndex >= 0 && wordIndex < words.length - 1 ? words[wordIndex + 1] : null
   const { dismissed, dismiss, undismiss } = useDismissed()
   const { isLearned, markLearned, unmarkLearned } = useProgress()
   const { isFavourite, toggleFavourite } = useFavourites()
@@ -42,9 +46,26 @@ export default function DetailPage() {
 
   return (
     <div className="detail-page">
-      <Link to={`/hsk/${word.hskLevel}`} className="back-link">
-        ← HSK {word.hskLevel}
-      </Link>
+      <div className="detail-nav">
+        <Link to={`/hsk/${word.hskLevel}`} className="back-link" style={{ marginBottom: 0 }}>
+          ← HSK {word.hskLevel}
+        </Link>
+        <div className="detail-prev-next">
+          <button
+            className="prev-next-btn"
+            onClick={() => prevWord && navigate(`/word/${prevWord.id}`)}
+            disabled={!prevWord}
+            title="Previous word"
+          >‹ Prev</button>
+          <span className="prev-next-pos">{wordIndex + 1} / {words.length}</span>
+          <button
+            className="prev-next-btn"
+            onClick={() => nextWord && navigate(`/word/${nextWord.id}`)}
+            disabled={!nextWord}
+            title="Next word"
+          >Next ›</button>
+        </div>
+      </div>
 
       <div className="detail-card">
         <div className="detail-header">

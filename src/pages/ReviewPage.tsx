@@ -6,6 +6,7 @@ import AudioButton from '../components/AudioButton'
 import { useSRS } from '../hooks/useSRS'
 import { useStreak } from '../hooks/useStreak'
 import type { SRSQuality } from '../hooks/useSRS'
+import type { VocabItem } from '../types'
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -23,20 +24,22 @@ export default function ReviewPage() {
   const { recordStudy } = useStreak()
   const { words: allWords } = useVocab()
 
-  const dueWords = useMemo(
-    () => shuffle(allWords.filter(w => isDue(w.id))),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [allWords]
+  const initialDueCount = useMemo(
+    () => allWords.filter(w => isDue(w.id)).length,
+    [allWords, isDue]
   )
 
   const [stage, setStage] = useState<Stage>('idle')
+  const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
   const [results, setResults] = useState<Record<SRSQuality, number>>({ again: 0, good: 0, easy: 0 })
 
   function start() {
+    const q = shuffle(allWords.filter(w => isDue(w.id)))
+    setQueue(q)
     setIndex(0)
     setResults({ again: 0, good: 0, easy: 0 })
-    setStage(dueWords.length > 0 ? 'front' : 'complete')
+    setStage(q.length > 0 ? 'front' : 'complete')
   }
 
   function flip() {
@@ -44,15 +47,20 @@ export default function ReviewPage() {
   }
 
   function rate(quality: SRSQuality) {
-    const word = dueWords[index]
+    const word = queue[index]
     review(word.id, quality)
     setResults(r => ({ ...r, [quality]: r[quality] + 1 }))
 
-    if (index + 1 >= dueWords.length) {
+    const newQueue = quality === 'again' ? [...queue, word] : queue
+    const nextIndex = index + 1
+
+    if (nextIndex >= newQueue.length) {
       recordStudy()
+      setQueue(newQueue)
       setStage('complete')
     } else {
-      setIndex(i => i + 1)
+      setQueue(newQueue)
+      setIndex(nextIndex)
       setStage('front')
     }
   }
@@ -64,13 +72,22 @@ export default function ReviewPage() {
         <div className="practice-start-card">
           <div className="practice-start-level">SRS Review</div>
           <h2>Due for Review</h2>
-          {dueWords.length === 0 ? (
-            <p className="empty-state">No cards due — come back later!</p>
+          {initialDueCount === 0 ? (
+            <>
+              <p className="empty-state" style={{ marginBottom: '1rem' }}>All caught up! No cards due right now.</p>
+              <p className="practice-start-desc">
+                Keep studying flashcards to grow your review queue — cards you rate will be scheduled automatically.
+              </p>
+              <div className="complete-actions">
+                <Link to="/hsk/1" className="btn-primary">Browse vocabulary</Link>
+                <Link to="/stats" className="btn-secondary">Back to stats</Link>
+              </div>
+            </>
           ) : (
             <>
               <p className="practice-start-desc">
-                {dueWords.length} card{dueWords.length !== 1 ? 's' : ''} due today.
-                Rate each one honestly — the algorithm adjusts your schedule automatically.
+                {initialDueCount} card{initialDueCount !== 1 ? 's' : ''} due today.
+                Cards you mark "again" will loop back this session.
               </p>
               <button className="btn-primary" onClick={start}>Start review</button>
             </>
@@ -94,9 +111,6 @@ export default function ReviewPage() {
             <span className="got-count">✓ {results.good + results.easy} remembered</span>
             <span className="missed-count">↺ {results.again} again</span>
           </div>
-          <p className="practice-start-desc" style={{ marginTop: '0.5rem' }}>
-            Cards marked "again" will show up again tomorrow.
-          </p>
           <div className="complete-actions">
             <button className="btn-primary" onClick={start}>Review again</button>
             <Link to="/stats" className="btn-secondary">Back to stats</Link>
@@ -106,15 +120,15 @@ export default function ReviewPage() {
     )
   }
 
-  const word = dueWords[index]
+  const word = queue[index]
   const card = getCard(word.id)
-  const progressPct = (index / dueWords.length) * 100
+  const progressPct = (index / queue.length) * 100
 
   return (
     <div className="practice-page">
       <div className="practice-topbar">
         <Link to="/stats" className="back-link" style={{ marginBottom: 0 }}>← Stats</Link>
-        <span className="practice-counter">{index + 1} / {dueWords.length}</span>
+        <span className="practice-counter">{index + 1} / {queue.length}</span>
         {card && <span className="practice-counter" style={{ opacity: 0.5 }}>interval {card.interval}d</span>}
       </div>
 
@@ -122,7 +136,6 @@ export default function ReviewPage() {
         <div className="progress-bar-fill" style={{ width: `${progressPct}%` }} />
       </div>
 
-      {/* Card front */}
       <div className="review-card" onClick={stage === 'front' ? flip : undefined}>
         <div className="review-card-chinese">{word.simplified}</div>
         {stage === 'front' ? (
@@ -145,7 +158,6 @@ export default function ReviewPage() {
         )}
       </div>
 
-      {/* Rating buttons */}
       {stage === 'back' && (
         <div className="review-ratings">
           <button className="rate-btn rate-again" onClick={() => rate('again')}>
