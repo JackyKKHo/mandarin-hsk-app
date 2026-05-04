@@ -193,7 +193,6 @@ export default function FillBlankPage() {
 
       {/* Sentence with blank */}
       <div className="fillblank-sentence-card">
-        <div className="fbs-english">{ex.english}</div>
         <div className="fbs-sentence">
           <span>{q.before}</span>
           <span className={`fbs-blank${stage === 'feedback' ? (isCorrect ? ' blank-correct' : ' blank-wrong') : ''}`}>
@@ -202,7 +201,10 @@ export default function FillBlankPage() {
           <span>{q.after}</span>
         </div>
         {stage === 'feedback' && (
-          <TonedPinyin pinyin={ex.pinyin} className="fbs-pinyin" />
+          <>
+            <TonedPinyin pinyin={ex.pinyin} className="fbs-pinyin" />
+            <div className="fbs-english">{ex.english}</div>
+          </>
         )}
         <div className="fbs-audio-row">
           {stage === 'feedback' && (
