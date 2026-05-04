@@ -1392,11 +1392,69 @@ html.dark .stroke-chars { background: var(--surface); }
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  .vocab-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+  /* Header */
+  .app-header { padding: 0.75rem 0.75rem 0; }
+  .app-header h1 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .app-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start;
+  }
+  .app-nav::-webkit-scrollbar { display: none; }
+  .app-nav-link {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.7rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  /* Browser controls: stack search above practice button */
+  .browser-controls {
+    flex-wrap: wrap;
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+  .search-input { min-width: 0; }
+  .result-count { order: 3; width: 100%; text-align: right; font-size: 0.75rem; }
+
+  /* Vocab grid */
+  .vocab-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    padding: 0 0.75rem 2rem;
+    gap: 0.5rem;
+  }
+
+  /* Detail page */
   .detail-chinese { font-size: 2.75rem; }
   .detail-card { padding: 1.25rem; }
+  .detail-page { padding: 1rem 0.75rem; }
+
+  /* Flashcard */
   .fc-chinese { font-size: 4rem; }
   .flashcard { height: 320px; }
+
+  /* Practice page */
+  .practice-page { padding: 1rem 0.75rem; }
+  .practice-start-card { padding: 2rem 1.25rem; }
+  .practice-complete-card { padding: 2rem 1.25rem; }
+
+  /* Quiz */
+  .quiz-prompt { padding: 1.25rem 1rem; }
+  .quiz-prompt-chinese { font-size: 2.75rem; }
+  .quiz-option { padding: 0.9rem 0.85rem; min-height: 48px; }
+
+  /* Review */
+  .review-card { padding: 1.75rem 1rem; min-height: 240px; }
+  .review-card-chinese { font-size: 3rem; }
+  .rate-btn { padding: 0.9rem 0.4rem; min-height: 64px; }
+
+  /* Stats */
+  .stats-page { padding: 1rem 0.75rem 3rem; }
 }
 
 /* ── Teacher chat ── */
