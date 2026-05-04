@@ -1,12 +1,15 @@
 import { useMemo } from 'react'
 import vocab from '../data/vocab'
 import type { VocabItem } from '../types'
+import { useSRS } from './useSRS'
 
 export function usePracticeWords(levelParam: string | undefined): {
   words: VocabItem[]
   title: string
   backPath: string
 } {
+  const { isDue } = useSRS()
+
   return useMemo(() => {
     if (levelParam === 'favourites') {
       try {
@@ -21,11 +24,18 @@ export function usePracticeWords(levelParam: string | undefined): {
         return { words: [], title: '★ Favourites', backPath: '/favourites' }
       }
     }
+    if (levelParam === 'review') {
+      return {
+        words: vocab.filter(w => isDue(w.id)),
+        title: 'Due for Review',
+        backPath: '/stats',
+      }
+    }
     const level = Number(levelParam) || 1
     return {
       words: vocab.filter(w => w.hskLevel === level),
       title: `HSK ${level}`,
       backPath: `/hsk/${level}`,
     }
-  }, [levelParam])
+  }, [levelParam, isDue])
 }

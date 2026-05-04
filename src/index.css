@@ -78,6 +78,7 @@ body {
   text-align: center;
 }
 .app-header h1 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; }
+.header-zh { font-size: 0.75rem; font-weight: 400; opacity: 0.75; margin-left: 0.4rem; letter-spacing: 0.03em; }
 
 .app-nav {
   display: flex;
@@ -2181,3 +2182,68 @@ html.dark .chart-cell-syl { color: #e0e0e0; }
   .chart-cell-char { font-size: 0.8rem; }
   .pron-table { font-size: 0.7rem; }
 }
+
+/* ── Review Page ───────────────────────────────── */
+.review-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem;
+  margin: 1.5rem auto;
+  max-width: 480px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+.review-card:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.13); }
+.review-card-chinese { font-size: 4rem; line-height: 1.1; }
+.review-card-hint { opacity: 0.35; font-size: 0.85rem; margin-top: 0.5rem; }
+.review-card-back { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; width: 100%; }
+.review-card-pinyin { font-size: 1.4rem; }
+.review-card-english { font-size: 1.2rem; font-weight: 600; }
+.review-card-example {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg);
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
+.review-example-zh { font-size: 1rem; margin-bottom: 0.25rem; }
+.review-example-en { font-size: 0.85rem; opacity: 0.6; }
+
+.review-ratings {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  max-width: 480px;
+}
+.rate-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.8rem 0.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s, transform 0.1s;
+}
+.rate-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.rate-btn:active { transform: translateY(0); }
+.rate-label { font-size: 1rem; font-weight: 700; }
+.rate-sub { font-size: 0.75rem; opacity: 0.8; }
+.rate-again { background: #ffeaea; color: #c00; }
+.rate-good  { background: #e6f9ee; color: #1a7a3c; }
+.rate-easy  { background: #e8f0ff; color: #1a4ab0; }
+html.dark .rate-again { background: #3d1a1a; color: #f88; }
+html.dark .rate-good  { background: #1a3d27; color: #6ef08a; }
+html.dark .rate-easy  { background: #1a2a4d; color: #7aadff; }

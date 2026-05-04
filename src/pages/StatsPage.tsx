@@ -66,7 +66,10 @@ export default function StatsPage() {
           <div className="stats-hero-card">
             <span className="stats-hero-num">{totalDue}</span>
             <span className="stats-hero-label">due for review</span>
-            <span className="stats-hero-sub">{totalReviewed} ever reviewed</span>
+            {totalDue > 0
+              ? <Link to="/review" className="stats-hero-sub stats-link">start review →</Link>
+              : <span className="stats-hero-sub">{totalReviewed} ever reviewed</span>
+            }
           </div>
           <div className="stats-hero-card">
             <span className="stats-hero-num">{favourites.size}</span>
