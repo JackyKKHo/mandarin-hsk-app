@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.92.0",
+    "@supabase/supabase-js": "^2.105.1",
     "hanzi-writer": "^3.7.3",
     "pinyin-pro": "^3.28.1",
     "react": "^18.3.1",

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext'
 import BrowserPage from './pages/BrowserPage'
 import DetailPage from './pages/DetailPage'
 import PracticePage from './pages/PracticePage'
@@ -16,6 +17,7 @@ import PronunciationPage from './pages/PronunciationPage'
 
 export default function App() {
   return (
+    <AuthProvider>
     <BrowserRouter>
       <StopAudioOnNavigate />
       <Routes>
@@ -35,5 +37,6 @@ export default function App() {
         <Route path="/pronunciation" element={<PronunciationPage />} />
       </Routes>
     </BrowserRouter>
+    </AuthProvider>
   )
 }

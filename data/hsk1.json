@@ -5,7 +5,7 @@
     "simplified": "爱",
     "traditional": "愛",
     "pinyin": "ài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ai4",
     "english": "love",
     "partOfSpeech": "",
     "examples": [
@@ -27,7 +27,7 @@
     "simplified": "爱好",
     "traditional": "愛好",
     "pinyin": "àihào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ai4 hao4",
     "english": "love",
     "partOfSpeech": "",
     "examples": [
@@ -49,7 +49,7 @@
     "simplified": "爸爸",
     "traditional": "爸爸",
     "pinyin": "bàba",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ba4 ba0",
     "english": "old man",
     "partOfSpeech": "",
     "examples": [
@@ -71,7 +71,7 @@
     "simplified": "白",
     "traditional": "白",
     "pinyin": "bái",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bai2",
     "english": "white",
     "partOfSpeech": "",
     "examples": [
@@ -93,7 +93,7 @@
     "simplified": "八",
     "traditional": "八",
     "pinyin": "bā",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ba1",
     "english": "det.: eight",
     "partOfSpeech": "",
     "examples": [
@@ -115,7 +115,7 @@
     "simplified": "白天",
     "traditional": "白天",
     "pinyin": "báitian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bai2 tian1",
     "english": "daytime",
     "partOfSpeech": "",
     "examples": [
@@ -137,7 +137,7 @@
     "simplified": "班",
     "traditional": "班",
     "pinyin": "bān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ban1",
     "english": "m.[event]",
     "partOfSpeech": "",
     "examples": [
@@ -159,7 +159,7 @@
     "simplified": "百",
     "traditional": "百",
     "pinyin": "bǎi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bai3",
     "english": "cent",
     "partOfSpeech": "",
     "examples": [
@@ -181,7 +181,7 @@
     "simplified": "吧",
     "traditional": "吧",
     "pinyin": "ba",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ba0",
     "english": "particle: used to show mild imperative or uncertainty",
     "partOfSpeech": "",
     "examples": [
@@ -203,7 +203,7 @@
     "simplified": "半",
     "traditional": "半",
     "pinyin": "bàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ban4",
     "english": "det.: half",
     "partOfSpeech": "",
     "examples": [
@@ -225,7 +225,7 @@
     "simplified": "半年",
     "traditional": "半年",
     "pinyin": "bànnián",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ban4 nian2",
     "english": "half a year",
     "partOfSpeech": "",
     "examples": [
@@ -247,7 +247,7 @@
     "simplified": "半天",
     "traditional": "半天",
     "pinyin": "bàntiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ban4 tian1",
     "english": "half of the day",
     "partOfSpeech": "",
     "examples": [
@@ -269,7 +269,7 @@
     "simplified": "帮",
     "traditional": "幫",
     "pinyin": "bāng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bang1",
     "english": "help",
     "partOfSpeech": "",
     "examples": [
@@ -291,7 +291,7 @@
     "simplified": "帮忙",
     "traditional": "幫忙",
     "pinyin": "bāng máng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bang1 mang2",
     "english": "assist",
     "partOfSpeech": "",
     "examples": [
@@ -313,7 +313,7 @@
     "simplified": "包",
     "traditional": "包",
     "pinyin": "bāo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bao1",
     "english": "wrap",
     "partOfSpeech": "",
     "examples": [
@@ -335,7 +335,7 @@
     "simplified": "包子",
     "traditional": "包子",
     "pinyin": "bāozi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bao1 zi3",
     "english": "steamed stuffed bun",
     "partOfSpeech": "",
     "examples": [
@@ -357,7 +357,7 @@
     "simplified": "杯",
     "traditional": "杯",
     "pinyin": "bēi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bei1",
     "english": "m.[container]",
     "partOfSpeech": "",
     "examples": [
@@ -379,7 +379,7 @@
     "simplified": "杯子",
     "traditional": "杯子",
     "pinyin": "bēizi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bei1 zi0",
     "english": "tumbler",
     "partOfSpeech": "",
     "examples": [
@@ -401,7 +401,7 @@
     "simplified": "北边",
     "traditional": "北邊",
     "pinyin": "běibian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bei3 bian1",
     "english": "north",
     "partOfSpeech": "",
     "examples": [
@@ -423,7 +423,7 @@
     "simplified": "本",
     "traditional": "本",
     "pinyin": "běn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ben3",
     "english": "det.: this",
     "partOfSpeech": "",
     "examples": [
@@ -445,7 +445,7 @@
     "simplified": "北京",
     "traditional": "北京",
     "pinyin": "Běijīng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bei3 jing1",
     "english": "capital of Red China",
     "partOfSpeech": "",
     "examples": [
@@ -467,7 +467,7 @@
     "simplified": "北",
     "traditional": "北",
     "pinyin": "běi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bei3",
     "english": "atomic number 97",
     "partOfSpeech": "",
     "examples": [
@@ -489,7 +489,7 @@
     "simplified": "本子",
     "traditional": "本子",
     "pinyin": "běnzi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ben3 zi0",
     "english": "book",
     "partOfSpeech": "",
     "examples": [
@@ -511,7 +511,7 @@
     "simplified": "别",
     "traditional": "別",
     "pinyin": "bié",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bie2",
     "english": "don't",
     "partOfSpeech": "",
     "examples": [
@@ -533,7 +533,7 @@
     "simplified": "别的",
     "traditional": "別的",
     "pinyin": "biéde",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bie2 de0",
     "english": "else",
     "partOfSpeech": "",
     "examples": [
@@ -555,7 +555,7 @@
     "simplified": "别人",
     "traditional": "別人",
     "pinyin": "biéren",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bie2 ren2",
     "english": "others",
     "partOfSpeech": "",
     "examples": [
@@ -577,7 +577,7 @@
     "simplified": "病",
     "traditional": "病",
     "pinyin": "bìng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bing4",
     "english": "disease",
     "partOfSpeech": "",
     "examples": [
@@ -599,7 +599,7 @@
     "simplified": "病人",
     "traditional": "病人",
     "pinyin": "bìngrén",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bing4 ren2",
     "english": "shut-in",
     "partOfSpeech": "",
     "examples": [
@@ -621,7 +621,7 @@
     "simplified": "比",
     "traditional": "比",
     "pinyin": "bǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bi3",
     "english": "compared with",
     "partOfSpeech": "",
     "examples": [
@@ -643,7 +643,7 @@
     "simplified": "不大",
     "traditional": "不大",
     "pinyin": "bùdà",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bu2 da4",
     "english": "not very/too",
     "partOfSpeech": "",
     "examples": [
@@ -665,7 +665,7 @@
     "simplified": "不客气",
     "traditional": "不客氣",
     "pinyin": "bù kèqì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bu2 ke4 qi4",
     "english": "you're welcome",
     "partOfSpeech": "",
     "examples": [
@@ -687,7 +687,7 @@
     "simplified": "不用",
     "traditional": "不用",
     "pinyin": "bùyòng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bu2 yong4",
     "english": "need not",
     "partOfSpeech": "",
     "examples": [
@@ -709,7 +709,7 @@
     "simplified": "菜",
     "traditional": "菜",
     "pinyin": "cài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "cai4",
     "english": "vegetable",
     "partOfSpeech": "",
     "examples": [
@@ -731,7 +731,7 @@
     "simplified": "不对",
     "traditional": "不對",
     "pinyin": "bù duì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bu2 dui4",
     "english": "incorrect",
     "partOfSpeech": "",
     "examples": [
@@ -753,7 +753,7 @@
     "simplified": "差",
     "traditional": "差",
     "pinyin": "chà",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "cha4",
     "english": "be short",
     "partOfSpeech": "",
     "examples": [
@@ -775,7 +775,7 @@
     "simplified": "不",
     "traditional": "不",
     "pinyin": "bù",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "bu4",
     "english": "non",
     "partOfSpeech": "",
     "examples": [
@@ -797,7 +797,7 @@
     "simplified": "茶",
     "traditional": "茶",
     "pinyin": "chá",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "cha2",
     "english": "tea",
     "partOfSpeech": "",
     "examples": [
@@ -819,7 +819,7 @@
     "simplified": "常常",
     "traditional": "常常",
     "pinyin": "chángcháng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chang2 chang2",
     "english": "oftentimes",
     "partOfSpeech": "",
     "examples": [
@@ -841,7 +841,7 @@
     "simplified": "常",
     "traditional": "常",
     "pinyin": "cháng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chang2",
     "english": "often",
     "partOfSpeech": "",
     "examples": [
@@ -863,7 +863,7 @@
     "simplified": "车",
     "traditional": "車",
     "pinyin": "chē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "che1",
     "english": "vehicle",
     "partOfSpeech": "",
     "examples": [
@@ -885,7 +885,7 @@
     "simplified": "唱歌",
     "traditional": "唱歌",
     "pinyin": "chàng gē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chang4 ge1",
     "english": "sing",
     "partOfSpeech": "",
     "examples": [
@@ -907,7 +907,7 @@
     "simplified": "车上",
     "traditional": "車上",
     "pinyin": "chē shàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "che1 shang4",
     "english": "Car",
     "partOfSpeech": "",
     "examples": [
@@ -929,7 +929,7 @@
     "simplified": "车票",
     "traditional": "車票",
     "pinyin": "chēpiào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "che1 piao4",
     "english": "ticket (for train/bus)",
     "partOfSpeech": "",
     "examples": [
@@ -951,7 +951,7 @@
     "simplified": "唱",
     "traditional": "唱",
     "pinyin": "chàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chang4",
     "english": "cry",
     "partOfSpeech": "",
     "examples": [
@@ -973,7 +973,7 @@
     "simplified": "吃",
     "traditional": "吃",
     "pinyin": "chī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chi1",
     "english": "feed",
     "partOfSpeech": "",
     "examples": [
@@ -995,7 +995,7 @@
     "simplified": "车站",
     "traditional": "車站",
     "pinyin": "chēzhàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "che1 zhan4",
     "english": "station",
     "partOfSpeech": "",
     "examples": [
@@ -1017,7 +1017,7 @@
     "simplified": "吃饭",
     "traditional": "吃飯",
     "pinyin": "chī fàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chi1 fan4",
     "english": "feed",
     "partOfSpeech": "",
     "examples": [
@@ -1039,7 +1039,7 @@
     "simplified": "出来",
     "traditional": "出來",
     "pinyin": "chū lai",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chu1 lai2",
     "english": "come forward",
     "partOfSpeech": "",
     "examples": [
@@ -1061,7 +1061,7 @@
     "simplified": "出",
     "traditional": "齣",
     "pinyin": "chū",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chu1",
     "english": "produce",
     "partOfSpeech": "",
     "examples": [
@@ -1083,7 +1083,7 @@
     "simplified": "出去",
     "traditional": "出去",
     "pinyin": "chū qu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chu1 qu4",
     "english": "go_out",
     "partOfSpeech": "",
     "examples": [
@@ -1105,7 +1105,7 @@
     "simplified": "床",
     "traditional": "床",
     "pinyin": "chuáng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chuang2",
     "english": "bed",
     "partOfSpeech": "",
     "examples": [
@@ -1127,7 +1127,7 @@
     "simplified": "次",
     "traditional": "次",
     "pinyin": "cì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ci4",
     "english": "order",
     "partOfSpeech": "",
     "examples": [
@@ -1149,7 +1149,7 @@
     "simplified": "穿",
     "traditional": "穿",
     "pinyin": "chuān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "chuan1",
     "english": "to wear",
     "partOfSpeech": "",
     "examples": [
@@ -1171,7 +1171,7 @@
     "simplified": "错",
     "traditional": "錯",
     "pinyin": "cuò",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "cuo4",
     "english": "wrong",
     "partOfSpeech": "",
     "examples": [
@@ -1193,7 +1193,7 @@
     "simplified": "从",
     "traditional": "從",
     "pinyin": "cóng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "cong2",
     "english": "from",
     "partOfSpeech": "",
     "examples": [
@@ -1215,7 +1215,7 @@
     "simplified": "打",
     "traditional": "打",
     "pinyin": "dǎ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "da3",
     "english": "generalized verb of doing with specific meaning determined by its object",
     "partOfSpeech": "",
     "examples": [
@@ -1237,7 +1237,7 @@
     "simplified": "打车",
     "traditional": "打車",
     "pinyin": "dǎchē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "da3 che1",
     "english": "to take a taxi (in town)",
     "partOfSpeech": "",
     "examples": [
@@ -1259,7 +1259,7 @@
     "simplified": "打电话",
     "traditional": "打電話",
     "pinyin": "dǎ diànhuà",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "da3 dian4 hua4",
     "english": "make telephone call",
     "partOfSpeech": "",
     "examples": [
@@ -1281,7 +1281,7 @@
     "simplified": "打开",
     "traditional": "打開",
     "pinyin": "dǎ kāi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "da3 kai1",
     "english": "unscrew",
     "partOfSpeech": "",
     "examples": [
@@ -1303,7 +1303,7 @@
     "simplified": "打球",
     "traditional": "打球",
     "pinyin": "dǎqiú",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "da3 qiu2",
     "english": "play a ball game using arms/hands",
     "partOfSpeech": "",
     "examples": [
@@ -1325,7 +1325,7 @@
     "simplified": "大学",
     "traditional": "大學",
     "pinyin": "dàxué",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "da4 xue2",
     "english": "university",
     "partOfSpeech": "",
     "examples": [
@@ -1347,7 +1347,7 @@
     "simplified": "大",
     "traditional": "大",
     "pinyin": "dà",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "da4",
     "english": "great",
     "partOfSpeech": "",
     "examples": [
@@ -1369,7 +1369,7 @@
     "simplified": "大学生",
     "traditional": "大學生",
     "pinyin": "dàxuéshēng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "da4 xue2 sheng1",
     "english": "man",
     "partOfSpeech": "",
     "examples": [
@@ -1391,7 +1391,7 @@
     "simplified": "得到",
     "traditional": "得到",
     "pinyin": "dé dào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "de2 dao4",
     "english": "to get",
     "partOfSpeech": "",
     "examples": [
@@ -1413,7 +1413,7 @@
     "simplified": "到",
     "traditional": "到",
     "pinyin": "dào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dao4",
     "english": "up until",
     "partOfSpeech": "",
     "examples": [
@@ -1435,7 +1435,7 @@
     "simplified": "等",
     "traditional": "等",
     "pinyin": "děng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "deng3",
     "english": "conj.: and so on",
     "partOfSpeech": "",
     "examples": [
@@ -1457,7 +1457,7 @@
     "simplified": "地点",
     "traditional": "地點",
     "pinyin": "dìdiǎn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "di4 dian3",
     "english": "location",
     "partOfSpeech": "",
     "examples": [
@@ -1479,7 +1479,7 @@
     "simplified": "地",
     "traditional": "地",
     "pinyin": "de",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "di4",
     "english": "the earth",
     "partOfSpeech": "",
     "examples": [
@@ -1501,7 +1501,7 @@
     "simplified": "地方",
     "traditional": "地方",
     "pinyin": "dìfang",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "di4 fang1",
     "english": "country",
     "partOfSpeech": "",
     "examples": [
@@ -1523,7 +1523,7 @@
     "simplified": "地上",
     "traditional": "地上",
     "pinyin": "dìshang",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "di4 shang4",
     "english": "on the ground",
     "partOfSpeech": "",
     "examples": [
@@ -1545,7 +1545,7 @@
     "simplified": "的",
     "traditional": "的",
     "pinyin": "de",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "de0",
     "english": "particle: emphasizing an action/situation",
     "partOfSpeech": "",
     "examples": [
@@ -1567,7 +1567,7 @@
     "simplified": "地图",
     "traditional": "地圖",
     "pinyin": "dìtú",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "di4 tu2",
     "english": "map",
     "partOfSpeech": "",
     "examples": [
@@ -1589,7 +1589,7 @@
     "simplified": "弟弟",
     "traditional": "弟弟",
     "pinyin": "dìdi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "di4 di0",
     "english": "brother",
     "partOfSpeech": "",
     "examples": [
@@ -1611,7 +1611,7 @@
     "simplified": "第",
     "traditional": "第",
     "pinyin": "dì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "di4",
     "english": "mansion",
     "partOfSpeech": "",
     "examples": [
@@ -1633,7 +1633,7 @@
     "simplified": "点",
     "traditional": "點",
     "pinyin": "diǎn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dian3",
     "english": "m.[proximation]",
     "partOfSpeech": "",
     "examples": [
@@ -1655,7 +1655,7 @@
     "simplified": "电话",
     "traditional": "電話",
     "pinyin": "diànhuà",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dian4 hua4",
     "english": "blower",
     "partOfSpeech": "",
     "examples": [
@@ -1677,7 +1677,7 @@
     "simplified": "电",
     "traditional": "電",
     "pinyin": "diàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dian4",
     "english": "electricity",
     "partOfSpeech": "",
     "examples": [
@@ -1699,7 +1699,7 @@
     "simplified": "电脑",
     "traditional": "電腦",
     "pinyin": "diànnǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dian4 nao3",
     "english": "electronic computer",
     "partOfSpeech": "",
     "examples": [
@@ -1721,7 +1721,7 @@
     "simplified": "电视机",
     "traditional": "電視機",
     "pinyin": "diànshìjī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dian4 shi4 ji1",
     "english": "set",
     "partOfSpeech": "",
     "examples": [
@@ -1743,7 +1743,7 @@
     "simplified": "电影",
     "traditional": "電影",
     "pinyin": "diànyǐng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dian4 ying3",
     "english": "cinematography",
     "partOfSpeech": "",
     "examples": [
@@ -1765,7 +1765,7 @@
     "simplified": "电视",
     "traditional": "電視",
     "pinyin": "diànshì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dian4 shi4",
     "english": "TV",
     "partOfSpeech": "",
     "examples": [
@@ -1787,7 +1787,7 @@
     "simplified": "电影院",
     "traditional": "電影院",
     "pinyin": "diànyǐng yuàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dian4 ying3 yuan4",
     "english": "cinema",
     "partOfSpeech": "",
     "examples": [
@@ -1809,7 +1809,7 @@
     "simplified": "东边",
     "traditional": "東邊",
     "pinyin": "dōngbiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dong1 bian1",
     "english": "east",
     "partOfSpeech": "",
     "examples": [
@@ -1831,7 +1831,7 @@
     "simplified": "东",
     "traditional": "東",
     "pinyin": "dōng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dong1",
     "english": "east",
     "partOfSpeech": "",
     "examples": [
@@ -1853,7 +1853,7 @@
     "simplified": "东西",
     "traditional": "東西",
     "pinyin": "dōngxi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dong1 xi1",
     "english": "thing",
     "partOfSpeech": "",
     "examples": [
@@ -1875,7 +1875,7 @@
     "simplified": "动",
     "traditional": "動",
     "pinyin": "dòng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dong4",
     "english": "concuss",
     "partOfSpeech": "",
     "examples": [
@@ -1897,7 +1897,7 @@
     "simplified": "动作",
     "traditional": "動作",
     "pinyin": "dòngzuò",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dong4 zuo4",
     "english": "demeanor",
     "partOfSpeech": "",
     "examples": [
@@ -1919,7 +1919,7 @@
     "simplified": "读",
     "traditional": "讀",
     "pinyin": "dú",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "du2",
     "english": "study",
     "partOfSpeech": "",
     "examples": [
@@ -1941,7 +1941,7 @@
     "simplified": "都",
     "traditional": "都",
     "pinyin": "dōu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dou1",
     "english": "all",
     "partOfSpeech": "",
     "examples": [
@@ -1963,7 +1963,7 @@
     "simplified": "读书",
     "traditional": "讀書",
     "pinyin": "dú shū",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "du2 shu1",
     "english": "read",
     "partOfSpeech": "",
     "examples": [
@@ -1985,7 +1985,7 @@
     "simplified": "对不起",
     "traditional": "對不起",
     "pinyin": "duìbuqǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dui4 bu4 qi3",
     "english": "be unfair to",
     "partOfSpeech": "",
     "examples": [
@@ -2007,7 +2007,7 @@
     "simplified": "多",
     "traditional": "多",
     "pinyin": "duō",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "duo1",
     "english": "many",
     "partOfSpeech": "",
     "examples": [
@@ -2029,7 +2029,7 @@
     "simplified": "多少",
     "traditional": "多少",
     "pinyin": "duōshao",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "duo1 shao3",
     "english": "det.: how many",
     "partOfSpeech": "",
     "examples": [
@@ -2051,7 +2051,7 @@
     "simplified": "儿子",
     "traditional": "兒子",
     "pinyin": "érzi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "er2 zi0",
     "english": "viscount",
     "partOfSpeech": "",
     "examples": [
@@ -2073,7 +2073,7 @@
     "simplified": "饿",
     "traditional": "餓",
     "pinyin": "è",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "e4",
     "english": "starve",
     "partOfSpeech": "",
     "examples": [
@@ -2095,7 +2095,7 @@
     "simplified": "对",
     "traditional": "對",
     "pinyin": "duì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "dui4",
     "english": "correct",
     "partOfSpeech": "",
     "examples": [
@@ -2117,7 +2117,7 @@
     "simplified": "二",
     "traditional": "二",
     "pinyin": "èr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "er4",
     "english": "det.: two",
     "partOfSpeech": "",
     "examples": [
@@ -2139,7 +2139,7 @@
     "simplified": "饭",
     "traditional": "飯",
     "pinyin": "fàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fan4",
     "english": "food",
     "partOfSpeech": "",
     "examples": [
@@ -2161,7 +2161,7 @@
     "simplified": "饭店",
     "traditional": "飯店",
     "pinyin": "fàndiàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fan4 dian4",
     "english": "restraurant",
     "partOfSpeech": "",
     "examples": [
@@ -2183,7 +2183,7 @@
     "simplified": "房间",
     "traditional": "房間",
     "pinyin": "fángjiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fang2 jian1",
     "english": "apartment",
     "partOfSpeech": "",
     "examples": [
@@ -2205,7 +2205,7 @@
     "simplified": "房子",
     "traditional": "房子",
     "pinyin": "fángzi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fang2 zi0",
     "english": "building (of less than three stories)",
     "partOfSpeech": "",
     "examples": [
@@ -2227,7 +2227,7 @@
     "simplified": "放",
     "traditional": "放",
     "pinyin": "fàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fang4",
     "english": "loose",
     "partOfSpeech": "",
     "examples": [
@@ -2249,7 +2249,7 @@
     "simplified": "放假",
     "traditional": "放假",
     "pinyin": "fàng jià",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fang4 jia4",
     "english": "have a day off",
     "partOfSpeech": "",
     "examples": [
@@ -2271,7 +2271,7 @@
     "simplified": "飞",
     "traditional": "飛",
     "pinyin": "fēi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fei1",
     "english": "hover in the air",
     "partOfSpeech": "",
     "examples": [
@@ -2293,7 +2293,7 @@
     "simplified": "放学",
     "traditional": "放學",
     "pinyin": "fàng xué",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fang4 xue2",
     "english": "have winter holidays",
     "partOfSpeech": "",
     "examples": [
@@ -2315,7 +2315,7 @@
     "simplified": "飞机",
     "traditional": "飛機",
     "pinyin": "fēijī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fei1 ji1",
     "english": "aerocraft",
     "partOfSpeech": "",
     "examples": [
@@ -2337,7 +2337,7 @@
     "simplified": "非常",
     "traditional": "非常",
     "pinyin": "fēicháng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fei1 chang2",
     "english": "extraordinary",
     "partOfSpeech": "",
     "examples": [
@@ -2359,7 +2359,7 @@
     "simplified": "分",
     "traditional": "分",
     "pinyin": "fēn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "fen1",
     "english": "m.[general]",
     "partOfSpeech": "",
     "examples": [
@@ -2381,7 +2381,7 @@
     "simplified": "风",
     "traditional": "風",
     "pinyin": "fēng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "feng1",
     "english": "wind",
     "partOfSpeech": "",
     "examples": [
@@ -2403,7 +2403,7 @@
     "simplified": "干",
     "traditional": "幹",
     "pinyin": "gàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gan1",
     "english": "do",
     "partOfSpeech": "",
     "examples": [
@@ -2425,7 +2425,7 @@
     "simplified": "干净",
     "traditional": "乾淨",
     "pinyin": "gānjìng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gan1 jing4",
     "english": "clean",
     "partOfSpeech": "",
     "examples": [
@@ -2447,7 +2447,7 @@
     "simplified": "高兴",
     "traditional": "高興",
     "pinyin": "gāoxìng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gao1 xing4",
     "english": "glad",
     "partOfSpeech": "",
     "examples": [
@@ -2469,7 +2469,7 @@
     "simplified": "高",
     "traditional": "高",
     "pinyin": "gāo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gao1",
     "english": "tall",
     "partOfSpeech": "",
     "examples": [
@@ -2491,7 +2491,7 @@
     "simplified": "告诉",
     "traditional": "告訴",
     "pinyin": "gàosu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gao4 su4",
     "english": "tell",
     "partOfSpeech": "",
     "examples": [
@@ -2513,7 +2513,7 @@
     "simplified": "哥哥",
     "traditional": "哥哥",
     "pinyin": "gēge",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ge1 ge0",
     "english": "big brother",
     "partOfSpeech": "",
     "examples": [
@@ -2535,7 +2535,7 @@
     "simplified": "歌",
     "traditional": "歌",
     "pinyin": "gē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ge1",
     "english": "song",
     "partOfSpeech": "",
     "examples": [
@@ -2557,7 +2557,7 @@
     "simplified": "干什么",
     "traditional": "幹什麼",
     "pinyin": "gànshénme",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gan4 shen2 me0",
     "english": "do something",
     "partOfSpeech": "",
     "examples": [
@@ -2579,7 +2579,7 @@
     "simplified": "个",
     "traditional": "個",
     "pinyin": "gè",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ge4",
     "english": "piece",
     "partOfSpeech": "",
     "examples": [
@@ -2601,7 +2601,7 @@
     "simplified": "给",
     "traditional": "給",
     "pinyin": "gěi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gei3",
     "english": "give",
     "partOfSpeech": "",
     "examples": [
@@ -2623,7 +2623,7 @@
     "simplified": "跟",
     "traditional": "跟",
     "pinyin": "gēn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gen1",
     "english": "with",
     "partOfSpeech": "",
     "examples": [
@@ -2645,7 +2645,7 @@
     "simplified": "工人",
     "traditional": "工人",
     "pinyin": "gōngren",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gong1 ren2",
     "english": "navvy",
     "partOfSpeech": "",
     "examples": [
@@ -2667,7 +2667,7 @@
     "simplified": "工作",
     "traditional": "工作",
     "pinyin": "gōngzuò",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gong1 zuo4",
     "english": "work",
     "partOfSpeech": "",
     "examples": [
@@ -2689,7 +2689,7 @@
     "simplified": "关",
     "traditional": "關",
     "pinyin": "guān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "guan1",
     "english": "shut",
     "partOfSpeech": "",
     "examples": [
@@ -2711,7 +2711,7 @@
     "simplified": "关上",
     "traditional": "關上",
     "pinyin": "guānshàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "guan1 shang4",
     "english": "to close (a door)",
     "partOfSpeech": "",
     "examples": [
@@ -2733,7 +2733,7 @@
     "simplified": "国",
     "traditional": "國",
     "pinyin": "guó",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "guo2",
     "english": "surname Guo",
     "partOfSpeech": "",
     "examples": [
@@ -2755,7 +2755,7 @@
     "simplified": "国家",
     "traditional": "國家",
     "pinyin": "guójiā",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "guo2 jia1",
     "english": "sirkar",
     "partOfSpeech": "",
     "examples": [
@@ -2777,7 +2777,7 @@
     "simplified": "贵",
     "traditional": "貴",
     "pinyin": "guì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "gui4",
     "english": "expensive",
     "partOfSpeech": "",
     "examples": [
@@ -2799,7 +2799,7 @@
     "simplified": "国外",
     "traditional": "國外",
     "pinyin": "guówài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "guo2 wai4",
     "english": "overseas",
     "partOfSpeech": "",
     "examples": [
@@ -2821,7 +2821,7 @@
     "simplified": "还是",
     "traditional": "還是",
     "pinyin": "háishi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hai2 shi4",
     "english": "still",
     "partOfSpeech": "",
     "examples": [
@@ -2843,7 +2843,7 @@
     "simplified": "孩子",
     "traditional": "孩子",
     "pinyin": "háizi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hai2 zi0",
     "english": "kid",
     "partOfSpeech": "",
     "examples": [
@@ -2865,7 +2865,7 @@
     "simplified": "还有",
     "traditional": "還有",
     "pinyin": "háiyǒu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hai2 you3",
     "english": "conj.: furthermore",
     "partOfSpeech": "",
     "examples": [
@@ -2887,7 +2887,7 @@
     "simplified": "过",
     "traditional": "過",
     "pinyin": "guò",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "guo4",
     "english": "[aspect]",
     "partOfSpeech": "",
     "examples": [
@@ -2909,7 +2909,7 @@
     "simplified": "汉语",
     "traditional": "漢語",
     "pinyin": "Hànyǔ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "han4 yu3",
     "english": "Chinese language",
     "partOfSpeech": "",
     "examples": [
@@ -2931,7 +2931,7 @@
     "simplified": "还",
     "traditional": "還",
     "pinyin": "hái",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hai2",
     "english": "still",
     "partOfSpeech": "",
     "examples": [
@@ -2953,7 +2953,7 @@
     "simplified": "汉字",
     "traditional": "漢字",
     "pinyin": "Hànzì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "han4 zi4",
     "english": "Chinese character",
     "partOfSpeech": "",
     "examples": [
@@ -2975,7 +2975,7 @@
     "simplified": "好",
     "traditional": "好",
     "pinyin": "hǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hao3",
     "english": "good",
     "partOfSpeech": "",
     "examples": [
@@ -2997,7 +2997,7 @@
     "simplified": "好吃",
     "traditional": "好吃",
     "pinyin": "hǎochī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hao3 chi1",
     "english": "delicious",
     "partOfSpeech": "",
     "examples": [
@@ -3019,7 +3019,7 @@
     "simplified": "好看",
     "traditional": "好看",
     "pinyin": "hǎokàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hao3 kan4",
     "english": "embarrassed",
     "partOfSpeech": "",
     "examples": [
@@ -3041,7 +3041,7 @@
     "simplified": "好听",
     "traditional": "好聽",
     "pinyin": "hǎotīng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hao3 ting1",
     "english": "pleasant to hear",
     "partOfSpeech": "",
     "examples": [
@@ -3063,7 +3063,7 @@
     "simplified": "好玩儿",
     "traditional": "好玩兒",
     "pinyin": "hǎowánr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hao3 wan2 er2",
     "english": "interesting",
     "partOfSpeech": "",
     "examples": [
@@ -3085,7 +3085,7 @@
     "simplified": "号",
     "traditional": "號",
     "pinyin": "hào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hao4",
     "english": "m.[general]",
     "partOfSpeech": "",
     "examples": [
@@ -3107,7 +3107,7 @@
     "simplified": "喝",
     "traditional": "喝",
     "pinyin": "hē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "he1",
     "english": "drink",
     "partOfSpeech": "",
     "examples": [
@@ -3129,7 +3129,7 @@
     "simplified": "和",
     "traditional": "和",
     "pinyin": "hé",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "he2",
     "english": "and",
     "partOfSpeech": "",
     "examples": [
@@ -3151,7 +3151,7 @@
     "simplified": "很",
     "traditional": "很",
     "pinyin": "hěn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hen3",
     "english": "pretty",
     "partOfSpeech": "",
     "examples": [
@@ -3173,7 +3173,7 @@
     "simplified": "后",
     "traditional": "後",
     "pinyin": "hòu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hou4",
     "english": "rear",
     "partOfSpeech": "",
     "examples": [
@@ -3195,7 +3195,7 @@
     "simplified": "后边",
     "traditional": "後邊",
     "pinyin": "hòubian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hou4 bian1",
     "english": "back",
     "partOfSpeech": "",
     "examples": [
@@ -3217,7 +3217,7 @@
     "simplified": "话",
     "traditional": "話",
     "pinyin": "huà",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hua4",
     "english": "words",
     "partOfSpeech": "",
     "examples": [
@@ -3239,7 +3239,7 @@
     "simplified": "后天",
     "traditional": "後天",
     "pinyin": "hòutiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hou4 tian1",
     "english": "the day after tomorrow",
     "partOfSpeech": "",
     "examples": [
@@ -3261,7 +3261,7 @@
     "simplified": "坏",
     "traditional": "壞",
     "pinyin": "huài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "huai4",
     "english": "spoiled",
     "partOfSpeech": "",
     "examples": [
@@ -3283,7 +3283,7 @@
     "simplified": "回答",
     "traditional": "回答",
     "pinyin": "huídá",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hui2 da2",
     "english": "answer",
     "partOfSpeech": "",
     "examples": [
@@ -3305,7 +3305,7 @@
     "simplified": "回",
     "traditional": "回",
     "pinyin": "huí",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hui2",
     "english": "return",
     "partOfSpeech": "",
     "examples": [
@@ -3327,7 +3327,7 @@
     "simplified": "花",
     "traditional": "花",
     "pinyin": "huā",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hua1",
     "english": "spend",
     "partOfSpeech": "",
     "examples": [
@@ -3349,7 +3349,7 @@
     "simplified": "回到",
     "traditional": "回到",
     "pinyin": "huídào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hui2 dao4",
     "english": "remount",
     "partOfSpeech": "",
     "examples": [
@@ -3371,7 +3371,7 @@
     "simplified": "回家",
     "traditional": "回家",
     "pinyin": "huí jiā",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hui2 jia1",
     "english": "return home",
     "partOfSpeech": "",
     "examples": [
@@ -3393,7 +3393,7 @@
     "simplified": "回去",
     "traditional": "回去",
     "pinyin": "huí  qu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hui2 qu4",
     "english": "go_home",
     "partOfSpeech": "",
     "examples": [
@@ -3415,7 +3415,7 @@
     "simplified": "回来",
     "traditional": "回來",
     "pinyin": "huí lai",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hui2 lai2",
     "english": "come back",
     "partOfSpeech": "",
     "examples": [
@@ -3437,7 +3437,7 @@
     "simplified": "会",
     "traditional": "會",
     "pinyin": "huì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "hui4",
     "english": "to be able",
     "partOfSpeech": "",
     "examples": [
@@ -3459,7 +3459,7 @@
     "simplified": "火车",
     "traditional": "火車",
     "pinyin": "huǒchē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "huo3 che1",
     "english": "choo-choo",
     "partOfSpeech": "",
     "examples": [
@@ -3481,7 +3481,7 @@
     "simplified": "机场",
     "traditional": "機場",
     "pinyin": "jīchǎng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ji1 chang3",
     "english": "landing field",
     "partOfSpeech": "",
     "examples": [
@@ -3503,7 +3503,7 @@
     "simplified": "鸡蛋",
     "traditional": "雞蛋",
     "pinyin": "jīdàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ji1 dan4",
     "english": "(chicken) egg",
     "partOfSpeech": "",
     "examples": [
@@ -3525,7 +3525,7 @@
     "simplified": "机票",
     "traditional": "機票",
     "pinyin": "jīpiào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ji1 piao4",
     "english": "air ticket",
     "partOfSpeech": "",
     "examples": [
@@ -3547,7 +3547,7 @@
     "simplified": "几",
     "traditional": "幾",
     "pinyin": "jǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ji3",
     "english": "det.: how many",
     "partOfSpeech": "",
     "examples": [
@@ -3569,7 +3569,7 @@
     "simplified": "记得",
     "traditional": "記得",
     "pinyin": "jì de",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ji4 de0",
     "english": "come to mind",
     "partOfSpeech": "",
     "examples": [
@@ -3591,7 +3591,7 @@
     "simplified": "记住",
     "traditional": "記住",
     "pinyin": "jì zhu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ji4 zhu4",
     "english": "to remember",
     "partOfSpeech": "",
     "examples": [
@@ -3613,7 +3613,7 @@
     "simplified": "家",
     "traditional": "家",
     "pinyin": "jiā",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jia1",
     "english": "family",
     "partOfSpeech": "",
     "examples": [
@@ -3635,7 +3635,7 @@
     "simplified": "记",
     "traditional": "記",
     "pinyin": "jì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ji4",
     "english": "write down",
     "partOfSpeech": "",
     "examples": [
@@ -3657,7 +3657,7 @@
     "simplified": "家里",
     "traditional": "家裡",
     "pinyin": "jiālǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jia1 li3",
     "english": "home",
     "partOfSpeech": "",
     "examples": [
@@ -3679,7 +3679,7 @@
     "simplified": "见面",
     "traditional": "見面",
     "pinyin": "jiàn miàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jian4 mian4",
     "english": "meet",
     "partOfSpeech": "",
     "examples": [
@@ -3701,7 +3701,7 @@
     "simplified": "教",
     "traditional": "教",
     "pinyin": "jiào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jiao4",
     "english": "teach",
     "partOfSpeech": "",
     "examples": [
@@ -3723,7 +3723,7 @@
     "simplified": "家人",
     "traditional": "家人",
     "pinyin": "jiārén",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jia1 ren2",
     "english": "relation",
     "partOfSpeech": "",
     "examples": [
@@ -3745,7 +3745,7 @@
     "simplified": "间",
     "traditional": "間",
     "pinyin": "jiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jian1",
     "english": "locality",
     "partOfSpeech": "",
     "examples": [
@@ -3767,7 +3767,7 @@
     "simplified": "见",
     "traditional": "見",
     "pinyin": "jiàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jian4",
     "english": "see",
     "partOfSpeech": "",
     "examples": [
@@ -3789,7 +3789,7 @@
     "simplified": "叫",
     "traditional": "叫",
     "pinyin": "jiào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jiao4",
     "english": "to be called",
     "partOfSpeech": "",
     "examples": [
@@ -3811,7 +3811,7 @@
     "simplified": "教学楼",
     "traditional": "教學樓",
     "pinyin": "jiàoxuélóu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jiao4 xue2 lou2",
     "english": "teaching block",
     "partOfSpeech": "",
     "examples": [
@@ -3833,7 +3833,7 @@
     "simplified": "介绍",
     "traditional": "介紹",
     "pinyin": "jièshào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jie4 shao4",
     "english": "introduce",
     "partOfSpeech": "",
     "examples": [
@@ -3855,7 +3855,7 @@
     "simplified": "今年",
     "traditional": "今年",
     "pinyin": "jīnnián",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jin1 nian2",
     "english": "this year",
     "partOfSpeech": "",
     "examples": [
@@ -3877,7 +3877,7 @@
     "simplified": "姐姐",
     "traditional": "姐姐",
     "pinyin": "jiějie",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jie3 jie0",
     "english": "sis",
     "partOfSpeech": "",
     "examples": [
@@ -3899,7 +3899,7 @@
     "simplified": "今天",
     "traditional": "今天",
     "pinyin": "jīntiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jin1 tian1",
     "english": "today",
     "partOfSpeech": "",
     "examples": [
@@ -3921,7 +3921,7 @@
     "simplified": "进",
     "traditional": "進",
     "pinyin": "jìn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jin4",
     "english": "enter",
     "partOfSpeech": "",
     "examples": [
@@ -3943,7 +3943,7 @@
     "simplified": "进来",
     "traditional": "進來",
     "pinyin": "jìn lai",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jin4 lai2",
     "english": "come in",
     "partOfSpeech": "",
     "examples": [
@@ -3965,7 +3965,7 @@
     "simplified": "进去",
     "traditional": "進去",
     "pinyin": "jìn qu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jin4 qu4",
     "english": "enter",
     "partOfSpeech": "",
     "examples": [
@@ -3987,7 +3987,7 @@
     "simplified": "就",
     "traditional": "就",
     "pinyin": "jiù",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jiu4",
     "english": "then",
     "partOfSpeech": "",
     "examples": [
@@ -4009,7 +4009,7 @@
     "simplified": "觉得",
     "traditional": "覺得",
     "pinyin": "juéde",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jue2 de0",
     "english": "imagine",
     "partOfSpeech": "",
     "examples": [
@@ -4031,7 +4031,7 @@
     "simplified": "九",
     "traditional": "九",
     "pinyin": "jiǔ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "jiu3",
     "english": "det.: nine",
     "partOfSpeech": "",
     "examples": [
@@ -4053,7 +4053,7 @@
     "simplified": "开",
     "traditional": "開",
     "pinyin": "kāi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kai1",
     "english": "open",
     "partOfSpeech": "",
     "examples": [
@@ -4075,7 +4075,7 @@
     "simplified": "开车",
     "traditional": "開車",
     "pinyin": "kāi chē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kai1 che1",
     "english": "to drive a car",
     "partOfSpeech": "",
     "examples": [
@@ -4097,7 +4097,7 @@
     "simplified": "开会",
     "traditional": "開會",
     "pinyin": "kāi huì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kai1 hui4",
     "english": "hold/attend meeting",
     "partOfSpeech": "",
     "examples": [
@@ -4119,7 +4119,7 @@
     "simplified": "开玩笑",
     "traditional": "開玩笑",
     "pinyin": "kāi wánxiào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kai1 wan2 xiao4",
     "english": "kid",
     "partOfSpeech": "",
     "examples": [
@@ -4141,7 +4141,7 @@
     "simplified": "看",
     "traditional": "看",
     "pinyin": "kàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kan4",
     "english": "see",
     "partOfSpeech": "",
     "examples": [
@@ -4163,7 +4163,7 @@
     "simplified": "看病",
     "traditional": "看病",
     "pinyin": "kàn bìng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kan4 bing4",
     "english": "to visit a doctor",
     "partOfSpeech": "",
     "examples": [
@@ -4185,7 +4185,7 @@
     "simplified": "看到",
     "traditional": "看到",
     "pinyin": "kàn dào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kan4 dao4",
     "english": "view",
     "partOfSpeech": "",
     "examples": [
@@ -4207,7 +4207,7 @@
     "simplified": "考",
     "traditional": "考",
     "pinyin": "kǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kao3",
     "english": "study",
     "partOfSpeech": "",
     "examples": [
@@ -4229,7 +4229,7 @@
     "simplified": "看见",
     "traditional": "看見",
     "pinyin": "kàn jian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kan4 jian4",
     "english": "seeing",
     "partOfSpeech": "",
     "examples": [
@@ -4251,7 +4251,7 @@
     "simplified": "考试",
     "traditional": "考試",
     "pinyin": "kǎoshì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kao3 shi4",
     "english": "examination",
     "partOfSpeech": "",
     "examples": [
@@ -4273,7 +4273,7 @@
     "simplified": "渴",
     "traditional": "渴",
     "pinyin": "kě",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ke3",
     "english": "thirsty",
     "partOfSpeech": "",
     "examples": [
@@ -4295,7 +4295,7 @@
     "simplified": "课",
     "traditional": "課",
     "pinyin": "kè",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ke4",
     "english": "subject",
     "partOfSpeech": "",
     "examples": [
@@ -4317,7 +4317,7 @@
     "simplified": "课本",
     "traditional": "課本",
     "pinyin": "kèběn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ke4 ben3",
     "english": "text edition",
     "partOfSpeech": "",
     "examples": [
@@ -4339,7 +4339,7 @@
     "simplified": "课文",
     "traditional": "課文",
     "pinyin": "kèwén",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ke4 wen2",
     "english": "text",
     "partOfSpeech": "",
     "examples": [
@@ -4361,7 +4361,7 @@
     "simplified": "口",
     "traditional": "口",
     "pinyin": "kǒu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kou3",
     "english": "m.[general]",
     "partOfSpeech": "",
     "examples": [
@@ -4383,7 +4383,7 @@
     "simplified": "块",
     "traditional": "塊",
     "pinyin": "kuài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kuai4",
     "english": "m.[general]",
     "partOfSpeech": "",
     "examples": [
@@ -4405,7 +4405,7 @@
     "simplified": "快",
     "traditional": "快",
     "pinyin": "kuài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "kuai4",
     "english": "fast",
     "partOfSpeech": "",
     "examples": [
@@ -4427,7 +4427,7 @@
     "simplified": "来",
     "traditional": "來",
     "pinyin": "lái",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lai2",
     "english": "to",
     "partOfSpeech": "",
     "examples": [
@@ -4449,7 +4449,7 @@
     "simplified": "来到",
     "traditional": "來到",
     "pinyin": "láidào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lai2 dao4",
     "english": "arrive",
     "partOfSpeech": "",
     "examples": [
@@ -4471,7 +4471,7 @@
     "simplified": "老",
     "traditional": "老",
     "pinyin": "lǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lao3",
     "english": "old",
     "partOfSpeech": "",
     "examples": [
@@ -4493,7 +4493,7 @@
     "simplified": "老人",
     "traditional": "老人",
     "pinyin": "lǎoren",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lao3 ren2",
     "english": "oldster",
     "partOfSpeech": "",
     "examples": [
@@ -4515,7 +4515,7 @@
     "simplified": "老师",
     "traditional": "老師",
     "pinyin": "lǎoshī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lao3 shi1",
     "english": "rabbi",
     "partOfSpeech": "",
     "examples": [
@@ -4537,7 +4537,7 @@
     "simplified": "了",
     "traditional": "了",
     "pinyin": "le",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "liao3",
     "english": "entirely",
     "partOfSpeech": "",
     "examples": [
@@ -4559,7 +4559,7 @@
     "simplified": "累",
     "traditional": "累",
     "pinyin": "lèi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lei4",
     "english": "tire",
     "partOfSpeech": "",
     "examples": [
@@ -4581,7 +4581,7 @@
     "simplified": "冷",
     "traditional": "冷",
     "pinyin": "lěng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "leng3",
     "english": "cool",
     "partOfSpeech": "",
     "examples": [
@@ -4603,7 +4603,7 @@
     "simplified": "里",
     "traditional": "裏",
     "pinyin": "lǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "li3",
     "english": "inside",
     "partOfSpeech": "",
     "examples": [
@@ -4625,7 +4625,7 @@
     "simplified": "里边",
     "traditional": "裡邊",
     "pinyin": "lǐbian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "li3 bian1",
     "english": "inside",
     "partOfSpeech": "",
     "examples": [
@@ -4647,7 +4647,7 @@
     "simplified": "两",
     "traditional": "兩",
     "pinyin": "liǎng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "liang3",
     "english": "det.: two",
     "partOfSpeech": "",
     "examples": [
@@ -4669,7 +4669,7 @@
     "simplified": "零",
     "traditional": "零",
     "pinyin": "líng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ling2",
     "english": "det.: zero",
     "partOfSpeech": "",
     "examples": [
@@ -4691,7 +4691,7 @@
     "simplified": "六",
     "traditional": "六",
     "pinyin": "liù",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "liu4",
     "english": "det.: six",
     "partOfSpeech": "",
     "examples": [
@@ -4713,7 +4713,7 @@
     "simplified": "楼",
     "traditional": "樓",
     "pinyin": "lóu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lou2",
     "english": "storey",
     "partOfSpeech": "",
     "examples": [
@@ -4735,7 +4735,7 @@
     "simplified": "楼上",
     "traditional": "樓上",
     "pinyin": "lóushàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lou2 shang4",
     "english": "upstairs",
     "partOfSpeech": "",
     "examples": [
@@ -4757,7 +4757,7 @@
     "simplified": "楼下",
     "traditional": "樓下",
     "pinyin": "lóuxià",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lou2 xia4",
     "english": "downstairs",
     "partOfSpeech": "",
     "examples": [
@@ -4779,7 +4779,7 @@
     "simplified": "路口",
     "traditional": "路口",
     "pinyin": "lùkǒu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lu4 kou3",
     "english": "crossing",
     "partOfSpeech": "",
     "examples": [
@@ -4801,7 +4801,7 @@
     "simplified": "路上",
     "traditional": "路上",
     "pinyin": "lùshang",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lu4 shang0",
     "english": "on the road",
     "partOfSpeech": "",
     "examples": [
@@ -4823,7 +4823,7 @@
     "simplified": "妈妈",
     "traditional": "媽媽",
     "pinyin": "māma",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ma1 ma0",
     "english": "mummy",
     "partOfSpeech": "",
     "examples": [
@@ -4845,7 +4845,7 @@
     "simplified": "马路",
     "traditional": "馬路",
     "pinyin": "mǎlù",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ma3 lu4",
     "english": "drive",
     "partOfSpeech": "",
     "examples": [
@@ -4867,7 +4867,7 @@
     "simplified": "路",
     "traditional": "路",
     "pinyin": "lù",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "lu4",
     "english": "road",
     "partOfSpeech": "",
     "examples": [
@@ -4889,7 +4889,7 @@
     "simplified": "马上",
     "traditional": "馬上",
     "pinyin": "mǎshàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ma3 shang4",
     "english": "in a short time",
     "partOfSpeech": "",
     "examples": [
@@ -4911,7 +4911,7 @@
     "simplified": "买",
     "traditional": "買",
     "pinyin": "mǎi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mai3",
     "english": "pick up",
     "partOfSpeech": "",
     "examples": [
@@ -4933,7 +4933,7 @@
     "simplified": "吗",
     "traditional": "嗎",
     "pinyin": "ma",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ma0",
     "english": "particle: calling for agreement or disagreement",
     "partOfSpeech": "",
     "examples": [
@@ -4955,7 +4955,7 @@
     "simplified": "慢",
     "traditional": "慢",
     "pinyin": "màn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "man4",
     "english": "tardy",
     "partOfSpeech": "",
     "examples": [
@@ -4977,7 +4977,7 @@
     "simplified": "忙",
     "traditional": "忙",
     "pinyin": "máng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mang2",
     "english": "hurry",
     "partOfSpeech": "",
     "examples": [
@@ -4999,7 +4999,7 @@
     "simplified": "毛",
     "traditional": "毛",
     "pinyin": "máo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mao2",
     "english": "Mao",
     "partOfSpeech": "",
     "examples": [
@@ -5021,7 +5021,7 @@
     "simplified": "没",
     "traditional": "沒",
     "pinyin": "méi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mei2",
     "english": "not",
     "partOfSpeech": "",
     "examples": [
@@ -5043,7 +5043,7 @@
     "simplified": "没关系",
     "traditional": "沒關係",
     "pinyin": "méiguānxi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mei2 guan1 xi4",
     "english": "it doesn't matter",
     "partOfSpeech": "",
     "examples": [
@@ -5065,7 +5065,7 @@
     "simplified": "没什么",
     "traditional": "沒什麼",
     "pinyin": "méishénme",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mei2 shen2 me0",
     "english": "nothing",
     "partOfSpeech": "",
     "examples": [
@@ -5087,7 +5087,7 @@
     "simplified": "没有",
     "traditional": "沒有",
     "pinyin": "méiyou",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mei2 you3",
     "english": "not have",
     "partOfSpeech": "",
     "examples": [
@@ -5109,7 +5109,7 @@
     "simplified": "没事儿",
     "traditional": "沒事兒",
     "pinyin": "méishìr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mei2 shi4 er2",
     "english": "to have spare time",
     "partOfSpeech": "",
     "examples": [
@@ -5131,7 +5131,7 @@
     "simplified": "妹妹",
     "traditional": "妹妹",
     "pinyin": "mèimei",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mei4 mei0",
     "english": "little_sister",
     "partOfSpeech": "",
     "examples": [
@@ -5153,7 +5153,7 @@
     "simplified": "门",
     "traditional": "門",
     "pinyin": "mén",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "men2",
     "english": "door",
     "partOfSpeech": "",
     "examples": [
@@ -5175,7 +5175,7 @@
     "simplified": "门口",
     "traditional": "門口",
     "pinyin": "ménkǒu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "men2 kou3",
     "english": "porch",
     "partOfSpeech": "",
     "examples": [
@@ -5197,7 +5197,7 @@
     "simplified": "门票",
     "traditional": "門票",
     "pinyin": "ménpiào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "men2 piao4",
     "english": "entrance/admission ticket",
     "partOfSpeech": "",
     "examples": [
@@ -5219,7 +5219,7 @@
     "simplified": "米饭",
     "traditional": "米飯",
     "pinyin": "mǐfàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mi3 fan4",
     "english": "(cooked) rice",
     "partOfSpeech": "",
     "examples": [
@@ -5241,7 +5241,7 @@
     "simplified": "们",
     "traditional": "們",
     "pinyin": "men",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "men0",
     "english": "pluralizer after pronouns and nouns of persons",
     "partOfSpeech": "",
     "examples": [
@@ -5263,7 +5263,7 @@
     "simplified": "面包",
     "traditional": "麵包",
     "pinyin": "miànbāo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mian4 bao1",
     "english": "bun",
     "partOfSpeech": "",
     "examples": [
@@ -5285,7 +5285,7 @@
     "simplified": "面条儿",
     "traditional": "麵條兒",
     "pinyin": "miàntiáor",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "mian4 tiao2 er2",
     "english": "noodles",
     "partOfSpeech": "",
     "examples": [
@@ -5307,7 +5307,7 @@
     "simplified": "名字",
     "traditional": "名字",
     "pinyin": "míngzi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ming2 zi4",
     "english": "first_name",
     "partOfSpeech": "",
     "examples": [
@@ -5329,7 +5329,7 @@
     "simplified": "明白",
     "traditional": "明白",
     "pinyin": "míngbai",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ming2 bai2",
     "english": "clarify",
     "partOfSpeech": "",
     "examples": [
@@ -5351,7 +5351,7 @@
     "simplified": "明年",
     "traditional": "明年",
     "pinyin": "míngnián",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ming2 nian2",
     "english": "next year",
     "partOfSpeech": "",
     "examples": [
@@ -5373,7 +5373,7 @@
     "simplified": "明天",
     "traditional": "明天",
     "pinyin": "míngtiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ming2 tian1",
     "english": "tomorrow",
     "partOfSpeech": "",
     "examples": [
@@ -5395,7 +5395,7 @@
     "simplified": "哪",
     "traditional": "哪",
     "pinyin": "nǎ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na3",
     "english": "det.: which",
     "partOfSpeech": "",
     "examples": [
@@ -5417,7 +5417,7 @@
     "simplified": "哪里",
     "traditional": "哪裡",
     "pinyin": "nǎli",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na3 li3",
     "english": "where",
     "partOfSpeech": "",
     "examples": [
@@ -5439,7 +5439,7 @@
     "simplified": "哪儿",
     "traditional": "哪兒",
     "pinyin": "nǎr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na3 er2",
     "english": "where",
     "partOfSpeech": "",
     "examples": [
@@ -5461,7 +5461,7 @@
     "simplified": "哪些",
     "traditional": "哪些",
     "pinyin": "nǎxiē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na3 xie1",
     "english": "det.: which",
     "partOfSpeech": "",
     "examples": [
@@ -5483,7 +5483,7 @@
     "simplified": "拿",
     "traditional": "拿",
     "pinyin": "ná",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na2",
     "english": "take",
     "partOfSpeech": "",
     "examples": [
@@ -5505,7 +5505,7 @@
     "simplified": "那边",
     "traditional": "那邊",
     "pinyin": "nàbian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na4 bian1",
     "english": "beyond",
     "partOfSpeech": "",
     "examples": [
@@ -5527,7 +5527,7 @@
     "simplified": "那",
     "traditional": "那",
     "pinyin": "nà",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na4",
     "english": "det.: that",
     "partOfSpeech": "",
     "examples": [
@@ -5549,7 +5549,7 @@
     "simplified": "那里",
     "traditional": "那裡",
     "pinyin": "nàlǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na4 li3",
     "english": "that place",
     "partOfSpeech": "",
     "examples": [
@@ -5571,7 +5571,7 @@
     "simplified": "那些",
     "traditional": "那些",
     "pinyin": "nàxiē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na4 xie1",
     "english": "det.: those",
     "partOfSpeech": "",
     "examples": [
@@ -5593,7 +5593,7 @@
     "simplified": "奶",
     "traditional": "奶",
     "pinyin": "nǎi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nai3",
     "english": "breasts",
     "partOfSpeech": "",
     "examples": [
@@ -5615,7 +5615,7 @@
     "simplified": "那儿",
     "traditional": "那兒",
     "pinyin": "nàr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "na4 er2",
     "english": "that place",
     "partOfSpeech": "",
     "examples": [
@@ -5637,7 +5637,7 @@
     "simplified": "奶奶",
     "traditional": "奶奶",
     "pinyin": "nǎinai",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nai3 nai0",
     "english": "nanna",
     "partOfSpeech": "",
     "examples": [
@@ -5659,7 +5659,7 @@
     "simplified": "男孩儿",
     "traditional": "男孩兒",
     "pinyin": "nánháir",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nan2 hai2 er2",
     "english": "boy",
     "partOfSpeech": "",
     "examples": [
@@ -5681,7 +5681,7 @@
     "simplified": "男朋友",
     "traditional": "男朋友",
     "pinyin": "nánpéngyou",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nan2 peng2 you3",
     "english": "boyfriend",
     "partOfSpeech": "",
     "examples": [
@@ -5703,7 +5703,7 @@
     "simplified": "男",
     "traditional": "男",
     "pinyin": "nán",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nan2",
     "english": "baron",
     "partOfSpeech": "",
     "examples": [
@@ -5725,7 +5725,7 @@
     "simplified": "男生",
     "traditional": "男生",
     "pinyin": "nánshēng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nan2 sheng1",
     "english": "brother",
     "partOfSpeech": "",
     "examples": [
@@ -5747,7 +5747,7 @@
     "simplified": "南",
     "traditional": "南",
     "pinyin": "nán",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nan2",
     "english": "Yugoslavia",
     "partOfSpeech": "",
     "examples": [
@@ -5769,7 +5769,7 @@
     "simplified": "男人",
     "traditional": "男人",
     "pinyin": "nánren",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nan2 ren2",
     "english": "male",
     "partOfSpeech": "",
     "examples": [
@@ -5791,7 +5791,7 @@
     "simplified": "南边",
     "traditional": "南邊",
     "pinyin": "nánbian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nan2 bian1",
     "english": "south",
     "partOfSpeech": "",
     "examples": [
@@ -5813,7 +5813,7 @@
     "simplified": "呢",
     "traditional": "呢",
     "pinyin": "ne",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ne0",
     "english": "particle: marking quesitons about subject already mentioned; indicating strong affirmation",
     "partOfSpeech": "",
     "examples": [
@@ -5835,7 +5835,7 @@
     "simplified": "难",
     "traditional": "難",
     "pinyin": "nán",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nan2",
     "english": "make difficulties",
     "partOfSpeech": "",
     "examples": [
@@ -5857,7 +5857,7 @@
     "simplified": "你",
     "traditional": "你",
     "pinyin": "nǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ni3",
     "english": "you",
     "partOfSpeech": "",
     "examples": [
@@ -5879,7 +5879,7 @@
     "simplified": "能",
     "traditional": "能",
     "pinyin": "néng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "neng2",
     "english": "can or to be capable of",
     "partOfSpeech": "",
     "examples": [
@@ -5901,7 +5901,7 @@
     "simplified": "你们",
     "traditional": "你們",
     "pinyin": "nǐmen",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ni3 men0",
     "english": "you",
     "partOfSpeech": "",
     "examples": [
@@ -5923,7 +5923,7 @@
     "simplified": "您",
     "traditional": "您",
     "pinyin": "nín",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nin2",
     "english": "you",
     "partOfSpeech": "",
     "examples": [
@@ -5945,7 +5945,7 @@
     "simplified": "牛奶",
     "traditional": "牛奶",
     "pinyin": "niúnǎi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "niu2 nai3",
     "english": "cow's milk",
     "partOfSpeech": "",
     "examples": [
@@ -5967,7 +5967,7 @@
     "simplified": "女",
     "traditional": "女",
     "pinyin": "nǚ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nü3",
     "english": "girl",
     "partOfSpeech": "",
     "examples": [
@@ -5989,7 +5989,7 @@
     "simplified": "年",
     "traditional": "年",
     "pinyin": "nián",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nian2",
     "english": "year",
     "partOfSpeech": "",
     "examples": [
@@ -6011,7 +6011,7 @@
     "simplified": "女孩儿",
     "traditional": "女孩兒",
     "pinyin": "nǚháir",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nü3 hai2 er2",
     "english": "girl",
     "partOfSpeech": "",
     "examples": [
@@ -6033,7 +6033,7 @@
     "simplified": "女儿",
     "traditional": "女兒",
     "pinyin": "nǚér",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nü3 er2",
     "english": "daughter",
     "partOfSpeech": "",
     "examples": [
@@ -6055,7 +6055,7 @@
     "simplified": "女生",
     "traditional": "女生",
     "pinyin": "nǚshēng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nü3 sheng1",
     "english": "schoolgirl",
     "partOfSpeech": "",
     "examples": [
@@ -6077,7 +6077,7 @@
     "simplified": "女朋友",
     "traditional": "女朋友",
     "pinyin": "nǚpéngyou",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nü3 peng2 you3",
     "english": "jane",
     "partOfSpeech": "",
     "examples": [
@@ -6099,7 +6099,7 @@
     "simplified": "旁边",
     "traditional": "旁邊",
     "pinyin": "pángbiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "pang2 bian1",
     "english": "by the side of",
     "partOfSpeech": "",
     "examples": [
@@ -6121,7 +6121,7 @@
     "simplified": "跑",
     "traditional": "跑",
     "pinyin": "pǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "pao3",
     "english": "travel",
     "partOfSpeech": "",
     "examples": [
@@ -6143,7 +6143,7 @@
     "simplified": "女人",
     "traditional": "女人",
     "pinyin": "nǚren",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "nü3 ren2",
     "english": "jade",
     "partOfSpeech": "",
     "examples": [
@@ -6165,7 +6165,7 @@
     "simplified": "朋友",
     "traditional": "朋友",
     "pinyin": "péngyou",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "peng2 you3",
     "english": "amigo",
     "partOfSpeech": "",
     "examples": [
@@ -6187,7 +6187,7 @@
     "simplified": "票",
     "traditional": "票",
     "pinyin": "piào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "piao4",
     "english": "ticket",
     "partOfSpeech": "",
     "examples": [
@@ -6209,7 +6209,7 @@
     "simplified": "七",
     "traditional": "七",
     "pinyin": "qī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qi1",
     "english": "det.: seven",
     "partOfSpeech": "",
     "examples": [
@@ -6231,7 +6231,7 @@
     "simplified": "起床",
     "traditional": "起床",
     "pinyin": "qǐ chuáng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qi3 chuang2",
     "english": "uprise",
     "partOfSpeech": "",
     "examples": [
@@ -6253,7 +6253,7 @@
     "simplified": "起来",
     "traditional": "起來",
     "pinyin": "qǐ  lai",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qi3 lai2",
     "english": "[aspect]",
     "partOfSpeech": "",
     "examples": [
@@ -6275,7 +6275,7 @@
     "simplified": "起",
     "traditional": "起",
     "pinyin": "qǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qi3",
     "english": "[aspect]",
     "partOfSpeech": "",
     "examples": [
@@ -6297,7 +6297,7 @@
     "simplified": "汽车",
     "traditional": "汽車",
     "pinyin": "qìchē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qi4 che1",
     "english": "automotive vehicle",
     "partOfSpeech": "",
     "examples": [
@@ -6319,7 +6319,7 @@
     "simplified": "前",
     "traditional": "前",
     "pinyin": "qián",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qian2",
     "english": "front",
     "partOfSpeech": "",
     "examples": [
@@ -6341,7 +6341,7 @@
     "simplified": "前边",
     "traditional": "前邊",
     "pinyin": "qiánbian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qian2 bian1",
     "english": "front",
     "partOfSpeech": "",
     "examples": [
@@ -6363,7 +6363,7 @@
     "simplified": "钱",
     "traditional": "錢",
     "pinyin": "qián",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qian2",
     "english": "copper coin",
     "partOfSpeech": "",
     "examples": [
@@ -6385,7 +6385,7 @@
     "simplified": "钱包",
     "traditional": "錢包",
     "pinyin": "qiánbāo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qian2 bao1",
     "english": "purse",
     "partOfSpeech": "",
     "examples": [
@@ -6407,7 +6407,7 @@
     "simplified": "请",
     "traditional": "請",
     "pinyin": "qǐng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qing3",
     "english": "request",
     "partOfSpeech": "",
     "examples": [
@@ -6429,7 +6429,7 @@
     "simplified": "前天",
     "traditional": "前天",
     "pinyin": "qiántiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qian2 tian1",
     "english": "the day before yesterday",
     "partOfSpeech": "",
     "examples": [
@@ -6451,7 +6451,7 @@
     "simplified": "请假",
     "traditional": "請假",
     "pinyin": "qǐng jià",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qing3 jia4",
     "english": "vacate",
     "partOfSpeech": "",
     "examples": [
@@ -6473,7 +6473,7 @@
     "simplified": "请问",
     "traditional": "請問",
     "pinyin": "qǐngwèn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qing3 wen4",
     "english": "Excuse me",
     "partOfSpeech": "",
     "examples": [
@@ -6495,7 +6495,7 @@
     "simplified": "请进",
     "traditional": "請進",
     "pinyin": "qǐngjìn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qing3 jin4",
     "english": "'please come in'",
     "partOfSpeech": "",
     "examples": [
@@ -6517,7 +6517,7 @@
     "simplified": "请坐",
     "traditional": "請坐",
     "pinyin": "qǐng zuò",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qing3 zuo4",
     "english": "Sitting",
     "partOfSpeech": "",
     "examples": [
@@ -6539,7 +6539,7 @@
     "simplified": "球",
     "traditional": "球",
     "pinyin": "qiú",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qiu2",
     "english": "ball",
     "partOfSpeech": "",
     "examples": [
@@ -6561,7 +6561,7 @@
     "simplified": "去年",
     "traditional": "去年",
     "pinyin": "qùnián",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qu4 nian2",
     "english": "last year",
     "partOfSpeech": "",
     "examples": [
@@ -6583,7 +6583,7 @@
     "simplified": "热",
     "traditional": "熱",
     "pinyin": "rè",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "re4",
     "english": "hot",
     "partOfSpeech": "",
     "examples": [
@@ -6605,7 +6605,7 @@
     "simplified": "人",
     "traditional": "人",
     "pinyin": "rén",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ren2",
     "english": "person",
     "partOfSpeech": "",
     "examples": [
@@ -6627,7 +6627,7 @@
     "simplified": "认识",
     "traditional": "認識",
     "pinyin": "rènshi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ren4 shi0",
     "english": "know",
     "partOfSpeech": "",
     "examples": [
@@ -6649,7 +6649,7 @@
     "simplified": "认真",
     "traditional": "認真",
     "pinyin": "rènzhēn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ren4 zhen1",
     "english": "serious",
     "partOfSpeech": "",
     "examples": [
@@ -6671,7 +6671,7 @@
     "simplified": "去",
     "traditional": "去",
     "pinyin": "qù",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "qu4",
     "english": "to go",
     "partOfSpeech": "",
     "examples": [
@@ -6693,7 +6693,7 @@
     "simplified": "日",
     "traditional": "日",
     "pinyin": "rì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ri4",
     "english": "m.[standard]",
     "partOfSpeech": "",
     "examples": [
@@ -6715,7 +6715,7 @@
     "simplified": "日期",
     "traditional": "日期",
     "pinyin": "rìqī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ri4 qi1",
     "english": "calendar",
     "partOfSpeech": "",
     "examples": [
@@ -6737,7 +6737,7 @@
     "simplified": "肉",
     "traditional": "肉",
     "pinyin": "ròu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "rou4",
     "english": "pulp",
     "partOfSpeech": "",
     "examples": [
@@ -6759,7 +6759,7 @@
     "simplified": "山",
     "traditional": "山",
     "pinyin": "shān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shan1",
     "english": "Shan",
     "partOfSpeech": "",
     "examples": [
@@ -6781,7 +6781,7 @@
     "simplified": "商场",
     "traditional": "商場",
     "pinyin": "shāngchǎng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang1 chang3",
     "english": "department store",
     "partOfSpeech": "",
     "examples": [
@@ -6803,7 +6803,7 @@
     "simplified": "上",
     "traditional": "上",
     "pinyin": "shàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang4",
     "english": "on",
     "partOfSpeech": "",
     "examples": [
@@ -6825,7 +6825,7 @@
     "simplified": "三",
     "traditional": "三",
     "pinyin": "sān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "san1",
     "english": "det.: three",
     "partOfSpeech": "",
     "examples": [
@@ -6847,7 +6847,7 @@
     "simplified": "商店",
     "traditional": "商店",
     "pinyin": "shāngdiàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang1 dian4",
     "english": "concern",
     "partOfSpeech": "",
     "examples": [
@@ -6869,7 +6869,7 @@
     "simplified": "上班",
     "traditional": "上班",
     "pinyin": "shàng bān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang4 ban1",
     "english": "start work",
     "partOfSpeech": "",
     "examples": [
@@ -6891,7 +6891,7 @@
     "simplified": "上车",
     "traditional": "上車",
     "pinyin": "shàngchē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang4 che1",
     "english": "to get on or into (a bus",
     "partOfSpeech": "",
     "examples": [
@@ -6913,7 +6913,7 @@
     "simplified": "上课",
     "traditional": "上課",
     "pinyin": "shàng kè",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang4 ke4",
     "english": "attend class",
     "partOfSpeech": "",
     "examples": [
@@ -6935,7 +6935,7 @@
     "simplified": "上网",
     "traditional": "上網",
     "pinyin": "shàng wǎng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang4 wang3",
     "english": "to go online",
     "partOfSpeech": "",
     "examples": [
@@ -6957,7 +6957,7 @@
     "simplified": "上边",
     "traditional": "上邊",
     "pinyin": "shàngbian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang4 bian1",
     "english": "the top",
     "partOfSpeech": "",
     "examples": [
@@ -6979,7 +6979,7 @@
     "simplified": "上学",
     "traditional": "上學",
     "pinyin": "shàng xué",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang4 xue2",
     "english": "attend school",
     "partOfSpeech": "",
     "examples": [
@@ -7001,7 +7001,7 @@
     "simplified": "上午",
     "traditional": "上午",
     "pinyin": "shàngwǔ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang4 wu3",
     "english": "morning",
     "partOfSpeech": "",
     "examples": [
@@ -7023,7 +7023,7 @@
     "simplified": "少",
     "traditional": "少",
     "pinyin": "shǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shao3",
     "english": "lack",
     "partOfSpeech": "",
     "examples": [
@@ -7045,7 +7045,7 @@
     "simplified": "上次",
     "traditional": "上次",
     "pinyin": "shàngcì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shang4 ci4",
     "english": "last time",
     "partOfSpeech": "",
     "examples": [
@@ -7067,7 +7067,7 @@
     "simplified": "身上",
     "traditional": "身上",
     "pinyin": "shēnshang",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shen1 shang4",
     "english": "on the body",
     "partOfSpeech": "",
     "examples": [
@@ -7089,7 +7089,7 @@
     "simplified": "谁",
     "traditional": "誰",
     "pinyin": "shéi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shui2",
     "english": "who",
     "partOfSpeech": "",
     "examples": [
@@ -7111,7 +7111,7 @@
     "simplified": "身体",
     "traditional": "身體",
     "pinyin": "shēntǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shen1 ti3",
     "english": "soma",
     "partOfSpeech": "",
     "examples": [
@@ -7133,7 +7133,7 @@
     "simplified": "生病",
     "traditional": "生病",
     "pinyin": "shēng bìng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "sheng1 bing4",
     "english": "come down",
     "partOfSpeech": "",
     "examples": [
@@ -7155,7 +7155,7 @@
     "simplified": "生气",
     "traditional": "生氣",
     "pinyin": "shēng qì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "sheng1 qi4",
     "english": "get angry",
     "partOfSpeech": "",
     "examples": [
@@ -7177,7 +7177,7 @@
     "simplified": "十",
     "traditional": "十",
     "pinyin": "shí",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shi2",
     "english": "det.: ten",
     "partOfSpeech": "",
     "examples": [
@@ -7199,7 +7199,7 @@
     "simplified": "时候",
     "traditional": "時候",
     "pinyin": "shíhou",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shi2 hou4",
     "english": "day",
     "partOfSpeech": "",
     "examples": [
@@ -7221,7 +7221,7 @@
     "simplified": "时间",
     "traditional": "時間",
     "pinyin": "shíjiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shi2 jian1",
     "english": "moment",
     "partOfSpeech": "",
     "examples": [
@@ -7243,7 +7243,7 @@
     "simplified": "事",
     "traditional": "事",
     "pinyin": "shì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shi4",
     "english": "responsibility",
     "partOfSpeech": "",
     "examples": [
@@ -7265,7 +7265,7 @@
     "simplified": "试",
     "traditional": "試",
     "pinyin": "shì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shi4",
     "english": "offer",
     "partOfSpeech": "",
     "examples": [
@@ -7287,7 +7287,7 @@
     "simplified": "生日",
     "traditional": "生日",
     "pinyin": "shēngri",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "sheng1 ri4",
     "english": "birthday",
     "partOfSpeech": "",
     "examples": [
@@ -7309,7 +7309,7 @@
     "simplified": "是不是",
     "traditional": "是不是",
     "pinyin": "shìbùshì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shi4 bu0 shi4",
     "english": "is or isn't",
     "partOfSpeech": "",
     "examples": [
@@ -7331,7 +7331,7 @@
     "simplified": "是",
     "traditional": "是",
     "pinyin": "shì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shi4",
     "english": "is",
     "partOfSpeech": "",
     "examples": [
@@ -7353,7 +7353,7 @@
     "simplified": "手机",
     "traditional": "手機",
     "pinyin": "shǒujī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shou3 ji1",
     "english": "cell phone",
     "partOfSpeech": "",
     "examples": [
@@ -7375,7 +7375,7 @@
     "simplified": "手",
     "traditional": "手",
     "pinyin": "shǒu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shou3",
     "english": "hand",
     "partOfSpeech": "",
     "examples": [
@@ -7397,7 +7397,7 @@
     "simplified": "书包",
     "traditional": "書包",
     "pinyin": "shūbāo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shu1 bao1",
     "english": "bag",
     "partOfSpeech": "",
     "examples": [
@@ -7419,7 +7419,7 @@
     "simplified": "书",
     "traditional": "書",
     "pinyin": "shū",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shu1",
     "english": "volume",
     "partOfSpeech": "",
     "examples": [
@@ -7441,7 +7441,7 @@
     "simplified": "书店",
     "traditional": "書店",
     "pinyin": "shūdiàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shu1 dian4",
     "english": "bookstore",
     "partOfSpeech": "",
     "examples": [
@@ -7463,7 +7463,7 @@
     "simplified": "树",
     "traditional": "樹",
     "pinyin": "shù",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shu4",
     "english": "wood",
     "partOfSpeech": "",
     "examples": [
@@ -7485,7 +7485,7 @@
     "simplified": "水",
     "traditional": "水",
     "pinyin": "shuǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shui3",
     "english": "water",
     "partOfSpeech": "",
     "examples": [
@@ -7507,7 +7507,7 @@
     "simplified": "水果",
     "traditional": "水果",
     "pinyin": "shuǐguǒ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shui3 guo3",
     "english": "fruit",
     "partOfSpeech": "",
     "examples": [
@@ -7529,7 +7529,7 @@
     "simplified": "睡",
     "traditional": "睡",
     "pinyin": "shuì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shui4",
     "english": "sleep",
     "partOfSpeech": "",
     "examples": [
@@ -7551,7 +7551,7 @@
     "simplified": "说",
     "traditional": "說",
     "pinyin": "shuō",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shuo1",
     "english": "speak",
     "partOfSpeech": "",
     "examples": [
@@ -7573,7 +7573,7 @@
     "simplified": "说话",
     "traditional": "說話",
     "pinyin": "shuō huà",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shuo1 hua4",
     "english": "philosophize",
     "partOfSpeech": "",
     "examples": [
@@ -7595,7 +7595,7 @@
     "simplified": "睡觉",
     "traditional": "睡覺",
     "pinyin": "shuì jiào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shui4 jiao4",
     "english": "turn_in",
     "partOfSpeech": "",
     "examples": [
@@ -7617,7 +7617,7 @@
     "simplified": "送",
     "traditional": "送",
     "pinyin": "sòng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "song4",
     "english": "accompaniment",
     "partOfSpeech": "",
     "examples": [
@@ -7639,7 +7639,7 @@
     "simplified": "四",
     "traditional": "四",
     "pinyin": "sì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "si4",
     "english": "det.: four",
     "partOfSpeech": "",
     "examples": [
@@ -7661,7 +7661,7 @@
     "simplified": "岁",
     "traditional": "嵗",
     "pinyin": "suì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "sui4",
     "english": "year (for crops)",
     "partOfSpeech": "",
     "examples": [
@@ -7683,7 +7683,7 @@
     "simplified": "他们",
     "traditional": "他們",
     "pinyin": "tāmen",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ta1 men0",
     "english": "they",
     "partOfSpeech": "",
     "examples": [
@@ -7705,7 +7705,7 @@
     "simplified": "什么",
     "traditional": "什麼",
     "pinyin": "shénme",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "shen2 me0",
     "english": "anything",
     "partOfSpeech": "",
     "examples": [
@@ -7727,7 +7727,7 @@
     "simplified": "她",
     "traditional": "她",
     "pinyin": "tā",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ta1",
     "english": "she",
     "partOfSpeech": "",
     "examples": [
@@ -7749,7 +7749,7 @@
     "simplified": "她们",
     "traditional": "她們",
     "pinyin": "tāmen",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ta1 men0",
     "english": "they (female)",
     "partOfSpeech": "",
     "examples": [
@@ -7771,7 +7771,7 @@
     "simplified": "天",
     "traditional": "天",
     "pinyin": "tiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "tian1",
     "english": "m.[standard]",
     "partOfSpeech": "",
     "examples": [
@@ -7793,7 +7793,7 @@
     "simplified": "他",
     "traditional": "他",
     "pinyin": "tā",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ta1",
     "english": "he",
     "partOfSpeech": "",
     "examples": [
@@ -7815,7 +7815,7 @@
     "simplified": "太",
     "traditional": "太",
     "pinyin": "tài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "tai4",
     "english": "excessively",
     "partOfSpeech": "",
     "examples": [
@@ -7837,7 +7837,7 @@
     "simplified": "天气",
     "traditional": "天氣",
     "pinyin": "tiānqì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "tian1 qi4",
     "english": "sky",
     "partOfSpeech": "",
     "examples": [
@@ -7859,7 +7859,7 @@
     "simplified": "听到",
     "traditional": "聽到",
     "pinyin": "tīngdào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ting1 dao4",
     "english": "hear",
     "partOfSpeech": "",
     "examples": [
@@ -7881,7 +7881,7 @@
     "simplified": "听见",
     "traditional": "聽見",
     "pinyin": "tīng jian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ting1 jian4",
     "english": "hear",
     "partOfSpeech": "",
     "examples": [
@@ -7903,7 +7903,7 @@
     "simplified": "听写",
     "traditional": "聽寫",
     "pinyin": "tīngxiě",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ting1 xie3",
     "english": "dictate",
     "partOfSpeech": "",
     "examples": [
@@ -7925,7 +7925,7 @@
     "simplified": "听",
     "traditional": "聽",
     "pinyin": "tīng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ting1",
     "english": "hear",
     "partOfSpeech": "",
     "examples": [
@@ -7947,7 +7947,7 @@
     "simplified": "图书馆",
     "traditional": "圖書館",
     "pinyin": "túshūguǎn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "tu2 shu1 guan3",
     "english": "library",
     "partOfSpeech": "",
     "examples": [
@@ -7969,7 +7969,7 @@
     "simplified": "外",
     "traditional": "外",
     "pinyin": "wài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wai4",
     "english": "outside",
     "partOfSpeech": "",
     "examples": [
@@ -7991,7 +7991,7 @@
     "simplified": "外边",
     "traditional": "外邊",
     "pinyin": "wàibian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wai4 bian1",
     "english": "outside",
     "partOfSpeech": "",
     "examples": [
@@ -8013,7 +8013,7 @@
     "simplified": "同学",
     "traditional": "同學",
     "pinyin": "tóngxué",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "tong2 xue2",
     "english": "class fellow",
     "partOfSpeech": "",
     "examples": [
@@ -8035,7 +8035,7 @@
     "simplified": "外国",
     "traditional": "外國",
     "pinyin": "wàiguó",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wai4 guo2",
     "english": "foreign",
     "partOfSpeech": "",
     "examples": [
@@ -8057,7 +8057,7 @@
     "simplified": "玩儿",
     "traditional": "玩兒",
     "pinyin": "wánr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wan2 er2",
     "english": "to play",
     "partOfSpeech": "",
     "examples": [
@@ -8079,7 +8079,7 @@
     "simplified": "晚",
     "traditional": "晚",
     "pinyin": "wǎn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wan3",
     "english": "far on in time",
     "partOfSpeech": "",
     "examples": [
@@ -8101,7 +8101,7 @@
     "simplified": "晚饭",
     "traditional": "晚飯",
     "pinyin": "wǎnfàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wan3 fan4",
     "english": "evening meal",
     "partOfSpeech": "",
     "examples": [
@@ -8123,7 +8123,7 @@
     "simplified": "晚上",
     "traditional": "晚上",
     "pinyin": "wǎnshang",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wan3 shang4",
     "english": "evening",
     "partOfSpeech": "",
     "examples": [
@@ -8145,7 +8145,7 @@
     "simplified": "网上",
     "traditional": "網上",
     "pinyin": "wǎngshàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wang3 shang4",
     "english": "online",
     "partOfSpeech": "",
     "examples": [
@@ -8167,7 +8167,7 @@
     "simplified": "网友",
     "traditional": "網友",
     "pinyin": "wǎngyǒu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wang3 you3",
     "english": "online friend",
     "partOfSpeech": "",
     "examples": [
@@ -8189,7 +8189,7 @@
     "simplified": "外语",
     "traditional": "外語",
     "pinyin": "wàiyǔ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wai4 yu3",
     "english": "foreign language",
     "partOfSpeech": "",
     "examples": [
@@ -8211,7 +8211,7 @@
     "simplified": "忘记",
     "traditional": "忘記",
     "pinyin": "wàngjì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wang4 ji4",
     "english": "misremember",
     "partOfSpeech": "",
     "examples": [
@@ -8233,7 +8233,7 @@
     "simplified": "忘",
     "traditional": "忘",
     "pinyin": "wàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wang4",
     "english": "forget",
     "partOfSpeech": "",
     "examples": [
@@ -8255,7 +8255,7 @@
     "simplified": "问",
     "traditional": "問",
     "pinyin": "wèn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wen4",
     "english": "ask",
     "partOfSpeech": "",
     "examples": [
@@ -8277,7 +8277,7 @@
     "simplified": "我们",
     "traditional": "我們",
     "pinyin": "wǒmen",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wo3 men0",
     "english": "we",
     "partOfSpeech": "",
     "examples": [
@@ -8299,7 +8299,7 @@
     "simplified": "我",
     "traditional": "我",
     "pinyin": "wǒ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wo3",
     "english": "I",
     "partOfSpeech": "",
     "examples": [
@@ -8321,7 +8321,7 @@
     "simplified": "五",
     "traditional": "五",
     "pinyin": "wǔ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wu3",
     "english": "det.: five",
     "partOfSpeech": "",
     "examples": [
@@ -8343,7 +8343,7 @@
     "simplified": "午饭",
     "traditional": "午飯",
     "pinyin": "wǔfàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "wu3 fan4",
     "english": "lunch",
     "partOfSpeech": "",
     "examples": [
@@ -8365,7 +8365,7 @@
     "simplified": "西",
     "traditional": "西",
     "pinyin": "xī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xi1",
     "english": "W",
     "partOfSpeech": "",
     "examples": [
@@ -8387,7 +8387,7 @@
     "simplified": "西边",
     "traditional": "西邊",
     "pinyin": "xībian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xi1 bian1",
     "english": "west",
     "partOfSpeech": "",
     "examples": [
@@ -8409,7 +8409,7 @@
     "simplified": "洗",
     "traditional": "洗",
     "pinyin": "xǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xi3",
     "english": "wash",
     "partOfSpeech": "",
     "examples": [
@@ -8431,7 +8431,7 @@
     "simplified": "洗手间",
     "traditional": "洗手間",
     "pinyin": "xǐshǒujiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xi3 shou3 jian1",
     "english": "toilet",
     "partOfSpeech": "",
     "examples": [
@@ -8453,7 +8453,7 @@
     "simplified": "喜欢",
     "traditional": "喜歡",
     "pinyin": "xǐhuan",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xi3 huan0",
     "english": "like",
     "partOfSpeech": "",
     "examples": [
@@ -8475,7 +8475,7 @@
     "simplified": "下",
     "traditional": "下",
     "pinyin": "xià",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xia4",
     "english": "under (condition/fact etc.)",
     "partOfSpeech": "",
     "examples": [
@@ -8497,7 +8497,7 @@
     "simplified": "下班",
     "traditional": "下班",
     "pinyin": "xià bān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xia4 ban1",
     "english": "get_off",
     "partOfSpeech": "",
     "examples": [
@@ -8519,7 +8519,7 @@
     "simplified": "下边",
     "traditional": "下邊",
     "pinyin": "xiàbian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xia4 bian1",
     "english": "under",
     "partOfSpeech": "",
     "examples": [
@@ -8541,7 +8541,7 @@
     "simplified": "下车",
     "traditional": "下車",
     "pinyin": "xiàchē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xia4 che1",
     "english": "get off/out of vehicle",
     "partOfSpeech": "",
     "examples": [
@@ -8563,7 +8563,7 @@
     "simplified": "下次",
     "traditional": "下次",
     "pinyin": "xiàcì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xia4 ci4",
     "english": "next time",
     "partOfSpeech": "",
     "examples": [
@@ -8585,7 +8585,7 @@
     "simplified": "下课",
     "traditional": "下課",
     "pinyin": "xià kè",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xia4 ke4",
     "english": "finish class",
     "partOfSpeech": "",
     "examples": [
@@ -8607,7 +8607,7 @@
     "simplified": "下午",
     "traditional": "下午",
     "pinyin": "xiàwǔ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xia4 wu3",
     "english": "afternoon",
     "partOfSpeech": "",
     "examples": [
@@ -8629,7 +8629,7 @@
     "simplified": "下雨",
     "traditional": "下雨",
     "pinyin": "xiàyǔ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xia4 yu3",
     "english": "rain",
     "partOfSpeech": "",
     "examples": [
@@ -8651,7 +8651,7 @@
     "simplified": "先",
     "traditional": "先",
     "pinyin": "xiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xian1",
     "english": "earlier",
     "partOfSpeech": "",
     "examples": [
@@ -8673,7 +8673,7 @@
     "simplified": "先生",
     "traditional": "先生",
     "pinyin": "xiānsheng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xian1 sheng1",
     "english": "doctor of Chinese medicine",
     "partOfSpeech": "",
     "examples": [
@@ -8695,7 +8695,7 @@
     "simplified": "想",
     "traditional": "想",
     "pinyin": "xiǎng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiang3",
     "english": "think",
     "partOfSpeech": "",
     "examples": [
@@ -8717,7 +8717,7 @@
     "simplified": "现在",
     "traditional": "現在",
     "pinyin": "xiànzài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xian4 zai4",
     "english": "now",
     "partOfSpeech": "",
     "examples": [
@@ -8739,7 +8739,7 @@
     "simplified": "小",
     "traditional": "小",
     "pinyin": "xiǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiao3",
     "english": "small",
     "partOfSpeech": "",
     "examples": [
@@ -8761,7 +8761,7 @@
     "simplified": "小孩儿",
     "traditional": "小孩兒",
     "pinyin": "xiǎoháir",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiao3 hai2 er2",
     "english": "child",
     "partOfSpeech": "",
     "examples": [
@@ -8783,7 +8783,7 @@
     "simplified": "小姐",
     "traditional": "小姐",
     "pinyin": "xiǎojiě",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiao3 jie3",
     "english": "Signorina",
     "partOfSpeech": "",
     "examples": [
@@ -8805,7 +8805,7 @@
     "simplified": "小时",
     "traditional": "小時",
     "pinyin": "xiǎoshí",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiao3 shi2",
     "english": "hour",
     "partOfSpeech": "",
     "examples": [
@@ -8827,7 +8827,7 @@
     "simplified": "小朋友",
     "traditional": "小朋友",
     "pinyin": "xiǎopéngyǒu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiao3 peng2 you3",
     "english": "child (adult address to child)",
     "partOfSpeech": "",
     "examples": [
@@ -8849,7 +8849,7 @@
     "simplified": "小学",
     "traditional": "小學",
     "pinyin": "xiǎoxué",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiao3 xue2",
     "english": "primary school",
     "partOfSpeech": "",
     "examples": [
@@ -8871,7 +8871,7 @@
     "simplified": "小学生",
     "traditional": "小學生",
     "pinyin": "xiǎo xuésheng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiao3 xue2 sheng1",
     "english": "(primary) pupil",
     "partOfSpeech": "",
     "examples": [
@@ -8893,7 +8893,7 @@
     "simplified": "笑",
     "traditional": "笑",
     "pinyin": "xiào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiao4",
     "english": "smile",
     "partOfSpeech": "",
     "examples": [
@@ -8915,7 +8915,7 @@
     "simplified": "写",
     "traditional": "寫",
     "pinyin": "xiě",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xie3",
     "english": "description",
     "partOfSpeech": "",
     "examples": [
@@ -8937,7 +8937,7 @@
     "simplified": "谢谢",
     "traditional": "謝謝",
     "pinyin": "xièxie",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xie4 xie4",
     "english": "thank",
     "partOfSpeech": "",
     "examples": [
@@ -8959,7 +8959,7 @@
     "simplified": "新",
     "traditional": "新",
     "pinyin": "xīn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xin1",
     "english": "new",
     "partOfSpeech": "",
     "examples": [
@@ -8981,7 +8981,7 @@
     "simplified": "新年",
     "traditional": "新年",
     "pinyin": "xīnnián",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xin1 nian2",
     "english": "New Year",
     "partOfSpeech": "",
     "examples": [
@@ -9003,7 +9003,7 @@
     "simplified": "星期",
     "traditional": "星期",
     "pinyin": "xīngqī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xing1 qi1",
     "english": "Sunday",
     "partOfSpeech": "",
     "examples": [
@@ -9025,7 +9025,7 @@
     "simplified": "星期日",
     "traditional": "星期日",
     "pinyin": "Xīngqīrì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xing1 qi1 ri4",
     "english": "Sunday",
     "partOfSpeech": "",
     "examples": [
@@ -9047,7 +9047,7 @@
     "simplified": "星期天",
     "traditional": "星期天",
     "pinyin": "xīngqītiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xing1 qi1 tian1",
     "english": "Sunday",
     "partOfSpeech": "",
     "examples": [
@@ -9069,7 +9069,7 @@
     "simplified": "行",
     "traditional": "行",
     "pinyin": "xíng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xing2",
     "english": "go",
     "partOfSpeech": "",
     "examples": [
@@ -9091,7 +9091,7 @@
     "simplified": "休息",
     "traditional": "休息",
     "pinyin": "xiūxi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xiu1 xi0",
     "english": "repose",
     "partOfSpeech": "",
     "examples": [
@@ -9113,7 +9113,7 @@
     "simplified": "学生",
     "traditional": "學生",
     "pinyin": "xuésheng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xue2 sheng1",
     "english": "academic",
     "partOfSpeech": "",
     "examples": [
@@ -9135,7 +9135,7 @@
     "simplified": "学",
     "traditional": "學",
     "pinyin": "xué",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xue2",
     "english": "study",
     "partOfSpeech": "",
     "examples": [
@@ -9157,7 +9157,7 @@
     "simplified": "学习",
     "traditional": "學習",
     "pinyin": "xuéxí",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xue2 xi2",
     "english": "study",
     "partOfSpeech": "",
     "examples": [
@@ -9179,7 +9179,7 @@
     "simplified": "学校",
     "traditional": "學校",
     "pinyin": "xuéxiào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xue2 xiao4",
     "english": "seminary",
     "partOfSpeech": "",
     "examples": [
@@ -9201,7 +9201,7 @@
     "simplified": "学院",
     "traditional": "學院",
     "pinyin": "xuéyuàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "xue2 yuan4",
     "english": "seminary",
     "partOfSpeech": "",
     "examples": [
@@ -9223,7 +9223,7 @@
     "simplified": "要",
     "traditional": "要",
     "pinyin": "yào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yao4",
     "english": "want",
     "partOfSpeech": "",
     "examples": [
@@ -9245,7 +9245,7 @@
     "simplified": "爷爷",
     "traditional": "爺爺",
     "pinyin": "yéye",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ye2 ye0",
     "english": "grandad",
     "partOfSpeech": "",
     "examples": [
@@ -9267,7 +9267,7 @@
     "simplified": "页",
     "traditional": "頁",
     "pinyin": "yè",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ye4",
     "english": "page",
     "partOfSpeech": "",
     "examples": [
@@ -9289,7 +9289,7 @@
     "simplified": "衣服",
     "traditional": "衣服",
     "pinyin": "yīfu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi1 fu0",
     "english": "clothes",
     "partOfSpeech": "",
     "examples": [
@@ -9311,7 +9311,7 @@
     "simplified": "也",
     "traditional": "也",
     "pinyin": "yě",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "ye3",
     "english": "also",
     "partOfSpeech": "",
     "examples": [
@@ -9333,7 +9333,7 @@
     "simplified": "医生",
     "traditional": "醫生",
     "pinyin": "yīshēng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi1 sheng1",
     "english": "Galen",
     "partOfSpeech": "",
     "examples": [
@@ -9355,7 +9355,7 @@
     "simplified": "医院",
     "traditional": "醫院",
     "pinyin": "yīyuàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi1 yuan4",
     "english": "spital",
     "partOfSpeech": "",
     "examples": [
@@ -9377,7 +9377,7 @@
     "simplified": "一",
     "traditional": "一",
     "pinyin": "yī",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi1",
     "english": "det.: one",
     "partOfSpeech": "",
     "examples": [
@@ -9399,7 +9399,7 @@
     "simplified": "一会儿",
     "traditional": "一會兒",
     "pinyin": "yīhuìr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi2 hui4 er0",
     "english": "a moment",
     "partOfSpeech": "",
     "examples": [
@@ -9421,7 +9421,7 @@
     "simplified": "一块儿",
     "traditional": "一塊兒",
     "pinyin": "yīkuàir",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi2 kuai4 er2",
     "english": "together",
     "partOfSpeech": "",
     "examples": [
@@ -9443,7 +9443,7 @@
     "simplified": "一下儿",
     "traditional": "一下兒",
     "pinyin": "yīxiàr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi2 xia4 er2",
     "english": "(used after a verb) give it a go",
     "partOfSpeech": "",
     "examples": [
@@ -9465,7 +9465,7 @@
     "simplified": "一半",
     "traditional": "一半",
     "pinyin": "yībàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi2 ban4",
     "english": "det.: one half",
     "partOfSpeech": "",
     "examples": [
@@ -9487,7 +9487,7 @@
     "simplified": "一边",
     "traditional": "一邊",
     "pinyin": "yībiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi4 bian1",
     "english": "at the same time",
     "partOfSpeech": "",
     "examples": [
@@ -9509,7 +9509,7 @@
     "simplified": "一点儿",
     "traditional": "一點兒",
     "pinyin": "yīdiǎnr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi4 dian3 er2",
     "english": "det.: a little bit",
     "partOfSpeech": "",
     "examples": [
@@ -9531,7 +9531,7 @@
     "simplified": "一起",
     "traditional": "一起",
     "pinyin": "yīqǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi4 qi3",
     "english": "in_chorus",
     "partOfSpeech": "",
     "examples": [
@@ -9553,7 +9553,7 @@
     "simplified": "一些",
     "traditional": "一些",
     "pinyin": "yīxiē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi4 xie1",
     "english": "det.: some",
     "partOfSpeech": "",
     "examples": [
@@ -9575,7 +9575,7 @@
     "simplified": "一样",
     "traditional": "一樣",
     "pinyin": "yīyàng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yi2 yang4",
     "english": "same",
     "partOfSpeech": "",
     "examples": [
@@ -9597,7 +9597,7 @@
     "simplified": "有的",
     "traditional": "有的",
     "pinyin": "yǒude",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "you3 de0",
     "english": "det : some",
     "partOfSpeech": "",
     "examples": [
@@ -9619,7 +9619,7 @@
     "simplified": "有",
     "traditional": "有",
     "pinyin": "yǒu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "you3",
     "english": "have",
     "partOfSpeech": "",
     "examples": [
@@ -9641,7 +9641,7 @@
     "simplified": "有名",
     "traditional": "有名",
     "pinyin": "yǒu míng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "you3 ming2",
     "english": "well-known",
     "partOfSpeech": "",
     "examples": [
@@ -9663,7 +9663,7 @@
     "simplified": "用",
     "traditional": "用",
     "pinyin": "yòng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yong4",
     "english": "with",
     "partOfSpeech": "",
     "examples": [
@@ -9685,7 +9685,7 @@
     "simplified": "有时候",
     "traditional": "有時候",
     "pinyin": "yǒushíhou",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "you3 shi2 hou4",
     "english": "from time to time",
     "partOfSpeech": "",
     "examples": [
@@ -9707,7 +9707,7 @@
     "simplified": "有些",
     "traditional": "有些",
     "pinyin": "yǒuxiē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "you3 xie1",
     "english": "kind_of",
     "partOfSpeech": "",
     "examples": [
@@ -9729,7 +9729,7 @@
     "simplified": "有用",
     "traditional": "有用",
     "pinyin": "yǒuyòng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "you3 yong4",
     "english": "belong",
     "partOfSpeech": "",
     "examples": [
@@ -9751,7 +9751,7 @@
     "simplified": "右",
     "traditional": "右",
     "pinyin": "yòu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "you4",
     "english": "right side as side of precedence",
     "partOfSpeech": "",
     "examples": [
@@ -9773,7 +9773,7 @@
     "simplified": "右边",
     "traditional": "右邊",
     "pinyin": "yòubian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "you4 bian1",
     "english": "right side",
     "partOfSpeech": "",
     "examples": [
@@ -9795,7 +9795,7 @@
     "simplified": "雨",
     "traditional": "雨",
     "pinyin": "yǔ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yu3",
     "english": "rain",
     "partOfSpeech": "",
     "examples": [
@@ -9817,7 +9817,7 @@
     "simplified": "元",
     "traditional": "元",
     "pinyin": "yuán",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yuan2",
     "english": "m.[standard]",
     "partOfSpeech": "",
     "examples": [
@@ -9839,7 +9839,7 @@
     "simplified": "远",
     "traditional": "遠",
     "pinyin": "yuǎn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yuan3",
     "english": "far",
     "partOfSpeech": "",
     "examples": [
@@ -9861,7 +9861,7 @@
     "simplified": "月",
     "traditional": "月",
     "pinyin": "yuè",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "yue4",
     "english": "moon",
     "partOfSpeech": "",
     "examples": [
@@ -9883,7 +9883,7 @@
     "simplified": "再",
     "traditional": "再",
     "pinyin": "zài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zai4",
     "english": "again",
     "partOfSpeech": "",
     "examples": [
@@ -9905,7 +9905,7 @@
     "simplified": "再见",
     "traditional": "再見",
     "pinyin": "zàijiàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zai4 jian4",
     "english": "good-bye",
     "partOfSpeech": "",
     "examples": [
@@ -9927,7 +9927,7 @@
     "simplified": "在",
     "traditional": "在",
     "pinyin": "zài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zai4",
     "english": "in",
     "partOfSpeech": "",
     "examples": [
@@ -9949,7 +9949,7 @@
     "simplified": "在家",
     "traditional": "在家",
     "pinyin": "zàijiā",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zai4 jia1",
     "english": "At home",
     "partOfSpeech": "",
     "examples": [
@@ -9971,7 +9971,7 @@
     "simplified": "早",
     "traditional": "早",
     "pinyin": "zǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zao3",
     "english": "early",
     "partOfSpeech": "",
     "examples": [
@@ -9993,7 +9993,7 @@
     "simplified": "早饭",
     "traditional": "早飯",
     "pinyin": "zǎofàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zao3 fan4",
     "english": "breakfast",
     "partOfSpeech": "",
     "examples": [
@@ -10015,7 +10015,7 @@
     "simplified": "早上",
     "traditional": "早上",
     "pinyin": "zǎoshang",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zao3 shang4",
     "english": "early morning",
     "partOfSpeech": "",
     "examples": [
@@ -10037,7 +10037,7 @@
     "simplified": "怎么",
     "traditional": "怎麼",
     "pinyin": "zěnme",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zen3 me0",
     "english": "how",
     "partOfSpeech": "",
     "examples": [
@@ -10059,7 +10059,7 @@
     "simplified": "站",
     "traditional": "站",
     "pinyin": "zhàn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhan4",
     "english": "to stand",
     "partOfSpeech": "",
     "examples": [
@@ -10081,7 +10081,7 @@
     "simplified": "找",
     "traditional": "找",
     "pinyin": "zhǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhao3",
     "english": "look for",
     "partOfSpeech": "",
     "examples": [
@@ -10103,7 +10103,7 @@
     "simplified": "找到",
     "traditional": "找到",
     "pinyin": "zhǎodào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhao3 dao4",
     "english": "light upon",
     "partOfSpeech": "",
     "examples": [
@@ -10125,7 +10125,7 @@
     "simplified": "这边",
     "traditional": "這邊",
     "pinyin": "zhèbiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhe4 bian1",
     "english": "this side",
     "partOfSpeech": "",
     "examples": [
@@ -10147,7 +10147,7 @@
     "simplified": "这",
     "traditional": "這",
     "pinyin": "zhè",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhe4",
     "english": "now",
     "partOfSpeech": "",
     "examples": [
@@ -10169,7 +10169,7 @@
     "simplified": "这里",
     "traditional": "這裡",
     "pinyin": "zhèlǐ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhe4 li3",
     "english": "this place",
     "partOfSpeech": "",
     "examples": [
@@ -10191,7 +10191,7 @@
     "simplified": "这儿",
     "traditional": "這兒",
     "pinyin": "zhèr",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhe4 er2",
     "english": "now",
     "partOfSpeech": "",
     "examples": [
@@ -10213,7 +10213,7 @@
     "simplified": "这些",
     "traditional": "這些",
     "pinyin": "zhèxiē",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhe4 xie1",
     "english": "det.: these",
     "partOfSpeech": "",
     "examples": [
@@ -10235,7 +10235,7 @@
     "simplified": "着",
     "traditional": "著",
     "pinyin": "zhe",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhe0",
     "english": "[aspect]",
     "partOfSpeech": "",
     "examples": [
@@ -10257,7 +10257,7 @@
     "simplified": "真",
     "traditional": "真",
     "pinyin": "zhēn",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhen1",
     "english": "really",
     "partOfSpeech": "",
     "examples": [
@@ -10279,7 +10279,7 @@
     "simplified": "真的",
     "traditional": "真的",
     "pinyin": "zhēn de",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhen1 de0",
     "english": "really",
     "partOfSpeech": "",
     "examples": [
@@ -10301,7 +10301,7 @@
     "simplified": "正",
     "traditional": "正",
     "pinyin": "zhèng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zheng4",
     "english": "precisely",
     "partOfSpeech": "",
     "examples": [
@@ -10323,7 +10323,7 @@
     "simplified": "正在",
     "traditional": "正在",
     "pinyin": "zhèngzài",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zheng4 zai4",
     "english": "course of",
     "partOfSpeech": "",
     "examples": [
@@ -10345,7 +10345,7 @@
     "simplified": "知道",
     "traditional": "知道",
     "pinyin": "zhīdao",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhi1 dao4",
     "english": "tell",
     "partOfSpeech": "",
     "examples": [
@@ -10367,7 +10367,7 @@
     "simplified": "知识",
     "traditional": "知識",
     "pinyin": "zhīshi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhi1 shi0",
     "english": "lear",
     "partOfSpeech": "",
     "examples": [
@@ -10389,7 +10389,7 @@
     "simplified": "中国",
     "traditional": "中國",
     "pinyin": "Zhōngguó",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhong1 guo2",
     "english": "Cathay",
     "partOfSpeech": "",
     "examples": [
@@ -10411,7 +10411,7 @@
     "simplified": "中",
     "traditional": "中",
     "pinyin": "zhōng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhong1",
     "english": "center",
     "partOfSpeech": "",
     "examples": [
@@ -10433,7 +10433,7 @@
     "simplified": "中间",
     "traditional": "中間",
     "pinyin": "zhōngjiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhong1 jian1",
     "english": "center",
     "partOfSpeech": "",
     "examples": [
@@ -10455,7 +10455,7 @@
     "simplified": "中文",
     "traditional": "中文",
     "pinyin": "Zhōngwén",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhong1 wen2",
     "english": "Chinese",
     "partOfSpeech": "",
     "examples": [
@@ -10477,7 +10477,7 @@
     "simplified": "中午",
     "traditional": "中午",
     "pinyin": "zhōngwǔ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhong1 wu3",
     "english": "noon",
     "partOfSpeech": "",
     "examples": [
@@ -10499,7 +10499,7 @@
     "simplified": "中学",
     "traditional": "中學",
     "pinyin": "zhōngxué",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhong1 xue2",
     "english": "middle_school",
     "partOfSpeech": "",
     "examples": [
@@ -10521,7 +10521,7 @@
     "simplified": "中学生",
     "traditional": "中學生",
     "pinyin": "zhōngxuéshēng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhong1 xue2 sheng1",
     "english": "middle-school student",
     "partOfSpeech": "",
     "examples": [
@@ -10543,7 +10543,7 @@
     "simplified": "重",
     "traditional": "重",
     "pinyin": "zhòng",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhong4",
     "english": "heavy",
     "partOfSpeech": "",
     "examples": [
@@ -10565,7 +10565,7 @@
     "simplified": "重要",
     "traditional": "重要",
     "pinyin": "zhòngyào",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhong4 yao4",
     "english": "important",
     "partOfSpeech": "",
     "examples": [
@@ -10587,7 +10587,7 @@
     "simplified": "住",
     "traditional": "住",
     "pinyin": "zhù",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhu4",
     "english": "inhabit",
     "partOfSpeech": "",
     "examples": [
@@ -10609,7 +10609,7 @@
     "simplified": "准备",
     "traditional": "準備",
     "pinyin": "zhǔnbèi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhun3 bei4",
     "english": "prepare",
     "partOfSpeech": "",
     "examples": [
@@ -10631,7 +10631,7 @@
     "simplified": "桌子",
     "traditional": "桌子",
     "pinyin": "zhuōzi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zhuo1 zi0",
     "english": "mahogany",
     "partOfSpeech": "",
     "examples": [
@@ -10653,7 +10653,7 @@
     "simplified": "字",
     "traditional": "字",
     "pinyin": "zì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zi4",
     "english": "graphic symbol",
     "partOfSpeech": "",
     "examples": [
@@ -10675,7 +10675,7 @@
     "simplified": "子",
     "traditional": "子",
     "pinyin": "zi",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zi3",
     "english": "son",
     "partOfSpeech": "",
     "examples": [
@@ -10697,7 +10697,7 @@
     "simplified": "走",
     "traditional": "走",
     "pinyin": "zǒu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zou3",
     "english": "scram",
     "partOfSpeech": "",
     "examples": [
@@ -10719,7 +10719,7 @@
     "simplified": "最",
     "traditional": "最",
     "pinyin": "zuì",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zui4",
     "english": "most",
     "partOfSpeech": "",
     "examples": [
@@ -10741,7 +10741,7 @@
     "simplified": "走路",
     "traditional": "走路",
     "pinyin": "zǒu lù",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zou3 lu4",
     "english": "go away",
     "partOfSpeech": "",
     "examples": [
@@ -10763,7 +10763,7 @@
     "simplified": "最好",
     "traditional": "最好",
     "pinyin": "zuìhǎo",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zui4 hao3",
     "english": "had better",
     "partOfSpeech": "",
     "examples": [
@@ -10785,7 +10785,7 @@
     "simplified": "最后",
     "traditional": "最後",
     "pinyin": "zuìhòu",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zui4 hou4",
     "english": "final",
     "partOfSpeech": "",
     "examples": [
@@ -10807,7 +10807,7 @@
     "simplified": "昨天",
     "traditional": "昨天",
     "pinyin": "zuótiān",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zuo2 tian1",
     "english": "yesterday",
     "partOfSpeech": "",
     "examples": [
@@ -10829,7 +10829,7 @@
     "simplified": "左边",
     "traditional": "左邊",
     "pinyin": "zuǒbian",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zuo3 bian1",
     "english": "left",
     "partOfSpeech": "",
     "examples": [
@@ -10851,7 +10851,7 @@
     "simplified": "左",
     "traditional": "左",
     "pinyin": "zuǒ",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zuo3",
     "english": "left side",
     "partOfSpeech": "",
     "examples": [
@@ -10873,7 +10873,7 @@
     "simplified": "坐",
     "traditional": "坐",
     "pinyin": "zuò",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zuo4",
     "english": "sit",
     "partOfSpeech": "",
     "examples": [
@@ -10895,7 +10895,7 @@
     "simplified": "坐下",
     "traditional": "坐下",
     "pinyin": "zuòxià",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zuo4 xia4",
     "english": "subside",
     "partOfSpeech": "",
     "examples": [
@@ -10917,7 +10917,7 @@
     "simplified": "做",
     "traditional": "做",
     "pinyin": "zuò",
-    "pinyinNumbered": "",
+    "pinyinNumbered": "zuo4",
     "english": "make",
     "partOfSpeech": "",
     "examples": [

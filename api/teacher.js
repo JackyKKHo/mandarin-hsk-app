@@ -1,3 +1,7 @@
+import Anthropic from '@anthropic-ai/sdk'
+
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+
 const SYSTEM_PROMPT = `You are Lin Wei (林威), a friendly and genuine Mandarin Chinese tutor originally from Beijing.
 You have been teaching Mandarin to English speakers for 10 years and have a warm, natural teaching style.
 
@@ -39,14 +43,16 @@ export default async function handler(req, res) {
       advanced: `Respond mostly in Chinese (Mandarin). Use English only to clarify meaning when essential. Speak to the student as if they are nearly fluent.`,
     }[immersion] || ''
 
-    const anthropicKey = process.env.ANTHROPIC_API_KEY
-    const googleKey = process.env.GOOGLE_TTS_API_KEY
-
     const contextNote = context
       ? `The student is currently studying the word: "${context.simplified}" (${context.pinyin}) meaning "${context.english}" — HSK Level ${context.hskLevel}.`
       : ''
 
-    // Build conversation messages from history + new message
+    const systemBlocks = [
+      { type: 'text', text: SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } },
+      ...(contextNote ? [{ type: 'text', text: `Current word context: ${contextNote}` }] : []),
+      ...(immersionNote ? [{ type: 'text', text: `Immersion level: ${immersionNote}` }] : []),
+    ]
+
     const messages = [
       ...history.map(m => ({
         role: m.role === 'teacher' ? 'assistant' : 'user',
@@ -55,35 +61,17 @@ export default async function handler(req, res) {
       { role: 'user', content: message },
     ]
 
-    const anthropicRes = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'x-api-key': anthropicKey,
-        'anthropic-version': '2023-06-01',
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'claude-haiku-4-5',
-        max_tokens: 200,
-        system: [
-          SYSTEM_PROMPT,
-          contextNote && `Current word context: ${contextNote}`,
-          immersionNote && `Immersion level: ${immersionNote}`,
-        ].filter(Boolean).join('\n\n'),
-        messages,
-      }),
+    const response = await client.messages.create({
+      model: 'claude-haiku-4-5',
+      max_tokens: 200,
+      system: systemBlocks,
+      messages,
     })
 
-    if (!anthropicRes.ok) {
-      const err = await anthropicRes.text()
-      return res.status(500).send(`Anthropic error: ${err}`)
-    }
-
-    const data = await anthropicRes.json()
-    const teacherText = data.content[0].text
+    const teacherText = response.content[0].text
 
     const ttsRes = await fetch(
-      `https://texttospeech.googleapis.com/v1/text:synthesize?key=${googleKey}`,
+      `https://texttospeech.googleapis.com/v1/text:synthesize?key=${process.env.GOOGLE_TTS_API_KEY}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
