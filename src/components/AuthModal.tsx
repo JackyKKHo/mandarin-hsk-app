@@ -104,20 +104,20 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000,
   },
   modal: {
-    background: 'var(--bg, #fff)', borderRadius: 12, padding: '2rem',
+    background: 'var(--surface, #fff)', borderRadius: 12, padding: '2rem',
     width: '100%', maxWidth: 400, position: 'relative', boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
   },
   close: {
     position: 'absolute', top: 12, right: 12, background: 'none',
     border: 'none', fontSize: 18, cursor: 'pointer', opacity: 0.5,
   },
-  title: { margin: '0 0 4px', fontSize: '1.4rem' },
-  sub: { margin: '0 0 1.5rem', opacity: 0.6, fontSize: '0.9rem' },
+  title: { margin: '0 0 4px', fontSize: '1.4rem', color: 'var(--text, #1a1a2e)' },
+  sub: { margin: '0 0 1.5rem', opacity: 0.6, fontSize: '0.9rem', color: 'var(--text, #1a1a2e)' },
   form: { display: 'flex', flexDirection: 'column', gap: '0.75rem' },
   input: {
     padding: '0.65rem 0.9rem', borderRadius: 8, fontSize: '1rem',
-    border: '1px solid var(--border, #ddd)', background: '#fff',
-    color: '#1a1a2e',
+    border: '1px solid var(--border, #ddd)', background: 'var(--bg, #f4f5f7)',
+    color: 'var(--text, #1a1a2e)',
   },
   codeInput: { fontSize: '1.75rem', textAlign: 'center', letterSpacing: '0.25em', fontWeight: 700, padding: '0.75rem' },
   submit: {
