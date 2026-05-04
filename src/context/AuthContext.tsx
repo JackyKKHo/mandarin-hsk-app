@@ -19,15 +19,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => {
-      setSession(data.session)
-      setUser(data.session?.user ?? null)
-      setLoading(false)
-    })
-
+    // onAuthStateChange fires INITIAL_SESSION immediately with the persisted session,
+    // so we don't need a separate getSession() call — but we keep setLoading(false) here.
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session)
       setUser(session?.user ?? null)
+      setLoading(false)
     })
 
     return () => subscription.unsubscribe()
