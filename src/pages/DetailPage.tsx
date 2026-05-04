@@ -122,6 +122,7 @@ export default function DetailPage() {
               <div key={i} className="meaning-item">
                 <div className="meaning-row">
                   <span className="meaning-num">{i + 1}</span>
+                  <span className="meaning-pos">{word.partOfSpeech}.</span>
                   <span className="meaning-def">{m.definition}</span>
                 </div>
                 <div className="meaning-example">
@@ -142,7 +143,9 @@ export default function DetailPage() {
             ))}
           </section>
         ) : (
-          <div className="detail-english">{word.english}</div>
+          <div className="detail-english">
+            <span className="detail-pos">{word.partOfSpeech}.</span> {word.english}
+          </div>
         )}
 
         {word.traditional !== word.simplified && (

@@ -189,16 +189,20 @@ export default function BrowserPage() {
             <Link key={word.id} to={`/word/${word.id}`} className={`vocab-card${learned.has(word.id) ? ' learned' : ''}`}>
               <div className="card-chinese">{word.simplified}</div>
               <TonedPinyin pinyin={word.pinyin} className="card-pinyin" />
-              {word.meanings && word.meanings.length > 1 ? (
+              {word.meanings && word.meanings.length > 0 ? (
                 <div className="card-meanings">
                   {word.meanings.map((m, i) => (
                     <span key={i} className="card-meaning-item">
-                      <span className="card-meaning-num">{i + 1}</span>{m.definition}
+                      <span className="card-meaning-num">{i + 1}</span>
+                      <span className="card-meaning-pos">{word.partOfSpeech}.</span>
+                      {m.definition}
                     </span>
                   ))}
                 </div>
               ) : (
-                <div className="card-english">{word.english}</div>
+                <div className="card-english">
+                  <span className="card-meaning-pos">{word.partOfSpeech}.</span> {word.english}
+                </div>
               )}
               <div className="card-footer">
                 <span className="card-pos">{word.partOfSpeech}</span>
