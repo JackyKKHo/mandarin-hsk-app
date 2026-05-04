@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useFavourites } from '../hooks/useFavourites'
 import { useDarkMode } from '../hooks/useDarkMode'
 import { useAuth } from '../context/AuthContext'
+import { useStreak } from '../hooks/useStreak'
 import AuthModal from './AuthModal'
 
 export default function AppHeader() {
@@ -10,7 +11,9 @@ export default function AppHeader() {
   const { favourites } = useFavourites()
   const { dark, toggle } = useDarkMode()
   const { user, signOut } = useAuth()
+  const { streak, freezes, freezeUsed } = useStreak()
   const [showAuth, setShowAuth] = useState(false)
+  const [showFreezeToast, setShowFreezeToast] = useState(freezeUsed)
 
   const section = pathname.startsWith('/grammar') ? 'grammar'
     : pathname.startsWith('/favourites') ? 'favourites'
@@ -22,6 +25,11 @@ export default function AppHeader() {
   return (
     <header className="app-header">
       <h1>Mandarin Daily <span className="header-zh">每日普通话</span></h1>
+      {showFreezeToast && (
+        <div className="freeze-toast" onClick={() => setShowFreezeToast(false)}>
+          🛡️ Streak protected by a freeze token! ({freezes} left)
+        </div>
+      )}
       <nav className="app-nav">
         <Link to="/hsk/1" className={`app-nav-link${section === 'vocab' ? ' active' : ''}`}>
           Vocabulary
@@ -35,8 +43,12 @@ export default function AppHeader() {
         <Link to="/search" className={`app-nav-link${section === 'search' ? ' active' : ''}`}>
           🔍
         </Link>
-        <Link to="/stats" className={`app-nav-link${section === 'stats' ? ' active' : ''}`}>
-          📊
+        <Link to="/stats" className={`app-nav-link${section === 'stats' ? ' active' : ''}`} title="Stats">
+          {streak > 0 ? (
+            <span className="streak-display">
+              🔥{streak}{freezes > 0 && <span className="freeze-count">🛡️{freezes}</span>}
+            </span>
+          ) : '📊'}
         </Link>
         <Link to="/favourites" className={`app-nav-link${section === 'favourites' ? ' active' : ''}`}>
           ★{favourites.size > 0 && <span className="fav-count">{favourites.size}</span>}

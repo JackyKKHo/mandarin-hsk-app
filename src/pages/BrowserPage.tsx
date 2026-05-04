@@ -1,13 +1,17 @@
 import { useState, useMemo, useRef, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import vocab from '../data/vocab'
 import AudioButton from '../components/AudioButton'
 import AppHeader from '../components/AppHeader'
 import TonedPinyin from '../components/TonedPinyin'
-import { useProgress } from '../hooks/useProgress'
+import { useProgress, DAILY_GOAL } from '../hooks/useProgress'
 import { useFavourites } from '../hooks/useFavourites'
+import { useVocab } from '../hooks/useVocab'
+import { LEVEL_COUNTS } from '../data/vocabLoader'
 
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const UNLOCK_THRESHOLD = 80
+
+function getUnlockKey(level: number) { return `hsk-unlocked-${level}` }
 
 export default function BrowserPage() {
   const { level } = useParams<{ level: string }>()
@@ -15,9 +19,11 @@ export default function BrowserPage() {
   const currentLevel = Number(level) || 1
   const [search, setSearch] = useState('')
   const [practiceOpen, setPracticeOpen] = useState(false)
+  const [unlockBanner, setUnlockBanner] = useState<number | null>(null)
   const practiceRef = useRef<HTMLDivElement>(null)
-  const { learned } = useProgress()
+  const { learned, todayCount } = useProgress()
   const { isFavourite, toggleFavourite } = useFavourites()
+  const { words: levelWords, loading } = useVocab(currentLevel)
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -29,22 +35,33 @@ export default function BrowserPage() {
     return () => document.removeEventListener('mousedown', handleClick)
   }, [])
 
-  const levelCounts = useMemo(
-    () => Object.fromEntries(LEVELS.map(l => [l, vocab.filter(w => w.hskLevel === l).length])),
-    []
-  )
-
   const levelLearnedCounts = useMemo(
-    () => Object.fromEntries(LEVELS.map(l => [l, vocab.filter(w => w.hskLevel === l && learned.has(w.id)).length])),
+    () => Object.fromEntries(LEVELS.map(l => [
+      l,
+      [...learned].filter(id => id.startsWith(`hsk${l}_`)).length,
+    ])),
     [learned]
   )
 
-  const currentLevelTotal = levelCounts[currentLevel] || 1
+  const currentLevelTotal = LEVEL_COUNTS[currentLevel] || 1
   const currentLevelLearned = levelLearnedCounts[currentLevel] || 0
   const progressPct = Math.round((currentLevelLearned / currentLevelTotal) * 100)
 
+  // Show level unlock banner when first crossing 80%
+  useEffect(() => {
+    if (progressPct >= UNLOCK_THRESHOLD) {
+      const key = getUnlockKey(currentLevel)
+      if (!localStorage.getItem(key)) {
+        localStorage.setItem(key, '1')
+        setUnlockBanner(currentLevel)
+      }
+    }
+  }, [progressPct, currentLevel])
+
+  const goalMet = todayCount >= DAILY_GOAL
+  const goalDots = Array.from({ length: DAILY_GOAL }, (_, i) => i < todayCount)
+
   const words = useMemo(() => {
-    const levelWords = vocab.filter(w => w.hskLevel === currentLevel)
     const q = search.trim().toLowerCase()
     if (!q) return levelWords
     return levelWords.filter(
@@ -53,7 +70,7 @@ export default function BrowserPage() {
         w.pinyin.toLowerCase().includes(q) ||
         w.english.toLowerCase().includes(q)
     )
-  }, [currentLevel, search])
+  }, [levelWords, search])
 
   function switchLevel(l: number) {
     setSearch('')
@@ -64,18 +81,36 @@ export default function BrowserPage() {
     <div className="browser-page">
       <AppHeader />
 
+      {/* Daily goal bar */}
+      <div className={`daily-goal-bar${goalMet ? ' goal-met' : ''}`}>
+        <span className="daily-goal-label">
+          {goalMet ? '🎉 Daily goal complete!' : `Today: ${todayCount} / ${DAILY_GOAL} words`}
+        </span>
+        <div className="daily-goal-dots">
+          {goalDots.map((filled, i) => (
+            <span key={i} className={`goal-dot${filled ? ' filled' : ''}`} />
+          ))}
+        </div>
+      </div>
+
+      {/* Level unlock banner */}
+      {unlockBanner && (
+        <div className="unlock-banner">
+          <span>🏆 {progressPct}% of HSK {unlockBanner} learned — milestone reached!</span>
+          <button className="unlock-dismiss" onClick={() => setUnlockBanner(null)}>✕</button>
+        </div>
+      )}
+
       <nav className="level-tabs" aria-label="HSK levels">
         {LEVELS.map(l => (
           <button
             key={l}
-            className={`level-tab${l === currentLevel ? ' active' : ''}${levelCounts[l] === 0 ? ' empty' : ''}`}
+            className={`level-tab${l === currentLevel ? ' active' : ''}`}
             onClick={() => switchLevel(l)}
             aria-current={l === currentLevel ? 'page' : undefined}
           >
             HSK {l}
-            {levelCounts[l] > 0 && (
-              <span className="level-count">{levelCounts[l]}</span>
-            )}
+            <span className="level-count">{LEVEL_COUNTS[l]}</span>
           </button>
         ))}
       </nav>
@@ -99,39 +134,35 @@ export default function BrowserPage() {
           aria-label="Search vocabulary"
         />
         <span className="result-count">
-          {words.length} word{words.length !== 1 ? 's' : ''}
+          {loading ? '…' : `${words.length} word${words.length !== 1 ? 's' : ''}`}
         </span>
-        {levelCounts[currentLevel] > 0 && (
-          <div className="practice-menu-wrap" ref={practiceRef}>
-            <button className="btn-practice practice-menu-trigger" onClick={() => setPracticeOpen(o => !o)}>
-              Practice ▾
-            </button>
-            {practiceOpen && (
-              <div className="practice-menu-dropdown">
-                {[
-                  { to: `/practice/${currentLevel}`, label: '🃏 Flashcards', sub: 'Spaced repetition' },
-                  { to: `/quiz/${currentLevel}`,     label: '❓ Quiz',        sub: 'Multiple choice' },
-                  { to: `/listen/${currentLevel}`,   label: '🔊 Listening',   sub: 'Hear & identify' },
-                  { to: `/fill/${currentLevel}`,     label: '✏️ Fill blank',   sub: 'Complete sentences' },
-                  { to: `/write/${currentLevel}`,    label: '✍️ Writing',      sub: 'Stroke order tracing' },
-                ].map(({ to, label, sub }) => (
-                  <Link key={to} to={to} className="practice-menu-item" onClick={() => setPracticeOpen(false)}>
-                    <span className="pmi-label">{label}</span>
-                    <span className="pmi-sub">{sub}</span>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-        )}
+        <div className="practice-menu-wrap" ref={practiceRef}>
+          <button className="btn-practice practice-menu-trigger" onClick={() => setPracticeOpen(o => !o)}>
+            Practice ▾
+          </button>
+          {practiceOpen && (
+            <div className="practice-menu-dropdown">
+              {[
+                { to: `/practice/${currentLevel}`, label: '🃏 Flashcards', sub: 'Spaced repetition' },
+                { to: `/quiz/${currentLevel}`,     label: '❓ Quiz',        sub: 'Multiple choice' },
+                { to: `/listen/${currentLevel}`,   label: '🔊 Listening',   sub: 'Hear & identify' },
+                { to: `/fill/${currentLevel}`,     label: '✏️ Fill blank',   sub: 'Complete sentences' },
+                { to: `/write/${currentLevel}`,    label: '✍️ Writing',      sub: 'Stroke order tracing' },
+              ].map(({ to, label, sub }) => (
+                <Link key={to} to={to} className="practice-menu-item" onClick={() => setPracticeOpen(false)}>
+                  <span className="pmi-label">{label}</span>
+                  <span className="pmi-sub">{sub}</span>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
-      {words.length === 0 ? (
-        <p className="empty-state">
-          {levelCounts[currentLevel] === 0
-            ? `No vocabulary added yet for HSK ${currentLevel}.`
-            : 'No results match your search.'}
-        </p>
+      {loading ? (
+        <p className="empty-state">Loading…</p>
+      ) : words.length === 0 ? (
+        <p className="empty-state">No results match your search.</p>
       ) : (
         <div className="vocab-grid">
           {words.map(word => (
