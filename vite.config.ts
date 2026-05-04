@@ -47,6 +47,10 @@ export default defineConfig({
             urlPattern: /^\/api\//,
             handler: 'NetworkOnly',
           },
+          {
+            urlPattern: /\/_vercel\//,
+            handler: 'NetworkOnly',
+          },
         ],
       },
     }),
