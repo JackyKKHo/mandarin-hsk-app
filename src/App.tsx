@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { AuthProvider } from './context/AuthContext'
 import BrowserPage from './pages/BrowserPage'
 import DetailPage from './pages/DetailPage'
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="/pronunciation" element={<PronunciationPage />} />
         <Route path="/review" element={<ReviewPage />} />
       </Routes>
+      <Analytics />
     </BrowserRouter>
     </AuthProvider>
   )
