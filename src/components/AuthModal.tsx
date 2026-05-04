@@ -116,8 +116,8 @@ const styles: Record<string, React.CSSProperties> = {
   form: { display: 'flex', flexDirection: 'column', gap: '0.75rem' },
   input: {
     padding: '0.65rem 0.9rem', borderRadius: 8, fontSize: '1rem',
-    border: '1px solid var(--border, #ddd)', background: 'var(--input-bg, #f9f9f9)',
-    color: 'var(--text)',
+    border: '1px solid var(--border, #ddd)', background: '#fff',
+    color: '#1a1a2e',
   },
   codeInput: { fontSize: '1.75rem', textAlign: 'center', letterSpacing: '0.25em', fontWeight: 700, padding: '0.75rem' },
   submit: {
