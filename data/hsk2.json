@@ -7,7 +7,7 @@
     "pinyin": "a",
     "pinyinNumbered": "a0",
     "english": "particle: used in direct address and exclamation; indicating obviousness/impatience/suggestion; used for confirmation",
-    "partOfSpeech": "",
+    "partOfSpeech": "particle",
     "examples": [
       {
         "chinese": "你好啊，今天天气很好！",
@@ -29,7 +29,7 @@
     "pinyin": "àiqíng",
     "pinyinNumbered": "ai4 qing2",
     "english": "god",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我相信爱情是世界上最美好的东西。",
@@ -51,7 +51,7 @@
     "pinyin": "ānjìng",
     "pinyinNumbered": "an1 jing4",
     "english": "lull",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "妈妈唱歌把宝宝安静了。",
@@ -73,7 +73,7 @@
     "pinyin": "ānquán",
     "pinyinNumbered": "an1 quan2",
     "english": "safe",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "在车里系安全带很安全。",
@@ -95,7 +95,7 @@
     "pinyin": "àiren",
     "pinyinNumbered": "ai4 ren2",
     "english": "spouse (PRC)",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的爱人在北京工作。",
@@ -117,7 +117,7 @@
     "pinyin": "bānzhǎng",
     "pinyinNumbered": "ban1 zhang3",
     "english": "monitor",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们班的班长很负责任。",
@@ -139,7 +139,7 @@
     "pinyin": "bàn",
     "pinyinNumbered": "ban4",
     "english": "punish (by law)",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "警察会办那个坏人。",
@@ -161,7 +161,7 @@
     "pinyin": "bànfǎ",
     "pinyinNumbered": "ban4 fa3",
     "english": "road",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我没有办法帮助你。",
@@ -183,7 +183,7 @@
     "pinyin": "bàngōngshì",
     "pinyinNumbered": "ban4 gong1 shi4",
     "english": "agency",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的办公室在三楼。",
@@ -205,7 +205,7 @@
     "pinyin": "báisè",
     "pinyinNumbered": "bai2 se4",
     "english": "White",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我喜欢穿白色的衣服。",
@@ -227,7 +227,7 @@
     "pinyin": "bāngzhù",
     "pinyinNumbered": "bang1 zhu4",
     "english": "aid",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我的朋友帮助我学习中文。",
@@ -249,7 +249,7 @@
     "pinyin": "bào míng",
     "pinyinNumbered": "bao4 ming2",
     "english": "register",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我想报名参加这个英语课程。",
@@ -271,7 +271,7 @@
     "pinyin": "bǎo",
     "pinyinNumbered": "bao3",
     "english": "to eat till full",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这顿饭很好吃，我吃得很饱。",
@@ -293,7 +293,7 @@
     "pinyin": "bànyè",
     "pinyinNumbered": "ban4 ye4",
     "english": "midnight",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "昨天半夜我听到了奇怪的声音。",
@@ -315,7 +315,7 @@
     "pinyin": "bàozhǐ",
     "pinyinNumbered": "bao4 zhi3",
     "english": "paper",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天早上都看报纸。",
@@ -337,7 +337,7 @@
     "pinyin": "běifāng",
     "pinyinNumbered": "bei3 fang1",
     "english": "norland",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的家在北方，冬天很冷。",
@@ -359,7 +359,7 @@
     "pinyin": "bǐrúshuō",
     "pinyinNumbered": "bi3 ru2 shuo1",
     "english": "For example",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "比如说，你喜欢吃什么水果？",
@@ -381,7 +381,7 @@
     "pinyin": "bǐrú",
     "pinyinNumbered": "bi3 ru2",
     "english": "for example",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "我喜欢很多运动，比如足球和篮球。",
@@ -403,7 +403,7 @@
     "pinyin": "bǐjì",
     "pinyinNumbered": "bi3 ji4",
     "english": "short sketches",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我在课堂上记了很多笔记。",
@@ -425,7 +425,7 @@
     "pinyin": "bǐ",
     "pinyinNumbered": "bi3",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我用一支笔写了一封信。",
@@ -447,7 +447,7 @@
     "pinyin": "bèi",
     "pinyinNumbered": "bei4",
     "english": "learn by heart",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我需要背诵这首诗。",
@@ -469,7 +469,7 @@
     "pinyin": "bǐjìběn",
     "pinyinNumbered": "bi3 ji4 ben3",
     "english": "notebook (stationery)",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我买了一个新的笔记本来记录每天的计划。",
@@ -491,7 +491,7 @@
     "pinyin": "biān",
     "pinyinNumbered": "bian1",
     "english": "border",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我家在城市的边上。",
@@ -513,7 +513,7 @@
     "pinyin": "biàn",
     "pinyinNumbered": "bian4",
     "english": "change",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "天气变冷了，我需要穿更厚的衣服。",
@@ -535,7 +535,7 @@
     "pinyin": "bìxū",
     "pinyinNumbered": "bi4 xu1",
     "english": "must",
-    "partOfSpeech": "",
+    "partOfSpeech": "auxiliary verb",
     "examples": [
       {
         "chinese": "你必须按时完成作业。",
@@ -557,7 +557,7 @@
     "pinyin": "biàn",
     "pinyinNumbered": "bian4",
     "english": "m.[activity]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我把房间打扫了一遍。",
@@ -579,7 +579,7 @@
     "pinyin": "biàn chéng",
     "pinyinNumbered": "bian4 cheng2",
     "english": "grow_into",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "天气冷了，水变成了冰。",
@@ -601,7 +601,7 @@
     "pinyin": "bùcuò",
     "pinyinNumbered": "bu2 cuo4",
     "english": "not bad",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个电影不错，我很喜欢。",
@@ -623,7 +623,7 @@
     "pinyin": "bùgòu",
     "pinyinNumbered": "bu2 gou4",
     "english": "not enough",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个苹果不够大，我想要两个。",
@@ -645,7 +645,7 @@
     "pinyin": "bùdàn",
     "pinyinNumbered": "bu2 dan4",
     "english": "conj.: not only",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "这个电影不但很有趣,而且很感人。",
@@ -667,7 +667,7 @@
     "pinyin": "bùguò",
     "pinyinNumbered": "bu2 guo4",
     "english": "conj.: but",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "这个电影很有趣，不过有点长。",
@@ -689,7 +689,7 @@
     "pinyin": "bù tài",
     "pinyinNumbered": "bu2 tai4",
     "english": "Not too",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个电影不太有意思。",
@@ -711,7 +711,7 @@
     "pinyin": "biǎo",
     "pinyinNumbered": "biao3",
     "english": "table",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这是一张漂亮的表。",
@@ -733,7 +733,7 @@
     "pinyin": "bù hǎoyìsi",
     "pinyinNumbered": "bu4 hao3 yi4 si0",
     "english": "embarrassed",
-    "partOfSpeech": "",
+    "partOfSpeech": "interjection",
     "examples": [
       {
         "chinese": "不好意思，我迟到了。",
@@ -755,7 +755,7 @@
     "pinyin": "bùmǎn",
     "pinyinNumbered": "bu4 man3",
     "english": "resentful",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "他对这个结果很不满。",
@@ -777,7 +777,7 @@
     "pinyin": "bùyào",
     "pinyinNumbered": "bu2 yao4",
     "english": "never",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "不要忘记带你的钥匙。",
@@ -799,7 +799,7 @@
     "pinyin": "bùrú",
     "pinyinNumbered": "bu4 ru2",
     "english": "be unequal/inferior to",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "这家餐厅不如那家好吃。",
@@ -821,7 +821,7 @@
     "pinyin": "bùjiǔ",
     "pinyinNumbered": "bu4 jiu3",
     "english": "not long (after)",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我们刚到北京，不久就去了故宫。",
@@ -843,7 +843,7 @@
     "pinyin": "bùshǎo",
     "pinyinNumbered": "bu4 shao3",
     "english": "det.: a lot of",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "今天来了不少学生。",
@@ -865,7 +865,7 @@
     "pinyin": "bùtóng",
     "pinyinNumbered": "bu4 tong2",
     "english": "different",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我们两个人的想法不同。",
@@ -887,7 +887,7 @@
     "pinyin": "bù xíng",
     "pinyinNumbered": "bu4 xing2",
     "english": "won't do",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个办法不行，我们需要想一个新的。",
@@ -909,7 +909,7 @@
     "pinyin": "bùyīdìng",
     "pinyinNumbered": "bu4 yi2 ding4",
     "english": "not sure",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "明天会不会下雨，我也不一定。",
@@ -931,7 +931,7 @@
     "pinyin": "bù yīhuǐr5",
     "pinyinNumbered": "bu4 yi2 hui4 er0",
     "english": "Take a short while",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我们在公园里坐了一会儿，不一会儿就开始下雨了。",
@@ -953,7 +953,7 @@
     "pinyin": "bùfen",
     "pinyinNumbered": "bu4 fen0",
     "english": "partial",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个电影很长，我只看了部分。",
@@ -975,7 +975,7 @@
     "pinyin": "càidān",
     "pinyinNumbered": "cai4 dan1",
     "english": "menu",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "请给我一份菜单。",
@@ -997,7 +997,7 @@
     "pinyin": "cānguān",
     "pinyinNumbered": "can1 guan1",
     "english": "visit",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "上周末我和朋友参观了故宫博物院。",
@@ -1019,7 +1019,7 @@
     "pinyin": "cái",
     "pinyinNumbered": "cai2",
     "english": "then and only then",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你吃完饭才能去玩。",
@@ -1041,7 +1041,7 @@
     "pinyin": "cānjiā",
     "pinyinNumbered": "can1 jia1",
     "english": "join",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我想参加你们的聚会。",
@@ -1063,7 +1063,7 @@
     "pinyin": "cǎodì",
     "pinyinNumbered": "cao3 di4",
     "english": "lawn",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们在草地上野餐。",
@@ -1085,7 +1085,7 @@
     "pinyin": "céng",
     "pinyinNumbered": "ceng2",
     "english": "m.[proximation]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "这栋楼有二十层。",
@@ -1107,7 +1107,7 @@
     "pinyin": "cǎo",
     "pinyinNumbered": "cao3",
     "english": "female (of animals)",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "那只草羊生了两只小羊羔。",
@@ -1129,7 +1129,7 @@
     "pinyin": "chàbuduō",
     "pinyinNumbered": "cha4 bu4 duo1",
     "english": "good enough",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这件衣服的颜色差不多，我很喜欢。",
@@ -1151,7 +1151,7 @@
     "pinyin": "zhǎng",
     "pinyinNumbered": "chang2",
     "english": "long",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这条路很长，要走半小时。",
@@ -1173,7 +1173,7 @@
     "pinyin": "chá",
     "pinyinNumbered": "cha2",
     "english": "look into",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我需要查一下你的身份证。",
@@ -1195,7 +1195,7 @@
     "pinyin": "chángjiàn",
     "pinyinNumbered": "chang2 jian4",
     "english": "commonly seen",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "感冒是冬天常见的疾病。",
@@ -1217,7 +1217,7 @@
     "pinyin": "chángyòng",
     "pinyinNumbered": "chang2 yong4",
     "english": "in common usage",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这些词汇很常用，我们每天都要说。",
@@ -1239,7 +1239,7 @@
     "pinyin": "chǎng",
     "pinyinNumbered": "chang3",
     "english": "m.[event]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "今天下午有一场足球比赛，你想去看吗？",
@@ -1261,7 +1261,7 @@
     "pinyin": "chāo guò",
     "pinyinNumbered": "chao1 guo4",
     "english": "overpass",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这个月的花费超过了一千块。",
@@ -1283,7 +1283,7 @@
     "pinyin": "chāoshì",
     "pinyinNumbered": "chao1 shi4",
     "english": "supermarket",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每周都去超市买菜。",
@@ -1305,7 +1305,7 @@
     "pinyin": "chēliàng",
     "pinyinNumbered": "che1 liang4",
     "english": "voiture",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "停车场里有很多车辆。",
@@ -1327,7 +1327,7 @@
     "pinyin": "chéngjì",
     "pinyinNumbered": "cheng2 ji4",
     "english": "execution",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的数学成绩很好。",
@@ -1349,7 +1349,7 @@
     "pinyin": "chēng",
     "pinyinNumbered": "cheng1",
     "english": "call",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "大家都称他为英雄。",
@@ -1371,7 +1371,7 @@
     "pinyin": "chóngfù",
     "pinyinNumbered": "chong2 fu4",
     "english": "repeat",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "老师说我们需要重复练习这个单词。",
@@ -1393,7 +1393,7 @@
     "pinyin": "chóngxīn",
     "pinyinNumbered": "chong2 xin1",
     "english": "over_again",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我弄坏了，需要重新买一个。",
@@ -1415,7 +1415,7 @@
     "pinyin": "chūfā",
     "pinyinNumbered": "chu1 fa1",
     "english": "depart",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们明天早上八点出发去旅游。",
@@ -1437,7 +1437,7 @@
     "pinyin": "chéngwéi",
     "pinyinNumbered": "cheng2 wei2",
     "english": "find",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "她想成为一名老师。",
@@ -1459,7 +1459,7 @@
     "pinyin": "chéng",
     "pinyinNumbered": "cheng2",
     "english": "become",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我想成为一名医生。",
@@ -1481,7 +1481,7 @@
     "pinyin": "chū guó",
     "pinyinNumbered": "chu1 guo2",
     "english": "go abroad (from one's own country)",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我今年想出国旅游。",
@@ -1503,7 +1503,7 @@
     "pinyin": "chū kǒu",
     "pinyinNumbered": "chu1 kou3",
     "english": "export",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "中国出口很多商品到其他国家。",
@@ -1525,7 +1525,7 @@
     "pinyin": "chū mén",
     "pinyinNumbered": "chu1 men2",
     "english": "go_out",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天早上七点出门去上班。",
@@ -1547,7 +1547,7 @@
     "pinyin": "chūshēng",
     "pinyinNumbered": "chu1 sheng1",
     "english": "be born",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我的妹妹去年出生了。",
@@ -1569,7 +1569,7 @@
     "pinyin": "chūxiàn",
     "pinyinNumbered": "chu1 xian4",
     "english": "appear",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "今天早上太阳出现了。",
@@ -1591,7 +1591,7 @@
     "pinyin": "chū yuàn",
     "pinyinNumbered": "chu1 yuan4",
     "english": "to leave hospital",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我爸爸明天就要出院了，我们都很高兴。",
@@ -1613,7 +1613,7 @@
     "pinyin": "chūzū",
     "pinyinNumbered": "chu1 zu1",
     "english": "hire",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这个房间可以出租吗？",
@@ -1635,7 +1635,7 @@
     "pinyin": "chūzūchē",
     "pinyinNumbered": "chu1 zu1 che1",
     "english": "taxi",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天坐出租车去上班。",
@@ -1657,7 +1657,7 @@
     "pinyin": "chuī",
     "pinyinNumbered": "chui1",
     "english": "fall through (of plans)",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们的旅游计划吹了，因为他突然生病了。",
@@ -1679,7 +1679,7 @@
     "pinyin": "Chūn Jié",
     "pinyinNumbered": "chun1 jie2",
     "english": "Spring Festival (Chinese New Year)",
-    "partOfSpeech": "",
+    "partOfSpeech": "proper noun",
     "examples": [
       {
         "chinese": "今年春节我要回家和家人一起吃饭。",
@@ -1701,7 +1701,7 @@
     "pinyin": "chuán",
     "pinyinNumbered": "chuan2",
     "english": "bottom",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们坐船去旅游。",
@@ -1723,7 +1723,7 @@
     "pinyin": "chūntiān",
     "pinyinNumbered": "chun1 tian1",
     "english": "spring (season)",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "春天来了，天气变暖和了。",
@@ -1745,7 +1745,7 @@
     "pinyin": "cídiǎn",
     "pinyinNumbered": "ci2 dian3",
     "english": "lexicon",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天都用词典学习新的单词。",
@@ -1767,7 +1767,7 @@
     "pinyin": "cí",
     "pinyinNumbered": "ci2",
     "english": "vocable",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个词的意思是什么？",
@@ -1789,7 +1789,7 @@
     "pinyin": "cíyǔ",
     "pinyinNumbered": "ci2 yu3",
     "english": "word (general term including monosyllables through to short phrases)",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个词语的意思很简单，小孩子也能理解。",
@@ -1811,7 +1811,7 @@
     "pinyin": "dāying",
     "pinyinNumbered": "da1 ying0",
     "english": "agree",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我答应了妈妈明天帮她打扫房间。",
@@ -1833,7 +1833,7 @@
     "pinyin": "dǎ gōng",
     "pinyinNumbered": "da3 gong1",
     "english": "work part-time while studying in college",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我在大学期间打工赚钱。",
@@ -1855,7 +1855,7 @@
     "pinyin": "cóngxiǎo",
     "pinyinNumbered": "cong2 xiao3",
     "english": "from childhood",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我从小就喜欢读书。",
@@ -1877,7 +1877,7 @@
     "pinyin": "dǎsuan",
     "pinyinNumbered": "da3 suan4",
     "english": "mean",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我打算明天去公园玩。",
@@ -1899,7 +1899,7 @@
     "pinyin": "dǎyìn",
     "pinyinNumbered": "da3 yin4",
     "english": "to print",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我需要打印这份文件。",
@@ -1921,7 +1921,7 @@
     "pinyin": "dàbùfen",
     "pinyinNumbered": "da4 bu4 fen0",
     "english": "det.: most of",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "大部分学生喜欢吃米饭。",
@@ -1943,7 +1943,7 @@
     "pinyin": "dàda",
     "pinyinNumbered": "da4 da4",
     "english": "greatly",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个新手机大大提高了我的工作效率。",
@@ -1965,7 +1965,7 @@
     "pinyin": "dàduōshù",
     "pinyinNumbered": "da4 duo1 shu4",
     "english": "det.: most of",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "大多数学生喜欢在周末玩游戏。",
@@ -1987,7 +1987,7 @@
     "pinyin": "dàjiā",
     "pinyinNumbered": "da4 jia1",
     "english": "sundry",
-    "partOfSpeech": "",
+    "partOfSpeech": "pronoun",
     "examples": [
       {
         "chinese": "大家都喜欢吃这家餐厅的菜。",
@@ -2009,7 +2009,7 @@
     "pinyin": "dǎhǎi",
     "pinyinNumbered": "da4 hai3",
     "english": "seaway",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢在大海边散步。",
@@ -2031,7 +2031,7 @@
     "pinyin": "dàliàng",
     "pinyinNumbered": "da4 liang4",
     "english": "det.: any numer of",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "超市里有大量的苹果在打折。",
@@ -2053,7 +2053,7 @@
     "pinyin": "dàmén",
     "pinyinNumbered": "da4 men2",
     "english": "barndoor",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我家的大门是红色的。",
@@ -2075,7 +2075,7 @@
     "pinyin": "dàren",
     "pinyinNumbered": "da4 ren2",
     "english": "grownup",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我妈妈是一个很好的大人。",
@@ -2097,7 +2097,7 @@
     "pinyin": "dàshēng",
     "pinyinNumbered": "da4 sheng1",
     "english": "loud",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "请不要大声说话，图书馆很安静。",
@@ -2119,7 +2119,7 @@
     "pinyin": "dàyī",
     "pinyinNumbered": "da4 yi1",
     "english": "overcoat",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "冬天很冷，我穿上了厚厚的大衣。",
@@ -2141,7 +2141,7 @@
     "pinyin": "dàzìrán",
     "pinyinNumbered": "da4 zi4 ran2",
     "english": "wild",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢在周末去大自然里散步。",
@@ -2163,7 +2163,7 @@
     "pinyin": "dài",
     "pinyinNumbered": "dai4",
     "english": "look after",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "妈妈今天带我去公园玩。",
@@ -2185,7 +2185,7 @@
     "pinyin": "dài lái",
     "pinyinNumbered": "dai4 lai2",
     "english": "bring",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这个好消息给我们带来了很大的快乐。",
@@ -2207,7 +2207,7 @@
     "pinyin": "dānwèi",
     "pinyinNumbered": "dan1 wei4",
     "english": "department",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我在一个大的公司单位工作。",
@@ -2229,7 +2229,7 @@
     "pinyin": "dàxiǎo",
     "pinyinNumbered": "da4 xiao3",
     "english": "calibre",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这两个苹果的大小差不多。",
@@ -2251,7 +2251,7 @@
     "pinyin": "dàn",
     "pinyinNumbered": "dan4",
     "english": "conj.: but",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "我很喜欢这个电影，但是有点长。",
@@ -2273,7 +2273,7 @@
     "pinyin": "dànshì",
     "pinyinNumbered": "dan4 shi4",
     "english": "conj.: but",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "我很喜欢这个电影，但是票价太贵了。",
@@ -2295,7 +2295,7 @@
     "pinyin": "dàn",
     "pinyinNumbered": "dan4",
     "english": "clump",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我在路上踩到了一团泥巴。",
@@ -2317,7 +2317,7 @@
     "pinyin": "dāng",
     "pinyinNumbered": "dang1",
     "english": "when",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "当我回家的时候，妈妈正在做饭。",
@@ -2339,7 +2339,7 @@
     "pinyin": "dāngshí",
     "pinyinNumbered": "dang1 shi2",
     "english": "then",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "当时我还在上学，没有手机。",
@@ -2361,7 +2361,7 @@
     "pinyin": "dàochù",
     "pinyinNumbered": "dao4 chu4",
     "english": "universally",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "夏天的时候，到处都是绿色的树。",
@@ -2383,7 +2383,7 @@
     "pinyin": "dào",
     "pinyinNumbered": "dao4",
     "english": "say",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "他对我说，他很喜欢这个电影。",
@@ -2405,7 +2405,7 @@
     "pinyin": "dàolù",
     "pinyinNumbered": "dao4 lu4",
     "english": "track",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这条道路很安全，我们可以放心走。",
@@ -2427,7 +2427,7 @@
     "pinyin": "dào",
     "pinyinNumbered": "dao3",
     "english": "actually",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个电影倒是不错，我很喜欢。",
@@ -2449,7 +2449,7 @@
     "pinyin": "dàoli",
     "pinyinNumbered": "dao4 li3",
     "english": "thread",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我不明白这个道理。",
@@ -2471,7 +2471,7 @@
     "pinyin": "de",
     "pinyinNumbered": "de2",
     "english": "should be",
-    "partOfSpeech": "",
+    "partOfSpeech": "particle",
     "examples": [
       {
         "chinese": "你得早点睡觉，明天要上班。",
@@ -2493,7 +2493,7 @@
     "pinyin": "dé chū",
     "pinyinNumbered": "de2 chu1",
     "english": "to obtain (results)",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "经过认真讨论，我们得出了一个重要的结论。",
@@ -2515,7 +2515,7 @@
     "pinyin": "dehuà",
     "pinyinNumbered": "de0 hua4",
     "english": "conj.: if",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "你明天有时间的话，我们一起去公园吧。",
@@ -2537,7 +2537,7 @@
     "pinyin": "děng",
     "pinyinNumbered": "deng3",
     "english": "conj.: and so on",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "我喜欢吃苹果、香蕉、橙子等水果。",
@@ -2559,7 +2559,7 @@
     "pinyin": "děngdào",
     "pinyinNumbered": "deng3 dao4",
     "english": "until",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "等到明天，我们再一起去公园。",
@@ -2581,7 +2581,7 @@
     "pinyin": "dēng",
     "pinyinNumbered": "deng1",
     "english": "blowlamp",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "晚上我打开灯来看书。",
@@ -2603,7 +2603,7 @@
     "pinyin": "dī",
     "pinyinNumbered": "di1",
     "english": "let droop",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "他低下头，不好意思地笑了。",
@@ -2625,7 +2625,7 @@
     "pinyin": "děngyú",
     "pinyinNumbered": "deng3 yu2",
     "english": "be equal to",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "两加二等于四。",
@@ -2647,7 +2647,7 @@
     "pinyin": "dìtiě",
     "pinyinNumbered": "di4 tie3",
     "english": "subway",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天坐地铁去上班。",
@@ -2669,7 +2669,7 @@
     "pinyin": "dìqiú",
     "pinyinNumbered": "di4 qiu2",
     "english": "the earth/globe",
-    "partOfSpeech": "",
+    "partOfSpeech": "proper noun",
     "examples": [
       {
         "chinese": "地球上有很多国家。",
@@ -2691,7 +2691,7 @@
     "pinyin": "dìtiězhàn",
     "pinyinNumbered": "di4 tie3 zhan4",
     "english": "subway station",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "地铁站离我家很近。",
@@ -2713,7 +2713,7 @@
     "pinyin": "diàn",
     "pinyinNumbered": "dian4",
     "english": "shop",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢去那家咖啡店。",
@@ -2735,7 +2735,7 @@
     "pinyin": "diǎntóu",
     "pinyinNumbered": "dian3 tou2",
     "english": "take a bow",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "老师说得对,我点头同意。",
@@ -2757,7 +2757,7 @@
     "pinyin": "dōngběi",
     "pinyinNumbered": "dong1 bei3",
     "english": "Northeast China",
-    "partOfSpeech": "",
+    "partOfSpeech": "proper noun",
     "examples": [
       {
         "chinese": "我的朋友来自东北，他说话很有意思。",
@@ -2779,7 +2779,7 @@
     "pinyin": "dōngfāng",
     "pinyinNumbered": "dong1 fang1",
     "english": "oriental",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "太阳从东方升起来了。",
@@ -2801,7 +2801,7 @@
     "pinyin": "dōngtiān",
     "pinyinNumbered": "dong1 tian1",
     "english": "winter",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "冬天的时候，我喜欢喝热茶。",
@@ -2823,7 +2823,7 @@
     "pinyin": "diào",
     "pinyinNumbered": "diao4",
     "english": "drop",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我的钥匙掉在地上了。",
@@ -2845,7 +2845,7 @@
     "pinyin": "dōngnán",
     "pinyinNumbered": "dong1 nan2",
     "english": "sou'-east",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我家在城市的东南方向。",
@@ -2867,7 +2867,7 @@
     "pinyin": "dǒngde",
     "pinyinNumbered": "dong3 de0",
     "english": "experience",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我懂得你的感受。",
@@ -2889,7 +2889,7 @@
     "pinyin": "dòngwù",
     "pinyinNumbered": "dong4 wu4",
     "english": "thing",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢看动物，特别是小猫。",
@@ -2911,7 +2911,7 @@
     "pinyin": "dòngwùyuán",
     "pinyinNumbered": "dong4 wu4 yuan2",
     "english": "zoological_garden",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "上个周末我和家人去了动物园。",
@@ -2933,7 +2933,7 @@
     "pinyin": "dù",
     "pinyinNumbered": "du4",
     "english": "m.[activity]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我今年去了三次度假。",
@@ -2955,7 +2955,7 @@
     "pinyin": "dúyīn",
     "pinyinNumbered": "du2 yin1",
     "english": "pronunciation",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个字的读音很难，我不太会读。",
@@ -2977,7 +2977,7 @@
     "pinyin": "duǎn",
     "pinyinNumbered": "duan3",
     "english": "short",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这条裤子太短了，我穿不了。",
@@ -2999,7 +2999,7 @@
     "pinyin": "duǎnxìn",
     "pinyinNumbered": "duan3 xin4",
     "english": "text message",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我给你发了一条短信，你看到了吗？",
@@ -3021,7 +3021,7 @@
     "pinyin": "duàn",
     "pinyinNumbered": "duan4",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "这段时间我很忙。",
@@ -3043,7 +3043,7 @@
     "pinyin": "duì",
     "pinyinNumbered": "dui4",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我们班的足球队赢了比赛。",
@@ -3065,7 +3065,7 @@
     "pinyin": "duìzhǎng",
     "pinyinNumbered": "dui4 zhang3",
     "english": "captain",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们的队长很强,他带领我们赢得了比赛。",
@@ -3087,7 +3087,7 @@
     "pinyin": "dǒng",
     "pinyinNumbered": "dong3",
     "english": "have",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你懂中文吗？",
@@ -3109,7 +3109,7 @@
     "pinyin": "duìhuà",
     "pinyinNumbered": "dui4 hua4",
     "english": "dialogue",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我和朋友有一个很有趣的对话。",
@@ -3131,7 +3131,7 @@
     "pinyin": "duìmiàn",
     "pinyinNumbered": "dui4 mian4",
     "english": "opposite",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "学校对面有一家很好吃的餐厅。",
@@ -3153,7 +3153,7 @@
     "pinyin": "duō",
     "pinyinNumbered": "duo1",
     "english": "many",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "你有多少个朋友？",
@@ -3175,7 +3175,7 @@
     "pinyin": "duōjiǔ",
     "pinyinNumbered": "duo1 jiu3",
     "english": "how long?",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你要在北京待多久？",
@@ -3197,7 +3197,7 @@
     "pinyin": "duì",
     "pinyinNumbered": "dui4",
     "english": "correct",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "你说得对，我也是这样想的。",
@@ -3219,7 +3219,7 @@
     "pinyin": "duōme",
     "pinyinNumbered": "duo1 me0",
     "english": "to what extent",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个公园多么美啊！",
@@ -3241,7 +3241,7 @@
     "pinyin": "duōshù",
     "pinyinNumbered": "duo1 shu4",
     "english": "trillions",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "多数人喜欢吃中国菜。",
@@ -3263,7 +3263,7 @@
     "pinyin": "duōyún",
     "pinyinNumbered": "duo1 yun2",
     "english": "cloudy (meteorology)",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "今天天气多云，但不会下雨。",
@@ -3285,7 +3285,7 @@
     "pinyin": "érqiě",
     "pinyinNumbered": "er2 qie3",
     "english": "conj.: furthermore",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "这个电影很有趣，而且票价也不贵。",
@@ -3307,7 +3307,7 @@
     "pinyin": "fā",
     "pinyinNumbered": "fa1",
     "english": "distribute",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "老师给我们发了新的课本。",
@@ -3329,7 +3329,7 @@
     "pinyin": "fāxiàn",
     "pinyinNumbered": "fa1 xian4",
     "english": "find",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我今天发现了一家很好吃的餐厅。",
@@ -3351,7 +3351,7 @@
     "pinyin": "fànguǎn",
     "pinyinNumbered": "fan4 guan3",
     "english": "restaurant",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这家饭馆的饭很好吃。",
@@ -3373,7 +3373,7 @@
     "pinyin": "fāngbiàn",
     "pinyinNumbered": "fang1 bian4",
     "english": "convenient",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "地铁很方便，我每天都坐地铁去上班。",
@@ -3395,7 +3395,7 @@
     "pinyin": "fāngbiànmiàn",
     "pinyinNumbered": "fang1 bian4 mian4",
     "english": "instant noodles",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我很喜欢吃方便面，因为它很便宜又很快。",
@@ -3417,7 +3417,7 @@
     "pinyin": "fāngfǎ",
     "pinyinNumbered": "fang1 fa3",
     "english": "know-how",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "学习英语的最好方法是每天练习。",
@@ -3439,7 +3439,7 @@
     "pinyin": "fāngmiàn",
     "pinyinNumbered": "fang1 mian4",
     "english": "side",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "在学习方面，我需要更加努力。",
@@ -3461,7 +3461,7 @@
     "pinyin": "fàngxià",
     "pinyinNumbered": "fang4 xia4",
     "english": "set_down",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "请把你的手机放下，我们一起吃饭。",
@@ -3483,7 +3483,7 @@
     "pinyin": "fāngxiang",
     "pinyinNumbered": "fang1 xiang4",
     "english": "path",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我不知道去公园的方向。",
@@ -3505,7 +3505,7 @@
     "pinyin": "fēn",
     "pinyinNumbered": "fen1",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "这个蛋糕分成八份，每个人吃一份。",
@@ -3527,7 +3527,7 @@
     "pinyin": "fēn kāi",
     "pinyinNumbered": "fen1 kai1",
     "english": "rive",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我和我的朋友分开了，因为我们要去不同的地方。",
@@ -3549,7 +3549,7 @@
     "pinyin": "fēnshù",
     "pinyinNumbered": "fen1 shu4",
     "english": "point",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的数学分数不太好。",
@@ -3571,7 +3571,7 @@
     "pinyin": "fàng xīn",
     "pinyinNumbered": "fang4 xin1",
     "english": "disburden",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你放心，我会照顾好孩子的。",
@@ -3593,7 +3593,7 @@
     "pinyin": "fēnzhōng",
     "pinyinNumbered": "fen1 zhong1",
     "english": "m.[standard]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "等我五分钟，我马上就来。",
@@ -3615,7 +3615,7 @@
     "pinyin": "fúwù",
     "pinyinNumbered": "fu2 wu4",
     "english": "be in the service of",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这家餐厅的服务很好，员工很友善。",
@@ -3637,7 +3637,7 @@
     "pinyin": "fùxí",
     "pinyinNumbered": "fu4 xi2",
     "english": "to review",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "明天有考试，我今天晚上要复习。",
@@ -3659,7 +3659,7 @@
     "pinyin": "fèn",
     "pinyinNumbered": "fen4",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我买了一份报纸。",
@@ -3681,7 +3681,7 @@
     "pinyin": "fēng",
     "pinyinNumbered": "feng1",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我给朋友写了一封信。",
@@ -3703,7 +3703,7 @@
     "pinyin": "gǎi",
     "pinyinNumbered": "gai3",
     "english": "alteration",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我想改一下我的计划。",
@@ -3725,7 +3725,7 @@
     "pinyin": "gǎibiàn",
     "pinyinNumbered": "gai3 bian4",
     "english": "change",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我想改变我的生活方式。",
@@ -3747,7 +3747,7 @@
     "pinyin": "gāi",
     "pinyinNumbered": "gai1",
     "english": "det.: this",
-    "partOfSpeech": "",
+    "partOfSpeech": "pronoun",
     "examples": [
       {
         "chinese": "该书很有意思，我很喜欢。",
@@ -3769,7 +3769,7 @@
     "pinyin": "gǎndào",
     "pinyinNumbered": "gan3 dao4",
     "english": "feel",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我感到很累，想要休息。",
@@ -3791,7 +3791,7 @@
     "pinyin": "gǎndòng",
     "pinyinNumbered": "gan3 dong4",
     "english": "be touched",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这部电影让我很感动。",
@@ -3813,7 +3813,7 @@
     "pinyin": "gān bēi",
     "pinyinNumbered": "gan1 bei1",
     "english": "to drink a toast",
-    "partOfSpeech": "",
+    "partOfSpeech": "interjection",
     "examples": [
       {
         "chinese": "祝你生日快乐，我们一起干杯！",
@@ -3835,7 +3835,7 @@
     "pinyin": "gǎnjué",
     "pinyinNumbered": "gan3 jue2",
     "english": "sense perception",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个房间很冷，我感觉很不舒服。",
@@ -3857,7 +3857,7 @@
     "pinyin": "gànhuór5",
     "pinyinNumbered": "gan4 huo2 er2",
     "english": "to work",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天都要干活儿，很累。",
@@ -3879,7 +3879,7 @@
     "pinyin": "gāng",
     "pinyinNumbered": "gang1",
     "english": "exactly",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我刚吃完饭。",
@@ -3901,7 +3901,7 @@
     "pinyin": "gāngcái",
     "pinyinNumbered": "gang1 cai2",
     "english": "(just) a moment ago",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "刚才我在公园里看到了一只小猫。",
@@ -3923,7 +3923,7 @@
     "pinyin": "gānggāng",
     "pinyinNumbered": "gang1 gang1",
     "english": "just now",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我刚刚吃完饭。",
@@ -3945,7 +3945,7 @@
     "pinyin": "gāojí",
     "pinyinNumbered": "gao1 ji2",
     "english": "high-level",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这家餐厅很高级，菜很好吃。",
@@ -3967,7 +3967,7 @@
     "pinyin": "gǎnxiè",
     "pinyinNumbered": "gan3 xie4",
     "english": "thank",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "谢谢你的帮助，我真的很感谢你。",
@@ -3989,7 +3989,7 @@
     "pinyin": "gāozhōng",
     "pinyinNumbered": "gao1 zhong1",
     "english": "senior middle school",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我哥哥现在在高中读书。",
@@ -4011,7 +4011,7 @@
     "pinyin": "gèzi",
     "pinyinNumbered": "ge4 zi0",
     "english": "height",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他的个子很高，比我高一头。",
@@ -4033,7 +4033,7 @@
     "pinyin": "gèng",
     "pinyinNumbered": "geng4",
     "english": "more",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "今天比昨天更冷。",
@@ -4055,7 +4055,7 @@
     "pinyin": "gōnggòng qìchē",
     "pinyinNumbered": "gong1 gong4 qi4 che1",
     "english": "bus",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天坐公共汽车去上班。",
@@ -4077,7 +4077,7 @@
     "pinyin": "gōngjiāochē",
     "pinyinNumbered": "gong1 jiao1 che1",
     "english": "public transport vehicle",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天坐公交车去上班。",
@@ -4099,7 +4099,7 @@
     "pinyin": "gōngjīn",
     "pinyinNumbered": "gong1 jin1",
     "english": "m.[standard]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "这个西瓜重五公斤。",
@@ -4121,7 +4121,7 @@
     "pinyin": "gōnglù",
     "pinyinNumbered": "gong1 lu4",
     "english": "trunk road",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们开车在公路上走了三个小时。",
@@ -4143,7 +4143,7 @@
     "pinyin": "gōngpíng",
     "pinyinNumbered": "gong1 ping2",
     "english": "fair",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个游戏规则很公平，每个人都有机会赢。",
@@ -4165,7 +4165,7 @@
     "pinyin": "gōnglǐ",
     "pinyinNumbered": "gong1 li3",
     "english": "m.[standard]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "从这里到学校有五公里。",
@@ -4187,7 +4187,7 @@
     "pinyin": "gōngyuán",
     "pinyinNumbered": "gong1 yuan2",
     "english": "common",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢在公园里散步。",
@@ -4209,7 +4209,7 @@
     "pinyin": "gōngsī",
     "pinyinNumbered": "gong1 si1",
     "english": "place of business",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我在一家大公司工作。",
@@ -4231,7 +4231,7 @@
     "pinyin": "gùshi",
     "pinyinNumbered": "gu4 shi4",
     "english": "spiel",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢听我奶奶讲故事。",
@@ -4253,7 +4253,7 @@
     "pinyin": "gǒu",
     "pinyinNumbered": "gou3",
     "english": "dog",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的狗很喜欢玩球。",
@@ -4275,7 +4275,7 @@
     "pinyin": "gòu",
     "pinyinNumbered": "gou4",
     "english": "be enough/sufficient/adequate",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这些钱够买一个新书包吗？",
@@ -4297,7 +4297,7 @@
     "pinyin": "gùyì",
     "pinyinNumbered": "gu4 yi4",
     "english": "purposive",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "他故意没有告诉我真相。",
@@ -4319,7 +4319,7 @@
     "pinyin": "gùkè",
     "pinyinNumbered": "gu4 ke4",
     "english": "chap",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这家店的顾客很多。",
@@ -4341,7 +4341,7 @@
     "pinyin": "guān jī",
     "pinyinNumbered": "guan1 ji1",
     "english": "to turn off (a machine or device)",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我要去睡觉了，先关机。",
@@ -4363,7 +4363,7 @@
     "pinyin": "guānxīn",
     "pinyinNumbered": "guan1 xin1",
     "english": "be concerned about",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "妈妈很关心我的学习。",
@@ -4385,7 +4385,7 @@
     "pinyin": "guāndiǎn",
     "pinyinNumbered": "guan1 dian3",
     "english": "view",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我和你的观点不一样。",
@@ -4407,7 +4407,7 @@
     "pinyin": "guǎngchǎng",
     "pinyinNumbered": "guang3 chang3",
     "english": "mews",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "周末我喜欢在广场上散步。",
@@ -4429,7 +4429,7 @@
     "pinyin": "guǎnggào",
     "pinyinNumbered": "guang3 gao4",
     "english": "advertisement",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我在电视上看到了一个有趣的广告。",
@@ -4451,7 +4451,7 @@
     "pinyin": "guò lai",
     "pinyinNumbered": "guo4 lai2",
     "english": "come over/up",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你过来，我给你看一个有趣的东西。",
@@ -4473,7 +4473,7 @@
     "pinyin": "guònian",
     "pinyinNumbered": "guo4 nian2",
     "english": "celebrate/spend New Year",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今年我想在家里过年。",
@@ -4495,7 +4495,7 @@
     "pinyin": "guójì",
     "pinyinNumbered": "guo2 ji4",
     "english": "international",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这是一个国际机场。",
@@ -4517,7 +4517,7 @@
     "pinyin": "guò qu",
     "pinyinNumbered": "guo4 qu4",
     "english": "go over",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "请过去坐，别站着。",
@@ -4539,7 +4539,7 @@
     "pinyin": "hǎi",
     "pinyinNumbered": "hai3",
     "english": "water",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢在海边散步。",
@@ -4561,7 +4561,7 @@
     "pinyin": "guò",
     "pinyinNumbered": "guo4",
     "english": "[aspect]",
-    "partOfSpeech": "",
+    "partOfSpeech": "particle",
     "examples": [
       {
         "chinese": "我昨天过得很开心。",
@@ -4583,7 +4583,7 @@
     "pinyin": "hǎibiān",
     "pinyinNumbered": "hai3 bian1",
     "english": "coast",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢在海边散步。",
@@ -4605,7 +4605,7 @@
     "pinyin": "hǎo",
     "pinyinNumbered": "hao3",
     "english": "good",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个电影很好看。",
@@ -4627,7 +4627,7 @@
     "pinyin": "hǎn",
     "pinyinNumbered": "han3",
     "english": "cry out",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "孩子在公园里喊妈妈。",
@@ -4649,7 +4649,7 @@
     "pinyin": "hǎoduō",
     "pinyinNumbered": "hao3 duo1",
     "english": "det : many",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "今天来了好多人。",
@@ -4671,7 +4671,7 @@
     "pinyin": "hǎochu",
     "pinyinNumbered": "hao3 chu4",
     "english": "pull",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "运动有很多好处，对身体很有帮助。",
@@ -4693,7 +4693,7 @@
     "pinyin": "hǎojiǔ",
     "pinyinNumbered": "hao3 jiu3",
     "english": "quite a while",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我好久没有看到你了。",
@@ -4715,7 +4715,7 @@
     "pinyin": "hǎorén",
     "pinyinNumbered": "hao3 ren2",
     "english": "a healthy person",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他是一个好人，总是帮助别人。",
@@ -4737,7 +4737,7 @@
     "pinyin": "hǎoshì",
     "pinyinNumbered": "hao3 shi4",
     "english": "good action",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "帮助别人是好事。",
@@ -4759,7 +4759,7 @@
     "pinyin": "hǎoxiàng",
     "pinyinNumbered": "hao3 xiang4",
     "english": "seem",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你好像很累，要不要休息一下？",
@@ -4781,7 +4781,7 @@
     "pinyin": "héshì",
     "pinyinNumbered": "he2 shi4",
     "english": "set",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这件衣服很合适，我要买。",
@@ -4803,7 +4803,7 @@
     "pinyin": "hēi",
     "pinyinNumbered": "hei1",
     "english": "black",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "外面天很黑，我们回家吧。",
@@ -4825,7 +4825,7 @@
     "pinyin": "hé",
     "pinyinNumbered": "he2",
     "english": "watercourse",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们家附近有一条很长的河。",
@@ -4847,7 +4847,7 @@
     "pinyin": "hēibǎn",
     "pinyinNumbered": "hei1 ban3",
     "english": "blackboard",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "老师在黑板上写了一个新单词。",
@@ -4869,7 +4869,7 @@
     "pinyin": "hóng",
     "pinyinNumbered": "hong2",
     "english": "in vogue",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个明星现在很红。",
@@ -4891,7 +4891,7 @@
     "pinyin": "hēisè",
     "pinyinNumbered": "hei1 se4",
     "english": "black",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我喜欢穿黑色的衣服。",
@@ -4913,7 +4913,7 @@
     "pinyin": "hóngsè",
     "pinyinNumbered": "hong2 se4",
     "english": "red color",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我喜欢这件红色的衣服。",
@@ -4935,7 +4935,7 @@
     "pinyin": "hūrán",
     "pinyinNumbered": "hu1 ran2",
     "english": "suddenly",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我们正在吃饭，忽然停电了。",
@@ -4957,7 +4957,7 @@
     "pinyin": "hòulái",
     "pinyinNumbered": "hou4 lai2",
     "english": "afterwards",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我先去了公园，后来又去了商店。",
@@ -4979,7 +4979,7 @@
     "pinyin": "hùzhào",
     "pinyinNumbered": "hu4 zhao4",
     "english": "passport",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我需要带上护照去机场。",
@@ -5001,7 +5001,7 @@
     "pinyin": "huā",
     "pinyinNumbered": "hua1",
     "english": "spend",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每个月花很多钱买书。",
@@ -5023,7 +5023,7 @@
     "pinyin": "huāyuán",
     "pinyinNumbered": "hua1 yuan2",
     "english": "flower garden",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我家后面有一个很大的花园。",
@@ -5045,7 +5045,7 @@
     "pinyin": "hú",
     "pinyinNumbered": "hu2",
     "english": "water",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个湖很漂亮，我喜欢在这里散步。",
@@ -5067,7 +5067,7 @@
     "pinyin": "huà",
     "pinyinNumbered": "hua4",
     "english": "painting",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢在周末画画。",
@@ -5089,7 +5089,7 @@
     "pinyin": "huàr5",
     "pinyinNumbered": "hua4 er2",
     "english": "picture",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "墙上有一幅很漂亮的画儿。",
@@ -5111,7 +5111,7 @@
     "pinyin": "huàjiā",
     "pinyinNumbered": "hua4 jia1",
     "english": "painterly",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的叔叔是一个画家，他很喜欢画画。",
@@ -5133,7 +5133,7 @@
     "pinyin": "huàirén",
     "pinyinNumbered": "huai4 ren2",
     "english": "hellion",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "那个坏人偷了我的钱包。",
@@ -5155,7 +5155,7 @@
     "pinyin": "huàichu",
     "pinyinNumbered": "huai4 chu4",
     "english": "harm",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "抽烟有很多坏处，对身体不好。",
@@ -5177,7 +5177,7 @@
     "pinyin": "huānyíng",
     "pinyinNumbered": "huan1 ying2",
     "english": "invite",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "欢迎来我家玩。",
@@ -5199,7 +5199,7 @@
     "pinyin": "huáng",
     "pinyinNumbered": "huang2",
     "english": "Surname",
-    "partOfSpeech": "",
+    "partOfSpeech": "proper noun",
     "examples": [
       {
         "chinese": "我的同学黄明今天没有来上课。",
@@ -5221,7 +5221,7 @@
     "pinyin": "huàn",
     "pinyinNumbered": "huan4",
     "english": "adjourn",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们换一个时间见面吧。",
@@ -5243,7 +5243,7 @@
     "pinyin": "huángsè",
     "pinyinNumbered": "huang2 se4",
     "english": "chrome",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这辆车是黄色的，很容易看到。",
@@ -5265,7 +5265,7 @@
     "pinyin": "huí",
     "pinyinNumbered": "hui2",
     "english": "return",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我今天晚上会回家。",
@@ -5287,7 +5287,7 @@
     "pinyin": "huí guó",
     "pinyinNumbered": "hui2 guo2",
     "english": "return to one's country",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我下个月要回国看望父母。",
@@ -5309,7 +5309,7 @@
     "pinyin": "huì",
     "pinyinNumbered": "hui4",
     "english": "to be able",
-    "partOfSpeech": "",
+    "partOfSpeech": "auxiliary verb",
     "examples": [
       {
         "chinese": "我明天会去你家。",
@@ -5331,7 +5331,7 @@
     "pinyin": "huódong",
     "pinyinNumbered": "huo2 dong4",
     "english": "activity",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "周末我们去参加了一个有趣的活动。",
@@ -5353,7 +5353,7 @@
     "pinyin": "huò",
     "pinyinNumbered": "huo4",
     "english": "conj.: or",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "你想喝茶或者咖啡？",
@@ -5375,7 +5375,7 @@
     "pinyin": "huòzhě",
     "pinyinNumbered": "huo4 zhe3",
     "english": "conj.: or",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "你想喝茶或者咖啡？",
@@ -5397,7 +5397,7 @@
     "pinyin": "jī",
     "pinyinNumbered": "ji1",
     "english": "capercailzie",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我今天买了一只鸡来做晚餐。",
@@ -5419,7 +5419,7 @@
     "pinyin": "jīhui",
     "pinyinNumbered": "ji1 hui4",
     "english": "scouth",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这是一个很好的机会，你应该试试。",
@@ -5441,7 +5441,7 @@
     "pinyin": "jí",
     "pinyinNumbered": "ji2",
     "english": "level",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我现在是三级学生。",
@@ -5463,7 +5463,7 @@
     "pinyin": "jí",
     "pinyinNumbered": "ji2",
     "english": "rapid",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我很急，因为飞机马上要起飞了。",
@@ -5485,7 +5485,7 @@
     "pinyin": "jìhuà",
     "pinyinNumbered": "ji4 hua4",
     "english": "plan",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们明天有一个计划去公园。",
@@ -5507,7 +5507,7 @@
     "pinyin": "jìsuànjī",
     "pinyinNumbered": "ji4 suan4 ji1",
     "english": "computer",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天都在计算机上工作。",
@@ -5529,7 +5529,7 @@
     "pinyin": "jiā",
     "pinyinNumbered": "jia1",
     "english": "dramatise",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "他在讲故事时加了很多表情，让大家都笑了。",
@@ -5551,7 +5551,7 @@
     "pinyin": "jiā yóu",
     "pinyinNumbered": "jia1 you2",
     "english": "gas",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我的车没有汽油了，我需要去加油。",
@@ -5573,7 +5573,7 @@
     "pinyin": "jiā",
     "pinyinNumbered": "jia1",
     "english": "family",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的家在北京。",
@@ -5595,7 +5595,7 @@
     "pinyin": "jiātíng",
     "pinyinNumbered": "jia1 ting2",
     "english": "hearthstone",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的家庭很幸福，我爱我的父母。",
@@ -5617,7 +5617,7 @@
     "pinyin": "jiāzhǎng",
     "pinyinNumbered": "jia1 zhang3",
     "english": "masterman",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "学校召开了家长会，很多家长都来了。",
@@ -5639,7 +5639,7 @@
     "pinyin": "jiǎ",
     "pinyinNumbered": "jia3",
     "english": "false",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个包不是真的，是假的。",
@@ -5661,7 +5661,7 @@
     "pinyin": "jiàqī",
     "pinyinNumbered": "jia4 qi1",
     "english": "season",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "暑假期间，我们全家去了海边。",
@@ -5683,7 +5683,7 @@
     "pinyin": "jiǎnchá",
     "pinyinNumbered": "jian3 cha2",
     "english": "check",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "医生给我检查了身体。",
@@ -5705,7 +5705,7 @@
     "pinyin": "jiàn",
     "pinyinNumbered": "jian4",
     "english": "correspondence",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我收到了一件快递。",
@@ -5727,7 +5727,7 @@
     "pinyin": "jiànguò",
     "pinyinNumbered": "jian4 guo4",
     "english": "See",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我见过他一次，但不认识他。",
@@ -5749,7 +5749,7 @@
     "pinyin": "jiǎng",
     "pinyinNumbered": "jiang3",
     "english": "discourse",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "老师在课堂上讲了一个有趣的故事。",
@@ -5771,7 +5771,7 @@
     "pinyin": "jiàndào",
     "pinyinNumbered": "jian4 dao4",
     "english": "see",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我昨天在公园里见到了我的老朋友。",
@@ -5793,7 +5793,7 @@
     "pinyin": "jiànkāng",
     "pinyinNumbered": "jian4 kang1",
     "english": "healthy",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我想要保持健康，所以每天都去跑步。",
@@ -5815,7 +5815,7 @@
     "pinyin": "jiǎnghuà",
     "pinyinNumbered": "jiang3 hua4",
     "english": "parley",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "老师在课堂上讲话，我们都认真听。",
@@ -5837,7 +5837,7 @@
     "pinyin": "jiāo",
     "pinyinNumbered": "jiao1",
     "english": "associate with",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我在学校交了很多新朋友。",
@@ -5859,7 +5859,7 @@
     "pinyin": "jiāogěi",
     "pinyinNumbered": "jiao1 gei3",
     "english": "relinquish",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这个任务我交给你了，你能做好吗？",
@@ -5881,7 +5881,7 @@
     "pinyin": "jiāo péngyou",
     "pinyinNumbered": "jiao1 peng2 you3",
     "english": "to make friends",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我在学校交了很多朋友。",
@@ -5903,7 +5903,7 @@
     "pinyin": "jiāotōng",
     "pinyinNumbered": "jiao1 tong1",
     "english": "intercourse",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个城市的交通很方便。",
@@ -5925,7 +5925,7 @@
     "pinyin": "jiǎo",
     "pinyinNumbered": "jiao3",
     "english": "horn",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "那只山羊有两个长角。",
@@ -5947,7 +5947,7 @@
     "pinyin": "jiǎodù",
     "pinyinNumbered": "jiao3 du4",
     "english": "aspect",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "从另一个角度看，这个问题其实不难。",
@@ -5969,7 +5969,7 @@
     "pinyin": "jiǎozi",
     "pinyinNumbered": "jiao3 zi3",
     "english": "dumpling",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "妈妈今天做了很多饺子，我吃了十个。",
@@ -5991,7 +5991,7 @@
     "pinyin": "jiàozuò",
     "pinyinNumbered": "jiao4 zuo4",
     "english": "to call",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这种水果叫作芒果，很甜。",
@@ -6013,7 +6013,7 @@
     "pinyin": "jiàoshī",
     "pinyinNumbered": "jiao4 shi1",
     "english": "beak",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "鹦鹉的教师很尖锐。",
@@ -6035,7 +6035,7 @@
     "pinyin": "jiǎo",
     "pinyinNumbered": "jiao3",
     "english": "foot",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的脚很疼，不能走路。",
@@ -6057,7 +6057,7 @@
     "pinyin": "jiāo xué",
     "pinyinNumbered": "jiao4 xue2",
     "english": "teach and study",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们学校的教学质量很好。",
@@ -6079,7 +6079,7 @@
     "pinyin": "jiàoyù",
     "pinyinNumbered": "jiao4 yu4",
     "english": "education",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "良好的教育很重要。",
@@ -6101,7 +6101,7 @@
     "pinyin": "jiàoshì",
     "pinyinNumbered": "jiao4 shi4",
     "english": "classroom",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们的教室很大，有三十个学生。",
@@ -6123,7 +6123,7 @@
     "pinyin": "jiēdào",
     "pinyinNumbered": "jie1 dao4",
     "english": "welcome",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我在机场接到了我的朋友。",
@@ -6145,7 +6145,7 @@
     "pinyin": "jiēshòu",
     "pinyinNumbered": "jie1 shou4",
     "english": "receive (honors",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我很高兴接受这个奖。",
@@ -6167,7 +6167,7 @@
     "pinyin": "jiēxiàlái",
     "pinyinNumbered": "jie1 xia4 lai2",
     "english": "next",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "接下来我们去吃午饭吧。",
@@ -6189,7 +6189,7 @@
     "pinyin": "jiēzhe",
     "pinyinNumbered": "jie1 zhe0",
     "english": "next",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我先吃饭，接着去公园玩。",
@@ -6211,7 +6211,7 @@
     "pinyin": "jiē",
     "pinyinNumbered": "jie1",
     "english": "county fair",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "周末我喜欢和朋友去街上逛街。",
@@ -6233,7 +6233,7 @@
     "pinyin": "jié",
     "pinyinNumbered": "jie2",
     "english": "m.[event]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "今年春节我要回家和家人一起过。",
@@ -6255,7 +6255,7 @@
     "pinyin": "jiémù",
     "pinyinNumbered": "jie2 mu4",
     "english": "item",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天电视上有一个很有趣的节目。",
@@ -6277,7 +6277,7 @@
     "pinyin": "jiérì",
     "pinyinNumbered": "jie2 ri4",
     "english": "festival",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "春节是中国最重要的节日。",
@@ -6299,7 +6299,7 @@
     "pinyin": "jiē guǒ",
     "pinyinNumbered": "jie2 guo3",
     "english": "result",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我学了很久，结果考试还是没有及格。",
@@ -6321,7 +6321,7 @@
     "pinyin": "jīn",
     "pinyinNumbered": "jin1",
     "english": "m.[standard]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "这个苹果重两斤。",
@@ -6343,7 +6343,7 @@
     "pinyin": "jiē",
     "pinyinNumbered": "jie1",
     "english": "to receive",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我去机场接我的朋友。",
@@ -6365,7 +6365,7 @@
     "pinyin": "jiè",
     "pinyinNumbered": "jie4",
     "english": "lend",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你能借我一点钱吗？",
@@ -6387,7 +6387,7 @@
     "pinyin": "jìnrù",
     "pinyinNumbered": "jin4 ru4",
     "english": "go_into",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们进入教室后，老师开始上课。",
@@ -6409,7 +6409,7 @@
     "pinyin": "jīnhòu",
     "pinyinNumbered": "jin1 hou4",
     "english": "hereafter",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "今后我要更加努力学习。",
@@ -6431,7 +6431,7 @@
     "pinyin": "jìnxíng",
     "pinyinNumbered": "jin4 xing2",
     "english": "be in progress",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "他们正在进行一场足球比赛。",
@@ -6453,7 +6453,7 @@
     "pinyin": "jīngcháng",
     "pinyinNumbered": "jing1 chang2",
     "english": "everyday",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我经常喝咖啡。",
@@ -6475,7 +6475,7 @@
     "pinyin": "jīngguò",
     "pinyinNumbered": "jing1 guo4",
     "english": "pass",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "我每天经过这家咖啡店去上班。",
@@ -6497,7 +6497,7 @@
     "pinyin": "jìn",
     "pinyinNumbered": "jin4",
     "english": "almost",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "现在已经近晚上六点了，我们该回家了。",
@@ -6519,7 +6519,7 @@
     "pinyin": "jīnglǐ",
     "pinyinNumbered": "jing1 li3",
     "english": "amaldar",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们的经理很友好，总是帮助我们。",
@@ -6541,7 +6541,7 @@
     "pinyin": "jiǔdiàn",
     "pinyinNumbered": "jiu3 dian4",
     "english": "wineshop",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这家酒店很便宜，我很喜欢。",
@@ -6563,7 +6563,7 @@
     "pinyin": "jiùyào",
     "pinyinNumbered": "jiu4 yao4",
     "english": "will",
-    "partOfSpeech": "",
+    "partOfSpeech": "auxiliary verb",
     "examples": [
       {
         "chinese": "明天就要下雨了，我们不能去公园。",
@@ -6585,7 +6585,7 @@
     "pinyin": "jiǔ",
     "pinyinNumbered": "jiu3",
     "english": "libation",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他喜欢喝一点酒。",
@@ -6607,7 +6607,7 @@
     "pinyin": "jǔ shǒu",
     "pinyinNumbered": "ju3 shou3",
     "english": "raise one's hand",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "老师问问题时，我举手回答。",
@@ -6629,7 +6629,7 @@
     "pinyin": "jǔxíng",
     "pinyinNumbered": "ju3 xing2",
     "english": "hold (meeting/etc.)",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "学校明天举行运动会。",
@@ -6651,7 +6651,7 @@
     "pinyin": "jǔ",
     "pinyinNumbered": "ju3",
     "english": "lift",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "他举起手来问老师问题。",
@@ -6673,7 +6673,7 @@
     "pinyin": "jùzi",
     "pinyinNumbered": "ju4 zi0",
     "english": "sentence",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个句子太长了，我看不懂。",
@@ -6695,7 +6695,7 @@
     "pinyin": "kǎ",
     "pinyinNumbered": "ka3",
     "english": "to stop",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我的钥匙卡在门里了。",
@@ -6717,7 +6717,7 @@
     "pinyin": "kāi jī",
     "pinyinNumbered": "kai1 ji1",
     "english": "to start an engine",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天早上都要开机才能工作。",
@@ -6739,7 +6739,7 @@
     "pinyin": "jù",
     "pinyinNumbered": "ju4",
     "english": "sentence",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "这句话我不太明白。",
@@ -6761,7 +6761,7 @@
     "pinyin": "kànfa",
     "pinyinNumbered": "kan4 fa3",
     "english": "side",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我和你的看法不一样。",
@@ -6783,7 +6783,7 @@
     "pinyin": "kāi xīn",
     "pinyinNumbered": "kai1 xin1",
     "english": "feel happy",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "今天天气很好，我很开心。",
@@ -6805,7 +6805,7 @@
     "pinyin": "kǎoshēng",
     "pinyinNumbered": "kao3 sheng1",
     "english": "candidate for an entrance examination",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "明天有很多考生要参加考试。",
@@ -6827,7 +6827,7 @@
     "pinyin": "kào",
     "pinyinNumbered": "kao4",
     "english": "depend/rely on",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我靠爸爸的帮助才完成了这个项目。",
@@ -6849,7 +6849,7 @@
     "pinyin": "kāi xué",
     "pinyinNumbered": "kai1 xue2",
     "english": "start school",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "九月一号我们就要开学了。",
@@ -6871,7 +6871,7 @@
     "pinyin": "kē",
     "pinyinNumbered": "ke1",
     "english": "department",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我在医院的内科工作。",
@@ -6893,7 +6893,7 @@
     "pinyin": "kēxué",
     "pinyinNumbered": "ke1 xue2",
     "english": "ology",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢科学课，因为很有趣。",
@@ -6915,7 +6915,7 @@
     "pinyin": "kěài",
     "pinyinNumbered": "ke3 ai4",
     "english": "lovable",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这只小狗很可爱，我喜欢它。",
@@ -6937,7 +6937,7 @@
     "pinyin": "kěpà",
     "pinyinNumbered": "ke3 pa4",
     "english": "fearful",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个电影很可怕，我不敢看。",
@@ -6959,7 +6959,7 @@
     "pinyin": "kěshì",
     "pinyinNumbered": "ke3 shi4",
     "english": "conj.: but",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "我很想去公园，可是今天下雨了。",
@@ -6981,7 +6981,7 @@
     "pinyin": "kěnéng",
     "pinyinNumbered": "ke3 neng2",
     "english": "probably",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "明天可能会下雨，我们带伞吧。",
@@ -7003,7 +7003,7 @@
     "pinyin": "kè",
     "pinyinNumbered": "ke4",
     "english": "to be able to",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "只要努力，你就能克服困难。",
@@ -7025,7 +7025,7 @@
     "pinyin": "kěyǐ",
     "pinyinNumbered": "ke3 yi3",
     "english": "can",
-    "partOfSpeech": "",
+    "partOfSpeech": "auxiliary verb",
     "examples": [
       {
         "chinese": "你可以喝一杯茶吗？",
@@ -7047,7 +7047,7 @@
     "pinyin": "kè",
     "pinyinNumbered": "ke4",
     "english": "m.[standard]",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们每刻都在学习新的东西。",
@@ -7069,7 +7069,7 @@
     "pinyin": "kètáng",
     "pinyinNumbered": "ke4 tang2",
     "english": "classroom",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天课堂上老师教了我们新单词。",
@@ -7091,7 +7091,7 @@
     "pinyin": "kōngqì",
     "pinyinNumbered": "kong1 qi4",
     "english": "air",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天的空气很好，我们去公园走走吧。",
@@ -7113,7 +7113,7 @@
     "pinyin": "kuàicān",
     "pinyinNumbered": "kuai4 can1",
     "english": "fast food",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢吃快餐，但是妈妈说快餐不健康。",
@@ -7135,7 +7135,7 @@
     "pinyin": "kuàidiǎnr5",
     "pinyinNumbered": "kuai4 dian3 er2",
     "english": "to do sth more quickly",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我们快点儿走，不然会迟到。",
@@ -7157,7 +7157,7 @@
     "pinyin": "kèren",
     "pinyinNumbered": "ke4 ren2",
     "english": "stranger",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "妈妈在厨房准备饭，因为今天有客人来。",
@@ -7179,7 +7179,7 @@
     "pinyin": "kuàilè",
     "pinyinNumbered": "kuai4 le4",
     "english": "happy",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "和家人一起吃饭的时候，我感到很快乐。",
@@ -7201,7 +7201,7 @@
     "pinyin": "kuàiyào",
     "pinyinNumbered": "kuai4 yao4",
     "english": "almost",
-    "partOfSpeech": "",
+    "partOfSpeech": "auxiliary verb",
     "examples": [
       {
         "chinese": "天快要下雨了，我们快点回家吧。",
@@ -7223,7 +7223,7 @@
     "pinyin": "kū",
     "pinyinNumbered": "ku1",
     "english": "greet",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "她看到这个悲伤的电影，忍不住哭了。",
@@ -7245,7 +7245,7 @@
     "pinyin": "kuàizi",
     "pinyinNumbered": "kuai4 zi0",
     "english": "chopsticks",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我用筷子吃饭。",
@@ -7267,7 +7267,7 @@
     "pinyin": "láizì",
     "pinyinNumbered": "lai2 zi4",
     "english": "come from",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "这个苹果来自中国。",
@@ -7289,7 +7289,7 @@
     "pinyin": "lā",
     "pinyinNumbered": "la1",
     "english": "slit",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "她的裙子上有一条拉链坏了。",
@@ -7311,7 +7311,7 @@
     "pinyin": "lán",
     "pinyinNumbered": "lan2",
     "english": "blue",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我喜欢这件蓝色的T恤。",
@@ -7333,7 +7333,7 @@
     "pinyin": "lánsè",
     "pinyinNumbered": "lan2 se4",
     "english": "blue",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我喜欢穿蓝色的衣服。",
@@ -7355,7 +7355,7 @@
     "pinyin": "lánqiú",
     "pinyinNumbered": "lan2 qiu2",
     "english": "basketball",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢和朋友一起打篮球。",
@@ -7377,7 +7377,7 @@
     "pinyin": "lǎonián",
     "pinyinNumbered": "lao3 nian2",
     "english": "senescence",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的奶奶现在已经进入老年了。",
@@ -7399,7 +7399,7 @@
     "pinyin": "lǎopéngyou",
     "pinyinNumbered": "lao3 peng2 you3",
     "english": "old friend",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他是我的老朋友，我们一起长大。",
@@ -7421,7 +7421,7 @@
     "pinyin": "lí",
     "pinyinNumbered": "li2",
     "english": "distant/apart from",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "我家离学校很近。",
@@ -7443,7 +7443,7 @@
     "pinyin": "lǎo",
     "pinyinNumbered": "lao3",
     "english": "old",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我的老师很有耐心。",
@@ -7465,7 +7465,7 @@
     "pinyin": "lǎoshi",
     "pinyinNumbered": "lao3 shi4",
     "english": "always",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "他老是迟到，今天又迟到了。",
@@ -7487,7 +7487,7 @@
     "pinyin": "lí kāi",
     "pinyinNumbered": "li2 kai1",
     "english": "leave",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我明天要离开这个城市。",
@@ -7509,7 +7509,7 @@
     "pinyin": "lǐtou",
     "pinyinNumbered": "li3 tou0",
     "english": "inside",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个盒子里头有什么？",
@@ -7531,7 +7531,7 @@
     "pinyin": "lǐxiǎng",
     "pinyinNumbered": "li3 xiang3",
     "english": "ideal",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的理想是成为一名老师。",
@@ -7553,7 +7553,7 @@
     "pinyin": "lǐwù",
     "pinyinNumbered": "li3 wu4",
     "english": "tribute",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我给妈妈买了一个礼物。",
@@ -7575,7 +7575,7 @@
     "pinyin": "lìrú",
     "pinyinNumbered": "li4 ru2",
     "english": "for instance/example",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "我喜欢很多水果，例如苹果、香蕉和橙子。",
@@ -7597,7 +7597,7 @@
     "pinyin": "lìzi",
     "pinyinNumbered": "li4 zi3",
     "english": "exemplification",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "你能给我举一个例子吗？",
@@ -7619,7 +7619,7 @@
     "pinyin": "liǎn",
     "pinyinNumbered": "lian3",
     "english": "map",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他的脸很红。",
@@ -7641,7 +7641,7 @@
     "pinyin": "liànxí",
     "pinyinNumbered": "lian4 xi2",
     "english": "practice",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天都要练习说中文。",
@@ -7663,7 +7663,7 @@
     "pinyin": "liàn",
     "pinyinNumbered": "lian4",
     "english": "practice",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天练习英语半小时。",
@@ -7685,7 +7685,7 @@
     "pinyin": "liáng",
     "pinyinNumbered": "liang2",
     "english": "cool",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "今天天气很凉，我穿上了厚衣服。",
@@ -7707,7 +7707,7 @@
     "pinyin": "liángkuai",
     "pinyinNumbered": "liang2 kuai0",
     "english": "nice and cold",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "夏天喝冰水很凉快。",
@@ -7729,7 +7729,7 @@
     "pinyin": "liàng",
     "pinyinNumbered": "liang4",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我家有两辆车。",
@@ -7751,7 +7751,7 @@
     "pinyin": "liàng",
     "pinyinNumbered": "liang4",
     "english": "bright",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个房间很亮，阳光从窗户照进来。",
@@ -7773,7 +7773,7 @@
     "pinyin": "língxià",
     "pinyinNumbered": "ling2 xia4",
     "english": "below zero",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "冬天的时候温度零下十度，很冷。",
@@ -7795,7 +7795,7 @@
     "pinyin": "liǎng",
     "pinyinNumbered": "liang3",
     "english": "det.: two",
-    "partOfSpeech": "",
+    "partOfSpeech": "numeral",
     "examples": [
       {
         "chinese": "我有两个朋友在北京。",
@@ -7817,7 +7817,7 @@
     "pinyin": "liú xià",
     "pinyinNumbered": "liu2 xia4",
     "english": "stay",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你可以在我家留下来吃饭。",
@@ -7839,7 +7839,7 @@
     "pinyin": "liú",
     "pinyinNumbered": "liu2",
     "english": "continue",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你想留在这里吃饭吗？",
@@ -7861,7 +7861,7 @@
     "pinyin": "liúxuéshēng",
     "pinyinNumbered": "liu2 xue2 sheng1",
     "english": "student studying abroad",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的朋友是一个留学生，他来自日本。",
@@ -7883,7 +7883,7 @@
     "pinyin": "liúlì",
     "pinyinNumbered": "liu2 li4",
     "english": "fluent",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "她说英语说得很流利。",
@@ -7905,7 +7905,7 @@
     "pinyin": "liú",
     "pinyinNumbered": "liu2",
     "english": "spread",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这个视频在网上流传得很快。",
@@ -7927,7 +7927,7 @@
     "pinyin": "liúxíng",
     "pinyinNumbered": "liu2 xing2",
     "english": "prevalent",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "现在很多年轻人都喜欢穿这种流行的衣服。",
@@ -7949,7 +7949,7 @@
     "pinyin": "lǚkè",
     "pinyinNumbered": "lü3 ke4",
     "english": "journeyer",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "火车站有很多旅客在等车。",
@@ -7971,7 +7971,7 @@
     "pinyin": "lǚxíng",
     "pinyinNumbered": "lü3 xing2",
     "english": "travel",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我今年想去日本旅行。",
@@ -7993,7 +7993,7 @@
     "pinyin": "lǜ",
     "pinyinNumbered": "lü4",
     "english": "green",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我喜欢穿绿色的衣服。",
@@ -8015,7 +8015,7 @@
     "pinyin": "lǜsè",
     "pinyinNumbered": "lü4 se4",
     "english": "verdure",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我喜欢穿绿色的衣服。",
@@ -8037,7 +8037,7 @@
     "pinyin": "lùbiān",
     "pinyinNumbered": "lu4 bian1",
     "english": "curb",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我在路边的咖啡店喝了一杯咖啡。",
@@ -8059,7 +8059,7 @@
     "pinyin": "mài",
     "pinyinNumbered": "mai4",
     "english": "bring",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我妈妈在市场卖水果。",
@@ -8081,7 +8081,7 @@
     "pinyin": "lǚyóu",
     "pinyinNumbered": "lü3 you2",
     "english": "trip",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我今年想去日本旅游。",
@@ -8103,7 +8103,7 @@
     "pinyin": "mǎnyì",
     "pinyinNumbered": "man3 yi4",
     "english": "satisfy",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我对这个礼物很满意。",
@@ -8125,7 +8125,7 @@
     "pinyin": "māo",
     "pinyinNumbered": "mao1",
     "english": "pussycat",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我家里有一只黑色的猫。",
@@ -8147,7 +8147,7 @@
     "pinyin": "mǐ",
     "pinyinNumbered": "mi3",
     "english": "rice",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天都吃米饭。",
@@ -8169,7 +8169,7 @@
     "pinyin": "miàn",
     "pinyinNumbered": "mian4",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢吃面条。",
@@ -8191,7 +8191,7 @@
     "pinyin": "miànqián",
     "pinyinNumbered": "mian4 qian2",
     "english": "in_front",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "在我面前有一杯茶。",
@@ -8213,7 +8213,7 @@
     "pinyin": "míngchēng",
     "pinyinNumbered": "ming2 cheng1",
     "english": "title",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个公司的名称是什么？",
@@ -8235,7 +8235,7 @@
     "pinyin": "míng",
     "pinyinNumbered": "ming2",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他是一个很有名的演员。",
@@ -8257,7 +8257,7 @@
     "pinyin": "míngdān",
     "pinyinNumbered": "ming2 dan1",
     "english": "checklist",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "老师把学生名单写在黑板上。",
@@ -8279,7 +8279,7 @@
     "pinyin": "mǎn",
     "pinyinNumbered": "man3",
     "english": "det.: entirely",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个杯子满了，不能再倒了。",
@@ -8301,7 +8301,7 @@
     "pinyin": "mùdì",
     "pinyinNumbered": "mu4 di4",
     "english": "view",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我学习英语的目的是为了找到更好的工作。",
@@ -8323,7 +8323,7 @@
     "pinyin": "nádào",
     "pinyinNumbered": "na2 dao4",
     "english": "take",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我终于拿到了我的护照。",
@@ -8345,7 +8345,7 @@
     "pinyin": "náchū",
     "pinyinNumbered": "na2 chu1",
     "english": "ante",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "他从包里拿出了一个苹果。",
@@ -8367,7 +8367,7 @@
     "pinyin": "nà",
     "pinyinNumbered": "na4",
     "english": "det.: that",
-    "partOfSpeech": "",
+    "partOfSpeech": "pronoun",
     "examples": [
       {
         "chinese": "那个电影很好看。",
@@ -8389,7 +8389,7 @@
     "pinyin": "nàhuìr5",
     "pinyinNumbered": "na4 hui4 er0",
     "english": "Then",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "那会儿我还在上大学，每天都很忙。",
@@ -8411,7 +8411,7 @@
     "pinyin": "nàme",
     "pinyinNumbered": "na4 me0",
     "english": "so",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "你不想去，那么我就自己去。",
@@ -8433,7 +8433,7 @@
     "pinyin": "nà shíhou",
     "pinyinNumbered": "na4 shi2 hou4",
     "english": "at that time",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "那时候我还在上学，每天都很忙。",
@@ -8455,7 +8455,7 @@
     "pinyin": "míngxīng",
     "pinyinNumbered": "ming2 xing1",
     "english": "headliner",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我最喜欢的明星是周杰伦。",
@@ -8477,7 +8477,7 @@
     "pinyin": "nàyàng",
     "pinyinNumbered": "na4 yang4",
     "english": "that kind of",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我不喜欢那样的天气。",
@@ -8499,7 +8499,7 @@
     "pinyin": "nánfāng",
     "pinyinNumbered": "nan2 fang1",
     "english": "S",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的家在南方，那里很温暖。",
@@ -8521,7 +8521,7 @@
     "pinyin": "nánguò",
     "pinyinNumbered": "nan2 guo4",
     "english": "uncomfortable",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "他听到这个消息很难过。",
@@ -8543,7 +8543,7 @@
     "pinyin": "nánkàn",
     "pinyinNumbered": "nan2 kan4",
     "english": "ugly",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这件衣服的颜色太难看了。",
@@ -8565,7 +8565,7 @@
     "pinyin": "nánshòu",
     "pinyinNumbered": "nan2 shou4",
     "english": "to feel unwell",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我昨天吃坏了肚子，今天感到很难受。",
@@ -8587,7 +8587,7 @@
     "pinyin": "nántīng",
     "pinyinNumbered": "nan2 ting1",
     "english": "unpleasant to hear",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个歌手的声音很难听。",
@@ -8609,7 +8609,7 @@
     "pinyin": "nénggòu",
     "pinyinNumbered": "neng2 gou4",
     "english": "can",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "通过努力学习，你能够说好中文。",
@@ -8631,7 +8631,7 @@
     "pinyin": "niánjí",
     "pinyinNumbered": "nian2 ji2",
     "english": "grade",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我女儿现在上三年级。",
@@ -8653,7 +8653,7 @@
     "pinyin": "nántí",
     "pinyinNumbered": "nan2 ti2",
     "english": "problem",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个数学难题很难解决。",
@@ -8675,7 +8675,7 @@
     "pinyin": "niánqīng",
     "pinyinNumbered": "nian2 qing1",
     "english": "junior",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我的哥哥还很年轻，今年只有二十五岁。",
@@ -8697,7 +8697,7 @@
     "pinyin": "niǎo",
     "pinyinNumbered": "niao3",
     "english": "beak",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "窗外有一只小鸟在唱歌。",
@@ -8719,7 +8719,7 @@
     "pinyin": "nòng",
     "pinyinNumbered": "nong4",
     "english": "play with",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "小孩子喜欢弄玩具。",
@@ -8741,7 +8741,7 @@
     "pinyin": "nǔlì",
     "pinyinNumbered": "nu3 li4",
     "english": "make great effort",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天都很努力学习中文。",
@@ -8763,7 +8763,7 @@
     "pinyin": "páshān",
     "pinyinNumbered": "pa2 shan1",
     "english": "mountaineer",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "周末我喜欢和朋友一起去爬山。",
@@ -8785,7 +8785,7 @@
     "pinyin": "pái",
     "pinyinNumbered": "pai2",
     "english": "stand in line",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们在银行门口排队等了很久。",
@@ -8807,7 +8807,7 @@
     "pinyin": "pái duì",
     "pinyinNumbered": "pai2 dui4",
     "english": "stand in line",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们每天都要排队买午餐。",
@@ -8829,7 +8829,7 @@
     "pinyin": "pà",
     "pinyinNumbered": "pa4",
     "english": "I'm afraid",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我怕冷，所以我穿了很多衣服。",
@@ -8851,7 +8851,7 @@
     "pinyin": "páiqiú",
     "pinyinNumbered": "pai2 qiu2",
     "english": "volleyball",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢和朋友一起打排球。",
@@ -8873,7 +8873,7 @@
     "pinyin": "pèng",
     "pinyinNumbered": "peng4",
     "english": "explore",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我想去公园碰碰运气，看能不能找到我丢失的钥匙。",
@@ -8895,7 +8895,7 @@
     "pinyin": "pá",
     "pinyinNumbered": "pa2",
     "english": "swarm",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "蚂蚁在爬向食物。",
@@ -8917,7 +8917,7 @@
     "pinyin": "pèngdào",
     "pinyinNumbered": "peng4 dao4",
     "english": "come across",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我在超市里碰到了我的朋友。",
@@ -8939,7 +8939,7 @@
     "pinyin": "pèng jian",
     "pinyinNumbered": "peng4 jian4",
     "english": "to run into",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我昨天在超市碰见了我的老朋友。",
@@ -8961,7 +8961,7 @@
     "pinyin": "piān",
     "pinyinNumbered": "pian1",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我今天读了一篇有趣的故事。",
@@ -8983,7 +8983,7 @@
     "pinyin": "piàn",
     "pinyinNumbered": "pian4",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我买了一片面包。",
@@ -9005,7 +9005,7 @@
     "pinyin": "biànyí",
     "pinyinNumbered": "pian2 yi0",
     "english": "cheap",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这件衣服很便宜，只要五十块钱。",
@@ -9027,7 +9027,7 @@
     "pinyin": "píngān",
     "pinyinNumbered": "ping2 an1",
     "english": "safe and sound",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我希望你旅行时一切平安。",
@@ -9049,7 +9049,7 @@
     "pinyin": "píng",
     "pinyinNumbered": "ping2",
     "english": "flat",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这张桌子很平，适合放东西。",
@@ -9071,7 +9071,7 @@
     "pinyin": "piàoliang",
     "pinyinNumbered": "piao4 liang0",
     "english": "posh",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个房间很漂亮，我很喜欢。",
@@ -9093,7 +9093,7 @@
     "pinyin": "píngshí",
     "pinyinNumbered": "ping2 shi2",
     "english": "ordinarily",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我平时喜欢看书和听音乐。",
@@ -9115,7 +9115,7 @@
     "pinyin": "píngcháng",
     "pinyinNumbered": "ping2 chang2",
     "english": "ordinary",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我平常喜欢在家里看书。",
@@ -9137,7 +9137,7 @@
     "pinyin": "píngzi",
     "pinyinNumbered": "ping2 zi0",
     "english": "bottle",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个瓶子里有水。",
@@ -9159,7 +9159,7 @@
     "pinyin": "píngděng",
     "pinyinNumbered": "ping2 deng3",
     "english": "equal",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "在学校里，所有的学生都应该得到平等的对待。",
@@ -9181,7 +9181,7 @@
     "pinyin": "píng",
     "pinyinNumbered": "ping2",
     "english": "cruse",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我买了一瓶水。",
@@ -9203,7 +9203,7 @@
     "pinyin": "pǔtōnghuà",
     "pinyinNumbered": "pu3 tong1 hua4",
     "english": "Mandarin (common language)",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我在学校学习普通话。",
@@ -9225,7 +9225,7 @@
     "pinyin": "qízhōng",
     "pinyinNumbered": "qi2 zhong1",
     "english": "among",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "我有三个朋友,其中两个是老师。",
@@ -9247,7 +9247,7 @@
     "pinyin": "pǔtōng",
     "pinyinNumbered": "pu3 tong1",
     "english": "ordinary",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这是一个很普通的问题。",
@@ -9269,7 +9269,7 @@
     "pinyin": "qítā",
     "pinyinNumbered": "qi2 ta1",
     "english": "det.: others",
-    "partOfSpeech": "",
+    "partOfSpeech": "pronoun",
     "examples": [
       {
         "chinese": "我喜欢苹果，其他水果我不太吃。",
@@ -9291,7 +9291,7 @@
     "pinyin": "qíchē",
     "pinyinNumbered": "qi2 che1",
     "english": "to cycle",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天骑车去上班。",
@@ -9313,7 +9313,7 @@
     "pinyin": "qǐfēi",
     "pinyinNumbered": "qi3 fei1",
     "english": "take off (of planes/etc.)",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "飞机马上要起飞了，请坐好。",
@@ -9335,7 +9335,7 @@
     "pinyin": "qì",
     "pinyinNumbered": "qi4",
     "english": "air",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天天气真好，我们一起去公园吧。",
@@ -9357,7 +9357,7 @@
     "pinyin": "qí",
     "pinyinNumbered": "qi2",
     "english": "ride/sit astride",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天骑自行车去上班。",
@@ -9379,7 +9379,7 @@
     "pinyin": "qiān",
     "pinyinNumbered": "qian1",
     "english": "det.: thousand",
-    "partOfSpeech": "",
+    "partOfSpeech": "numeral",
     "examples": [
       {
         "chinese": "这件衣服要花一千块钱。",
@@ -9401,7 +9401,7 @@
     "pinyin": "qìwēn",
     "pinyinNumbered": "qi4 wen1",
     "english": "atmospheric temperature",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天的气温很高，我们都很热。",
@@ -9423,7 +9423,7 @@
     "pinyin": "qiānkè",
     "pinyinNumbered": "qian1 ke4",
     "english": "kilogram",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "这个西瓜重五千克。",
@@ -9445,7 +9445,7 @@
     "pinyin": "qiánnián",
     "pinyinNumbered": "qian2 nian2",
     "english": "the year before last",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "前年我去了北京旅游，今年我想去上海。",
@@ -9467,7 +9467,7 @@
     "pinyin": "qiáng",
     "pinyinNumbered": "qiang2",
     "english": "wall",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这面墙是白色的。",
@@ -9489,7 +9489,7 @@
     "pinyin": "qīngshàonián",
     "pinyinNumbered": "qing1 shao4 nian2",
     "english": "adolescent",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "很多青少年喜欢玩手机。",
@@ -9511,7 +9511,7 @@
     "pinyin": "qīng",
     "pinyinNumbered": "qing1",
     "english": "light",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个包很轻，我可以拿。",
@@ -9533,7 +9533,7 @@
     "pinyin": "qīngnián",
     "pinyinNumbered": "qing1 nian2",
     "english": "young people",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "很多青年喜欢在网上看电影。",
@@ -9555,7 +9555,7 @@
     "pinyin": "qīngchu",
     "pinyinNumbered": "qing1 chu3",
     "english": "clear",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "请你说清楚，你想吃什么？",
@@ -9577,7 +9577,7 @@
     "pinyin": "qíngtiān",
     "pinyinNumbered": "qing2 tian1",
     "english": "clear sky",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天是晴天，我们去公园玩吧。",
@@ -9599,7 +9599,7 @@
     "pinyin": "qǐng kè",
     "pinyinNumbered": "qing3 ke4",
     "english": "to give a dinner party",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "今天我请客，我们去吃烤鸭吧。",
@@ -9621,7 +9621,7 @@
     "pinyin": "qíng",
     "pinyinNumbered": "qing2",
     "english": "clear",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "今天天气很晴，我们去公园玩吧。",
@@ -9643,7 +9643,7 @@
     "pinyin": "qǐngqiú",
     "pinyinNumbered": "qing3 qiu2",
     "english": "ask",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "他请求老师给他延长作业的时间。",
@@ -9665,7 +9665,7 @@
     "pinyin": "qiúchǎng",
     "pinyinNumbered": "qiu2 chang3",
     "english": "playing_field",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们周末经常去球场打篮球。",
@@ -9687,7 +9687,7 @@
     "pinyin": "qiú",
     "pinyinNumbered": "qiu2",
     "english": "seek",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我求你帮我一个忙。",
@@ -9709,7 +9709,7 @@
     "pinyin": "qiúduì",
     "pinyinNumbered": "qiu2 dui4",
     "english": "side",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们球队今天赢了比赛。",
@@ -9731,7 +9731,7 @@
     "pinyin": "qǔ",
     "pinyinNumbered": "qu3",
     "english": "have",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我去图书馆取书。",
@@ -9753,7 +9753,7 @@
     "pinyin": "qiúxié",
     "pinyinNumbered": "qiu2 xie2",
     "english": "athletic shoes",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的新球鞋很舒服。",
@@ -9775,7 +9775,7 @@
     "pinyin": "qiūtiān",
     "pinyinNumbered": "qiu1 tian1",
     "english": "autumn",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "秋天到了，树叶变黄了。",
@@ -9797,7 +9797,7 @@
     "pinyin": "quán",
     "pinyinNumbered": "quan2",
     "english": "det.: all",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我全部的钱都在这个钱包里。",
@@ -9819,7 +9819,7 @@
     "pinyin": "qǔdé",
     "pinyinNumbered": "qu3 de2",
     "english": "gain",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "他通过努力学习取得了很好的成绩。",
@@ -9841,7 +9841,7 @@
     "pinyin": "quánbù",
     "pinyinNumbered": "quan2 bu4",
     "english": "lot",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我的朋友全部都来了。",
@@ -9863,7 +9863,7 @@
     "pinyin": "quánjiā",
     "pinyinNumbered": "quan2 jia1",
     "english": "whole family",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "周末全家人一起去公园玩。",
@@ -9885,7 +9885,7 @@
     "pinyin": "quánnián",
     "pinyinNumbered": "quan2 nian2",
     "english": "the whole year",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们全年都在这个公司工作。",
@@ -9907,7 +9907,7 @@
     "pinyin": "quánshēn",
     "pinyinNumbered": "quan2 shen1",
     "english": "mutton",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢吃羊肉，特别是全身的羊肉。",
@@ -9929,7 +9929,7 @@
     "pinyin": "quántǐ",
     "pinyinNumbered": "quan2 ti3",
     "english": "great",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "全体员工都很高兴。",
@@ -9951,7 +9951,7 @@
     "pinyin": "quánguó",
     "pinyinNumbered": "quan2 guo2",
     "english": "whole nation",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个产品在全国都能买到。",
@@ -9973,7 +9973,7 @@
     "pinyin": "rèqíng",
     "pinyinNumbered": "re4 qing2",
     "english": "enthusiastic",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "他很热情，总是帮助别人。",
@@ -9995,7 +9995,7 @@
     "pinyin": "ràng",
     "pinyinNumbered": "rang4",
     "english": "allow",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "请让一下，我要进去。",
@@ -10017,7 +10017,7 @@
     "pinyin": "rénmen",
     "pinyinNumbered": "ren2 men0",
     "english": "workforce",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "人们都很喜欢在周末去公园。",
@@ -10039,7 +10039,7 @@
     "pinyin": "rénkǒu",
     "pinyinNumbered": "ren2 kou3",
     "english": "population",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "中国的人口很多。",
@@ -10061,7 +10061,7 @@
     "pinyin": "rénshù",
     "pinyinNumbered": "ren2 shu4",
     "english": "number of people",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个班的人数不太多，只有二十个学生。",
@@ -10083,7 +10083,7 @@
     "pinyin": "ránhòu",
     "pinyinNumbered": "ran2 hou4",
     "english": "therewith",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "我先吃早饭，然后去上班。",
@@ -10105,7 +10105,7 @@
     "pinyin": "rènwéi",
     "pinyinNumbered": "ren4 wei2",
     "english": "find",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我认为这个主意很好。",
@@ -10127,7 +10127,7 @@
     "pinyin": "rìzi",
     "pinyinNumbered": "ri4 zi0",
     "english": "yom",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "最近的日子过得很快。",
@@ -10149,7 +10149,7 @@
     "pinyin": "rìbào",
     "pinyinNumbered": "ri4 bao4",
     "english": "daily newspaper",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天早上都会看日报。",
@@ -10171,7 +10171,7 @@
     "pinyin": "rù kǒu",
     "pinyinNumbered": "ru4 kou3",
     "english": "adit",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "超市的入口在左边。",
@@ -10193,7 +10193,7 @@
     "pinyin": "rúguǒ",
     "pinyinNumbered": "ru2 guo3",
     "english": "conj.: if",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "如果你明天有时间，我们可以一起去公园。",
@@ -10215,7 +10215,7 @@
     "pinyin": "shāngliang",
     "pinyinNumbered": "shang1 liang2",
     "english": "talk",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们一起商量一下周末去哪里玩。",
@@ -10237,7 +10237,7 @@
     "pinyin": "shāngrén",
     "pinyinNumbered": "shang1 ren2",
     "english": "merchandiser",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "那个商人每天都在市场里卖东西。",
@@ -10259,7 +10259,7 @@
     "pinyin": "shàngzhōu",
     "pinyinNumbered": "shang4 zhou1",
     "english": "last week",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "上周我去了公园，天气很好。",
@@ -10281,7 +10281,7 @@
     "pinyin": "shēnbiān",
     "pinyinNumbered": "shen1 bian1",
     "english": "nearby",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的朋友就在我身边。",
@@ -10303,7 +10303,7 @@
     "pinyin": "shàonián",
     "pinyinNumbered": "shao4 nian2",
     "english": "nipper",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "那个少年很喜欢踢足球。",
@@ -10325,7 +10325,7 @@
     "pinyin": "shǎoshù",
     "pinyinNumbered": "shao3 shu4",
     "english": "det.: a few",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "只有少数人喜欢吃辣的食物。",
@@ -10347,7 +10347,7 @@
     "pinyin": "shénmeyàng",
     "pinyinNumbered": "shen2 me0 yang4",
     "english": "what kind?",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "你喜欢什么样的音乐？",
@@ -10369,7 +10369,7 @@
     "pinyin": "shēng",
     "pinyinNumbered": "sheng1",
     "english": "give birth to",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "她去年生了一个女儿。",
@@ -10391,7 +10391,7 @@
     "pinyin": "shēngcí",
     "pinyinNumbered": "sheng1 ci2",
     "english": "new word (in textbook)",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这课有五个生词，我都记住了。",
@@ -10413,7 +10413,7 @@
     "pinyin": "shēngyīn",
     "pinyinNumbered": "sheng1 yin1",
     "english": "voice",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "你的声音很好听。",
@@ -10435,7 +10435,7 @@
     "pinyin": "shífēn",
     "pinyinNumbered": "shi2 fen1",
     "english": "very",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个电影十分有趣，我很喜欢。",
@@ -10457,7 +10457,7 @@
     "pinyin": "shēnghuó",
     "pinyinNumbered": "sheng1 huo2",
     "english": "life",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的生活很简单，每天上班、吃饭、睡觉。",
@@ -10479,7 +10479,7 @@
     "pinyin": "shíxí",
     "pinyinNumbered": "shi2 xi2",
     "english": "practice",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我今年夏天要去一家公司实习。",
@@ -10501,7 +10501,7 @@
     "pinyin": "shíjì",
     "pinyinNumbered": "shi2 ji4",
     "english": "practical",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "实际上，我不太喜欢这个工作。",
@@ -10523,7 +10523,7 @@
     "pinyin": "shěng",
     "pinyinNumbered": "sheng3",
     "english": "to save",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天坐公交车上班，这样可以省钱。",
@@ -10545,7 +10545,7 @@
     "pinyin": "shíxiàn",
     "pinyinNumbered": "shi2 xian4",
     "english": "realize",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我的梦想是实现一个小目标。",
@@ -10567,7 +10567,7 @@
     "pinyin": "shíwù",
     "pinyinNumbered": "shi2 wu4",
     "english": "scran",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个食物很好吃，我很喜欢。",
@@ -10589,7 +10589,7 @@
     "pinyin": "shízai",
     "pinyinNumbered": "shi2 zai4",
     "english": "indeed",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个价格实在太贵了。",
@@ -10611,7 +10611,7 @@
     "pinyin": "shǐyòng",
     "pinyinNumbered": "shi3 yong4",
     "english": "use",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天都使用手机看新闻。",
@@ -10633,7 +10633,7 @@
     "pinyin": "shìzhǎng",
     "pinyinNumbered": "shi4 zhang3",
     "english": "alcalde",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个城市的市长是一位很好的领导。",
@@ -10655,7 +10655,7 @@
     "pinyin": "shì",
     "pinyinNumbered": "shi4",
     "english": "market",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我家附近有一个大市场，卖很多新鲜蔬菜。",
@@ -10677,7 +10677,7 @@
     "pinyin": "shìqing",
     "pinyinNumbered": "shi4 qing2",
     "english": "proposition",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这件事情很简单，你不用担心。",
@@ -10699,7 +10699,7 @@
     "pinyin": "shōu dào",
     "pinyinNumbered": "shou1 dao4",
     "english": "hear",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我收到了你的信息。",
@@ -10721,7 +10721,7 @@
     "pinyin": "shōurù",
     "pinyinNumbered": "shou1 ru4",
     "english": "earning",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的月收入不是很高，但是够用。",
@@ -10743,7 +10743,7 @@
     "pinyin": "shǒubiǎo",
     "pinyinNumbered": "shou3 biao3",
     "english": "wristwatch",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的手表坏了，现在几点？",
@@ -10765,7 +10765,7 @@
     "pinyin": "shòudào",
     "pinyinNumbered": "shou4 dao4",
     "english": "experience",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这部电影受到了很多人的喜爱。",
@@ -10787,7 +10787,7 @@
     "pinyin": "shūfu",
     "pinyinNumbered": "shu1 fu2",
     "english": "comfortable",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个沙发很舒服，我很喜欢坐在这里。",
@@ -10809,7 +10809,7 @@
     "pinyin": "shú",
     "pinyinNumbered": "shu2",
     "english": "ripe",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个苹果很熟了，我们可以吃了。",
@@ -10831,7 +10831,7 @@
     "pinyin": "shōu",
     "pinyinNumbered": "shou1",
     "english": "receive",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我收到了你的礼物，谢谢你！",
@@ -10853,7 +10853,7 @@
     "pinyin": "shùzì",
     "pinyinNumbered": "shu4 zi4",
     "english": "numeral",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个数字太大了，我看不懂。",
@@ -10875,7 +10875,7 @@
     "pinyin": "shuǐpíng",
     "pinyinNumbered": "shui3 ping2",
     "english": "level",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "他的英语水平很高。",
@@ -10897,7 +10897,7 @@
     "pinyin": "shùnlì",
     "pinyinNumbered": "shun4 li4",
     "english": "smooth",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我的考试很顺利，我很开心。",
@@ -10919,7 +10919,7 @@
     "pinyin": "shuōmíng",
     "pinyinNumbered": "shuo1 ming2",
     "english": "explain",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "请你说明一下你为什么迟到了。",
@@ -10941,7 +10941,7 @@
     "pinyin": "sījī",
     "pinyinNumbered": "si1 ji1",
     "english": "driver",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个司机开车很小心。",
@@ -10963,7 +10963,7 @@
     "pinyin": "sòng dào",
     "pinyinNumbered": "song4 dao4",
     "english": "Deliver",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "请把这个包裹送到我家里。",
@@ -10985,7 +10985,7 @@
     "pinyin": "shù",
     "pinyinNumbered": "shu4",
     "english": "det.: several",
-    "partOfSpeech": "",
+    "partOfSpeech": "numeral",
     "examples": [
       {
         "chinese": "我有数个朋友在北京工作。",
@@ -11007,7 +11007,7 @@
     "pinyin": "suàn",
     "pinyinNumbered": "suan4",
     "english": "consider",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这个价格算便宜吗？",
@@ -11029,7 +11029,7 @@
     "pinyin": "sònggěi",
     "pinyinNumbered": "song4 gei3",
     "english": "present to",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我买了一个礼物送给我的妈妈。",
@@ -11051,7 +11051,7 @@
     "pinyin": "suí biàn",
     "pinyinNumbered": "sui2 bian4",
     "english": "informal",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你想吃什么？随便都可以。",
@@ -11073,7 +11073,7 @@
     "pinyin": "suíshí",
     "pinyinNumbered": "sui2 shi2",
     "english": "whenever",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你有问题可以随时问我。",
@@ -11095,7 +11095,7 @@
     "pinyin": "suǒyǐ",
     "pinyinNumbered": "suo3 yi3",
     "english": "conj.: so",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "今天下雨了,所以我不能去公园。",
@@ -11117,7 +11117,7 @@
     "pinyin": "suīrán",
     "pinyinNumbered": "sui1 ran2",
     "english": "conj.: though",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "虽然今天很冷，但是我们还是要去公园。",
@@ -11139,7 +11139,7 @@
     "pinyin": "suǒyǒu",
     "pinyinNumbered": "suo3 you3",
     "english": "det.: all",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "所有的学生都喜欢放假。",
@@ -11161,7 +11161,7 @@
     "pinyin": "tā",
     "pinyinNumbered": "ta1",
     "english": "they (neologism for {1ta1}[3] [4])",
-    "partOfSpeech": "",
+    "partOfSpeech": "pronoun",
     "examples": [
       {
         "chinese": "这只猫很可爱，它喜欢睡觉。",
@@ -11183,7 +11183,7 @@
     "pinyin": "tāmen",
     "pinyinNumbered": "ta1 men0",
     "english": "they",
-    "partOfSpeech": "",
+    "partOfSpeech": "pronoun",
     "examples": [
       {
         "chinese": "这些苹果很甜，它们都很好吃。",
@@ -11205,7 +11205,7 @@
     "pinyin": "tàitai",
     "pinyinNumbered": "tai4 tai4",
     "english": "lady",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "王先生的太太是一位老师。",
@@ -11227,7 +11227,7 @@
     "pinyin": "tàiyáng",
     "pinyinNumbered": "tai4 yang2",
     "english": "Apollo",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天太阳很大，我需要戴太阳镜。",
@@ -11249,7 +11249,7 @@
     "pinyin": "tǎolùn",
     "pinyinNumbered": "tao3 lun4",
     "english": "to discuss",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们在课堂上讨论了这个有趣的问题。",
@@ -11271,7 +11271,7 @@
     "pinyin": "tàidu",
     "pinyinNumbered": "tai4 du4",
     "english": "stance",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他对学习的态度很认真。",
@@ -11293,7 +11293,7 @@
     "pinyin": "tào",
     "pinyinNumbered": "tao4",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我买了一套新的书桌和椅子。",
@@ -11315,7 +11315,7 @@
     "pinyin": "tèdiǎn",
     "pinyinNumbered": "te4 dian3",
     "english": "distinctive feature",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个城市的特点是有很多古老的建筑。",
@@ -11337,7 +11337,7 @@
     "pinyin": "téng",
     "pinyinNumbered": "teng2",
     "english": "(it) hurts",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我的头很疼，需要休息。",
@@ -11359,7 +11359,7 @@
     "pinyin": "tí",
     "pinyinNumbered": "ti2",
     "english": "mention",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你提过这个问题吗？",
@@ -11381,7 +11381,7 @@
     "pinyin": "tèbié",
     "pinyinNumbered": "te4 bie2",
     "english": "unusual",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "今天的天气特别冷。",
@@ -11403,7 +11403,7 @@
     "pinyin": "tí chū",
     "pinyinNumbered": "ti2 chu1",
     "english": "put forward",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我想提出一个问题。",
@@ -11425,7 +11425,7 @@
     "pinyin": "tídào",
     "pinyinNumbered": "ti2 dao4",
     "english": "mention",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "昨天我在课堂上提到了你的名字。",
@@ -11447,7 +11447,7 @@
     "pinyin": "tí gāo",
     "pinyinNumbered": "ti2 gao1",
     "english": "raise",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们需要提高工作的质量。",
@@ -11469,7 +11469,7 @@
     "pinyin": "tǐyù",
     "pinyinNumbered": "ti3 yu4",
     "english": "training",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们学校的体育课在下午。",
@@ -11491,7 +11491,7 @@
     "pinyin": "tí",
     "pinyinNumbered": "ti2",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这道题很难,我不会做。",
@@ -11513,7 +11513,7 @@
     "pinyin": "tǐyùchǎng",
     "pinyinNumbered": "ti3 yu4 chang3",
     "english": "stadium",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们学校的体育场很大，学生们在那里踢足球。",
@@ -11535,7 +11535,7 @@
     "pinyin": "tǐyùguǎn",
     "pinyinNumbered": "ti3 yu4 guan3",
     "english": "stadium",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们学校的体育馆很大，里面有篮球场和游泳池。",
@@ -11557,7 +11557,7 @@
     "pinyin": "tiānshang",
     "pinyinNumbered": "tian1 shang4",
     "english": "celestial",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "天上有很多星星。",
@@ -11579,7 +11579,7 @@
     "pinyin": "tiáo",
     "pinyinNumbered": "tiao2",
     "english": "bar",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我买了一条巧克力。",
@@ -11601,7 +11601,7 @@
     "pinyin": "tiáojiàn",
     "pinyinNumbered": "tiao2 jian4",
     "english": "mood",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天天气很好，我的心情也很好。",
@@ -11623,7 +11623,7 @@
     "pinyin": "tīngshuō",
     "pinyinNumbered": "ting1 shuo1",
     "english": "hear",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "听说明天会下雨，所以我带了伞。",
@@ -11645,7 +11645,7 @@
     "pinyin": "tíng chē",
     "pinyinNumbered": "ting2 che1",
     "english": "park the car",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我需要在这里停车。",
@@ -11667,7 +11667,7 @@
     "pinyin": "tīng jiǎng",
     "pinyinNumbered": "ting1 jiang3",
     "english": "to attend a lecture",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "上课的时候要认真听讲，不要玩手机。",
@@ -11689,7 +11689,7 @@
     "pinyin": "tíng",
     "pinyinNumbered": "ting2",
     "english": "stay",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们在这里停一会儿。",
@@ -11711,7 +11711,7 @@
     "pinyin": "tǐng",
     "pinyinNumbered": "ting3",
     "english": "very",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这部电影挺有趣的，我很喜欢。",
@@ -11733,7 +11733,7 @@
     "pinyin": "tíngchēchǎng",
     "pinyinNumbered": "ting2 che1 chang3",
     "english": "parking_lot",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个停车场很大，停了很多车。",
@@ -11755,7 +11755,7 @@
     "pinyin": "tōng",
     "pinyinNumbered": "tong1",
     "english": "m.[event]",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "这条路通到公园。",
@@ -11777,7 +11777,7 @@
     "pinyin": "tǐnghǎo",
     "pinyinNumbered": "ting3 hao3",
     "english": "very good",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个电影挺好的，你也应该看看。",
@@ -11799,7 +11799,7 @@
     "pinyin": "tōngzhī",
     "pinyinNumbered": "tong1 zhi1",
     "english": "notify",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "老师通知我们明天不用上课。",
@@ -11821,7 +11821,7 @@
     "pinyin": "tóngshí",
     "pinyinNumbered": "tong2 shi2",
     "english": "at the same time",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我喜欢喝茶，同时也喜欢喝咖啡。",
@@ -11843,7 +11843,7 @@
     "pinyin": "tóngyàng",
     "pinyinNumbered": "tong2 yang4",
     "english": "same",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我喜欢吃苹果,我的朋友同样喜欢吃苹果。",
@@ -11865,7 +11865,7 @@
     "pinyin": "tóngshì",
     "pinyinNumbered": "tong2 shi4",
     "english": "brother",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的同事很友好，我们每天一起工作。",
@@ -11887,7 +11887,7 @@
     "pinyin": "tōngguò",
     "pinyinNumbered": "tong1 guo4",
     "english": "adopt",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "我们通过了这个计划。",
@@ -11909,7 +11909,7 @@
     "pinyin": "tóu",
     "pinyinNumbered": "tou2",
     "english": "head",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的头有点疼。",
@@ -11931,7 +11931,7 @@
     "pinyin": "tóufa",
     "pinyinNumbered": "tou2 fa0",
     "english": "barba",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的头发很长。",
@@ -11953,7 +11953,7 @@
     "pinyin": "túpiàn",
     "pinyinNumbered": "tu2 pian4",
     "english": "pictorial matter",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个图片很漂亮，我很喜欢。",
@@ -11975,7 +11975,7 @@
     "pinyin": "tuǐ",
     "pinyinNumbered": "tui3",
     "english": "ham",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢吃火腿和鸡蛋。",
@@ -11997,7 +11997,7 @@
     "pinyin": "wàidì",
     "pinyinNumbered": "wai4 di4",
     "english": "parts of the country other than where one is",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的朋友是外地人，他来自北京。",
@@ -12019,7 +12019,7 @@
     "pinyin": "wán",
     "pinyinNumbered": "wan2",
     "english": "exhaust",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我把水喝完了。",
@@ -12041,7 +12041,7 @@
     "pinyin": "wán chéng",
     "pinyinNumbered": "wan2 cheng2",
     "english": "fill in",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我今天完成了家庭作业。",
@@ -12063,7 +12063,7 @@
     "pinyin": "wánquán",
     "pinyinNumbered": "wan2 quan2",
     "english": "completely",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个问题我完全不懂。",
@@ -12085,7 +12085,7 @@
     "pinyin": "wàimài",
     "pinyinNumbered": "wai4 mai4",
     "english": "to go",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我今天很累，不想做饭，我们点外卖吧。",
@@ -12107,7 +12107,7 @@
     "pinyin": "tuī",
     "pinyinNumbered": "tui1",
     "english": "push",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "请不要推我。",
@@ -12129,7 +12129,7 @@
     "pinyin": "wǎnbào",
     "pinyinNumbered": "wan3 bao4",
     "english": "evening newspaper",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天都读晚报。",
@@ -12151,7 +12151,7 @@
     "pinyin": "wǎnān",
     "pinyinNumbered": "wan3 an1",
     "english": "Good night!",
-    "partOfSpeech": "",
+    "partOfSpeech": "interjection",
     "examples": [
       {
         "chinese": "妈妈，晚安！我要去睡觉了。",
@@ -12173,7 +12173,7 @@
     "pinyin": "wǎncān",
     "pinyinNumbered": "wan3 can1",
     "english": "dinner",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们今天晚餐吃饺子。",
@@ -12195,7 +12195,7 @@
     "pinyin": "wǎnhuì",
     "pinyinNumbered": "wan3 hui4",
     "english": "evening entertainment",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天晚上有一个学校的晚会，你想去吗？",
@@ -12217,7 +12217,7 @@
     "pinyin": "wǎn",
     "pinyinNumbered": "wan3",
     "english": "m.[container]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我需要一个干净的碗吃饭。",
@@ -12239,7 +12239,7 @@
     "pinyin": "wǎng",
     "pinyinNumbered": "wang3",
     "english": "net",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我在网上买了一件新衣服。",
@@ -12261,7 +12261,7 @@
     "pinyin": "wàn",
     "pinyinNumbered": "wan4",
     "english": "det.: ten thousand",
-    "partOfSpeech": "",
+    "partOfSpeech": "numeral",
     "examples": [
       {
         "chinese": "这个城市有几百万人口。",
@@ -12283,7 +12283,7 @@
     "pinyin": "wǎngqiú",
     "pinyinNumbered": "wang3 qiu2",
     "english": "lawn tennis",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢在周末打网球。",
@@ -12305,7 +12305,7 @@
     "pinyin": "wǎngzhàn",
     "pinyinNumbered": "wang3 zhan4",
     "english": "website",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个网站很有用，我经常在上面找信息。",
@@ -12327,7 +12327,7 @@
     "pinyin": "wǎng",
     "pinyinNumbered": "wang3",
     "english": "go toward",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "我往学校走去。",
@@ -12349,7 +12349,7 @@
     "pinyin": "wèishénme",
     "pinyinNumbered": "wei4 shen2 me0",
     "english": "why",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你为什么不吃饭？",
@@ -12371,7 +12371,7 @@
     "pinyin": "wèi",
     "pinyinNumbered": "wei4",
     "english": "by",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "这个礼物是我为你买的。",
@@ -12393,7 +12393,7 @@
     "pinyin": "wèi",
     "pinyinNumbered": "wei4",
     "english": "location",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "请坐在这个位子上。",
@@ -12415,7 +12415,7 @@
     "pinyin": "wèidao",
     "pinyinNumbered": "wei4 dao4",
     "english": "gustatory perception",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个菜的味道很好吃。",
@@ -12437,7 +12437,7 @@
     "pinyin": "wèi",
     "pinyinNumbered": "wei4",
     "english": "hello",
-    "partOfSpeech": "",
+    "partOfSpeech": "interjection",
     "examples": [
       {
         "chinese": "喂，你好！你是李明吗？",
@@ -12459,7 +12459,7 @@
     "pinyin": "wén",
     "pinyinNumbered": "wen2",
     "english": "smell",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我闻到了很香的花香。",
@@ -12481,7 +12481,7 @@
     "pinyin": "wèn lù",
     "pinyinNumbered": "wen4 lu4",
     "english": "to ask for directions",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我在街上问路，一个热心的阿姨告诉我怎么走。",
@@ -12503,7 +12503,7 @@
     "pinyin": "wǔcān",
     "pinyinNumbered": "wu3 can1",
     "english": "midday meal",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天都在办公室吃午餐。",
@@ -12525,7 +12525,7 @@
     "pinyin": "wèntí",
     "pinyinNumbered": "wen4 ti2",
     "english": "problem",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个问题很简单，我可以帮你。",
@@ -12547,7 +12547,7 @@
     "pinyin": "wǔshuì",
     "pinyinNumbered": "wu3 shui4",
     "english": "to take a nap",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天中午都会午睡一会儿。",
@@ -12569,7 +12569,7 @@
     "pinyin": "xīběi",
     "pinyinNumbered": "xi1 bei3",
     "english": "northwest",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们公司在城市的西北方向。",
@@ -12591,7 +12591,7 @@
     "pinyin": "wēndù",
     "pinyinNumbered": "wen1 du4",
     "english": "barothermohygrograph",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天的温度很高，我们都热得满头大汗。",
@@ -12613,7 +12613,7 @@
     "pinyin": "xīnán",
     "pinyinNumbered": "xi1 nan2",
     "english": "southwest",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我家在城市的西南方向。",
@@ -12635,7 +12635,7 @@
     "pinyin": "xīfāng",
     "pinyinNumbered": "xi1 fang1",
     "english": "the Occident",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢西方的音乐和电影。",
@@ -12657,7 +12657,7 @@
     "pinyin": "xīyī",
     "pinyinNumbered": "xi1 yi1",
     "english": "Western medicine",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我生病了，去看了西医。",
@@ -12679,7 +12679,7 @@
     "pinyin": "xīcān",
     "pinyinNumbered": "xi1 can1",
     "english": "Western-style food",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢吃西餐，特别是牛排。",
@@ -12701,7 +12701,7 @@
     "pinyin": "xíguàn",
     "pinyinNumbered": "xi2 guan4",
     "english": "habit",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我习惯了每天早上喝咖啡。",
@@ -12723,7 +12723,7 @@
     "pinyin": "xǐyījī",
     "pinyinNumbered": "xi3 yi1 ji1",
     "english": "washer",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我家的洗衣机坏了，我得去修一下。",
@@ -12745,7 +12745,7 @@
     "pinyin": "xià",
     "pinyinNumbered": "xia4",
     "english": "under (condition/fact etc.)",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "在老师的指导下，我学会了新的语法。",
@@ -12767,7 +12767,7 @@
     "pinyin": "xǐ zǎo",
     "pinyinNumbered": "xi3 zao3",
     "english": "have a bath",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天晚上都要洗澡。",
@@ -12789,7 +12789,7 @@
     "pinyin": "xiàzhōu",
     "pinyinNumbered": "xia4 zhou1",
     "english": "next week",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "下周我们去公园玩儿。",
@@ -12811,7 +12811,7 @@
     "pinyin": "xiāngtóng",
     "pinyinNumbered": "xiang1 tong2",
     "english": "be identical/alike",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我们两个人的想法相同。",
@@ -12833,7 +12833,7 @@
     "pinyin": "xiàtiān",
     "pinyinNumbered": "xia4 tian1",
     "english": "summer",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "夏天的时候天气很热。",
@@ -12855,7 +12855,7 @@
     "pinyin": "xiāngxìn",
     "pinyinNumbered": "xiang1 xin4",
     "english": "deem",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我相信你能做好这件事。",
@@ -12877,7 +12877,7 @@
     "pinyin": "xiǎng dào",
     "pinyinNumbered": "xiang3 dao4",
     "english": "imagine",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我突然想到了一个好主意。",
@@ -12899,7 +12899,7 @@
     "pinyin": "xiǎngfa",
     "pinyinNumbered": "xiang3 fa3",
     "english": "view",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的想法是我们应该一起去公园。",
@@ -12921,7 +12921,7 @@
     "pinyin": "xiàxuě",
     "pinyinNumbered": "xia4 xue3",
     "english": "to snow",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "明天会下雪，我们可以打雪仗。",
@@ -12943,7 +12943,7 @@
     "pinyin": "xiǎng qǐ",
     "pinyinNumbered": "xiang3 qi3",
     "english": "retrieve",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我突然想起来，今天要去超市买菜。",
@@ -12965,7 +12965,7 @@
     "pinyin": "xiàng",
     "pinyinNumbered": "xiang4",
     "english": "to",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "我向老师问了一个问题。",
@@ -12987,7 +12987,7 @@
     "pinyin": "xiàngjī",
     "pinyinNumbered": "xiang4 ji1",
     "english": "camera",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我想买一个新相机去旅游。",
@@ -13009,7 +13009,7 @@
     "pinyin": "xiǎng",
     "pinyinNumbered": "xiang3",
     "english": "make a sound",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "门铃响了，我去开门。",
@@ -13031,7 +13031,7 @@
     "pinyin": "xiàng",
     "pinyinNumbered": "xiang4",
     "english": "be like",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你的狗像我的狗一样可爱。",
@@ -13053,7 +13053,7 @@
     "pinyin": "xiǎoshēng",
     "pinyinNumbered": "xiao3 sheng1",
     "english": "in a low voice",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "在图书馆里，我们要小声说话。",
@@ -13075,7 +13075,7 @@
     "pinyin": "xiǎoshíhou",
     "pinyinNumbered": "xiao3 shi2 hou4",
     "english": "in one's childhood",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "我小时候很喜欢吃糖。",
@@ -13097,7 +13097,7 @@
     "pinyin": "xiǎoshuō",
     "pinyinNumbered": "xiao3 shuo1",
     "english": "novel",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我很喜欢读小说，特别是冒险小说。",
@@ -13119,7 +13119,7 @@
     "pinyin": "xiǎoxin",
     "pinyinNumbered": "xiao3 xin1",
     "english": "beware",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "过马路的时候要小心！",
@@ -13141,7 +13141,7 @@
     "pinyin": "xiǎo",
     "pinyinNumbered": "xiao3",
     "english": "small",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个小狗很可爱。",
@@ -13163,7 +13163,7 @@
     "pinyin": "xiǎozǔ",
     "pinyinNumbered": "xiao3 zu3",
     "english": "squad",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们班分成五个小组来做这个项目。",
@@ -13185,7 +13185,7 @@
     "pinyin": "xiàoyuán",
     "pinyinNumbered": "xiao4 yuan2",
     "english": "schoolyard",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢在校园里和朋友一起玩。",
@@ -13207,7 +13207,7 @@
     "pinyin": "xiàozhǎng",
     "pinyinNumbered": "xiao4 zhang3",
     "english": "prexy",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们的校长今天在学校开会。",
@@ -13229,7 +13229,7 @@
     "pinyin": "xiàohuar5",
     "pinyinNumbered": "xiao4 hua4 er2",
     "english": "Joke",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他讲的笑话儿很好笑，我们都笑了。",
@@ -13251,7 +13251,7 @@
     "pinyin": "xiàohua",
     "pinyinNumbered": "xiao4 hua4",
     "english": "joke",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他讲的笑话很好笑，我们都笑了。",
@@ -13273,7 +13273,7 @@
     "pinyin": "xīnli",
     "pinyinNumbered": "xin1 li3",
     "english": "chest",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我心里很高兴。",
@@ -13295,7 +13295,7 @@
     "pinyin": "xīnqíng",
     "pinyinNumbered": "xin1 qing2",
     "english": "cognitive state",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天天气很好，我的心情也很好。",
@@ -13317,7 +13317,7 @@
     "pinyin": "xié",
     "pinyinNumbered": "xie2",
     "english": "shoe",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的新鞋很舒服。",
@@ -13339,7 +13339,7 @@
     "pinyin": "xīnzhōng",
     "pinyinNumbered": "xin1 zhong1",
     "english": "central point",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我心中有一个梦想。",
@@ -13361,7 +13361,7 @@
     "pinyin": "xìn",
     "pinyinNumbered": "xin4",
     "english": "letter",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我收到了你的信。",
@@ -13383,7 +13383,7 @@
     "pinyin": "xīnwén",
     "pinyinNumbered": "xin1 wen2",
     "english": "unco",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我今天看了一条很有趣的新闻。",
@@ -13405,7 +13405,7 @@
     "pinyin": "xìnhào",
     "pinyinNumbered": "xin4 hao4",
     "english": "sign",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "红绿灯的信号告诉我们什么时候可以过马路。",
@@ -13427,7 +13427,7 @@
     "pinyin": "xìnxīn",
     "pinyinNumbered": "xin4 xin1",
     "english": "trustfulness",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我对这次考试很有信心。",
@@ -13449,7 +13449,7 @@
     "pinyin": "xìnyòngkǎ",
     "pinyinNumbered": "xin4 yong4 ka3",
     "english": "charge plate",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我用信用卡买了一本书。",
@@ -13471,7 +13471,7 @@
     "pinyin": "xìnxī",
     "pinyinNumbered": "xin4 xi1",
     "english": "information",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我收到了一条重要的信息。",
@@ -13493,7 +13493,7 @@
     "pinyin": "xīngxing",
     "pinyinNumbered": "xing1 xing1",
     "english": "star",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "晚上我和孩子一起看星星。",
@@ -13515,7 +13515,7 @@
     "pinyin": "xíngdòng",
     "pinyinNumbered": "xing2 dong4",
     "english": "action",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们需要立即采取行动来解决这个问题。",
@@ -13537,7 +13537,7 @@
     "pinyin": "xíngrén",
     "pinyinNumbered": "xing2 ren2",
     "english": "foot traffic",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这条街道上的行人很多。",
@@ -13559,7 +13559,7 @@
     "pinyin": "xìng",
     "pinyinNumbered": "xing4",
     "english": "name",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "你姓什么？",
@@ -13581,7 +13581,7 @@
     "pinyin": "xíngwéi",
     "pinyinNumbered": "xing2 wei2",
     "english": "fact",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他的行为很不礼貌。",
@@ -13603,7 +13603,7 @@
     "pinyin": "xìngmíng",
     "pinyinNumbered": "xing4 ming2",
     "english": "surname and personal name",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "请告诉我你的姓名。",
@@ -13625,7 +13625,7 @@
     "pinyin": "xuéqī",
     "pinyinNumbered": "xue2 qi1",
     "english": "school term",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个学期我们要学很多新的东西。",
@@ -13647,7 +13647,7 @@
     "pinyin": "xiū jià",
     "pinyinNumbered": "xiu1 jia4",
     "english": "have holiday/vacation/leave",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "下个月我想休假去旅游。",
@@ -13669,7 +13669,7 @@
     "pinyin": "xǔduō",
     "pinyinNumbered": "xu3 duo1",
     "english": "lot",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "今天有许多学生在图书馆学习。",
@@ -13691,7 +13691,7 @@
     "pinyin": "xuǎn",
     "pinyinNumbered": "xuan3",
     "english": "select",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你想选哪个颜色的书包？",
@@ -13713,7 +13713,7 @@
     "pinyin": "yánsè",
     "pinyinNumbered": "yan2 se4",
     "english": "companion",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢这件衣服的颜色。",
@@ -13735,7 +13735,7 @@
     "pinyin": "xuě",
     "pinyinNumbered": "xue3",
     "english": "snow",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "昨天下雪了，今天外面很冷。",
@@ -13757,7 +13757,7 @@
     "pinyin": "yǎnjing",
     "pinyinNumbered": "yan3 jing1",
     "english": "eye",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "他的眼睛很大。",
@@ -13779,7 +13779,7 @@
     "pinyin": "yǎn",
     "pinyinNumbered": "yan3",
     "english": "eye",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我用眼睛看书。",
@@ -13801,7 +13801,7 @@
     "pinyin": "yǎng",
     "pinyinNumbered": "yang3",
     "english": "keep in good repair",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们要好好养护我们的房子。",
@@ -13823,7 +13823,7 @@
     "pinyin": "yàngzi",
     "pinyinNumbered": "yang4 zi0",
     "english": "tendency",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "看你的样子，你今天很开心。",
@@ -13845,7 +13845,7 @@
     "pinyin": "yāoqiú",
     "pinyinNumbered": "yao1 qiu2",
     "english": "request",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "老师要求我们每天练习汉字。",
@@ -13867,7 +13867,7 @@
     "pinyin": "yàopiàn",
     "pinyinNumbered": "yao4 pian4",
     "english": "a (medicine) pill or tablet",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天早上吃一片药片。",
@@ -13889,7 +13889,7 @@
     "pinyin": "yào",
     "pinyinNumbered": "yao4",
     "english": "healer",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我感冒了，医生给我开了一些药。",
@@ -13911,7 +13911,7 @@
     "pinyin": "yěxǔ",
     "pinyinNumbered": "ye3 xu3",
     "english": "possibly",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "明天也许会下雨，我们带伞吧。",
@@ -13933,7 +13933,7 @@
     "pinyin": "yàoshuǐ",
     "pinyinNumbered": "yao4 shui3",
     "english": "Yaksu in North Korea",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的眼睛很痒，医生给我开了一瓶药水。",
@@ -13955,7 +13955,7 @@
     "pinyin": "yè",
     "pinyinNumbered": "ye4",
     "english": "night",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "昨天夜里我睡得很好。",
@@ -13977,7 +13977,7 @@
     "pinyin": "yàodiàn",
     "pinyinNumbered": "yao4 dian4",
     "english": "pharmacy",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我需要去药店买感冒药。",
@@ -13999,7 +13999,7 @@
     "pinyin": "yèli",
     "pinyinNumbered": "ye4 li3",
     "english": "during the night",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "夜里我听到了下雨的声音。",
@@ -14021,7 +14021,7 @@
     "pinyin": "yīdìng",
     "pinyinNumbered": "yi2 ding4",
     "english": "must",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你一定要记得带钥匙。",
@@ -14043,7 +14043,7 @@
     "pinyin": "yībùfen",
     "pinyinNumbered": "yi2 bu4 fen0",
     "english": "portion",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个蛋糕的一部分是我的。",
@@ -14065,7 +14065,7 @@
     "pinyin": "yīhuìr5",
     "pinyinNumbered": "yi2 hui4 er0",
     "english": "a moment",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我现在很忙，一会儿再给你打电话。",
@@ -14087,7 +14087,7 @@
     "pinyin": "yīlù-píngān",
     "pinyinNumbered": "yi2 lu4 ping2 an1",
     "english": "to have a pleasant journey",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "祝你去北京出差一路平安！",
@@ -14109,7 +14109,7 @@
     "pinyin": "yǐjīng",
     "pinyinNumbered": "yi3 jing1",
     "english": "already",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我已经吃过饭了。",
@@ -14131,7 +14131,7 @@
     "pinyin": "yīlùshùnfēng",
     "pinyinNumbered": "yi2 lu4 shun4 feng1",
     "english": "to have a pleasant journey (idiom)",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "你明天去北京出差，祝你一路顺风！",
@@ -14153,7 +14153,7 @@
     "pinyin": "yǐqián",
     "pinyinNumbered": "yi3 qian2",
     "english": "langsyne",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我以前住在北京，现在住在上海。",
@@ -14175,7 +14175,7 @@
     "pinyin": "yīgòng",
     "pinyinNumbered": "yi2 gong4",
     "english": "altogether",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我们一共买了三个苹果。",
@@ -14197,7 +14197,7 @@
     "pinyin": "yǐhòu",
     "pinyinNumbered": "yi3 hou4",
     "english": "afterwards",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我以后要学中文。",
@@ -14219,7 +14219,7 @@
     "pinyin": "yǐshàng",
     "pinyinNumbered": "yi3 shang4",
     "english": "the above/foregoing/above-mentioned",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "十岁以上的孩子可以看这个电影。",
@@ -14241,7 +14241,7 @@
     "pinyin": "yǐwài",
     "pinyinNumbered": "yi3 wai4",
     "english": "other than",
-    "partOfSpeech": "",
+    "partOfSpeech": "preposition",
     "examples": [
       {
         "chinese": "除了英语以外，我还学习中文。",
@@ -14263,7 +14263,7 @@
     "pinyin": "yǐzi",
     "pinyinNumbered": "yi3 zi0",
     "english": "chair",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "请坐在椅子上。",
@@ -14285,7 +14285,7 @@
     "pinyin": "yǐxià",
     "pinyinNumbered": "yi3 xia4",
     "english": "the following",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "请看以下的例子。",
@@ -14307,7 +14307,7 @@
     "pinyin": "yīdiǎndiǎn",
     "pinyinNumbered": "yi4 dian3 dian3",
     "english": "a little bit",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我很累，想休息一点点。",
@@ -14329,7 +14329,7 @@
     "pinyin": "yībān",
     "pinyinNumbered": "yi4 ban1",
     "english": "general",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我一般每天早上喝咖啡。",
@@ -14351,7 +14351,7 @@
     "pinyin": "yīshēng",
     "pinyinNumbered": "yi4 sheng1",
     "english": "lifetime",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我希望一生都和家人在一起。",
@@ -14373,7 +14373,7 @@
     "pinyin": "yīzhí",
     "pinyinNumbered": "yi4 zhi2",
     "english": "e'er",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我一直很喜欢吃面条。",
@@ -14395,7 +14395,7 @@
     "pinyin": "yì",
     "pinyinNumbered": "yi4",
     "english": "det.: hundred million",
-    "partOfSpeech": "",
+    "partOfSpeech": "numeral",
     "examples": [
       {
         "chinese": "中国有十四亿人口。",
@@ -14417,7 +14417,7 @@
     "pinyin": "yǐwéi",
     "pinyinNumbered": "yi3 wei2",
     "english": "imagine",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我以为你今天不来了。",
@@ -14439,7 +14439,7 @@
     "pinyin": "yīnwei",
     "pinyinNumbered": "yin1 wei4",
     "english": "conj.: because",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "因为今天下雨，我们不能去公园。",
@@ -14461,7 +14461,7 @@
     "pinyin": "yìjian",
     "pinyinNumbered": "yi4 jian4",
     "english": "latitude",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "你有什么意见吗？",
@@ -14483,7 +14483,7 @@
     "pinyin": "yìsi",
     "pinyinNumbered": "yi4 si1",
     "english": "significance",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个问题很有意思，我想了解更多。",
@@ -14505,7 +14505,7 @@
     "pinyin": "yīntiān",
     "pinyinNumbered": "yin1 tian1",
     "english": "cloudy day",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天是阴天，我们在家看电影吧。",
@@ -14527,7 +14527,7 @@
     "pinyin": "yīnjié",
     "pinyinNumbered": "yin1 jie2",
     "english": "syllable",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个单词有三个音节。",
@@ -14549,7 +14549,7 @@
     "pinyin": "yīnyuè",
     "pinyinNumbered": "yin1 yue4",
     "english": "music",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我很喜欢听音乐。",
@@ -14571,7 +14571,7 @@
     "pinyin": "yīnyuèhuì",
     "pinyinNumbered": "yin1 yue4 hui4",
     "english": "musicale",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们周末去看了一场很棒的音乐会。",
@@ -14593,7 +14593,7 @@
     "pinyin": "yínhángkǎ",
     "pinyinNumbered": "yin2 hang2 ka3",
     "english": "bank card",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的银行卡在家里，我明天去银行。",
@@ -14615,7 +14615,7 @@
     "pinyin": "yīnggāi",
     "pinyinNumbered": "ying1 gai1",
     "english": "should",
-    "partOfSpeech": "",
+    "partOfSpeech": "auxiliary verb",
     "examples": [
       {
         "chinese": "你应该多喝水。",
@@ -14637,7 +14637,7 @@
     "pinyin": "yínháng",
     "pinyinNumbered": "yin2 hang2",
     "english": "jug",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "妈妈用银行装水。",
@@ -14659,7 +14659,7 @@
     "pinyin": "Yīngwén",
     "pinyinNumbered": "ying1 wen2",
     "english": "English",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天都在学英文。",
@@ -14681,7 +14681,7 @@
     "pinyin": "Yīngyǔ",
     "pinyinNumbered": "ying1 yu3",
     "english": "English",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天都学英语。",
@@ -14703,7 +14703,7 @@
     "pinyin": "yǐngpiàn",
     "pinyinNumbered": "ying3 pian4",
     "english": "celluloid",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这部影片很有趣，我很喜欢。",
@@ -14725,7 +14725,7 @@
     "pinyin": "yīn",
     "pinyinNumbered": "yin1",
     "english": "overcast (weather)",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "今天天气很阴，可能要下雨。",
@@ -14747,7 +14747,7 @@
     "pinyin": "yǐngxiǎng",
     "pinyinNumbered": "ying3 xiang3",
     "english": "influence",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "天气影响了我们今天的计划。",
@@ -14769,7 +14769,7 @@
     "pinyin": "yóu",
     "pinyinNumbered": "you2",
     "english": "oil",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个菜里放了太多油。",
@@ -14791,7 +14791,7 @@
     "pinyin": "yǒngyuǎn",
     "pinyinNumbered": "yong3 yuan3",
     "english": "e'er",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我永远不会忘记你。",
@@ -14813,7 +14813,7 @@
     "pinyin": "yǒukòngr5",
     "pinyinNumbered": "you3 kong4 er0",
     "english": "available",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "明天你有空儿吗？我们一起去喝咖啡。",
@@ -14835,7 +14835,7 @@
     "pinyin": "yǒuhǎo",
     "pinyinNumbered": "you3 hao3",
     "english": "Youhao district of Yichun city 伊春市[Yi1 chun1 shi4]",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我们的新邻居很友好，经常和我们打招呼。",
@@ -14857,7 +14857,7 @@
     "pinyin": "yǒudiǎnr5",
     "pinyinNumbered": "you3 dian3 er0",
     "english": "slightly",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "今天天气有点儿冷，我穿了一件厚衣服。",
@@ -14879,7 +14879,7 @@
     "pinyin": "yóukè",
     "pinyinNumbered": "you2 ke4",
     "english": "traveler",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今年夏天，很多游客来我们城市旅游。",
@@ -14901,7 +14901,7 @@
     "pinyin": "yǒurén",
     "pinyinNumbered": "you3 ren2",
     "english": "someone",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "有人在敲门，你去开一下。",
@@ -14923,7 +14923,7 @@
     "pinyin": "yǒuyìsi",
     "pinyinNumbered": "you3 yi4 si1",
     "english": "interesting",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个电影很有意思，我很喜欢。",
@@ -14945,7 +14945,7 @@
     "pinyin": "yǔyán",
     "pinyinNumbered": "yu3 yan2",
     "english": "linguistic communication",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "学习语言需要很多时间和练习。",
@@ -14967,7 +14967,7 @@
     "pinyin": "yòu",
     "pinyinNumbered": "you4",
     "english": "again",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "他又迟到了。",
@@ -14989,7 +14989,7 @@
     "pinyin": "yuánlái",
     "pinyinNumbered": "yuan2 lai2",
     "english": "originally",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "原来你就是李老师，我之前没有见过你。",
@@ -15011,7 +15011,7 @@
     "pinyin": "yuányīn",
     "pinyinNumbered": "yuan2 yin1",
     "english": "origin",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我迟到的原因是公交车坏了。",
@@ -15033,7 +15033,7 @@
     "pinyin": "yú",
     "pinyinNumbered": "yu2",
     "english": "paella",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我喜欢吃鱼，特别是红烧鱼。",
@@ -15055,7 +15055,7 @@
     "pinyin": "yuànzhǎng",
     "pinyinNumbered": "yuan4 zhang3",
     "english": "director/president (of museum/institute/etc.)",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这位院长很年轻，工作很认真。",
@@ -15077,7 +15077,7 @@
     "pinyin": "yuàn",
     "pinyinNumbered": "yuan4",
     "english": "public facility",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们去医院看医生。",
@@ -15099,7 +15099,7 @@
     "pinyin": "yuànyi",
     "pinyinNumbered": "yuan4 yi4",
     "english": "will",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "你愿意和我一起去看电影吗？",
@@ -15121,7 +15121,7 @@
     "pinyin": "yuèfèn",
     "pinyinNumbered": "yue4 fen4",
     "english": "month",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "你最喜欢哪个月份？",
@@ -15143,7 +15143,7 @@
     "pinyin": "yuèliang",
     "pinyinNumbered": "yue4 liang4",
     "english": "moonlight",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "晚上，月亮很亮，我们一起看月亮。",
@@ -15165,7 +15165,7 @@
     "pinyin": "yuèláiyuè",
     "pinyinNumbered": "yue4 lai2 yue4",
     "english": "more_and_more",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "天气越来越冷了，我需要买一件新的冬天衣服。",
@@ -15187,7 +15187,7 @@
     "pinyin": "yuè",
     "pinyinNumbered": "yue4",
     "english": "~A~B) the more A the more B",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这个游戏越玩越有趣。",
@@ -15209,7 +15209,7 @@
     "pinyin": "yùndong",
     "pinyinNumbered": "yun4 dong4",
     "english": "sports",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天都喜欢运动。",
@@ -15231,7 +15231,7 @@
     "pinyin": "yún",
     "pinyinNumbered": "yun2",
     "english": "cloud",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天天空中有很多白云。",
@@ -15253,7 +15253,7 @@
     "pinyin": "zánmen",
     "pinyinNumbered": "zan2 men0",
     "english": "we",
-    "partOfSpeech": "",
+    "partOfSpeech": "pronoun",
     "examples": [
       {
         "chinese": "咱们一起去吃饭吧。",
@@ -15275,7 +15275,7 @@
     "pinyin": "zán",
     "pinyinNumbered": "zan2",
     "english": "I or me we (including both the speaker and the person spoken to) variant of 咱[zan2]",
-    "partOfSpeech": "",
+    "partOfSpeech": "pronoun",
     "examples": [
       {
         "chinese": "咱们一起去吃饭吧。",
@@ -15297,7 +15297,7 @@
     "pinyin": "zàng",
     "pinyinNumbered": "zang1",
     "english": "dirty",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "你的手很脏，要洗一洗。",
@@ -15319,7 +15319,7 @@
     "pinyin": "yuànzi",
     "pinyinNumbered": "yuan4 zi0",
     "english": "patio",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们家的院子很大，有很多花。",
@@ -15341,7 +15341,7 @@
     "pinyin": "zǎocān",
     "pinyinNumbered": "zao3 can1",
     "english": "breaker",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天早餐吃面包和牛奶。",
@@ -15363,7 +15363,7 @@
     "pinyin": "zǎochen",
     "pinyinNumbered": "zao3 chen2",
     "english": "early morning",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "每天早晨我都要喝一杯咖啡。",
@@ -15385,7 +15385,7 @@
     "pinyin": "zěnmebàn",
     "pinyinNumbered": "zen3 me0 ban4",
     "english": "what should someone do?",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "我的钥匙丢了，怎么办？",
@@ -15407,7 +15407,7 @@
     "pinyin": "zěnmeyàng",
     "pinyinNumbered": "zen3 me0 yang4",
     "english": "How are things?",
-    "partOfSpeech": "",
+    "partOfSpeech": "phrase",
     "examples": [
       {
         "chinese": "你觉得这个电影怎么样？",
@@ -15429,7 +15429,7 @@
     "pinyin": "zǎojiù",
     "pinyinNumbered": "zao3 jiu4",
     "english": "already at an earlier time",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我早就告诉你了，别去那个地方。",
@@ -15451,7 +15451,7 @@
     "pinyin": "zěnyàng",
     "pinyinNumbered": "zen3 yang4",
     "english": "no matter how",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "怎样学习中文都不容易。",
@@ -15473,7 +15473,7 @@
     "pinyin": "zhàn",
     "pinyinNumbered": "zhan4",
     "english": "constitute",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "学生占了班级的大多数。",
@@ -15495,7 +15495,7 @@
     "pinyin": "zhànzhù",
     "pinyinNumbered": "zhan4 zhu4",
     "english": "to stand",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "小偷跑了，警察喊'站住！'",
@@ -15517,7 +15517,7 @@
     "pinyin": "zhǎng dà",
     "pinyinNumbered": "zhang3 da4",
     "english": "vegetate",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我在北京长大，现在住在上海。",
@@ -15539,7 +15539,7 @@
     "pinyin": "zhàn",
     "pinyinNumbered": "zhan4",
     "english": "to stand",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我在公交站等你。",
@@ -15561,7 +15561,7 @@
     "pinyin": "zhǎochū",
     "pinyinNumbered": "zhao3 chu1",
     "english": "rout out",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我找出了我丢失的钥匙。",
@@ -15583,7 +15583,7 @@
     "pinyin": "zhàopiàn",
     "pinyinNumbered": "zhao4 pian4",
     "english": "snapshot",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这是我去年拍的照片。",
@@ -15605,7 +15605,7 @@
     "pinyin": "zhào xiàng",
     "pinyinNumbered": "zhao4 xiang4",
     "english": "to take a photograph",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们在公园里照相了。",
@@ -15627,7 +15627,7 @@
     "pinyin": "zhàogu",
     "pinyinNumbered": "zhao4 gu4",
     "english": "look after",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天都要照顾我的小狗。",
@@ -15649,7 +15649,7 @@
     "pinyin": "zhème",
     "pinyinNumbered": "zhe4 me0",
     "english": "so",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "今天天气这么热，我们去游泳吧。",
@@ -15671,7 +15671,7 @@
     "pinyin": "zhè shíhòu",
     "pinyinNumbered": "zhe4 shi2 hou4",
     "english": "At this moment",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我正在做功课，这时候妈妈叫我吃饭。",
@@ -15693,7 +15693,7 @@
     "pinyin": "zhēnzhèng",
     "pinyinNumbered": "zhen1 zheng4",
     "english": "true",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "他真正喜欢读书。",
@@ -15715,7 +15715,7 @@
     "pinyin": "zhèngcháng",
     "pinyinNumbered": "zheng4 chang2",
     "english": "normal",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "今天天气很正常，不太热也不太冷。",
@@ -15737,7 +15737,7 @@
     "pinyin": "zhèngshì",
     "pinyinNumbered": "zheng4 shi4",
     "english": "(emphasizes that sth is precisely or exactly as stated)",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "这正是我想要的礼物。",
@@ -15759,7 +15759,7 @@
     "pinyin": "zhèyàng",
     "pinyinNumbered": "zhe4 yang4",
     "english": "so",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你可以这样做，会很简单。",
@@ -15781,7 +15781,7 @@
     "pinyin": "zhèngquè",
     "pinyinNumbered": "zheng4 que4",
     "english": "correct",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "你的答案是正确的。",
@@ -15803,7 +15803,7 @@
     "pinyin": "zhǐ",
     "pinyinNumbered": "zhi1",
     "english": "only",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "我只喜欢喝茶，不喜欢喝咖啡。",
@@ -15825,7 +15825,7 @@
     "pinyin": "zhǐnéng",
     "pinyinNumbered": "zhi3 neng2",
     "english": "can only",
-    "partOfSpeech": "",
+    "partOfSpeech": "auxiliary verb",
     "examples": [
       {
         "chinese": "我今天很忙，只能明天去看你。",
@@ -15847,7 +15847,7 @@
     "pinyin": "zhíjiē",
     "pinyinNumbered": "zhi2 jie1",
     "english": "direct",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你可以直接问我，不用客气。",
@@ -15869,7 +15869,7 @@
     "pinyin": "zhènghǎo",
     "pinyinNumbered": "zheng4 hao3",
     "english": "just",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "你来得正好，我们正要吃饭。",
@@ -15891,7 +15891,7 @@
     "pinyin": "zhǐ",
     "pinyinNumbered": "zhi3",
     "english": "paper",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我用纸写了一封信。",
@@ -15913,7 +15913,7 @@
     "pinyin": "zhǐyào",
     "pinyinNumbered": "zhi3 yao4",
     "english": "conj.: so long as",
-    "partOfSpeech": "",
+    "partOfSpeech": "conjunction",
     "examples": [
       {
         "chinese": "只要你努力学习，就能考好。",
@@ -15935,7 +15935,7 @@
     "pinyin": "zhōngjí",
     "pinyinNumbered": "zhong1 ji2",
     "english": "middle level (in a hierarchy)",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我现在是中级学生，下个月要考高级。",
@@ -15957,7 +15957,7 @@
     "pinyin": "zhōngnián",
     "pinyinNumbered": "zhong1 nian2",
     "english": "middle age",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的父亲已经是中年人了，但他看起来很年轻。",
@@ -15979,7 +15979,7 @@
     "pinyin": "zhōngxiǎoxué",
     "pinyinNumbered": "zhong1 xiao3 xue2",
     "english": "primary and middle school",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的孩子在中小学读书。",
@@ -16001,7 +16001,7 @@
     "pinyin": "zhōngxīn",
     "pinyinNumbered": "zhong1 xin1",
     "english": "center",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这家医院的中心在城市的中间。",
@@ -16023,7 +16023,7 @@
     "pinyin": "zhōngcān",
     "pinyinNumbered": "zhong1 can1",
     "english": "Chinese meal",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我很喜欢吃中餐，特别是饺子。",
@@ -16045,7 +16045,7 @@
     "pinyin": "zhōngyī",
     "pinyinNumbered": "zhong1 yi1",
     "english": "trad. Ch. medicine",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我奶奶相信中医，她经常吃中药。",
@@ -16067,7 +16067,7 @@
     "pinyin": "zhòngshì",
     "pinyinNumbered": "zhong4 shi4",
     "english": "attach importance to",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "老师很重视学生的学习态度。",
@@ -16089,7 +16089,7 @@
     "pinyin": "zhōu",
     "pinyinNumbered": "zhou1",
     "english": "Surname",
-    "partOfSpeech": "",
+    "partOfSpeech": "proper noun",
     "examples": [
       {
         "chinese": "我的朋友周明是一个医生。",
@@ -16111,7 +16111,7 @@
     "pinyin": "zhōumò",
     "pinyinNumbered": "zhou1 mo4",
     "english": "weekend",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个周末我想去公园玩。",
@@ -16133,7 +16133,7 @@
     "pinyin": "zhōunián",
     "pinyinNumbered": "zhou1 nian2",
     "english": "anniversary",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今年是我们公司成立十周年。",
@@ -16155,7 +16155,7 @@
     "pinyin": "zhòngdiǎn",
     "pinyinNumbered": "zhong4 dian3",
     "english": "taproot",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "学习英语的重点是要多练习说话。",
@@ -16177,7 +16177,7 @@
     "pinyin": "zhùfáng",
     "pinyinNumbered": "zhu4 fang2",
     "english": "housing",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们需要找一个便宜的住房。",
@@ -16199,7 +16199,7 @@
     "pinyin": "zhǔrén",
     "pinyinNumbered": "zhu3 ren2",
     "english": "lord",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这是我主人的狗。",
@@ -16221,7 +16221,7 @@
     "pinyin": "zhù yuàn",
     "pinyinNumbered": "zhu4 yuan4",
     "english": "be hospitalized",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我的祖母昨天住院了，我们都很担心。",
@@ -16243,7 +16243,7 @@
     "pinyin": "zìjǐ",
     "pinyinNumbered": "zi4 ji3",
     "english": "lonesome",
-    "partOfSpeech": "",
+    "partOfSpeech": "pronoun",
     "examples": [
       {
         "chinese": "他一个人坐在房间里,感到很自己。",
@@ -16265,7 +16265,7 @@
     "pinyin": "zhuāng",
     "pinyinNumbered": "zhuang1",
     "english": "install",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们需要装一个新的空调。",
@@ -16287,7 +16287,7 @@
     "pinyin": "zhǔnquè",
     "pinyinNumbered": "zhun3 que4",
     "english": "accurate",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "这个天气预报很准确，明天确实会下雨。",
@@ -16309,7 +16309,7 @@
     "pinyin": "zìxíngchē",
     "pinyinNumbered": "zi4 xing2 che1",
     "english": "two-wheeler",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我每天骑自行车去上班。",
@@ -16331,7 +16331,7 @@
     "pinyin": "zìyóu",
     "pinyinNumbered": "zi4 you2",
     "english": "free",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我喜欢在周末自由地做自己想做的事情。",
@@ -16353,7 +16353,7 @@
     "pinyin": "zìdiǎn",
     "pinyinNumbered": "zi4 dian3",
     "english": "lexicon",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我不知道这个字的意思，我需要查字典。",
@@ -16375,7 +16375,7 @@
     "pinyin": "zǒuguò",
     "pinyinNumbered": "zou3 guo4",
     "english": "to walk past",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我每天走过这条街去上班。",
@@ -16397,7 +16397,7 @@
     "pinyin": "zǒujìn",
     "pinyinNumbered": "zou3 jin4",
     "english": "enter",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我走进了教室，看到老师在黑板上写字。",
@@ -16419,7 +16419,7 @@
     "pinyin": "zū",
     "pinyinNumbered": "zu1",
     "english": "rent out",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们租了一个小房子住。",
@@ -16441,7 +16441,7 @@
     "pinyin": "zǔ",
     "pinyinNumbered": "zu3",
     "english": "m.[general]",
-    "partOfSpeech": "",
+    "partOfSpeech": "measure word",
     "examples": [
       {
         "chinese": "我们班有十个小组。",
@@ -16463,7 +16463,7 @@
     "pinyin": "zǒukāi",
     "pinyinNumbered": "zou3 kai1",
     "english": "to leave",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "请你走开，我要睡觉了。",
@@ -16485,7 +16485,7 @@
     "pinyin": "zǔ chéng",
     "pinyinNumbered": "zu3 cheng2",
     "english": "form",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我们的队伍由十个人组成。",
@@ -16507,7 +16507,7 @@
     "pinyin": "zhǔyào",
     "pinyinNumbered": "zhu3 yao4",
     "english": "main",
-    "partOfSpeech": "",
+    "partOfSpeech": "adjective",
     "examples": [
       {
         "chinese": "我主要喜欢吃米饭和蔬菜。",
@@ -16529,7 +16529,7 @@
     "pinyin": "zuǐ",
     "pinyinNumbered": "zui3",
     "english": "spigot",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "水龙头的嘴坏了，水一直在滴。",
@@ -16551,7 +16551,7 @@
     "pinyin": "zuìjìn",
     "pinyinNumbered": "zui4 jin4",
     "english": "recent",
-    "partOfSpeech": "",
+    "partOfSpeech": "adverb",
     "examples": [
       {
         "chinese": "最近天气很冷，你要多穿衣服。",
@@ -16573,7 +16573,7 @@
     "pinyin": "zǔzhǎng",
     "pinyinNumbered": "zu3 zhang3",
     "english": "chief/head of group/section",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我们小组的组长很认真，他帮我们安排了所有的工作。",
@@ -16595,7 +16595,7 @@
     "pinyin": "zuòjiā",
     "pinyinNumbered": "zuo4 jia1",
     "english": "penster",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我的母亲是一位著名的作家。",
@@ -16617,7 +16617,7 @@
     "pinyin": "zuòwén",
     "pinyinNumbered": "zuo4 wen2",
     "english": "composition",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "今天老师让我们写一篇作文。",
@@ -16639,7 +16639,7 @@
     "pinyin": "zuòyòng",
     "pinyinNumbered": "zuo4 yong4",
     "english": "action",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "运动对身体有很大的作用。",
@@ -16661,7 +16661,7 @@
     "pinyin": "zuò",
     "pinyinNumbered": "zuo4",
     "english": "fare",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "从这里到火车站的车费是多少座？",
@@ -16683,7 +16683,7 @@
     "pinyin": "zuòwei",
     "pinyinNumbered": "zuo4 wei4",
     "english": "seat",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个座位很舒服，我很喜欢。",
@@ -16705,7 +16705,7 @@
     "pinyin": "zuò dào",
     "pinyinNumbered": "zuo4 dao4",
     "english": "achievement",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我今天的作业做到了一半。",
@@ -16727,7 +16727,7 @@
     "pinyin": "zuòfa",
     "pinyinNumbered": "zuo4 fa3",
     "english": "way of doing sth.",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "这个菜的做法很简单，我可以教你。",
@@ -16749,7 +16749,7 @@
     "pinyin": "zuòyè",
     "pinyinNumbered": "zuo4 ye4",
     "english": "school assignment",
-    "partOfSpeech": "",
+    "partOfSpeech": "noun",
     "examples": [
       {
         "chinese": "我今天有很多作业要做。",
@@ -16771,7 +16771,7 @@
     "pinyin": "zuò fàn",
     "pinyinNumbered": "zuo4 fan4",
     "english": "do the cooking",
-    "partOfSpeech": "",
+    "partOfSpeech": "verb",
     "examples": [
       {
         "chinese": "我妈妈每天都在厨房做饭。",
