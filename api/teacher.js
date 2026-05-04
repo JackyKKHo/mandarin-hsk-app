@@ -2,6 +2,23 @@ import Anthropic from '@anthropic-ai/sdk'
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
+// Rate limit: 20 requests per IP per hour
+const LIMIT = 20
+const WINDOW_MS = 60 * 60 * 1000
+const ipMap = new Map()
+
+function isRateLimited(ip) {
+  const now = Date.now()
+  const entry = ipMap.get(ip) ?? { count: 0, resetAt: now + WINDOW_MS }
+  if (now > entry.resetAt) {
+    entry.count = 0
+    entry.resetAt = now + WINDOW_MS
+  }
+  entry.count++
+  ipMap.set(ip, entry)
+  return entry.count > LIMIT
+}
+
 const SYSTEM_PROMPT = `You are Lin Wei (林威), a friendly and genuine Mandarin Chinese tutor originally from Beijing.
 You have been teaching Mandarin to English speakers for 10 years and have a warm, natural teaching style.
 
@@ -28,6 +45,11 @@ Format rules (IMPORTANT — this is spoken audio):
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).send('Method not allowed')
+  }
+
+  const ip = req.headers['x-forwarded-for']?.split(',')[0].trim() ?? req.socket?.remoteAddress ?? 'unknown'
+  if (isRateLimited(ip)) {
+    return res.status(429).send('Too many requests — please wait an hour before trying again.')
   }
 
   try {
