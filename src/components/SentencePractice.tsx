@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import AudioButton from './AudioButton'
 
 interface WordContext {
   simplified: string
@@ -63,6 +64,9 @@ export default function SentencePractice({ word }: Props) {
           placeholder={`e.g. 我很${word.simplified}…`}
           disabled={status === 'loading'}
         />
+        {sentence.trim() && (
+          <AudioButton text={sentence.trim()} audioUrl={null} label="Play sentence" />
+        )}
         <button
           className="sentence-practice-btn"
           onClick={submit}
