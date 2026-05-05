@@ -665,6 +665,24 @@ html.dark .stats-bar-reviewed { background: #22263a; }
 html.dark .quiz-option.opt-correct { background: #0d2d1a; }
 html.dark .quiz-option.opt-wrong   { background: #2d0a0a; }
 
+kbd.quiz-key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-family: inherit;
+  background: var(--bg);
+  color: var(--muted);
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.btn-next kbd { font-family: inherit; font-size: 0.72rem; opacity: 0.7; margin-left: 0.3rem; }
+
 .quiz-feedback {
   margin-top: 0.75rem;
   padding: 0.85rem 1rem;
@@ -2568,6 +2586,7 @@ html.dark .chart-cell-syl { color: #e0e0e0; }
 .review-card:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.13); }
 .review-card-chinese { font-size: 4rem; line-height: 1.1; }
 .review-card-hint { opacity: 0.35; font-size: 0.85rem; margin-top: 0.5rem; }
+.review-card-hint kbd { font-family: inherit; font-size: 0.75rem; border: 1px solid currentColor; border-radius: 3px; padding: 0 3px; }
 .review-card-back { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; width: 100%; }
 .review-card-pinyin { font-size: 1.4rem; }
 .review-card-english { font-size: 1.2rem; font-weight: 600; }
@@ -2606,6 +2625,7 @@ html.dark .chart-cell-syl { color: #e0e0e0; }
 .rate-btn:active { transform: translateY(0); }
 .rate-label { font-size: 1rem; font-weight: 700; }
 .rate-sub { font-size: 0.75rem; opacity: 0.8; }
+.rate-sub kbd { font-family: inherit; font-size: 0.7rem; border: 1px solid currentColor; border-radius: 3px; padding: 0 3px; opacity: 0.7; }
 .rate-again { background: #ffeaea; color: #c00; }
 .rate-good  { background: #e6f9ee; color: #1a7a3c; }
 .rate-easy  { background: #e8f0ff; color: #1a4ab0; }

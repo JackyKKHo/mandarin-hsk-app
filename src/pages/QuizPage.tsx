@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import type { VocabItem } from '../types'
 import TonedPinyin from '../components/TonedPinyin'
@@ -21,7 +21,9 @@ function shuffle<T>(arr: T[]): T[] {
 
 function pickDistractors(correct: VocabItem, pool: VocabItem[]): VocabItem[] {
   const others = pool.filter(w => w.id !== correct.id)
-  return shuffle(others).slice(0, 3)
+  const samePOS = shuffle(others.filter(w => w.partOfSpeech === correct.partOfSpeech))
+  const rest = shuffle(others.filter(w => w.partOfSpeech !== correct.partOfSpeech))
+  return [...samePOS, ...rest].slice(0, 3)
 }
 
 function truncate(s: string, n = 55): string {
@@ -41,6 +43,30 @@ export default function QuizPage() {
   const [options, setOptions] = useState<VocabItem[]>([])
   const [selected, setSelected] = useState<string | null>(null)
   const [score, setScore] = useState({ correct: 0, wrong: 0 })
+
+  const stageRef = useRef(stage)
+  const optionsRef = useRef(options)
+  const answerRef = useRef<(id: string) => void>(() => {})
+  const nextRef = useRef<() => void>(() => {})
+  stageRef.current = stage
+  optionsRef.current = options
+
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return
+      const s = stageRef.current
+      if (s === 'feedback' && (e.key === ' ' || e.key === 'Enter')) {
+        e.preventDefault()
+        nextRef.current()
+      } else if (s === 'question') {
+        const idx = parseInt(e.key) - 1
+        const opts = optionsRef.current
+        if (idx >= 0 && idx < opts.length) answerRef.current(opts[idx].id)
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
 
   const buildOptions = useCallback((word: VocabItem, pool: VocabItem[]) => {
     const distractors = pickDistractors(word, pool)
@@ -68,6 +94,7 @@ export default function QuizPage() {
     review(queue[index].id, correct ? 'good' : 'again')
     setStage('feedback')
   }
+  answerRef.current = answer
 
   function next() {
     const nextIdx = index + 1
@@ -81,6 +108,7 @@ export default function QuizPage() {
       setStage('question')
     }
   }
+  nextRef.current = next
 
   if (stage === 'idle') {
     return (
@@ -183,7 +211,7 @@ export default function QuizPage() {
 
       {/* Options */}
       <div className="quiz-options">
-        {options.map(opt => {
+        {options.map((opt, i) => {
           let cls = 'quiz-option'
           if (selected) {
             if (opt.id === word.id) cls += ' opt-correct'
@@ -197,6 +225,7 @@ export default function QuizPage() {
               onClick={() => answer(opt.id)}
               disabled={!!selected}
             >
+              <kbd className="quiz-key">{i + 1}</kbd>
               {mode === 'zh→en' && truncate(opt.english)}
               {mode === 'en→zh' && <span className="opt-chinese">{opt.simplified}</span>}
               {mode === 'pinyin→zh' && <span className="opt-chinese">{opt.simplified}</span>}
@@ -211,7 +240,8 @@ export default function QuizPage() {
           <span>{isCorrect ? '✓ Correct!' : `✗ It was: ${word.simplified} — ${word.english}`}</span>
           {!isCorrect && <TonedPinyin pinyin={word.pinyin} className="qf-pinyin" />}
           <button className="btn-next" onClick={next}>
-            {index + 1 >= queue.length ? 'See results →' : 'Next →'}
+            {index + 1 >= queue.length ? 'See results →' : 'Next → '}
+            <kbd>Space</kbd>
           </button>
         </div>
       )}

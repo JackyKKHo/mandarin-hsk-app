@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import TonedPinyin from '../components/TonedPinyin'
 import { useVocab } from '../hooks/useVocab'
@@ -34,17 +34,9 @@ export default function ReviewPage() {
   const [index, setIndex] = useState(0)
   const [results, setResults] = useState<Record<SRSQuality, number>>({ again: 0, good: 0, easy: 0 })
 
-  function start() {
-    const q = shuffle(allWords.filter(w => isDue(w.id)))
-    setQueue(q)
-    setIndex(0)
-    setResults({ again: 0, good: 0, easy: 0 })
-    setStage(q.length > 0 ? 'front' : 'complete')
-  }
-
-  function flip() {
-    setStage('back')
-  }
+  const stageRef = useRef(stage)
+  const rateRef = useRef<(q: SRSQuality) => void>(() => {})
+  stageRef.current = stage
 
   function rate(quality: SRSQuality) {
     const word = queue[index]
@@ -63,6 +55,32 @@ export default function ReviewPage() {
       setIndex(nextIndex)
       setStage('front')
     }
+  }
+  rateRef.current = rate
+
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return
+      const s = stageRef.current
+      if (s === 'front' && (e.key === ' ' || e.key === 'Enter')) {
+        e.preventDefault()
+        setStage('back')
+      } else if (s === 'back') {
+        if (e.key === '1') rateRef.current('again')
+        else if (e.key === '2') rateRef.current('good')
+        else if (e.key === '3') rateRef.current('easy')
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
+
+  function start() {
+    const q = shuffle(allWords.filter(w => isDue(w.id)))
+    setQueue(q)
+    setIndex(0)
+    setResults({ again: 0, good: 0, easy: 0 })
+    setStage(q.length > 0 ? 'front' : 'complete')
   }
 
   if (stage === 'idle') {
@@ -136,10 +154,10 @@ export default function ReviewPage() {
         <div className="progress-bar-fill" style={{ width: `${progressPct}%` }} />
       </div>
 
-      <div className="review-card" onClick={stage === 'front' ? flip : undefined}>
+      <div className="review-card" onClick={stage === 'front' ? () => setStage('back') : undefined}>
         <div className="review-card-chinese">{word.simplified}</div>
         {stage === 'front' ? (
-          <div className="review-card-hint">tap to reveal</div>
+          <div className="review-card-hint">tap to reveal · <kbd>Space</kbd></div>
         ) : (
           <div className="review-card-back">
             <TonedPinyin pinyin={word.pinyin} className="review-card-pinyin" />
@@ -162,15 +180,15 @@ export default function ReviewPage() {
         <div className="review-ratings">
           <button className="rate-btn rate-again" onClick={() => rate('again')}>
             <span className="rate-label">Again</span>
-            <span className="rate-sub">forgot</span>
+            <span className="rate-sub">forgot · <kbd>1</kbd></span>
           </button>
           <button className="rate-btn rate-good" onClick={() => rate('good')}>
             <span className="rate-label">Good</span>
-            <span className="rate-sub">remembered</span>
+            <span className="rate-sub">remembered · <kbd>2</kbd></span>
           </button>
           <button className="rate-btn rate-easy" onClick={() => rate('easy')}>
             <span className="rate-label">Easy</span>
-            <span className="rate-sub">too easy</span>
+            <span className="rate-sub">too easy · <kbd>3</kbd></span>
           </button>
         </div>
       )}
