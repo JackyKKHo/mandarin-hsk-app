@@ -277,11 +277,11 @@ export default function PronunciationPage() {
   const [playing, setPlaying] = useState<string | null>(null)
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
-  async function playChar(char: string, id: string) {
+  async function playTts(param: string, id: string) {
     if (playing === id) return
     setPlaying(id)
     try {
-      const res = await fetch(`/api/tts?text=${encodeURIComponent(char)}`)
+      const res = await fetch(`/api/tts?${param}`)
       if (!res.ok) return
       const blob = await res.blob()
       const url = URL.createObjectURL(blob)
@@ -293,6 +293,10 @@ export default function PronunciationPage() {
     } catch {
       setPlaying(null)
     }
+  }
+
+  function playChar(char: string, id: string) {
+    return playTts(`text=${encodeURIComponent(char)}`, id)
   }
 
   return (
@@ -466,8 +470,10 @@ export default function PronunciationPage() {
                         {finGroup.map(fin => {
                           const syl = getSyllable(init, fin)
                           const char = CHAR_MAP[syl]
-                          const id = `chart-${syl}`
+                          const id = `chart-${syl}-${chartTone}`
                           const marked = markTone(syl, chartTone)
+                          // ü → v for Google TTS x-sampa phoneme
+                          const xsampa = syl.replace(/ü/g, 'v') + chartTone
 
                           if (!char) {
                             return <td key={fin} className="pron-td pron-td-empty">—</td>
@@ -476,7 +482,7 @@ export default function PronunciationPage() {
                             <td key={fin} className="pron-td">
                               <button
                                 className={`chart-cell-btn${playing === id ? ' playing' : ''}`}
-                                onClick={() => playChar(char, id)}
+                                onClick={() => playTts(`pinyin=${encodeURIComponent(xsampa)}`, id)}
                                 title={`${marked} (${char})`}
                               >
                                 <span className="chart-cell-syl">{marked}</span>
