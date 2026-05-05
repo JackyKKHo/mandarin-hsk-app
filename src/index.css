@@ -1340,6 +1340,25 @@ html.dark .syl-wrong { background: #1a0a0a; }
   outline: none;
 }
 .sentence-practice-input:focus { border-color: var(--blue); }
+.sentence-mic-btn {
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+.sentence-mic-btn:disabled { opacity: 0.4; cursor: default; }
+.sentence-mic-btn.listening {
+  background: #fdecea;
+  border-color: var(--red);
+  animation: mic-pulse 1s ease-in-out infinite;
+}
+html.dark .sentence-mic-btn.listening { background: #3b1a1a; }
+@keyframes mic-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.55; } }
+
 .sentence-practice-btn {
   padding: 0.55rem 1rem;
   border-radius: 8px;

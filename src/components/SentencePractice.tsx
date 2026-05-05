@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import AudioButton from './AudioButton'
+import { useState, useRef } from 'react'
 
 interface WordContext {
   simplified: string
@@ -12,12 +11,44 @@ interface Props {
   word: WordContext
 }
 
-type Status = 'idle' | 'loading' | 'done' | 'error'
+type Status = 'idle' | 'listening' | 'loading' | 'done' | 'error'
 
 export default function SentencePractice({ word }: Props) {
   const [sentence, setSentence] = useState('')
   const [feedback, setFeedback] = useState('')
   const [status, setStatus] = useState<Status>('idle')
+  const recognitionRef = useRef<any>(null)
+
+  function startListening() {
+    const SpeechRecognitionAPI = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition
+    if (!SpeechRecognitionAPI) return
+    const rec = new SpeechRecognitionAPI()
+    rec.lang = 'zh-CN'
+    rec.continuous = true
+    rec.interimResults = true
+    let silenceTimer: ReturnType<typeof setTimeout> | null = null
+
+    rec.onstart = () => setStatus('listening')
+    rec.onresult = (e: any) => {
+      const t = Array.from(e.results).map((r: any) => r[0].transcript).join('')
+      setSentence(t)
+      if (rec._lastTranscript !== undefined) rec._lastTranscript = t
+      if (silenceTimer) clearTimeout(silenceTimer)
+      silenceTimer = setTimeout(() => rec.stop(), 2000)
+    }
+    rec.onend = () => {
+      if (silenceTimer) clearTimeout(silenceTimer)
+      setStatus('idle')
+    }
+    rec.onerror = () => setStatus('idle')
+    rec._lastTranscript = ''
+    recognitionRef.current = rec
+    rec.start()
+  }
+
+  function stopListening() {
+    recognitionRef.current?.stop()
+  }
 
   async function submit() {
     const trimmed = sentence.trim()
@@ -61,12 +92,17 @@ export default function SentencePractice({ word }: Props) {
           value={sentence}
           onChange={e => { setSentence(e.target.value); if (status !== 'idle') setStatus('idle') }}
           onKeyDown={e => { if (e.key === 'Enter') submit() }}
-          placeholder={`e.g. 我很${word.simplified}…`}
+          placeholder={status === 'listening' ? 'Listening…' : `e.g. 我很${word.simplified}…`}
           disabled={status === 'loading'}
         />
-        {sentence.trim() && (
-          <AudioButton text={sentence.trim()} audioUrl={null} label="Play sentence" />
-        )}
+        <button
+          className={`sentence-mic-btn${status === 'listening' ? ' listening' : ''}`}
+          onClick={status === 'listening' ? stopListening : startListening}
+          disabled={status === 'loading'}
+          title={status === 'listening' ? 'Stop recording' : 'Speak your sentence'}
+        >
+          {status === 'listening' ? '⏹' : '🎙️'}
+        </button>
         <button
           className="sentence-practice-btn"
           onClick={submit}
