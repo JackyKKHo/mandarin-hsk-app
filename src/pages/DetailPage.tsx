@@ -4,6 +4,7 @@ import TeacherButton from '../components/TeacherButton'
 import TonedPinyin from '../components/TonedPinyin'
 import PronunciationChecker from '../components/PronunciationChecker'
 import StrokeOrder from '../components/StrokeOrder'
+import SentencePractice from '../components/SentencePractice'
 import { useDismissed } from '../hooks/useDismissed'
 import { useProgress } from '../hooks/useProgress'
 import { useFavourites } from '../hooks/useFavourites'
@@ -148,6 +149,10 @@ export default function DetailPage() {
           </div>
         )}
 
+        {word.explanation && (
+          <div className="detail-explanation">{word.explanation}</div>
+        )}
+
         {word.traditional !== word.simplified && (
           <div className="detail-traditional">
             Traditional: <span>{word.traditional}</span>
@@ -175,6 +180,13 @@ export default function DetailPage() {
             ))}
           </section>
         )}
+
+        <SentencePractice word={{
+          simplified: word.simplified,
+          pinyin: word.pinyin,
+          english: word.english,
+          hskLevel: word.hskLevel,
+        }} />
 
         <StrokeOrder characters={word.simplified} />
 

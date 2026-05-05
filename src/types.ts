@@ -35,6 +35,7 @@ export interface VocabItem {
   pinyinNumbered: string
   english: string
   partOfSpeech: string
+  explanation?: string
   meanings?: Meaning[]
   examples: Example[]
   tags: string[]

@@ -99,18 +99,22 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 | `node scripts/fill-part-of-speech.mjs` | Submit Anthropic batch to fill `partOfSpeech` for all words |
 | `node scripts/fill-part-of-speech.mjs --status` | Check batch status |
 | `node scripts/fill-part-of-speech.mjs --apply` | Apply batch results to JSON files |
+| `node scripts/fill-explanations.mjs` | Submit Anthropic batch to fill `explanation` for all words |
+| `node scripts/fill-explanations.mjs --status` | Check explanation batch status |
+| `node scripts/fill-explanations.mjs --apply` | Apply explanation batch results to JSON files |
 | `node scripts/generate-examples.mjs [level]` | Generate example sentences for a level |
 
 ---
 
 ## Known Issues / TODO
 
-- [ ] **`partOfSpeech`** — batch submitted, apply once complete
-- [ ] **Bundle size** — 3.9MB JS chunk (all HSK JSON loaded upfront). Fix: lazy-load by level
-- [ ] **SRS "again" re-queue** — cards marked "again" don't resurface in same session
-- [ ] **Lin Wei error UI** — 429/error responses show nothing to user
-- [ ] **Word detail next/prev** — no navigation between words without going back to list
-- [ ] **Empty review state** — could suggest next action when no cards due
+- [ ] **`explanation`** — batch script ready (`fill-explanations.mjs`), run to fill all 11k words
+- [x] **`partOfSpeech`** — 100% filled across all levels
+- [x] **Bundle size** — lazy-loaded per level via `vocabLoader.ts` dynamic imports
+- [x] **SRS "again" re-queue** — cards loop back within the same session
+- [x] **Lin Wei error UI** — 429/errors shown as chat messages
+- [x] **Word detail next/prev** — prev/next navigation implemented
+- [x] **Empty review state** — empty state with next-action suggestions shown
 
 ---
 

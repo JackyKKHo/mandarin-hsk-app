@@ -495,6 +495,17 @@ html.dark .stats-bar-reviewed { background: #22263a; }
 .meaning-ex-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; }
 .meaning-ex-content { flex: 1; }
 
+.detail-explanation {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--surface);
+  border-left: 3px solid var(--blue);
+  padding: 0.65rem 0.85rem;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 1rem;
+}
+
 .detail-traditional {
   font-size: 0.85rem;
   color: var(--muted);
@@ -1276,6 +1287,72 @@ html.dark .syl-wrong { background: #1a0a0a; }
   transition: color 0.15s, background 0.15s;
 }
 .pronun-retry:hover { color: var(--text); background: var(--surface); }
+
+/* Sentence practice */
+.sentence-practice {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+.sentence-practice-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 0.35rem;
+}
+.sentence-practice-hint {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+.sentence-practice-input-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.sentence-practice-input {
+  flex: 1;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+.sentence-practice-input:focus { border-color: var(--blue); }
+.sentence-practice-btn {
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--red);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.sentence-practice-btn:disabled { opacity: 0.5; cursor: default; }
+.sentence-feedback {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.feedback-correct {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+.feedback-incorrect {
+  background: #fce4ec;
+  color: #b71c1c;
+  border: 1px solid #f48fb1;
+}
+html.dark .feedback-correct { background: #1b3a1f; color: #81c784; border-color: #2e5c33; }
+html.dark .feedback-incorrect { background: #3b1a1a; color: #ef9a9a; border-color: #5c2a2a; }
 
 /* Stroke order */
 .stroke-order-section {
