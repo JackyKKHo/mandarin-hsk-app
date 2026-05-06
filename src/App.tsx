@@ -21,6 +21,12 @@ import LessonPage from './pages/LessonPage'
 import DialoguesPage from './pages/DialoguesPage'
 import DialoguePage from './pages/DialoguePage'
 import WelcomePage, { shouldShowWelcome } from './pages/WelcomePage'
+import TonePage from './pages/TonePage'
+import ScramblePage from './pages/ScramblePage'
+import DailyChallengePage from './pages/DailyChallengePage'
+import RadicalsPage from './pages/RadicalsPage'
+import MeasureWordsPage from './pages/MeasureWordsPage'
+import GuidesPage from './pages/GuidesPage'
 
 export default function App() {
   return (
@@ -49,6 +55,12 @@ export default function App() {
         <Route path="/course/:lessonId" element={<LessonPage />} />
         <Route path="/dialogues" element={<DialoguesPage />} />
         <Route path="/dialogue/:id" element={<DialoguePage />} />
+        <Route path="/tone/:level" element={<TonePage />} />
+        <Route path="/scramble/:level" element={<ScramblePage />} />
+        <Route path="/daily" element={<DailyChallengePage />} />
+        <Route path="/radicals" element={<RadicalsPage />} />
+        <Route path="/measure-words" element={<MeasureWordsPage />} />
+        <Route path="/guides" element={<GuidesPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>

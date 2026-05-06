@@ -23,6 +23,7 @@ export default function AppHeader() {
     : pathname.startsWith('/keyboard') ? 'keyboard'
     : pathname.startsWith('/course') ? 'course'
     : pathname.startsWith('/dialogue') ? 'dialogues'
+    : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') ? 'guides'
     : 'vocab'
 
   return (
@@ -45,6 +46,9 @@ export default function AppHeader() {
         </Link>
         <Link to="/grammar/1" className={`app-nav-link${section === 'grammar' ? ' active' : ''}`}>
           Grammar
+        </Link>
+        <Link to="/guides" className={`app-nav-link${section === 'guides' ? ' active' : ''}`}>
+          Guides
         </Link>
         <Link to="/pronunciation" className={`app-nav-link${section === 'pronunciation' ? ' active' : ''}`}>
           🗣️

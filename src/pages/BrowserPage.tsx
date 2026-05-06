@@ -168,6 +168,8 @@ export default function BrowserPage() {
                 { to: `/listen/${currentLevel}`,   label: '🔊 Listening',   sub: 'Hear & identify' },
                 { to: `/fill/${currentLevel}`,     label: '✏️ Fill blank',   sub: 'Complete sentences' },
                 { to: `/write/${currentLevel}`,    label: '✍️ Writing',      sub: 'Stroke order tracing' },
+                { to: `/tone/${currentLevel}`,     label: '🎵 Tone Trainer', sub: 'Identify tones' },
+                { to: `/scramble/${currentLevel}`, label: '🔀 Scramble',    sub: 'Reorder sentences' },
               ].map(({ to, label, sub }) => (
                 <Link key={to} to={to} className="practice-menu-item" onClick={() => setPracticeOpen(false)}>
                   <span className="pmi-label">{label}</span>
