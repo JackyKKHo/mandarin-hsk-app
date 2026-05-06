@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
 import { useVocab } from '../hooks/useVocab'
@@ -10,20 +10,26 @@ const MAX_RESULTS = 80
 
 export default function SearchPage() {
   const [query, setQuery] = useState('')
+  const [debouncedQuery, setDebouncedQuery] = useState('')
   const { isFavourite, toggleFavourite } = useFavourites()
   const { words: vocab } = useVocab()
 
+  useEffect(() => {
+    const t = setTimeout(() => setDebouncedQuery(query), 200)
+    return () => clearTimeout(t)
+  }, [query])
+
   const results = useMemo(() => {
-    const q = query.trim()
+    const q = debouncedQuery.trim()
     if (q.length < 1) return []
     const ql = q.toLowerCase()
     return vocab.filter(w =>
-      w.simplified.includes(q) ||
-      w.traditional.includes(q) ||
+      w.simplified.includes(debouncedQuery.trim()) ||
+      w.traditional.includes(debouncedQuery.trim()) ||
       w.pinyin.toLowerCase().includes(ql) ||
       w.english.toLowerCase().includes(ql)
     ).slice(0, MAX_RESULTS)
-  }, [query, vocab])
+  }, [debouncedQuery, vocab])
 
   return (
     <div className="browser-page">
@@ -39,19 +45,19 @@ export default function SearchPage() {
           autoFocus
           aria-label="Search all vocabulary"
         />
-        {query.trim() && (
+        {debouncedQuery.trim() && (
           <span className="result-count">
             {results.length}{results.length === MAX_RESULTS ? '+' : ''} result{results.length !== 1 ? 's' : ''}
           </span>
         )}
       </div>
 
-      {query.trim() === '' && (
+      {debouncedQuery.trim() === '' && (
         <p className="search-hint">Search by Chinese characters, pinyin, or English meaning across all 9 HSK levels.</p>
       )}
 
-      {query.trim() !== '' && results.length === 0 && (
-        <p className="empty-state">No results for "{query}"</p>
+      {debouncedQuery.trim() !== '' && results.length === 0 && (
+        <p className="empty-state">No results for "{debouncedQuery}"</p>
       )}
 
       {results.length > 0 && (

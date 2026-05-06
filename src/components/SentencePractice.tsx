@@ -1,10 +1,11 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 interface WordContext {
   simplified: string
   pinyin: string
   english: string
   hskLevel: number
+  partOfSpeech?: string
 }
 
 interface Props {
@@ -13,11 +14,26 @@ interface Props {
 
 type Status = 'idle' | 'listening' | 'loading' | 'done' | 'error'
 
+function getPlaceholder(word: WordContext) {
+  const pos = (word.partOfSpeech || '').toLowerCase()
+  if (pos.startsWith('n') || pos === 'pron' || pos === 'mw') return `这是${word.simplified}…`
+  if (pos.startsWith('v')) return `我想${word.simplified}…`
+  if (pos === 'adj') return `这很${word.simplified}…`
+  return `请用${word.simplified}造一个句子…`
+}
+
 export default function SentencePractice({ word }: Props) {
   const [sentence, setSentence] = useState('')
   const [feedback, setFeedback] = useState('')
   const [status, setStatus] = useState<Status>('idle')
   const recognitionRef = useRef<any>(null)
+
+  useEffect(() => {
+    setSentence('')
+    setFeedback('')
+    setStatus('idle')
+    recognitionRef.current?.stop()
+  }, [word.simplified])
 
   function startListening() {
     const SpeechRecognitionAPI = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition
@@ -92,7 +108,7 @@ export default function SentencePractice({ word }: Props) {
           value={sentence}
           onChange={e => { setSentence(e.target.value); if (status !== 'idle') setStatus('idle') }}
           onKeyDown={e => { if (e.key === 'Enter') submit() }}
-          placeholder={status === 'listening' ? 'Listening…' : `e.g. 我很${word.simplified}…`}
+          placeholder={status === 'listening' ? 'Listening…' : `e.g. ${getPlaceholder(word)}`}
           disabled={status === 'loading'}
         />
         <button

@@ -205,7 +205,6 @@ export default function BrowserPage() {
                 </div>
               )}
               <div className="card-footer">
-                <span className="card-pos">{word.partOfSpeech}</span>
                 <div style={{ display: 'flex', gap: '0.3rem' }}>
                   <button
                     className={`action-btn fav-btn${isFavourite(word.id) ? ' active' : ''}`}

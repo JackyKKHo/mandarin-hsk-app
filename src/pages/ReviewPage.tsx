@@ -33,6 +33,7 @@ export default function ReviewPage() {
   const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
   const [results, setResults] = useState<Record<SRSQuality, number>>({ again: 0, good: 0, easy: 0 })
+  const initialLengthRef = useRef(0)
 
   const stageRef = useRef(stage)
   const rateRef = useRef<(q: SRSQuality) => void>(() => {})
@@ -77,6 +78,7 @@ export default function ReviewPage() {
 
   function start() {
     const q = shuffle(allWords.filter(w => isDue(w.id)))
+    initialLengthRef.current = q.length
     setQueue(q)
     setIndex(0)
     setResults({ again: 0, good: 0, easy: 0 })
@@ -140,7 +142,8 @@ export default function ReviewPage() {
 
   const word = queue[index]
   const card = getCard(word.id)
-  const progressPct = (index / queue.length) * 100
+  const doneCount = results.good + results.easy
+  const progressPct = initialLengthRef.current > 0 ? (doneCount / initialLengthRef.current) * 100 : 0
 
   return (
     <div className="practice-page">

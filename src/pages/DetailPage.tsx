@@ -186,6 +186,7 @@ export default function DetailPage() {
           pinyin: word.pinyin,
           english: word.english,
           hskLevel: word.hskLevel,
+          partOfSpeech: word.partOfSpeech,
         }} />
 
         <StrokeOrder characters={word.simplified} />
