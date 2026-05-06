@@ -124,31 +124,34 @@ export default function QuizPage() {
             <p className="empty-state">No vocabulary yet for this level.</p>
           ) : (
             <>
-              <p className="practice-start-desc">
-                {levelWords.length} words available — pick a length and direction.
-              </p>
-              <div className="quiz-mode-picker">
-                {([10, 25, 50, null] as const).map(n => (
-                  <button
-                    key={String(n)}
-                    className={`quiz-mode-btn${quizLength === n ? ' active' : ''}`}
-                    onClick={() => setQuizLength(n)}
-                    disabled={n !== null && n > levelWords.length}
-                  >
-                    {n === null ? 'All' : n}
-                  </button>
-                ))}
+              <div className="quiz-option-group">
+                <span className="quiz-option-label">Questions</span>
+                <div className="quiz-length-picker">
+                  {([10, 25, 50, null] as const).map(n => (
+                    <button
+                      key={String(n)}
+                      className={`quiz-length-btn${quizLength === n ? ' active' : ''}`}
+                      onClick={() => setQuizLength(n)}
+                      disabled={n !== null && n > levelWords.length}
+                    >
+                      {n === null ? `All ${levelWords.length}` : n}
+                    </button>
+                  ))}
+                </div>
               </div>
-              <div className="quiz-mode-picker" style={{ marginTop: '0.5rem' }}>
-                {(['zh→en', 'en→zh', 'pinyin→zh'] as Mode[]).map(m => (
-                  <button
-                    key={m}
-                    className={`quiz-mode-btn${mode === m ? ' active' : ''}`}
-                    onClick={() => setMode(m)}
-                  >
-                    {m}
-                  </button>
-                ))}
+              <div className="quiz-option-group">
+                <span className="quiz-option-label">Direction</span>
+                <div className="quiz-mode-picker">
+                  {(['zh→en', 'en→zh', 'pinyin→zh'] as Mode[]).map(m => (
+                    <button
+                      key={m}
+                      className={`quiz-mode-btn${mode === m ? ' active' : ''}`}
+                      onClick={() => setMode(m)}
+                    >
+                      {m}
+                    </button>
+                  ))}
+                </div>
               </div>
               <button className="btn-primary" onClick={start}>
                 Start {quizLength ?? levelWords.length}-question quiz
