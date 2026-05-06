@@ -28,13 +28,15 @@ export default function PracticePage() {
   const notDue = useMemo(() => levelWords.filter(w => !isDue(w.id)), [levelWords, isDue])
 
   const [stage, setStage] = useState<Stage>('idle')
+  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(25)
   const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
   const [counts, setCounts] = useState({ again: 0, good: 0, easy: 0 })
 
   function start(dueOnly: boolean) {
-    const words = dueOnly ? shuffle(due) : [...shuffle(due), ...shuffle(notDue)]
+    const words = (dueOnly ? shuffle(due) : [...shuffle(due), ...shuffle(notDue)])
+      .slice(0, sessionLength ?? undefined)
     setQueue(words)
     setIndex(0)
     setFlipped(false)
@@ -93,17 +95,33 @@ export default function PracticePage() {
                 Tap to reveal, then rate how well you knew it. Cards you know well appear less often; harder cards come back sooner.
               </p>
 
+              <div className="quiz-option-group">
+                <span className="quiz-option-label">Session length</span>
+                <div className="quiz-length-picker">
+                  {([10, 25, 50, null] as const).map(n => (
+                    <button
+                      key={String(n)}
+                      className={`quiz-length-btn${sessionLength === n ? ' active' : ''}`}
+                      onClick={() => setSessionLength(n)}
+                      disabled={n !== null && n > levelWords.length}
+                    >
+                      {n === null ? `All ${levelWords.length}` : n}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
               <div className="start-btns">
                 {due.length > 0 && (
                   <button className="btn-primary" onClick={() => start(true)}>
-                    Study due ({due.length})
+                    Study due ({Math.min(due.length, sessionLength ?? due.length)})
                   </button>
                 )}
                 <button
                   className={due.length > 0 ? 'btn-secondary' : 'btn-primary'}
                   onClick={() => start(false)}
                 >
-                  Study all ({levelWords.length})
+                  Study all ({Math.min(levelWords.length, sessionLength ?? levelWords.length)})
                 </button>
               </div>
             </>

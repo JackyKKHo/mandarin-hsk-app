@@ -50,6 +50,7 @@ export default function FillBlankPage() {
   const levelWords = useMemo(() => allLevelWords.filter(w => w.examples.length > 0), [allLevelWords])
 
   const [stage, setStage] = useState<Stage>('idle')
+  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(10)
   const [mode, setMode] = useState<AnswerMode>('pick')
   const [queue, setQueue] = useState<Question[]>([])
   const [index, setIndex] = useState(0)
@@ -63,7 +64,7 @@ export default function FillBlankPage() {
     const qs = shuffle(levelWords)
       .map(w => buildQuestion(w, levelWords))
       .filter((q): q is Question => q !== null)
-      .slice(0, 20)
+      .slice(0, sessionLength ?? undefined)
 
     if (qs.length === 0) return
     setQueue(qs)
@@ -129,17 +130,36 @@ export default function FillBlankPage() {
             <>
               <p className="practice-start-desc">
                 Complete the example sentence by filling in the missing word.
-                Up to 20 questions per session.
               </p>
-              <div className="quiz-mode-picker">
-                <button className={`quiz-mode-btn${mode === 'pick' ? ' active' : ''}`} onClick={() => setMode('pick')}>
-                  Multiple choice
-                </button>
-                <button className={`quiz-mode-btn${mode === 'type' ? ' active' : ''}`} onClick={() => setMode('type')}>
-                  Type answer
-                </button>
+              <div className="quiz-option-group">
+                <span className="quiz-option-label">Questions</span>
+                <div className="quiz-length-picker">
+                  {([10, 25, 50, null] as const).map(n => (
+                    <button
+                      key={String(n)}
+                      className={`quiz-length-btn${sessionLength === n ? ' active' : ''}`}
+                      onClick={() => setSessionLength(n)}
+                      disabled={n !== null && n > levelWords.length}
+                    >
+                      {n === null ? `All ${levelWords.length}` : n}
+                    </button>
+                  ))}
+                </div>
               </div>
-              <button className="btn-primary" onClick={start}>Start</button>
+              <div className="quiz-option-group">
+                <span className="quiz-option-label">Answer type</span>
+                <div className="quiz-mode-picker">
+                  <button className={`quiz-mode-btn${mode === 'pick' ? ' active' : ''}`} onClick={() => setMode('pick')}>
+                    Multiple choice
+                  </button>
+                  <button className={`quiz-mode-btn${mode === 'type' ? ' active' : ''}`} onClick={() => setMode('type')}>
+                    Type answer
+                  </button>
+                </div>
+              </div>
+              <button className="btn-primary" onClick={start}>
+                Start {sessionLength ?? levelWords.length} questions
+              </button>
             </>
           )}
         </div>

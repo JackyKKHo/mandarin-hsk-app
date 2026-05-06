@@ -40,6 +40,7 @@ export default function ListeningPage() {
   const { words: levelWords, title, backPath, loading: vocabLoading } = usePracticeWords(level)
 
   const [stage, setStage] = useState<Stage>('idle')
+  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(25)
   const [questionType, setQuestionType] = useState<QuestionType>('char')
   const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
@@ -65,7 +66,7 @@ export default function ListeningPage() {
   }
 
   async function start() {
-    const q = shuffle(levelWords)
+    const q = shuffle(levelWords).slice(0, sessionLength ?? undefined)
     setQueue(q)
     setIndex(0)
     setScore({ correct: 0, wrong: 0 })
@@ -120,23 +121,41 @@ export default function ListeningPage() {
                 Listen to the word and pick the correct answer.
                 Audio plays automatically.
               </p>
-              <div className="quiz-mode-picker">
-                {([
-                  { key: 'char', label: 'Pick character' },
-                  { key: 'english', label: 'Pick meaning' },
-                  { key: 'pinyin', label: 'Pick pinyin' },
-                ] as { key: QuestionType; label: string }[]).map(({ key, label }) => (
-                  <button
-                    key={key}
-                    className={`quiz-mode-btn${questionType === key ? ' active' : ''}`}
-                    onClick={() => setQuestionType(key)}
-                  >
-                    {label}
-                  </button>
-                ))}
+              <div className="quiz-option-group">
+                <span className="quiz-option-label">Questions</span>
+                <div className="quiz-length-picker">
+                  {([10, 25, 50, null] as const).map(n => (
+                    <button
+                      key={String(n)}
+                      className={`quiz-length-btn${sessionLength === n ? ' active' : ''}`}
+                      onClick={() => setSessionLength(n)}
+                      disabled={n !== null && n > levelWords.length}
+                    >
+                      {n === null ? `All ${levelWords.length}` : n}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="quiz-option-group">
+                <span className="quiz-option-label">Answer type</span>
+                <div className="quiz-mode-picker">
+                  {([
+                    { key: 'char', label: 'Pick character' },
+                    { key: 'english', label: 'Pick meaning' },
+                    { key: 'pinyin', label: 'Pick pinyin' },
+                  ] as { key: QuestionType; label: string }[]).map(({ key, label }) => (
+                    <button
+                      key={key}
+                      className={`quiz-mode-btn${questionType === key ? ' active' : ''}`}
+                      onClick={() => setQuestionType(key)}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
               </div>
               <button className="btn-primary" onClick={start} disabled={loading}>
-                {loading ? 'Loading…' : 'Start listening'}
+                {loading ? 'Loading…' : `Start ${sessionLength ?? levelWords.length} questions`}
               </button>
             </>
           )}
