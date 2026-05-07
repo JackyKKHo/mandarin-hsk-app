@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { useSEO } from '../hooks/useSEO'
 
 // ─── Tone data ────────────────────────────────────────────────────────────────
 
@@ -273,6 +274,7 @@ function getSyllable(init: string, fin: string): string {
 // ─── Component ───────────────────────────────────────────────────────────────
 
 export default function PronunciationPage() {
+  useSEO({ title: 'Mandarin Pronunciation Guide — Tones, Pinyin & Initials', description: 'Complete guide to Mandarin Chinese pronunciation: four tones, pinyin initials, finals, and the syllable chart with audio examples.', path: '/pronunciation' })
   const [chartTone, setChartTone] = useState(1)
   const [playing, setPlaying] = useState<string | null>(null)
   const audioRef = useRef<HTMLAudioElement | null>(null)

@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from 'react'
+import { useSEO } from '../hooks/useSEO'
 import { Link } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
 import { useVocab } from '../hooks/useVocab'
@@ -9,6 +10,7 @@ import { useFavourites } from '../hooks/useFavourites'
 const MAX_RESULTS = 80
 
 export default function SearchPage() {
+  useSEO({ title: 'Search Mandarin Vocabulary', description: 'Search all 11,000+ HSK 1–9 Mandarin Chinese words by character, pinyin, or English meaning.', path: '/search' })
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
   const { isFavourite, toggleFavourite } = useFavourites()

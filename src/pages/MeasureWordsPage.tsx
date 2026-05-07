@@ -1,6 +1,7 @@
 import AppHeader from '../components/AppHeader'
 import { Link } from 'react-router-dom'
 import TonedPinyin from '../components/TonedPinyin'
+import { useSEO } from '../hooks/useSEO'
 
 interface MW {
   char: string
@@ -179,6 +180,7 @@ const MEASURE_WORDS: MW[] = [
 ]
 
 export default function MeasureWordsPage() {
+  useSEO({ title: 'Chinese Measure Words Guide (量词)', description: 'Master 20 essential Chinese measure words (量词) with usage rules and example phrases. Learn 个, 本, 张, 条 and more.', path: '/measure-words' })
   return (
     <div className="browser-page">
       <AppHeader />

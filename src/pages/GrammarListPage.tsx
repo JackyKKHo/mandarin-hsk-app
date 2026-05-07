@@ -4,6 +4,7 @@ import grammarData from '../../data/grammar.json'
 import type { GrammarPoint } from '../types'
 import AppHeader from '../components/AppHeader'
 import TonedPinyin from '../components/TonedPinyin'
+import { useSEO } from '../hooks/useSEO'
 
 const grammar = grammarData as GrammarPoint[]
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -12,6 +13,11 @@ export default function GrammarListPage() {
   const { level } = useParams<{ level: string }>()
   const navigate = useNavigate()
   const currentLevel = Number(level) || 1
+  useSEO({
+    title: `HSK ${currentLevel} Grammar Patterns`,
+    description: `Learn HSK Level ${currentLevel} Mandarin grammar patterns with explanations and example sentences.`,
+    path: `/grammar/${currentLevel}`,
+  })
   const [search, setSearch] = useState('')
 
   const levelCounts = useMemo(

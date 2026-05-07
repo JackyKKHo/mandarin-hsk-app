@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
+import { useSEO } from '../hooks/useSEO'
 
 const GUIDES = [
   { to: '/pronunciation', emoji: '🗣️', title: 'Pronunciation & Tones', desc: 'Tones, initials, finals, and the pinyin system explained.' },
@@ -15,6 +16,7 @@ const PRACTICE = [
 ]
 
 export default function GuidesPage() {
+  useSEO({ title: 'Mandarin Learning Guides & Extra Practice', description: 'Pronunciation guides, Chinese radicals, measure words, daily challenges and more — free resources for Mandarin learners.', path: '/guides' })
   return (
     <div className="browser-page">
       <AppHeader />

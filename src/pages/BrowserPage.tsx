@@ -7,6 +7,7 @@ import { useProgress, DAILY_GOAL } from '../hooks/useProgress'
 import { useFavourites } from '../hooks/useFavourites'
 import { useVocab } from '../hooks/useVocab'
 import { LEVEL_COUNTS } from '../data/vocabLoader'
+import { useSEO } from '../hooks/useSEO'
 
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const UNLOCK_THRESHOLD = 80
@@ -17,6 +18,11 @@ export default function BrowserPage() {
   const { level } = useParams<{ level: string }>()
   const navigate = useNavigate()
   const currentLevel = Number(level) || 1
+  useSEO({
+    title: `HSK ${currentLevel} Vocabulary — ${LEVEL_COUNTS[currentLevel] ?? ''} Words`,
+    description: `Browse and study all HSK Level ${currentLevel} Mandarin Chinese vocabulary. ${LEVEL_COUNTS[currentLevel] ?? ''} words with pinyin, examples, audio and spaced repetition flashcards.`,
+    path: `/hsk/${currentLevel}`,
+  })
   const [search, setSearch] = useState('')
   const [sort, setSort] = useState<'default' | 'unlearned' | 'az'>('default')
   const [practiceOpen, setPracticeOpen] = useState(false)

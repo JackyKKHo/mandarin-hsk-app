@@ -10,6 +10,16 @@ import { useProgress } from '../hooks/useProgress'
 import { useFavourites } from '../hooks/useFavourites'
 import { useVocab } from '../hooks/useVocab'
 import { levelFromId } from '../data/vocabLoader'
+import { useSEO } from '../hooks/useSEO'
+
+function WordSEO({ word }: { word: { id: string; simplified: string; pinyin: string; english: string; hskLevel: number; partOfSpeech: string } }) {
+  useSEO({
+    title: `${word.simplified} (${word.pinyin}) — ${word.english}`,
+    description: `${word.simplified} — ${word.english}. ${word.partOfSpeech}, HSK Level ${word.hskLevel}. Learn pronunciation, stroke order, example sentences and more.`,
+    path: `/word/${word.id}`,
+  })
+  return null
+}
 
 export default function DetailPage() {
   const { id } = useParams<{ id: string }>()
@@ -45,8 +55,22 @@ export default function DetailPage() {
   const learned = isLearned(word.id)
   const fav = isFavourite(word.id)
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTerm',
+    name: `${word.simplified} (${word.pinyin})`,
+    description: `${word.english} — ${word.partOfSpeech}, HSK Level ${word.hskLevel}`,
+    inDefinedTermSet: {
+      '@type': 'DefinedTermSet',
+      name: 'HSK Mandarin Vocabulary',
+      url: 'https://www.mandarindaily.app',
+    },
+  }
+
   return (
     <div className="detail-page">
+      <WordSEO word={word} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="detail-nav">
         <Link to={`/hsk/${word.hskLevel}`} className="back-link" style={{ marginBottom: 0 }}>
           ← HSK {word.hskLevel}

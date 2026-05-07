@@ -1,5 +1,6 @@
 import AppHeader from '../components/AppHeader'
 import { Link } from 'react-router-dom'
+import { useSEO } from '../hooks/useSEO'
 
 interface Radical {
   char: string
@@ -70,6 +71,7 @@ const CATEGORIES = [
 ]
 
 export default function RadicalsPage() {
+  useSEO({ title: 'Chinese Radicals Guide (部首)', description: 'Learn the 40 most common Chinese radicals (部首) with meanings, pinyin and example characters. Essential for reading and remembering Mandarin vocabulary.', path: '/radicals' })
   const byChar = Object.fromEntries(RADICALS.map(r => [r.char, r]))
 
   return (
