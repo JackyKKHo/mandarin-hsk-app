@@ -24,6 +24,7 @@ export default function AppHeader() {
     : pathname.startsWith('/course') ? 'course'
     : pathname.startsWith('/dialogue') ? 'dialogues'
     : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') ? 'guides'
+    : pathname.startsWith('/assessment') ? 'assessment'
     : 'vocab'
 
   return (
@@ -49,6 +50,9 @@ export default function AppHeader() {
         </Link>
         <Link to="/guides" className={`app-nav-link${section === 'guides' ? ' active' : ''}`}>
           Guides
+        </Link>
+        <Link to="/assessment" className={`app-nav-link${section === 'assessment' ? ' active' : ''}`} title="Level Assessment">
+          🎯
         </Link>
         <Link to="/pronunciation" className={`app-nav-link${section === 'pronunciation' ? ' active' : ''}`}>
           🗣️

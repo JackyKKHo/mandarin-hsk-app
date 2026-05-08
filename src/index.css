@@ -3506,3 +3506,24 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
 /* Welcome page assessment link */
 .assessment-link { color: var(--red); text-decoration: none; font-weight: 600; }
 .assessment-link:hover { text-decoration: underline; }
+
+/* ── Assessment banner (StatsPage) ── */
+.stats-assessment-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card);
+  border: 1.5px solid var(--red);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.stats-assessment-link {
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.stats-assessment-link:hover { text-decoration: underline; }

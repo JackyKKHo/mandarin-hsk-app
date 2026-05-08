@@ -62,6 +62,11 @@ export default function StatsPage() {
       <AppHeader />
 
       <div className="stats-page">
+        <div className="stats-assessment-banner">
+          <span>🎯 Not sure of your level?</span>
+          <Link to="/assessment" className="stats-assessment-link">Take the assessment →</Link>
+        </div>
+
         <h2 className="stats-title">Your Progress</h2>
 
         {/* Top stats row */}
