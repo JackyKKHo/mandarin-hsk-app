@@ -8,6 +8,7 @@ import { useFavourites } from '../hooks/useFavourites'
 import { useVocab } from '../hooks/useVocab'
 import { LEVEL_COUNTS } from '../data/vocabLoader'
 import { useSEO } from '../hooks/useSEO'
+import WordOfTheDay from '../components/WordOfTheDay'
 
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const UNLOCK_THRESHOLD = 80
@@ -91,6 +92,8 @@ export default function BrowserPage() {
   return (
     <div className="browser-page">
       <AppHeader />
+
+      <WordOfTheDay />
 
       {/* Daily goal bar */}
       <div className={`daily-goal-bar${goalMet ? ' goal-met' : ''}`}>

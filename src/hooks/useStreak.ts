@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react'
 import { supabase } from '../lib/supabase'
 import { useAuth } from '../context/AuthContext'
+import { addToHistory } from './useStudyHistory'
 
 interface StreakData {
   count: number
@@ -105,6 +106,7 @@ export function useStreak() {
       const newCount = prev.lastDate === yesterday() ? prev.count + 1 : 1
       const next = { count: newCount, lastDate: t }
       localStorage.setItem(KEY, JSON.stringify(next))
+      addToHistory(t)
 
       // Award a freeze token every 7 streak days (max 3)
       if (newCount % 7 === 0) {

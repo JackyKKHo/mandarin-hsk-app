@@ -7,6 +7,8 @@ import { useStreak } from '../hooks/useStreak'
 import { useSRS } from '../hooks/useSRS'
 import { useVocab } from '../hooks/useVocab'
 import { LEVEL_COUNTS } from '../data/vocabLoader'
+import StudyHeatmap from '../components/StudyHeatmap'
+import { useSEO } from '../hooks/useSEO'
 
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const TOTAL = Object.values(LEVEL_COUNTS).reduce((a, b) => a + b, 0)
@@ -16,6 +18,7 @@ function today() {
 }
 
 export default function StatsPage() {
+  useSEO({ title: 'My Progress', path: '/stats' })
   const { learned } = useProgress()
   const { favourites } = useFavourites()
   const { streak, lastDate } = useStreak()
@@ -42,6 +45,17 @@ export default function StatsPage() {
   const totalDue = levelStats.reduce((s, l) => s + l.due, 0)
   const totalReviewed = levelStats.reduce((s, l) => s + l.reviewed, 0)
   const studiedToday = lastDate === today()
+
+  const strugglingWords = useMemo(() =>
+    vocab.filter(w => {
+      const c = getCard(w.id)
+      return c && c.reps >= 3 && c.easeFactor < 2.0
+    }).sort((a, b) => {
+      const ca = getCard(a.id)!; const cb = getCard(b.id)!
+      return ca.easeFactor - cb.easeFactor
+    }).slice(0, 12),
+    [vocab, getCard]
+  )
 
   return (
     <div className="browser-page">
@@ -78,6 +92,11 @@ export default function StatsPage() {
             <span className="stats-hero-label">★ favourites</span>
             <Link to="/favourites" className="stats-hero-sub stats-link">view all →</Link>
           </div>
+          <div className="stats-hero-card">
+            <span className="stats-hero-num">📅</span>
+            <span className="stats-hero-label">Daily Challenge</span>
+            <Link to="/daily" className="stats-hero-sub stats-link">start today's →</Link>
+          </div>
         </div>
 
         {/* Overall progress bar */}
@@ -90,6 +109,31 @@ export default function StatsPage() {
             <div className="stats-bar-fill" style={{ width: `${totalPct}%` }} />
           </div>
         </div>
+
+        {/* Study heatmap */}
+        <div className="stats-section">
+          <h3 className="stats-section-title">Study Activity</h3>
+          <StudyHeatmap />
+        </div>
+
+        {/* Struggling words */}
+        {strugglingWords.length > 0 && (
+          <div className="stats-section">
+            <h3 className="stats-section-title">Struggling Words</h3>
+            <p className="stats-section-desc">These words have a low ease score — you've missed them multiple times.</p>
+            <div className="struggle-grid">
+              {strugglingWords.map(w => (
+                <Link key={w.id} to={`/word/${w.id}`} className="struggle-card">
+                  <span className="struggle-chinese">{w.simplified}</span>
+                  <span className="struggle-english">{w.english}</span>
+                </Link>
+              ))}
+            </div>
+            <Link to="/review" className="btn-primary" style={{ display: 'inline-block', marginTop: '0.75rem', fontSize: '0.875rem' }}>
+              Review all due cards →
+            </Link>
+          </div>
+        )}
 
         {/* Per-level breakdown */}
         <div className="stats-levels">

@@ -29,6 +29,7 @@ export default function WritingPage() {
 
   const [stage, setStage] = useState<Stage>('idle')
   const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(10)
+  const [challengeMode, setChallengeMode] = useState(false)
   const [queue, setQueue] = useState<typeof levelWords>([])
   const [index, setIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
@@ -70,7 +71,7 @@ export default function WritingPage() {
       height: SIZE,
       padding: 16,
       showCharacter: false,
-      showOutline: true,
+      showOutline: !challengeMode,
       strokeColor: '#c0392b',
       outlineColor: '#d0d0d0',
       drawingColor: '#2471a3',
@@ -136,6 +137,17 @@ export default function WritingPage() {
               <p className="practice-start-desc">
                 Trace each stroke in the correct order using your mouse or finger.
               </p>
+              <div className="quiz-option-group">
+                <span className="quiz-option-label">Mode</span>
+                <div className="quiz-mode-picker">
+                  <button className={`quiz-mode-btn${!challengeMode ? ' active' : ''}`} onClick={() => setChallengeMode(false)}>
+                    Normal (outline shown)
+                  </button>
+                  <button className={`quiz-mode-btn${challengeMode ? ' active' : ''}`} onClick={() => setChallengeMode(true)}>
+                    Challenge (no outline)
+                  </button>
+                </div>
+              </div>
               <div className="quiz-option-group">
                 <span className="quiz-option-label">Words</span>
                 <div className="quiz-length-picker">

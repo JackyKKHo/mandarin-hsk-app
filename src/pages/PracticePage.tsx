@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import type { VocabItem } from '../types'
 import AudioButton from '../components/AudioButton'
@@ -29,6 +29,8 @@ export default function PracticePage() {
 
   const [stage, setStage] = useState<Stage>('idle')
   const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(25)
+  const touchStartX = useRef(0)
+  const touchStartY = useRef(0)
   const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
@@ -189,6 +191,18 @@ export default function PracticePage() {
         tabIndex={0}
         onKeyDown={e => { if ((e.key === 'Enter' || e.key === ' ') && !flipped) setFlipped(true) }}
         aria-label={flipped ? 'Card revealed' : 'Tap to reveal answer'}
+        onTouchStart={e => { touchStartX.current = e.touches[0].clientX; touchStartY.current = e.touches[0].clientY }}
+        onTouchEnd={e => {
+          if (!flipped) return
+          const dx = e.changedTouches[0].clientX - touchStartX.current
+          const dy = e.changedTouches[0].clientY - touchStartY.current
+          if (Math.abs(dx) < 40 && Math.abs(dy) < 40) return
+          if (Math.abs(dx) > Math.abs(dy)) {
+            dx > 0 ? answer('good') : answer('again')
+          } else if (dy < -40) {
+            answer('easy')
+          }
+        }}
       >
         <div className={`flashcard${flipped ? ' flipped' : ''}`}>
           <div className="flashcard-face flashcard-front">
@@ -249,7 +263,7 @@ export default function PracticePage() {
           </div>
         </div>
       ) : (
-        <p className="flip-hint">tap the card to reveal</p>
+        <p className="flip-hint">tap to reveal · or swipe after reveal: → good · ← again · ↑ easy</p>
       )}
     </div>
   )
