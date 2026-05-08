@@ -91,7 +91,7 @@ export default function AssessmentPage() {
   function start() {
     usedIds.current = new Set()
     setAnswered([])
-    loadQuestion(3, [])
+    loadQuestion(1, [])
   }
 
   function answer(optId: string) {
@@ -105,8 +105,9 @@ export default function AssessmentPage() {
     if (next.length >= TOTAL_QUESTIONS) {
       setTimeout(() => finish(next), 800)
     } else {
-      const nextLevel = correct
-        ? Math.min(9, currentLevel + 1)
+      const step = correct && currentLevel <= 3 ? 2 : 1
+    const nextLevel = correct
+        ? Math.min(9, currentLevel + step)
         : Math.max(1, currentLevel - 1)
       setTimeout(() => loadQuestion(nextLevel, next), 800)
     }
