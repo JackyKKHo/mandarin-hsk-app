@@ -26,10 +26,12 @@ export interface Song {
   learningTips: string[]
   sections: { label: string; lines: LyricLine[] }[]
   vocab: SongVocab[]
+  youtubeId: string
 }
 
 export const SONGS: Song[] = [
   {
+    youtubeId: 'IiFm7AWP9n4',
     id: 'moon',
     title: '月亮代表我的心',
     titlePinyin: 'Yuèliàng Dàibiǎo Wǒ de Xīn',
@@ -91,6 +93,7 @@ export const SONGS: Song[] = [
     ],
   },
   {
+    youtubeId: 'd_4AKkBIWpc',
     id: 'jasmine',
     title: '茉莉花',
     titlePinyin: 'Mòlìhuā',

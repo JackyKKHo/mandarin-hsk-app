@@ -3759,3 +3759,21 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
 .song-vocab-search:hover { text-decoration: underline; }
 
 .song-article-footer { display: flex; gap: 1rem; justify-content: space-between; margin-top: 2rem; }
+
+/* ── Song YouTube embed ── */
+.song-video-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background: #000;
+}
+.song-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

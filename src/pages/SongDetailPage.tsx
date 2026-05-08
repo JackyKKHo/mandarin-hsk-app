@@ -52,6 +52,17 @@ export default function SongDetailPage() {
           <p className="song-article-desc">{song.description}</p>
         </div>
 
+        {/* YouTube embed */}
+        <div className="song-video-wrap">
+          <iframe
+            className="song-video"
+            src={`https://www.youtube.com/embed/${song.youtubeId}`}
+            title={song.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+
         {/* Cultural note */}
         <div className="song-callout song-callout-culture">
           <div className="song-callout-label">🏮 Cultural context</div>
