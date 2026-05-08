@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const LEVELS = [
   { level: 1, label: 'HSK 1', words: 500,  tag: 'Beginner',     desc: 'Basic greetings, numbers, family' },
@@ -78,7 +78,7 @@ export default function WelcomePage() {
     <div className="welcome-page">
       <div className="welcome-card welcome-card-wide">
         <h2 className="welcome-pick-title">Where are you starting?</h2>
-        <p className="welcome-pick-sub">Pick the highest level you're comfortable with. You can always change it later.</p>
+        <p className="welcome-pick-sub">Pick the highest level you're comfortable with, or <Link to="/assessment" className="assessment-link">take a quick assessment →</Link></p>
 
         <div className="welcome-level-groups">
           {GROUPS.map(group => (

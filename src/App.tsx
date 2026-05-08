@@ -27,6 +27,7 @@ import DailyChallengePage from './pages/DailyChallengePage'
 import RadicalsPage from './pages/RadicalsPage'
 import MeasureWordsPage from './pages/MeasureWordsPage'
 import GuidesPage from './pages/GuidesPage'
+import AssessmentPage from './pages/AssessmentPage'
 
 export default function App() {
   return (
@@ -61,6 +62,7 @@ export default function App() {
         <Route path="/radicals" element={<RadicalsPage />} />
         <Route path="/measure-words" element={<MeasureWordsPage />} />
         <Route path="/guides" element={<GuidesPage />} />
+        <Route path="/assessment" element={<AssessmentPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>
