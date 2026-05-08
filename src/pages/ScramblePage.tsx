@@ -57,7 +57,7 @@ export default function ScramblePage() {
   )
 
   const [stage, setStage] = useState<Stage>('idle')
-  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(10)
+  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | 100>(10)
   const [queue, setQueue] = useState<Question[]>([])
   const [index, setIndex] = useState(0)
   const [pool, setPool] = useState<Tile[]>([])      // unplaced tiles
@@ -69,7 +69,7 @@ export default function ScramblePage() {
     const qs = shuffle(eligible)
       .map(w => buildQuestion(w))
       .filter((q): q is Question => q !== null)
-      .slice(0, sessionLength ?? undefined)
+      .slice(0, sessionLength)
     if (qs.length === 0) return
     setQueue(qs); setIndex(0); setScore({ correct: 0, wrong: 0 }); setChecked(false)
     setPool(qs[0].tiles); setPlaced([]); setStage('question')
@@ -122,12 +122,12 @@ export default function ScramblePage() {
               <div className="quiz-option-group">
                 <span className="quiz-option-label">Questions</span>
                 <div className="quiz-length-picker">
-                  {([10, 25, 50, null] as const).map(n => (
+                  {([10, 25, 50, 100] as const).map(n => (
                     <button key={String(n)}
                       className={`quiz-length-btn${sessionLength === n ? ' active' : ''}`}
                       onClick={() => setSessionLength(n)}
-                      disabled={n !== null && n > eligible.length}
-                    >{n === null ? `All ${eligible.length}` : n}</button>
+                      disabled={n > eligible.length}
+                    >{n === 100 ? (eligible.length <= 100 ? `All ${eligible.length}` : '100') : n}</button>
                   ))}
                 </div>
               </div>

@@ -50,7 +50,7 @@ export default function FillBlankPage() {
   const levelWords = useMemo(() => allLevelWords.filter(w => w.examples.length > 0), [allLevelWords])
 
   const [stage, setStage] = useState<Stage>('idle')
-  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(10)
+  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | 100>(10)
   const [mode, setMode] = useState<AnswerMode>('pick')
   const [queue, setQueue] = useState<Question[]>([])
   const [index, setIndex] = useState(0)
@@ -64,7 +64,7 @@ export default function FillBlankPage() {
     const qs = shuffle(levelWords)
       .map(w => buildQuestion(w, levelWords))
       .filter((q): q is Question => q !== null)
-      .slice(0, sessionLength ?? undefined)
+      .slice(0, sessionLength)
 
     if (qs.length === 0) return
     setQueue(qs)
@@ -134,14 +134,14 @@ export default function FillBlankPage() {
               <div className="quiz-option-group">
                 <span className="quiz-option-label">Questions</span>
                 <div className="quiz-length-picker">
-                  {([10, 25, 50, null] as const).map(n => (
+                  {([10, 25, 50, 100] as const).map(n => (
                     <button
                       key={String(n)}
                       className={`quiz-length-btn${sessionLength === n ? ' active' : ''}`}
                       onClick={() => setSessionLength(n)}
-                      disabled={n !== null && n > levelWords.length}
+                      disabled={n > levelWords.length}
                     >
-                      {n === null ? `All ${levelWords.length}` : n}
+                      {n === 100 ? (levelWords.length <= 100 ? `All ${levelWords.length}` : '100') : n}
                     </button>
                   ))}
                 </div>
@@ -158,7 +158,7 @@ export default function FillBlankPage() {
                 </div>
               </div>
               <button className="btn-primary" onClick={start}>
-                Start {sessionLength ?? levelWords.length} questions
+                Start {Math.min(sessionLength, levelWords.length)} questions
               </button>
             </>
           )}

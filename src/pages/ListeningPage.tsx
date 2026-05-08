@@ -40,7 +40,7 @@ export default function ListeningPage() {
   const { words: levelWords, title, backPath, loading: vocabLoading } = usePracticeWords(level)
 
   const [stage, setStage] = useState<Stage>('idle')
-  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(25)
+  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | 100>(25)
   const [questionType, setQuestionType] = useState<QuestionType>('char')
   const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
@@ -66,7 +66,7 @@ export default function ListeningPage() {
   }
 
   async function start() {
-    const q = shuffle(levelWords).slice(0, sessionLength ?? undefined)
+    const q = shuffle(levelWords).slice(0, sessionLength)
     setQueue(q)
     setIndex(0)
     setScore({ correct: 0, wrong: 0 })
@@ -124,14 +124,14 @@ export default function ListeningPage() {
               <div className="quiz-option-group">
                 <span className="quiz-option-label">Questions</span>
                 <div className="quiz-length-picker">
-                  {([10, 25, 50, null] as const).map(n => (
+                  {([10, 25, 50, 100] as const).map(n => (
                     <button
                       key={String(n)}
                       className={`quiz-length-btn${sessionLength === n ? ' active' : ''}`}
                       onClick={() => setSessionLength(n)}
-                      disabled={n !== null && n > levelWords.length}
+                      disabled={n > levelWords.length}
                     >
-                      {n === null ? `All ${levelWords.length}` : n}
+                      {n === 100 ? (levelWords.length <= 100 ? `All ${levelWords.length}` : '100') : n}
                     </button>
                   ))}
                 </div>
@@ -155,7 +155,7 @@ export default function ListeningPage() {
                 </div>
               </div>
               <button className="btn-primary" onClick={start} disabled={loading}>
-                {loading ? 'Loading…' : `Start ${sessionLength ?? levelWords.length} questions`}
+                {loading ? 'Loading…' : `Start ${Math.min(sessionLength, levelWords.length)} questions`}
               </button>
             </>
           )}

@@ -79,7 +79,7 @@ export default function TonePage() {
   const eligible = levelWords.filter(w => w.pinyinNumbered)
 
   const [stage, setStage] = useState<Stage>('idle')
-  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(25)
+  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | 100>(25)
   const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
   const [options, setOptions] = useState<string[]>([])
@@ -107,7 +107,7 @@ export default function TonePage() {
   }
 
   async function start() {
-    const q = shuffle(eligible).slice(0, sessionLength ?? undefined)
+    const q = shuffle(eligible).slice(0, sessionLength)
     setQueue(q); setIndex(0); setScore({ correct: 0, wrong: 0 })
     setSelected(null); setOptions(buildOptions(q[0])); setStage('question')
     await playWord(q[0])
@@ -149,12 +149,12 @@ export default function TonePage() {
               <div className="quiz-option-group">
                 <span className="quiz-option-label">Questions</span>
                 <div className="quiz-length-picker">
-                  {([10, 25, 50, null] as const).map(n => (
+                  {([10, 25, 50, 100] as const).map(n => (
                     <button key={String(n)}
                       className={`quiz-length-btn${sessionLength === n ? ' active' : ''}`}
                       onClick={() => setSessionLength(n)}
-                      disabled={n !== null && n > eligible.length}
-                    >{n === null ? `All ${eligible.length}` : n}</button>
+                      disabled={n > eligible.length}
+                    >{n === 100 ? (eligible.length <= 100 ? `All ${eligible.length}` : '100') : n}</button>
                   ))}
                 </div>
               </div>

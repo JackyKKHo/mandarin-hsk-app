@@ -28,7 +28,7 @@ export default function WritingPage() {
   )
 
   const [stage, setStage] = useState<Stage>('idle')
-  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | null>(10)
+  const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | 100>(10)
   const [challengeMode, setChallengeMode] = useState(false)
   const [queue, setQueue] = useState<typeof levelWords>([])
   const [index, setIndex] = useState(0)
@@ -41,7 +41,7 @@ export default function WritingPage() {
   const writerRef = useRef<HanziWriter | null>(null)
 
   function start() {
-    const q = shuffle(levelWords).slice(0, sessionLength ?? undefined)
+    const q = shuffle(levelWords).slice(0, sessionLength)
     setQueue(q)
     setIndex(0)
     setCharIndex(0)
@@ -151,20 +151,20 @@ export default function WritingPage() {
               <div className="quiz-option-group">
                 <span className="quiz-option-label">Words</span>
                 <div className="quiz-length-picker">
-                  {([10, 25, 50, null] as const).map(n => (
+                  {([10, 25, 50, 100] as const).map(n => (
                     <button
                       key={String(n)}
                       className={`quiz-length-btn${sessionLength === n ? ' active' : ''}`}
                       onClick={() => setSessionLength(n)}
-                      disabled={n !== null && n > levelWords.length}
+                      disabled={n > levelWords.length}
                     >
-                      {n === null ? `All ${levelWords.length}` : n}
+                      {n === 100 ? (levelWords.length <= 100 ? `All ${levelWords.length}` : '100') : n}
                     </button>
                   ))}
                 </div>
               </div>
               <button className="btn-primary" onClick={start}>
-                Start {sessionLength ?? levelWords.length} words
+                Start {Math.min(sessionLength, levelWords.length)} words
               </button>
             </>
           )}

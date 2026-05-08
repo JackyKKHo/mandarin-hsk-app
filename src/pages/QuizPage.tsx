@@ -38,7 +38,7 @@ export default function QuizPage() {
 
   const [stage, setStage] = useState<Stage>('idle')
   const [mode, setMode] = useState<Mode>('zh→en')
-  const [quizLength, setQuizLength] = useState<10 | 25 | 50 | null>(25)
+  const [quizLength, setQuizLength] = useState<10 | 25 | 50 | 100>(25)
   const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
   const [options, setOptions] = useState<VocabItem[]>([])
@@ -75,7 +75,7 @@ export default function QuizPage() {
   }, [])
 
   function start() {
-    const q = shuffle(levelWords).slice(0, quizLength ?? undefined)
+    const q = shuffle(levelWords).slice(0, quizLength)
     setQueue(q)
     setIndex(0)
     setScore({ correct: 0, wrong: 0 })
@@ -127,14 +127,14 @@ export default function QuizPage() {
               <div className="quiz-option-group">
                 <span className="quiz-option-label">Questions</span>
                 <div className="quiz-length-picker">
-                  {([10, 25, 50, null] as const).map(n => (
+                  {([10, 25, 50, 100] as const).map(n => (
                     <button
-                      key={String(n)}
+                      key={n}
                       className={`quiz-length-btn${quizLength === n ? ' active' : ''}`}
                       onClick={() => setQuizLength(n)}
-                      disabled={n !== null && n > levelWords.length}
+                      disabled={n > levelWords.length}
                     >
-                      {n === null ? `All ${levelWords.length}` : n}
+                      {n === 100 ? (levelWords.length <= 100 ? `All ${levelWords.length}` : '100') : n}
                     </button>
                   ))}
                 </div>
@@ -154,7 +154,7 @@ export default function QuizPage() {
                 </div>
               </div>
               <button className="btn-primary" onClick={start}>
-                Start {quizLength ?? levelWords.length}-question quiz
+                Start {Math.min(quizLength, levelWords.length)}-question quiz
               </button>
             </>
           )}
