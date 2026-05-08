@@ -4,14 +4,32 @@ import { loadLevel } from '../data/vocabLoader'
 import TonedPinyin from '../components/TonedPinyin'
 import type { VocabItem } from '../types'
 
+type QuestionType = 'char-to-english' | 'english-to-char' | 'listening' | 'pinyin' | 'reading'
 type Stage = 'intro' | 'loading' | 'question' | 'feedback' | 'result'
 
-interface AnsweredQ {
+interface Question {
+  type: QuestionType
+  word: VocabItem
+  options: VocabItem[]
+  audioUrl: string | null
+  sentence: string | null   // reading type only
+}
+
+interface Answered {
   level: number
   correct: boolean
 }
 
-const TOTAL_QUESTIONS = 15
+const TOTAL = 15
+const TYPE_CYCLE: QuestionType[] = ['char-to-english', 'listening', 'english-to-char', 'pinyin', 'reading']
+
+const TYPE_LABELS: Record<QuestionType, string> = {
+  'char-to-english': 'Reading',
+  'english-to-char': 'Translation',
+  'listening':       'Listening',
+  'pinyin':          'Tones',
+  'reading':         'Reading in context',
+}
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -22,8 +40,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
-function computeRecommended(answered: AnsweredQ[]): number {
-  // Find the highest level where accuracy >= 50%
+function computeRecommended(answered: Answered[]): number {
   const byLevel: Record<number, { c: number; w: number }> = {}
   for (const a of answered) {
     if (!byLevel[a.level]) byLevel[a.level] = { c: 0, w: 0 }
@@ -38,6 +55,15 @@ function computeRecommended(answered: AnsweredQ[]): number {
   return best
 }
 
+async function fetchAudio(word: VocabItem): Promise<string | null> {
+  if (word.audio?.wordAudioUrl) return word.audio.wordAudioUrl
+  try {
+    const res = await fetch(`/api/tts?text=${encodeURIComponent(word.simplified)}`)
+    if (!res.ok) return null
+    return URL.createObjectURL(await res.blob())
+  } catch { return null }
+}
+
 const LEVEL_LABELS: Record<number, string> = {
   1: 'Beginner', 2: 'Beginner', 3: 'Elementary', 4: 'Elementary',
   5: 'Intermediate', 6: 'Intermediate', 7: 'Advanced', 8: 'Advanced', 9: 'Advanced',
@@ -46,15 +72,16 @@ const LEVEL_LABELS: Record<number, string> = {
 export default function AssessmentPage() {
   const navigate = useNavigate()
   const [stage, setStage] = useState<Stage>('intro')
-  const [currentLevel, setCurrentLevel] = useState(3)
-  const [word, setWord] = useState<VocabItem | null>(null)
-  const [options, setOptions] = useState<VocabItem[]>([])
+  const [currentLevel, setCurrentLevel] = useState(1)
+  const [question, setQuestion] = useState<Question | null>(null)
   const [selected, setSelected] = useState<string | null>(null)
-  const [answered, setAnswered] = useState<AnsweredQ[]>([])
+  const [answered, setAnswered] = useState<Answered[]>([])
   const [recommended, setRecommended] = useState(1)
+  const [audioPlaying, setAudioPlaying] = useState(false)
 
   const usedIds = useRef<Set<string>>(new Set())
   const levelCache = useRef<Record<number, VocabItem[]>>({})
+  const audioRef = useRef<HTMLAudioElement | null>(null)
 
   const getLevelWords = useCallback(async (level: number): Promise<VocabItem[]> => {
     if (levelCache.current[level]) return levelCache.current[level]
@@ -63,29 +90,58 @@ export default function AssessmentPage() {
     return words
   }, [])
 
-  async function loadQuestion(level: number, answeredSoFar: AnsweredQ[]) {
-    setStage('loading')
+  function pickType(qIndex: number, word: VocabItem): QuestionType {
+    const preferred = TYPE_CYCLE[qIndex % TYPE_CYCLE.length]
+    if (preferred === 'reading' && !word.examples?.[0]?.chinese) return 'char-to-english'
+    return preferred
+  }
+
+  async function buildQuestion(level: number, qIndex: number): Promise<Question | null> {
     const words = await getLevelWords(level)
     const eligible = words.filter(w => !usedIds.current.has(w.id) && w.english && w.simplified)
-    const target = shuffle(eligible)[0]
+    if (eligible.length === 0) return null
 
-    if (!target) {
-      // Level exhausted — just move on
-      finish(answeredSoFar)
-      return
+    const word = shuffle(eligible)[0]
+    usedIds.current.add(word.id)
+
+    const type = pickType(qIndex, word)
+    const pool = shuffle(words.filter(w => w.id !== word.id && w.english && w.simplified))
+    const distractors = pool.slice(0, 3)
+    const options = shuffle([word, ...distractors])
+
+    let audioUrl: string | null = null
+    if (type === 'listening') {
+      audioUrl = await fetchAudio(word)
     }
 
-    usedIds.current.add(target.id)
+    const sentence = type === 'reading' ? (word.examples?.[0]?.chinese ?? null) : null
 
-    // Distractors: prefer same level, fall back to any from pool
-    const pool = shuffle(words.filter(w => w.id !== target.id && w.english))
-    const distractors = pool.slice(0, 3)
+    return { type, word, options, audioUrl, sentence }
+  }
 
-    setWord(target)
-    setOptions(shuffle([target, ...distractors]))
+  async function loadQuestion(level: number, answeredSoFar: Answered[]) {
+    setStage('loading')
+    const q = await buildQuestion(level, answeredSoFar.length)
+    if (!q) { finish(answeredSoFar); return }
+
+    setQuestion(q)
     setSelected(null)
     setCurrentLevel(level)
     setStage('question')
+
+    // auto-play audio
+    if (q.type === 'listening' && q.audioUrl) {
+      playAudio(q.audioUrl)
+    }
+  }
+
+  function playAudio(url: string) {
+    audioRef.current?.pause()
+    const a = new Audio(url)
+    audioRef.current = a
+    setAudioPlaying(true)
+    a.onended = () => setAudioPlaying(false)
+    a.play().catch(() => setAudioPlaying(false))
   }
 
   function start() {
@@ -95,27 +151,26 @@ export default function AssessmentPage() {
   }
 
   function answer(optId: string) {
-    if (!word || selected) return
+    if (!question || selected) return
     setSelected(optId)
-    const correct = optId === word.id
-    const next: AnsweredQ[] = [...answered, { level: currentLevel, correct }]
+    const correct = optId === question.word.id
+    const next: Answered[] = [...answered, { level: currentLevel, correct }]
     setAnswered(next)
     setStage('feedback')
 
-    if (next.length >= TOTAL_QUESTIONS) {
-      setTimeout(() => finish(next), 800)
+    if (next.length >= TOTAL) {
+      setTimeout(() => finish(next), 900)
     } else {
       const step = correct && currentLevel <= 3 ? 2 : 1
-    const nextLevel = correct
+      const nextLevel = correct
         ? Math.min(9, currentLevel + step)
         : Math.max(1, currentLevel - 1)
-      setTimeout(() => loadQuestion(nextLevel, next), 800)
+      setTimeout(() => loadQuestion(nextLevel, next), 900)
     }
   }
 
-  function finish(answeredList: AnsweredQ[]) {
-    const rec = computeRecommended(answeredList)
-    setRecommended(rec)
+  function finish(answeredList: Answered[]) {
+    setRecommended(computeRecommended(answeredList))
     setStage('result')
   }
 
@@ -124,8 +179,9 @@ export default function AssessmentPage() {
     navigate(`/hsk/${level}`)
   }
 
-  const progressPct = (answered.length / TOTAL_QUESTIONS) * 100
+  const progressPct = (answered.length / TOTAL) * 100
 
+  // ── Intro ──────────────────────────────────────────────────────────────
   if (stage === 'intro') {
     return (
       <div className="assessment-page">
@@ -133,13 +189,14 @@ export default function AssessmentPage() {
           <div className="assessment-icon">🎯</div>
           <h1>Level Assessment</h1>
           <p className="assessment-desc">
-            Answer {TOTAL_QUESTIONS} quick questions and we'll recommend the right HSK level for you.
-            Questions adapt based on your answers — no guessing required.
+            Answer {TOTAL} questions across different skills and we'll recommend the right HSK level for you.
           </p>
           <ul className="assessment-bullets">
-            <li>Multiple choice — pick the English meaning</li>
-            <li>Starts at HSK 3, adjusts up or down</li>
-            <li>Takes about 2 minutes</li>
+            <li>Reading — recognise characters and meanings</li>
+            <li>Listening — identify words from audio</li>
+            <li>Translation — English to Chinese</li>
+            <li>Tones — pick the correct pinyin</li>
+            <li>Context — understand words in sentences</li>
           </ul>
           <button className="btn-primary" onClick={start}>Start assessment →</button>
           <button className="assessment-skip" onClick={() => navigate('/welcome')}>
@@ -150,6 +207,7 @@ export default function AssessmentPage() {
     )
   }
 
+  // ── Result ─────────────────────────────────────────────────────────────
   if (stage === 'result') {
     const correct = answered.filter(a => a.correct).length
     const pct = Math.round((correct / answered.length) * 100)
@@ -159,9 +217,7 @@ export default function AssessmentPage() {
           <div className="assessment-result-badge">HSK {recommended}</div>
           <h2>We recommend <strong>HSK {recommended}</strong></h2>
           <p className="assessment-result-tag">{LEVEL_LABELS[recommended]}</p>
-          <p className="assessment-result-score">
-            You answered {correct} of {answered.length} correctly ({pct}%)
-          </p>
+          <p className="assessment-result-score">{correct} of {answered.length} correct ({pct}%)</p>
           <div className="assessment-result-actions">
             <button className="btn-primary" onClick={() => goToLevel(recommended)}>
               Start at HSK {recommended} →
@@ -183,35 +239,104 @@ export default function AssessmentPage() {
     )
   }
 
+  // ── Question ───────────────────────────────────────────────────────────
+  const q = question
+
   return (
     <div className="assessment-page">
-      {/* Progress */}
       <div className="assessment-topbar">
-        <span className="assessment-counter">{answered.length + (stage === 'feedback' ? 0 : 0)} / {TOTAL_QUESTIONS}</span>
+        <span className="assessment-counter">{answered.length + 1} / {TOTAL}</span>
+        <span className="assessment-type-label">{q ? TYPE_LABELS[q.type] : ''}</span>
         <span className="assessment-level-badge">HSK {currentLevel}</span>
       </div>
-      <div className="progress-bar-wrap">
+      <div className="progress-bar-wrap" style={{ width: '100%', maxWidth: 480 }}>
         <div className="progress-bar-fill" style={{ width: `${progressPct}%` }} />
       </div>
 
-      {stage === 'loading' ? (
+      {stage === 'loading' || !q ? (
         <div className="assessment-loading">Loading question…</div>
-      ) : word ? (
+      ) : (
         <>
+          {/* Prompt card */}
           <div className="assessment-question-card">
-            <p className="assessment-prompt">What does this word mean?</p>
-            <div className="assessment-word">{word.simplified}</div>
-            <TonedPinyin pinyin={word.pinyin} className="assessment-pinyin" />
+            {q.type === 'char-to-english' && (
+              <>
+                <p className="assessment-prompt">What does this mean?</p>
+                <div className="assessment-word">{q.word.simplified}</div>
+                <TonedPinyin pinyin={q.word.pinyin} className="assessment-pinyin" />
+              </>
+            )}
+
+            {q.type === 'english-to-char' && (
+              <>
+                <p className="assessment-prompt">Which character means…</p>
+                <div className="assessment-english-prompt">
+                  {q.word.english.split(';')[0]}
+                </div>
+              </>
+            )}
+
+            {q.type === 'listening' && (
+              <>
+                <p className="assessment-prompt">Which word did you hear?</p>
+                {q.audioUrl ? (
+                  <button
+                    className={`assessment-play-btn${audioPlaying ? ' playing' : ''}`}
+                    onClick={() => playAudio(q.audioUrl!)}
+                  >
+                    {audioPlaying ? '🔊 Playing…' : '▶ Play again'}
+                  </button>
+                ) : (
+                  <p className="assessment-no-audio">No audio available — skip this one</p>
+                )}
+              </>
+            )}
+
+            {q.type === 'pinyin' && (
+              <>
+                <p className="assessment-prompt">Which tones are correct?</p>
+                <div className="assessment-word">{q.word.simplified}</div>
+              </>
+            )}
+
+            {q.type === 'reading' && q.sentence && (
+              <>
+                <p className="assessment-prompt">What does the highlighted word mean?</p>
+                <div className="assessment-sentence">
+                  {q.sentence.split(q.word.simplified).map((part, i, arr) => (
+                    <span key={i}>
+                      {part}
+                      {i < arr.length - 1 && (
+                        <span className="assessment-highlight">{q.word.simplified}</span>
+                      )}
+                    </span>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
 
+          {/* Options */}
           <div className="assessment-options">
-            {options.map(opt => {
+            {q.options.map(opt => {
               let cls = 'assessment-option'
               if (selected) {
-                if (opt.id === word.id) cls += ' opt-correct'
+                if (opt.id === q.word.id) cls += ' opt-correct'
                 else if (opt.id === selected) cls += ' opt-wrong'
                 else cls += ' opt-dim'
               }
+
+              let label = ''
+              if (q.type === 'char-to-english' || q.type === 'reading') {
+                label = opt.english.split(';')[0].split(',')[0]
+              } else if (q.type === 'english-to-char') {
+                label = opt.simplified
+              } else if (q.type === 'listening') {
+                label = opt.simplified
+              } else if (q.type === 'pinyin') {
+                label = opt.pinyin
+              }
+
               return (
                 <button
                   key={opt.id}
@@ -219,13 +344,24 @@ export default function AssessmentPage() {
                   onClick={() => answer(opt.id)}
                   disabled={!!selected}
                 >
-                  {opt.english.split(';')[0].split(',')[0]}
+                  {q.type === 'english-to-char' || q.type === 'listening'
+                    ? <span className="assessment-opt-char">{label}</span>
+                    : label}
                 </button>
               )
             })}
           </div>
+
+          {/* Feedback bar */}
+          {selected && (
+            <div className={`assessment-feedback ${selected === q.word.id ? 'fb-correct' : 'fb-wrong'}`}>
+              {selected === q.word.id
+                ? `✓ Correct! ${q.word.simplified} — ${q.word.english.split(';')[0]}`
+                : `✗ It was: ${q.word.simplified} — ${q.word.english.split(';')[0]}`}
+            </div>
+          )}
         </>
-      ) : null}
+      )}
     </div>
   )
 }
