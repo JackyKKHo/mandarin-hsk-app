@@ -28,6 +28,8 @@ import RadicalsPage from './pages/RadicalsPage'
 import MeasureWordsPage from './pages/MeasureWordsPage'
 import GuidesPage from './pages/GuidesPage'
 import AssessmentPage from './pages/AssessmentPage'
+import SongsPage from './pages/SongsPage'
+import SongDetailPage from './pages/SongDetailPage'
 
 export default function App() {
   return (
@@ -63,6 +65,8 @@ export default function App() {
         <Route path="/measure-words" element={<MeasureWordsPage />} />
         <Route path="/guides" element={<GuidesPage />} />
         <Route path="/assessment" element={<AssessmentPage />} />
+        <Route path="/songs" element={<SongsPage />} />
+        <Route path="/songs/:songId" element={<SongDetailPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>

@@ -23,7 +23,7 @@ export default function AppHeader() {
     : pathname.startsWith('/keyboard') ? 'keyboard'
     : pathname.startsWith('/course') ? 'course'
     : pathname.startsWith('/dialogue') ? 'dialogues'
-    : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') ? 'guides'
+    : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') || pathname.startsWith('/songs') ? 'guides'
     : pathname.startsWith('/assessment') ? 'assessment'
     : 'vocab'
 

@@ -15,6 +15,10 @@ const PRACTICE = [
   { to: '/scramble/1', emoji: '🔀', title: 'Sentence Scramble', desc: 'Reconstruct scrambled example sentences character by character.' },
 ]
 
+const CULTURE = [
+  { to: '/songs', emoji: '🎵', title: 'Learn Through Songs', desc: 'Famous Chinese songs broken down line by line — lyrics, pinyin, vocab, and cultural notes.' },
+]
+
 export default function GuidesPage() {
   useSEO({ title: 'Mandarin Learning Guides & Extra Practice', description: 'Pronunciation guides, Chinese radicals, measure words, daily challenges and more — free resources for Mandarin learners.', path: '/guides' })
   return (
@@ -29,6 +33,21 @@ export default function GuidesPage() {
         <h3 className="guides-section-title">Reference</h3>
         <div className="guides-grid">
           {GUIDES.map(g => (
+            <Link key={g.to} to={g.to} className="guide-card">
+              <span className="guide-emoji">{g.emoji}</span>
+              <div>
+                <div className="guide-title">{g.title}</div>
+                <div className="guide-desc">{g.desc}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="guides-section">
+        <h3 className="guides-section-title">Culture & Immersion</h3>
+        <div className="guides-grid">
+          {CULTURE.map(g => (
             <Link key={g.to} to={g.to} className="guide-card">
               <span className="guide-emoji">{g.emoji}</span>
               <div>

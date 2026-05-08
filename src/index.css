@@ -3585,3 +3585,177 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
 .fb-wrong   { background: #fdedec; color: #c0392b; }
 .dark .fb-correct { background: #1a3a27; color: #58d68d; }
 .dark .fb-wrong   { background: #3a1a1a; color: #f1948a; }
+
+/* ── Songs hub ── */
+.songs-hero {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+}
+.songs-hero-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+.songs-hero h2 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; }
+.songs-hero-desc { color: var(--muted); max-width: 520px; margin: 0 auto; line-height: 1.6; }
+
+.songs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+.song-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.song-card:hover { border-color: var(--red); box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.song-card-left { flex: 1; }
+.song-title { font-size: 1.3rem; font-weight: 800; margin-bottom: 0.1rem; }
+.song-pinyin { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.25rem; }
+.song-artist { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+.song-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
+.song-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+  min-width: 100px;
+}
+.song-difficulty {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+}
+.song-hsk { font-size: 0.75rem; color: var(--muted); }
+.song-read-link { font-size: 0.8rem; color: var(--red); font-weight: 600; margin-top: auto; }
+
+/* ── Song article ── */
+.song-article {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+.song-article-header { margin-bottom: 1.5rem; }
+.song-article-title-block { margin: 1rem 0 0.75rem; }
+.song-article-title { font-size: 2.2rem; font-weight: 900; margin-bottom: 0.25rem; line-height: 1.2; }
+.song-article-pinyin { font-size: 1rem; color: var(--muted); margin-bottom: 0.5rem; }
+.song-article-meta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+.song-article-hsk {
+  background: var(--red);
+  color: #fff;
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.song-article-desc { color: var(--muted); line-height: 1.7; font-size: 0.95rem; }
+
+.song-callout {
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.65;
+  font-size: 0.9rem;
+}
+.song-callout-culture { background: #fef9e7; border-left: 4px solid #f1c40f; color: #6e5100; }
+.song-callout-tips    { background: #eaf4fb; border-left: 4px solid #2980b9; color: #154360; }
+.dark .song-callout-culture { background: #2c2200; color: #f9e46a; border-color: #f1c40f; }
+.dark .song-callout-tips    { background: #102030; color: #7ec8e3; border-color: #2980b9; }
+.song-callout-label { font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+.song-callout p { margin: 0; }
+.song-tips-list { margin: 0; padding-left: 1.2rem; }
+.song-tips-list li { margin-bottom: 0.4rem; }
+
+.song-lyric-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.song-lyric-controls-label { font-size: 0.8rem; color: var(--muted); }
+.song-toggle-btn {
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  color: var(--muted);
+  padding: 0.3rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.song-toggle-btn.active { border-color: var(--red); color: var(--red); background: #fff0f0; }
+.dark .song-toggle-btn.active { background: #2a0a0a; }
+
+.song-lyrics { margin-bottom: 2rem; }
+.song-section { margin-bottom: 1.75rem; }
+.song-section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+.song-line {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--card);
+  border-radius: 0.6rem;
+  border-left: 3px solid transparent;
+  transition: border-color 0.15s;
+}
+.song-line:hover { border-left-color: var(--red); }
+.song-line-chinese { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.2rem; }
+.song-line-pinyin { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.15rem; }
+.song-line-english { font-size: 0.9rem; color: var(--text); opacity: 0.7; }
+.song-line-note {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #2980b9;
+  font-style: italic;
+}
+.dark .song-line-note { color: #7ec8e3; }
+
+.song-section-heading { font-size: 1.2rem; font-weight: 800; margin: 0 0 0.4rem; }
+.song-vocab-intro { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+.song-vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.song-vocab-card {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem;
+}
+.song-vocab-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.2rem; }
+.song-vocab-char { font-size: 1.5rem; font-weight: 800; }
+.song-vocab-hsk { font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.45rem; border-radius: 99px; }
+.song-vocab-pinyin { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.1rem; }
+.song-vocab-english { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; }
+.song-vocab-note { font-size: 0.78rem; color: var(--muted); line-height: 1.45; margin-bottom: 0.5rem; }
+.song-vocab-search { font-size: 0.75rem; color: var(--red); text-decoration: none; font-weight: 600; }
+.song-vocab-search:hover { text-decoration: underline; }
+
+.song-article-footer { display: flex; gap: 1rem; justify-content: space-between; margin-top: 2rem; }
