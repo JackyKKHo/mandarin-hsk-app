@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useFavourites } from '../hooks/useFavourites'
 import { useDarkMode } from '../hooks/useDarkMode'
@@ -16,6 +16,15 @@ const NAV = [
   { to: '/assessment', emoji: '🎯', label: 'Assess',     section: 'assessment' },
 ]
 
+const GUIDES_DROPDOWN = [
+  { to: '/guides',     emoji: '🧭', label: 'All Guides' },
+  { to: '/cantonese',  emoji: '粵', label: 'Cantonese → Mandarin' },
+  { to: '/frequency',  emoji: '📊', label: 'Word Frequency' },
+  { to: '/daily',      emoji: '📅', label: 'Daily Challenge' },
+  { to: '/songs',      emoji: '🎵', label: 'Learn Through Songs' },
+  { to: '/radicals',   emoji: '字', label: 'Radicals' },
+]
+
 export default function AppHeader() {
   const { pathname } = useLocation()
   const { favourites } = useFavourites()
@@ -24,6 +33,8 @@ export default function AppHeader() {
   const { streak, freezes, freezeUsed } = useStreak()
   const [showAuth, setShowAuth] = useState(false)
   const [showFreezeToast, setShowFreezeToast] = useState(freezeUsed)
+  const [guidesOpen, setGuidesOpen] = useState(false)
+  const guidesRef = useRef<HTMLDivElement>(null)
 
   const section = pathname.startsWith('/grammar') ? 'grammar'
     : pathname.startsWith('/favourites') ? 'favourites'
@@ -33,7 +44,7 @@ export default function AppHeader() {
     : pathname.startsWith('/keyboard') ? 'keyboard'
     : pathname.startsWith('/course') ? 'course'
     : pathname.startsWith('/dialogue') ? 'dialogues'
-    : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') || pathname.startsWith('/songs') || pathname.startsWith('/tone') || pathname.startsWith('/scramble') ? 'guides'
+    : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') || pathname.startsWith('/songs') || pathname.startsWith('/tone') || pathname.startsWith('/scramble') || pathname === '/cantonese' || pathname === '/frequency' ? 'guides'
     : pathname.startsWith('/assessment') ? 'assessment'
     : 'vocab'
 
@@ -52,12 +63,45 @@ export default function AppHeader() {
         </div>
       )}
       <nav className="app-nav">
-        {NAV.map(({ to, emoji, label, section: s }) => (
-          <Link key={to} to={to} className={`app-nav-link${section === s ? ' active' : ''}`}>
-            <span className="nav-emoji">{emoji}</span>
-            <span className="nav-label">{label}</span>
-          </Link>
-        ))}
+        {NAV.map(({ to, emoji, label, section: s }) => {
+          if (s === 'guides') {
+            return (
+              <div
+                key={to}
+                ref={guidesRef}
+                className="app-nav-guides-wrap"
+                onMouseEnter={() => setGuidesOpen(true)}
+                onMouseLeave={() => setGuidesOpen(false)}
+              >
+                <Link to={to} className={`app-nav-link${section === s ? ' active' : ''}`}>
+                  <span className="nav-emoji">{emoji}</span>
+                  <span className="nav-label">{label} ▾</span>
+                </Link>
+                {guidesOpen && (
+                  <div className="app-nav-dropdown">
+                    {GUIDES_DROPDOWN.map(d => (
+                      <Link
+                        key={d.to}
+                        to={d.to}
+                        className={`app-nav-dd-item${pathname === d.to || (d.to === '/guides' && section === 'guides') ? ' active' : ''}`}
+                        onClick={() => setGuidesOpen(false)}
+                      >
+                        <span className="app-nav-dd-emoji">{d.emoji}</span>
+                        {d.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          }
+          return (
+            <Link key={to} to={to} className={`app-nav-link${section === s ? ' active' : ''}`}>
+              <span className="nav-emoji">{emoji}</span>
+              <span className="nav-label">{label}</span>
+            </Link>
+          )
+        })}
 
         <Link to="/stats" className={`app-nav-link${section === 'stats' ? ' active' : ''}`} title="Stats">
           <span className="nav-emoji">
