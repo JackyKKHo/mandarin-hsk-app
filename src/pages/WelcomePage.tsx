@@ -48,6 +48,27 @@ export default function WelcomePage() {
   if (step === 1) {
     return (
       <div className="welcome-page">
+        <div className="welcome-ambassadors">
+          <div className="welcome-amb welcome-amb-left">
+            <img
+              src="https://images.unsplash.com/photo-1600481176431-47ad2ab2745d?w=260&h=380&fit=crop&crop=faces&auto=format"
+              alt="Chinese female learner"
+              className="welcome-amb-img"
+            />
+            <div className="welcome-amb-name">小美</div>
+            <div className="welcome-amb-tag">HSK 1 → 4 in 8 months</div>
+          </div>
+          <div className="welcome-amb welcome-amb-right">
+            <img
+              src="https://images.unsplash.com/photo-1609245546923-8aee2ce369fd?w=260&h=380&fit=crop&crop=faces&auto=format"
+              alt="Chinese male learner"
+              className="welcome-amb-img"
+            />
+            <div className="welcome-amb-name">小明</div>
+            <div className="welcome-amb-tag">Daily streak: 142 days</div>
+          </div>
+        </div>
+
         <div className="welcome-card">
           <div className="welcome-logo-wrap">
             <span className="welcome-logo-mark">汉</span>
