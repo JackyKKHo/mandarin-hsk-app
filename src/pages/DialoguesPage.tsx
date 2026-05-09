@@ -3,7 +3,7 @@ import AppHeader from '../components/AppHeader'
 import { DIALOGUES } from '../data/dialogues'
 
 export default function DialoguesPage() {
-  const byLevel = [1, 2, 3].map(level => ({
+  const byLevel = [1, 2, 3, 4, 5].map(level => ({
     level,
     items: DIALOGUES.filter(d => d.hskLevel === level),
   })).filter(g => g.items.length > 0)
