@@ -328,7 +328,7 @@ export const DIALOGUES: Dialogue[] = [
       { speaker: 'B', chinese: '我觉得结局有点仓促，但整体来说还是很值得看的。', pinyin: 'Wǒ juéde jiéjú yǒudiǎn cāngcù, dàn zhěngtǐ lái shuō háishì hěn zhídé kàn de.', english: 'I thought the ending was a bit rushed, but overall it\'s definitely worth watching.' },
       { speaker: 'A', chinese: '你喜欢哪种类型的电影？', pinyin: 'Nǐ xǐhuān nǎ zhǒng lèixíng de diànyǐng?', english: 'What genre of film do you like?' },
       { speaker: 'B', chinese: '我最喜欢悬疑和科幻，你呢？', pinyin: 'Wǒ zuì xǐhuān xuányí hé kēhuàn, nǐ ne?', english: 'I like thriller and sci-fi the most, what about you?' },
-      { speaker: 'A', chinese: '我比较喜欢文艺片，但偶尔也会看动作片。', pinyin: 'Wǒ bǐjiào xǐhuān wényì piān, dàn ǒu'ěr yě huì kàn dòngzuò piān.', english: 'I prefer arthouse films, but I watch action films occasionally too.' },
+      { speaker: 'A', chinese: '我比较喜欢文艺片，但偶尔也会看动作片。', pinyin: "Wǒ bǐjiào xǐhuān wényì piān, dàn ǒu'ěr yě huì kàn dòngzuò piān.", english: 'I prefer arthouse films, but I watch action films occasionally too.' },
     ],
   },
   // ── HSK 5 ──────────────────────────────────────────────────────────────
