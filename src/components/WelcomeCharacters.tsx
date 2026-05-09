@@ -74,7 +74,8 @@ export function MaleCharacter({ className }: { className?: string }) {
       <ellipse cx="70" cy="351" rx="17" ry="8" fill={HAIR} />
       <ellipse cx="95" cy="351" rx="17" ry="8" fill={HAIR} />
       {/* Name */}
-      <text x="85" y="378" textAnchor="middle" fontSize="13" fontWeight="700" fill={DARK} fontFamily="'Noto Serif SC', serif">小明</text>
+      <text x="85" y="372" textAnchor="middle" fontSize="18" fontWeight="800" fill={RED} fontFamily="'Noto Serif SC', serif" letterSpacing="4">小龙</text>
+      <text x="85" y="384" textAnchor="middle" fontSize="9" fontWeight="500" fill={DARK} fontFamily="sans-serif" opacity="0.5" letterSpacing="1">XIǍO LÓNG</text>
     </svg>
   )
 }
@@ -154,7 +155,8 @@ export function FemaleCharacter({ className }: { className?: string }) {
       <path d="M81 333 L103 333 L103 341 L85 341Z" fill={RED} />
       <line x1="102" y1="338" x2="102" y2="348" stroke={RED} strokeWidth="3.5" strokeLinecap="round" />
       {/* Name */}
-      <text x="80" y="378" textAnchor="middle" fontSize="13" fontWeight="700" fill={DARK} fontFamily="'Noto Serif SC', serif">小美</text>
+      <text x="80" y="372" textAnchor="middle" fontSize="18" fontWeight="800" fill={RED} fontFamily="'Noto Serif SC', serif" letterSpacing="4">小凤</text>
+      <text x="80" y="384" textAnchor="middle" fontSize="9" fontWeight="500" fill={DARK} fontFamily="sans-serif" opacity="0.5" letterSpacing="1">XIǍO FÈNG</text>
     </svg>
   )
 }
