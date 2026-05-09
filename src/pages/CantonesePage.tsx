@@ -15,8 +15,8 @@ const SOUND_RULES: SoundRule[] = [
   {
     id: 'g-j', shortTitle: 'G → J', title: 'The G → J Rule',
     cant: 'g-', mand: 'j-', accuracy: '~90%',
-    explanation: 'Cantonese g- initial almost always becomes j- in Mandarin. This is the single most powerful copy & paste rule.',
-    tip: 'When you see g- in Jyutping, think j- in Pinyin. 家 gaa1 → jiā. Try it with every g- word you know.',
+    explanation: 'Cantonese g- initial almost always becomes j- in Mandarin. Once this clicks, a huge chunk of vocabulary unlocks at once.',
+    tip: '家 gaa1 → jiā. 見 gin3 → jiàn. 講 gong2 → jiǎng. Say a Cantonese g- word, swap the initial to j-, and you\'re usually right.',
     examples: [
       { char: '家', cant: 'gaa1', mand: 'jiā', english: 'home / family' },
       { char: '見', cant: 'gin3', mand: 'jiàn', english: 'see / meet' },
@@ -39,8 +39,8 @@ const SOUND_RULES: SoundRule[] = [
   {
     id: 'ptk', shortTitle: '-P/-T/-K Drop', title: 'The Entering Tone Drop',
     cant: '-p / -t / -k', mand: '(open syllable)', accuracy: '~95%',
-    explanation: 'Cantonese kept the entering tones (入聲) from Middle Chinese — short syllables ending in -p, -t, or -k. Mandarin lost them all. Strip the final consonant and you\'re usually right.',
-    tip: 'See a Cantonese word ending in -p, -t, or -k? Drop it. 食 sik → shí. 一 jat → yī. 入 jap → rù.',
+    explanation: 'Cantonese kept the entering tones (入聲) from Middle Chinese — short syllables that end hard with -p, -t, or -k. Mandarin lost all of them. The consonant just vanishes.',
+    tip: 'Strip the final stop. 食 sik6 → shí. 一 jat1 → yī. 學 hok6 → xué. It\'s one of the most consistent rules in the whole language.',
     examples: [
       { char: '一', cant: 'jat1', mand: 'yī', english: 'one (-t dropped)' },
       { char: '七', cant: 'cat1', mand: 'qī', english: 'seven (-t dropped)' },
@@ -62,8 +62,8 @@ const SOUND_RULES: SoundRule[] = [
   {
     id: 'ng', shortTitle: 'ng- Drops', title: 'The ng- Drop Rule',
     cant: 'ng-', mand: 'w- / y- / (zero)', accuracy: '~85%',
-    explanation: 'Cantonese preserved the Middle Chinese ng- nasal initial. Mandarin dropped it entirely — the word either starts with w-, y-, or a vowel directly.',
-    tip: '我 is ngo5 in Cantonese but wǒ in Mandarin. The ng is gone. Look for w- or y- as the Mandarin replacement.',
+    explanation: 'Cantonese kept the ng- nasal initial from Middle Chinese. Mandarin dropped it. Depending on the vowel that follows, it either becomes w-, y-, or just disappears.',
+    tip: 'ngo5 我 → wǒ. ngaan5 眼 → yǎn. The pattern isn\'t perfectly predictable but w- and y- are the two things to try first.',
     examples: [
       { char: '我', cant: 'ngo5', mand: 'wǒ', english: 'I / me (ng→w)' },
       { char: '牛', cant: 'ngau4', mand: 'niú', english: 'cow (ng→n)' },
@@ -80,8 +80,8 @@ const SOUND_RULES: SoundRule[] = [
   {
     id: 'm-n', shortTitle: '-M → -N', title: 'The -M to -N Rule',
     cant: 'final -m', mand: 'final -n', accuracy: '~95%',
-    explanation: 'Cantonese kept the final -m from Middle Chinese. Mandarin merged it into -n. This rule is extremely consistent.',
-    tip: 'If a Cantonese word ends in -m, the Mandarin version ends in -n. 心 sam1 → xīn. 三 saam1 → sān.',
+    explanation: 'Cantonese kept the final -m from Middle Chinese. Mandarin merged it into -n. No major exceptions — this one just works.',
+    tip: 'sam1 心 → xīn. saam1 三 → sān. gam1 今 → jīn. Every Cantonese -m word ends in -n in Mandarin.',
     examples: [
       { char: '心', cant: 'sam1', mand: 'xīn', english: 'heart' },
       { char: '三', cant: 'saam1', mand: 'sān', english: 'three' },
@@ -100,8 +100,8 @@ const SOUND_RULES: SoundRule[] = [
   {
     id: 'f-h', shortTitle: 'F → F or HU', title: 'The F Split Rule',
     cant: 'f-', mand: 'f- or hu-', accuracy: '~70%',
-    explanation: 'Cantonese f- words split into two groups in Mandarin: some stay f-, others become hu-. No perfect rule, but knowing both possibilities helps a lot.',
-    tip: 'When Cantonese f- is followed by a back/round vowel (o, oo), it often becomes hu- in Mandarin. Before flat vowels (aa, an, ung), it usually stays f-.',
+    explanation: 'Cantonese f- splits into two groups in Mandarin: some stay f-, others shift to hu-. There\'s no clean rule — it depends on the specific word\'s history.',
+    tip: '飛 fei1 → fēi, 飯 faan6 → fàn (f stays). 花 faa1 → huā, 火 fo2 → huǒ (f → hu). When unsure, hu- is the more common shift for round-vowel syllables.',
     examples: [
       { char: '飛', cant: 'fei1', mand: 'fēi', english: 'fly (f stays f)' },
       { char: '法', cant: 'faat3', mand: 'fǎ', english: 'law / method (f stays f)' },
@@ -310,18 +310,19 @@ export default function CantonesePage() {
 
         {/* Hero */}
         <div className="cm-hero">
-          <div className="cm-hero-badge">Copy & Paste Method™</div>
+          <div className="cm-hero-badge">粵語 → 普通話</div>
           <h2 className="cm-title">Cantonese → Mandarin</h2>
           <p className="cm-subtitle">
-            You already know the characters, the tones, and the grammar structure.
-            The gap is smaller than you think — learn the patterns, not the words.
+            Most Cantonese speakers learning Mandarin are closer than they realise —
+            the characters are already there, the tones already make sense.
+            What's left is mostly pronunciation shifts you can predict.
           </p>
         </div>
 
         {/* Cheat sheet */}
         <section className="cm-section">
           <h3 className="cm-section-title">Quick Reference Cheat Sheet</h3>
-          <p className="cm-note">The most useful patterns at a glance — bookmark this before anything else.</p>
+          <p className="cm-note">The patterns that do most of the heavy lifting. Everything else in the modules below is detail.</p>
           <div className="cm-cheatsheet">
 
             <div className="cm-cs-block">
@@ -396,8 +397,8 @@ export default function CantonesePage() {
 
         {/* Key Differences / Exceptions */}
         <section className="cm-section">
-          <h3 className="cm-section-title">Key Differences to Remember</h3>
-          <p className="cm-note">These are the traps that catch Cantonese speakers most often — false friends, word order flips, and grammar gaps.</p>
+          <h3 className="cm-section-title">The Traps</h3>
+          <p className="cm-note">Knowing the rules gets you 80% there. These are the other 20% — places where Cantonese intuition actively misleads you.</p>
           <div className="cm-diff-grid">
             {[
               {
@@ -480,26 +481,25 @@ export default function CantonesePage() {
 
         {/* Your advantage */}
         <section className="cm-section">
-          <h3 className="cm-section-title">Your Unfair Advantage</h3>
+          <h3 className="cm-section-title">What You're Starting With</h3>
           <div className="cm-advantage-grid">
             <div className="cm-adv adv-yes">
-              <div className="cm-adv-head">✓ You already know</div>
+              <div className="cm-adv-head">Already in your head</div>
               <ul>
-                <li><strong>All Chinese characters</strong> — Traditional chars map directly to Simplified</li>
-                <li><strong>Tonal awareness</strong> — You already feel tones. 6 tones → 4 is easier than 0 → 4</li>
-                <li><strong>Grammar structure</strong> — Both are SVO. Most sentence patterns transfer</li>
-                <li><strong>~60–70% of vocabulary</strong> — Shared characters, often same or similar meaning</li>
-                <li><strong>Cultural context</strong> — Idioms, number superstitions, social norms</li>
+                <li><strong>Chinese characters</strong> — Traditional maps to Simplified; most are recognisable even if different</li>
+                <li><strong>Tonal instinct</strong> — You already hear tones as meaning. Going from 6 to 4 is far easier than learning tones from scratch</li>
+                <li><strong>Sentence structure</strong> — Both SVO. The bones of a sentence transfer well</li>
+                <li><strong>A large chunk of vocabulary</strong> — Shared characters with the same or similar meaning</li>
               </ul>
             </div>
             <div className="cm-adv adv-learn">
-              <div className="cm-adv-head">→ What you need to learn</div>
+              <div className="cm-adv-head">What actually needs work</div>
               <ul>
-                <li><strong>5 pronunciation rules</strong> — Systematic sound shifts you can predict</li>
-                <li><strong>Tone remapping</strong> — Map your 6 Cantonese tones to 4 Mandarin tones</li>
-                <li><strong>~30 key vocabulary swaps</strong> — High-frequency words that differ</li>
-                <li><strong>Retroflex sounds</strong> — zh, ch, sh, r (Cantonese has no equivalents)</li>
-                <li><strong>Simplified characters</strong> — ~20% differ significantly; rest are recognisable</li>
+                <li><strong>Pronunciation shifts</strong> — The 5 rules on this page cover most of it</li>
+                <li><strong>Retroflex sounds</strong> — zh, ch, sh, r don't exist in Cantonese and take real practice</li>
+                <li><strong>~30 vocab swaps</strong> — Common words that Mandarin does differently (食→吃, 唔→不, etc.)</li>
+                <li><strong>Tone remapping</strong> — Your 6 tones don't map 1:1, but the overlap patterns are learnable</li>
+                <li><strong>Simplified characters</strong> — A minority look very different; most you can guess</li>
               </ul>
             </div>
           </div>
@@ -507,8 +507,8 @@ export default function CantonesePage() {
 
         {/* Sound Rules */}
         <section className="cm-section">
-          <h3 className="cm-section-title">Module 1 — The 5 Copy & Paste Sound Rules</h3>
-          <p className="cm-note">Learn these 5 rules and you can predict Mandarin pronunciation from Cantonese ~85% of the time.</p>
+          <h3 className="cm-section-title">Module 1 — Sound Shifts</h3>
+          <p className="cm-note">Five patterns that cover the majority of pronunciation differences. They're not perfect, but they're predictive enough to be genuinely useful.</p>
 
           <div className="cm-rule-tabs">
             {SOUND_RULES.map((r, i) => (
@@ -564,10 +564,10 @@ export default function CantonesePage() {
 
         {/* Tone Mapping */}
         <section className="cm-section">
-          <h3 className="cm-section-title">Module 2 — Tone Mapping (80% Accuracy)</h3>
+          <h3 className="cm-section-title">Module 2 — Tone Mapping</h3>
           <p className="cm-note">
-            You can predict the correct Mandarin tone from your Cantonese tone about 80% of the time.
-            Tones 1 and 4 map most reliably. Tones 2, 3, 5, 6 overlap in Mandarin.
+            Cantonese tone 1 and tone 4 map cleanly to Mandarin. The others are messier — tones 3 and 6 both often land on Mandarin 4th, and tones 2 and 5 overlap on Mandarin 3rd.
+            Don't try to memorise this table — use it to verify words you already half-know.
           </p>
           <div className="cm-tone-grid">
             {TONES.map(t => (
@@ -590,8 +590,8 @@ export default function CantonesePage() {
 
         {/* Retroflex section */}
         <section className="cm-section">
-          <h3 className="cm-section-title">Module 3 — Retroflex Sounds (zh, ch, sh, r)</h3>
-          <p className="cm-note">Cantonese has no retroflex consonants. These are the only truly new sounds you need to learn.</p>
+          <h3 className="cm-section-title">Module 3 — Retroflex Sounds</h3>
+          <p className="cm-note">zh, ch, sh, r — these are the only sounds in Mandarin with no Cantonese equivalent. Everything else is a shift of something you already have.</p>
           <div className="cm-retro-grid">
             {[
               { mand: 'zh', cant: 'z', ex: '中 zhōng (zung1)', desc: 'Curl tongue back, unaspirated' },
@@ -611,16 +611,16 @@ export default function CantonesePage() {
             ))}
           </div>
           <div className="cm-callout">
-            <strong>Shortcut:</strong> In casual spoken Mandarin, many native speakers (especially in Taiwan and the south) pronounce zh/ch/sh without full retroflexion. You can often get away with using your Cantonese z/c/s while you practice. Prioritise r — it has no Cantonese equivalent and will stand out most.
+            A lot of Mandarin speakers — especially in Taiwan and southern China — don't fully retroflex zh/ch/sh in casual speech. Your Cantonese z/c/s will be understood while you're still practising. The one that actually matters early on is r: it has no Cantonese equivalent at all and it will stand out when you get it wrong.
           </div>
         </section>
 
         {/* Vocabulary swaps */}
         <section className="cm-section">
-          <h3 className="cm-section-title">Module 4 — Essential Vocabulary Swaps</h3>
+          <h3 className="cm-section-title">Module 4 — Vocabulary Swaps</h3>
           <p className="cm-note">
-            These are the most common words that differ between Cantonese and Mandarin.
-            Click any card to reveal the Mandarin pronunciation.
+            The words where Cantonese and Mandarin just do it differently — different characters, different sounds, sometimes both.
+            Click a card to reveal the Mandarin.
           </p>
           <div className="cm-reveal-ctrl">
             <button className="cm-reveal-all" onClick={() => { setRevealAll(r => !r); setRevealedVocab(new Set()) }}>
@@ -665,8 +665,8 @@ export default function CantonesePage() {
 
         {/* Grammar */}
         <section className="cm-section">
-          <h3 className="cm-section-title">Module 5 — Grammar Differences</h3>
-          <p className="cm-note">Most grammar transfers directly. Here are the key differences to know.</p>
+          <h3 className="cm-section-title">Module 5 — Grammar</h3>
+          <p className="cm-note">Most of it transfers. These are the places it doesn't.</p>
           <div className="cm-grammar-list">
             {GRAMMAR.map(g => (
               <div key={g.title} className="cm-grammar-card">
@@ -700,9 +700,9 @@ export default function CantonesePage() {
 
         {/* Simplified characters */}
         <section className="cm-section">
-          <h3 className="cm-section-title">Module 6 — Traditional to Simplified</h3>
+          <h3 className="cm-section-title">Module 6 — Traditional → Simplified</h3>
           <p className="cm-note">
-            Most characters are identical or near-identical. These ~20 are the most common ones that changed significantly — learn to recognise them.
+            Most simplified characters are close enough to guess from traditional. These are the ones that aren't — they changed significantly enough to trip you up.
           </p>
           <div className="cm-simp-grid">
             {SIMP.map(s => (
@@ -721,9 +721,8 @@ export default function CantonesePage() {
 
         <div className="cm-footer">
           <p>
-            Inspired by Sheldon Ho's Copy & Paste Method — the insight that Cantonese speakers can predict
-            Mandarin systematically rather than memorising from scratch.
-            This reference is free. The patterns are yours to keep.
+            Approach inspired by Sheldon Ho's work on systematic Cantonese–Mandarin transfer.
+            The core insight — that the shift is predictable, not arbitrary — makes a real difference to how you study.
           </p>
         </div>
 
