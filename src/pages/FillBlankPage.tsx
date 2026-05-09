@@ -52,6 +52,7 @@ export default function FillBlankPage() {
   const [stage, setStage] = useState<Stage>('idle')
   const [sessionLength, setSessionLength] = useState<10 | 25 | 50 | 100>(10)
   const [mode, setMode] = useState<AnswerMode>('pick')
+  const [hideEnglish, setHideEnglish] = useState(false)
   const [queue, setQueue] = useState<Question[]>([])
   const [index, setIndex] = useState(0)
   const [typed, setTyped] = useState('')
@@ -157,6 +158,19 @@ export default function FillBlankPage() {
                   </button>
                 </div>
               </div>
+              {mode === 'pick' && (
+                <div className="quiz-option-group">
+                  <span className="quiz-option-label">Difficulty</span>
+                  <div className="quiz-mode-picker">
+                    <button className={`quiz-mode-btn${!hideEnglish ? ' active' : ''}`} onClick={() => setHideEnglish(false)}>
+                      Show English
+                    </button>
+                    <button className={`quiz-mode-btn${hideEnglish ? ' active' : ''}`} onClick={() => setHideEnglish(true)}>
+                      Hide English
+                    </button>
+                  </div>
+                </div>
+              )}
               <button className="btn-primary" onClick={start}>
                 Start {Math.min(sessionLength, levelWords.length)} questions
               </button>
@@ -266,7 +280,7 @@ export default function FillBlankPage() {
           {q.options.map(opt => (
             <button key={opt.id} className="quiz-option" onClick={() => pick(opt.id)}>
               <span className="opt-chinese">{opt.simplified}</span>
-              <span className="opt-english-sub">{opt.english.split(';')[0].split(',')[0]}</span>
+              {!hideEnglish && <span className="opt-english-sub">{opt.english.split(';')[0].split(',')[0]}</span>}
             </button>
           ))}
         </div>

@@ -51,7 +51,6 @@ export default function WelcomePage() {
       <div className="welcome-page">
         <MaleCharacter className="welcome-char-left" />
         <FemaleCharacter className="welcome-char-right" />
-
         <div className="welcome-card">
           <div className="welcome-logo-wrap">
             <span className="welcome-logo-mark">汉</span>

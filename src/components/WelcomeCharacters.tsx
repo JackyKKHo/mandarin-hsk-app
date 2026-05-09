@@ -1,278 +1,277 @@
-const SKIN  = '#f8cba4'
-const RED   = '#c0392b'
-const GOLD  = '#d4a017'
-const HAIR  = '#1a1a1a'
-const DARK  = '#23233a'
-const WHITE = '#ffffff'
+// Cartoon characters — Chinese traditional dress (reference: flat vector illustration)
 
-function Plum({ cx, cy, r = 6, pr = 2.4 }: { cx: number; cy: number; r?: number; pr?: number }) {
+const SK  = '#f5c9a0'
+const SKS = '#dfa070'
+const H   = '#0d0d0d'
+const R   = '#c42200'
+const RD  = '#8c1800'
+const G   = '#e0a200'
+const GD  = '#b07800'
+const BK  = '#111111'
+const W   = '#f2f2f2'
+const LP  = '#e03050'
+const EY  = '#111111'
+const EW  = '#ffffff'
+
+function Plum({ cx, cy, r = 5 }: { cx: number; cy: number; r?: number }) {
   return (
-    <g opacity="0.9">
-      {[0,72,144,216,288].map((deg, i) => {
+    <g>
+      {[270, 342, 54, 126, 198].map((deg, i) => {
         const rad = (deg * Math.PI) / 180
-        return <circle key={i} cx={cx + r * Math.sin(rad)} cy={cy - r * Math.cos(rad)} r={pr} fill={GOLD} />
+        return (
+          <circle
+            key={i}
+            cx={cx + Math.cos(rad) * r * 1.2}
+            cy={cy + Math.sin(rad) * r * 1.2}
+            r={r * 0.68}
+            fill={G}
+          />
+        )
       })}
-      <circle cx={cx} cy={cy} r={pr * 0.65} fill={GOLD} />
+      <circle cx={cx} cy={cy} r={r * 0.4} fill={GD} />
     </g>
   )
 }
 
 export function MaleCharacter({ className }: { className?: string }) {
   return (
-    <svg viewBox="0 0 170 410" xmlns="http://www.w3.org/2000/svg" className={className} aria-hidden="true">
+    <svg className={className} viewBox="0 0 200 510" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 
-      {/* ── HAIR (slick-back) ── */}
-      <path d="M57 66 Q56 24 85 22 Q114 24 113 66 Q106 44 85 42 Q64 44 57 66Z" fill={HAIR} />
-      <path d="M63 36 Q85 26 107 36 Q95 28 85 27 Q75 28 63 36Z" fill={HAIR} />
+      {/* Shoes */}
+      <ellipse cx="83"  cy="468" rx="22" ry="9" fill={BK} />
+      <ellipse cx="117" cy="468" rx="22" ry="9" fill={BK} />
 
-      {/* ── HEAD ── */}
-      <ellipse cx="85" cy="70" rx="29" ry="34" fill={SKIN} />
+      {/* Trousers */}
+      <rect x="72"  y="308" width="24" height="163" rx="5" fill={BK} />
+      <rect x="104" y="308" width="24" height="163" rx="5" fill={BK} />
 
-      {/* Ears */}
-      <ellipse cx="56" cy="72" rx="6.5" ry="9" fill={SKIN} />
-      <ellipse cx="114" cy="72" rx="6.5" ry="9" fill={SKIN} />
-      <ellipse cx="56" cy="72" rx="3.5" ry="5.5" fill="#f0b88a" />
-      <ellipse cx="114" cy="72" rx="3.5" ry="5.5" fill="#f0b88a" />
+      {/* Tang suit — main body */}
+      <path d="M55 160 L50 308 L150 308 L145 160 Z" fill={R} />
+      {/* Gold hem */}
+      <rect x="50" y="295" width="100" height="14" rx="2" fill={G} />
+      {/* Center seam */}
+      <line x1="100" y1="168" x2="100" y2="295" stroke={RD} strokeWidth="2" opacity="0.5" />
 
-      {/* ── FACE ── */}
-      {/* Eyebrows */}
-      <path d="M64 57 Q73 52 82 56" stroke={HAIR} strokeWidth="2.8" fill="none" strokeLinecap="round" />
-      <path d="M88 56 Q97 52 106 57" stroke={HAIR} strokeWidth="2.8" fill="none" strokeLinecap="round" />
+      {/* Left arm (upper) */}
+      <path d="M55 163 L33 173 L30 248 L55 242 Z" fill={R} />
+      {/* Left forearm (angled inward) */}
+      <path d="M30 232 L32 256 L72 270 L68 246 Z" fill={R} />
+      {/* Left cuff */}
+      <rect x="26" y="242" width="28" height="14" rx="5" fill={G} />
 
-      {/* Eyes — almond */}
-      <path d="M64 65 Q73 58 82 65 Q73 72 64 65Z" fill={HAIR} />
-      <path d="M88 65 Q97 58 106 65 Q97 72 88 65Z" fill={HAIR} />
-      <circle cx="70" cy="63" r="2.2" fill={WHITE} />
-      <circle cx="94" cy="63" r="2.2" fill={WHITE} />
+      {/* Right arm (upper) */}
+      <path d="M145 163 L167 173 L170 248 L145 242 Z" fill={R} />
+      {/* Right forearm */}
+      <path d="M170 232 L168 256 L128 270 L132 246 Z" fill={R} />
+      {/* Right cuff */}
+      <rect x="146" y="242" width="28" height="14" rx="5" fill={G} />
 
-      {/* Nose */}
-      <path d="M82 79 Q85 83 88 79" stroke="#d4956a" strokeWidth="1.3" fill="none" strokeLinecap="round" />
+      {/* Clasped hands */}
+      <ellipse cx="112" cy="268" rx="17" ry="11" fill={SK} />
+      <ellipse cx="88"  cy="265" rx="20" ry="12" fill={SK} />
+      <ellipse cx="100" cy="266" rx="14" ry="11" fill={SK} />
+      {[87, 93, 99, 105].map(x => (
+        <circle key={x} cx={x} cy={258} r="2.4" fill={SKS} opacity="0.4" />
+      ))}
 
-      {/* Open smile with teeth */}
-      <path d="M71 88 Q85 100 99 88 Q85 92 71 88Z" fill={WHITE} />
-      <path d="M71 88 Q85 99 99 88" stroke={RED} strokeWidth="1.8" fill="none" strokeLinecap="round" />
-      <line x1="78" y1="90" x2="85" y2="92" stroke="#ddd" strokeWidth="0.8" />
-      <line x1="85" y1="92" x2="92" y2="90" stroke="#ddd" strokeWidth="0.8" />
-
-      {/* Cheek blush */}
-      <ellipse cx="66" cy="83" rx="9" ry="5.5" fill="#f5a080" opacity="0.25" />
-      <ellipse cx="104" cy="83" rx="9" ry="5.5" fill="#f5a080" opacity="0.25" />
-
-      {/* ── NECK ── */}
-      <rect x="79" y="102" width="12" height="16" fill={SKIN} />
-
-      {/* ── TANG SUIT ── */}
-      {/* Body */}
-      <path d="M46 116 L46 252 L124 252 L124 116Z" fill={RED} />
+      {/* Plum blossoms */}
+      <Plum cx={68}  cy={196} r={8} />
+      <Plum cx={134} cy={189} r={7} />
+      <Plum cx={62}  cy={258} r={6} />
+      <Plum cx={138} cy={262} r={6} />
+      <Plum cx={72}  cy={286} r={5} />
+      <Plum cx={129} cy={285} r={5} />
 
       {/* Mandarin collar */}
-      <path d="M79 118 L79 108 Q85 104 91 108 L91 118" fill={RED} stroke={GOLD} strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M85 148 L88 168 L112 168 L115 148 Z" fill={R} />
+      <path d="M85 148 L88 168 L100 168 L100 148 Z" fill={RD} opacity="0.4" />
+      <path d="M85 148 Q100 143 115 148" stroke={G} strokeWidth="3"   fill="none" />
+      <line x1="88"  y1="168" x2="112" y2="168" stroke={G} strokeWidth="2.5" />
+      <line x1="85"  y1="148" x2="88"  y2="168" stroke={G} strokeWidth="2.5" />
+      <line x1="115" y1="148" x2="112" y2="168" stroke={G} strokeWidth="2.5" />
 
-      {/* Centre seam */}
-      <line x1="85" y1="118" x2="85" y2="252" stroke={GOLD} strokeWidth="1.5" opacity="0.55" />
-
-      {/* Frog buttons (盘扣) */}
-      {[127,140,153,166,179,192,205,218,232].map(y => (
+      {/* Frog buttons */}
+      {[182, 202, 222, 242, 262, 280].map(y => (
         <g key={y}>
-          <line x1="79" y1={y} x2="91" y2={y} stroke={GOLD} strokeWidth="1.5" strokeLinecap="round" />
-          <circle cx="85" cy={y} r="3.8" fill={GOLD} />
+          <line x1="92" y1={y} x2="108" y2={y} stroke={G} strokeWidth="1.5" />
+          <circle cx="100" cy={y} r="4.5" fill="none" stroke={G} strokeWidth="1.5" />
+          <circle cx="100" cy={y} r="2.2" fill={G} />
         </g>
       ))}
 
-      {/* Gold edge trim */}
-      <rect x="46" y="116" width="3" height="136" fill={GOLD} />
-      <rect x="121" y="116" width="3" height="136" fill={GOLD} />
-      <line x1="46" y1="116" x2="79" y2="116" stroke={GOLD} strokeWidth="2.5" />
-      <line x1="91" y1="116" x2="124" y2="116" stroke={GOLD} strokeWidth="2.5" />
+      {/* Neck */}
+      <rect x="89" y="131" width="22" height="29" rx="4" fill={SK} />
 
-      {/* ── ARMS — elbow-out, forearms forward for 拱手 ── */}
-      {/* Left upper arm */}
-      <path d="M46 126 L20 162 L34 172 L56 140Z" fill={RED} />
-      {/* Left forearm angled in */}
-      <path d="M20 162 L50 200 L66 188 L40 158Z" fill={RED} />
-      {/* Right upper arm */}
-      <path d="M124 126 L150 162 L136 172 L114 140Z" fill={RED} />
-      {/* Right forearm angled in */}
-      <path d="M150 162 L120 200 L104 188 L130 158Z" fill={RED} />
+      {/* Ears */}
+      <ellipse cx="53"  cy="90" rx="9" ry="11" fill={SK} />
+      <ellipse cx="147" cy="90" rx="9" ry="11" fill={SK} />
+      <ellipse cx="53"  cy="90" rx="5" ry="7"  fill={SKS} opacity="0.45" />
+      <ellipse cx="147" cy="90" rx="5" ry="7"  fill={SKS} opacity="0.45" />
 
-      {/* Gold cuffs */}
-      <ellipse cx="27" cy="167" rx="11" ry="6.5" fill={GOLD} />
-      <ellipse cx="143" cy="167" rx="11" ry="6.5" fill={GOLD} />
+      {/* Head */}
+      <ellipse cx="100" cy="84" rx="47" ry="52" fill={SK} />
 
-      {/* ── CLASPED HANDS (拱手礼) ── */}
-      {/* Left fist */}
-      <ellipse cx="80" cy="202" rx="18" ry="12" fill={SKIN} />
-      {/* Right hand on top */}
-      <ellipse cx="85" cy="196" rx="22" ry="13" fill={SKIN} />
-      {/* Finger details */}
-      <path d="M65 196 Q85 207 105 196" stroke="#d4956a" strokeWidth="1.2" fill="none" />
-      <path d="M70 191 Q85 195 100 191" stroke="#d4956a" strokeWidth="1" fill="none" />
-      <path d="M72 186 Q85 189 98 186" stroke="#d4956a" strokeWidth="0.8" fill="none" />
+      {/* Hair — slick back */}
+      <path d="M53 78 Q57 27 100 24 Q143 27 147 78 Q133 46 100 44 Q67 46 53 78 Z" fill={H} />
+      <path d="M100 24 Q113 33 126 46" stroke="#2a2a2a" strokeWidth="1.5" fill="none" opacity="0.5" />
 
-      {/* ── PLUM BLOSSOMS ── */}
-      <Plum cx={60} cy={150} r={7} pr={2.6} />
-      <Plum cx={110} cy={165} r={6.5} pr={2.4} />
-      <Plum cx={58} cy={222} r={6} pr={2.2} />
-      <Plum cx={112} cy={233} r={5.5} pr={2} />
+      {/* Eyebrows — thick */}
+      <path d="M70 66 Q81 60 92 64"   stroke={H} strokeWidth="4" strokeLinecap="round" fill="none" />
+      <path d="M108 64 Q119 60 130 66" stroke={H} strokeWidth="4" strokeLinecap="round" fill="none" />
 
-      {/* ── TROUSERS ── */}
-      <rect x="54" y="252" width="26" height="114" rx="6" fill={DARK} />
-      <rect x="84" y="252" width="26" height="114" rx="6" fill={DARK} />
-      <line x1="67" y1="252" x2="67" y2="366" stroke="#111122" strokeWidth="1.2" opacity="0.4" />
-      <line x1="97" y1="252" x2="97" y2="366" stroke="#111122" strokeWidth="1.2" opacity="0.4" />
+      {/* Left eye */}
+      <ellipse cx="81"  cy="76" rx="11" ry="7"  fill={EW} />
+      <ellipse cx="81"  cy="77" rx="8"  ry="6"  fill={EY} />
+      <circle  cx="83"  cy="75" r="2.2"          fill={EW} />
+      <path d="M70 74 Q81 68 92 74"   stroke={H} strokeWidth="1.5" fill="none" />
 
-      {/* ── SHOES ── */}
-      <path d="M50 362 L80 362 L84 372 L46 372Z" fill={HAIR} />
-      <path d="M80 362 L116 362 L120 372 L76 372Z" fill={HAIR} />
+      {/* Right eye */}
+      <ellipse cx="119" cy="76" rx="11" ry="7"  fill={EW} />
+      <ellipse cx="119" cy="77" rx="8"  ry="6"  fill={EY} />
+      <circle  cx="121" cy="75" r="2.2"          fill={EW} />
+      <path d="M108 74 Q119 68 130 74" stroke={H} strokeWidth="1.5" fill="none" />
 
-      {/* ── NAME ── */}
-      <text x="85" y="392" textAnchor="middle" fontSize="20" fontWeight="800" fill={RED} fontFamily="'Noto Serif SC', serif" letterSpacing="5">小龙</text>
-      <text x="85" y="404" textAnchor="middle" fontSize="9" fill={DARK} fontFamily="sans-serif" opacity="0.45" letterSpacing="1.5">XIǍO LÓNG</text>
+      {/* Nose */}
+      <ellipse cx="97"  cy="92" rx="3" ry="2" fill={SKS} opacity="0.6" />
+      <ellipse cx="103" cy="92" rx="3" ry="2" fill={SKS} opacity="0.6" />
+
+      {/* Mouth — open smile with teeth */}
+      <path d="M82 103 Q100 119 118 103" fill={LP} />
+      <path d="M84 106 Q100 115 116 106 Q100 111 84 106 Z" fill={W} />
+      <path d="M82 103 Q100 119 118 103" stroke={H} strokeWidth="1.5" fill="none" />
     </svg>
   )
 }
 
 export function FemaleCharacter({ className }: { className?: string }) {
   return (
-    <svg viewBox="0 0 170 410" xmlns="http://www.w3.org/2000/svg" className={className} aria-hidden="true">
+    <svg className={className} viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 
-      {/* ── HAIR BUNS ── */}
-      <circle cx="54" cy="40" r="18" fill={HAIR} />
-      <circle cx="106" cy="40" r="18" fill={HAIR} />
-      {/* Bun highlight */}
-      <circle cx="50" cy="36" r="5" fill="#333" opacity="0.5" />
-      <circle cx="102" cy="36" r="5" fill="#333" opacity="0.5" />
+      {/* Red heels */}
+      <rect x="79"  y="440" width="20" height="9"  rx="3" fill={R} />
+      <rect x="101" y="440" width="20" height="9"  rx="3" fill={R} />
+      <rect x="80"  y="449" width="5"  height="13" rx="2" fill={R} />
+      <rect x="115" y="449" width="5"  height="13" rx="2" fill={R} />
 
-      {/* Red ribbon bows */}
-      <path d="M38 28 L54 42 L46 22Z" fill={RED} />
-      <path d="M70 28 L54 42 L62 22Z" fill={RED} />
-      <circle cx="54" cy="41" r="5" fill={RED} />
-      <path d="M90 28 L106 42 L98 22Z" fill={RED} />
-      <path d="M122 28 L106 42 L114 22Z" fill={RED} />
-      <circle cx="106" cy="41" r="5" fill={RED} />
-      {/* Ribbon tails */}
-      <path d="M50 46 L44 58" stroke={RED} strokeWidth="3" strokeLinecap="round" />
-      <path d="M58 46 L64 58" stroke={RED} strokeWidth="3" strokeLinecap="round" />
-      <path d="M102 46 L96 58" stroke={RED} strokeWidth="3" strokeLinecap="round" />
-      <path d="M110 46 L116 58" stroke={RED} strokeWidth="3" strokeLinecap="round" />
+      {/* Bare legs */}
+      <rect x="78"  y="363" width="22" height="80" rx="7" fill={SK} />
+      <rect x="100" y="363" width="22" height="80" rx="7" fill={SK} />
 
-      {/* Hair base connecting buns */}
-      <path d="M48 60 Q80 44 112 60 Q104 53 80 51 Q56 53 48 60Z" fill={HAIR} />
+      {/* Qipao — main body */}
+      <path d="M62 153 L58 368 L142 368 L138 153 Z" fill={R} />
+      {/* Gold hem */}
+      <rect x="58" y="355" width="84" height="14" rx="2" fill={G} />
+      {/* Side slit */}
+      <path d="M137 326 L141 368 L136 368 L133 326 Z" fill={SK} opacity="0.35" />
 
-      {/* ── HEAD ── */}
-      <ellipse cx="80" cy="72" rx="28" ry="33" fill={SKIN} />
+      {/* Cap sleeves */}
+      <path d="M62 153 L44 154 L42 180 L62 176 Z" fill={R} />
+      <path d="M138 153 L156 154 L158 180 L138 176 Z" fill={R} />
+      <path d="M44 154 L42 180"  stroke={G} strokeWidth="2.5" fill="none" />
+      <path d="M156 154 L158 180" stroke={G} strokeWidth="2.5" fill="none" />
+      <line x1="44"  y1="154" x2="62"  y2="153" stroke={G} strokeWidth="2.5" />
+      <line x1="138" y1="153" x2="156" y2="154" stroke={G} strokeWidth="2.5" />
+
+      {/* Bare arms */}
+      <path d="M62 176 L42 180 L38 248 L62 244 Z" fill={SK} />
+      <path d="M38 232 L40 255 L75 267 L70 244 Z" fill={SK} />
+      <path d="M138 176 L158 180 L162 248 L138 244 Z" fill={SK} />
+      <path d="M162 232 L160 255 L125 267 L130 244 Z" fill={SK} />
+
+      {/* Clasped hands */}
+      <ellipse cx="113" cy="264" rx="16" ry="10" fill={SK} />
+      <ellipse cx="87"  cy="261" rx="20" ry="11" fill={SK} />
+      <ellipse cx="100" cy="262" rx="14" ry="10" fill={SK} />
+      {[86, 92, 98, 104].map(x => (
+        <circle key={x} cx={x} cy={255} r="2.3" fill={SKS} opacity="0.4" />
+      ))}
+
+      {/* Plum blossoms */}
+      <Plum cx={74}  cy={198} r={7} />
+      <Plum cx={128} cy={192} r={7} />
+      <Plum cx={68}  cy={256} r={6} />
+      <Plum cx={134} cy={260} r={6} />
+      <Plum cx={78}  cy={304} r={5} />
+      <Plum cx={122} cy={307} r={5} />
+      <Plum cx={100} cy={332} r={5} />
+
+      {/* Qipao collar — diagonal */}
+      <path d="M86 143 L88 165 L100 167 L100 143 Z" fill={RD} opacity="0.5" />
+      <path d="M100 143 L116 139 L118 165 L100 167 Z" fill={R} />
+      <path d="M86 143 Q93 139 116 139" stroke={G} strokeWidth="2.5" fill="none" />
+      <line x1="88"  y1="165" x2="118" y2="165" stroke={G} strokeWidth="2" />
+      <line x1="86"  y1="143" x2="88"  y2="165" stroke={G} strokeWidth="2.5" />
+      <line x1="116" y1="139" x2="118" y2="165" stroke={G} strokeWidth="2.5" />
+      <circle cx="108" cy="152" r="4.5" fill="none" stroke={G} strokeWidth="1.5" />
+      <circle cx="108" cy="152" r="2"   fill={G} />
+      <line x1="100" y1="152" x2="116" y2="152" stroke={G} strokeWidth="1.5" />
+
+      {/* Neck */}
+      <rect x="90" y="127" width="20" height="25" rx="4" fill={SK} />
+
+      {/* Earrings */}
+      <circle cx="54"  cy="97" r="5" fill={G} />
+      <circle cx="146" cy="97" r="5" fill={G} />
 
       {/* Ears */}
-      <ellipse cx="52" cy="74" rx="6" ry="8.5" fill={SKIN} />
-      <ellipse cx="108" cy="74" rx="6" ry="8.5" fill={SKIN} />
-      <ellipse cx="52" cy="74" rx="3" ry="5" fill="#f0b88a" />
-      <ellipse cx="108" cy="74" rx="3" ry="5" fill="#f0b88a" />
-      {/* Earrings */}
-      <circle cx="52" cy="80" r="2.5" fill={GOLD} />
-      <circle cx="108" cy="80" r="2.5" fill={GOLD} />
+      <ellipse cx="55"  cy="87" rx="8" ry="10" fill={SK} />
+      <ellipse cx="145" cy="87" rx="8" ry="10" fill={SK} />
+      <ellipse cx="55"  cy="87" rx="4" ry="6"  fill={SKS} opacity="0.45" />
+      <ellipse cx="145" cy="87" rx="4" ry="6"  fill={SKS} opacity="0.45" />
 
-      {/* ── FACE ── */}
-      {/* Eyebrows — softer arch */}
-      <path d="M60 59 Q70 53 79 58" stroke={HAIR} strokeWidth="2.6" fill="none" strokeLinecap="round" />
-      <path d="M81 58 Q90 53 100 59" stroke={HAIR} strokeWidth="2.6" fill="none" strokeLinecap="round" />
+      {/* Head */}
+      <ellipse cx="100" cy="80" rx="45" ry="50" fill={SK} />
 
-      {/* Eyes — larger, rounder for feminine look */}
-      <path d="M59 67 Q69 59 78 67 Q69 75 59 67Z" fill={HAIR} />
-      <path d="M82 67 Q91 59 101 67 Q91 75 82 67Z" fill={HAIR} />
-      <circle cx="65" cy="65" r="2.5" fill={WHITE} />
-      <circle cx="88" cy="65" r="2.5" fill={WHITE} />
+      {/* Hair base + side strands */}
+      <path d="M55 73 Q58 31 100 27 Q142 31 145 73 Q131 49 100 47 Q69 49 55 73 Z" fill={H} />
+      <path d="M55 73 Q51 86 54 103" stroke={H} strokeWidth="10" fill="none" strokeLinecap="round" />
+      <path d="M145 73 Q149 86 146 103" stroke={H} strokeWidth="10" fill="none" strokeLinecap="round" />
+      {/* Fringe */}
+      <path d="M67 57 Q100 49 133 57 Q118 51 100 49 Q82 51 67 57 Z" fill={H} />
 
-      {/* Lashes */}
-      <line x1="59" y1="64" x2="55" y2="59" stroke={HAIR} strokeWidth="1.6" strokeLinecap="round" />
-      <line x1="63" y1="62" x2="61" y2="57" stroke={HAIR} strokeWidth="1.6" strokeLinecap="round" />
-      <line x1="100" y1="64" x2="104" y2="59" stroke={HAIR} strokeWidth="1.6" strokeLinecap="round" />
-      <line x1="96" y1="62" x2="98" y2="57" stroke={HAIR} strokeWidth="1.6" strokeLinecap="round" />
+      {/* Left bun */}
+      <circle cx="75" cy="32" r="15" fill={H} />
+      <path d="M69 46 L64 56 L70 54 L75 47 L80 54 L86 56 L81 46 Z" fill={R} />
+      <path d="M69 56 Q64 73 66 92" stroke={R} strokeWidth="4.5" fill="none" strokeLinecap="round" />
+      <path d="M81 56 Q86 73 84 92" stroke={R} strokeWidth="4.5" fill="none" strokeLinecap="round" />
+
+      {/* Right bun */}
+      <circle cx="125" cy="32" r="15" fill={H} />
+      <path d="M119 46 L114 56 L120 54 L125 47 L130 54 L136 56 L131 46 Z" fill={R} />
+      <path d="M119 56 Q114 73 116 92" stroke={R} strokeWidth="4.5" fill="none" strokeLinecap="round" />
+      <path d="M131 56 Q136 73 134 92" stroke={R} strokeWidth="4.5" fill="none" strokeLinecap="round" />
+
+      {/* Eyebrows — thinner */}
+      <path d="M72 66 Q82 62 91 65"   stroke={H} strokeWidth="2.5" strokeLinecap="round" fill="none" />
+      <path d="M109 65 Q118 62 128 66" stroke={H} strokeWidth="2.5" strokeLinecap="round" fill="none" />
+
+      {/* Left eye + lashes */}
+      <ellipse cx="81"  cy="75" rx="11" ry="7.5" fill={EW} />
+      <ellipse cx="81"  cy="76" rx="8"  ry="6.5" fill={EY} />
+      <circle  cx="83"  cy="74" r="2.2"           fill={EW} />
+      <path d="M70 73 Q81 67 92 73" stroke={H} strokeWidth="1.5" fill="none" />
+      {([[73,72,70,68],[78,70,76,66],[84,68,83,64],[90,70,91,67]] as [number,number,number,number][]).map(([x1,y1,x2,y2],i) => (
+        <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={H} strokeWidth="1.2" />
+      ))}
+
+      {/* Right eye + lashes */}
+      <ellipse cx="119" cy="75" rx="11" ry="7.5" fill={EW} />
+      <ellipse cx="119" cy="76" rx="8"  ry="6.5" fill={EY} />
+      <circle  cx="121" cy="74" r="2.2"           fill={EW} />
+      <path d="M108 73 Q119 67 130 73" stroke={H} strokeWidth="1.5" fill="none" />
+      {([[110,72,107,68],[115,70,114,66],[121,68,120,64],[127,70,129,67]] as [number,number,number,number][]).map(([x1,y1,x2,y2],i) => (
+        <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={H} strokeWidth="1.2" />
+      ))}
 
       {/* Nose */}
-      <path d="M77 80 Q80 84 83 80" stroke="#d4956a" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+      <ellipse cx="97"  cy="89" rx="2.5" ry="2" fill={SKS} opacity="0.6" />
+      <ellipse cx="103" cy="89" rx="2.5" ry="2" fill={SKS} opacity="0.6" />
 
-      {/* Red lips — full smile */}
-      <path d="M67 89 Q80 83 93 89 Q80 99 67 89Z" fill={RED} />
-      <path d="M67 89 Q80 97 93 89" stroke="#a02020" strokeWidth="0.8" fill="none" />
-      <path d="M67 89 Q80 85 93 89" stroke="#ff6666" strokeWidth="0.6" fill="none" opacity="0.5" />
-
-      {/* Cheek blush */}
-      <ellipse cx="60" cy="84" rx="10" ry="6" fill="#f5a080" opacity="0.3" />
-      <ellipse cx="100" cy="84" rx="10" ry="6" fill="#f5a080" opacity="0.3" />
-
-      {/* ── NECK ── */}
-      <rect x="74" y="103" width="12" height="15" fill={SKIN} />
-
-      {/* ── QIPAO ── */}
-      {/* Body — slightly fitted/tapered */}
-      <path d="M46 116 L42 268 Q42 276 50 276 L110 276 Q118 276 118 268 L114 116Z" fill={RED} />
-
-      {/* Qipao angled collar (right-side closure) */}
-      <path d="M80 120 L80 110 Q87 105 94 110 L98 120" stroke={GOLD} strokeWidth="2.5" fill="none" strokeLinecap="round" />
-      <path d="M80 120 L80 110 Q73 105 66 110 L62 120" stroke={GOLD} strokeWidth="2.5" fill="none" strokeLinecap="round" />
-
-      {/* Qipao closure buttons */}
-      <circle cx="84" cy="122" r="3.5" fill={GOLD} />
-      <circle cx="80" cy="132" r="3.5" fill={GOLD} />
-      <circle cx="77" cy="142" r="3.5" fill={GOLD} />
-
-      {/* Gold side trim */}
-      <line x1="46" y1="116" x2="42" y2="268" stroke={GOLD} strokeWidth="2.2" />
-      <line x1="114" y1="116" x2="118" y2="268" stroke={GOLD} strokeWidth="2.2" />
-      {/* Gold hem trim */}
-      <line x1="42" y1="272" x2="118" y2="272" stroke={GOLD} strokeWidth="3.5" />
-
-      {/* Hem slit (right side) */}
-      <line x1="118" y1="255" x2="118" y2="276" stroke={GOLD} strokeWidth="1.5" />
-
-      {/* ── ARMS ── */}
-      {/* Left upper arm */}
-      <path d="M46 126 L22 160 L36 169 L54 140Z" fill={RED} />
-      {/* Left forearm */}
-      <path d="M22 160 L48 196 L63 185 L38 156Z" fill={RED} />
-      {/* Right upper arm */}
-      <path d="M114 126 L138 160 L124 169 L106 140Z" fill={RED} />
-      {/* Right forearm */}
-      <path d="M138 160 L112 196 L97 185 L122 156Z" fill={RED} />
-
-      {/* Short sleeve caps */}
-      <ellipse cx="44" cy="126" rx="16" ry="8" fill={RED} />
-      <ellipse cx="116" cy="126" rx="16" ry="8" fill={RED} />
-      <line x1="28" y1="126" x2="60" y2="126" stroke={GOLD} strokeWidth="2.5" />
-      <line x1="100" y1="126" x2="132" y2="126" stroke={GOLD} strokeWidth="2.5" />
-
-      {/* Gold cuffs */}
-      <ellipse cx="29" cy="164" rx="10" ry="6" fill={GOLD} />
-      <ellipse cx="131" cy="164" rx="10" ry="6" fill={GOLD} />
-
-      {/* ── CLASPED HANDS (拱手礼) ── */}
-      <ellipse cx="75" cy="200" rx="17" ry="11" fill={SKIN} />
-      <ellipse cx="80" cy="194" rx="21" ry="12" fill={SKIN} />
-      <path d="M61 194 Q80 205 99 194" stroke="#d4956a" strokeWidth="1.2" fill="none" />
-      <path d="M65 189 Q80 193 95 189" stroke="#d4956a" strokeWidth="1" fill="none" />
-
-      {/* ── PLUM BLOSSOMS ── */}
-      <Plum cx={55} cy={152} r={7} pr={2.5} />
-      <Plum cx={107} cy={166} r={6.5} pr={2.3} />
-      <Plum cx={52} cy={228} r={6} pr={2.2} />
-      <Plum cx={110} cy={240} r={5.5} pr={2} />
-      <Plum cx={80} cy={248} r={5} pr={1.8} />
-
-      {/* ── LEGS ── */}
-      <rect x="56" y="276" width="16" height="78" rx="5" fill={SKIN} />
-      <rect x="78" y="276" width="16" height="78" rx="5" fill={SKIN} />
-
-      {/* ── RED HEELS ── */}
-      {/* Left shoe */}
-      <path d="M50 349 L74 349 L74 358 L54 358Z" fill={RED} />
-      <path d="M72 352 Q76 358 76 366 L72 366 Q70 358 68 354Z" fill={RED} />
-      {/* Right shoe */}
-      <path d="M76 349 L100 349 L100 358 L80 358Z" fill={RED} />
-      <path d="M98 352 Q102 358 102 366 L98 366 Q96 358 92 354Z" fill={RED} />
-
-      {/* ── NAME ── */}
-      <text x="80" y="392" textAnchor="middle" fontSize="20" fontWeight="800" fill={RED} fontFamily="'Noto Serif SC', serif" letterSpacing="5">小凤</text>
-      <text x="80" y="404" textAnchor="middle" fontSize="9" fill={DARK} fontFamily="sans-serif" opacity="0.45" letterSpacing="1.5">XIǍO FÈNG</text>
+      {/* Lips */}
+      <path d="M86 100 Q100 113 114 100" fill={LP} />
+      <path d="M86 100 Q93 96 100 98 Q107 96 114 100 Q100 97 86 100 Z" fill={LP} />
+      <path d="M88 102 Q100 110 112 102 Q100 107 88 102 Z" fill={W} />
+      <path d="M86 100 Q100 113 114 100" stroke={H} strokeWidth="1.2" fill="none" />
     </svg>
   )
 }

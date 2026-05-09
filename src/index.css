@@ -2606,12 +2606,12 @@ html.dark .chart-cell-syl { color: #e0e0e0; }
 .welcome-char-right {
   position: absolute;
   bottom: 0;
-  width: 230px;
+  width: 240px;
   pointer-events: none;
 }
-.welcome-char-left  { right: calc(50% + 255px); }
-.welcome-char-right { left:  calc(50% + 255px); }
-@media (max-width: 1060px) {
+.welcome-char-left  { right: calc(50% + 260px); }
+.welcome-char-right { left:  calc(50% + 260px); }
+@media (max-width: 1080px) {
   .welcome-char-left, .welcome-char-right { display: none; }
 }
 .welcome-card {
