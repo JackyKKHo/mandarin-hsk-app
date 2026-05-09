@@ -39,7 +39,13 @@ export default function AppHeader() {
 
   return (
     <header className="app-header">
-      <h1>Mandarin Daily <span className="header-zh">每日普通话</span></h1>
+      <Link to="/hsk/1" className="app-logo">
+        <span className="app-logo-mark">汉</span>
+        <span className="app-logo-text">
+          <span className="app-logo-en">Mandarin Daily</span>
+          <span className="app-logo-zh">每日普通话</span>
+        </span>
+      </Link>
       {showFreezeToast && (
         <div className="freeze-toast" onClick={() => setShowFreezeToast(false)}>
           🛡️ Streak protected by a freeze token! ({freezes} left)

@@ -3,6 +3,8 @@
 :root {
   --red: #c0392b;
   --red-light: #fdecea;
+  --gold: var(--gold);
+  --gold-light: #fdf5e0;
   --blue: #2471a3;
   --bg: #f4f5f7;
   --surface: #ffffff;
@@ -29,15 +31,16 @@ html.dark {
 }
 
 html.dark body { background: var(--bg); color: var(--text); }
-html.dark .app-header { background: #13161f; border-color: var(--border); }
+html.dark .app-header { background: #13161f; border-bottom-color: rgba(201,162,39,0.55); background-image: radial-gradient(circle, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 20px 20px; }
+html.dark .app-logo-mark { background: rgba(192,57,43,0.3); border-color: rgba(201,162,39,0.7); }
 html.dark .vocab-card { background: var(--surface); border-color: var(--border); color: var(--text); }
 html.dark .detail-card { background: var(--surface); border-color: var(--border); }
 html.dark .search-input { background: var(--surface); border-color: var(--border); color: var(--text); }
 html.dark .teacher-section { border-color: var(--border); }
 html.dark .teacher-input { background: var(--surface); border-color: var(--border); color: var(--text); }
-html.dark .teacher-text { background: #1e2130; border-color: #d4a017; }
+html.dark .teacher-text { background: #1e2130; border-color: var(--gold); }
 html.dark .level-tab { background: var(--surface); color: var(--muted); border-color: var(--border); }
-html.dark .level-tab.active { background: #d4a017; color: white; }
+html.dark .level-tab.active { background: var(--gold); color: white; }
 html.dark .level-progress { background: #13161f; border-color: var(--border); }
 html.dark .level-progress-bar { background: var(--border); }
 html.dark .immersion-menu { background: var(--surface); border-color: var(--border); }
@@ -72,13 +75,63 @@ body {
 
 /* ── Header + nav ── */
 .app-header {
-  background: var(--red);
+  background: #b52a1e;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 20px 20px;
+  border-bottom: 3px solid var(--gold);
   color: white;
   padding: 1rem 1.5rem 0;
   text-align: center;
+  position: relative;
 }
-.app-header h1 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; }
-.header-zh { font-size: 0.75rem; font-weight: 400; opacity: 0.75; margin-left: 0.4rem; letter-spacing: 0.03em; }
+.app-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0.75rem;
+  transition: opacity 0.15s;
+}
+.app-logo:hover { opacity: 0.88; }
+.app-logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: rgba(255,255,255,0.12);
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  font-family: 'Noto Serif SC', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', serif;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  box-shadow: inset 0 0 0 1.5px rgba(255,255,255,0.15), 0 2px 8px rgba(0,0,0,0.3);
+  letter-spacing: -0.02em;
+}
+.app-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+.app-logo-en {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+.app-logo-zh {
+  font-size: 0.68rem;
+  font-weight: 400;
+  opacity: 0.7;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
 
 .app-nav {
   display: flex;
@@ -100,7 +153,7 @@ body {
   transition: color 0.15s, border-color 0.15s;
 }
 .app-nav-link:hover  { color: white; }
-.app-nav-link.active { color: white; border-bottom-color: white; }
+.app-nav-link.active { color: var(--gold); border-bottom-color: var(--gold); }
 .app-nav-signin {
   color: white;
   background: rgba(255,255,255,0.15) !important;
@@ -1622,7 +1675,8 @@ html.dark .stroke-chars { background: var(--surface); }
 @media (max-width: 600px) {
   /* Header */
   .app-header { padding: 0.75rem 0.75rem 0; }
-  .app-header h1 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .app-logo-en { font-size: 1rem; }
+  .app-logo-mark { width: 1.9rem; height: 1.9rem; font-size: 1.1rem; }
   .app-nav {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1701,7 +1755,7 @@ html.dark .stroke-chars { background: var(--surface); }
   transition: border-color 0.15s, background 0.15s;
   position: relative;
 }
-.teacher-open-btn:hover { border-color: #d4a017; background: #fdfaf6; }
+.teacher-open-btn:hover { border-color: var(--gold); background: #fdfaf6; }
 html.dark .teacher-open-btn { border-color: #3d2e00; color: #f5a623; }
 html.dark .teacher-open-btn:hover { background: #1e1800; }
 
@@ -1793,7 +1847,7 @@ html.dark .teacher-chat-name { color: #f5a623; }
   font-family: inherit;
   transition: border-color 0.12s, background 0.12s;
 }
-.teacher-suggestion:hover { border-color: #d4a017; background: #fdfaf6; }
+.teacher-suggestion:hover { border-color: var(--gold); background: #fdfaf6; }
 
 .chat-bubble-row {
   display: flex;
@@ -1885,7 +1939,7 @@ html.dark .teacher-chat-name { color: #f5a623; }
   margin-top: 0.75rem;
   padding: 0.75rem 1rem;
   background: #fafaf7;
-  border-left: 3px solid #d4a017;
+  border-left: 3px solid var(--gold);
   border-radius: 0 8px 8px 0;
   font-size: 0.92rem;
   line-height: 1.55;
@@ -1912,14 +1966,14 @@ html.dark .teacher-chat-name { color: #f5a623; }
   transition: border-color 0.2s;
   background: #fdfaf6;
 }
-.teacher-input:focus { border-color: #d4a017; }
+.teacher-input:focus { border-color: var(--gold); }
 .teacher-input:disabled { opacity: 0.6; background: #f5f5f5; }
 .teacher-send-btn {
   width: 38px;
   height: 38px;
   border-radius: 50%;
   border: none;
-  background: #d4a017;
+  background: var(--gold);
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -1946,7 +2000,7 @@ html.dark .teacher-chat-name { color: #f5a623; }
   transition: background 0.2s, border-color 0.2s;
   flex-shrink: 0;
 }
-.teacher-mic-btn:hover:not(:disabled) { background: #f5ede0; border-color: #d4a017; }
+.teacher-mic-btn:hover:not(:disabled) { background: #f5ede0; border-color: var(--gold); }
 .teacher-mic-btn.listening { background: #fde8e8; border-color: #c0392b; animation: pulse 1.2s infinite; }
 .teacher-mic-btn:disabled { opacity: 0.5; cursor: default; }
 
@@ -1967,8 +2021,8 @@ html.dark .teacher-chat-name { color: #f5a623; }
   transition: all 0.2s;
 }
 .lang-btn.active {
-  background: #d4a017;
-  border-color: #d4a017;
+  background: var(--gold);
+  border-color: var(--gold);
   color: white;
 }
 .lang-btn:disabled { opacity: 0.5; cursor: default; }
@@ -1998,7 +2052,7 @@ html.dark .teacher-chat-name { color: #f5a623; }
   color: #555;
   transition: all 0.2s;
 }
-.immersion-trigger:hover:not(:disabled) { border-color: #d4a017; color: #333; }
+.immersion-trigger:hover:not(:disabled) { border-color: var(--gold); color: #333; }
 .immersion-trigger:disabled { opacity: 0.5; cursor: default; }
 .immersion-menu {
   position: absolute;
@@ -2045,7 +2099,7 @@ html.dark .teacher-chat-name { color: #f5a623; }
 }
 .level-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #d4a017, #f0c040);
+  background: linear-gradient(90deg, var(--gold), #f0c040);
   border-radius: 999px;
   transition: width 0.4s ease;
 }
@@ -2084,7 +2138,7 @@ html.dark .daily-goal-bar.goal-met { background: #052e16; border-color: #166534;
   align-items: center;
   justify-content: space-between;
   padding: 0.6rem 1rem;
-  background: linear-gradient(90deg, #d4a017, #f0c040);
+  background: linear-gradient(90deg, var(--gold), #f0c040);
   color: #1a1a2e;
   font-weight: 600;
   font-size: 0.88rem;
@@ -2134,7 +2188,7 @@ html.dark .freeze-toast { background: #1d4ed8; }
   color: #ccc;
 }
 .action-btn:hover { transform: scale(1.2); }
-.fav-btn.active { color: #d4a017; }
+.fav-btn.active { color: var(--gold); }
 .detail-actions {
   display: flex;
   align-items: center;
@@ -2158,7 +2212,7 @@ html.dark .freeze-toast { background: #1d4ed8; }
 /* ── Favourites count ── */
 .fav-count {
   display: inline-block;
-  background: #d4a017;
+  background: var(--gold);
   color: white;
   font-size: 0.65rem;
   border-radius: 999px;
@@ -2307,10 +2361,10 @@ html.dark .tone-name { color: #ccc; }
   transition: background 0.15s, border-color 0.15s;
   width: 100%;
 }
-.tone-example-btn:hover { background: #fdf5e8; border-color: #d4a017; }
-.tone-example-btn.playing { background: #fff5cc; border-color: #d4a017; }
+.tone-example-btn:hover { background: #fdf5e8; border-color: var(--gold); }
+.tone-example-btn.playing { background: #fff5cc; border-color: var(--gold); }
 html.dark .tone-example-btn { background: #1e1e1e; border-color: #2e2e2e; }
-html.dark .tone-example-btn:hover { background: #2a1e00; border-color: #d4a017; }
+html.dark .tone-example-btn:hover { background: #2a1e00; border-color: var(--gold); }
 .tone-ex-char {
   font-size: 1.3rem;
   font-weight: 700;
@@ -2456,7 +2510,7 @@ html.dark .pron-item-char { color: #eee; }
   border-bottom: 2px solid #f0d8a8;
   white-space: nowrap;
 }
-html.dark .pron-th-fin { background: #1e1800; color: #d4a017; border-color: #3d2e00; }
+html.dark .pron-th-fin { background: #1e1800; color: var(--gold); border-color: #3d2e00; }
 .pron-td-init {
   background: #fdf5e8;
   color: #b8860b;
@@ -2547,13 +2601,36 @@ html.dark .chart-cell-syl { color: #e0e0e0; }
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 .welcome-card-wide { max-width: 620px; text-align: left; align-items: stretch; }
-.welcome-logo {
+.welcome-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: center;
+}
+.welcome-logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #b52a1e;
+  border: 2.5px solid var(--gold);
+  border-radius: 8px;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--red);
-  letter-spacing: 0.05em;
+  color: white;
+  flex-shrink: 0;
+  font-family: 'Noto Serif SC', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', serif;
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.12), 0 4px 16px rgba(181,42,30,0.4);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
-.welcome-title { font-size: 1.8rem; font-weight: 800; margin: 0; }
+.welcome-logo-zh {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin-top: 0.1rem;
+}
+.welcome-title { font-size: 1.8rem; font-weight: 800; margin: 0; text-align: left; }
 .welcome-tagline { color: var(--muted); font-size: 0.95rem; line-height: 1.6; max-width: 360px; }
 
 .welcome-features {

@@ -1,1 +1,7 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'><rect width='192' height='192' rx='35' fill='#c0392b'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='106' fill='white'>汉</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="38" fill="#b52a1e"/>
+  <rect x="8" y="8" width="176" height="176" rx="32" fill="none" stroke="#d4a017" stroke-width="3.5"/>
+  <rect x="16" y="16" width="160" height="160" rx="25" fill="none" stroke="rgba(201,162,39,0.35)" stroke-width="1.5"/>
+  <text x="96" y="103" dominant-baseline="middle" text-anchor="middle" font-family="'Noto Serif SC','Noto Sans SC','PingFang SC','Microsoft YaHei',serif" font-size="108" font-weight="700" fill="white">汉</text>
+  <text x="96" y="165" dominant-baseline="middle" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="500" fill="#d4a017" letter-spacing="2.5">每日普通话</text>
+</svg>

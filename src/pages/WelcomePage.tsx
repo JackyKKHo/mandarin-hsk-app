@@ -49,8 +49,13 @@ export default function WelcomePage() {
     return (
       <div className="welcome-page">
         <div className="welcome-card">
-          <div className="welcome-logo">每日普通话</div>
-          <h1 className="welcome-title">Mandarin Daily</h1>
+          <div className="welcome-logo-wrap">
+            <span className="welcome-logo-mark">汉</span>
+            <div>
+              <div className="welcome-title">Mandarin Daily</div>
+              <div className="welcome-logo-zh">每日普通话</div>
+            </div>
+          </div>
           <p className="welcome-tagline">Learn HSK vocabulary the smart way — with spaced repetition, audio, and an AI tutor.</p>
 
           <div className="welcome-features">
