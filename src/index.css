@@ -3900,6 +3900,48 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
   font-weight: 700;
   color: var(--red);
 }
+.bottom-nav-guides-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-nav-submenu {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  min-width: 130px;
+  overflow: hidden;
+  z-index: 300;
+  animation: submenu-in 0.15s ease;
+}
+@keyframes submenu-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(6px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.bns-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+.bns-item:last-child { border-bottom: none; }
+.bns-item:hover, .bns-item.active { background: var(--hover); color: var(--red); }
+.bns-emoji { font-size: 1rem; }
+.bns-label { white-space: nowrap; }
 
 /* ── Search filters ── */
 .search-filters {
