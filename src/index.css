@@ -2589,18 +2589,17 @@ html.dark .chart-cell-syl { color: #e0e0e0; }
   position: relative;
   overflow: hidden;
 }
-.welcome-characters {
+.welcome-char-left,
+.welcome-char-right {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 520px;
-  max-width: 90vw;
+  width: 180px;
   pointer-events: none;
-  opacity: 0.92;
 }
-@media (max-width: 640px) {
-  .welcome-characters { width: 320px; opacity: 0.3; }
+.welcome-char-left  { right: calc(50% + 260px); }
+.welcome-char-right { left:  calc(50% + 260px); }
+@media (max-width: 960px) {
+  .welcome-char-left, .welcome-char-right { display: none; }
 }
 .welcome-card {
   background: var(--surface);
