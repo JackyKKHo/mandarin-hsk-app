@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import WelcomeCharacters from '../components/WelcomeCharacters'
 
 const LEVELS = [
   { level: 1, label: 'HSK 1', words: 500,  tag: 'Beginner',     desc: 'Basic greetings, numbers, family' },
@@ -48,6 +49,8 @@ export default function WelcomePage() {
   if (step === 1) {
     return (
       <div className="welcome-page">
+        <WelcomeCharacters className="welcome-characters" />
+
         <div className="welcome-card">
           <div className="welcome-logo-wrap">
             <span className="welcome-logo-mark">汉</span>

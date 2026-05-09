@@ -2586,6 +2586,22 @@ html.dark .chart-cell-syl { color: #e0e0e0; }
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.welcome-characters {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  max-width: 90vw;
+  pointer-events: none;
+  opacity: 0.92;
+}
+@media (max-width: 640px) {
+  .welcome-characters { width: 320px; opacity: 0.3; }
+}
 .welcome-card {
   background: var(--surface);
   border: 1px solid var(--border);
