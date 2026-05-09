@@ -4470,6 +4470,16 @@ html.dark .cm-cs-rel-high { background: #1a3a24; color: #7ecf8e; }
 html.dark .cm-cs-rel-mid  { background: #3a2e0a; color: #d4aa30; }
 html.dark .cm-cs-rel-low  { background: #3a0f12; color: #f08080; }
 
+/* Key differences grid */
+.cm-diff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+.cm-diff-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+.cm-diff-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; padding: 3px 10px; align-self: flex-start; border-radius: 0 0 6px 0; }
+.cm-diff-title { font-weight: 700; font-size: 0.9rem; padding: 0.6rem 0.9rem 0.3rem; color: var(--text); }
+.cm-diff-rows { padding: 0 0.9rem 0.4rem; display: flex; flex-direction: column; gap: 4px; }
+.cm-diff-row { display: flex; align-items: baseline; gap: 6px; font-size: 0.82rem; color: var(--muted); }
+.cm-diff-badge { font-size: 0.65rem; font-weight: 700; padding: 1px 5px; border-radius: 4px; flex-shrink: 0; }
+.cm-diff-note { font-size: 0.78rem; color: var(--muted); padding: 0.5rem 0.9rem 0.75rem; border-top: 1px solid var(--border); line-height: 1.5; margin-top: auto; }
+
 /* Advantage grid */
 .cm-advantage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .cm-adv { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; }

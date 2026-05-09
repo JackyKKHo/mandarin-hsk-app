@@ -394,6 +394,90 @@ export default function CantonesePage() {
           </div>
         </section>
 
+        {/* Key Differences / Exceptions */}
+        <section className="cm-section">
+          <h3 className="cm-section-title">Key Differences to Remember</h3>
+          <p className="cm-note">These are the traps that catch Cantonese speakers most often — false friends, word order flips, and grammar gaps.</p>
+          <div className="cm-diff-grid">
+            {[
+              {
+                tag: 'False Friend',
+                color: '#c0392b',
+                title: '走 means different things',
+                cant: '走 zau2 = run / flee',
+                mand: '走 zǒu = walk / leave',
+                note: 'If you say 走 meaning "run" in Mandarin, people will think you said "leave".',
+              },
+              {
+                tag: 'False Friend',
+                color: '#c0392b',
+                title: '好 as "very"',
+                cant: '好靚 hou2 leng3 = very pretty',
+                mand: '很漂亮 hěn piàoliang (NOT 好)',
+                note: '好 hǎo in Mandarin means "good" — use 很 hěn for "very".',
+              },
+              {
+                tag: 'Word Order',
+                color: '#d35400',
+                title: 'Give sentence order flips',
+                cant: '佢俾錢我 — give money me',
+                mand: '他给我钱 — give me money',
+                note: 'Cantonese: verb → object → recipient. Mandarin: verb → recipient → object.',
+              },
+              {
+                tag: 'Grammar',
+                color: '#2471a3',
+                title: 'Progressive marker position',
+                cant: '食緊 — eat [marker] (after verb)',
+                mand: '在吃 — [marker] eat (before verb)',
+                note: 'Cantonese 緊 comes after the verb; Mandarin 在 comes before.',
+              },
+              {
+                tag: 'Grammar',
+                color: '#2471a3',
+                title: 'No 嘅/的 needed for predicates',
+                cant: '佢係好人嘅 — he is good person 嘅',
+                mand: '他是好人 — no particle needed',
+                note: 'Cantonese uses 嘅 at sentence end for softening; Mandarin drops it in simple predicate sentences.',
+              },
+              {
+                tag: 'Sound Exception',
+                color: '#8e44ad',
+                title: 'F → HU is inconsistent',
+                cant: '飛 fei1 → fēi (f stays)',
+                mand: '花 faa1 → huā (f → hu)',
+                note: 'Unlike the other 4 rules, F split has ~30% exceptions. When in doubt, try both.',
+              },
+              {
+                tag: 'Sound Exception',
+                color: '#8e44ad',
+                title: 'ng- sometimes stays as n-',
+                cant: '牛 ngau4 → niú (ng → n)',
+                mand: '年 nin4 → nián (ng → n)',
+                note: 'ng- usually drops to w- or y-, but before certain vowels it softens to n- instead.',
+              },
+              {
+                tag: 'Vocab Gap',
+                color: '#27ae60',
+                title: 'Cantonese-only characters',
+                cant: '唔 冇 咗 嘅 喺 俾 睇',
+                mand: 'None of these exist in Mandarin',
+                note: 'These characters were invented for Cantonese. You must swap them — there is no sound rule that helps.',
+              },
+            ].map(d => (
+              <div key={d.title} className="cm-diff-card">
+                <div className="cm-diff-tag" style={{ background: d.color }}>{d.tag}</div>
+                <div className="cm-diff-title">{d.title}</div>
+                <div className="cm-diff-rows">
+                  <div className="cm-diff-row"><span className="cm-diff-badge cant-badge">粵</span>{d.cant}</div>
+                  <div className="cm-diff-row"><span className="cm-diff-badge mand-badge">普</span>{d.mand}</div>
+                </div>
+                <div className="cm-diff-note">{d.note}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Your advantage */}
         <section className="cm-section">
           <h3 className="cm-section-title">Your Unfair Advantage</h3>
