@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react'
 import { supabase } from '../lib/supabase'
 import { useAuth } from '../context/AuthContext'
+import { useDailyGoal } from './useDailyGoal'
 
 const KEY = 'hsk-srs'
 
@@ -55,6 +56,7 @@ function nextCard(card: SRSCard | undefined, quality: SRSQuality): SRSCard {
 export function useSRS() {
   const { user } = useAuth()
   const [data, setData] = useState<Record<string, SRSCard>>(loadLocal)
+  const { addProgress } = useDailyGoal()
 
   useEffect(() => {
     if (!user) return
@@ -95,6 +97,7 @@ export function useSRS() {
   }, [user])
 
   const review = useCallback((id: string, quality: SRSQuality) => {
+    if (quality !== 'again') addProgress(1)
     setData(prev => {
       const card = nextCard(prev[id], quality)
       const next = { ...prev, [id]: card }

@@ -3975,3 +3975,77 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
   font-weight: 700;
   font-size: 1rem;
 }
+
+/* ── Daily goal card ── */
+.stats-goal-card {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.stats-goal-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+.stats-goal-edit {
+  background: none;
+  border: none;
+  color: var(--red);
+  font-size: 0.72rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+  padding: 0;
+}
+.stats-goal-input {
+  width: 60px;
+  padding: 0.1rem 0.4rem;
+  border: 1.5px solid var(--red);
+  border-radius: 0.35rem;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.85rem;
+}
+.stats-goal-save {
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 0.35rem;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.stats-goal-count { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+.stats-goal-sep { font-size: 0.9rem; font-weight: 400; color: var(--muted); }
+.goal-done { color: #27ae60; }
+.goal-badge {
+  background: #eafaf1;
+  color: #27ae60;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  margin-left: 0.5rem;
+}
+.dark .goal-badge { background: #0d2e1a; }
+.stats-goal-bar-wrap {
+  background: var(--border);
+  border-radius: 99px;
+  height: 8px;
+  overflow: hidden;
+}
+.stats-goal-bar {
+  height: 100%;
+  background: var(--red);
+  border-radius: 99px;
+  transition: width 0.4s;
+  max-width: 100%;
+}
+
+/* ── Export row ── */
+.stats-export-row { }

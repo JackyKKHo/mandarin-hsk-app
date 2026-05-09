@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
 import { useProgress } from '../hooks/useProgress'
@@ -9,6 +9,30 @@ import { useVocab } from '../hooks/useVocab'
 import { LEVEL_COUNTS } from '../data/vocabLoader'
 import StudyHeatmap from '../components/StudyHeatmap'
 import { useSEO } from '../hooks/useSEO'
+import { useDailyGoal } from '../hooks/useDailyGoal'
+import { MAX_FREEZES } from '../hooks/useStreak'
+import type { VocabItem } from '../types'
+
+function exportWords(type: 'learned' | 'favourites', vocab: VocabItem[], learned: Set<string>, favourites: Set<string>) {
+  const words = vocab.filter(w => type === 'learned' ? learned.has(w.id) : favourites.has(w.id))
+  const rows = [['Simplified', 'Traditional', 'Pinyin', 'English', 'HSK Level', 'Part of Speech']]
+  for (const w of words) rows.push([w.simplified, w.traditional, w.pinyin, w.english, String(w.hskLevel), w.partOfSpeech ?? ''])
+  const csv = rows.map(r => r.map(c => `"${c.replace(/"/g, '""')}"`).join(',')).join('\n')
+  download(`mandarin-daily-${type}.csv`, csv, 'text/csv')
+}
+
+function exportAnki(vocab: VocabItem[], learned: Set<string>) {
+  const words = vocab.filter(w => learned.has(w.id))
+  const lines = words.map(w => `${w.simplified} (${w.pinyin})\t${w.english} [HSK ${w.hskLevel}]`)
+  download('mandarin-daily-anki.txt', lines.join('\n'), 'text/plain')
+}
+
+function download(filename: string, content: string, mime: string) {
+  const a = document.createElement('a')
+  a.href = URL.createObjectURL(new Blob([content], { type: mime }))
+  a.download = filename
+  a.click()
+}
 
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const TOTAL = Object.values(LEVEL_COUNTS).reduce((a, b) => a + b, 0)
@@ -21,9 +45,12 @@ export default function StatsPage() {
   useSEO({ title: 'My Progress', path: '/stats' })
   const { learned } = useProgress()
   const { favourites } = useFavourites()
-  const { streak, lastDate } = useStreak()
+  const { streak, lastDate, freezes } = useStreak()
   const { isDue, getCard } = useSRS()
   const { words: vocab } = useVocab()
+  const { goal, setGoal, todayCount, pct: goalPct, done: goalDone } = useDailyGoal()
+  const [editingGoal, setEditingGoal] = useState(false)
+  const [goalInput, setGoalInput] = useState(String(goal))
 
   const totalLearned = learned.size
   const totalPct = Math.round((totalLearned / TOTAL) * 100)
@@ -114,6 +141,43 @@ export default function StatsPage() {
             <span className="stats-hero-label">Daily Challenge</span>
             <Link to="/daily" className="stats-hero-sub stats-link">start today's →</Link>
           </div>
+          <div className="stats-hero-card">
+            <span className="stats-hero-num">🛡️{freezes}</span>
+            <span className="stats-hero-label">freeze tokens</span>
+            <span className="stats-hero-sub">earn 1 every 7-day streak (max {MAX_FREEZES})</span>
+          </div>
+        </div>
+
+        {/* Daily goal */}
+        <div className="stats-goal-card">
+          <div className="stats-goal-left">
+            <div className="stats-goal-label">
+              Today's goal
+              {!editingGoal
+                ? <button className="stats-goal-edit" onClick={() => { setEditingGoal(true); setGoalInput(String(goal)) }}>Edit</button>
+                : <span style={{ display: 'inline-flex', gap: '0.4rem', marginLeft: '0.5rem' }}>
+                    <input
+                      className="stats-goal-input"
+                      type="number"
+                      value={goalInput}
+                      min={1} max={200}
+                      onChange={e => setGoalInput(e.target.value)}
+                      onKeyDown={e => { if (e.key === 'Enter') { setGoal(parseInt(goalInput) || goal); setEditingGoal(false) } if (e.key === 'Escape') setEditingGoal(false) }}
+                      autoFocus
+                    />
+                    <button className="stats-goal-save" onClick={() => { setGoal(parseInt(goalInput) || goal); setEditingGoal(false) }}>Save</button>
+                  </span>
+              }
+            </div>
+            <div className="stats-goal-count">
+              <span className={goalDone ? 'goal-done' : ''}>{todayCount}</span>
+              <span className="stats-goal-sep"> / {goal} words</span>
+              {goalDone && <span className="goal-badge">✓ Done!</span>}
+            </div>
+          </div>
+          <div className="stats-goal-bar-wrap">
+            <div className="stats-goal-bar" style={{ width: `${goalPct}%` }} />
+          </div>
         </div>
 
         {/* Overall progress bar */}
@@ -151,6 +215,23 @@ export default function StatsPage() {
             </Link>
           </div>
         )}
+
+        {/* Export */}
+        <div className="stats-section stats-export-row">
+          <h3 className="stats-section-title">Export vocabulary</h3>
+          <p className="stats-section-desc">Download your learned or favourited words for use in other apps.</p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <button className="btn-secondary" onClick={() => exportWords('learned', vocab, learned, favourites)}>
+              ⬇ Learned words (CSV)
+            </button>
+            <button className="btn-secondary" onClick={() => exportWords('favourites', vocab, learned, favourites)}>
+              ⬇ Favourites (CSV)
+            </button>
+            <button className="btn-secondary" onClick={() => exportAnki(vocab, learned)}>
+              ⬇ Anki deck (.txt)
+            </button>
+          </div>
+        </div>
 
         {/* HSK Readiness */}
         <div className="stats-section">
