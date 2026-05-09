@@ -3542,6 +3542,8 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
 .assessment-prompt { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.75rem; }
 .assessment-word { font-size: 3.5rem; font-weight: 700; line-height: 1.1; margin-bottom: 0.5rem; }
 .assessment-pinyin { font-size: 1.1rem; color: var(--muted); }
+.assessment-pinyin-hint { font-size: 0.95rem; color: var(--muted); margin-top: 0.25rem; }
+.assessment-opt-pinyin { font-size: 1.05rem; letter-spacing: 0.02em; }
 .assessment-options {
   display: flex;
   flex-direction: column;

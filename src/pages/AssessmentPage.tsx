@@ -12,7 +12,51 @@ interface Question {
   word: VocabItem
   options: VocabItem[]
   audioUrl: string | null
-  sentence: string | null   // reading type only
+  sentence: string | null       // reading type only
+  pinyinOptions: string[] | null // pinyin type: 4 tone variants, correct = word.pinyin
+}
+
+// ── Pinyin tone variant generation ──────────────────────────────────────────
+const TONE_MAP: Record<string, string[]> = {
+  a: ['ā','á','ǎ','à'], e: ['ē','é','ě','è'],
+  i: ['ī','í','ǐ','ì'], o: ['ō','ó','ǒ','ò'],
+  u: ['ū','ú','ǔ','ù'], ü: ['ǖ','ǘ','ǚ','ǜ'], v: ['ǖ','ǘ','ǚ','ǜ'],
+}
+
+function syllableWithTone(syl: string, tone: number): string {
+  const s = syl.replace('v', 'ü')
+  let idx = s.search(/[ae]/)
+  if (idx === -1) {
+    const ou = s.indexOf('ou')
+    idx = ou !== -1 ? ou : Math.max(s.lastIndexOf('i'), s.lastIndexOf('o'), s.lastIndexOf('u'), s.lastIndexOf('ü'))
+  }
+  if (idx < 0 || tone < 1 || tone > 4) return s
+  return s.slice(0, idx) + (TONE_MAP[s[idx]]?.[tone - 1] ?? s[idx]) + s.slice(idx + 1)
+}
+
+function buildPinyinOptions(word: VocabItem): string[] | null {
+  const numbered = (word.pinyinNumbered ?? '').toLowerCase()
+  if (!numbered) return null
+  const syllables = numbered.match(/[a-züv]+[1-5]/g)
+  if (!syllables) return null
+
+  const correctTone = parseInt(syllables[0].slice(-1))
+  if (correctTone === 5) return null  // neutral tone — skip
+
+  const base = syllables[0].replace(/[1-5]$/, '')
+  const variants: string[] = []
+
+  for (let t = 1; t <= 4; t++) {
+    const newSyls = [...syllables]
+    newSyls[0] = base + t
+    const pinyin = newSyls.map(s => {
+      const m = s.match(/([a-züv]+)([1-5])/)
+      return m ? syllableWithTone(m[1], parseInt(m[2])) : s
+    }).join(' ')
+    variants.push(pinyin)
+  }
+
+  return shuffle(variants)
 }
 
 interface Answered {
@@ -116,7 +160,28 @@ export default function AssessmentPage() {
 
     const sentence = type === 'reading' ? (word.examples?.[0]?.chinese ?? null) : null
 
-    return { type, word, options, audioUrl, sentence }
+    // For pinyin: generate tone variants; fall back to char-to-english if not possible
+    let pinyinOptions: string[] | null = null
+    let resolvedType = type
+    if (type === 'pinyin') {
+      pinyinOptions = buildPinyinOptions(word)
+      if (!pinyinOptions) resolvedType = 'char-to-english'
+    }
+
+    // For listening: ensure all options have same character count as correct word
+    let resolvedOptions = options
+    if (type === 'listening') {
+      const charCount = word.simplified.length
+      const sameLength = shuffle(words.filter(w =>
+        w.id !== word.id && w.english && w.simplified &&
+        w.simplified.length === charCount
+      ))
+      if (sameLength.length >= 3) {
+        resolvedOptions = shuffle([word, ...sameLength.slice(0, 3)])
+      }
+    }
+
+    return { type: resolvedType, word, options: resolvedOptions, audioUrl, sentence, pinyinOptions }
   }
 
   async function loadQuestion(level: number, answeredSoFar: Answered[]) {
@@ -153,7 +218,9 @@ export default function AssessmentPage() {
   function answer(optId: string) {
     if (!question || selected) return
     setSelected(optId)
-    const correct = optId === question.word.id
+    const correct = question.type === 'pinyin'
+      ? optId === question.word.pinyin
+      : optId === question.word.id
     const next: Answered[] = [...answered, { level: currentLevel, correct }]
     setAnswered(next)
     setStage('feedback')
@@ -294,8 +361,9 @@ export default function AssessmentPage() {
 
             {q.type === 'pinyin' && (
               <>
-                <p className="assessment-prompt">Which tones are correct?</p>
+                <p className="assessment-prompt">How do you pronounce this?</p>
                 <div className="assessment-word">{q.word.simplified}</div>
+                <p className="assessment-pinyin-hint">{q.word.english.split(';')[0].split(',')[0]}</p>
               </>
             )}
 
@@ -318,48 +386,55 @@ export default function AssessmentPage() {
 
           {/* Options */}
           <div className="assessment-options">
-            {q.options.map(opt => {
-              let cls = 'assessment-option'
-              if (selected) {
-                if (opt.id === q.word.id) cls += ' opt-correct'
-                else if (opt.id === selected) cls += ' opt-wrong'
-                else cls += ' opt-dim'
-              }
-
-              let label = ''
-              if (q.type === 'char-to-english' || q.type === 'reading') {
-                label = opt.english.split(';')[0].split(',')[0]
-              } else if (q.type === 'english-to-char') {
-                label = opt.simplified
-              } else if (q.type === 'listening') {
-                label = opt.simplified
-              } else if (q.type === 'pinyin') {
-                label = opt.pinyin
-              }
-
-              return (
-                <button
-                  key={opt.id}
-                  className={cls}
-                  onClick={() => answer(opt.id)}
-                  disabled={!!selected}
-                >
-                  {q.type === 'english-to-char' || q.type === 'listening'
-                    ? <span className="assessment-opt-char">{label}</span>
-                    : label}
-                </button>
-              )
-            })}
+            {q.type === 'pinyin' && q.pinyinOptions ? (
+              q.pinyinOptions.map(pinyin => {
+                let cls = 'assessment-option'
+                if (selected) {
+                  if (pinyin === q.word.pinyin) cls += ' opt-correct'
+                  else if (pinyin === selected) cls += ' opt-wrong'
+                  else cls += ' opt-dim'
+                }
+                return (
+                  <button key={pinyin} className={cls} onClick={() => answer(pinyin)} disabled={!!selected}>
+                    <TonedPinyin pinyin={pinyin} className="assessment-opt-pinyin" />
+                  </button>
+                )
+              })
+            ) : (
+              q.options.map(opt => {
+                let cls = 'assessment-option'
+                if (selected) {
+                  if (opt.id === q.word.id) cls += ' opt-correct'
+                  else if (opt.id === selected) cls += ' opt-wrong'
+                  else cls += ' opt-dim'
+                }
+                const label = q.type === 'char-to-english' || q.type === 'reading'
+                  ? opt.english.split(';')[0].split(',')[0]
+                  : opt.simplified
+                return (
+                  <button key={opt.id} className={cls} onClick={() => answer(opt.id)} disabled={!!selected}>
+                    {q.type === 'english-to-char' || q.type === 'listening'
+                      ? <span className="assessment-opt-char">{label}</span>
+                      : label}
+                  </button>
+                )
+              })
+            )}
           </div>
 
           {/* Feedback bar */}
-          {selected && (
-            <div className={`assessment-feedback ${selected === q.word.id ? 'fb-correct' : 'fb-wrong'}`}>
-              {selected === q.word.id
-                ? `✓ Correct! ${q.word.simplified} — ${q.word.english.split(';')[0]}`
-                : `✗ It was: ${q.word.simplified} — ${q.word.english.split(';')[0]}`}
-            </div>
-          )}
+          {selected && (() => {
+            const isCorrect = q.type === 'pinyin'
+              ? selected === q.word.pinyin
+              : selected === q.word.id
+            return (
+              <div className={`assessment-feedback ${isCorrect ? 'fb-correct' : 'fb-wrong'}`}>
+                {isCorrect
+                  ? `✓ ${q.word.simplified} — ${q.word.pinyin} — ${q.word.english.split(';')[0]}`
+                  : `✗ ${q.word.simplified} — ${q.word.pinyin} — ${q.word.english.split(';')[0]}`}
+              </div>
+            )
+          })()}
         </>
       )}
     </div>
