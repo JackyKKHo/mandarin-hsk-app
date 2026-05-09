@@ -132,4 +132,59 @@ export const SONGS: Song[] = [
       { simplified: '送', pinyin: 'sòng', english: 'to give (as a gift) / to send', hskLevel: 2, note: 'Different from 给 — 送 implies a gift. 送礼物 = to give a gift.' },
     ],
   },
+  {
+    id: 'sweet',
+    youtubeId: '5eF8oOWtsk4',
+    title: '甜蜜蜜',
+    titlePinyin: 'Tián Mì Mì',
+    artist: '邓丽君 (Teresa Teng)',
+    year: 1979,
+    difficulty: 'Beginner',
+    hskRange: 'HSK 1–3',
+    description: 'A warm, joyful love song comparing the feeling of being in love to sweetness and honey. One of Teresa Teng\'s most recognisable songs, originally based on an Indonesian folk melody. The repeating sweetness imagery makes it easy and enjoyable for learners to follow.',
+    culturalNote: '甜蜜蜜 was made internationally famous by the 1996 Hong Kong film of the same name starring Maggie Cheung and Leon Lai. The film follows two mainland Chinese immigrants in Hong Kong who bond over their shared love of Teresa Teng\'s music — making this song a symbol of nostalgia, longing, and connection across generations.',
+    learningTips: [
+      '甜蜜蜜 uses reduplication (蜜蜜) to intensify 甜 (sweet). This pattern — repeating a syllable — is very common for adjectives and adverbs.',
+      '你笑得甜蜜蜜 — 得 here links a verb to its complement. V + 得 + description is one of the most important grammar patterns to master.',
+      '好像 (hǎoxiàng) means "it seems like / as if" — extremely common in spoken Chinese.',
+      '在哪里 (zài nǎlǐ) = "where is / where are" — the basic location question pattern.',
+      'The phrase 梦里 (mèng lǐ) = "in a dream" — 里 attached to a noun means "inside/within it".',
+    ],
+    sections: [
+      {
+        label: 'Verse 1',
+        lines: [
+          { chinese: '甜蜜蜜，你笑得甜蜜蜜', pinyin: 'Tián mì mì, nǐ xiào de tián mì mì', english: 'So sweet, your smile is so sweet', note: 'V + 得 + adj describes how an action is done — 笑得甜蜜蜜 = "smile sweetly"' },
+          { chinese: '好像花儿开在春风里', pinyin: 'Hǎoxiàng huā er kāi zài chūnfēng lǐ', english: 'Like flowers blooming in the spring breeze', note: '好像 = as if / like; 儿 (er) is a Beijing dialect suffix adding warmth' },
+          { chinese: '开在春风里', pinyin: 'Kāi zài chūnfēng lǐ', english: 'Blooming in the spring breeze' },
+        ],
+      },
+      {
+        label: 'Verse 2',
+        lines: [
+          { chinese: '在哪里，在哪里见过你', pinyin: 'Zài nǎlǐ, zài nǎlǐ jiànguò nǐ', english: 'Where, where have I seen you before', note: '在哪里 = where; 见过 = have seen (过 marks a past experience)' },
+          { chinese: '你的笑容这样熟悉', pinyin: 'Nǐ de xiàoróng zhèyàng shúxi', english: 'Your smile is so familiar', note: '这样 = this way / so (like this); 熟悉 = familiar' },
+          { chinese: '我一时想不起', pinyin: 'Wǒ yīshí xiǎng bu qǐ', english: 'I can\'t quite remember', note: '想不起 = can\'t recall — potential complement V + 不 + result' },
+        ],
+      },
+      {
+        label: 'Chorus',
+        lines: [
+          { chinese: '啊，在梦里', pinyin: 'Ā, zài mèng lǐ', english: 'Ah, in a dream', note: '梦里 = inside a dream; 里 turns a noun into a location' },
+          { chinese: '梦里，梦里见过你', pinyin: 'Mèng lǐ, mèng lǐ jiànguò nǐ', english: 'In a dream, in a dream I\'ve seen you' },
+          { chinese: '甜蜜笑得多甜蜜', pinyin: 'Tián mì xiào de duō tián mì', english: 'Sweet, smiling so sweetly' },
+          { chinese: '是你，是你，梦见的就是你', pinyin: 'Shì nǐ, shì nǐ, mèng jiàn de jiù shì nǐ', english: 'It\'s you, it\'s you, the one I dreamed of is you', note: '就是 = it is precisely / none other than' },
+        ],
+      },
+    ],
+    vocab: [
+      { simplified: '甜蜜', pinyin: 'tiánmì', english: 'sweet / honeyed', hskLevel: 4, note: 'Used for both literal sweetness and figurative happiness. 甜蜜的生活 = a sweet life.' },
+      { simplified: '笑容', pinyin: 'xiàoróng', english: 'smile / smiling expression', hskLevel: 3, note: '笑 (smile) + 容 (appearance). More specific than just 笑 — refers to the look of a smile.' },
+      { simplified: '好像', pinyin: 'hǎoxiàng', english: 'seems like / as if', hskLevel: 2, note: 'One of the most useful hedging words in Mandarin. 好像要下雨了 = it looks like it\'s going to rain.' },
+      { simplified: '春风', pinyin: 'chūnfēng', english: 'spring breeze', hskLevel: 3, note: '春 (spring) + 风 (wind). Often used metaphorically for warmth and kindness.' },
+      { simplified: '熟悉', pinyin: 'shúxi', english: 'familiar / to be familiar with', hskLevel: 3, note: 'Can be verb or adjective. 我对北京很熟悉 = I\'m very familiar with Beijing.' },
+      { simplified: '梦', pinyin: 'mèng', english: 'dream', hskLevel: 3, note: '做梦 = to have a dream; 梦想 = dream/aspiration; 白日梦 = daydream.' },
+      { simplified: '就是', pinyin: 'jiùshì', english: 'exactly / none other than', hskLevel: 2, note: 'Used for emphasis: 我要的就是这个 = this is exactly what I want.' },
+    ],
+  },
 ]

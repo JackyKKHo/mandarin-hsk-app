@@ -28,6 +28,7 @@ import RadicalsPage from './pages/RadicalsPage'
 import MeasureWordsPage from './pages/MeasureWordsPage'
 import GuidesPage from './pages/GuidesPage'
 import AssessmentPage from './pages/AssessmentPage'
+import BottomNav from './components/BottomNav'
 import SongsPage from './pages/SongsPage'
 import SongDetailPage from './pages/SongDetailPage'
 
@@ -36,6 +37,7 @@ export default function App() {
     <AuthProvider>
     <BrowserRouter>
       <StopAudioOnNavigate />
+      <BottomNav />
       <Routes>
         <Route path="/" element={<Navigate to={shouldShowWelcome() ? '/welcome' : '/hsk/1'} replace />} />
         <Route path="/welcome" element={<WelcomePage />} />

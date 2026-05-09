@@ -3777,3 +3777,130 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
   height: 100%;
   border: none;
 }
+
+/* ── Nav emoji+label ── */
+.nav-emoji { display: block; font-size: 1rem; line-height: 1; }
+.nav-label { display: block; font-size: 0.6rem; line-height: 1; margin-top: 1px; opacity: 0.75; }
+.app-nav-link { display: flex; flex-direction: column; align-items: center; }
+
+/* ── Mobile bottom nav ── */
+.bottom-nav {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 56px;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  z-index: 200;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+@media (max-width: 640px) {
+  .bottom-nav { display: flex; }
+  .app-nav { display: none; }
+  .browser-page, .practice-page, .assessment-page, .song-article, .stats-page { padding-bottom: 70px; }
+}
+.bottom-nav-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  color: var(--muted);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: color 0.15s;
+  position: relative;
+}
+.bottom-nav-tab.active { color: var(--red); }
+.bottom-nav-emoji { font-size: 1.3rem; line-height: 1; }
+.bottom-nav-label { font-size: 0.6rem; font-weight: 600; }
+.bottom-nav-streak {
+  position: absolute;
+  top: 2px; right: 6px;
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: var(--red);
+}
+
+/* ── Search filters ── */
+.search-filters {
+  max-width: 720px;
+  margin: 0 auto 1rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.search-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.search-filter-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  min-width: 36px;
+}
+.search-filter-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.filter-chip {
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  color: var(--muted);
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-chip.active { border-color: var(--red); color: var(--red); background: #fff0f0; font-weight: 700; }
+.dark .filter-chip.active { background: #2a0a0a; }
+.search-clear-filters {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.78rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  align-self: flex-start;
+}
+
+/* ── HSK Readiness bars ── */
+.readiness-legend {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+.rl-item { display: flex; align-items: center; gap: 0.3rem; }
+.rl-dot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.rl-mastered { background: #27ae60; }
+.rl-familiar { background: #f39c12; }
+.rl-learning { background: #3498db; }
+.readiness-pct { font-size: 0.75rem; font-weight: 700; color: var(--red); margin-left: auto; }
+.stats-bar-mastered {
+  position: absolute;
+  top: 0; left: 0; height: 100%;
+  background: #27ae60;
+  border-radius: 4px 0 0 4px;
+  transition: width 0.4s;
+}
+.stats-bar-familiar {
+  position: absolute;
+  top: 0; height: 100%;
+  background: #f39c12;
+  transition: width 0.4s, margin-left 0.4s;
+}
+.stats-bar-learning {
+  position: absolute;
+  top: 0; height: 100%;
+  background: #3498db;
+  transition: width 0.4s, margin-left 0.4s;
+}
+.stats-bar-track { position: relative; }

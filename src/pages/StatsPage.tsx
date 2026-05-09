@@ -37,7 +37,19 @@ export default function StatsPage() {
         const c = getCard(w.id)
         return c && c.reps > 0
       }).length
-      return { level: l, total: LEVEL_COUNTS[l], learned: learnedCount, due: dueCount, reviewed: reviewedCount }
+      const masteredCount = words.filter(w => {
+        const c = getCard(w.id)
+        return c && c.interval >= 21
+      }).length
+      const familiarCount = words.filter(w => {
+        const c = getCard(w.id)
+        return c && c.interval >= 7 && c.interval < 21
+      }).length
+      const learningCount = words.filter(w => {
+        const c = getCard(w.id)
+        return c && c.reps > 0 && c.interval < 7
+      }).length
+      return { level: l, total: LEVEL_COUNTS[l], learned: learnedCount, due: dueCount, reviewed: reviewedCount, mastered: masteredCount, familiar: familiarCount, learning: learningCount }
     }),
     [vocab, learned, isDue, getCard]
   )
@@ -140,33 +152,44 @@ export default function StatsPage() {
           </div>
         )}
 
-        {/* Per-level breakdown */}
-        <div className="stats-levels">
-          {levelStats.map(s => {
-            const learnedPct = s.total > 0 ? Math.round((s.learned / s.total) * 100) : 0
-            const reviewedPct = s.total > 0 ? Math.round((s.reviewed / s.total) * 100) : 0
-            return (
-              <div key={s.level} className="stats-level-row">
-                <div className="stats-level-head">
-                  <Link to={`/hsk/${s.level}`} className="stats-level-name">HSK {s.level}</Link>
-                  <span className="stats-level-counts">
-                    <span className="slc-learned">{s.learned} learned</span>
-                    {s.due > 0 && <span className="slc-due">{s.due} due</span>}
-                    <span className="slc-total">{s.total} total</span>
-                  </span>
-                  {s.due > 0 && (
-                    <Link to={`/practice/${s.level}`} className="stats-practice-btn">Practice →</Link>
-                  )}
-                </div>
-                <div className="stats-level-bars">
+        {/* HSK Readiness */}
+        <div className="stats-section">
+          <h3 className="stats-section-title">HSK Readiness</h3>
+          <p className="stats-section-desc">How well you know each level — based on spaced repetition history.</p>
+          <div className="readiness-legend">
+            <span className="rl-item"><span className="rl-dot rl-mastered" />Mastered (21+ day interval)</span>
+            <span className="rl-item"><span className="rl-dot rl-familiar" />Familiar (7–20 days)</span>
+            <span className="rl-item"><span className="rl-dot rl-learning" />Learning</span>
+          </div>
+          <div className="stats-levels">
+            {levelStats.map(s => {
+              const masteredPct = s.total > 0 ? (s.mastered / s.total) * 100 : 0
+              const familiarPct = s.total > 0 ? (s.familiar / s.total) * 100 : 0
+              const learningPct = s.total > 0 ? (s.learning / s.total) * 100 : 0
+              const readinessPct = Math.round(masteredPct)
+              return (
+                <div key={s.level} className="stats-level-row">
+                  <div className="stats-level-head">
+                    <Link to={`/hsk/${s.level}`} className="stats-level-name">HSK {s.level}</Link>
+                    <span className="readiness-pct">{readinessPct}% ready</span>
+                    <span className="stats-level-counts">
+                      <span className="slc-learned">{s.mastered} mastered</span>
+                      {s.due > 0 && <span className="slc-due">{s.due} due</span>}
+                      <span className="slc-total">{s.total} total</span>
+                    </span>
+                    {s.due > 0 && (
+                      <Link to={`/practice/${s.level}`} className="stats-practice-btn">Practice →</Link>
+                    )}
+                  </div>
                   <div className="stats-bar-track stats-bar-sm">
-                    <div className="stats-bar-fill" style={{ width: `${learnedPct}%` }} title={`${learnedPct}% learned`} />
-                    <div className="stats-bar-reviewed" style={{ width: `${reviewedPct}%` }} title={`${reviewedPct}% reviewed via SRS`} />
+                    <div className="stats-bar-mastered" style={{ width: `${masteredPct}%` }} title={`${s.mastered} mastered`} />
+                    <div className="stats-bar-familiar" style={{ width: `${familiarPct}%`, marginLeft: `${masteredPct}%` }} title={`${s.familiar} familiar`} />
+                    <div className="stats-bar-learning" style={{ width: `${learningPct}%`, marginLeft: `${masteredPct + familiarPct}%` }} title={`${s.learning} learning`} />
                   </div>
                 </div>
-              </div>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
       </div>
     </div>

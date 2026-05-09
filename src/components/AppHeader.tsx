@@ -6,6 +6,16 @@ import { useAuth } from '../context/AuthContext'
 import { useStreak } from '../hooks/useStreak'
 import AuthModal from './AuthModal'
 
+const NAV = [
+  { to: '/hsk/1',      emoji: '📚', label: 'Vocab',      section: 'vocab' },
+  { to: '/course',     emoji: '🎓', label: 'Course',     section: 'course' },
+  { to: '/dialogues',  emoji: '💬', label: 'Dialogues',  section: 'dialogues' },
+  { to: '/grammar/1',  emoji: '📖', label: 'Grammar',    section: 'grammar' },
+  { to: '/guides',     emoji: '🧭', label: 'Guides',     section: 'guides' },
+  { to: '/search',     emoji: '🔍', label: 'Search',     section: 'search' },
+  { to: '/assessment', emoji: '🎯', label: 'Assess',     section: 'assessment' },
+]
+
 export default function AppHeader() {
   const { pathname } = useLocation()
   const { favourites } = useFavourites()
@@ -23,7 +33,7 @@ export default function AppHeader() {
     : pathname.startsWith('/keyboard') ? 'keyboard'
     : pathname.startsWith('/course') ? 'course'
     : pathname.startsWith('/dialogue') ? 'dialogues'
-    : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') || pathname.startsWith('/songs') ? 'guides'
+    : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') || pathname.startsWith('/songs') || pathname.startsWith('/tone') || pathname.startsWith('/scramble') ? 'guides'
     : pathname.startsWith('/assessment') ? 'assessment'
     : 'vocab'
 
@@ -36,46 +46,33 @@ export default function AppHeader() {
         </div>
       )}
       <nav className="app-nav">
-        <Link to="/hsk/1" className={`app-nav-link${section === 'vocab' ? ' active' : ''}`}>
-          Vocabulary
-        </Link>
-        <Link to="/course" className={`app-nav-link${section === 'course' ? ' active' : ''}`}>
-          Course
-        </Link>
-        <Link to="/dialogues" className={`app-nav-link${section === 'dialogues' ? ' active' : ''}`}>
-          Dialogues
-        </Link>
-        <Link to="/grammar/1" className={`app-nav-link${section === 'grammar' ? ' active' : ''}`}>
-          Grammar
-        </Link>
-        <Link to="/guides" className={`app-nav-link${section === 'guides' ? ' active' : ''}`}>
-          Guides
-        </Link>
-        <Link to="/assessment" className={`app-nav-link${section === 'assessment' ? ' active' : ''}`} title="Level Assessment">
-          🎯
-        </Link>
-        <Link to="/pronunciation" className={`app-nav-link${section === 'pronunciation' ? ' active' : ''}`}>
-          🗣️
-        </Link>
-        <Link to="/keyboard" className={`app-nav-link${section === 'keyboard' ? ' active' : ''}`} title="Pinyin keyboard guide">
-          ⌨️
-        </Link>
-        <Link to="/search" className={`app-nav-link${section === 'search' ? ' active' : ''}`}>
-          🔍
-        </Link>
+        {NAV.map(({ to, emoji, label, section: s }) => (
+          <Link key={to} to={to} className={`app-nav-link${section === s ? ' active' : ''}`}>
+            <span className="nav-emoji">{emoji}</span>
+            <span className="nav-label">{label}</span>
+          </Link>
+        ))}
+
         <Link to="/stats" className={`app-nav-link${section === 'stats' ? ' active' : ''}`} title="Stats">
-          {streak > 0 ? (
-            <span className="streak-display">
-              🔥{streak}{freezes > 0 && <span className="freeze-count">🛡️{freezes}</span>}
-            </span>
-          ) : '📊'}
+          <span className="nav-emoji">
+            {streak > 0 ? (
+              <span className="streak-display">
+                🔥{streak}{freezes > 0 && <span className="freeze-count">🛡️{freezes}</span>}
+              </span>
+            ) : '📊'}
+          </span>
+          <span className="nav-label">Stats</span>
         </Link>
+
         <Link to="/favourites" className={`app-nav-link${section === 'favourites' ? ' active' : ''}`}>
-          ★{favourites.size > 0 && <span className="fav-count">{favourites.size}</span>}
+          <span className="nav-emoji">★{favourites.size > 0 && <span className="fav-count">{favourites.size}</span>}</span>
+          <span className="nav-label">Saved</span>
         </Link>
+
         <button className="dark-toggle" onClick={toggle} title="Toggle dark mode">
           {dark ? '☀️' : '🌙'}
         </button>
+
         {user ? (
           <button className="app-nav-link app-nav-signout" onClick={signOut} title={user.email}>
             Sign out
