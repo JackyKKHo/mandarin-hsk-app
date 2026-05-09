@@ -1,8 +1,8 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
 import { DIALOGUES } from '../data/dialogues'
-import { playAudio } from '../audio'
+import { playAudio, stopAudio } from '../audio'
 
 type PlayState = 'idle' | 'playing' | 'done'
 
@@ -37,6 +37,8 @@ export default function DialoguePage() {
   const [playState, setPlayState] = useState<PlayState>('idle')
   const { playing, playLine } = useTTS()
   const cancelRef = useRef(false)
+
+  useEffect(() => () => { cancelRef.current = true; stopAudio() }, [])
 
   if (!dialogue) {
     return (

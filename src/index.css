@@ -3904,3 +3904,74 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
   transition: width 0.4s, margin-left 0.4s;
 }
 .stats-bar-track { position: relative; }
+
+/* ── Feedback widget ── */
+.feedback-fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  z-index: 300;
+  transition: transform 0.15s, background 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feedback-fab:hover { transform: scale(1.08); }
+@media (max-width: 640px) {
+  .feedback-fab { bottom: 4.5rem; right: 1rem; width: 42px; height: 42px; font-size: 1rem; }
+}
+
+.feedback-panel {
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1.5rem;
+  width: 320px;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  z-index: 299;
+  padding: 1.25rem;
+}
+@media (max-width: 640px) {
+  .feedback-panel { right: 0.75rem; left: 0.75rem; width: auto; bottom: 7rem; }
+}
+
+.feedback-panel-header h3 { font-size: 1rem; font-weight: 800; margin-bottom: 0.2rem; }
+.feedback-panel-sub { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.9rem; }
+
+.feedback-form { display: flex; flex-direction: column; gap: 0.5rem; }
+.feedback-input, .feedback-textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1.5px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.875rem;
+  font-family: inherit;
+  resize: none;
+  box-sizing: border-box;
+}
+.feedback-input:focus, .feedback-textarea:focus {
+  outline: none;
+  border-color: var(--red);
+}
+.feedback-error { font-size: 0.8rem; color: var(--red); }
+.feedback-submit { width: 100%; margin-top: 0.25rem; }
+.feedback-sent {
+  text-align: center;
+  padding: 1.5rem;
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1rem;
+}
