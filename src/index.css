@@ -3866,12 +3866,12 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
   top: calc(100% + 4px);
   left: 50%;
   transform: translateX(-50%);
-  background: var(--card);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
   min-width: 200px;
-  z-index: 400;
+  z-index: 9999;
   overflow: hidden;
   animation: submenu-in 0.12s ease;
 }
@@ -3943,15 +3943,15 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
   bottom: calc(100% + 6px);
   left: 50%;
   transform: translateX(-50%);
-  background: var(--card);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
   display: flex;
   flex-direction: column;
   min-width: 130px;
   overflow: hidden;
-  z-index: 300;
+  z-index: 9999;
   animation: submenu-in 0.15s ease;
 }
 @keyframes submenu-in {
