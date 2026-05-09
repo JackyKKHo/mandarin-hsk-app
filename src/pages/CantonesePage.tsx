@@ -318,6 +318,82 @@ export default function CantonesePage() {
           </p>
         </div>
 
+        {/* Cheat sheet */}
+        <section className="cm-section">
+          <h3 className="cm-section-title">Quick Reference Cheat Sheet</h3>
+          <p className="cm-note">The most useful patterns at a glance — bookmark this before anything else.</p>
+          <div className="cm-cheatsheet">
+
+            <div className="cm-cs-block">
+              <div className="cm-cs-title">Sound Rules</div>
+              <div className="cm-cs-rows">
+                {[
+                  { rule: 'G → J', cant: 'gaa1 家', mand: 'jiā', acc: '~90%' },
+                  { rule: '-T drop', cant: 'jat1 一', mand: 'yī', acc: '~95%' },
+                  { rule: '-K drop', cant: 'hok6 學', mand: 'xué', acc: '~95%' },
+                  { rule: '-P drop', cant: 'sap6 十', mand: 'shí', acc: '~95%' },
+                  { rule: 'ng → w/y', cant: 'ngo5 我', mand: 'wǒ', acc: '~85%' },
+                  { rule: '-M → -N', cant: 'sam1 心', mand: 'xīn', acc: '~95%' },
+                  { rule: 'F → HU', cant: 'faa1 花', mand: 'huā', acc: '~70%' },
+                ].map(r => (
+                  <div key={r.rule} className="cm-cs-row">
+                    <span className="cm-cs-rule">{r.rule}</span>
+                    <span className="cm-cs-cant">{r.cant}</span>
+                    <span className="cm-cs-arrow">→</span>
+                    <span className="cm-cs-mand">{r.mand}</span>
+                    <span className="cm-cs-acc">{r.acc}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="cm-cs-block">
+              <div className="cm-cs-title">Must-Know Vocab Swaps</div>
+              <div className="cm-cs-rows">
+                {[
+                  { cant: '食 sik6', mand: '吃 chī', eng: 'eat' },
+                  { cant: '飲 jam2', mand: '喝 hē', eng: 'drink' },
+                  { cant: '睇 tai2', mand: '看 kàn', eng: 'look/watch' },
+                  { cant: '唔 m4', mand: '不 bù', eng: 'not' },
+                  { cant: '冇 mou5', mand: '没有 méiyǒu', eng: "don't have" },
+                  { cant: '佢 keoi5', mand: '他/她 tā', eng: 'he/she' },
+                  { cant: '係 hai6', mand: '是 shì', eng: 'is/am/are' },
+                  { cant: '而家 ji4gaa1', mand: '现在 xiànzài', eng: 'now' },
+                ].map(r => (
+                  <div key={r.cant} className="cm-cs-row">
+                    <span className="cm-cs-cant">{r.cant}</span>
+                    <span className="cm-cs-arrow">→</span>
+                    <span className="cm-cs-mand">{r.mand}</span>
+                    <span className="cm-cs-acc cm-cs-eng">{r.eng}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="cm-cs-block">
+              <div className="cm-cs-title">Tone Mapping (rough guide)</div>
+              <div className="cm-cs-rows">
+                {[
+                  { cant: 'Tone 1 陰平 (high)', mand: '1st tone ¯', acc: 'High' },
+                  { cant: 'Tone 2 陰上 (rising)', mand: '3rd tone ˇ', acc: 'Mid' },
+                  { cant: 'Tone 3 陰去 (mid)', mand: '4th tone \\', acc: 'Mid' },
+                  { cant: 'Tone 4 陽平 (low fall)', mand: '2nd tone /', acc: 'High' },
+                  { cant: 'Tone 5 陽上 (low rise)', mand: '3rd or 4th', acc: 'Low' },
+                  { cant: 'Tone 6 陽去 (low level)', mand: '4th tone \\', acc: 'Mid' },
+                ].map(r => (
+                  <div key={r.cant} className="cm-cs-row">
+                    <span className="cm-cs-cant" style={{ flex: 2 }}>{r.cant}</span>
+                    <span className="cm-cs-arrow">→</span>
+                    <span className="cm-cs-mand">{r.mand}</span>
+                    <span className={`cm-cs-acc cm-cs-rel-${r.acc.toLowerCase()}`}>{r.acc}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         {/* Your advantage */}
         <section className="cm-section">
           <h3 className="cm-section-title">Your Unfair Advantage</h3>

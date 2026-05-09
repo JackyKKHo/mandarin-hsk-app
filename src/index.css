@@ -4450,6 +4450,26 @@ a.char-freq-hanzi:hover { opacity: 0.7; }
 .cm-callout { background: var(--red-light); border-left: 3px solid var(--red); border-radius: 0 8px 8px 0; padding: 0.75rem 1rem; font-size: 0.85rem; line-height: 1.6; margin-top: 1rem; }
 .cm-footer { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; font-size: 0.82rem; color: var(--muted); line-height: 1.6; text-align: center; }
 
+/* Cheat sheet */
+.cm-cheatsheet { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.cm-cs-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.cm-cs-title { background: var(--red); color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.5rem 0.9rem; }
+.cm-cs-rows { display: flex; flex-direction: column; }
+.cm-cs-row { display: flex; align-items: center; gap: 0.4rem; padding: 0.45rem 0.9rem; border-bottom: 1px solid var(--border); font-size: 0.82rem; }
+.cm-cs-row:last-child { border-bottom: none; }
+.cm-cs-rule { width: 72px; font-weight: 700; color: var(--red); flex-shrink: 0; }
+.cm-cs-cant { flex: 1.5; color: var(--muted); }
+.cm-cs-arrow { color: var(--muted); flex-shrink: 0; }
+.cm-cs-mand { flex: 1.5; font-weight: 600; color: var(--text); }
+.cm-cs-acc { font-size: 0.72rem; font-weight: 600; padding: 1px 6px; border-radius: 4px; background: var(--bg); color: var(--muted); flex-shrink: 0; }
+.cm-cs-eng { color: var(--muted); font-weight: 400; }
+.cm-cs-rel-high { background: #d4edda; color: #155724; }
+.cm-cs-rel-mid  { background: #fff3cd; color: #856404; }
+.cm-cs-rel-low  { background: #f8d7da; color: #721c24; }
+html.dark .cm-cs-rel-high { background: #1a3a24; color: #7ecf8e; }
+html.dark .cm-cs-rel-mid  { background: #3a2e0a; color: #d4aa30; }
+html.dark .cm-cs-rel-low  { background: #3a0f12; color: #f08080; }
+
 /* Advantage grid */
 .cm-advantage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .cm-adv { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; }
