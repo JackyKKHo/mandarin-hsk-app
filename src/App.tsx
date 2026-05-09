@@ -32,6 +32,8 @@ import BottomNav from './components/BottomNav'
 import FeedbackWidget from './components/FeedbackWidget'
 import SongsPage from './pages/SongsPage'
 import SongDetailPage from './pages/SongDetailPage'
+import FrequencyPage from './pages/FrequencyPage'
+import CantonesePage from './pages/CantonesePage'
 
 export default function App() {
   return (
@@ -71,6 +73,8 @@ export default function App() {
         <Route path="/assessment" element={<AssessmentPage />} />
         <Route path="/songs" element={<SongsPage />} />
         <Route path="/songs/:songId" element={<SongDetailPage />} />
+        <Route path="/frequency" element={<FrequencyPage />} />
+        <Route path="/cantonese" element={<CantonesePage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>

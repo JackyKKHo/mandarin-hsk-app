@@ -17,6 +17,11 @@ const PRACTICE = [
 
 const CULTURE = [
   { to: '/songs', emoji: '🎵', title: 'Learn Through Songs', desc: 'Famous Chinese songs broken down line by line — lyrics, pinyin, vocab, and cultural notes.' },
+  { to: '/cantonese', emoji: '粵', title: 'Cantonese → Mandarin', desc: 'Tone mapping, sound shifts, and vocabulary differences between Cantonese and Mandarin.' },
+]
+
+const INSIGHTS = [
+  { to: '/frequency', emoji: '📊', title: 'Word Frequency', desc: 'How much real Chinese do you unlock at each vocabulary milestone? Coverage curve, word cloud, and POS breakdown.' },
 ]
 
 export default function GuidesPage() {
@@ -48,6 +53,21 @@ export default function GuidesPage() {
         <h3 className="guides-section-title">Culture & Immersion</h3>
         <div className="guides-grid">
           {CULTURE.map(g => (
+            <Link key={g.to} to={g.to} className="guide-card">
+              <span className="guide-emoji">{g.emoji}</span>
+              <div>
+                <div className="guide-title">{g.title}</div>
+                <div className="guide-desc">{g.desc}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="guides-section">
+        <h3 className="guides-section-title">Vocabulary Insights</h3>
+        <div className="guides-grid">
+          {INSIGHTS.map(g => (
             <Link key={g.to} to={g.to} className="guide-card">
               <span className="guide-emoji">{g.emoji}</span>
               <div>
