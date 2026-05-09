@@ -19,6 +19,13 @@ function shuffle<T>(arr: T[]): T[] {
 
 type Stage = 'idle' | 'front' | 'back' | 'complete'
 
+function scoreLabel(pct: number) {
+  if (pct >= 90) return { text: 'Outstanding! 🌟', cls: 'score-good' }
+  if (pct >= 70) return { text: 'Great work! 👍', cls: 'score-good' }
+  if (pct >= 50) return { text: 'Keep going! 💪', cls: 'score-ok' }
+  return { text: 'Keep practising!', cls: 'score-low' }
+}
+
 export default function ReviewPage() {
   const { isDue, review, getCard } = useSRS()
   const { recordStudy } = useStreak()
@@ -33,6 +40,9 @@ export default function ReviewPage() {
   const [queue, setQueue] = useState<VocabItem[]>([])
   const [index, setIndex] = useState(0)
   const [results, setResults] = useState<Record<SRSQuality, number>>({ again: 0, good: 0, easy: 0 })
+  const [sessionStreak, setSessionStreak] = useState(0)
+  const [bestStreak, setBestStreak] = useState(0)
+  const [streakFlash, setStreakFlash] = useState(false)
   const initialLengthRef = useRef(0)
 
   const stageRef = useRef(stage)
@@ -43,6 +53,20 @@ export default function ReviewPage() {
     const word = queue[index]
     review(word.id, quality)
     setResults(r => ({ ...r, [quality]: r[quality] + 1 }))
+
+    if (quality === 'again') {
+      setSessionStreak(0)
+    } else {
+      setSessionStreak(prev => {
+        const next = prev + 1
+        setBestStreak(b => Math.max(b, next))
+        if (next > 0 && next % 5 === 0) {
+          setStreakFlash(true)
+          setTimeout(() => setStreakFlash(false), 800)
+        }
+        return next
+      })
+    }
 
     const newQueue = quality === 'again' ? [...queue, word] : queue
     const nextIndex = index + 1
@@ -82,6 +106,8 @@ export default function ReviewPage() {
     setQueue(q)
     setIndex(0)
     setResults({ again: 0, good: 0, easy: 0 })
+    setSessionStreak(0)
+    setBestStreak(0)
     setStage(q.length > 0 ? 'front' : 'complete')
   }
 
@@ -120,17 +146,31 @@ export default function ReviewPage() {
   if (stage === 'complete') {
     const total = results.again + results.good + results.easy
     const pct = total > 0 ? Math.round(((results.good + results.easy) / total) * 100) : 0
+    const { text: scoreText, cls: scoreCls } = scoreLabel(pct)
     return (
       <div className="practice-page">
         <div className="practice-complete-card">
-          <div className={`complete-score ${pct >= 80 ? 'score-good' : pct >= 50 ? 'score-ok' : 'score-low'}`}>
-            {pct}%
-          </div>
+          <div className={`complete-score ${scoreCls}`}>{pct}%</div>
           <h2>Review complete!</h2>
-          <div className="srs-result-row">
-            <span className="got-count">✓ {results.good + results.easy} remembered</span>
-            <span className="missed-count">↺ {results.again} again</span>
+          <p className="complete-score-label">{scoreText}</p>
+
+          <div className="review-complete-stats">
+            <div className="rcs-item rcs-good">
+              <span className="rcs-num">{results.good + results.easy}</span>
+              <span className="rcs-label">remembered</span>
+            </div>
+            <div className="rcs-item rcs-again">
+              <span className="rcs-num">{results.again}</span>
+              <span className="rcs-label">again</span>
+            </div>
+            {bestStreak >= 3 && (
+              <div className="rcs-item rcs-streak">
+                <span className="rcs-num">🔥{bestStreak}</span>
+                <span className="rcs-label">best streak</span>
+              </div>
+            )}
           </div>
+
           <div className="complete-actions">
             <button className="btn-primary" onClick={start}>Review again</button>
             <Link to="/stats" className="btn-secondary">Back to stats</Link>
@@ -150,7 +190,10 @@ export default function ReviewPage() {
       <div className="practice-topbar">
         <Link to="/stats" className="back-link" style={{ marginBottom: 0 }}>← Stats</Link>
         <span className="practice-counter">{index + 1} / {queue.length}</span>
-        {card && <span className="practice-counter" style={{ opacity: 0.5 }}>interval {card.interval}d</span>}
+        {sessionStreak >= 3
+          ? <span className={`session-streak-badge${streakFlash ? ' flash' : ''}`}>🔥 {sessionStreak} in a row</span>
+          : card && <span className="practice-counter" style={{ opacity: 0.5 }}>interval {card.interval}d</span>
+        }
       </div>
 
       <div className="progress-bar-wrap">

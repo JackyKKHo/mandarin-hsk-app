@@ -11,6 +11,8 @@ import StudyHeatmap from '../components/StudyHeatmap'
 import { useSEO } from '../hooks/useSEO'
 import { useDailyGoal } from '../hooks/useDailyGoal'
 import { MAX_FREEZES } from '../hooks/useStreak'
+import { useMilestones } from '../hooks/useMilestones'
+import MilestoneToast from '../components/MilestoneToast'
 import type { VocabItem } from '../types'
 
 function exportWords(type: 'learned' | 'favourites', vocab: VocabItem[], learned: Set<string>, favourites: Set<string>) {
@@ -84,6 +86,13 @@ export default function StatsPage() {
   const totalDue = levelStats.reduce((s, l) => s + l.due, 0)
   const totalReviewed = levelStats.reduce((s, l) => s + l.reviewed, 0)
   const studiedToday = lastDate === today()
+
+  const totalMastered = levelStats.reduce((s, l) => s + l.mastered, 0)
+  const levelPcts = useMemo(
+    () => levelStats.map(s => s.total > 0 ? Math.round((s.mastered / s.total) * 100) : 0),
+    [levelStats]
+  )
+  const { pending: pendingMilestones, claim: claimMilestone } = useMilestones(totalMastered, streak, levelPcts)
 
   const strugglingWords = useMemo(() =>
     vocab.filter(w => {
@@ -272,7 +281,42 @@ export default function StatsPage() {
             })}
           </div>
         </div>
+
+        {/* HSK Passport */}
+        <div className="stats-section">
+          <h3 className="stats-section-title">HSK Passport</h3>
+          <p className="stats-section-desc">Earn a stamp by mastering 70% of each level.</p>
+          <div className="passport-grid">
+            {levelStats.map((s, i) => {
+              const pct = levelPcts[i]
+              const stamped = pct >= 70
+              const partial = pct > 0 && pct < 70
+              return (
+                <Link key={s.level} to={`/hsk/${s.level}`} className={`passport-stamp${stamped ? ' stamped' : partial ? ' partial' : ''}`}>
+                  <div className="passport-stamp-ring">
+                    <div className="passport-stamp-inner">
+                      <span className="passport-hsk">HSK</span>
+                      <span className="passport-num">{s.level}</span>
+                    </div>
+                    {stamped && <span className="passport-tick">✓</span>}
+                  </div>
+                  <span className="passport-pct">{pct}%</span>
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+
       </div>
+
+      {/* Milestone toasts */}
+      {pendingMilestones[0] && (
+        <MilestoneToast
+          key={pendingMilestones[0].id}
+          milestone={pendingMilestones[0]}
+          onDismiss={() => claimMilestone(pendingMilestones[0].id)}
+        />
+      )}
     </div>
   )
 }

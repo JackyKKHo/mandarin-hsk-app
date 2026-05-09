@@ -4126,3 +4126,176 @@ html.dark .scramble-slot.slot-correct { background: #0a2e1a; color: #58d68d; }
 
 /* ── Export row ── */
 .stats-export-row { }
+
+/* ── Session streak badge ── */
+.session-streak-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #e67e22;
+  background: #fff5e6;
+  border: 1.5px solid #f0c060;
+  border-radius: 99px;
+  padding: 0.2rem 0.65rem;
+  transition: transform 0.15s;
+}
+html.dark .session-streak-badge { background: #2a1e00; border-color: #c8860a; color: #f5c842; }
+.session-streak-badge.flash { animation: streak-flash 0.4s ease; }
+@keyframes streak-flash {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+/* ── Review complete stats ── */
+.complete-score-label { font-size: 0.95rem; color: var(--muted); margin-top: -0.5rem; }
+.review-complete-stats {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+.rcs-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  min-width: 60px;
+}
+.rcs-num {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.rcs-label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.rcs-good .rcs-num { color: #27ae60; }
+.rcs-again .rcs-num { color: var(--red); }
+.rcs-streak .rcs-num { color: #e67e22; }
+
+/* ── HSK Passport ── */
+.passport-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 0.75rem;
+  padding: 0.5rem 0;
+}
+.passport-stamp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.15s;
+}
+.passport-stamp:hover { transform: scale(1.07); }
+.passport-stamp-ring {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 2.5px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  position: relative;
+  transition: all 0.2s;
+}
+.passport-stamp.partial .passport-stamp-ring {
+  border-style: solid;
+  border-color: #f0c060;
+}
+.passport-stamp.stamped .passport-stamp-ring {
+  border: 2.5px solid var(--red);
+  background: #fff0ee;
+  box-shadow: 0 0 0 2px rgba(192,57,43,0.25);
+  transform: rotate(-4deg);
+}
+html.dark .passport-stamp.stamped .passport-stamp-ring { background: #2d0a0a; }
+.passport-stamp-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  line-height: 1;
+}
+.passport-hsk {
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.passport-num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.passport-stamp.stamped .passport-hsk,
+.passport-stamp.stamped .passport-num { color: var(--red); }
+.passport-tick {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background: var(--gold);
+  border-radius: 50%;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  border: 2px solid var(--surface);
+}
+.passport-pct {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.passport-stamp.stamped .passport-pct { color: var(--red); font-weight: 700; }
+
+/* ── Milestone toast ── */
+.milestone-toast {
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1.25rem;
+  z-index: 1000;
+  background: var(--surface);
+  border: 2px solid var(--gold);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 300px;
+  cursor: pointer;
+  animation: toast-in 0.35s cubic-bezier(0.34,1.56,0.64,1);
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(20px) scale(0.9); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.milestone-toast-icon { font-size: 2rem; flex-shrink: 0; line-height: 1; }
+.milestone-toast-body { flex: 1; min-width: 0; }
+.milestone-toast-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: 0.1rem;
+}
+.milestone-toast-title { font-size: 0.95rem; font-weight: 700; color: var(--text); }
+.milestone-toast-desc { font-size: 0.78rem; color: var(--muted); }
+.milestone-toast-close {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
