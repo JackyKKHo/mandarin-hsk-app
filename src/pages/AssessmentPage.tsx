@@ -85,18 +85,28 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 function computeRecommended(answered: Answered[]): number {
+  if (answered.length === 0) return 1
+
   const byLevel: Record<number, { c: number; w: number }> = {}
   for (const a of answered) {
     if (!byLevel[a.level]) byLevel[a.level] = { c: 0, w: 0 }
     if (a.correct) byLevel[a.level].c++
     else byLevel[a.level].w++
   }
-  let best = 1
+
+  // Positive signal: highest level where you got strictly more right than wrong
+  let positiveRec = 1
   for (let l = 1; l <= 9; l++) {
     const s = byLevel[l]
-    if (s && s.c >= s.w) best = l
+    if (s && s.c > s.w) positiveRec = l
   }
-  return best
+
+  // Hard cap: any miss at level L means you can't be placed above L+1.
+  // e.g. miss HSK 1 → cap at HSK 2, miss HSK 3 → cap at HSK 4
+  const wrongLevels = answered.filter(a => !a.correct).map(a => a.level)
+  const hardCap = wrongLevels.length > 0 ? Math.min(...wrongLevels) + 1 : 9
+
+  return Math.min(positiveRec, hardCap)
 }
 
 async function fetchAudio(word: VocabItem): Promise<string | null> {
@@ -228,9 +238,8 @@ export default function AssessmentPage() {
     if (next.length >= TOTAL) {
       setTimeout(() => finish(next), 900)
     } else {
-      const step = correct && currentLevel <= 3 ? 2 : 1
       const nextLevel = correct
-        ? Math.min(9, currentLevel + step)
+        ? Math.min(9, currentLevel + 1)
         : Math.max(1, currentLevel - 1)
       setTimeout(() => loadQuestion(nextLevel, next), 900)
     }
