@@ -44,6 +44,7 @@ export default function QuizPage() {
   const [options, setOptions] = useState<VocabItem[]>([])
   const [selected, setSelected] = useState<string | null>(null)
   const [score, setScore] = useState({ correct: 0, wrong: 0 })
+  const [wrongWords, setWrongWords] = useState<VocabItem[]>([])
 
   const stageRef = useRef(stage)
   const optionsRef = useRef(options)
@@ -79,6 +80,7 @@ export default function QuizPage() {
     setQueue(q)
     setIndex(0)
     setScore({ correct: 0, wrong: 0 })
+    setWrongWords([])
     setSelected(null)
     setOptions(buildOptions(q[0], levelWords))
     setStage('question')
@@ -92,6 +94,7 @@ export default function QuizPage() {
       ? { ...s, correct: s.correct + 1 }
       : { ...s, wrong: s.wrong + 1 }
     )
+    if (!correct) setWrongWords(w => [...w, queue[index]])
     review(queue[index].id, correct ? 'good' : 'again')
     setStage('feedback')
   }
@@ -182,6 +185,20 @@ export default function QuizPage() {
             <Link to={backPath === '/favourites' ? '/practice/favourites' : `/practice/${level}`} className="btn-secondary">Flashcards</Link>
             <Link to={backPath} className="btn-secondary">Browse words</Link>
           </div>
+          {wrongWords.length > 0 && (
+            <div className="missed-words">
+              <div className="missed-words-title">Missed words</div>
+              <div className="missed-words-grid">
+                {wrongWords.map(w => (
+                  <Link key={w.id} to={`/word/${w.id}`} className="missed-word-card">
+                    <span className="mw-chinese">{w.simplified}</span>
+                    <span className="mw-pinyin">{w.pinyin}</span>
+                    <span className="mw-english">{w.english.split(';')[0].split(',')[0]}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     )

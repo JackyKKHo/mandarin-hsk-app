@@ -1572,6 +1572,24 @@ html.dark .stroke-chars { background: var(--surface); }
 .complete-detail { font-size: 0.9rem; color: var(--muted); }
 .complete-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin-top: 0.5rem; }
 
+/* Missed words list */
+.missed-words { margin-top: 1.75rem; text-align: left; width: 100%; }
+.missed-words-title { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 0.6rem; }
+.missed-words-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.5rem; }
+.missed-word-card {
+  display: flex; flex-direction: column; gap: 0.15rem;
+  padding: 0.6rem 0.75rem;
+  background: #fff1f0; border: 1px solid #fca5a5; border-radius: 8px;
+  text-decoration: none; color: inherit;
+  transition: background 0.15s;
+}
+.missed-word-card:hover { background: #ffe4e1; }
+.mw-chinese { font-size: 1.25rem; font-weight: 600; color: var(--red); }
+.mw-pinyin  { font-size: 0.75rem; color: var(--muted); }
+.mw-english { font-size: 0.78rem; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+html.dark .missed-word-card { background: #2a1010; border-color: #7f1d1d; }
+html.dark .missed-word-card:hover { background: #3a1515; }
+
 /* ── Grammar list ── */
 .grammar-list {
   display: flex;

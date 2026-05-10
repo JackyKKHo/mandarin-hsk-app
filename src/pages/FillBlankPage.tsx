@@ -59,6 +59,7 @@ export default function FillBlankPage() {
   const [selected, setSelected] = useState<string | null>(null)
   const [showHint, setShowHint] = useState(false)
   const [score, setScore] = useState({ correct: 0, wrong: 0 })
+  const [wrongWords, setWrongWords] = useState<VocabItem[]>([])
   const inputRef = useRef<HTMLInputElement>(null)
 
   function start() {
@@ -71,6 +72,7 @@ export default function FillBlankPage() {
     setQueue(qs)
     setIndex(0)
     setScore({ correct: 0, wrong: 0 })
+    setWrongWords([])
     setTyped('')
     setSelected(null)
     setShowHint(false)
@@ -88,6 +90,7 @@ export default function FillBlankPage() {
     const q = queue[index]
     const correct = typed.trim() === q.word.simplified
     setScore(s => correct ? { ...s, correct: s.correct + 1 } : { ...s, wrong: s.wrong + 1 })
+    if (!correct) setWrongWords(w => [...w, q.word])
     review(q.word.id, correct ? 'good' : 'again')
     setStage('feedback')
   }
@@ -98,6 +101,7 @@ export default function FillBlankPage() {
     const q = queue[index]
     const correct = wordId === q.word.id
     setScore(s => correct ? { ...s, correct: s.correct + 1 } : { ...s, wrong: s.wrong + 1 })
+    if (!correct) setWrongWords(w => [...w, q.word])
     review(q.word.id, correct ? 'good' : 'again')
     setStage('feedback')
   }
@@ -199,6 +203,20 @@ export default function FillBlankPage() {
             <button className="btn-primary" onClick={start}>Play again</button>
             <Link to={backPath} className="btn-secondary">Back</Link>
           </div>
+          {wrongWords.length > 0 && (
+            <div className="missed-words">
+              <div className="missed-words-title">Missed words</div>
+              <div className="missed-words-grid">
+                {wrongWords.map(w => (
+                  <Link key={w.id} to={`/word/${w.id}`} className="missed-word-card">
+                    <span className="mw-chinese">{w.simplified}</span>
+                    <span className="mw-pinyin">{w.pinyin}</span>
+                    <span className="mw-english">{w.english.split(';')[0].split(',')[0]}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     )

@@ -47,6 +47,7 @@ export default function ListeningPage() {
   const [options, setOptions] = useState<VocabItem[]>([])
   const [selected, setSelected] = useState<string | null>(null)
   const [score, setScore] = useState({ correct: 0, wrong: 0 })
+  const [wrongWords, setWrongWords] = useState<VocabItem[]>([])
   const [audioUrl, setAudioUrl] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
@@ -70,6 +71,7 @@ export default function ListeningPage() {
     setQueue(q)
     setIndex(0)
     setScore({ correct: 0, wrong: 0 })
+    setWrongWords([])
     setSelected(null)
     setStage('question')
     await loadQuestion(q[0], levelWords)
@@ -87,6 +89,7 @@ export default function ListeningPage() {
     setSelected(wordId)
     const correct = wordId === queue[index].id
     setScore(s => correct ? { ...s, correct: s.correct + 1 } : { ...s, wrong: s.wrong + 1 })
+    if (!correct) setWrongWords(w => [...w, queue[index]])
     review(queue[index].id, correct ? 'good' : 'again')
     setStage('feedback')
   }
@@ -182,6 +185,20 @@ export default function ListeningPage() {
             <button className="btn-primary" onClick={start}>Play again</button>
             <Link to={backPath} className="btn-secondary">Back to browser</Link>
           </div>
+          {wrongWords.length > 0 && (
+            <div className="missed-words">
+              <div className="missed-words-title">Missed words</div>
+              <div className="missed-words-grid">
+                {wrongWords.map(w => (
+                  <Link key={w.id} to={`/word/${w.id}`} className="missed-word-card">
+                    <span className="mw-chinese">{w.simplified}</span>
+                    <span className="mw-pinyin">{w.pinyin}</span>
+                    <span className="mw-english">{w.english.split(';')[0].split(',')[0]}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     )
