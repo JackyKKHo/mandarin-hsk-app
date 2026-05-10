@@ -35,6 +35,7 @@ import SongDetailPage from './pages/SongDetailPage'
 import FrequencyPage from './pages/FrequencyPage'
 import CantonesePage from './pages/CantonesePage'
 import FlashcardsPage from './pages/FlashcardsPage'
+import ReadingPage from './pages/ReadingPage'
 
 export default function App() {
   return (
@@ -77,6 +78,7 @@ export default function App() {
         <Route path="/frequency" element={<FrequencyPage />} />
         <Route path="/cantonese" element={<CantonesePage />} />
         <Route path="/flashcards" element={<FlashcardsPage />} />
+        <Route path="/reading" element={<ReadingPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>

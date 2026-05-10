@@ -19,6 +19,7 @@ const NAV = [
 
 const GUIDES_DROPDOWN = [
   { to: '/guides',     emoji: '🧭', label: 'All Guides' },
+  { to: '/reading',    emoji: '📖', label: 'Reading Practice' },
   { to: '/cantonese',  emoji: '粵', label: 'Cantonese → Mandarin' },
   { to: '/frequency',  emoji: '📊', label: 'Word Frequency' },
   { to: '/daily',      emoji: '📅', label: 'Daily Challenge' },
