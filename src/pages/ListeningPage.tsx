@@ -51,6 +51,8 @@ export default function ListeningPage() {
   const [audioUrl, setAudioUrl] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
+  const touchStartY = useRef(0)
+  const touchScrolled = useRef(false)
 
   async function loadQuestion(word: VocabItem, pool: VocabItem[]) {
     setLoading(true)
@@ -244,7 +246,11 @@ export default function ListeningPage() {
         </p>
       </div>
 
-      <div className="quiz-options">
+      <div
+        className="quiz-options"
+        onTouchStart={e => { touchStartY.current = e.touches[0].clientY; touchScrolled.current = false }}
+        onTouchMove={e => { if (Math.abs(e.touches[0].clientY - touchStartY.current) > 8) touchScrolled.current = true }}
+      >
         {options.map(opt => {
           let cls = 'quiz-option'
           if (selected) {
@@ -253,7 +259,7 @@ export default function ListeningPage() {
             else cls += ' opt-dim'
           }
           return (
-            <button key={opt.id} className={cls} onClick={() => answer(opt.id)} disabled={!!selected}>
+            <button key={opt.id} className={cls} onClick={() => { if (!touchScrolled.current) answer(opt.id) }} disabled={!!selected}>
               {questionType === 'char'    && <span className="opt-chinese">{opt.simplified}</span>}
               {questionType === 'english' && opt.english}
               {questionType === 'pinyin'  && <TonedPinyin pinyin={opt.pinyin} className="" />}

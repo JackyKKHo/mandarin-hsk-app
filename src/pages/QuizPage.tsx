@@ -50,6 +50,8 @@ export default function QuizPage() {
   const optionsRef = useRef(options)
   const answerRef = useRef<(id: string) => void>(() => {})
   const nextRef = useRef<() => void>(() => {})
+  const touchStartY = useRef(0)
+  const touchScrolled = useRef(false)
   stageRef.current = stage
   optionsRef.current = options
 
@@ -71,9 +73,25 @@ export default function QuizPage() {
   }, [])
 
   const buildOptions = useCallback((word: VocabItem, pool: VocabItem[]) => {
-    const distractors = pickDistractors(word, pool)
+    // Deduplicate by the label that will actually be shown to the user
+    const getLabel = (w: VocabItem) =>
+      mode === 'zh→en'
+        ? w.english.split(';')[0].split(',')[0].trim().toLowerCase()
+        : w.simplified
+
+    const correctLabel = getLabel(word)
+    const samePOS = shuffle(pool.filter(w => w.id !== word.id && w.partOfSpeech === word.partOfSpeech))
+    const rest    = shuffle(pool.filter(w => w.id !== word.id && w.partOfSpeech !== word.partOfSpeech))
+
+    const distractors: VocabItem[] = []
+    const seen = new Set([correctLabel])
+    for (const w of [...samePOS, ...rest]) {
+      const l = getLabel(w)
+      if (!seen.has(l)) { seen.add(l); distractors.push(w) }
+      if (distractors.length === 3) break
+    }
     return shuffle([word, ...distractors])
-  }, [])
+  }, [mode])
 
   function start() {
     const q = shuffle(levelWords).slice(0, quizLength)
@@ -245,7 +263,11 @@ export default function QuizPage() {
       </div>
 
       {/* Options */}
-      <div className="quiz-options">
+      <div
+        className="quiz-options"
+        onTouchStart={e => { touchStartY.current = e.touches[0].clientY; touchScrolled.current = false }}
+        onTouchMove={e => { if (Math.abs(e.touches[0].clientY - touchStartY.current) > 8) touchScrolled.current = true }}
+      >
         {options.map((opt, i) => {
           let cls = 'quiz-option'
           if (selected) {
@@ -257,7 +279,7 @@ export default function QuizPage() {
             <button
               key={opt.id}
               className={cls}
-              onClick={() => answer(opt.id)}
+              onClick={() => { if (!touchScrolled.current) answer(opt.id) }}
               disabled={!!selected}
             >
               <kbd className="quiz-key">{i + 1}</kbd>

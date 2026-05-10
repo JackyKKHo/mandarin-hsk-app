@@ -61,6 +61,8 @@ export default function FillBlankPage() {
   const [score, setScore] = useState({ correct: 0, wrong: 0 })
   const [wrongWords, setWrongWords] = useState<VocabItem[]>([])
   const inputRef = useRef<HTMLInputElement>(null)
+  const touchStartY = useRef(0)
+  const touchScrolled = useRef(false)
 
   function start() {
     const qs = shuffle(levelWords)
@@ -294,9 +296,13 @@ export default function FillBlankPage() {
       )}
 
       {stage === 'question' && mode === 'pick' && (
-        <div className="quiz-options">
+        <div
+          className="quiz-options"
+          onTouchStart={e => { touchStartY.current = e.touches[0].clientY; touchScrolled.current = false }}
+          onTouchMove={e => { if (Math.abs(e.touches[0].clientY - touchStartY.current) > 8) touchScrolled.current = true }}
+        >
           {q.options.map(opt => (
-            <button key={opt.id} className="quiz-option" onClick={() => pick(opt.id)}>
+            <button key={opt.id} className="quiz-option" onClick={() => { if (!touchScrolled.current) pick(opt.id) }}>
               <span className="opt-chinese">{opt.simplified}</span>
               {!hideEnglish && <span className="opt-english-sub">{opt.english.split(';')[0].split(',')[0]}</span>}
             </button>
