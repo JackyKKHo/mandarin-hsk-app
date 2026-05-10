@@ -34,6 +34,7 @@ import SongsPage from './pages/SongsPage'
 import SongDetailPage from './pages/SongDetailPage'
 import FrequencyPage from './pages/FrequencyPage'
 import CantonesePage from './pages/CantonesePage'
+import FlashcardsPage from './pages/FlashcardsPage'
 
 export default function App() {
   return (
@@ -75,6 +76,7 @@ export default function App() {
         <Route path="/songs/:songId" element={<SongDetailPage />} />
         <Route path="/frequency" element={<FrequencyPage />} />
         <Route path="/cantonese" element={<CantonesePage />} />
+        <Route path="/flashcards" element={<FlashcardsPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>

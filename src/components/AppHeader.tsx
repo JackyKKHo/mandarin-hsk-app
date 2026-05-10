@@ -14,6 +14,7 @@ const NAV = [
   { to: '/guides',     emoji: '🧭', label: 'Guides',     section: 'guides' },
   { to: '/search',     emoji: '🔍', label: 'Search',     section: 'search' },
   { to: '/assessment', emoji: '🎯', label: 'Assess',     section: 'assessment' },
+  { to: '/flashcards', emoji: '🗂', label: 'Cards',      section: 'flashcards' },
 ]
 
 const GUIDES_DROPDOWN = [
