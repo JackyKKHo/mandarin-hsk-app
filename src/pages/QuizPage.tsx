@@ -19,13 +19,6 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
-function pickDistractors(correct: VocabItem, pool: VocabItem[]): VocabItem[] {
-  const others = pool.filter(w => w.id !== correct.id)
-  const samePOS = shuffle(others.filter(w => w.partOfSpeech === correct.partOfSpeech))
-  const rest = shuffle(others.filter(w => w.partOfSpeech !== correct.partOfSpeech))
-  return [...samePOS, ...rest].slice(0, 3)
-}
-
 function truncate(s: string, n = 55): string {
   return s.length > n ? s.slice(0, n) + '…' : s
 }

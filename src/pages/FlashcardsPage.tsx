@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useCustomDecks, type CustomDeck, type CustomCard } from '../hooks/useCustomDecks'
-import TonedPinyin from '../components/TonedPinyin'
 
 type View = 'list' | 'editor' | 'study'
 
@@ -16,10 +15,9 @@ function shuffle<T>(arr: T[]): T[] {
 
 // ── Card editor row ────────────────────────────────────────────────────────────
 function CardRow({
-  card, deckId, onUpdate, onDelete,
+  card, onUpdate, onDelete,
 }: {
   card: CustomCard
-  deckId: string
   onUpdate: (id: string, patch: Partial<Omit<CustomCard, 'id'>>) => void
   onDelete: (id: string) => void
 }) {
@@ -171,7 +169,6 @@ function DeckEditor({
             <CardRow
               key={card.id}
               card={card}
-              deckId={deck.id}
               onUpdate={(cardId, patch) => updateCard(deck.id, cardId, patch)}
               onDelete={cardId => deleteCard(deck.id, cardId)}
             />
