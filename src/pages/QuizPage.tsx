@@ -199,12 +199,26 @@ export default function QuizPage() {
           {wrongWords.length > 0 && (
             <div className="missed-words">
               <div className="missed-words-title">Missed words</div>
-              <div className="missed-words-grid">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {wrongWords.map(w => (
-                  <Link key={w.id} to={`/word/${w.id}`} className="missed-word-card">
-                    <span className="mw-chinese">{w.simplified}</span>
-                    <span className="mw-pinyin">{w.pinyin}</span>
-                    <span className="mw-english">{w.english.split(';')[0].split(',')[0]}</span>
+                  <Link key={w.id} to={`/word/${w.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <div style={{ background: 'var(--card-bg)', border: '1.5px solid var(--error, #ef4444)', borderRadius: 12, padding: '0.9rem 1rem' }}>
+                      <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.6rem', flexWrap: 'wrap' }}>
+                        <span style={{ fontSize: '1.5rem', fontWeight: 700 }}>{w.simplified}</span>
+                        <TonedPinyin pinyin={w.pinyin} className="review-card-pinyin" />
+                        {w.partOfSpeech && <span className="pos-badge" style={{ fontSize: '0.7rem' }}>{w.partOfSpeech}</span>}
+                        <AudioButton text={w.simplified} audioUrl={w.audio.wordAudioUrl} label="" />
+                        <span style={{ marginLeft: 'auto', fontSize: '0.8rem', color: 'var(--accent, #4f8ef7)' }}>Full explanation →</span>
+                      </div>
+                      <div style={{ fontSize: '0.9rem', opacity: 0.85, margin: '0.2rem 0 0.5rem' }}>{w.english}</div>
+                      {w.examples[0] && (
+                        <div style={{ borderTop: '1px solid var(--border, #eee)', paddingTop: '0.5rem' }}>
+                          <div style={{ fontSize: '1rem', fontWeight: 500 }}>{w.examples[0].chinese}</div>
+                          <div style={{ fontSize: '0.8rem', opacity: 0.6 }}>{w.examples[0].pinyin}</div>
+                          <div style={{ fontSize: '0.85rem', opacity: 0.75, marginTop: '0.15rem' }}>{w.examples[0].english}</div>
+                        </div>
+                      )}
+                    </div>
                   </Link>
                 ))}
               </div>
