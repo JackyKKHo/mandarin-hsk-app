@@ -13,6 +13,7 @@ import { useDailyGoal } from '../hooks/useDailyGoal'
 import { MAX_FREEZES } from '../hooks/useStreak'
 import { useMilestones } from '../hooks/useMilestones'
 import MilestoneToast from '../components/MilestoneToast'
+import { useEmailReminders } from '../hooks/useEmailReminders'
 import type { VocabItem } from '../types'
 
 function exportWords(type: 'learned' | 'favourites', vocab: VocabItem[], learned: Set<string>, favourites: Set<string>) {
@@ -93,6 +94,7 @@ export default function StatsPage() {
     [levelStats]
   )
   const { pending: pendingMilestones, claim: claimMilestone } = useMilestones(totalMastered, streak, levelPcts)
+  const { enabled: emailEnabled, loading: emailLoading, loaded: emailLoaded, toggle: toggleEmail } = useEmailReminders()
 
   const strugglingWords = useMemo(() =>
     vocab.filter(w => {
@@ -156,6 +158,28 @@ export default function StatsPage() {
             <span className="stats-hero-sub">earn 1 every 7-day streak (max {MAX_FREEZES})</span>
           </div>
         </div>
+
+        {/* Email reminders */}
+        {emailLoaded && (
+          <div className="stats-goal-card" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
+            <div>
+              <div className="stats-goal-label">Daily email reminders</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.2rem' }}>
+                {emailEnabled
+                  ? "We'll email you at 8am when you have cards due or your streak needs saving."
+                  : "Get an email at 8am when you have cards due or your streak needs saving."}
+              </div>
+            </div>
+            <button
+              className={emailEnabled ? 'btn-secondary' : 'btn-primary'}
+              style={{ whiteSpace: 'nowrap', flexShrink: 0 }}
+              onClick={toggleEmail}
+              disabled={emailLoading}
+            >
+              {emailLoading ? '...' : emailEnabled ? 'Turn off' : 'Turn on'}
+            </button>
+          </div>
+        )}
 
         {/* Daily goal */}
         <div className="stats-goal-card">
