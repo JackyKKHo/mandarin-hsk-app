@@ -8,6 +8,26 @@ import { useStreak } from '../hooks/useStreak'
 import type { SRSQuality } from '../hooks/useSRS'
 import type { VocabItem } from '../types'
 
+const NEW_CARD_LIMIT = 20
+const NEW_CARDS_KEY = 'hsk-review-new-today'
+
+function todayStr() {
+  return new Date().toISOString().slice(0, 10)
+}
+
+function getNewCardsIntroducedToday(): number {
+  try {
+    const raw = localStorage.getItem(NEW_CARDS_KEY)
+    if (!raw) return 0
+    const { date, count } = JSON.parse(raw)
+    return date === todayStr() ? count : 0
+  } catch { return 0 }
+}
+
+function recordNewCardsToday(total: number) {
+  localStorage.setItem(NEW_CARDS_KEY, JSON.stringify({ date: todayStr(), count: total }))
+}
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
@@ -31,10 +51,13 @@ export default function ReviewPage() {
   const { recordStudy } = useStreak()
   const { words: allWords } = useVocab()
 
-  const initialDueCount = useMemo(
-    () => allWords.filter(w => isDue(w.id)).length,
-    [allWords, isDue]
-  )
+  const { dueCount: reviewDueCount, newCount: reviewNewCount } = useMemo(() => {
+    const alreadyNew = getNewCardsIntroducedToday()
+    const remaining = Math.max(0, NEW_CARD_LIMIT - alreadyNew)
+    const dueCount = allWords.filter(w => getCard(w.id) && isDue(w.id)).length
+    const newCount = Math.min(allWords.filter(w => !getCard(w.id)).length, remaining)
+    return { dueCount, newCount }
+  }, [allWords, isDue, getCard])
 
   const [stage, setStage] = useState<Stage>('idle')
   const [queue, setQueue] = useState<VocabItem[]>([])
@@ -101,7 +124,12 @@ export default function ReviewPage() {
   }, [])
 
   function start() {
-    const q = shuffle(allWords.filter(w => isDue(w.id)))
+    const dueCards = allWords.filter(w => getCard(w.id) && isDue(w.id))
+    const alreadyNew = getNewCardsIntroducedToday()
+    const remaining = Math.max(0, NEW_CARD_LIMIT - alreadyNew)
+    const newCards = allWords.filter(w => !getCard(w.id)).slice(0, remaining)
+    recordNewCardsToday(alreadyNew + newCards.length)
+    const q = shuffle([...dueCards, ...newCards])
     initialLengthRef.current = q.length
     setQueue(q)
     setIndex(0)
@@ -112,13 +140,14 @@ export default function ReviewPage() {
   }
 
   if (stage === 'idle') {
+    const totalToday = reviewDueCount + reviewNewCount
     return (
       <div className="practice-page">
         <Link to="/stats" className="back-link">← Stats</Link>
         <div className="practice-start-card">
           <div className="practice-start-level">SRS Review</div>
           <h2>Due for Review</h2>
-          {initialDueCount === 0 ? (
+          {totalToday === 0 ? (
             <>
               <p className="empty-state" style={{ marginBottom: '1rem' }}>All caught up! No cards due right now.</p>
               <p className="practice-start-desc">
@@ -131,8 +160,22 @@ export default function ReviewPage() {
             </>
           ) : (
             <>
+              <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', margin: '0.5rem 0 1rem' }}>
+                {reviewDueCount > 0 && (
+                  <div style={{ textAlign: 'center' }}>
+                    <div style={{ fontSize: '1.75rem', fontWeight: 700 }}>{reviewDueCount}</div>
+                    <div style={{ fontSize: '0.8rem', opacity: 0.6 }}>due for review</div>
+                  </div>
+                )}
+                {reviewNewCount > 0 && (
+                  <div style={{ textAlign: 'center' }}>
+                    <div style={{ fontSize: '1.75rem', fontWeight: 700, color: 'var(--accent, #4f8ef7)' }}>{reviewNewCount}</div>
+                    <div style={{ fontSize: '0.8rem', opacity: 0.6 }}>new today</div>
+                  </div>
+                )}
+              </div>
               <p className="practice-start-desc">
-                {initialDueCount} card{initialDueCount !== 1 ? 's' : ''} due today.
+                {reviewNewCount > 0 && `Up to ${NEW_CARD_LIMIT} new cards per day. `}
                 Cards you mark "again" will loop back this session.
               </p>
               <button className="btn-primary" onClick={start}>Start review</button>

@@ -7,6 +7,8 @@ import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
 import type { VocabItem } from '../types'
 
+interface WordResult { word: VocabItem; correct: boolean }
+
 const CHALLENGE_SIZE = 10
 
 function seededShuffle<T>(arr: T[], seed: number): T[] {
@@ -75,6 +77,7 @@ export default function DailyChallengePage() {
   const [options, setOptions] = useState<VocabItem[]>([])
   const [selected, setSelected] = useState<string | null>(null)
   const [score, setScore] = useState({ correct: 0, wrong: 0 })
+  const [wordResults, setWordResults] = useState<WordResult[]>([])
 
   const stageRef = useRef(stage)
   const optionsRef = useRef(options)
@@ -110,7 +113,7 @@ export default function DailyChallengePage() {
 
   function start() {
     const q = [...dailyWords]
-    setQueue(q); setIndex(0); setScore({ correct: 0, wrong: 0 }); setSelected(null)
+    setQueue(q); setIndex(0); setScore({ correct: 0, wrong: 0 }); setSelected(null); setWordResults([])
     setOptions(buildOptions(q[0], allWords)); setStage('question')
   }
 
@@ -119,6 +122,7 @@ export default function DailyChallengePage() {
     setSelected(wordId)
     const correct = wordId === queue[index].id
     setScore(s => correct ? { ...s, correct: s.correct + 1 } : { ...s, wrong: s.wrong + 1 })
+    setWordResults(r => [...r, { word: queue[index], correct }])
     review(queue[index].id, correct ? 'good' : 'again')
     setStage('feedback')
   }
@@ -204,7 +208,7 @@ export default function DailyChallengePage() {
     const total = score.correct + score.wrong
     const pct = total > 0 ? Math.round((score.correct / total) * 100) : 0
     return (
-      <div className="practice-page">
+      <div className="practice-page" style={{ paddingBottom: '2rem' }}>
         <div className="practice-complete-card">
           <div className="daily-badge">📅 Daily Challenge</div>
           <div className={`complete-score ${pct >= 80 ? 'score-good' : pct >= 50 ? 'score-ok' : 'score-low'}`}>{pct}%</div>
@@ -217,6 +221,38 @@ export default function DailyChallengePage() {
           <div className="complete-actions">
             <Link to="/review" className="btn-primary">SRS Review</Link>
             <Link to="/hsk/1" className="btn-secondary">Browse vocabulary</Link>
+          </div>
+        </div>
+
+        <div style={{ width: '100%', maxWidth: 520, margin: '1.5rem auto 0' }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.75rem', opacity: 0.7 }}>Today's words</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {wordResults.map(({ word: w, correct }) => (
+              <div key={w.id} style={{
+                background: 'var(--card-bg)',
+                border: `1.5px solid ${correct ? 'var(--success, #22c55e)' : 'var(--error, #ef4444)'}`,
+                borderRadius: 12,
+                padding: '0.9rem 1rem',
+              }}>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.6rem', flexWrap: 'wrap' }}>
+                  <Link to={`/word/${w.id}`} style={{ fontSize: '1.5rem', fontWeight: 700, textDecoration: 'none', color: 'inherit' }}>{w.simplified}</Link>
+                  <TonedPinyin pinyin={w.pinyin} className="review-card-pinyin" />
+                  {w.partOfSpeech && <span className="pos-badge" style={{ fontSize: '0.7rem' }}>{w.partOfSpeech}</span>}
+                  <AudioButton text={w.simplified} audioUrl={w.audio.wordAudioUrl} label="" />
+                  <span style={{ marginLeft: 'auto', fontSize: '0.8rem', fontWeight: 600, color: correct ? 'var(--success, #22c55e)' : 'var(--error, #ef4444)' }}>
+                    {correct ? '✓' : '✗'}
+                  </span>
+                </div>
+                <div style={{ fontSize: '0.9rem', opacity: 0.85, margin: '0.25rem 0 0.5rem' }}>{w.english}</div>
+                {w.examples[0] && (
+                  <div style={{ borderTop: '1px solid var(--border, #eee)', paddingTop: '0.5rem', marginTop: '0.25rem' }}>
+                    <div style={{ fontSize: '1rem', fontWeight: 500 }}>{w.examples[0].chinese}</div>
+                    <div style={{ fontSize: '0.8rem', opacity: 0.6 }}>{w.examples[0].pinyin}</div>
+                    <div style={{ fontSize: '0.85rem', opacity: 0.75, marginTop: '0.15rem' }}>{w.examples[0].english}</div>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
