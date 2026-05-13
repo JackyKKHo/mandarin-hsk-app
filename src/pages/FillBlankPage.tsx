@@ -210,7 +210,7 @@ export default function FillBlankPage() {
               <div className="missed-words-title">Missed words</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {wrongWords.map(w => (
-                  <Link key={w.id} to={`/word/${w.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <Link key={w.id} to={`/word/${w.id}`} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div style={{ background: 'var(--card-bg)', border: '1.5px solid var(--error, #ef4444)', borderRadius: 12, padding: '0.9rem 1rem' }}>
                       <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.6rem', flexWrap: 'wrap' }}>
                         <span style={{ fontSize: '1.5rem', fontWeight: 700 }}>{w.simplified}</span>

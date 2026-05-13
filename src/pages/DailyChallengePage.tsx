@@ -235,7 +235,7 @@ export default function DailyChallengePage() {
                 padding: '0.9rem 1rem',
               }}>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.6rem', flexWrap: 'wrap' }}>
-                  <Link to={`/word/${w.id}`} style={{ fontSize: '1.5rem', fontWeight: 700, textDecoration: 'none', color: 'inherit' }}>{w.simplified}</Link>
+                  <Link to={`/word/${w.id}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem', fontWeight: 700, textDecoration: 'none', color: 'inherit' }}>{w.simplified}</Link>
                   <TonedPinyin pinyin={w.pinyin} className="review-card-pinyin" />
                   {w.partOfSpeech && <span className="pos-badge" style={{ fontSize: '0.7rem' }}>{w.partOfSpeech}</span>}
                   <AudioButton text={w.simplified} audioUrl={w.audio.wordAudioUrl} label="" />
