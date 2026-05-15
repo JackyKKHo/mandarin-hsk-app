@@ -181,27 +181,38 @@ export default function DetailPage() {
           </div>
         )}
 
-        {word.examples.length > 0 && (
-          <section className="examples-section">
-            <h3>In use</h3>
-            {word.examples.map((ex, i) => (
-              <div key={i} className="example-item">
-                <div className="example-row">
-                  <div className="example-content">
-                    <div className="example-chinese">{ex.chinese}</div>
-                    <TonedPinyin pinyin={ex.pinyin} className="example-pinyin" />
-                    <div className="example-english">{ex.english}</div>
+        {(() => {
+          const seen = new Set<string>()
+          const combined = [
+            ...word.examples,
+            ...(word.meanings?.map(m => m.example) ?? []),
+          ].filter(ex => {
+            if (seen.has(ex.chinese)) return false
+            seen.add(ex.chinese)
+            return true
+          }).slice(0, 2)
+          return combined.length > 0 ? (
+            <section className="examples-section">
+              <h3>In use</h3>
+              {combined.map((ex, i) => (
+                <div key={i} className="example-item">
+                  <div className="example-row">
+                    <div className="example-content">
+                      <div className="example-chinese">{ex.chinese}</div>
+                      <TonedPinyin pinyin={ex.pinyin} className="example-pinyin" />
+                      <div className="example-english">{ex.english}</div>
+                    </div>
+                    <AudioButton
+                      text={ex.chinese}
+                      audioUrl={word.audio.exampleAudioUrls[i] ?? null}
+                      label={`Play example: ${ex.chinese}`}
+                    />
                   </div>
-                  <AudioButton
-                    text={ex.chinese}
-                    audioUrl={word.audio.exampleAudioUrls[i] ?? null}
-                    label={`Play example: ${ex.chinese}`}
-                  />
                 </div>
-              </div>
-            ))}
-          </section>
-        )}
+              ))}
+            </section>
+          ) : null
+        })()}
 
         <SentencePractice word={{
           simplified: word.simplified,
