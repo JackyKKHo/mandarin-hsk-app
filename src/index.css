@@ -598,6 +598,96 @@ html.dark .badge-pos-note { background: #2c2010; color: #f0a050; }
 .example-chinese  { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem; }
 .example-pinyin   { font-size: 0.82rem; color: var(--blue); margin-bottom: 0.2rem; }
 .example-english  { font-size: 0.87rem; color: var(--muted); }
+.example-actions  { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; flex-shrink: 0; }
+
+/* ── Mine button ── */
+.mine-btn {
+  background: none;
+  border: 1.5px solid var(--muted);
+  color: var(--muted);
+  border-radius: 50%;
+  width: 28px; height: 28px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.15s;
+}
+.mine-btn:hover { border-color: var(--red); color: var(--red); }
+.mine-btn.mined { border-color: #27ae60; color: #27ae60; background: #e8f8f0; cursor: default; }
+html.dark .mine-btn.mined { background: #0d2b1a; }
+
+/* ── ClickableText ── */
+.ct-word {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  border-bottom: 1px dotted var(--muted);
+  line-height: inherit;
+}
+.ct-word:hover, .ct-word-active { border-bottom-color: var(--red); color: var(--red); }
+
+.ct-popup {
+  position: fixed;
+  bottom: 60px;
+  left: 0; right: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-radius: 14px 14px 0 0;
+  padding: 1rem 1.25rem 1.25rem;
+  z-index: 200;
+  box-shadow: 0 -6px 32px rgba(0,0,0,0.14);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.ct-popup-header { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.5rem; }
+.ct-popup-char { font-size: 2.2rem; font-weight: 700; color: var(--text); line-height: 1; }
+.ct-popup-meta { flex: 1; }
+.ct-popup-pinyin { font-size: 1rem; }
+.ct-popup-pos { font-size: 0.75rem; font-style: italic; color: var(--muted); margin-top: 0.1rem; }
+.ct-popup-close { background: none; border: none; font-size: 1.1rem; color: var(--muted); cursor: pointer; padding: 0.2rem; }
+.ct-popup-english { font-size: 1rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
+.ct-popup-note {
+  font-size: 0.82rem; color: var(--muted); line-height: 1.5;
+  border-left: 2px solid var(--blue);
+  padding-left: 0.6rem;
+  margin-bottom: 0.6rem;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.ct-popup-link { font-size: 0.85rem; color: var(--red); text-decoration: none; font-weight: 600; }
+.ct-popup-link:hover { text-decoration: underline; }
+
+/* ── Sentence review ── */
+.sr-card {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  margin: 1.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  min-height: 200px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.sr-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.sr-chinese { font-size: 1.6rem; font-weight: 600; color: var(--text); line-height: 1.5; }
+.sr-flip-hint { font-size: 0.82rem; color: var(--muted); }
+.sr-back { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; width: 100%; }
+.sr-pinyin { font-size: 0.95rem; }
+.sr-english { font-size: 1rem; color: var(--muted); }
+.sr-word-link { font-size: 0.82rem; color: var(--red); text-decoration: none; margin-top: 0.25rem; }
+.sr-remove-btn {
+  display: block;
+  margin: 0.5rem auto 2rem;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.78rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /* ── Tags ── */
 .tags-section {

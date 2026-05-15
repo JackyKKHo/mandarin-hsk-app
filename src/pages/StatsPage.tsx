@@ -14,6 +14,7 @@ import { MAX_FREEZES } from '../hooks/useStreak'
 import { useMilestones } from '../hooks/useMilestones'
 import MilestoneToast from '../components/MilestoneToast'
 import { useEmailReminders } from '../hooks/useEmailReminders'
+import { useMinedSentences } from '../hooks/useMinedSentences'
 import type { VocabItem } from '../types'
 
 function exportWords(type: 'learned' | 'favourites', vocab: VocabItem[], learned: Set<string>, favourites: Set<string>) {
@@ -51,6 +52,7 @@ export default function StatsPage() {
   const { streak, lastDate, freezes } = useStreak()
   const { isDue, getCard } = useSRS()
   const { words: vocab } = useVocab()
+  const { sentences: minedSentences, due: dueSentences } = useMinedSentences()
   const { goal, setGoal, todayCount, pct: goalPct, done: goalDone } = useDailyGoal()
   const [editingGoal, setEditingGoal] = useState(false)
   const [goalInput, setGoalInput] = useState(String(goal))
@@ -151,6 +153,14 @@ export default function StatsPage() {
             <span className="stats-hero-num">📅</span>
             <span className="stats-hero-label">Daily Challenge</span>
             <Link to="/daily" className="stats-hero-sub stats-link">start today's →</Link>
+          </div>
+          <div className="stats-hero-card">
+            <span className="stats-hero-num">{minedSentences.length}</span>
+            <span className="stats-hero-label">mined sentences</span>
+            {dueSentences.length > 0
+              ? <Link to="/sentences/review" className="stats-hero-sub stats-link">{dueSentences.length} due →</Link>
+              : <Link to="/sentences/review" className="stats-hero-sub stats-link">review deck →</Link>
+            }
           </div>
           <div className="stats-hero-card">
             <span className="stats-hero-num">🛡️{freezes}</span>

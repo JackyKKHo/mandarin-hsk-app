@@ -12,6 +12,7 @@ import { useVocab } from '../hooks/useVocab'
 import { levelFromId } from '../data/vocabLoader'
 import { useSEO } from '../hooks/useSEO'
 import { normalizePOS } from '../types'
+import { useMinedSentences } from '../hooks/useMinedSentences'
 
 function WordSEO({ word }: { word: { id: string; simplified: string; pinyin: string; english: string; hskLevel: number; partOfSpeech: string | string[] } }) {
   const posStr = normalizePOS(word.partOfSpeech).join(', ')
@@ -57,6 +58,7 @@ export default function DetailPage() {
   const learned = isLearned(word.id)
   const fav = isFavourite(word.id)
   const posLabels = normalizePOS(word.partOfSpeech)
+  const { mine, isMined } = useMinedSentences()
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -202,11 +204,20 @@ export default function DetailPage() {
                       <TonedPinyin pinyin={ex.pinyin} className="example-pinyin" />
                       <div className="example-english">{ex.english}</div>
                     </div>
-                    <AudioButton
-                      text={ex.chinese}
-                      audioUrl={word.audio.exampleAudioUrls[i] ?? null}
-                      label={`Play example: ${ex.chinese}`}
-                    />
+                    <div className="example-actions">
+                      <AudioButton
+                        text={ex.chinese}
+                        audioUrl={word.audio.exampleAudioUrls[i] ?? null}
+                        label={`Play example: ${ex.chinese}`}
+                      />
+                      <button
+                        className={`mine-btn${isMined(ex.chinese) ? ' mined' : ''}`}
+                        onClick={() => mine(ex.chinese, ex.pinyin, ex.english, word.id, word.simplified)}
+                        title={isMined(ex.chinese) ? 'Already in sentence deck' : 'Add to sentence review'}
+                      >
+                        {isMined(ex.chinese) ? '✓' : '+'}
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}

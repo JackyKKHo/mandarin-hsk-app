@@ -1,6 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import passages, { getPassagesByLevel, type ReadingPassage } from '../data/readingPassages'
+import { loadLevel } from '../data/vocabLoader'
+import type { VocabItem } from '../types'
+import ClickableText from '../components/ClickableText'
 
 type View = 'list' | 'test' | 'result'
 
@@ -17,10 +20,12 @@ function ReadingTest({
   passage,
   onBack,
   onFinish,
+  lookup,
 }: {
   passage: ReadingPassage
   onBack: () => void
   onFinish: (answers: number[]) => void
+  lookup: Map<string, VocabItem>
 }) {
   const [answers, setAnswers] = useState<(number | null)[]>(
     Array(passage.questions.length).fill(null)
@@ -54,7 +59,7 @@ function ReadingTest({
         <p className="reading-passage-title-en">{passage.titleEn}</p>
         <div className="reading-passage-text">
           {passage.text.split('\n').map((line, i) => (
-            <p key={i}>{line}</p>
+            <p key={i}><ClickableText text={line} lookup={lookup} /></p>
           ))}
         </div>
         <button
@@ -183,6 +188,20 @@ export default function ReadingPage() {
   const [view, setView] = useState<View>('list')
   const [activePassage, setActivePassage] = useState<ReadingPassage | null>(null)
   const [answers, setAnswers] = useState<number[]>([])
+  const [lookup, setLookup] = useState<Map<string, VocabItem>>(new Map())
+
+  useEffect(() => {
+    Promise.all([1, 2, 3, 4].map(loadLevel)).then(levels => {
+      const map = new Map<string, VocabItem>()
+      for (const words of levels) {
+        for (const w of words) {
+          map.set(w.simplified, w)
+          if (w.traditional !== w.simplified) map.set(w.traditional, w)
+        }
+      }
+      setLookup(map)
+    })
+  }, [])
 
   const levelPassages = getPassagesByLevel(level)
 
@@ -190,6 +209,7 @@ export default function ReadingPage() {
     return (
       <ReadingTest
         passage={activePassage}
+        lookup={lookup}
         onBack={() => setView('list')}
         onFinish={ans => { setAnswers(ans); setView('result') }}
       />

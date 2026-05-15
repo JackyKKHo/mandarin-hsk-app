@@ -36,6 +36,7 @@ import FrequencyPage from './pages/FrequencyPage'
 import CantonesePage from './pages/CantonesePage'
 import FlashcardsPage from './pages/FlashcardsPage'
 import ReadingPage from './pages/ReadingPage'
+import SentenceReviewPage from './pages/SentenceReviewPage'
 
 export default function App() {
   return (
@@ -79,6 +80,7 @@ export default function App() {
         <Route path="/cantonese" element={<CantonesePage />} />
         <Route path="/flashcards" element={<FlashcardsPage />} />
         <Route path="/reading" element={<ReadingPage />} />
+        <Route path="/sentences/review" element={<SentenceReviewPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>
