@@ -34,7 +34,7 @@ export interface VocabItem {
   pinyin: string
   pinyinNumbered: string
   english: string
-  partOfSpeech: string
+  partOfSpeech: string | string[]
   explanation?: string
   meanings?: Meaning[]
   examples: Example[]
@@ -43,4 +43,8 @@ export interface VocabItem {
     wordAudioUrl: string | null
     exampleAudioUrls: (string | null)[]
   }
+}
+
+export function normalizePOS(pos: string | string[]): string[] {
+  return Array.isArray(pos) ? pos.filter(Boolean) : pos ? [pos] : []
 }

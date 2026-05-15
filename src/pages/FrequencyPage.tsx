@@ -4,6 +4,7 @@ import AppHeader from '../components/AppHeader'
 import { useVocab } from '../hooks/useVocab'
 import { useProgress } from '../hooks/useProgress'
 import { useSEO } from '../hooks/useSEO'
+import { normalizePOS } from '../types'
 
 const COVERAGE = [
   { label: 'HSK 1', cumWords: 497,  pct: 64, desc: 'Basic greetings, numbers, daily essentials' },
@@ -75,7 +76,7 @@ export default function FrequencyPage() {
   const visibleWords = useMemo(
     () => cloudWords.filter(w =>
       activeLevels.has(w.hskLevel) &&
-      (activePOS === null || posGroup(w.partOfSpeech) === activePOS)
+      (activePOS === null || normalizePOS(w.partOfSpeech).some(p => posGroup(p) === activePOS))
     ),
     [cloudWords, activeLevels, activePOS]
   )
@@ -87,7 +88,7 @@ export default function FrequencyPage() {
       const lw = words.filter(w => w.hskLevel === l)
       const counts: Record<string, number> = {}
       for (const w of lw) {
-        const g = posGroup(w.partOfSpeech)
+        const g = posGroup(normalizePOS(w.partOfSpeech)[0] ?? '')
         counts[g] = (counts[g] ?? 0) + 1
       }
       return { level: l, total: lw.length, counts }

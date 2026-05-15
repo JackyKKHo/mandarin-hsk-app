@@ -19,7 +19,7 @@ import type { VocabItem } from '../types'
 function exportWords(type: 'learned' | 'favourites', vocab: VocabItem[], learned: Set<string>, favourites: Set<string>) {
   const words = vocab.filter(w => type === 'learned' ? learned.has(w.id) : favourites.has(w.id))
   const rows = [['Simplified', 'Traditional', 'Pinyin', 'English', 'HSK Level', 'Part of Speech']]
-  for (const w of words) rows.push([w.simplified, w.traditional, w.pinyin, w.english, String(w.hskLevel), w.partOfSpeech ?? ''])
+  for (const w of words) rows.push([w.simplified, w.traditional, w.pinyin, w.english, String(w.hskLevel), Array.isArray(w.partOfSpeech) ? w.partOfSpeech.join(', ') : (w.partOfSpeech ?? '')])
   const csv = rows.map(r => r.map(c => `"${c.replace(/"/g, '""')}"`).join(',')).join('\n')
   download(`mandarin-daily-${type}.csv`, csv, 'text/csv')
 }

@@ -11,11 +11,13 @@ import { useFavourites } from '../hooks/useFavourites'
 import { useVocab } from '../hooks/useVocab'
 import { levelFromId } from '../data/vocabLoader'
 import { useSEO } from '../hooks/useSEO'
+import { normalizePOS } from '../types'
 
-function WordSEO({ word }: { word: { id: string; simplified: string; pinyin: string; english: string; hskLevel: number; partOfSpeech: string } }) {
+function WordSEO({ word }: { word: { id: string; simplified: string; pinyin: string; english: string; hskLevel: number; partOfSpeech: string | string[] } }) {
+  const posStr = normalizePOS(word.partOfSpeech).join(', ')
   useSEO({
     title: `${word.simplified} (${word.pinyin}) — ${word.english}`,
-    description: `${word.simplified} — ${word.english}. ${word.partOfSpeech}, HSK Level ${word.hskLevel}. Learn pronunciation, stroke order, example sentences and more.`,
+    description: `${word.simplified} — ${word.english}. ${posStr}, HSK Level ${word.hskLevel}. Learn pronunciation, stroke order, example sentences and more.`,
     path: `/word/${word.id}`,
   })
   return null
@@ -54,12 +56,13 @@ export default function DetailPage() {
 
   const learned = isLearned(word.id)
   const fav = isFavourite(word.id)
+  const posLabels = normalizePOS(word.partOfSpeech)
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'DefinedTerm',
     name: `${word.simplified} (${word.pinyin})`,
-    description: `${word.english} — ${word.partOfSpeech}, HSK Level ${word.hskLevel}`,
+    description: `${word.english} — ${posLabels.join(', ')}, HSK Level ${word.hskLevel}`,
     inDefinedTermSet: {
       '@type': 'DefinedTermSet',
       name: 'HSK Mandarin Vocabulary',
@@ -114,7 +117,16 @@ export default function DetailPage() {
         <TonedPinyin pinyin={word.pinyin} className="detail-pinyin" />
 
         <div className="detail-meta">
-          <span className="badge badge-pos">{word.partOfSpeech}</span>
+          <div className="detail-pos-badges">
+            {posLabels.map(p => (
+              <span key={p} className="badge badge-pos">{p}</span>
+            ))}
+            {posLabels.length > 1 && (
+              <span className="badge badge-pos-note" title="Chinese words commonly function as multiple parts of speech depending on context">
+                多词性
+              </span>
+            )}
+          </div>
           <span className="badge badge-level">HSK {word.hskLevel}</span>
           <button
             className={`badge ${learned ? 'badge-learned' : 'badge-mark-learned'}`}
@@ -141,51 +153,37 @@ export default function DetailPage() {
           )}
         </div>
 
-        {word.meanings && word.meanings.length > 0 ? (
-          <section className="meanings-section">
-            {word.meanings.map((m, i) => (
-              <div key={i} className="meaning-item">
-                <div className="meaning-row">
-                  <span className="meaning-num">{i + 1}</span>
-                  <span className="meaning-pos">{word.partOfSpeech}.</span>
-                  <span className="meaning-def">{m.definition}</span>
-                </div>
-                <div className="meaning-example">
-                  <div className="meaning-ex-row">
-                    <div className="meaning-ex-content">
-                      <div className="example-chinese">{m.example.chinese}</div>
-                      <TonedPinyin pinyin={m.example.pinyin} className="example-pinyin" />
-                      <div className="example-english">{m.example.english}</div>
-                    </div>
-                    <AudioButton
-                      text={m.example.chinese}
-                      audioUrl={null}
-                      label={`Play example`}
-                    />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </section>
-        ) : (
-          <div className="detail-english">
-            <span className="detail-pos">{word.partOfSpeech}.</span> {word.english}
-          </div>
-        )}
-
-        {word.explanation && (
-          <div className="detail-explanation">{word.explanation}</div>
-        )}
-
         {word.traditional !== word.simplified && (
           <div className="detail-traditional">
             Traditional: <span>{word.traditional}</span>
           </div>
         )}
 
-        {!word.meanings && word.examples.length > 0 && (
+        {word.meanings && word.meanings.length > 0 ? (
+          <section className="meanings-section">
+            {word.meanings.map((m, i) => (
+              <div key={i} className="meaning-item">
+                <div className="meaning-row">
+                  <span className="meaning-num">{i + 1}</span>
+                  <span className="meaning-def">{m.definition}</span>
+                </div>
+              </div>
+            ))}
+          </section>
+        ) : (
+          <div className="detail-english">{word.english}</div>
+        )}
+
+        {word.explanation && (
+          <div className="detail-explanation">
+            <span className="detail-explanation-label">Usage note</span>
+            {word.explanation}
+          </div>
+        )}
+
+        {word.examples.length > 0 && (
           <section className="examples-section">
-            <h3>Example sentences</h3>
+            <h3>In use</h3>
             {word.examples.map((ex, i) => (
               <div key={i} className="example-item">
                 <div className="example-row">
@@ -222,6 +220,8 @@ export default function DetailPage() {
           pinyin: word.pinyin,
           english: word.english,
           hskLevel: word.hskLevel,
+          partOfSpeech: word.partOfSpeech,
+          explanation: word.explanation,
         }} />
 
         {word.tags.length > 0 && (

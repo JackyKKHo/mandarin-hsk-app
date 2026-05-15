@@ -6,6 +6,8 @@ interface WordContext {
   pinyin: string
   english: string
   hskLevel: number
+  partOfSpeech?: string | string[]
+  explanation?: string
 }
 
 interface Props {

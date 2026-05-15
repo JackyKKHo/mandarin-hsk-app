@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useVocab } from '../hooks/useVocab'
 import TonedPinyin from './TonedPinyin'
 import AudioButton from './AudioButton'
+import { normalizePOS } from '../types'
 
 function dateSeed(s: string): number {
   let h = 0
@@ -29,7 +30,7 @@ export default function WordOfTheDay() {
         <div className="wotd-chinese">{word.simplified}</div>
         <div className="wotd-middle">
           <TonedPinyin pinyin={word.pinyin} className="wotd-pinyin" />
-          <span className="wotd-pos">{word.partOfSpeech}</span>
+          <span className="wotd-pos">{normalizePOS(word.partOfSpeech).join(' · ')}</span>
         </div>
         <div className="wotd-english">{word.english}</div>
         {word.examples[0] && (

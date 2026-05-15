@@ -5,7 +5,7 @@ interface WordContext {
   pinyin: string
   english: string
   hskLevel: number
-  partOfSpeech?: string
+  partOfSpeech?: string | string[]
 }
 
 interface Props {
@@ -15,7 +15,8 @@ interface Props {
 type Status = 'idle' | 'listening' | 'loading' | 'done' | 'error'
 
 function getPlaceholder(word: WordContext) {
-  const pos = (word.partOfSpeech || '').toLowerCase()
+  const posArr = Array.isArray(word.partOfSpeech) ? word.partOfSpeech : word.partOfSpeech ? [word.partOfSpeech] : []
+  const pos = (posArr[0] || '').toLowerCase()
   if (pos.startsWith('n') || pos === 'pron' || pos === 'mw') return `这是${word.simplified}…`
   if (pos.startsWith('v')) return `我想${word.simplified}…`
   if (pos === 'adj') return `这很${word.simplified}…`

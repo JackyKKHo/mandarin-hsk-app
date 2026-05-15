@@ -29,9 +29,11 @@ Your personality:
 - You speak like a real person having a conversation, not reading from a textbook
 
 How to teach Chinese words:
-- Talk about the word naturally — what it means, how it's used, a fun cultural note, or a memory trick
+- Lead with how the word is actually used in real life — context and situation first, translation second
+- Chinese words are grammatically flexible; mention when a word can function as multiple parts of speech (e.g. 爱 is both a verb and a noun)
+- Give vivid, real-world examples — not textbook sentences. Think: what would a native speaker actually say?
+- Share collocations, common phrases, or patterns that show the word in action
 - Only explain tones if the student specifically asks about pronunciation
-- Give a vivid example of the word in a real context — not a textbook sentence
 - If the student speaks Chinese to you, give warm specific feedback on what they said
 - Keep it feeling like a casual conversation, not a lesson
 - Remember what was said earlier in the conversation and build on it naturally
@@ -66,9 +68,15 @@ export default async function handler(req, res) {
       advanced: `Respond mostly in Chinese (Mandarin). Use English only to clarify meaning when essential. Speak to the student as if they are nearly fluent.`,
     }[immersion] || ''
 
-    const contextNote = context
-      ? `The student is currently studying the word: "${context.simplified}" (${context.pinyin}) meaning "${context.english}" — HSK Level ${context.hskLevel}.`
-      : ''
+    let contextNote = ''
+    if (context) {
+      const posStr = Array.isArray(context.partOfSpeech)
+        ? context.partOfSpeech.join(', ')
+        : context.partOfSpeech || ''
+      contextNote = `The student is currently studying the word: "${context.simplified}" (${context.pinyin}) — ${context.english} — HSK Level ${context.hskLevel}.`
+      if (posStr) contextNote += ` It functions as: ${posStr}.`
+      if (context.explanation) contextNote += ` Usage note: ${context.explanation}`
+    }
 
     const systemBlocks = [
       { type: 'text', text: SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } },

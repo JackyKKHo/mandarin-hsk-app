@@ -29,7 +29,7 @@ export default function SearchPage() {
     const raw = debouncedQuery.trim()
     return vocab.filter(w => {
       if (levelFilter && w.hskLevel !== levelFilter) return false
-      if (posFilter && !(w.partOfSpeech?.toLowerCase().includes(posFilter))) return false
+      if (posFilter && !(Array.isArray(w.partOfSpeech) ? w.partOfSpeech : [w.partOfSpeech ?? '']).some(p => p.toLowerCase().includes(posFilter))) return false
       if (!q) return !!(levelFilter || posFilter)
       return (
         w.simplified.includes(raw) ||
