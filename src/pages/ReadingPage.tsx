@@ -9,10 +9,12 @@ type View = 'list' | 'test' | 'result'
 
 const LEVEL_LABELS: Record<number, string> = {
   1: 'Beginner', 2: 'Beginner+', 3: 'Elementary', 4: 'Intermediate',
+  5: 'Upper-Inter.', 6: 'Advanced',
 }
 
 const LEVEL_COLORS: Record<number, string> = {
   1: '#2e7d32', 2: '#1565c0', 3: '#e65100', 4: '#6a1b9a',
+  5: '#00838f', 6: '#c62828',
 }
 
 // ── Reading test ──────────────────────────────────────────────────────────────
@@ -184,14 +186,14 @@ function ReadingResult({
 
 // ── Passage list ──────────────────────────────────────────────────────────────
 export default function ReadingPage() {
-  const [level, setLevel] = useState<1 | 2 | 3 | 4>(1)
+  const [level, setLevel] = useState<1 | 2 | 3 | 4 | 5 | 6>(1)
   const [view, setView] = useState<View>('list')
   const [activePassage, setActivePassage] = useState<ReadingPassage | null>(null)
   const [answers, setAnswers] = useState<number[]>([])
   const [lookup, setLookup] = useState<Map<string, VocabItem>>(new Map())
 
   useEffect(() => {
-    Promise.all([1, 2, 3, 4].map(loadLevel)).then(levels => {
+    Promise.all([1, 2, 3, 4, 5, 6].map(loadLevel)).then(levels => {
       const map = new Map<string, VocabItem>()
       for (const words of levels) {
         for (const w of words) {
@@ -240,7 +242,7 @@ export default function ReadingPage() {
 
       {/* Level tabs */}
       <div className="reading-level-tabs">
-        {([1, 2, 3, 4] as const).map(l => (
+        {([1, 2, 3, 4, 5, 6] as const).map(l => (
           <button
             key={l}
             className={`reading-level-tab${level === l ? ' active' : ''}`}
@@ -277,7 +279,7 @@ export default function ReadingPage() {
       </div>
 
       <p className="reading-total-note">
-        {passages.length} passages across HSK 1–4
+        {passages.length} passages across HSK 1–6
       </p>
     </div>
   )

@@ -37,12 +37,14 @@ import CantonesePage from './pages/CantonesePage'
 import FlashcardsPage from './pages/FlashcardsPage'
 import ReadingPage from './pages/ReadingPage'
 import SentenceReviewPage from './pages/SentenceReviewPage'
+import PWAInstallBanner from './components/PWAInstallBanner'
 
 export default function App() {
   return (
     <AuthProvider>
     <BrowserRouter>
       <StopAudioOnNavigate />
+      <PWAInstallBanner />
       <BottomNav />
       <FeedbackWidget />
       <Routes>

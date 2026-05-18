@@ -7,7 +7,7 @@ export interface ReadingQuestion {
 
 export interface ReadingPassage {
   id: string
-  level: 1 | 2 | 3 | 4
+  level: 1 | 2 | 3 | 4 | 5 | 6
   title: string
   titleEn: string
   text: string
@@ -619,9 +619,346 @@ const passages: ReadingPassage[] = [
       },
     ],
   },
+
+  // ── HSK 5 ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'hsk5-1',
+    level: 5,
+    title: '人工智能的机遇与挑战',
+    titleEn: 'Opportunities and Challenges of Artificial Intelligence',
+    text:
+      '近年来，人工智能技术的飞速发展引发了全球范围内的广泛讨论。\n' +
+      '一方面，人工智能在医疗诊断、语言翻译、自动驾驶等领域展现出巨大的应用潜力，极大地提高了生产效率。\n' +
+      '另一方面，随着智能机器逐步取代人工劳动，大量传统岗位面临消失的风险，社会就业结构将发生深刻变革。\n' +
+      '此外，人工智能系统的决策过程往往缺乏透明度，引发了公众对算法偏见和数据隐私的担忧。\n' +
+      '专家指出，技术本身并无善恶之分，关键在于人类如何规范和引导其发展方向。\n' +
+      '各国政府和企业需要在推动创新的同时，建立健全相应的伦理规范与法律框架，确保人工智能造福全人类。',
+    translation:
+      'In recent years, the rapid development of artificial intelligence technology has sparked widespread discussion around the globe. ' +
+      'On one hand, AI has demonstrated tremendous application potential in fields such as medical diagnosis, language translation, and autonomous driving, greatly improving productivity. ' +
+      'On the other hand, as intelligent machines progressively replace human labour, a large number of traditional jobs face the risk of disappearing, and the social employment structure will undergo profound transformation. ' +
+      'Furthermore, the decision-making processes of AI systems often lack transparency, raising public concerns about algorithmic bias and data privacy. ' +
+      'Experts point out that technology itself is neither good nor bad — what matters is how human beings regulate and guide its direction of development. ' +
+      'Governments and enterprises around the world need to foster innovation while establishing comprehensive ethical norms and legal frameworks to ensure AI benefits all of humanity.',
+    questions: [
+      {
+        q: '文章提到人工智能在哪些领域有应用？',
+        qEn: 'Which fields does the article mention AI being applied in?',
+        options: ['农业、建筑和旅游', '医疗、翻译和自动驾驶', '教育、金融和体育', '新闻、时装和音乐'],
+        answer: 1,
+      },
+      {
+        q: '人工智能带来的主要社会问题是什么？',
+        qEn: 'What is the main social problem brought by AI?',
+        options: ['能源消耗增加', '网络安全漏洞', '传统岗位面临消失', '国际竞争加剧'],
+        answer: 2,
+      },
+      {
+        q: '"算法偏见"指的是什么问题？',
+        qEn: 'What issue does "algorithmic bias" refer to?',
+        options: ['计算速度不够快', 'AI决策不公平或不透明', '程序出现代码错误', '机器不能理解人类情感'],
+        answer: 1,
+      },
+      {
+        q: '专家认为解决人工智能问题的关键是什么？',
+        qEn: 'What do experts say is key to addressing AI problems?',
+        options: ['停止开发人工智能', '人类规范和引导技术发展', '只允许政府使用AI', '增加对AI研究的投入'],
+        answer: 1,
+      },
+      {
+        q: '文章对人工智能总体持什么态度？',
+        qEn: 'What is the article\'s overall attitude towards artificial intelligence?',
+        options: ['完全乐观', '完全悲观', '客观，承认机遇与风险并存', '无法判断'],
+        answer: 2,
+      },
+    ],
+  },
+
+  {
+    id: 'hsk5-2',
+    level: 5,
+    title: '职场压力与心理健康',
+    titleEn: 'Workplace Stress and Mental Health',
+    text:
+      '在现代职场中，高强度的工作压力已经成为影响员工心理健康的重要因素。\n' +
+      '长时间加班、业绩考核、人际关系紧张等问题，使许多职场人陷入焦虑与疲惫之中。\n' +
+      '心理学研究表明，长期处于高压状态不仅会导致效率下降、创造力受损，还可能引发抑郁、失眠等严重的心理疾病。\n' +
+      '然而，在一些企业文化中，员工往往将过度工作视为敬业的表现，不愿承认自己面临心理困境。\n' +
+      '越来越多的企业开始意识到，员工的心理健康直接关系到企业的长远发展。\n' +
+      '为此，一些公司引入了员工援助计划，提供心理咨询服务，鼓励员工保持工作与生活的平衡。',
+    translation:
+      'In the modern workplace, high-intensity work pressure has become an important factor affecting employees\' mental health. ' +
+      'Problems such as prolonged overtime, performance appraisals, and strained interpersonal relationships leave many workplace employees mired in anxiety and exhaustion. ' +
+      'Psychological research shows that sustained exposure to high-pressure conditions not only causes reduced efficiency and impaired creativity, but can also trigger serious psychological disorders such as depression and insomnia. ' +
+      'However, in some corporate cultures, employees often regard overworking as a sign of dedication and are reluctant to acknowledge that they are facing psychological difficulties. ' +
+      'More and more companies are beginning to realise that employees\' mental health is directly related to the long-term development of the enterprise. ' +
+      'To this end, some companies have introduced employee assistance programmes, providing psychological counselling services and encouraging employees to maintain a work-life balance.',
+    questions: [
+      {
+        q: '文章提到哪些造成职场压力的因素？',
+        qEn: 'What factors causing workplace stress does the article mention?',
+        options: ['低薪和通勤问题', '长时间加班、业绩考核和人际关系紧张', '工作环境差和管理混乱', '晋升机会少和技能不足'],
+        answer: 1,
+      },
+      {
+        q: '长期高压对员工有什么影响？',
+        qEn: 'What effect does long-term high pressure have on employees?',
+        options: ['使他们更有创造力', '效率下降并可能引发心理疾病', '促使他们寻找新工作', '让他们更加专注'],
+        answer: 1,
+      },
+      {
+        q: '为什么部分员工不愿承认心理问题？',
+        qEn: 'Why are some employees reluctant to admit mental health problems?',
+        options: ['他们认为自己很坚强', '担心被解雇', '企业文化认为过度工作是敬业的表现', '心理咨询费用太高'],
+        answer: 2,
+      },
+      {
+        q: '"员工援助计划"的主要目的是什么？',
+        qEn: 'What is the main purpose of "employee assistance programmes"?',
+        options: ['提高员工工资', '减少公司运营成本', '提供心理支持，促进工作与生活平衡', '帮助员工晋升'],
+        answer: 2,
+      },
+      {
+        q: '企业为什么开始重视员工心理健康？',
+        qEn: 'Why are companies beginning to value employees\' mental health?',
+        options: ['政府法律的强制要求', '员工集体抗议', '员工心理健康与企业长远发展直接相关', '竞争对手都这样做'],
+        answer: 2,
+      },
+    ],
+  },
+
+  {
+    id: 'hsk5-3',
+    level: 5,
+    title: '可持续发展与绿色生活',
+    titleEn: 'Sustainable Development and Green Living',
+    text:
+      '随着全球气候变化问题日益严峻，可持续发展的理念正在被越来越多的国家和个人所接受。\n' +
+      '在日常生活中，减少碳排放的方式多种多样：选择公共交通、减少一次性塑料的使用、推广太阳能等清洁能源。\n' +
+      '中国政府已承诺在2060年前实现碳中和目标，并大力推进新能源汽车、绿色建筑等产业的发展。\n' +
+      '消费者的选择同样至关重要。研究显示，如果消费者偏好购买绿色产品，企业就会有更强的动力减少污染。\n' +
+      '然而，绿色生活方式的推广面临不少障碍，包括绿色产品价格偏高、消费者意识不足以及基础设施不完善等。\n' +
+      '专家认为，唯有政府政策、企业行动与公众参与三者协同配合，才能真正推动社会走向可持续发展的未来。',
+    translation:
+      'As the problem of global climate change becomes increasingly serious, the concept of sustainable development is being embraced by more and more countries and individuals. ' +
+      'In daily life, there are many ways to reduce carbon emissions: choosing public transport, reducing the use of single-use plastics, and promoting clean energy sources such as solar power. ' +
+      'The Chinese government has pledged to achieve carbon neutrality before 2060 and is vigorously advancing the development of industries such as new-energy vehicles and green buildings. ' +
+      'Consumer choices are equally crucial. Research shows that if consumers prefer to buy green products, businesses will have stronger motivation to reduce pollution. ' +
+      'However, promoting a green lifestyle faces many obstacles, including the high prices of green products, insufficient consumer awareness, and incomplete infrastructure. ' +
+      'Experts believe that only through the coordinated cooperation of government policy, corporate action, and public participation can society truly move towards a sustainable future.',
+    questions: [
+      {
+        q: '文章提到了哪些减少碳排放的方式？',
+        qEn: 'Which ways to reduce carbon emissions does the article mention?',
+        options: ['种树和节约用水', '公共交通、减少塑料、推广清洁能源', '减少出行和禁止开车', '改变饮食习惯和减少用电'],
+        answer: 1,
+      },
+      {
+        q: '中国政府的碳中和目标是什么时候实现？',
+        qEn: 'When does the Chinese government aim to achieve carbon neutrality?',
+        options: ['2030年前', '2045年前', '2050年前', '2060年前'],
+        answer: 3,
+      },
+      {
+        q: '消费者的选择为什么重要？',
+        qEn: 'Why are consumer choices important?',
+        options: ['消费者是政府政策的主要来源', '消费者偏好影响企业减少污染的动力', '消费者直接控制企业的生产方式', '消费者比政府更了解环境问题'],
+        answer: 1,
+      },
+      {
+        q: '推广绿色生活方式面临哪些主要障碍？',
+        qEn: 'What are the main obstacles to promoting a green lifestyle?',
+        options: ['缺乏相关技术和创新', '价格偏高、意识不足、基础设施不完善', '政府不支持绿色产业', '媒体对绿色话题报道太少'],
+        answer: 1,
+      },
+      {
+        q: '实现可持续发展需要哪些方面的协同合作？',
+        qEn: 'What aspects need to cooperate to achieve sustainable development?',
+        options: ['科学家、工程师和艺术家', '政府、企业与公众', '发达国家与发展中国家', '教育机构与媒体'],
+        answer: 1,
+      },
+    ],
+  },
+
+  // ── HSK 6 ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'hsk6-1',
+    level: 6,
+    title: '儒家思想对现代社会的影响',
+    titleEn: 'The Influence of Confucianism on Modern Society',
+    text:
+      '儒家思想作为中国传统文化的核心，历经两千余年的演变，至今仍对中国乃至整个东亚社会产生着深远影响。\n' +
+      '儒家所倡导的"仁、义、礼、智、信"五常，不仅构成了传统道德体系的基础，也在无形中塑造了东亚社会重视家庭、尊重权威、强调集体利益的文化特征。\n' +
+      '在现代企业管理中，儒家的和谐理念与重视人际关系的思想，被认为是东亚经济腾飞的重要文化因素之一。\n' +
+      '然而，也有学者指出，儒家思想中过于强调等级秩序与服从权威的一面，在一定程度上阻碍了个体独立思考与批判性精神的发展。\n' +
+      '在全球化的今天，如何辩证地看待儒家遗产——吸收其精华、摒弃其糟粕——成为东亚知识界持续探讨的重要议题。\n' +
+      '无论如何，儒家思想作为人类文明史上影响最为深远的思想体系之一，其当代价值仍值得深入研究与挖掘。',
+    translation:
+      'As the core of traditional Chinese culture, Confucian thought has undergone more than two thousand years of evolution and continues to exert a profound influence on China and indeed the whole of East Asian society. ' +
+      'The five constants advocated by Confucianism — benevolence, righteousness, ritual propriety, wisdom, and faithfulness — not only form the foundation of the traditional moral system, but have also imperceptibly shaped the cultural characteristics of East Asian societies: emphasis on family, respect for authority, and prioritisation of collective interests. ' +
+      'In modern corporate management, the Confucian concepts of harmony and the importance placed on interpersonal relationships are considered one of the key cultural factors behind the economic rise of East Asia. ' +
+      'However, some scholars point out that the aspects of Confucian thought that place excessive emphasis on hierarchical order and deference to authority have, to some extent, impeded the development of individual independent thinking and a critical spirit. ' +
+      'In today\'s globalised world, how to view the Confucian heritage dialectically — absorbing its essence and discarding its dross — has become an important subject of ongoing discussion in East Asian intellectual circles. ' +
+      'Regardless, as one of the most influential thought systems in the history of human civilisation, the contemporary value of Confucian thought still merits in-depth research and exploration.',
+    questions: [
+      {
+        q: '儒家"五常"指的是哪五种品德？',
+        qEn: 'Which five virtues do the Confucian "Five Constants" refer to?',
+        options: ['忠、孝、节、义、廉', '仁、义、礼、智、信', '勤、俭、谦、和、敬', '诚、善、美、真、勇'],
+        answer: 1,
+      },
+      {
+        q: '儒家思想被认为是东亚经济腾飞的重要因素，主要体现在哪方面？',
+        qEn: 'In what way is Confucianism seen as an important factor in East Asia\'s economic rise?',
+        options: ['强调个人主义和创新', '重视和谐与人际关系', '推崇自由竞争和市场经济', '强调法制建设和民主治理'],
+        answer: 1,
+      },
+      {
+        q: '一些学者对儒家思想持批评态度的原因是什么？',
+        qEn: 'Why do some scholars take a critical view of Confucianism?',
+        options: ['儒家思想过于复杂难以理解', '儒家文化阻碍了科技的发展', '过于强调等级服从，阻碍独立思考', '儒家道德标准不适合现代生活'],
+        answer: 2,
+      },
+      {
+        q: '"辩证地看待儒家遗产"意味着什么？',
+        qEn: 'What does "viewing the Confucian heritage dialectically" mean?',
+        options: ['完全接受儒家所有思想', '完全否定儒家价值观', '吸收精华同时摒弃糟粕', '将儒家思想原封不动地应用于现代'],
+        answer: 2,
+      },
+      {
+        q: '文章的主要论点是什么？',
+        qEn: 'What is the main argument of the article?',
+        options: [
+          '儒家思想已经完全过时，应该被抛弃',
+          '儒家思想对现代社会既有正面影响也有局限性，值得深入研究',
+          '儒家思想是东亚成功的唯一原因',
+          '西方价值观比儒家思想更适合现代社会',
+        ],
+        answer: 1,
+      },
+    ],
+  },
+
+  {
+    id: 'hsk6-2',
+    level: 6,
+    title: '教育公平与社会流动',
+    titleEn: 'Educational Equity and Social Mobility',
+    text:
+      '教育历来被视为打破阶层壁垒、实现社会流动的重要途径。然而，在现实中，教育资源的不均衡分配使这一美好愿景大打折扣。\n' +
+      '城乡之间、重点学校与普通学校之间、不同经济背景家庭之间，在师资力量、硬件设施和教育机会上存在显著差距。\n' +
+      '以中国高考制度为例，尽管其本意是为寒门子弟提供向上流动的通道，但补习班的盛行、择校行为的普遍化，实际上加剧了教育竞争中家庭经济实力的决定性作用。\n' +
+      '与此同时，"内卷"现象的蔓延使得学生在激烈的同质化竞争中疲于奔命，教育的核心价值——培养人的全面发展——在分数压力下逐渐被侵蚀。\n' +
+      '推进教育公平，需要政府在资源配置上向薄弱地区倾斜，同时深化考试评价体系的改革，减少单一分数对人才选拔的绝对主导。\n' +
+      '唯有真正实现教育机会的均等化，社会流动的上升通道才能对所有人保持畅通。',
+    translation:
+      'Education has always been regarded as an important means of breaking down class barriers and achieving social mobility. In reality, however, the unequal distribution of educational resources greatly diminishes this ideal. ' +
+      'There are significant gaps in teaching quality, facilities, and educational opportunities between urban and rural areas, between key schools and ordinary schools, and between families of different economic backgrounds. ' +
+      'Take China\'s gaokao system as an example: although its original intention is to provide a channel of upward mobility for students from disadvantaged families, the prevalence of tutoring classes and the widespread practice of choosing schools have in practice amplified the decisive role of family economic power in educational competition. ' +
+      'At the same time, the spread of the "involution" phenomenon leaves students exhausted in fierce homogeneous competition, and the core value of education — nurturing the all-round development of individuals — is gradually eroded under the pressure of grades. ' +
+      'Advancing educational equity requires governments to direct resources towards disadvantaged areas in resource allocation, while also deepening reforms of examination and evaluation systems to reduce the absolute dominance of a single score in talent selection. ' +
+      'Only by genuinely achieving equal educational opportunity can the channels of upward social mobility remain open to everyone.',
+    questions: [
+      {
+        q: '文章认为教育资源不均衡体现在哪些方面？',
+        qEn: 'In what aspects does the article say educational resource inequality is manifested?',
+        options: ['教材内容不统一', '城乡差距、学校差距和家庭经济差距', '教师薪资水平不同', '升学考试制度不公平'],
+        answer: 1,
+      },
+      {
+        q: '高考制度的本意是什么？',
+        qEn: 'What was the original intention of the gaokao system?',
+        options: ['筛选最聪明的学生', '为寒门子弟提供向上流动的通道', '统一全国的教育标准', '减少高校招生的腐败现象'],
+        answer: 1,
+      },
+      {
+        q: '"内卷"在文中指的是什么现象？',
+        qEn: 'What phenomenon does "involution" refer to in the article?',
+        options: ['学生拒绝参加课外活动', '激烈的同质化竞争使学生疲惫', '教育内容脱离实际需求', '学生对学习失去兴趣'],
+        answer: 1,
+      },
+      {
+        q: '文章提出了哪些推进教育公平的建议？',
+        qEn: 'What suggestions does the article make for advancing educational equity?',
+        options: ['取消高考制度', '向薄弱地区倾斜资源并改革评价体系', '增加大学招生名额', '推广网络教育代替传统课堂'],
+        answer: 1,
+      },
+      {
+        q: '文章结尾的核心观点是什么？',
+        qEn: 'What is the core point at the end of the article?',
+        options: [
+          '竞争是教育进步的唯一动力',
+          '只有实现教育机会均等，社会流动才能真正畅通',
+          '政府应该完全控制教育资源的分配',
+          '分数是衡量学生能力的最好方式',
+        ],
+        answer: 1,
+      },
+    ],
+  },
+
+  {
+    id: 'hsk6-3',
+    level: 6,
+    title: '全球化背景下的文化认同',
+    titleEn: 'Cultural Identity in the Context of Globalisation',
+    text:
+      '全球化进程的深入推进，在促进各国经济互联互通的同时，也引发了一场关于文化认同的深层危机。\n' +
+      '随着英语作为国际通用语的强势地位不断巩固，以及好莱坞影视、流行音乐等西方流行文化的广泛传播，不少小语种和地方文化传统正面临边缘化乃至消亡的威胁。\n' +
+      '面对这一趋势，不同社会的应对方式截然不同。一些国家选择对外来文化采取保护性限制措施，以维护本土文化的独特性；另一些国家则更倾向于在开放与融合中寻求文化的创新性转化。\n' +
+      '从人类学的视角来看，文化认同并非一成不变的固态概念，而是在与他者的持续对话中动态建构的过程。\n' +
+      '问题的核心不在于如何抵御文化的外部影响，而在于一个社会是否具备足够的文化自信，能够在吸纳外来元素的同时，保持自身文化的主体性与创造力。\n' +
+      '在这个意义上，文化多样性的保护与全球化的推进，并非不可调和的矛盾，而是人类文明共同繁荣的两翼。',
+    translation:
+      'The deepening of the globalisation process, while promoting economic interconnection among nations, has also triggered a profound crisis of cultural identity. ' +
+      'As the dominant position of English as an international lingua franca is continuously consolidated, and Western popular culture such as Hollywood films and pop music spreads widely, many minority languages and local cultural traditions face the threat of marginalisation or even extinction. ' +
+      'Faced with this trend, different societies have responded in very different ways. Some countries choose to impose protective restrictions on foreign culture in order to preserve the uniqueness of their native culture; others are more inclined to seek the innovative transformation of culture through openness and integration. ' +
+      'From an anthropological perspective, cultural identity is not a static, unchanging concept, but a process of dynamic construction through continuous dialogue with others. ' +
+      'The core of the issue is not how to resist external cultural influences, but whether a society possesses sufficient cultural confidence to maintain the subjectivity and creativity of its own culture while absorbing elements from outside. ' +
+      'In this sense, the protection of cultural diversity and the advancement of globalisation are not irreconcilable contradictions, but two wings of the common prosperity of human civilisation.',
+    questions: [
+      {
+        q: '文章认为全球化引发了什么危机？',
+        qEn: 'What crisis does the article say globalisation has triggered?',
+        options: ['经济不平等的加剧', '文化认同的深层危机', '国际政治关系的紧张', '科技发展的不平衡'],
+        answer: 1,
+      },
+      {
+        q: '小语种和地方文化面临威胁的原因是什么？',
+        qEn: 'What are the reasons for the threat faced by minority languages and local cultures?',
+        options: ['本地年轻人缺乏兴趣', '政府不重视文化保护', '英语强势地位和西方流行文化的广泛传播', '旅游业的过度开发'],
+        answer: 2,
+      },
+      {
+        q: '不同社会对外来文化的应对方式有哪两种？',
+        qEn: 'What are the two ways different societies respond to foreign culture?',
+        options: ['完全接受或完全拒绝', '保护性限制或在开放中寻求创新转化', '向政府申请资金或寻求国际援助', '推广本国文化或学习外国语言'],
+        answer: 1,
+      },
+      {
+        q: '从人类学角度看，文化认同是什么性质的概念？',
+        qEn: 'From an anthropological perspective, what kind of concept is cultural identity?',
+        options: ['固定不变的', '由政府决定的', '在与他者的对话中动态建构的', '完全由历史传统决定的'],
+        answer: 2,
+      },
+      {
+        q: '文章最终的核心论断是什么？',
+        qEn: 'What is the article\'s ultimate core argument?',
+        options: [
+          '全球化必然导致文化的同质化',
+          '文化多样性与全球化是对立矛盾的',
+          '文化多样性保护与全球化可以共同促进人类文明繁荣',
+          '只有抵制全球化才能保护本土文化',
+        ],
+        answer: 2,
+      },
+    ],
+  },
 ]
 
 export default passages
-export function getPassagesByLevel(level: 1 | 2 | 3 | 4) {
+export function getPassagesByLevel(level: 1 | 2 | 3 | 4 | 5 | 6) {
   return passages.filter(p => p.level === level)
 }

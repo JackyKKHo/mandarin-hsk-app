@@ -4993,3 +4993,22 @@ html.dark .rr-wrong   { background: #2a1010; border-color: #7f1d1d; }
 .rr-detail  { margin-top: 0.4rem; padding-left: 1.4rem; display: flex; flex-direction: column; gap: 0.15rem; }
 .rr-wrong-ans   { font-size: 0.82rem; color: var(--red); }
 .rr-correct-ans { font-size: 0.82rem; color: #2e7d32; font-weight: 600; }
+
+/* PWA install banner */
+.pwa-banner {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: var(--accent); color: #fff;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 0.75rem; padding: 0.6rem 1rem;
+  font-size: 0.85rem; line-height: 1.3;
+}
+.pwa-banner-text { flex: 1; }
+.pwa-banner-actions { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
+.pwa-banner-install {
+  background: #fff; color: var(--accent); border: none; border-radius: 6px;
+  padding: 0.3rem 0.75rem; font-size: 0.82rem; font-weight: 600; cursor: pointer;
+}
+.pwa-banner-dismiss {
+  background: none; border: none; color: rgba(255,255,255,0.8);
+  font-size: 1rem; cursor: pointer; padding: 0.2rem 0.3rem; line-height: 1;
+}

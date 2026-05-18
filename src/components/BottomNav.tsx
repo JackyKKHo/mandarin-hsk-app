@@ -12,11 +12,12 @@ const TABS = [
 ]
 
 const GUIDES_SUBMENU = [
-  { to: '/guides',    emoji: '🧭', label: 'All Guides' },
-  { to: '/cantonese', emoji: '粵', label: 'Cantonese' },
-  { to: '/frequency', emoji: '📊', label: 'Word Freq' },
-  { to: '/daily',     emoji: '📅', label: 'Daily' },
-  { to: '/reading',   emoji: '📖', label: 'Reading' },
+  { to: '/guides',           emoji: '🧭', label: 'All Guides' },
+  { to: '/cantonese',        emoji: '粵', label: 'Cantonese' },
+  { to: '/frequency',        emoji: '📊', label: 'Word Freq' },
+  { to: '/daily',            emoji: '📅', label: 'Daily' },
+  { to: '/reading',          emoji: '📖', label: 'Reading' },
+  { to: '/sentences/review', emoji: '✍️', label: 'Sentences' },
 ]
 
 export default function BottomNav() {

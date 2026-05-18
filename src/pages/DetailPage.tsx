@@ -36,6 +36,7 @@ export default function DetailPage() {
   const { dismissed, dismiss, undismiss } = useDismissed()
   const { isLearned, markLearned, unmarkLearned } = useProgress()
   const { isFavourite, toggleFavourite } = useFavourites()
+  const { mine, isMined } = useMinedSentences()
 
   if (loading) {
     return (
@@ -58,7 +59,6 @@ export default function DetailPage() {
   const learned = isLearned(word.id)
   const fav = isFavourite(word.id)
   const posLabels = normalizePOS(word.partOfSpeech)
-  const { mine, isMined } = useMinedSentences()
 
   const jsonLd = {
     '@context': 'https://schema.org',
