@@ -5012,3 +5012,61 @@ html.dark .rr-wrong   { background: #2a1010; border-color: #7f1d1d; }
   background: none; border: none; color: rgba(255,255,255,0.8);
   font-size: 1rem; cursor: pointer; padding: 0.2rem 0.3rem; line-height: 1;
 }
+
+/* Verb Frameworks page */
+.vf-rule-box {
+  display: flex; align-items: center; gap: 0.75rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 0.75rem 1rem; margin: 1rem 0;
+}
+.vf-rule-label {
+  font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--muted); white-space: nowrap;
+}
+.vf-rule-pattern {
+  font-family: monospace; font-size: 0.92rem; color: var(--accent);
+  background: none; border: none; padding: 0;
+}
+.vf-warning {
+  background: #fff8e1; border: 1px solid #ffe082; border-radius: 10px;
+  padding: 0.7rem 1rem; font-size: 0.85rem; color: #5d4037; margin-bottom: 1rem;
+}
+html.dark .vf-warning { background: #2a2000; border-color: #6d5100; color: #ffd54f; }
+.vf-section { margin-bottom: 1.5rem; }
+.vf-section-heading {
+  font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--muted); margin-bottom: 0.6rem;
+}
+.vf-table { display: flex; flex-direction: column; gap: 0.4rem; }
+.vf-row {
+  display: grid; grid-template-columns: 5rem 1fr 1fr;
+  gap: 0.5rem 0.75rem; align-items: center;
+  padding: 0.5rem 0.75rem; border-radius: 8px;
+  background: var(--surface); border: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+.vf-chinese { font-size: 1.1rem; font-weight: 600; color: var(--text); }
+.vf-pinyin  { color: var(--accent); font-size: 0.82rem; }
+.vf-english { color: var(--muted); font-size: 0.82rem; }
+.vf-cant    { grid-column: 1 / -1; font-size: 0.78rem; color: var(--muted); padding-top: 0.1rem; }
+.vf-note    { grid-column: 3; font-size: 0.75rem; color: var(--accent); font-style: italic; }
+.vf-pipeline {
+  margin: 2rem 0 4rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 1.25rem;
+  max-width: 680px; margin-left: auto; margin-right: auto;
+}
+.vf-pipeline-title {
+  font-size: 0.85rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--muted); margin-bottom: 1rem;
+}
+.vf-pipeline-steps { display: flex; flex-direction: column; gap: 0.75rem; }
+.vf-step { display: flex; align-items: flex-start; gap: 0.85rem; }
+.vf-step-num {
+  width: 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  font-size: 0.8rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.vf-step-q  { font-weight: 600; font-size: 0.88rem; }
+.vf-step-a  { font-size: 0.82rem; color: var(--muted); margin-top: 0.1rem; }

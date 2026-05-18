@@ -37,6 +37,7 @@ import CantonesePage from './pages/CantonesePage'
 import FlashcardsPage from './pages/FlashcardsPage'
 import ReadingPage from './pages/ReadingPage'
 import SentenceReviewPage from './pages/SentenceReviewPage'
+import VerbFrameworksPage from './pages/VerbFrameworksPage'
 import PWAInstallBanner from './components/PWAInstallBanner'
 
 export default function App() {
@@ -83,6 +84,7 @@ export default function App() {
         <Route path="/flashcards" element={<FlashcardsPage />} />
         <Route path="/reading" element={<ReadingPage />} />
         <Route path="/sentences/review" element={<SentenceReviewPage />} />
+        <Route path="/verb-frameworks" element={<VerbFrameworksPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>

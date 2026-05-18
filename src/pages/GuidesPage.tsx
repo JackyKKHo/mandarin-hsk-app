@@ -7,6 +7,7 @@ const GUIDES = [
   { to: '/radicals', emoji: '字', title: 'Radicals (部首)', desc: 'The building blocks of Chinese characters — learn to recognise them.' },
   { to: '/measure-words', emoji: '个', title: 'Measure Words (量词)', desc: '20 essential measure words with examples for every pattern.' },
   { to: '/keyboard', emoji: '⌨️', title: 'Pinyin Input', desc: 'How to type Chinese on any device using pinyin input methods.' },
+  { to: '/verb-frameworks', emoji: '动', title: '5 Verb Frameworks', desc: 'The 5 patterns that unlock 83% of Chinese compound verbs — result recipes, separable sandwiches, direction drops, and more.' },
 ]
 
 const PRACTICE = [

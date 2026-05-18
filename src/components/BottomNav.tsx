@@ -6,7 +6,7 @@ const TABS = [
   { to: '/hsk/1',  emoji: '📚', label: 'Browse',  match: (p: string) => p.startsWith('/hsk') || p.startsWith('/word') },
   { to: '/review',     emoji: '🔄', label: 'Review',  match: (p: string) => p === '/review' },
   { to: '/flashcards', emoji: '🗂', label: 'Cards',   match: (p: string) => p.startsWith('/flashcards') },
-  { to: '/guides', emoji: '🧭', label: 'Guides',  match: (p: string) => p.startsWith('/guides') || p.startsWith('/radicals') || p.startsWith('/measure') || p.startsWith('/daily') || p.startsWith('/songs') || p.startsWith('/tone') || p.startsWith('/scramble') || p === '/cantonese' || p === '/frequency' || p === '/reading' },
+  { to: '/guides', emoji: '🧭', label: 'Guides',  match: (p: string) => p.startsWith('/guides') || p.startsWith('/radicals') || p.startsWith('/measure') || p.startsWith('/daily') || p.startsWith('/songs') || p.startsWith('/tone') || p.startsWith('/scramble') || p === '/cantonese' || p === '/frequency' || p === '/reading' || p === '/verb-frameworks' },
   { to: '/stats',  emoji: '📊', label: 'Stats',   match: (p: string) => p === '/stats' },
   { to: '/search', emoji: '🔍', label: 'Search',  match: (p: string) => p === '/search' },
 ]
@@ -18,6 +18,7 @@ const GUIDES_SUBMENU = [
   { to: '/daily',            emoji: '📅', label: 'Daily' },
   { to: '/reading',          emoji: '📖', label: 'Reading' },
   { to: '/sentences/review', emoji: '✍️', label: 'Sentences' },
+  { to: '/verb-frameworks',  emoji: '动', label: 'Verb Tips' },
 ]
 
 export default function BottomNav() {
