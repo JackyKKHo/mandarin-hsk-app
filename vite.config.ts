@@ -44,9 +44,15 @@ export default defineConfig({
     chunkSizeWarningLimit: 900,
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
-          'vendor-hanzi': ['hanzi-writer', 'pinyin-pro'],
+        manualChunks(id) {
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom') || id.includes('node_modules/react-router-dom')) {
+            return 'vendor-react'
+          }
+          if (id.includes('node_modules/hanzi-writer') || id.includes('node_modules/pinyin-pro')) {
+            return 'vendor-hanzi'
+          }
+          const m = id.match(/data[\\/]hsk(\d)\.json/)
+          if (m) return `hsk-${m[1]}`
         },
       },
     },

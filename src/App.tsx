@@ -38,14 +38,20 @@ import FlashcardsPage from './pages/FlashcardsPage'
 import ReadingPage from './pages/ReadingPage'
 import SentenceReviewPage from './pages/SentenceReviewPage'
 import VerbFrameworksPage from './pages/VerbFrameworksPage'
+import ConversationPage from './pages/ConversationPage'
+import ProPage from './pages/ProPage'
 import PWAInstallBanner from './components/PWAInstallBanner'
+import ErrorBoundary from './components/ErrorBoundary'
+import StreakRecoveryModal from './components/StreakRecoveryModal'
 
 export default function App() {
   return (
+    <ErrorBoundary>
     <AuthProvider>
     <BrowserRouter>
       <StopAudioOnNavigate />
       <PWAInstallBanner />
+      <StreakRecoveryModal />
       <BottomNav />
       <FeedbackWidget />
       <Routes>
@@ -85,8 +91,11 @@ export default function App() {
         <Route path="/reading" element={<ReadingPage />} />
         <Route path="/sentences/review" element={<SentenceReviewPage />} />
         <Route path="/verb-frameworks" element={<VerbFrameworksPage />} />
+        <Route path="/conversation" element={<ConversationPage />} />
+        <Route path="/pro" element={<ProPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>
+    </ErrorBoundary>
   )
 }

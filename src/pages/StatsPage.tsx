@@ -130,6 +130,18 @@ export default function StatsPage() {
               ? <span className="stats-hero-sub today-badge">studied today ✓</span>
               : <span className="stats-hero-sub">study today to keep it!</span>
             }
+            <button
+              className="stats-share-btn"
+              onClick={() => {
+                const text = `🔥 ${streak}-day Mandarin streak on Mandarin Daily!\nI've learned ${totalLearned} words (${totalPct}% of HSK 1–9).\nhttps://www.mandarindaily.app`
+                if (navigator.share) {
+                  navigator.share({ text })
+                } else {
+                  navigator.clipboard.writeText(text)
+                  alert('Copied to clipboard!')
+                }
+              }}
+            >Share</button>
           </div>
           <div className="stats-hero-card">
             <span className="stats-hero-num">{totalLearned}</span>
@@ -155,6 +167,11 @@ export default function StatsPage() {
             <Link to="/daily" className="stats-hero-sub stats-link">start today's →</Link>
           </div>
           <div className="stats-hero-card">
+            <span className="stats-hero-num">✨</span>
+            <span className="stats-hero-label">Smart Mix</span>
+            <Link to="/practice/smart" className="stats-hero-sub stats-link">due + stretch words →</Link>
+          </div>
+          <div className="stats-hero-card">
             <span className="stats-hero-num">{minedSentences.length}</span>
             <span className="stats-hero-label">mined sentences</span>
             {dueSentences.length > 0
@@ -166,6 +183,11 @@ export default function StatsPage() {
             <span className="stats-hero-num">🛡️{freezes}</span>
             <span className="stats-hero-label">freeze tokens</span>
             <span className="stats-hero-sub">earn 1 every 7-day streak (max {MAX_FREEZES})</span>
+          </div>
+          <div className="stats-hero-card">
+            <span className="stats-hero-num">⭐</span>
+            <span className="stats-hero-label">Mandarin Daily Pro</span>
+            <Link to="/pro" className="stats-hero-sub stats-link">unlock more →</Link>
           </div>
         </div>
 

@@ -1,14 +1,14 @@
-import { useState, useEffect, useRef } from 'react'
+import { memo, useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useStreak } from '../hooks/useStreak'
 
 const TABS = [
-  { to: '/hsk/1',  emoji: '📚', label: 'Browse',  match: (p: string) => p.startsWith('/hsk') || p.startsWith('/word') },
-  { to: '/review',     emoji: '🔄', label: 'Review',  match: (p: string) => p === '/review' },
-  { to: '/flashcards', emoji: '🗂', label: 'Cards',   match: (p: string) => p.startsWith('/flashcards') },
-  { to: '/guides', emoji: '🧭', label: 'Guides',  match: (p: string) => p.startsWith('/guides') || p.startsWith('/radicals') || p.startsWith('/measure') || p.startsWith('/daily') || p.startsWith('/songs') || p.startsWith('/tone') || p.startsWith('/scramble') || p === '/cantonese' || p === '/frequency' || p === '/reading' || p === '/verb-frameworks' },
-  { to: '/stats',  emoji: '📊', label: 'Stats',   match: (p: string) => p === '/stats' },
-  { to: '/search', emoji: '🔍', label: 'Search',  match: (p: string) => p === '/search' },
+  { to: '/hsk/1',  emoji: '📚', label: 'Browse',  aria: 'Browse HSK vocabulary',          match: (p: string) => p.startsWith('/hsk') || p.startsWith('/word') },
+  { to: '/review',     emoji: '🔄', label: 'Review',  aria: 'Spaced repetition review',         match: (p: string) => p === '/review' },
+  { to: '/flashcards', emoji: '🗂', label: 'Cards',   aria: 'Custom flashcards',                match: (p: string) => p.startsWith('/flashcards') },
+  { to: '/guides', emoji: '🧭', label: 'Guides',  aria: 'Open guides menu',                 match: (p: string) => p.startsWith('/guides') || p.startsWith('/radicals') || p.startsWith('/measure') || p.startsWith('/daily') || p.startsWith('/songs') || p.startsWith('/tone') || p.startsWith('/scramble') || p === '/cantonese' || p === '/frequency' || p === '/reading' || p === '/verb-frameworks' },
+  { to: '/stats',  emoji: '📊', label: 'Stats',   aria: 'Stats and streak',                 match: (p: string) => p === '/stats' },
+  { to: '/search', emoji: '🔍', label: 'Search',  aria: 'Search all words',                 match: (p: string) => p === '/search' },
 ]
 
 const GUIDES_SUBMENU = [
@@ -21,7 +21,7 @@ const GUIDES_SUBMENU = [
   { to: '/verb-frameworks',  emoji: '动', label: 'Verb Tips' },
 ]
 
-export default function BottomNav() {
+function BottomNav() {
   const { pathname } = useLocation()
   const { streak } = useStreak()
   const [submenuOpen, setSubmenuOpen] = useState(false)
@@ -39,7 +39,7 @@ export default function BottomNav() {
   }, [submenuOpen])
 
   return (
-    <nav className="bottom-nav">
+    <nav className="bottom-nav" aria-label="Primary navigation">
       {TABS.map(tab => {
         const active = tab.match(pathname)
         const emoji = tab.to === '/stats' && streak > 0 ? '🔥' : tab.emoji
@@ -48,20 +48,30 @@ export default function BottomNav() {
           return (
             <div key={tab.to} ref={ref} className="bottom-nav-guides-wrap">
               {submenuOpen && (
-                <div className="bottom-nav-submenu">
+                <div className="bottom-nav-submenu" role="menu">
                   {GUIDES_SUBMENU.map(s => (
-                    <Link key={s.to} to={s.to} className={`bns-item${pathname === s.to || (s.to === '/guides' && active) ? ' active' : ''}`}>
-                      <span className="bns-emoji">{s.emoji}</span>
+                    <Link
+                      key={s.to}
+                      to={s.to}
+                      role="menuitem"
+                      aria-label={s.label}
+                      className={`bns-item${pathname === s.to || (s.to === '/guides' && active) ? ' active' : ''}`}
+                    >
+                      <span className="bns-emoji" aria-hidden="true">{s.emoji}</span>
                       <span className="bns-label">{s.label}</span>
                     </Link>
                   ))}
                 </div>
               )}
               <button
+                type="button"
                 className={`bottom-nav-tab${active ? ' active' : ''}`}
+                aria-label={tab.aria}
+                aria-expanded={submenuOpen}
+                aria-haspopup="menu"
                 onClick={() => setSubmenuOpen(o => !o)}
               >
-                <span className="bottom-nav-emoji">{emoji}</span>
+                <span className="bottom-nav-emoji" aria-hidden="true">{emoji}</span>
                 <span className="bottom-nav-label">Guides ▴</span>
               </button>
             </div>
@@ -69,11 +79,17 @@ export default function BottomNav() {
         }
 
         return (
-          <Link key={tab.to} to={tab.to} className={`bottom-nav-tab${active ? ' active' : ''}`}>
-            <span className="bottom-nav-emoji">{emoji}</span>
+          <Link
+            key={tab.to}
+            to={tab.to}
+            aria-label={tab.aria}
+            aria-current={active ? 'page' : undefined}
+            className={`bottom-nav-tab${active ? ' active' : ''}`}
+          >
+            <span className="bottom-nav-emoji" aria-hidden="true">{emoji}</span>
             <span className="bottom-nav-label">{tab.label}</span>
             {tab.to === '/stats' && streak > 0 && (
-              <span className="bottom-nav-streak">{streak}</span>
+              <span className="bottom-nav-streak" aria-label={`${streak} day streak`}>{streak}</span>
             )}
           </Link>
         )
@@ -81,3 +97,5 @@ export default function BottomNav() {
     </nav>
   )
 }
+
+export default memo(BottomNav)

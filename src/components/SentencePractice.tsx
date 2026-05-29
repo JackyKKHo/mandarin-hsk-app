@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { getSpeechRecognition, type SpeechRecognitionLike, type SpeechRecognitionEventLike } from '../types/speech'
 
 interface WordContext {
   simplified: string
@@ -27,7 +28,7 @@ export default function SentencePractice({ word }: Props) {
   const [sentence, setSentence] = useState('')
   const [feedback, setFeedback] = useState('')
   const [status, setStatus] = useState<Status>('idle')
-  const recognitionRef = useRef<any>(null)
+  const recognitionRef = useRef<SpeechRecognitionLike | null>(null)
 
   useEffect(() => {
     setSentence('')
@@ -37,7 +38,7 @@ export default function SentencePractice({ word }: Props) {
   }, [word.simplified])
 
   function startListening() {
-    const SpeechRecognitionAPI = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition
+    const SpeechRecognitionAPI = getSpeechRecognition()
     if (!SpeechRecognitionAPI) return
     const rec = new SpeechRecognitionAPI()
     rec.lang = 'zh-CN'
@@ -46,10 +47,9 @@ export default function SentencePractice({ word }: Props) {
     let silenceTimer: ReturnType<typeof setTimeout> | null = null
 
     rec.onstart = () => setStatus('listening')
-    rec.onresult = (e: any) => {
-      const t = Array.from(e.results).map((r: any) => r[0].transcript).join('')
+    rec.onresult = (e: SpeechRecognitionEventLike) => {
+      const t = Array.from(e.results).map(r => r[0].transcript).join('')
       setSentence(t)
-      if (rec._lastTranscript !== undefined) rec._lastTranscript = t
       if (silenceTimer) clearTimeout(silenceTimer)
       silenceTimer = setTimeout(() => rec.stop(), 2000)
     }
@@ -58,7 +58,6 @@ export default function SentencePractice({ word }: Props) {
       setStatus('idle')
     }
     rec.onerror = () => setStatus('idle')
-    rec._lastTranscript = ''
     recognitionRef.current = rec
     rec.start()
   }
@@ -84,9 +83,10 @@ export default function SentencePractice({ word }: Props) {
       const data = await res.json()
       setFeedback(data.feedback)
       setStatus('done')
-    } catch (e: any) {
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : ''
       setFeedback(
-        e?.message === 'rate_limit'
+        msg === 'rate_limit'
           ? "You've reached the hourly limit. Try again in a bit!"
           : 'Could not get feedback — please try again.'
       )

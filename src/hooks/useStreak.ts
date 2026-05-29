@@ -10,6 +10,7 @@ interface StreakData {
 
 const KEY = 'hsk-streak'
 const FREEZE_KEY = 'hsk-freeze'
+const RECOVERY_SHOWN_KEY = 'hsk-recovery-shown'
 export const MAX_FREEZES = 3
 
 function today(): string {
@@ -45,31 +46,32 @@ function saveFreezes(n: number) {
   localStorage.setItem(FREEZE_KEY, String(Math.max(0, Math.min(MAX_FREEZES, n))))
 }
 
-// Run once at init: auto-use a freeze if we missed exactly 1 day
-function initStreak(): { data: StreakData; freezes: number; freezeUsed: boolean } {
-  const local = loadLocal()
-  const f = loadFreezes()
+export type RecoveryState =
+  | { kind: 'recoverable'; streak: number; freezesAvailable: number }
+  | { kind: 'lost'; streak: number }
+  | null
+
+function computeRecovery(data: StreakData, freezes: number): RecoveryState {
+  if (data.count === 0) return null
   const t = today()
   const y = yesterday()
-
-  if (local.count > 0 && local.lastDate !== t && local.lastDate !== y && f > 0) {
-    if (local.lastDate === daysAgo(2)) {
-      const next = { count: local.count, lastDate: y }
-      localStorage.setItem(KEY, JSON.stringify(next))
-      saveFreezes(f - 1)
-      return { data: next, freezes: f - 1, freezeUsed: true }
-    }
+  if (data.lastDate === t || data.lastDate === y) return null
+  // Streak broken: studied 2+ days ago. Offer freeze if we missed exactly 1 day
+  if (data.lastDate === daysAgo(2) && freezes > 0) {
+    return { kind: 'recoverable', streak: data.count, freezesAvailable: freezes }
   }
-  return { data: local, freezes: f, freezeUsed: false }
+  return { kind: 'lost', streak: data.count }
 }
-
-const _init = initStreak()
 
 export function useStreak() {
   const { user } = useAuth()
-  const [streak, setStreak] = useState<StreakData>(_init.data)
-  const [freezes, setFreezes] = useState<number>(_init.freezes)
-  const [freezeUsed] = useState<boolean>(_init.freezeUsed)
+  const [streak, setStreak] = useState<StreakData>(() => loadLocal())
+  const [freezes, setFreezes] = useState<number>(() => loadFreezes())
+  const [recovery, setRecovery] = useState<RecoveryState>(() => {
+    const shownToday = localStorage.getItem(RECOVERY_SHOWN_KEY) === today()
+    if (shownToday) return null
+    return computeRecovery(loadLocal(), loadFreezes())
+  })
 
   useEffect(() => {
     if (!user) return
@@ -108,7 +110,6 @@ export function useStreak() {
       localStorage.setItem(KEY, JSON.stringify(next))
       addToHistory(t)
 
-      // Award a freeze token every 7 streak days (max 3)
       if (newCount % 7 === 0) {
         setFreezes(f => {
           const nf = Math.min(f + 1, MAX_FREEZES)
@@ -124,5 +125,40 @@ export function useStreak() {
     })
   }, [user])
 
-  return { streak: streak.count, lastDate: streak.lastDate, recordStudy, freezes, freezeUsed }
+  const useFreeze = useCallback(() => {
+    if (freezes <= 0) return false
+    const y = yesterday()
+    setStreak(prev => {
+      const next = { count: prev.count, lastDate: y }
+      localStorage.setItem(KEY, JSON.stringify(next))
+      if (user) {
+        supabase.from('streaks').upsert({ user_id: user.id, count: prev.count, last_date: y })
+      }
+      return next
+    })
+    setFreezes(f => {
+      const nf = Math.max(0, f - 1)
+      saveFreezes(nf)
+      return nf
+    })
+    setRecovery(null)
+    localStorage.setItem(RECOVERY_SHOWN_KEY, today())
+    return true
+  }, [freezes, user])
+
+  const dismissRecovery = useCallback(() => {
+    setRecovery(null)
+    localStorage.setItem(RECOVERY_SHOWN_KEY, today())
+  }, [])
+
+  return {
+    streak: streak.count,
+    lastDate: streak.lastDate,
+    recordStudy,
+    freezes,
+    recovery,
+    useFreeze,
+    dismissRecovery,
+    freezeUsed: false,
+  }
 }

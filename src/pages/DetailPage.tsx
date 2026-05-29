@@ -72,10 +72,21 @@ export default function DetailPage() {
     },
   }
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mandarindaily.app/' },
+      { '@type': 'ListItem', position: 2, name: `HSK ${word.hskLevel}`, item: `https://www.mandarindaily.app/hsk/${word.hskLevel}` },
+      { '@type': 'ListItem', position: 3, name: `${word.simplified} — ${word.english}`, item: `https://www.mandarindaily.app/word/${word.id}` },
+    ],
+  }
+
   return (
     <div className="detail-page">
       <WordSEO word={word} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <div className="detail-nav">
         <Link to={`/hsk/${word.hskLevel}`} className="back-link" style={{ marginBottom: 0 }}>
           ← HSK {word.hskLevel}

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { MaleCharacter, FemaleCharacter } from '../components/WelcomeCharacters'
+import { usePWAInstall } from '../hooks/usePWAInstall'
 
 const LEVELS = [
   { level: 1, label: 'HSK 1', words: 500,  tag: 'Beginner',     desc: 'Basic greetings, numbers, family' },
@@ -35,6 +36,7 @@ export default function WelcomePage() {
   const navigate = useNavigate()
   const [step, setStep] = useState<1 | 2>(1)
   const [selectedLevel, setSelectedLevel] = useState<number | null>(null)
+  const { canInstall, install } = usePWAInstall()
 
   function finish(level: number) {
     markOnboarded()
@@ -76,6 +78,11 @@ export default function WelcomePage() {
           <button className="btn-primary welcome-cta" onClick={() => setStep(2)}>
             Get started →
           </button>
+          {canInstall && (
+            <button className="welcome-install-cta" onClick={install} type="button">
+              📱 Install as an app
+            </button>
+          )}
           <button className="welcome-skip" onClick={skip}>Skip</button>
         </div>
       </div>

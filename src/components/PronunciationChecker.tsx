@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import { pinyin } from 'pinyin-pro'
+import { getSpeechRecognition, type SpeechRecognitionLike, type SpeechRecognitionEventLike } from '../types/speech'
 
 interface Props {
   target: string   // simplified Chinese characters
@@ -99,13 +100,12 @@ function overallGrade(syllables: SyllableFeedback[]): 'perfect' | 'tones' | 'sou
   return 'miss'
 }
 
-const SpeechRecognition =
-  (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
+const SpeechRecognition = getSpeechRecognition()
 
 export default function PronunciationChecker({ target }: Props) {
   const [status, setStatus] = useState<Status>('idle')
   const [syllables, setSyllables] = useState<SyllableFeedback[]>([])
-  const recRef = useRef<any>(null)
+  const recRef = useRef<SpeechRecognitionLike | null>(null)
 
   if (!SpeechRecognition) return null
 
@@ -113,17 +113,18 @@ export default function PronunciationChecker({ target }: Props) {
     setStatus('listening')
     setSyllables([])
 
-    const rec = new SpeechRecognition()
+    const rec = new SpeechRecognition!()
     recRef.current = rec
     rec.lang = 'zh-CN'
     rec.continuous = false
     rec.interimResults = false
     rec.maxAlternatives = 5
 
-    rec.onresult = (e: any) => {
+    rec.onresult = (e: SpeechRecognitionEventLike) => {
+      const first = e.results[0] as SpeechRecognitionEventLike['results'][number] & { [index: number]: { transcript: string } }
       const alts: string[] = []
-      for (let i = 0; i < e.results[0].length; i++) {
-        alts.push(e.results[0][i].transcript.trim())
+      for (let i = 0; i < first.length; i++) {
+        alts.push(first[i].transcript.trim())
       }
       setSyllables(analyseAlternatives(alts, target))
       setStatus('result')

@@ -1,5 +1,8 @@
 import { useState, useRef, useEffect } from 'react'
 import { playAudio } from '../audio'
+import { getSpeechRecognition, type SpeechRecognitionLike, type SpeechRecognitionEventLike } from '../types/speech'
+
+type SpeechRecWithCache = SpeechRecognitionLike & { lastTranscript?: string }
 
 interface WordContext {
   simplified: string
@@ -41,7 +44,7 @@ export default function TeacherButton({ context }: Props) {
   const [immersion, setImmersion] = useState<ImmersionLevel>(getImmersion)
   const [showImmersionMenu, setShowImmersionMenu] = useState(false)
 
-  const recognitionRef = useRef<any>(null)
+  const recognitionRef = useRef<SpeechRecWithCache | null>(null)
   const bottomRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -100,8 +103,9 @@ export default function TeacherButton({ context }: Props) {
         setMessages(prev => [...prev, { role: 'teacher', text: data.text }])
         setStatus('idle')
       }
-    } catch (e: any) {
-      const msg = e?.message === 'rate_limit'
+    } catch (e) {
+      const errMsg = e instanceof Error ? e.message : ''
+      const msg = errMsg === 'rate_limit'
         ? "You've reached the hourly limit for Lin Wei. Try again in a bit!"
         : 'Sorry, I had trouble connecting. Please try again.'
       setMessages(prev => [...prev, { role: 'teacher', text: msg }])
@@ -110,18 +114,18 @@ export default function TeacherButton({ context }: Props) {
   }
 
   function startListening() {
-    const SpeechRecognitionAPI = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition
+    const SpeechRecognitionAPI = getSpeechRecognition()
     if (!SpeechRecognitionAPI) return
 
-    const rec = new SpeechRecognitionAPI()
+    const rec = new SpeechRecognitionAPI() as SpeechRecWithCache
     rec.lang = 'zh-CN'
     rec.continuous = true
     rec.interimResults = true
     let silenceTimer: ReturnType<typeof setTimeout> | null = null
 
     rec.onstart = () => setStatus('listening')
-    rec.onresult = (e: any) => {
-      const t = Array.from(e.results).map((r: any) => r[0].transcript).join('')
+    rec.onresult = (e: SpeechRecognitionEventLike) => {
+      const t = Array.from(e.results).map(r => r[0].transcript).join('')
       setInput(t)
       if (silenceTimer) clearTimeout(silenceTimer)
       silenceTimer = setTimeout(() => rec.stop(), 2500)
@@ -133,8 +137,8 @@ export default function TeacherButton({ context }: Props) {
       else setStatus('idle')
     }
     rec.onerror = () => setStatus('idle')
-    rec.addEventListener('result', (e: any) => {
-      const t = Array.from(e.results).map((r: any) => r[0].transcript).join('')
+    rec.addEventListener('result', (e: SpeechRecognitionEventLike) => {
+      const t = Array.from(e.results).map(r => r[0].transcript).join('')
       if (recognitionRef.current) recognitionRef.current.lastTranscript = t
     })
     recognitionRef.current = rec

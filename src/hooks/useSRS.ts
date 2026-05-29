@@ -37,7 +37,7 @@ function saveLocal(data: Record<string, SRSCard>) {
   localStorage.setItem(KEY, JSON.stringify(data))
 }
 
-function nextCard(card: SRSCard | undefined, quality: SRSQuality): SRSCard {
+export function nextCard(card: SRSCard | undefined, quality: SRSQuality): SRSCard {
   const prev = card ?? { interval: 0, easeFactor: 2.5, dueDate: today(), reps: 0 }
 
   if (quality === 'again') {

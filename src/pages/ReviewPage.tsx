@@ -66,7 +66,9 @@ export default function ReviewPage() {
   const [sessionStreak, setSessionStreak] = useState(0)
   const [bestStreak, setBestStreak] = useState(0)
   const [streakFlash, setStreakFlash] = useState(false)
+  const [elapsedMs, setElapsedMs] = useState(0)
   const initialLengthRef = useRef(0)
+  const startedAtRef = useRef<number>(0)
 
   const stageRef = useRef(stage)
   const rateRef = useRef<(q: SRSQuality) => void>(() => {})
@@ -96,6 +98,7 @@ export default function ReviewPage() {
 
     if (nextIndex >= newQueue.length) {
       recordStudy()
+      setElapsedMs(Date.now() - startedAtRef.current)
       setQueue(newQueue)
       setStage('complete')
     } else {
@@ -131,12 +134,21 @@ export default function ReviewPage() {
     recordNewCardsToday(alreadyNew + newCards.length)
     const q = shuffle([...dueCards, ...newCards])
     initialLengthRef.current = q.length
+    startedAtRef.current = Date.now()
+    setElapsedMs(0)
     setQueue(q)
     setIndex(0)
     setResults({ again: 0, good: 0, easy: 0 })
     setSessionStreak(0)
     setBestStreak(0)
     setStage(q.length > 0 ? 'front' : 'complete')
+  }
+
+  function formatDuration(ms: number) {
+    const s = Math.round(ms / 1000)
+    const m = Math.floor(s / 60)
+    const r = s % 60
+    return m > 0 ? `${m}m ${r}s` : `${r}s`
   }
 
   if (stage === 'idle') {
@@ -190,6 +202,8 @@ export default function ReviewPage() {
     const total = results.again + results.good + results.easy
     const pct = total > 0 ? Math.round(((results.good + results.easy) / total) * 100) : 0
     const { text: scoreText, cls: scoreCls } = scoreLabel(pct)
+    const minutes = elapsedMs / 60000
+    const cardsPerMin = minutes > 0 ? Math.round(total / minutes) : 0
     return (
       <div className="practice-page">
         <div className="practice-complete-card">
@@ -213,6 +227,14 @@ export default function ReviewPage() {
               </div>
             )}
           </div>
+
+          {elapsedMs > 0 && (
+            <div className="review-pace">
+              <span>⏱ {formatDuration(elapsedMs)}</span>
+              <span>·</span>
+              <span>{cardsPerMin} cards/min</span>
+            </div>
+          )}
 
           <div className="complete-actions">
             <button className="btn-primary" onClick={start}>Review again</button>

@@ -9,8 +9,8 @@ export function usePracticeWords(levelParam: string | undefined): {
   backPath: string
   loading: boolean
 } {
-  const { isDue } = useSRS()
-  const isNumericLevel = levelParam !== 'favourites' && levelParam !== 'review'
+  const { isDue, getCard } = useSRS()
+  const isNumericLevel = levelParam !== 'favourites' && levelParam !== 'review' && levelParam !== 'smart'
   const numericLevel = isNumericLevel ? Number(levelParam) || 1 : undefined
   const { words: allWords, loading } = useVocab(numericLevel)
 
@@ -39,6 +39,32 @@ export function usePracticeWords(levelParam: string | undefined): {
         loading: false,
       }
     }
+    if (levelParam === 'smart') {
+      // Smart Mix: due cards from every level + a sprinkle of new ones the user hasn't seen
+      const due = allWords.filter(w => isDue(w.id))
+      const unseen = allWords.filter(w => !getCard(w.id))
+      // Pick the unseen words from the lowest level the user hasn't fully started
+      const stretch: typeof unseen = []
+      const byLevel = new Map<number, typeof unseen>()
+      for (const w of unseen) {
+        const arr = byLevel.get(w.hskLevel) ?? []
+        arr.push(w)
+        byLevel.set(w.hskLevel, arr)
+      }
+      for (let lvl = 1; lvl <= 9 && stretch.length < 10; lvl++) {
+        const lvlUnseen = byLevel.get(lvl) ?? []
+        for (const w of lvlUnseen) {
+          if (stretch.length >= 10) break
+          stretch.push(w)
+        }
+      }
+      return {
+        words: [...due, ...stretch],
+        title: '✨ Smart Mix',
+        backPath: '/stats',
+        loading: false,
+      }
+    }
     const level = Number(levelParam) || 1
     return {
       words: allWords,
@@ -46,5 +72,5 @@ export function usePracticeWords(levelParam: string | undefined): {
       backPath: `/hsk/${level}`,
       loading: false,
     }
-  }, [levelParam, isDue, allWords, loading])
+  }, [levelParam, isDue, getCard, allWords, loading])
 }
