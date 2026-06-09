@@ -2,6 +2,26 @@ import type { VocabItem } from '../types'
 
 const cache = new Map<number, VocabItem[]>()
 
+function mulberry32(seed: number) {
+  let t = seed >>> 0
+  return () => {
+    t = (t + 0x6D2B79F5) >>> 0
+    let r = Math.imul(t ^ (t >>> 15), 1 | t)
+    r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296
+  }
+}
+
+function seededShuffle<T>(arr: T[], seed: number): T[] {
+  const out = arr.slice()
+  const rand = mulberry32(seed)
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1))
+    ;[out[i], out[j]] = [out[j], out[i]]
+  }
+  return out
+}
+
 export async function loadLevel(level: number): Promise<VocabItem[]> {
   if (cache.has(level)) return cache.get(level)!
   const loaders: Record<number, () => Promise<{ default: VocabItem[] }>> = {
@@ -16,7 +36,7 @@ export async function loadLevel(level: number): Promise<VocabItem[]> {
     9: () => import('../../data/hsk9.json'),
   }
   const mod = await loaders[level]()
-  const words = mod.default as VocabItem[]
+  const words = seededShuffle(mod.default as VocabItem[], level * 9973 + 1)
   cache.set(level, words)
   return words
 }
