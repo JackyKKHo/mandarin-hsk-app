@@ -38,6 +38,7 @@ import FlashcardsPage from './pages/FlashcardsPage'
 import ReadingPage from './pages/ReadingPage'
 import SentenceReviewPage from './pages/SentenceReviewPage'
 import VerbFrameworksPage from './pages/VerbFrameworksPage'
+import RecordPage from './pages/RecordPage'
 import ProPage from './pages/ProPage'
 import PWAInstallBanner from './components/PWAInstallBanner'
 import ErrorBoundary from './components/ErrorBoundary'
@@ -90,6 +91,7 @@ export default function App() {
         <Route path="/reading" element={<ReadingPage />} />
         <Route path="/sentences/review" element={<SentenceReviewPage />} />
         <Route path="/verb-frameworks" element={<VerbFrameworksPage />} />
+        <Route path="/record" element={<RecordPage />} />
         <Route path="/pro" element={<ProPage />} />
       </Routes>
     </BrowserRouter>

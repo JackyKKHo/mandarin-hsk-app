@@ -11,6 +11,7 @@ const GUIDES = [
 ]
 
 const PRACTICE = [
+  { to: '/record', emoji: '🎙️', title: 'Record & Score', desc: 'Read a phrase aloud and get instant AI feedback on tones, initials, and finals — per character.' },
   { to: '/daily', emoji: '📅', title: 'Daily Challenge', desc: 'Ten words from across all HSK levels — refreshes every day.' },
   { to: '/tone/1', emoji: '🎵', title: 'Tone Trainer', desc: 'Listen and identify the correct tones. Per HSK level.' },
   { to: '/scramble/1', emoji: '🔀', title: 'Sentence Scramble', desc: 'Reconstruct scrambled example sentences character by character.' },
