@@ -1,5 +1,7 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "rewrites": [
+    { "source": "/((?!api/|assets/|@vite/|@react-refresh|@fs/|@id/|src/|node_modules/|__vite_ping|sw\\.js|manifest\\.webmanifest|favicon\\.ico).*)", "destination": "/index.html" }
+  ],
   "crons": [
     {
       "path": "/api/daily-reminder",
