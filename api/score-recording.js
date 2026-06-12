@@ -227,6 +227,13 @@ export default async function handler(req, res) {
       const slice = frames.filter(f => f.t >= w.tStart && f.t <= w.tEnd)
       const detectedTone = classifyTone(slice, median)
 
+      const dur = w.tEnd - w.tStart || 1
+      const voicedSlice = slice.filter(s => s.f != null)
+      const pitchPoints = voicedSlice.map(s => ({
+        t: (s.t - w.tStart) / dur,
+        s: 12 * Math.log2(s.f / median),
+      }))
+
       const initialOk = heard ? heardInitial === expInitial : null
       const finalOk = heard ? heardFinal === expFinal : null
 
@@ -252,6 +259,7 @@ export default async function handler(req, res) {
         },
         detectedTone,
         timing: { tStart: w.tStart, tEnd: w.tEnd },
+        pitch: pitchPoints,
       }
     })
 

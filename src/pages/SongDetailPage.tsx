@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
 import TonedPinyin from '../components/TonedPinyin'
+import RecordButton from '../components/RecordButton'
 import { useSEO } from '../hooks/useSEO'
 import { SONGS } from '../data/songs'
 
@@ -93,7 +94,10 @@ export default function SongDetailPage() {
               <div className="song-section-label">{section.label}</div>
               {section.lines.map((line, i) => (
                 <div key={i} className="song-line">
-                  <div className="song-line-chinese">{line.chinese}</div>
+                  <div className="song-line-row">
+                    <div className="song-line-chinese">{line.chinese}</div>
+                    <RecordButton zh={line.chinese} pinyin={line.pinyin} en={line.english} />
+                  </div>
                   {showPinyin && (
                     <TonedPinyin pinyin={line.pinyin} className="song-line-pinyin" />
                   )}

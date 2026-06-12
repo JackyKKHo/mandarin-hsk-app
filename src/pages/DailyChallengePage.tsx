@@ -5,6 +5,7 @@ import { useSRS } from '../hooks/useSRS'
 import { useStreak } from '../hooks/useStreak'
 import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
+import RecordButton from '../components/RecordButton'
 import type { VocabItem } from '../types'
 
 interface WordResult { word: VocabItem; correct: boolean }
@@ -239,6 +240,7 @@ export default function DailyChallengePage() {
                   <TonedPinyin pinyin={w.pinyin} className="review-card-pinyin" />
                   {w.partOfSpeech && <span className="pos-badge" style={{ fontSize: '0.7rem' }}>{w.partOfSpeech}</span>}
                   <AudioButton text={w.simplified} audioUrl={w.audio.wordAudioUrl} label="" />
+                  <RecordButton zh={w.simplified} pinyin={w.pinyin} en={w.english} />
                   <span style={{ marginLeft: 'auto', fontSize: '0.8rem', fontWeight: 600, color: correct ? 'var(--success, #22c55e)' : 'var(--error, #ef4444)' }}>
                     {correct ? '✓' : '✗'}
                   </span>

@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
 import { DIALOGUES } from '../data/dialogues'
 import { playAudio, stopAudio } from '../audio'
+import RecordButton from '../components/RecordButton'
 
 type PlayState = 'idle' | 'playing' | 'done'
 
@@ -164,6 +165,7 @@ export default function DialoguePage() {
                 >
                   {isPlaying ? '🔊' : '🔈'}
                 </button>
+                <RecordButton zh={line.chinese} pinyin={line.pinyin} en={line.english} />
               </div>
               {isMe && (
                 <div className="chat-avatar chat-avatar-me">你</div>

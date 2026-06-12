@@ -1,13 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
 import { useSEO } from '../hooks/useSEO'
 import { RECORD_PHRASES, TOPICS, pickDailyPhrase } from '../data/recordPhrases'
 import { loadLevel } from '../data/vocabLoader'
 import type { Example, VocabItem } from '../types'
 
-type Source = 'daily' | 'bank' | 'hsk' | 'custom'
+type Source = 'daily' | 'bank' | 'hsk' | 'custom' | 'link'
 type Status = 'idle' | 'recording' | 'analyzing' | 'done' | 'error'
+
+interface PitchPoint { t: number; s: number }
 
 interface CharScore {
   char: string
@@ -16,6 +18,7 @@ interface CharScore {
   scores: { initial: 'ok' | 'miss' | 'unknown'; final: 'ok' | 'miss' | 'unknown'; tone: 'ok' | 'miss' | 'unknown' }
   detectedTone: number | null
   timing: { tStart: number; tEnd: number }
+  pitch?: PitchPoint[]
 }
 
 interface ScoreResponse {
@@ -92,7 +95,13 @@ const TONE_SHAPE: Record<number, string> = { 1: '‾', 2: '/', 3: 'v', 4: '\\', 
 export default function RecordPage() {
   useSEO({ title: 'Record & Score', description: 'Record your Mandarin pronunciation and get instant AI feedback on tones, initials, and finals.', path: '/record' })
 
-  const [source, setSource] = useState<Source>('daily')
+  const [params] = useSearchParams()
+  const linkZh = params.get('zh') ?? ''
+  const linkPinyin = params.get('pinyin') ?? ''
+  const linkEn = params.get('en') ?? ''
+  const linkTarget = linkZh ? { zh: linkZh, pinyin: linkPinyin, en: linkEn || undefined } : null
+
+  const [source, setSource] = useState<Source>(linkTarget ? 'link' : 'daily')
   const [topic, setTopic] = useState(TOPICS[0].id)
   const [hskLevel, setHskLevel] = useState(1)
   const [hskExamples, setHskExamples] = useState<Example[]>([])
@@ -107,6 +116,8 @@ export default function RecordPage() {
   const [expanded, setExpanded] = useState<Record<number, string>>({})
   const [loadingExpl, setLoadingExpl] = useState<Record<number, boolean>>({})
   const [supported, setSupported] = useState(true)
+  const [audioUrl, setAudioUrl] = useState<string | null>(null)
+  const [showPitch, setShowPitch] = useState(true)
 
   const mediaRef = useRef<MediaRecorder | null>(null)
   const streamRef = useRef<MediaStream | null>(null)
@@ -123,7 +134,8 @@ export default function RecordPage() {
   }, [])
 
   useEffect(() => {
-    if (source === 'daily') setTarget({ zh: daily.zh, pinyin: daily.pinyin, en: daily.en })
+    if (source === 'link' && linkTarget) setTarget(linkTarget)
+    else if (source === 'daily') setTarget({ zh: daily.zh, pinyin: daily.pinyin, en: daily.en })
     else if (source === 'bank') {
       const p = bankPhrases[bankIdx % Math.max(1, bankPhrases.length)]
       if (p) setTarget({ zh: p.zh, pinyin: p.pinyin, en: p.en })
@@ -161,10 +173,13 @@ export default function RecordPage() {
     return () => window.clearInterval(id)
   }, [status])
 
+  useEffect(() => () => { if (audioUrl) URL.revokeObjectURL(audioUrl) }, [audioUrl])
+
   async function startRecording() {
     setError('')
     setResult(null)
     setExpanded({})
+    if (audioUrl) { URL.revokeObjectURL(audioUrl); setAudioUrl(null) }
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true } })
       streamRef.current = stream
@@ -194,6 +209,7 @@ export default function RecordPage() {
     try {
       const blob = new Blob(chunksRef.current, { type: 'audio/webm' })
       if (blob.size < 1000) { setError('Recording too short — try again.'); setStatus('error'); return }
+      setAudioUrl(URL.createObjectURL(blob))
       const buf = await blob.arrayBuffer()
       const AC = (window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext)
       const ctx = new AC()
@@ -272,6 +288,11 @@ export default function RecordPage() {
         </div>
 
         <div className="record-source-tabs">
+          {linkTarget && (
+            <button className={`record-tab${source === 'link' ? ' active' : ''}`} onClick={() => setSource('link')}>
+              🔗 From link
+            </button>
+          )}
           {(['daily', 'bank', 'hsk', 'custom'] as Source[]).map(s => (
             <button key={s} className={`record-tab${source === s ? ' active' : ''}`} onClick={() => setSource(s)}>
               {s === 'daily' && '📅 Daily'}
@@ -351,6 +372,16 @@ export default function RecordPage() {
           )}
         </div>
 
+        {audioUrl && status !== 'recording' && (
+          <div className="record-playback">
+            <audio src={audioUrl} controls preload="metadata" className="record-audio" />
+            <label className="record-pitch-toggle">
+              <input type="checkbox" checked={showPitch} onChange={e => setShowPitch(e.target.checked)} />
+              Show pitch contour
+            </label>
+          </div>
+        )}
+
         {error && <div className="record-error">{error}</div>}
 
         {result && result.warning && <div className="record-warning">{result.warning}</div>}
@@ -379,6 +410,9 @@ export default function RecordPage() {
                       <ScoreBadge label="Final" expected={c.expected.final} status={c.scores.final} heard={c.heard.final} />
                       <ToneBadge expected={c.expected.tone} detected={c.detectedTone} status={c.scores.tone} />
                     </div>
+                    {showPitch && c.pitch && c.pitch.length >= 2 && (
+                      <PitchSparkline pitch={c.pitch} expectedTone={c.expected.tone} status={c.scores.tone} />
+                    )}
                     {anyMiss && (
                       <>
                         <button className="record-why-btn" onClick={() => fetchExplanation(i, c)} disabled={loadingExpl[i]}>
@@ -424,5 +458,40 @@ function ToneBadge({ expected, detected, status }: { expected: number; detected:
       </span>
       {status === 'miss' && detected != null && <span className="sb-heard">heard: {detected} {TONE_SHAPE[detected] ?? ''}</span>}
     </div>
+  )
+}
+
+const IDEAL_TONE: Record<number, (t: number) => number> = {
+  1: () => 4,
+  2: t => -2 + 6 * t,
+  3: t => t < 0.5 ? -2 - 4 * t : -4 + 4 * (t - 0.5),
+  4: t => 4 - 8 * t,
+  0: () => 0,
+}
+
+function PitchSparkline({ pitch, expectedTone, status }: { pitch: PitchPoint[]; expectedTone: number; status: 'ok' | 'miss' | 'unknown' }) {
+  const W = 90
+  const H = 36
+  const PAD_Y = 4
+  const yMin = -8
+  const yMax = 8
+  const mapY = (s: number) => {
+    const clamped = Math.max(yMin, Math.min(yMax, s))
+    return PAD_Y + (H - 2 * PAD_Y) * (1 - (clamped - yMin) / (yMax - yMin))
+  }
+  const mapX = (t: number) => t * W
+
+  const userPath = pitch.map((p, i) => `${i === 0 ? 'M' : 'L'} ${mapX(p.t).toFixed(1)} ${mapY(p.s).toFixed(1)}`).join(' ')
+  const ideal = IDEAL_TONE[expectedTone] ?? (() => 0)
+  const idealPts = Array.from({ length: 16 }, (_, i) => i / 15)
+  const idealPath = idealPts.map((t, i) => `${i === 0 ? 'M' : 'L'} ${mapX(t).toFixed(1)} ${mapY(ideal(t)).toFixed(1)}`).join(' ')
+  const userColor = status === 'ok' ? '#2e7d32' : status === 'miss' ? '#d32f2f' : '#757575'
+
+  return (
+    <svg className="record-pitch-svg" viewBox={`0 0 ${W} ${H}`} aria-label="pitch contour">
+      <line x1="0" y1={H / 2} x2={W} y2={H / 2} stroke="#ddd" strokeWidth="0.5" strokeDasharray="2 2" />
+      <path d={idealPath} fill="none" stroke={TONE_COLOR[expectedTone] ?? '#999'} strokeWidth="1.2" strokeDasharray="3 2" opacity="0.6" />
+      <path d={userPath} fill="none" stroke={userColor} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   )
 }

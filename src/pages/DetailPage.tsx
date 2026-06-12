@@ -1,5 +1,6 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import AudioButton from '../components/AudioButton'
+import RecordButton from '../components/RecordButton'
 import TeacherButton from '../components/TeacherButton'
 import TonedPinyin from '../components/TonedPinyin'
 import PronunciationChecker from '../components/PronunciationChecker'
@@ -124,6 +125,7 @@ export default function DetailPage() {
               audioUrl={word.audio.wordAudioUrl}
               label={`Play pronunciation of ${word.simplified}`}
             />
+            <RecordButton zh={word.simplified} pinyin={word.pinyin} en={word.english} />
           </div>
         </div>
 
@@ -221,6 +223,7 @@ export default function DetailPage() {
                         audioUrl={word.audio.exampleAudioUrls[i] ?? null}
                         label={`Play example: ${ex.chinese}`}
                       />
+                      <RecordButton zh={ex.chinese} pinyin={ex.pinyin} en={ex.english} />
                       <button
                         className={`mine-btn${isMined(ex.chinese) ? ' mined' : ''}`}
                         onClick={() => mine(ex.chinese, ex.pinyin, ex.english, word.id, word.simplified)}

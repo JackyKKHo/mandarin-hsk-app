@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/((?!api/|assets/|@vite/|@react-refresh|@fs/|@id/|src/|node_modules/|__vite_ping|sw\\.js|manifest\\.webmanifest|favicon\\.ico).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|@|__|assets/|src/|node_modules/|data/|public/)[^.]+)", "destination": "/index.html" }
   ],
   "crons": [
     {

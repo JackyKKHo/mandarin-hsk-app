@@ -8,6 +8,7 @@
   --blue: #2471a3;
   --bg: #f4f5f7;
   --surface: #ffffff;
+  --card-bg: #ffffff;
   --border: #e0e0e0;
   --text: #1a1a2e;
   --muted: #6c757d;
@@ -23,6 +24,7 @@
 html.dark {
   --bg: #0f1117;
   --surface: #1a1d27;
+  --card-bg: #1a1d27;
   --border: #2e3140;
   --text: #e8eaf0;
   --muted: #9099b0;
@@ -5559,6 +5561,7 @@ html.dark .vf-warning { background: #2a2000; border-color: #6d5100; color: #ffd5
   margin-top: 1rem;
 }
 .pro-active-help { color: var(--muted); font-size: 0.85rem; }
+
 /* === Record & Score page === */
 .record-source-tabs {
   display: flex;
@@ -5843,3 +5846,47 @@ html.dark .record-explanation { background: rgba(25, 118, 210, 0.16); }
 }
 .record-transcript-label { color: var(--muted); margin-right: 0.5rem; }
 .record-transcript-text { font-weight: 600; color: var(--text); }
+
+.record-playback {
+  display: flex; flex-direction: column; align-items: stretch; gap: 0.5rem;
+  margin: 0.75rem auto 0; max-width: 480px;
+}
+.record-audio { width: 100%; height: 36px; }
+.record-pitch-toggle {
+  display: flex; align-items: center; gap: 0.4rem;
+  font-size: 0.85rem; color: var(--muted);
+  user-select: none; cursor: pointer;
+  justify-content: center;
+}
+.record-pitch-toggle input { cursor: pointer; }
+.record-pitch-svg {
+  display: block;
+  width: 100%;
+  height: 36px;
+  margin: 0.4rem 0 0.2rem;
+  background: var(--bg);
+  border-radius: 6px;
+}
+
+.record-btn {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.record-btn:hover {
+  background: var(--accent-bg, #fff3e0);
+  border-color: #ff9800;
+  color: #e65100;
+}
+.record-btn-sm { padding: 0.25rem 0.4rem; font-size: 1rem; line-height: 1; }
+.record-btn-md { padding: 0.45rem 0.7rem; font-size: 0.95rem; }
+.record-btn-label { font-size: 0.8rem; font-weight: 600; }
+
+.song-line-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+}
