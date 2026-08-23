@@ -10,7 +10,7 @@ interface VerifyResult {
   pinyin: string
   english: string
   agrees: boolean
-  note: string
+  explanation: string
 }
 
 type Status = 'idle' | 'loading' | 'done' | 'error'
@@ -51,7 +51,7 @@ export default function VerifyTranslation({ simplified, pinyin, english }: Props
   }
 
   if (status === 'loading') {
-    return <div className="verify-loading">Checking with Claude…</div>
+    return <div className="verify-loading">Asking Claude…</div>
   }
 
   if (status === 'error') {
@@ -76,7 +76,7 @@ export default function VerifyTranslation({ simplified, pinyin, english }: Props
           <span className="verify-alt-english">{result.english}</span>
         </div>
       )}
-      {result.note && <div className="verify-note">{result.note}</div>}
+      {result.explanation && <div className="verify-explanation">{result.explanation}</div>}
     </div>
   )
 }
