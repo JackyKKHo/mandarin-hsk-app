@@ -2,6 +2,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import AudioButton from '../components/AudioButton'
 import RecordButton from '../components/RecordButton'
 import TeacherButton from '../components/TeacherButton'
+import VerifyTranslation from '../components/VerifyTranslation'
 import TonedPinyin from '../components/TonedPinyin'
 import PronunciationChecker from '../components/PronunciationChecker'
 import StrokeOrder from '../components/StrokeOrder'
@@ -188,6 +189,8 @@ export default function DetailPage() {
         ) : (
           <div className="detail-english">{word.english}</div>
         )}
+
+        <VerifyTranslation simplified={word.simplified} pinyin={word.pinyin} english={word.english} />
 
         {word.explanation && (
           <div className="detail-explanation">
