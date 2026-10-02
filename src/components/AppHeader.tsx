@@ -28,6 +28,7 @@ const GUIDES_DROPDOWN = [
   { to: '/songs',      label: 'Learn through songs' },
   { to: '/radicals',   label: 'Radicals' },
   { to: '/assessment', label: 'Level assessment' },
+  { to: '/widget',     label: 'iPhone widget' },
 ]
 
 export default function AppHeader() {
@@ -50,7 +51,7 @@ export default function AppHeader() {
     : pathname.startsWith('/course') ? 'course'
     : pathname.startsWith('/dialogue') ? 'dialogues'
     : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') || pathname.startsWith('/songs') || pathname.startsWith('/tone') || pathname.startsWith('/scramble') || pathname === '/cantonese' || pathname === '/frequency' ? 'guides'
-    : pathname.startsWith('/assessment') ? 'guides'
+    : pathname.startsWith('/assessment') || pathname === '/widget' ? 'guides'
     : pathname === '/today' || pathname === '/practice/today' ? 'today'
     : pathname === '/review' ? 'review'
     : pathname.startsWith('/flashcards') ? 'flashcards'

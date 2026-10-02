@@ -1,11 +1,19 @@
 {
   "rewrites": [
-    { "source": "/((?!api/|@|__|assets/|src/|node_modules/|data/|public/)[^.]+)", "destination": "/index.html" }
+    {
+      "source": "/((?!api/|@|__|assets/|src/|node_modules/|data/|public/)[^.]+)",
+      "destination": "/index.html"
+    }
   ],
   "crons": [
     {
       "path": "/api/daily-reminder",
       "schedule": "0 8 * * *"
     }
-  ]
+  ],
+  "functions": {
+    "api/widget.js": {
+      "includeFiles": "data/hsk*.json"
+    }
+  }
 }

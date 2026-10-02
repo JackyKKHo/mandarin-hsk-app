@@ -8,7 +8,7 @@ const TONE_CLASS: Record<number, string> = {
 }
 
 // Matches one pinyin syllable (initial? + vowels + coda?)
-const SYLLABLE_RE = /(zh|ch|sh|[bpmfdtnlgkhjqxzcsr])?[aāáǎàeēéěèiīíǐìoōóǒòuūúǔùüǖǘǚǜ]+(?:ng?|r)?/gi
+const SYLLABLE_RE = /(zh|ch|sh|[bpmfdtnlgkhjqxzcsryw])?[aāáǎàeēéěèiīíǐìoōóǒòuūúǔùüǖǘǚǜ]+(?:ng?)?(?:r(?![aāáǎàeēéěèiīíǐìoōóǒòuūúǔùüǖǘǚǜ]))?/gi
 
 function tone(syllable: string): number {
   if (/[āēīōūǖĀĒĪŌŪǕ]/.test(syllable)) return 1

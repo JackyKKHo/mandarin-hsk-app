@@ -187,6 +187,10 @@ export default function TodayPage() {
                 )}
               </li>
             </ol>
+
+            <p className="today-widget-hint">
+              Want more exposure? <Link to="/widget">Put a new word on your iPhone home screen every hour</Link>.
+            </p>
           </>
         )}
       </main>

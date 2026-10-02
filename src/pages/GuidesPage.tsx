@@ -6,6 +6,7 @@ const GUIDES = [
   { to: '/pronunciation', emoji: '音', title: 'Pronunciation & Tones', desc: 'Tones, initials, finals, and the pinyin system explained.' },
   { to: '/radicals', emoji: '字', title: 'Radicals (部首)', desc: 'The building blocks of Chinese characters — learn to recognise them.' },
   { to: '/measure-words', emoji: '个', title: 'Measure Words (量词)', desc: '20 essential measure words with examples for every pattern.' },
+  { to: '/widget', emoji: '机', title: 'iPhone Widget', desc: 'A new word on your home screen or lock screen every hour. Free, takes two minutes.' },
   { to: '/keyboard', emoji: '拼', title: 'Pinyin Input', desc: 'How to type Chinese on any device using pinyin input methods.' },
   { to: '/verb-frameworks', emoji: '动', title: '5 Verb Frameworks', desc: 'The 5 patterns that unlock 83% of Chinese compound verbs — result recipes, separable sandwiches, direction drops, and more.' },
 ]
