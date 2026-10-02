@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { pinyin } from 'pinyin-pro'
 import { getSpeechRecognition, type SpeechRecognitionLike, type SpeechRecognitionEventLike } from '../types/speech'
+import Icon from './Icon'
 
 interface Props {
   target: string   // simplified Chinese characters
@@ -147,10 +148,10 @@ export default function PronunciationChecker({ target }: Props) {
     return (
       <div className="pronun-result-wrap">
         <div className={`pronun-grade pronun-grade-${grade}`}>
-          {grade === 'perfect' && '🎉 完美！Perfect!'}
-          {grade === 'tones'   && '🎵 Right sounds — check your tones'}
-          {grade === 'sounds'  && '💪 Almost — some sounds need work'}
-          {grade === 'miss'    && '🔄 Try again — could not recognise'}
+          {grade === 'perfect' && '完美！Perfect'}
+          {grade === 'tones'   && 'Right sounds — check your tones'}
+          {grade === 'sounds'  && 'Almost — some sounds need work'}
+          {grade === 'miss'    && 'Could not recognise that — try again'}
         </div>
 
         {!allCorrect && (
@@ -197,7 +198,7 @@ export default function PronunciationChecker({ target }: Props) {
       {status === 'listening' ? (
         <><span className="pronun-pulse" /><span>Listening…</span></>
       ) : (
-        <>🎙️ Check pronunciation</>
+        <><Icon name="mic" size={16} /> Check pronunciation</>
       )}
     </button>
   )

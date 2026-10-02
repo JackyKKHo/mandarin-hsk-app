@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { getSpeechRecognition, type SpeechRecognitionLike, type SpeechRecognitionEventLike } from '../types/speech'
+import Icon from './Icon'
 
 interface WordContext {
   simplified: string
@@ -118,7 +119,7 @@ export default function SentencePractice({ word }: Props) {
           disabled={status === 'loading'}
           title={status === 'listening' ? 'Stop recording' : 'Speak your sentence'}
         >
-          {status === 'listening' ? '⏹' : '🎙️'}
+          <Icon name={status === 'listening' ? 'stop' : 'mic'} size={18} />
         </button>
         <button
           className="sentence-practice-btn"

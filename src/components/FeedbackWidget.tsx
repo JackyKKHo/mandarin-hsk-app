@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Icon from './Icon'
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
@@ -38,7 +39,7 @@ export default function FeedbackWidget() {
         title="Send feedback"
         aria-label="Send feedback"
       >
-        {open ? '✕' : '💬'}
+        <Icon name={open ? 'x' : 'message'} size={20} />
       </button>
 
       {open && (

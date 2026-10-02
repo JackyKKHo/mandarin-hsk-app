@@ -163,7 +163,7 @@ export default function DailyChallengePage() {
     return (
       <div className="practice-page">
         <div className="practice-complete-card">
-          <div className="daily-badge">📅 Daily Challenge</div>
+          <div className="daily-badge">Daily Challenge</div>
           <div className={`complete-score ${pct >= 80 ? 'score-good' : pct >= 50 ? 'score-ok' : 'score-low'}`}>{pct}%</div>
           <h2>Already completed today!</h2>
           <p className="practice-start-desc">
@@ -182,7 +182,7 @@ export default function DailyChallengePage() {
     return (
       <div className="practice-page">
         <div className="practice-start-card">
-          <div className="daily-badge">📅 Daily Challenge</div>
+          <div className="daily-badge">Daily Challenge</div>
           <h2>Today's Challenge</h2>
           {dailyWords.length === 0 ? (
             <p className="empty-state">Loading vocabulary…</p>
@@ -211,7 +211,7 @@ export default function DailyChallengePage() {
     return (
       <div className="practice-page" style={{ paddingBottom: '2rem' }}>
         <div className="practice-complete-card">
-          <div className="daily-badge">📅 Daily Challenge</div>
+          <div className="daily-badge">Daily Challenge</div>
           <div className={`complete-score ${pct >= 80 ? 'score-good' : pct >= 50 ? 'score-ok' : 'score-low'}`}>{pct}%</div>
           <h2>Challenge complete!</h2>
           <div className="srs-result-row">
@@ -232,7 +232,7 @@ export default function DailyChallengePage() {
               <div key={w.id} style={{
                 background: 'var(--card-bg)',
                 border: `1.5px solid ${correct ? 'var(--success, #22c55e)' : 'var(--error, #ef4444)'}`,
-                borderRadius: 12,
+                borderRadius: 'var(--radius)',
                 padding: '0.9rem 1rem',
               }}>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.6rem', flexWrap: 'wrap' }}>
@@ -268,7 +268,7 @@ export default function DailyChallengePage() {
   return (
     <div className="practice-page">
       <div className="practice-topbar">
-        <span className="daily-badge" style={{ marginBottom: 0 }}>📅 Daily</span>
+        <span className="daily-badge" style={{ marginBottom: 0 }}>Daily</span>
         <span className="practice-counter">{index + 1} / {queue.length}</span>
         <span className="practice-score-inline">
           <span className="got-count">✓{score.correct}</span>{' '}

@@ -79,13 +79,13 @@ function GrammarTest({ point }: { point: GrammarPoint }) {
   }
 
   return (
-    <div style={{ marginTop: '1.5rem', border: '1.5px solid var(--accent, #4f8ef7)', borderRadius: 14, padding: '1.25rem' }}>
+    <div style={{ marginTop: '1.5rem', border: '1.5px solid var(--accent, #4f8ef7)', borderRadius: 'var(--radius-lg)', padding: '1.25rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
         <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>Practice {exIndex + 1} / {examples.length}</span>
         <button onClick={() => setActive(false)} style={{ background: 'none', border: 'none', cursor: 'pointer', opacity: 0.5, fontSize: '1rem' }}>✕</button>
       </div>
 
-      <div style={{ background: 'var(--surface, #f5f5f5)', borderRadius: 10, padding: '0.85rem 1rem', marginBottom: '1rem' }}>
+      <div style={{ background: 'var(--surface, #f5f5f5)', borderRadius: 'var(--radius)', padding: '0.85rem 1rem', marginBottom: '1rem' }}>
         <div style={{ fontSize: '0.75rem', opacity: 0.6, marginBottom: '0.25rem' }}>Translate into Chinese using: <strong>{point.pattern}</strong></div>
         <div style={{ fontSize: '1.1rem', fontWeight: 600 }}>{ex.english}</div>
       </div>
@@ -96,7 +96,7 @@ function GrammarTest({ point }: { point: GrammarPoint }) {
         placeholder="Type your Chinese sentence here…"
         disabled={stage === 'loading' || stage === 'feedback'}
         rows={2}
-        style={{ width: '100%', borderRadius: 8, border: '1.5px solid var(--border, #ddd)', padding: '0.6rem 0.75rem', fontSize: '1rem', fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box', background: 'var(--card-bg)' }}
+        style={{ width: '100%', borderRadius: 'var(--radius-sm)', border: '1.5px solid var(--border, #ddd)', padding: '0.6rem 0.75rem', fontSize: '1rem', fontFamily: 'inherit', resize: 'vertical', boxSizing: 'border-box', background: 'var(--card-bg)' }}
         onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey && stage === 'answering') { e.preventDefault(); submit() } }}
       />
 
@@ -112,13 +112,13 @@ function GrammarTest({ point }: { point: GrammarPoint }) {
 
       {stage === 'feedback' && (
         <>
-          <div style={{ marginTop: '0.75rem', background: 'var(--surface, #f5f5f5)', borderRadius: 10, padding: '0.85rem 1rem', borderLeft: '3px solid var(--accent, #4f8ef7)' }}>
+          <div style={{ marginTop: '0.75rem', background: 'var(--surface, #f5f5f5)', borderRadius: 'var(--radius)', padding: '0.85rem 1rem', borderLeft: '3px solid var(--accent, #4f8ef7)' }}>
             <div style={{ fontSize: '0.75rem', fontWeight: 600, opacity: 0.6, marginBottom: '0.35rem' }}>AI Feedback</div>
             <p style={{ margin: 0, lineHeight: 1.5 }}>{feedback}</p>
           </div>
 
           {showRef && (
-            <div style={{ marginTop: '0.6rem', background: 'var(--surface, #f5f5f5)', borderRadius: 10, padding: '0.75rem 1rem' }}>
+            <div style={{ marginTop: '0.6rem', background: 'var(--surface, #f5f5f5)', borderRadius: 'var(--radius)', padding: '0.75rem 1rem' }}>
               <div style={{ fontSize: '0.75rem', opacity: 0.6, marginBottom: '0.2rem' }}>Reference answer</div>
               <div style={{ fontSize: '1.1rem', fontWeight: 500 }}>{ex.chinese}</div>
               <TonedPinyin pinyin={ex.pinyin} className="example-pinyin" />

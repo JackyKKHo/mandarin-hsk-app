@@ -3,12 +3,12 @@ import { PRO_PRICING, usePro } from '../hooks/usePro'
 import { useSEO } from '../hooks/useSEO'
 
 const FEATURES = [
-  { icon: '🤖', title: 'Unlimited Lin Wei',     desc: 'Chat as much as you want with our AI tutor — no hourly cap.' },
-  { icon: '✍️', title: 'Unlimited sentence feedback', desc: 'Get instant grammar critique on every sentence you write.' },
-  { icon: '📈', title: 'Advanced stats',         desc: 'Retention curves, leech detection, and goal projections.' },
-  { icon: '💾', title: 'Deck export',           desc: 'Export custom decks to Anki, CSV, or Mochi.' },
-  { icon: '✈️', title: 'Offline audio',         desc: 'Pre-cache pronunciation audio for review without WiFi.' },
-  { icon: '🎯', title: 'Support indie dev',     desc: 'You keep this app alive and ad-free.' },
+  { icon: '师', title: 'Unlimited Lin Wei',     desc: 'Chat as much as you want with our AI tutor — no hourly cap.' },
+  { icon: '句', title: 'Unlimited sentence feedback', desc: 'Get instant grammar critique on every sentence you write.' },
+  { icon: '数', title: 'Advanced stats',         desc: 'Retention curves, leech detection, and goal projections.' },
+  { icon: '存', title: 'Deck export',           desc: 'Export custom decks to Anki, CSV, or Mochi.' },
+  { icon: '听', title: 'Offline audio',         desc: 'Pre-cache pronunciation audio for review without WiFi.' },
+  { icon: '心', title: 'Support indie dev',     desc: 'You keep this app alive and ad-free.' },
 ]
 
 export default function ProPage() {

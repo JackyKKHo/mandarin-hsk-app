@@ -115,7 +115,7 @@ export default function StatsPage() {
 
       <div className="stats-page">
         <div className="stats-assessment-banner">
-          <span>🎯 Not sure of your level?</span>
+          <span>Not sure of your level?</span>
           <Link to="/assessment" className="stats-assessment-link">Take the assessment →</Link>
         </div>
 
@@ -125,7 +125,7 @@ export default function StatsPage() {
         <div className="stats-hero-row">
           <div className="stats-hero-card">
             <span className="stats-hero-num">{streak}</span>
-            <span className="stats-hero-label">🔥 day streak</span>
+            <span className="stats-hero-label">day streak</span>
             {studiedToday
               ? <span className="stats-hero-sub today-badge">studied today ✓</span>
               : <span className="stats-hero-sub">study today to keep it!</span>
@@ -158,16 +158,16 @@ export default function StatsPage() {
           </div>
           <div className="stats-hero-card">
             <span className="stats-hero-num">{favourites.size}</span>
-            <span className="stats-hero-label">★ favourites</span>
+            <span className="stats-hero-label">favourites</span>
             <Link to="/favourites" className="stats-hero-sub stats-link">view all →</Link>
           </div>
           <div className="stats-hero-card">
-            <span className="stats-hero-num">📅</span>
+            <span className="stats-hero-num stats-hero-glyph">日</span>
             <span className="stats-hero-label">Daily Challenge</span>
             <Link to="/daily" className="stats-hero-sub stats-link">start today's →</Link>
           </div>
           <div className="stats-hero-card">
-            <span className="stats-hero-num">✨</span>
+            <span className="stats-hero-num stats-hero-glyph">混</span>
             <span className="stats-hero-label">Smart Mix</span>
             <Link to="/practice/smart" className="stats-hero-sub stats-link">due + stretch words →</Link>
           </div>
@@ -180,12 +180,12 @@ export default function StatsPage() {
             }
           </div>
           <div className="stats-hero-card">
-            <span className="stats-hero-num">🛡️{freezes}</span>
+            <span className="stats-hero-num">{freezes}</span>
             <span className="stats-hero-label">freeze tokens</span>
             <span className="stats-hero-sub">earn 1 every 7-day streak (max {MAX_FREEZES})</span>
           </div>
           <div className="stats-hero-card">
-            <span className="stats-hero-num">⭐</span>
+            <span className="stats-hero-num stats-hero-glyph">专</span>
             <span className="stats-hero-label">Mandarin Daily Pro</span>
             <Link to="/pro" className="stats-hero-sub stats-link">unlock more →</Link>
           </div>

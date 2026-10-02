@@ -262,7 +262,7 @@ export default function AssessmentPage() {
     return (
       <div className="assessment-page">
         <div className="assessment-intro-card">
-          <div className="assessment-icon">🎯</div>
+          <div className="assessment-icon">测</div>
           <h1>Level Assessment</h1>
           <p className="assessment-desc">
             Answer {TOTAL} questions across different skills and we'll recommend the right HSK level for you.
@@ -360,7 +360,7 @@ export default function AssessmentPage() {
                     className={`assessment-play-btn${audioPlaying ? ' playing' : ''}`}
                     onClick={() => playAudio(q.audioUrl!)}
                   >
-                    {audioPlaying ? '🔊 Playing…' : '▶ Play again'}
+                    {audioPlaying ? 'Playing…' : '▶ Play again'}
                   </button>
                 ) : (
                   <p className="assessment-no-audio">No audio available — skip this one</p>

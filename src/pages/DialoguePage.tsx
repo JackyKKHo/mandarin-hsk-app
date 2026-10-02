@@ -4,6 +4,7 @@ import AppHeader from '../components/AppHeader'
 import { DIALOGUES } from '../data/dialogues'
 import { playAudio, stopAudio } from '../audio'
 import RecordButton from '../components/RecordButton'
+import Icon from '../components/Icon'
 
 type PlayState = 'idle' | 'playing' | 'done'
 
@@ -163,7 +164,7 @@ export default function DialoguePage() {
                   onClick={e => { e.stopPropagation(); playLine(i, line.chinese) }}
                   title="Play audio"
                 >
-                  {isPlaying ? '🔊' : '🔈'}
+                  <Icon name={isPlaying ? 'volumeHigh' : 'volume'} size={16} />
                 </button>
                 <RecordButton zh={line.chinese} pinyin={line.pinyin} en={line.english} />
               </div>
@@ -176,7 +177,7 @@ export default function DialoguePage() {
       </div>
 
       <div className="dialogue-vocab-hint">
-        <span>💡 Tap any bubble to reveal pinyin and translation</span>
+        <span>Tap any bubble to reveal pinyin and translation</span>
       </div>
 
       <DialogueNav current={dialogue.id} />

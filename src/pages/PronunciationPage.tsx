@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useSEO } from '../hooks/useSEO'
+import Icon from '../components/Icon'
 
 // ─── Tone data ────────────────────────────────────────────────────────────────
 
@@ -356,7 +357,7 @@ export default function PronunciationPage() {
                 <span className="tone-ex-char">{t.example.char}</span>
                 <span className="tone-ex-pinyin">{t.example.pinyin}</span>
                 <span className="tone-ex-en">{t.example.en}</span>
-                <span className="tone-play-icon">{playing === `tone-${t.n}` ? '🔊' : '▶'}</span>
+                <span className="tone-play-icon">{playing === `tone-${t.n}` ? <Icon name="volumeHigh" size={14} /> : '▶'}</span>
               </button>
             </div>
           ))}

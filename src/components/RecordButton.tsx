@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Icon from './Icon'
 
 interface Props {
   zh: string
@@ -21,7 +22,7 @@ export default function RecordButton({ zh, pinyin, en, size = 'sm', label }: Pro
       title={`Record yourself saying ${zh}`}
       aria-label={`Record yourself saying ${zh}`}
     >
-      🎙️{label ? <span className="record-btn-label">{label}</span> : null}
+      <Icon name="mic" size={14} />{label ? <span className="record-btn-label">{label}</span> : null}
     </Link>
   )
 }

@@ -67,7 +67,7 @@ export default function CoursePage() {
 
       {doneCount === total && (
         <div className="course-complete-banner">
-          🎉 Course complete! You know the essentials of Mandarin.
+          Course complete. You know the essentials of Mandarin.
           Keep going with <Link to="/hsk/2" className="course-complete-link">HSK 2 →</Link>
         </div>
       )}

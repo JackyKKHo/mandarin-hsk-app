@@ -34,7 +34,7 @@ export default class ErrorBoundary extends Component<Props, State> {
     return (
       <div className="error-boundary">
         <div className="error-boundary-card">
-          <div className="error-boundary-icon" aria-hidden="true">⚠️</div>
+          <div className="error-boundary-icon" aria-hidden="true">!</div>
           <h1>Something went wrong</h1>
           <p>The app ran into an unexpected error. Your saved progress is safe.</p>
           {this.state.error?.message && (

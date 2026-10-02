@@ -32,7 +32,7 @@ export default function FavouritesPage() {
     <div className="browser-page">
       <AppHeader />
       <div className="browser-controls">
-        <h2 className="page-title">★ Favourites</h2>
+        <h2 className="page-title">Favourites</h2>
         <span className="result-count">{words.length} word{words.length !== 1 ? 's' : ''}</span>
         {words.length >= 4 && (
           <div className="practice-menu-wrap" ref={menuRef}>
@@ -43,9 +43,9 @@ export default function FavouritesPage() {
               <div className="practice-menu-dropdown">
                 {[
                   { path: '/practice/favourites', label: '🃏 Flashcards', sub: 'Spaced repetition' },
-                  { path: '/quiz/favourites',     label: '❓ Quiz',        sub: 'Multiple choice' },
-                  { path: '/listen/favourites',   label: '🔊 Listening',   sub: 'Hear & identify' },
-                  { path: '/fill/favourites',     label: '✏️ Fill blank',   sub: 'Complete sentences' },
+                  { path: '/quiz/favourites',     label: 'Quiz',        sub: 'Multiple choice' },
+                  { path: '/listen/favourites',   label: 'Listening',   sub: 'Hear & identify' },
+                  { path: '/fill/favourites',     label: 'Fill blank',   sub: 'Complete sentences' },
                 ].map(({ path, label, sub }) => (
                   <button key={path} className="practice-menu-item" style={{ width: '100%', textAlign: 'left', border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => openPractice(path)}>
                     <span className="pmi-label">{label}</span>

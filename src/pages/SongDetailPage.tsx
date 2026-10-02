@@ -66,7 +66,7 @@ export default function SongDetailPage() {
 
         {/* Cultural note */}
         <div className="song-callout song-callout-culture">
-          <div className="song-callout-label">🏮 Cultural context</div>
+          <div className="song-callout-label">Cultural context</div>
           <p>{song.culturalNote}</p>
         </div>
 
@@ -105,7 +105,7 @@ export default function SongDetailPage() {
                     <div className="song-line-english">{line.english}</div>
                   )}
                   {line.note && (
-                    <div className="song-line-note">💡 {line.note}</div>
+                    <div className="song-line-note">{line.note}</div>
                   )}
                 </div>
               ))}
@@ -115,7 +115,7 @@ export default function SongDetailPage() {
 
         {/* Learning tips */}
         <div className="song-callout song-callout-tips">
-          <div className="song-callout-label">📖 Grammar & usage notes</div>
+          <div className="song-callout-label">Grammar & usage notes</div>
           <ul className="song-tips-list">
             {song.learningTips.map((tip, i) => (
               <li key={i}>{tip}</li>

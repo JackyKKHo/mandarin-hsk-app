@@ -10,6 +10,7 @@ import { LEVEL_COUNTS } from '../data/vocabLoader'
 import { useSEO } from '../hooks/useSEO'
 import WordOfTheDay from '../components/WordOfTheDay'
 import { normalizePOS } from '../types'
+import Icon from '../components/Icon'
 
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const UNLOCK_THRESHOLD = 80
@@ -99,7 +100,7 @@ export default function BrowserPage() {
       {/* Daily goal bar */}
       <div className={`daily-goal-bar${goalMet ? ' goal-met' : ''}`}>
         <span className="daily-goal-label">
-          {goalMet ? '🎉 Daily goal complete!' : `Today: ${todayCount} / ${DAILY_GOAL} words`}
+          {goalMet ? 'Daily goal complete' : `Today: ${todayCount} / ${DAILY_GOAL} words`}
         </span>
         <div className="daily-goal-dots">
           {goalDots.map((filled, i) => (
@@ -111,8 +112,8 @@ export default function BrowserPage() {
       {/* Level unlock banner */}
       {unlockBanner && (
         <div className="unlock-banner">
-          <span>🏆 {progressPct}% of HSK {unlockBanner} learned — milestone reached!</span>
-          <button className="unlock-dismiss" onClick={() => setUnlockBanner(null)}>✕</button>
+          <span>{progressPct}% of HSK {unlockBanner} learned — milestone reached</span>
+          <button className="unlock-dismiss" onClick={() => setUnlockBanner(null)} aria-label="Dismiss"><Icon name="x" size={16} /></button>
         </div>
       )}
 
@@ -174,12 +175,12 @@ export default function BrowserPage() {
             <div className="practice-menu-dropdown">
               {[
                 { to: `/practice/${currentLevel}`, label: '🃏 Flashcards', sub: 'Spaced repetition' },
-                { to: `/quiz/${currentLevel}`,     label: '❓ Quiz',        sub: 'Multiple choice' },
-                { to: `/listen/${currentLevel}`,   label: '🔊 Listening',   sub: 'Hear & identify' },
-                { to: `/fill/${currentLevel}`,     label: '✏️ Fill blank',   sub: 'Complete sentences' },
-                { to: `/write/${currentLevel}`,    label: '✍️ Writing',      sub: 'Stroke order tracing' },
-                { to: `/tone/${currentLevel}`,     label: '🎵 Tone Trainer', sub: 'Identify tones' },
-                { to: `/scramble/${currentLevel}`, label: '🔀 Scramble',    sub: 'Reorder sentences' },
+                { to: `/quiz/${currentLevel}`,     label: 'Quiz',        sub: 'Multiple choice' },
+                { to: `/listen/${currentLevel}`,   label: 'Listening',   sub: 'Hear & identify' },
+                { to: `/fill/${currentLevel}`,     label: 'Fill blank',   sub: 'Complete sentences' },
+                { to: `/write/${currentLevel}`,    label: 'Writing',      sub: 'Stroke order tracing' },
+                { to: `/tone/${currentLevel}`,     label: 'Tone trainer', sub: 'Identify tones' },
+                { to: `/scramble/${currentLevel}`, label: 'Scramble',    sub: 'Reorder sentences' },
               ].map(({ to, label, sub }) => (
                 <Link key={to} to={to} className="practice-menu-item" onClick={() => setPracticeOpen(false)}>
                   <span className="pmi-label">{label}</span>

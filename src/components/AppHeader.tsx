@@ -5,26 +5,28 @@ import { useDarkMode } from '../hooks/useDarkMode'
 import { useAuth } from '../context/AuthContext'
 import { useStreak } from '../hooks/useStreak'
 import AuthModal from './AuthModal'
+import Icon, { type IconName } from './Icon'
 
-const NAV = [
-  { to: '/hsk/1',      emoji: '📚', label: 'Vocab',      section: 'vocab' },
-  { to: '/course',     emoji: '🎓', label: 'Course',     section: 'course' },
-  { to: '/dialogues',  emoji: '💬', label: 'Dialogues',  section: 'dialogues' },
-  { to: '/grammar/1',  emoji: '📖', label: 'Grammar',    section: 'grammar' },
-  { to: '/guides',     emoji: '🧭', label: 'Guides',     section: 'guides' },
-  { to: '/search',     emoji: '🔍', label: 'Search',     section: 'search' },
-  { to: '/assessment', emoji: '🎯', label: 'Assess',     section: 'assessment' },
-  { to: '/flashcards', emoji: '🗂', label: 'Cards',      section: 'flashcards' },
+const NAV: { to: string; icon: IconName; label: string; section: string }[] = [
+  { to: '/hsk/1',      icon: 'bookOpen',   label: 'Vocab',      section: 'vocab' },
+  { to: '/review',     icon: 'repeat',     label: 'Review',     section: 'review' },
+  { to: '/course',     icon: 'graduation', label: 'Course',     section: 'course' },
+  { to: '/dialogues',  icon: 'message',    label: 'Dialogues',  section: 'dialogues' },
+  { to: '/grammar/1',  icon: 'book',       label: 'Grammar',    section: 'grammar' },
+  { to: '/guides',     icon: 'compass',    label: 'Guides',     section: 'guides' },
+  { to: '/search',     icon: 'search',     label: 'Search',     section: 'search' },
+  { to: '/flashcards', icon: 'layers',     label: 'Cards',      section: 'flashcards' },
 ]
 
 const GUIDES_DROPDOWN = [
-  { to: '/guides',     emoji: '🧭', label: 'All Guides' },
-  { to: '/reading',    emoji: '📖', label: 'Reading Practice' },
-  { to: '/cantonese',  emoji: '粵', label: 'Cantonese → Mandarin' },
-  { to: '/frequency',  emoji: '📊', label: 'Word Frequency' },
-  { to: '/daily',      emoji: '📅', label: 'Daily Challenge' },
-  { to: '/songs',      emoji: '🎵', label: 'Learn Through Songs' },
-  { to: '/radicals',   emoji: '字', label: 'Radicals' },
+  { to: '/guides',     label: 'All guides' },
+  { to: '/reading',    label: 'Reading practice' },
+  { to: '/cantonese',  label: 'Cantonese → Mandarin' },
+  { to: '/frequency',  label: 'Word frequency' },
+  { to: '/daily',      label: 'Daily challenge' },
+  { to: '/songs',      label: 'Learn through songs' },
+  { to: '/radicals',   label: 'Radicals' },
+  { to: '/assessment', label: 'Level assessment' },
 ]
 
 export default function AppHeader() {
@@ -47,7 +49,9 @@ export default function AppHeader() {
     : pathname.startsWith('/course') ? 'course'
     : pathname.startsWith('/dialogue') ? 'dialogues'
     : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') || pathname.startsWith('/songs') || pathname.startsWith('/tone') || pathname.startsWith('/scramble') || pathname === '/cantonese' || pathname === '/frequency' ? 'guides'
-    : pathname.startsWith('/assessment') ? 'assessment'
+    : pathname.startsWith('/assessment') ? 'guides'
+    : pathname === '/review' ? 'review'
+    : pathname.startsWith('/flashcards') ? 'flashcards'
     : 'vocab'
 
   return (
@@ -61,11 +65,11 @@ export default function AppHeader() {
       </Link>
       {showFreezeToast && (
         <div className="freeze-toast" onClick={() => setShowFreezeToast(false)}>
-          🛡️ Streak protected by a freeze token! ({freezes} left)
+          Streak protected by a freeze ({freezes} left)
         </div>
       )}
       <nav className="app-nav">
-        {NAV.map(({ to, emoji, label, section: s }) => {
+        {NAV.map(({ to, icon, label, section: s }) => {
           if (s === 'guides') {
             return (
               <div
@@ -76,8 +80,8 @@ export default function AppHeader() {
                 onMouseLeave={() => setGuidesOpen(false)}
               >
                 <Link to={to} className={`app-nav-link${section === s ? ' active' : ''}`}>
-                  <span className="nav-emoji">{emoji}</span>
-                  <span className="nav-label">{label} ▾</span>
+                  <Icon name={icon} />
+                  <span className="nav-label">{label}<Icon name="chevronDown" size={10} className="nav-caret" /></span>
                 </Link>
                 {guidesOpen && (
                   <div className="app-nav-dropdown">
@@ -88,7 +92,6 @@ export default function AppHeader() {
                         className={`app-nav-dd-item${pathname === d.to || (d.to === '/guides' && section === 'guides') ? ' active' : ''}`}
                         onClick={() => setGuidesOpen(false)}
                       >
-                        <span className="app-nav-dd-emoji">{d.emoji}</span>
                         {d.label}
                       </Link>
                     ))}
@@ -99,30 +102,37 @@ export default function AppHeader() {
           }
           return (
             <Link key={to} to={to} className={`app-nav-link${section === s ? ' active' : ''}`}>
-              <span className="nav-emoji">{emoji}</span>
+              <Icon name={icon} />
               <span className="nav-label">{label}</span>
             </Link>
           )
         })}
 
         <Link to="/stats" className={`app-nav-link${section === 'stats' ? ' active' : ''}`} title="Stats">
-          <span className="nav-emoji">
-            {streak > 0 ? (
-              <span className="streak-display">
-                🔥{streak}{freezes > 0 && <span className="freeze-count">🛡️{freezes}</span>}
-              </span>
-            ) : '📊'}
-          </span>
+          {streak > 0 ? (
+            <span className="streak-display">
+              <Icon name="flame" />{streak}
+              {freezes > 0 && <span className="freeze-count"><Icon name="shield" size={12} />{freezes}</span>}
+            </span>
+          ) : <Icon name="chart" />}
           <span className="nav-label">Stats</span>
         </Link>
 
         <Link to="/favourites" className={`app-nav-link${section === 'favourites' ? ' active' : ''}`}>
-          <span className="nav-emoji">★{favourites.size > 0 && <span className="fav-count">{favourites.size}</span>}</span>
+          <span className="nav-icon-badge">
+            <Icon name="star" />
+            {favourites.size > 0 && <span className="fav-count">{favourites.size}</span>}
+          </span>
           <span className="nav-label">Saved</span>
         </Link>
 
-        <button className="dark-toggle" onClick={toggle} title="Toggle dark mode">
-          {dark ? '☀️' : '🌙'}
+        <button
+          className="dark-toggle"
+          onClick={toggle}
+          title={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+          aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+        >
+          <Icon name={dark ? 'sun' : 'moon'} />
         </button>
 
         {user ? (

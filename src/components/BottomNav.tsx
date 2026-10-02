@@ -1,24 +1,25 @@
 import { memo, useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useStreak } from '../hooks/useStreak'
+import Icon, { type IconName } from './Icon'
 
-const TABS = [
-  { to: '/hsk/1',  emoji: '📚', label: 'Browse',  aria: 'Browse HSK vocabulary',          match: (p: string) => p.startsWith('/hsk') || p.startsWith('/word') },
-  { to: '/review',     emoji: '🔄', label: 'Review',  aria: 'Spaced repetition review',         match: (p: string) => p === '/review' },
-  { to: '/flashcards', emoji: '🗂', label: 'Cards',   aria: 'Custom flashcards',                match: (p: string) => p.startsWith('/flashcards') },
-  { to: '/guides', emoji: '🧭', label: 'Guides',  aria: 'Open guides menu',                 match: (p: string) => p.startsWith('/guides') || p.startsWith('/radicals') || p.startsWith('/measure') || p.startsWith('/daily') || p.startsWith('/songs') || p.startsWith('/tone') || p.startsWith('/scramble') || p === '/cantonese' || p === '/frequency' || p === '/reading' || p === '/verb-frameworks' },
-  { to: '/stats',  emoji: '📊', label: 'Stats',   aria: 'Stats and streak',                 match: (p: string) => p === '/stats' },
-  { to: '/search', emoji: '🔍', label: 'Search',  aria: 'Search all words',                 match: (p: string) => p === '/search' },
+const TABS: { to: string; icon: IconName; label: string; aria: string; match: (p: string) => boolean }[] = [
+  { to: '/hsk/1',  icon: 'bookOpen', label: 'Browse',  aria: 'Browse HSK vocabulary',          match: (p: string) => p.startsWith('/hsk') || p.startsWith('/word') },
+  { to: '/review',     icon: 'repeat', label: 'Review',  aria: 'Spaced repetition review',         match: (p: string) => p === '/review' },
+  { to: '/flashcards', icon: 'layers', label: 'Cards',   aria: 'Custom flashcards',                match: (p: string) => p.startsWith('/flashcards') },
+  { to: '/guides', icon: 'compass', label: 'Guides',  aria: 'Open guides menu',                 match: (p: string) => p.startsWith('/guides') || p.startsWith('/radicals') || p.startsWith('/measure') || p.startsWith('/daily') || p.startsWith('/songs') || p.startsWith('/tone') || p.startsWith('/scramble') || p === '/cantonese' || p === '/frequency' || p === '/reading' || p === '/verb-frameworks' || p.startsWith('/assessment') },
+  { to: '/stats',  icon: 'chart', label: 'Stats',   aria: 'Stats and streak',                 match: (p: string) => p === '/stats' },
+  { to: '/search', icon: 'search', label: 'Search',  aria: 'Search all words',                 match: (p: string) => p === '/search' },
 ]
 
 const GUIDES_SUBMENU = [
-  { to: '/guides',           emoji: '🧭', label: 'All Guides' },
-  { to: '/cantonese',        emoji: '粵', label: 'Cantonese' },
-  { to: '/frequency',        emoji: '📊', label: 'Word Freq' },
-  { to: '/daily',            emoji: '📅', label: 'Daily' },
-  { to: '/reading',          emoji: '📖', label: 'Reading' },
-  { to: '/sentences/review', emoji: '✍️', label: 'Sentences' },
-  { to: '/verb-frameworks',  emoji: '动', label: 'Verb Tips' },
+  { to: '/guides',           label: 'All guides' },
+  { to: '/cantonese',        label: 'Cantonese' },
+  { to: '/frequency',        label: 'Word frequency' },
+  { to: '/daily',            label: 'Daily challenge' },
+  { to: '/reading',          label: 'Reading' },
+  { to: '/sentences/review', label: 'Sentences' },
+  { to: '/verb-frameworks',  label: 'Verb tips' },
 ]
 
 function BottomNav() {
@@ -42,7 +43,7 @@ function BottomNav() {
     <nav className="bottom-nav" aria-label="Primary navigation">
       {TABS.map(tab => {
         const active = tab.match(pathname)
-        const emoji = tab.to === '/stats' && streak > 0 ? '🔥' : tab.emoji
+        const icon: IconName = tab.to === '/stats' && streak > 0 ? 'flame' : tab.icon
 
         if (tab.to === '/guides') {
           return (
@@ -57,7 +58,6 @@ function BottomNav() {
                       aria-label={s.label}
                       className={`bns-item${pathname === s.to || (s.to === '/guides' && active) ? ' active' : ''}`}
                     >
-                      <span className="bns-emoji" aria-hidden="true">{s.emoji}</span>
                       <span className="bns-label">{s.label}</span>
                     </Link>
                   ))}
@@ -71,8 +71,8 @@ function BottomNav() {
                 aria-haspopup="menu"
                 onClick={() => setSubmenuOpen(o => !o)}
               >
-                <span className="bottom-nav-emoji" aria-hidden="true">{emoji}</span>
-                <span className="bottom-nav-label">Guides ▴</span>
+                <Icon name={icon} size={22} />
+                <span className="bottom-nav-label">Guides</span>
               </button>
             </div>
           )
@@ -86,7 +86,7 @@ function BottomNav() {
             aria-current={active ? 'page' : undefined}
             className={`bottom-nav-tab${active ? ' active' : ''}`}
           >
-            <span className="bottom-nav-emoji" aria-hidden="true">{emoji}</span>
+            <Icon name={icon} size={22} />
             <span className="bottom-nav-label">{tab.label}</span>
             {tab.to === '/stats' && streak > 0 && (
               <span className="bottom-nav-streak" aria-label={`${streak} day streak`}>{streak}</span>

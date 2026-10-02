@@ -212,7 +212,7 @@ export default function FrequencyPage() {
             <div className="cloud-pos-chips">
               <button
                 className={`cloud-chip${activePOS === null ? ' active' : ''}`}
-                style={activePOS === null ? { background: '#555', borderColor: '#555' } : {}}
+                style={activePOS === null ? { background: 'var(--text)', borderColor: 'var(--text)', color: 'var(--bg)' } : {}}
                 onClick={() => setActivePOS(null)}
               >all</button>
               {['noun','verb','adjective','adverb'].map(p => (

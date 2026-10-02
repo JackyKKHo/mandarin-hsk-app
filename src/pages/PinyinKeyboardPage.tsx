@@ -108,7 +108,6 @@ export default function PinyinKeyboardPage() {
           {PLATFORMS.map(p => (
             <div key={p.name} className="guide-platform-card">
               <div className="guide-platform-header">
-                <span className="guide-platform-icon">{p.icon}</span>
                 <div>
                   <div className="guide-platform-name">{p.name}</div>
                   <div className="guide-platform-switch">Switch: <kbd>{p.switchKey}</kbd></div>
@@ -119,7 +118,7 @@ export default function PinyinKeyboardPage() {
                   <li key={i} className="guide-step">{s.text}</li>
                 ))}
               </ol>
-              {p.note && <p className="guide-note">💡 {p.note}</p>}
+              {p.note && <p className="guide-note">{p.note}</p>}
             </div>
           ))}
         </div>

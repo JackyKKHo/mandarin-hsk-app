@@ -208,7 +208,7 @@ export default function TonePage() {
 
       <div className="tone-prompt">
         <div className="tone-prompt-chinese">{word.simplified}</div>
-        <button className="tone-play-btn" onClick={() => playWord(word)}>🔊 Play again</button>
+        <button className="tone-play-btn" onClick={() => playWord(word)}>Play again</button>
         <p className="tone-prompt-hint">Which tones did you hear?</p>
       </div>
 

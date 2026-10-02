@@ -536,7 +536,7 @@ export default function CantonesePage() {
             </div>
             <p className="cm-rule-exp">{rule.explanation}</p>
             <div className="cm-rule-tip">
-              <span className="cm-tip-icon">💡</span>
+              <span className="cm-tip-icon">Tip</span>
               {rule.tip}
             </div>
 

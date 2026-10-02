@@ -104,7 +104,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000,
   },
   modal: {
-    background: 'var(--surface, #fff)', borderRadius: 12, padding: '2rem',
+    background: 'var(--surface, #fff)', borderRadius: 'var(--radius)', padding: '2rem',
     width: '100%', maxWidth: 400, position: 'relative', boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
   },
   close: {
@@ -115,13 +115,13 @@ const styles: Record<string, React.CSSProperties> = {
   sub: { margin: '0 0 1.5rem', opacity: 0.6, fontSize: '0.9rem', color: 'var(--text, #1a1a2e)' },
   form: { display: 'flex', flexDirection: 'column', gap: '0.75rem' },
   input: {
-    padding: '0.65rem 0.9rem', borderRadius: 8, fontSize: '1rem',
+    padding: '0.65rem 0.9rem', borderRadius: 'var(--radius-sm)', fontSize: '1rem',
     border: '1px solid var(--border, #ddd)', background: 'var(--bg, #f4f5f7)',
     color: 'var(--text, #1a1a2e)',
   },
   codeInput: { fontSize: '1.75rem', textAlign: 'center', letterSpacing: '0.25em', fontWeight: 700, padding: '0.75rem' },
   submit: {
-    padding: '0.7rem', borderRadius: 8, fontSize: '1rem', fontWeight: 600,
+    padding: '0.7rem', borderRadius: 'var(--radius-sm)', fontSize: '1rem', fontWeight: 600,
     background: '#e85d2f', color: '#fff', border: 'none', cursor: 'pointer', marginTop: 4,
   },
   error: { color: '#c00', fontSize: '0.875rem', margin: 0 },

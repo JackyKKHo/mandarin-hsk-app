@@ -20,7 +20,7 @@ export default function SongsPage() {
     <div className="browser-page">
       <AppHeader />
       <div className="songs-hero">
-        <div className="songs-hero-icon">🎵</div>
+        <div className="songs-hero-icon">歌</div>
         <h2>Learn Through Songs</h2>
         <p className="songs-hero-desc">
           Famous Chinese songs broken down line by line — lyrics, pinyin, translations, vocabulary, and cultural context.

@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useCustomDecks, type CustomDeck, type CustomCard } from '../hooks/useCustomDecks'
+import Icon from '../components/Icon'
 
 type View = 'list' | 'editor' | 'study'
 
@@ -54,8 +55,8 @@ function CardRow({
         <span className="fc-card-back">{card.back}</span>
       </div>
       <div className="fc-card-row-actions">
-        <button className="fc-btn-icon" onClick={() => setEditing(true)} title="Edit">✏️</button>
-        <button className="fc-btn-icon fc-btn-delete" onClick={() => onDelete(card.id)} title="Delete">🗑</button>
+        <button className="fc-btn-icon" onClick={() => setEditing(true)} title="Edit" aria-label="Edit"><Icon name="pencil" size={16} /></button>
+        <button className="fc-btn-icon fc-btn-delete" onClick={() => onDelete(card.id)} title="Delete" aria-label="Delete"><Icon name="trash" size={16} /></button>
       </div>
     </div>
   )
@@ -122,7 +123,7 @@ function DeckEditor({
         ) : (
           <>
             <h2 className="fc-deck-title">{deck.name}</h2>
-            <button className="fc-btn-icon" onClick={() => setEditingName(true)}>✏️</button>
+            <button className="fc-btn-icon" onClick={() => setEditingName(true)} title="Rename" aria-label="Rename deck"><Icon name="pencil" size={16} /></button>
           </>
         )}
       </div>
@@ -359,7 +360,7 @@ export default function FlashcardsPage() {
 
       {decks.length === 0 && !creating ? (
         <div className="fc-empty">
-          <div className="fc-empty-icon">🗂</div>
+          <div className="fc-empty-icon">卡</div>
           <p>No decks yet. Create one to get started.</p>
         </div>
       ) : (
@@ -386,8 +387,9 @@ export default function FlashcardsPage() {
                   if (confirm(`Delete "${deck.name}"?`)) deleteDeck(deck.id)
                 }}
                 title="Delete deck"
+                aria-label="Delete deck"
               >
-                🗑
+                <Icon name="trash" size={16} />
               </button>
             </div>
           ))}

@@ -18,10 +18,10 @@ const LEVELS = [
 const GROUPS = ['Beginner', 'Elementary', 'Intermediate', 'Advanced']
 
 const FEATURES = [
-  { icon: '📚', title: 'Browse vocabulary', desc: '11,000+ words across HSK 1–9' },
-  { icon: '🧠', title: 'Spaced repetition', desc: 'Smart review scheduling so you never forget' },
-  { icon: '🎧', title: 'Audio + stroke order', desc: 'Hear every word, see every stroke' },
-  { icon: '🤖', title: 'AI teacher', desc: 'Chat with Lin Wei, your personal tutor' },
+  { icon: '词', title: 'Browse vocabulary', desc: '11,000+ words across HSK 1–9' },
+  { icon: '忆', title: 'Spaced repetition', desc: 'Smart review scheduling so you never forget' },
+  { icon: '听', title: 'Audio + stroke order', desc: 'Hear every word, see every stroke' },
+  { icon: '师', title: 'AI teacher', desc: 'Chat with Lin Wei, your personal tutor' },
 ]
 
 export function shouldShowWelcome() {
@@ -80,7 +80,7 @@ export default function WelcomePage() {
           </button>
           {canInstall && (
             <button className="welcome-install-cta" onClick={install} type="button">
-              📱 Install as an app
+              Install as an app
             </button>
           )}
           <button className="welcome-skip" onClick={skip}>Skip</button>

@@ -5,6 +5,7 @@ import { useSEO } from '../hooks/useSEO'
 import { RECORD_PHRASES, TOPICS, pickDailyPhrase } from '../data/recordPhrases'
 import { loadLevel } from '../data/vocabLoader'
 import type { Example, VocabItem } from '../types'
+import Icon from '../components/Icon'
 
 type Source = 'daily' | 'bank' | 'hsk' | 'custom' | 'link'
 type Status = 'idle' | 'recording' | 'analyzing' | 'done' | 'error'
@@ -89,7 +90,8 @@ function toBase64(bytes: Uint8Array): string {
   return btoa(bin)
 }
 
-const TONE_COLOR: Record<number, string> = { 1: '#1976d2', 2: '#388e3c', 3: '#f57c00', 4: '#d32f2f', 0: '#757575' }
+// Same palette as --tone-1..4 / --tone-0 in index.css (literal hex: SVG attributes can't take var())
+const TONE_COLOR: Record<number, string> = { 1: '#c0392b', 2: '#d35400', 3: '#27ae60', 4: '#2471a3', 0: '#95a5a6' }
 const TONE_SHAPE: Record<number, string> = { 1: '‾', 2: '/', 3: 'v', 4: '\\', 0: '·' }
 
 export default function RecordPage() {
@@ -267,7 +269,7 @@ export default function RecordPage() {
         <div className="practice-page">
           <Link to="/guides" className="back-link">← Guides</Link>
           <div className="record-not-supported">
-            🎙️ Recording is not supported on this browser. Try Chrome, Edge, or Safari on a recent device.
+            Recording is not supported on this browser. Try Chrome, Edge, or Safari on a recent device.
           </div>
         </div>
       </div>
@@ -281,7 +283,7 @@ export default function RecordPage() {
         <Link to="/guides" className="back-link">← Guides</Link>
 
         <div className="reading-page-header">
-          <h1 className="reading-page-title">🎙️ Record & Score</h1>
+          <h1 className="reading-page-title">Record & Score</h1>
           <p className="reading-page-desc">
             Read a phrase aloud and get instant feedback on initials, finals, and tones — per character.
           </p>
@@ -290,15 +292,15 @@ export default function RecordPage() {
         <div className="record-source-tabs">
           {linkTarget && (
             <button className={`record-tab${source === 'link' ? ' active' : ''}`} onClick={() => setSource('link')}>
-              🔗 From link
+              From link
             </button>
           )}
           {(['daily', 'bank', 'hsk', 'custom'] as Source[]).map(s => (
             <button key={s} className={`record-tab${source === s ? ' active' : ''}`} onClick={() => setSource(s)}>
-              {s === 'daily' && '📅 Daily'}
-              {s === 'bank' && '📚 Phrase bank'}
-              {s === 'hsk' && '🏷️ HSK examples'}
-              {s === 'custom' && '✏️ Custom'}
+              {s === 'daily' && 'Daily'}
+              {s === 'bank' && 'Phrase bank'}
+              {s === 'hsk' && 'HSK examples'}
+              {s === 'custom' && 'Custom'}
             </button>
           ))}
         </div>
@@ -357,7 +359,7 @@ export default function RecordPage() {
         <div className="record-mic-row">
           {status === 'idle' || status === 'done' || status === 'error' ? (
             <button className="record-mic-btn" onClick={startRecording} disabled={!target}>
-              🎙️ {result ? 'Try again' : 'Start recording'}
+              <Icon name="mic" size={18} /> {result ? 'Try again' : 'Start recording'}
             </button>
           ) : null}
           {status === 'recording' && (
@@ -388,7 +390,7 @@ export default function RecordPage() {
 
         {result && result.chars.length > 0 && (
           <div className="record-results">
-            {result.summary?.perfect && <div className="record-perfect">🎉 完美！Every character on target.</div>}
+            {result.summary?.perfect && <div className="record-perfect">完美！Every character on target.</div>}
             {!result.summary?.perfect && (
               <div className="record-summary">
                 {result.summary?.toneMisses ?? 0} tone{(result.summary?.toneMisses ?? 0) === 1 ? '' : 's'} flagged,{' '}
@@ -402,7 +404,7 @@ export default function RecordPage() {
                 return (
                   <div key={i} className={`record-char-card${anyMiss ? ' miss' : ' ok'}`}>
                     <div className="record-char-top">
-                      <div className="record-char-han" style={{ color: TONE_COLOR[c.expected.tone] ?? '#333' }}>{c.char}</div>
+                      <div className="record-char-han" style={{ color: TONE_COLOR[c.expected.tone] ?? 'var(--text)' }}>{c.char}</div>
                       <div className="record-char-py">{c.expected.pinyin}</div>
                     </div>
                     <div className="record-char-scores">
@@ -453,7 +455,7 @@ function ToneBadge({ expected, detected, status }: { expected: number; detected:
   return (
     <div className={`record-score-badge sb-${status}`}>
       <span className="sb-label">Tone</span>
-      <span className="sb-value" style={{ color: TONE_COLOR[expected] ?? '#333' }}>
+      <span className="sb-value" style={{ color: TONE_COLOR[expected] ?? 'var(--text)' }}>
         {expected} {TONE_SHAPE[expected] ?? ''}
       </span>
       {status === 'miss' && detected != null && <span className="sb-heard">heard: {detected} {TONE_SHAPE[detected] ?? ''}</span>}
@@ -485,11 +487,11 @@ function PitchSparkline({ pitch, expectedTone, status }: { pitch: PitchPoint[]; 
   const ideal = IDEAL_TONE[expectedTone] ?? (() => 0)
   const idealPts = Array.from({ length: 16 }, (_, i) => i / 15)
   const idealPath = idealPts.map((t, i) => `${i === 0 ? 'M' : 'L'} ${mapX(t).toFixed(1)} ${mapY(ideal(t)).toFixed(1)}`).join(' ')
-  const userColor = status === 'ok' ? '#2e7d32' : status === 'miss' ? '#d32f2f' : '#757575'
+  const userColor = status === 'ok' ? '#2e7d32' : status === 'miss' ? '#c0392b' : '#95a5a6'
 
   return (
     <svg className="record-pitch-svg" viewBox={`0 0 ${W} ${H}`} aria-label="pitch contour">
-      <line x1="0" y1={H / 2} x2={W} y2={H / 2} stroke="#ddd" strokeWidth="0.5" strokeDasharray="2 2" />
+      <line x1="0" y1={H / 2} x2={W} y2={H / 2} stroke="currentColor" strokeOpacity="0.2" strokeWidth="0.5" strokeDasharray="2 2" />
       <path d={idealPath} fill="none" stroke={TONE_COLOR[expectedTone] ?? '#999'} strokeWidth="1.2" strokeDasharray="3 2" opacity="0.6" />
       <path d={userPath} fill="none" stroke={userColor} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
     </svg>

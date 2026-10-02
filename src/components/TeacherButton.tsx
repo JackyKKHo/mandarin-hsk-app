@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { playAudio } from '../audio'
 import { getSpeechRecognition, type SpeechRecognitionLike, type SpeechRecognitionEventLike } from '../types/speech'
+import Icon from './Icon'
 
 type SpeechRecWithCache = SpeechRecognitionLike & { lastTranscript?: string }
 
@@ -28,7 +29,7 @@ type ImmersionLevel = 'beginner' | 'intermediate' | 'advanced'
 
 const IMMERSION_LABELS: Record<ImmersionLevel, string> = {
   beginner:     '🇬🇧 Beginner',
-  intermediate: '🌏 Intermediate',
+  intermediate: 'Intermediate',
   advanced:     '🇨🇳 Advanced',
 }
 
@@ -220,7 +221,7 @@ export default function TeacherButton({ context }: Props) {
                       className="chat-replay-btn"
                       onClick={() => replayAudio(m.audioBlob!)}
                       title="Replay audio"
-                    >🔊</button>
+                    ><Icon name="volumeHigh" size={14} /></button>
                   )}
                 </div>
               </div>
@@ -259,14 +260,14 @@ export default function TeacherButton({ context }: Props) {
               disabled={status === 'thinking' || status === 'speaking'}
               title="Voice input"
             >
-              {status === 'listening' ? '⏹' : '🎙️'}
+              <Icon name={status === 'listening' ? 'stop' : 'mic'} size={18} />
             </button>
             <button
               className={`teacher-send-btn mode-${status}`}
               onClick={() => send(input || `Tell me something interesting about "${context.simplified}"`)}
               disabled={busy}
             >
-              {status === 'thinking' ? '💭' : status === 'speaking' ? '🔊' : '➤'}
+              <Icon name={status === 'speaking' ? 'volumeHigh' : status === 'thinking' ? 'more' : 'send'} size={18} />
             </button>
           </div>
 

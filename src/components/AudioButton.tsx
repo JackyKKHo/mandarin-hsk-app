@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { playAudio } from '../audio'
+import Icon from './Icon'
 
 interface Props {
   text: string
@@ -36,7 +37,7 @@ export default function AudioButton({ text, audioUrl, label }: Props) {
       aria-label={label ?? `Play audio for ${text}`}
       title="Play pronunciation"
     >
-      {playing ? '🔊' : '🔈'}
+      <Icon name={playing ? 'volumeHigh' : 'volume'} size={16} />
     </button>
   )
 }

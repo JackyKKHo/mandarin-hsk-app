@@ -40,9 +40,9 @@ function shuffle<T>(arr: T[]): T[] {
 type Stage = 'idle' | 'front' | 'back' | 'complete'
 
 function scoreLabel(pct: number) {
-  if (pct >= 90) return { text: 'Outstanding! 🌟', cls: 'score-good' }
-  if (pct >= 70) return { text: 'Great work! 👍', cls: 'score-good' }
-  if (pct >= 50) return { text: 'Keep going! 💪', cls: 'score-ok' }
+  if (pct >= 90) return { text: 'Outstanding', cls: 'score-good' }
+  if (pct >= 70) return { text: 'Great work', cls: 'score-good' }
+  if (pct >= 50) return { text: 'Keep going', cls: 'score-ok' }
   return { text: 'Keep practising!', cls: 'score-low' }
 }
 
@@ -222,7 +222,7 @@ export default function ReviewPage() {
             </div>
             {bestStreak >= 3 && (
               <div className="rcs-item rcs-streak">
-                <span className="rcs-num">🔥{bestStreak}</span>
+                <span className="rcs-num">{bestStreak}</span>
                 <span className="rcs-label">best streak</span>
               </div>
             )}
@@ -256,7 +256,7 @@ export default function ReviewPage() {
         <Link to="/stats" className="back-link" style={{ marginBottom: 0 }}>← Stats</Link>
         <span className="practice-counter">{index + 1} / {queue.length}</span>
         {sessionStreak >= 3
-          ? <span className={`session-streak-badge${streakFlash ? ' flash' : ''}`}>🔥 {sessionStreak} in a row</span>
+          ? <span className={`session-streak-badge${streakFlash ? ' flash' : ''}`}>{sessionStreak} in a row</span>
           : card && <span className="practice-counter" style={{ opacity: 0.5 }}>interval {card.interval}d</span>
         }
       </div>

@@ -45,7 +45,7 @@ export default function VerifyTranslation({ simplified, pinyin, english }: Props
   if (status === 'idle') {
     return (
       <button className="verify-btn" onClick={verify}>
-        🔍 Verify translation with AI
+        Verify translation with AI
       </button>
     )
   }
@@ -68,7 +68,7 @@ export default function VerifyTranslation({ simplified, pinyin, english }: Props
   return (
     <div className={`verify-result ${result.agrees ? 'verify-agree' : 'verify-disagree'}`}>
       <div className="verify-result-header">
-        {result.agrees ? '✓ Claude agrees with this translation' : '⚠ Claude suggests a different translation'}
+        {result.agrees ? '✓ Claude agrees with this translation' : 'Claude suggests a different translation'}
       </div>
       {!result.agrees && (
         <div className="verify-alt">

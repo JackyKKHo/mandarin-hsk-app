@@ -250,7 +250,7 @@ export default function VerbFrameworksPage() {
 
         {fw.warning && (
           <div className="vf-warning">
-            ⚠️ {fw.warning}
+            {fw.warning}
           </div>
         )}
 
