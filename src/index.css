@@ -5877,6 +5877,7 @@ html.dark .record-perfect { background: var(--green-bg); color: #b8e8c0; }
 }
 .record-char-han { font-size: 2rem; font-weight: 700; line-height: 1; }
 .record-char-py { color: var(--muted); font-size: 0.9rem; }
+.record-char-sandhi { font-size: 0.7rem; font-weight: 600; color: var(--gold); cursor: help; }
 .record-char-scores {
   display: flex; flex-direction: column; gap: 0.35rem;
 }
