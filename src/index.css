@@ -6062,3 +6062,82 @@ html.dark .record-explanation { background: rgba(25, 118, 210, 0.16); }
 /* Guides page sits inside .browser-page, which has no side gutter */
 .guides-hero, .guides-section { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
 @media (max-width: 640px) { .guides-hero, .guides-section, .wotd-wrap { padding-left: 1rem; padding-right: 1rem; } }
+
+/* ── Today: daily session hub ── */
+.today-main { max-width: 720px; margin: 0 auto; padding: 1.75rem 1.5rem 3rem; }
+.today-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.today-date { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+.today-title { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; }
+.today-meta { display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; }
+.today-streak { display: inline-flex; align-items: center; gap: 0.3rem; color: var(--red); font-weight: 600; }
+.today-count { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.today-steps { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+.today-step {
+  display: flex; align-items: flex-start; gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+.today-step.is-current { border-color: var(--red); box-shadow: var(--shadow); }
+.today-step.is-done { background: transparent; }
+.today-step.is-done .today-step-title { color: var(--muted); }
+.today-step > .btn-primary, .today-step > .btn-secondary {
+  flex-shrink: 0; align-self: center;
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  text-decoration: none; white-space: nowrap;
+}
+.today-step-marker {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: 1.9rem; height: 1.9rem; border-radius: 50%;
+  border: 1.5px solid var(--border); color: var(--muted);
+  font-size: 0.85rem; font-weight: 700;
+}
+.today-step.is-current .today-step-marker { border-color: var(--red); color: var(--red); }
+.today-step.is-done .today-step-marker { background: var(--green); border-color: var(--green); color: #fff; }
+.today-step-body { flex: 1; min-width: 0; }
+.today-step-title { display: flex; align-items: baseline; gap: 0.6rem; font-size: 1.05rem; font-weight: 650; margin-top: 0.1rem; }
+.today-step-progress { font-size: 0.8rem; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.today-step-desc { font-size: 0.88rem; color: var(--muted); margin-top: 0.2rem; }
+.today-level-select {
+  font: inherit; font-weight: 600; color: var(--text);
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xs);
+  padding: 0 0.2rem; cursor: pointer;
+}
+
+.today-words { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.7rem; }
+.today-word {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  font-size: 1.15rem; font-weight: 600; color: var(--text); text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+.today-word:hover { border-color: var(--red); color: var(--red); }
+.today-word.seen { color: var(--muted); background: var(--bg); }
+
+.today-speak { margin-top: 0.45rem; padding-left: 0.75rem; border-left: 2px solid var(--gold); }
+.today-speak-zh { font-size: 1.2rem; font-weight: 500; }
+.today-speak-en { font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+
+.today-complete {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1rem 1.25rem; margin-bottom: 1rem;
+  background: var(--green-bg); border-radius: var(--radius-lg);
+}
+.today-complete-glyph {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: 3rem; height: 3rem; border-radius: var(--radius);
+  background: var(--green); color: #fff;
+  font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif; font-size: 1.6rem; font-weight: 600;
+}
+.today-complete-title { font-weight: 700; }
+.today-complete-desc { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
+.today-complete-desc a { color: var(--red); }
+
+@media (max-width: 640px) {
+  .today-main { padding: 1.25rem 1rem 6rem; }
+  .today-step { flex-wrap: wrap; padding: 1rem; }
+  .today-step-body { flex-basis: calc(100% - 2.9rem); }
+  .today-step > .btn-primary, .today-step > .btn-secondary { margin-left: 2.9rem; align-self: flex-start; }
+}

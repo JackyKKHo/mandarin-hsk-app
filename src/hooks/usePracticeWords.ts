@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import type { VocabItem } from '../types'
 import { useSRS } from './useSRS'
 import { useVocab } from './useVocab'
+import { loadPlan } from '../lib/todayPlan'
 
 export function usePracticeWords(levelParam: string | undefined): {
   words: VocabItem[]
@@ -10,7 +11,7 @@ export function usePracticeWords(levelParam: string | undefined): {
   loading: boolean
 } {
   const { isDue, getCard } = useSRS()
-  const isNumericLevel = levelParam !== 'favourites' && levelParam !== 'review' && levelParam !== 'smart'
+  const isNumericLevel = levelParam !== 'favourites' && levelParam !== 'review' && levelParam !== 'smart' && levelParam !== 'today'
   const numericLevel = isNumericLevel ? Number(levelParam) || 1 : undefined
   const { words: allWords, loading } = useVocab(numericLevel)
 
@@ -23,17 +24,26 @@ export function usePracticeWords(levelParam: string | undefined): {
         const set = new Set(ids)
         return {
           words: allWords.filter(w => set.has(w.id)),
-          title: '★ Favourites',
+          title: 'Favourites',
           backPath: '/favourites',
           loading: false,
         }
       } catch {
-        return { words: [], title: '★ Favourites', backPath: '/favourites', loading: false }
+        return { words: [], title: 'Favourites', backPath: '/favourites', loading: false }
+      }
+    }
+    if (levelParam === 'today') {
+      const ids = new Set(loadPlan()?.newIds ?? [])
+      return {
+        words: allWords.filter(w => ids.has(w.id)),
+        title: "Today's new words",
+        backPath: '/today',
+        loading: false,
       }
     }
     if (levelParam === 'review') {
       return {
-        words: allWords.filter(w => isDue(w.id)),
+        words: allWords.filter(w => getCard(w.id) && isDue(w.id)),
         title: 'Due for Review',
         backPath: '/stats',
         loading: false,
@@ -41,7 +51,7 @@ export function usePracticeWords(levelParam: string | undefined): {
     }
     if (levelParam === 'smart') {
       // Smart Mix: due cards from every level + a sprinkle of new ones the user hasn't seen
-      const due = allWords.filter(w => isDue(w.id))
+      const due = allWords.filter(w => getCard(w.id) && isDue(w.id))
       const unseen = allWords.filter(w => !getCard(w.id))
       // Pick the unseen words from the lowest level the user hasn't fully started
       const stretch: typeof unseen = []
@@ -60,7 +70,7 @@ export function usePracticeWords(levelParam: string | undefined): {
       }
       return {
         words: [...due, ...stretch],
-        title: '✨ Smart Mix',
+        title: 'Smart Mix',
         backPath: '/stats',
         loading: false,
       }

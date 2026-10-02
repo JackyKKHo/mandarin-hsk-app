@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { MaleCharacter, FemaleCharacter } from '../components/WelcomeCharacters'
 import { usePWAInstall } from '../hooks/usePWAInstall'
+import { saveLevel } from '../lib/todayPlan'
 
 const LEVELS = [
   { level: 1, label: 'HSK 1', words: 500,  tag: 'Beginner',     desc: 'Basic greetings, numbers, family' },
@@ -40,12 +41,13 @@ export default function WelcomePage() {
 
   function finish(level: number) {
     markOnboarded()
-    navigate(`/hsk/${level}`)
+    saveLevel(level)
+    navigate('/today')
   }
 
   function skip() {
     markOnboarded()
-    navigate('/hsk/1')
+    navigate('/today')
   }
 
   if (step === 1) {

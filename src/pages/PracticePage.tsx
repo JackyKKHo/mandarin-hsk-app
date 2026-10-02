@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef } from 'react'
+import { useState, useMemo, useRef, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import type { VocabItem } from '../types'
 import AudioButton from '../components/AudioButton'
@@ -38,6 +38,16 @@ export default function PracticePage() {
   const [flipped, setFlipped] = useState(false)
   const [counts, setCounts] = useState({ again: 0, good: 0, easy: 0 })
   const [againWords, setAgainWords] = useState<VocabItem[]>([])
+  const isToday = level === 'today'
+
+  // Today's deck is already chosen, so skip the session-length screen and start straight away
+  const autoStarted = useRef(false)
+  useEffect(() => {
+    if (isToday && !loading && levelWords.length > 0 && !autoStarted.current) {
+      autoStarted.current = true
+      start(false)
+    }
+  }, [isToday, loading, levelWords.length])
 
   function start(dueOnly: boolean) {
     const words = (dueOnly ? shuffle(due) : [...shuffle(due), ...shuffle(notDue)])
@@ -158,7 +168,7 @@ export default function PracticePage() {
           <p className="complete-subtext">Cards are scheduled for future review based on your ratings.</p>
           <div className="complete-actions">
             <button className="btn-primary" onClick={() => start(false)}>Practice again</button>
-            <Link to={backPath} className="btn-secondary">Back to browser</Link>
+            <Link to={backPath} className="btn-secondary">{isToday ? 'Back to Today' : 'Back to browser'}</Link>
           </div>
           <MissedWords title={`Need more practice (${againWords.length})`} words={againWords} />
         </div>

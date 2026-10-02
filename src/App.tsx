@@ -9,6 +9,7 @@ import StopAudioOnNavigate from './components/StopAudioOnNavigate'
 import FavouritesPage from './pages/FavouritesPage'
 import SearchPage from './pages/SearchPage'
 import StatsPage from './pages/StatsPage'
+import TodayPage from './pages/TodayPage'
 import QuizPage from './pages/QuizPage'
 import WritingPage from './pages/WritingPage'
 import ListeningPage from './pages/ListeningPage'
@@ -55,7 +56,7 @@ export default function App() {
       <BottomNav />
       <FeedbackWidget />
       <Routes>
-        <Route path="/" element={<Navigate to={shouldShowWelcome() ? '/welcome' : '/hsk/1'} replace />} />
+        <Route path="/" element={<Navigate to={shouldShowWelcome() ? '/welcome' : '/today'} replace />} />
         <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/hsk/:level" element={<BrowserPage />} />
         <Route path="/word/:id" element={<DetailPage />} />
@@ -64,6 +65,7 @@ export default function App() {
         <Route path="/grammar/point/:id" element={<GrammarDetailPage />} />
         <Route path="/favourites" element={<FavouritesPage />} />
         <Route path="/search" element={<SearchPage />} />
+        <Route path="/today" element={<TodayPage />} />
         <Route path="/stats" element={<StatsPage />} />
         <Route path="/quiz/:level" element={<QuizPage />} />
         <Route path="/write/:level" element={<WritingPage />} />

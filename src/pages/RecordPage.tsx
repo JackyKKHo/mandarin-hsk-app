@@ -6,6 +6,7 @@ import { RECORD_PHRASES, TOPICS, pickDailyPhrase } from '../data/recordPhrases'
 import { loadLevel } from '../data/vocabLoader'
 import type { Example, VocabItem } from '../types'
 import Icon from '../components/Icon'
+import { markSpokenToday } from '../lib/todayPlan'
 
 type Source = 'daily' | 'bank' | 'hsk' | 'custom' | 'link'
 type Status = 'idle' | 'recording' | 'analyzing' | 'done' | 'error'
@@ -231,6 +232,7 @@ export default function RecordPage() {
       if (!res.ok) throw new Error(data.error ?? 'Scoring failed')
       setResult(data)
       setStatus('done')
+      markSpokenToday()
     } catch (e) {
       const msg = e instanceof Error ? e.message : 'Analysis failed'
       setError(msg)

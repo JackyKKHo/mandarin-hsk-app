@@ -4,9 +4,9 @@ import { useStreak } from '../hooks/useStreak'
 import Icon, { type IconName } from './Icon'
 
 const TABS: { to: string; icon: IconName; label: string; aria: string; match: (p: string) => boolean }[] = [
+  { to: '/today',  icon: 'target', label: 'Today',   aria: "Today's session",                  match: (p: string) => p === '/today' || p === '/practice/today' },
   { to: '/hsk/1',  icon: 'bookOpen', label: 'Browse',  aria: 'Browse HSK vocabulary',          match: (p: string) => p.startsWith('/hsk') || p.startsWith('/word') },
   { to: '/review',     icon: 'repeat', label: 'Review',  aria: 'Spaced repetition review',         match: (p: string) => p === '/review' },
-  { to: '/flashcards', icon: 'layers', label: 'Cards',   aria: 'Custom flashcards',                match: (p: string) => p.startsWith('/flashcards') },
   { to: '/guides', icon: 'compass', label: 'Guides',  aria: 'Open guides menu',                 match: (p: string) => p.startsWith('/guides') || p.startsWith('/radicals') || p.startsWith('/measure') || p.startsWith('/daily') || p.startsWith('/songs') || p.startsWith('/tone') || p.startsWith('/scramble') || p === '/cantonese' || p === '/frequency' || p === '/reading' || p === '/verb-frameworks' || p.startsWith('/assessment') },
   { to: '/stats',  icon: 'chart', label: 'Stats',   aria: 'Stats and streak',                 match: (p: string) => p === '/stats' },
   { to: '/search', icon: 'search', label: 'Search',  aria: 'Search all words',                 match: (p: string) => p === '/search' },
@@ -20,6 +20,7 @@ const GUIDES_SUBMENU = [
   { to: '/reading',          label: 'Reading' },
   { to: '/sentences/review', label: 'Sentences' },
   { to: '/verb-frameworks',  label: 'Verb tips' },
+  { to: '/flashcards',       label: 'My flashcards' },
 ]
 
 function BottomNav() {

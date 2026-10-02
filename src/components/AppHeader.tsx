@@ -8,6 +8,7 @@ import AuthModal from './AuthModal'
 import Icon, { type IconName } from './Icon'
 
 const NAV: { to: string; icon: IconName; label: string; section: string }[] = [
+  { to: '/today',      icon: 'target',     label: 'Today',      section: 'today' },
   { to: '/hsk/1',      icon: 'bookOpen',   label: 'Vocab',      section: 'vocab' },
   { to: '/review',     icon: 'repeat',     label: 'Review',     section: 'review' },
   { to: '/course',     icon: 'graduation', label: 'Course',     section: 'course' },
@@ -50,13 +51,14 @@ export default function AppHeader() {
     : pathname.startsWith('/dialogue') ? 'dialogues'
     : pathname.startsWith('/guides') || pathname.startsWith('/radicals') || pathname.startsWith('/measure-words') || pathname.startsWith('/daily') || pathname.startsWith('/songs') || pathname.startsWith('/tone') || pathname.startsWith('/scramble') || pathname === '/cantonese' || pathname === '/frequency' ? 'guides'
     : pathname.startsWith('/assessment') ? 'guides'
+    : pathname === '/today' || pathname === '/practice/today' ? 'today'
     : pathname === '/review' ? 'review'
     : pathname.startsWith('/flashcards') ? 'flashcards'
     : 'vocab'
 
   return (
     <header className="app-header">
-      <Link to="/hsk/1" className="app-logo">
+      <Link to="/today" className="app-logo">
         <span className="app-logo-mark">汉</span>
         <span className="app-logo-text">
           <span className="app-logo-en">Mandarin Daily</span>

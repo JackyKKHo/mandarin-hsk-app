@@ -64,7 +64,8 @@ export default function StatsPage() {
     LEVELS.map(l => {
       const words = vocab.filter(w => w.hskLevel === l)
       const learnedCount = words.filter(w => learned.has(w.id)).length
-      const dueCount = words.filter(w => isDue(w.id)).length
+      // Only cards the user has studied can be due; unseen words are new, not overdue
+      const dueCount = words.filter(w => getCard(w.id) && isDue(w.id)).length
       const reviewedCount = words.filter(w => {
         const c = getCard(w.id)
         return c && c.reps > 0

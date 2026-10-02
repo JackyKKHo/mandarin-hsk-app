@@ -304,7 +304,7 @@ export default function PronunciationPage() {
 
   return (
     <div className="pron-page">
-      <Link to="/hsk/1" className="back-link">← Home</Link>
+      <Link to="/today" className="back-link">← Home</Link>
 
       <div className="pron-hero">
         <h1 className="pron-title">Pronunciation Guide <span className="pron-title-zh">发音指南</span></h1>
