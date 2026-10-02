@@ -1,5 +1,6 @@
 import { YIN } from 'pitchfinder'
 import { pinyin } from 'pinyin-pro'
+import { applyThirdToneSandhi, hanPhraseIds } from './_toneSandhi.js'
 
 export const config = { api: { bodyParser: { sizeLimit: '6mb' } } }
 
@@ -133,6 +134,24 @@ function classifyTone(slice, median) {
   return 1
 }
 
+// A half-third tone sags gently (2-3 semitones) and doesn't rise again; classifyTone
+// tends to call that a 4th tone. A real 4th tone falls much further, from the top of the
+// voice. Register alone can't tell them apart in short phrases where every syllable is low
+// (我们), so this looks at the size of the fall and whether the pitch sits low.
+function isHalfThirdContour(slice, median, detectedTone) {
+  const voiced = slice.filter(s => s.f != null)
+  if (voiced.length < 4 || !median) return false
+  const semis = voiced.map(s => 12 * Math.log2(s.f / median))
+  const third = Math.max(1, Math.floor(semis.length / 3))
+  const start = semis.slice(0, third).reduce((a, y) => a + y, 0) / third
+  const end = semis.slice(-third).reduce((a, y) => a + y, 0) / third
+  const mean = semis.reduce((a, y) => a + y, 0) / semis.length
+  if (start - end >= 4.5) return false                     // a full fall is a real 4th tone
+  if (start < 0 && mean < -1.5) return true                // clearly low in the voice
+  if (detectedTone === 4 && start - end < 4) return true    // a gentle sag, not a full fall
+  return false
+}
+
 async function transcribeWhisper(wavBuf) {
   const form = new FormData()
   form.append('file', new Blob([wavBuf], { type: 'audio/wav' }), 'recording.wav')
@@ -211,12 +230,19 @@ export default async function handler(req, res) {
     const targetChars = targetClean
     const transcriptChars = [...transcript]
     const expectedPinyins = toPinyinArr(targetClean.join(''))
+    const spokenTones = applyThirdToneSandhi(
+      expectedPinyins.map(p => splitTonedSyllable(p).tone),
+      hanPhraseIds(target),
+      targetClean,
+    )
 
     const windows = alignCharsToTime(targetChars, span.tStart, span.tEnd)
 
     const charResults = windows.map((w, i) => {
       const expRaw = expectedPinyins[i] ?? ''
-      const { base: expBase, tone: expTone } = splitTonedSyllable(expRaw)
+      const { base: expBase, tone: citationTone } = splitTonedSyllable(expRaw)
+      const spoken = spokenTones[i] ?? { tone: citationTone, accept: [citationTone], sandhi: false }
+      const expTone = spoken.tone
       const { initial: expInitial, final: expFinal } = splitInitialFinal(expBase)
 
       const heard = bestHeardChar(transcriptChars, i, w.char)
@@ -237,13 +263,20 @@ export default async function handler(req, res) {
       const initialOk = heard ? heardInitial === expInitial : null
       const finalOk = heard ? heardFinal === expFinal : null
 
-      const toneOk = detectedTone == null ? null : detectedTone === expTone
+      const toneOk = detectedTone == null ? null
+        : spoken.accept.includes(detectedTone) || (spoken.halfThird && isHalfThirdContour(slice, median, detectedTone))
 
       const sameChar = heard === w.char
 
       return {
         char: w.char,
-        expected: { pinyin: expRaw, base: expBase, initial: expInitial, final: expFinal, tone: expTone },
+        expected: {
+          pinyin: spoken.sandhi ? `${expBase}${expTone}` : expRaw,
+          base: expBase, initial: expInitial, final: expFinal, tone: expTone,
+          ...(spoken.sandhi && { citationTone, sandhi: true, acceptTones: spoken.accept }),
+          ...(spoken.neutral && { neutral: true }),
+          ...(spoken.halfThird && { halfThird: true }),
+        },
         heard: {
           char: heard,
           pinyin: heardPinyinRaw,

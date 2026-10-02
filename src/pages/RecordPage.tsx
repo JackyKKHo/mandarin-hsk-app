@@ -15,7 +15,9 @@ interface PitchPoint { t: number; s: number }
 
 interface CharScore {
   char: string
-  expected: { pinyin: string; base: string; initial: string; final: string; tone: number }
+  // sandhi: tone changed from citationTone because the next syllable is also tone 3
+  // neutral: light syllable, any pitch accepted; halfThird: 3rd tone said low without the rise
+  expected: { pinyin: string; base: string; initial: string; final: string; tone: number; citationTone?: number; sandhi?: boolean; neutral?: boolean; halfThird?: boolean }
   heard: { char: string | null; pinyin: string; base: string; initial: string; final: string; toneFromText: number | null }
   scores: { initial: 'ok' | 'miss' | 'unknown'; final: 'ok' | 'miss' | 'unknown'; tone: 'ok' | 'miss' | 'unknown' }
   detectedTone: number | null
@@ -408,6 +410,21 @@ export default function RecordPage() {
                     <div className="record-char-top">
                       <div className="record-char-han" style={{ color: TONE_COLOR[c.expected.tone] ?? 'var(--text)' }}>{c.char}</div>
                       <div className="record-char-py">{c.expected.pinyin}</div>
+                      {c.expected.sandhi && (
+                        <div className="record-char-sandhi" title="Third-tone sandhi: a 3rd tone before another 3rd tone is said as a 2nd tone">
+                          {c.expected.citationTone} → {c.expected.tone} before 3rd tone
+                        </div>
+                      )}
+                      {c.expected.halfThird && (
+                        <div className="record-char-sandhi" title="A 3rd tone mid-phrase is said low, without rising back up">
+                          half-3rd: low, no rise
+                        </div>
+                      )}
+                      {c.expected.neutral && (
+                        <div className="record-char-sandhi" title="Neutral tone: short and light; its pitch follows the syllable before">
+                          light / neutral
+                        </div>
+                      )}
                     </div>
                     <div className="record-char-scores">
                       <ScoreBadge label="Initial" expected={c.expected.initial} status={c.scores.initial} heard={c.heard.initial} />
