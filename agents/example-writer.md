@@ -26,7 +26,10 @@ Each example is an object with exactly these three fields, appended to the word'
 }
 ```
 
-- **Uses the exact word** as written in `simplified`, in its main meaning (the one in `english`).
+- **Uses the exact word** as written in `simplified`, in its main meaning. The `english` field is
+  sometimes wrong (棒球 is listed as "no-hitter", 雇主 as "gaffer"). Check it against the word's
+  `explanation`; if they disagree, follow the real meaning and list the word in the pull request
+  under "English translations that look wrong". Don't edit the `english` field yourself.
 - **Natural, modern Mandarin** as a mainland speaker would actually say or write it, in simplified
   characters. Not a dictionary-style sentence, not a translation of an English idea.
 - **Fits the level.** These are HSK 7–9 words, so the rest of the sentence can be HSK 4–6 level:
@@ -61,9 +64,15 @@ a wrong example. Skipped words don't count towards the 150.
 ```bash
 npm ci || npm install
 node scripts/check-vocab.mjs --changed
+node scripts/compare-pinyin.mjs
 npm test
 npm run build
 ```
+
+`compare-pinyin.mjs` lists every new example whose pinyin differs from the pinyin-pro library.
+Review each one. The library is often wrong on neutral tones (时候 shíhou, 里 li) and on
+characters with several readings (我得 děi, 只剩 zhǐ), so keep your version when you're sure,
+and fix it when the library is right. Give a short summary of what you found in the pull request.
 
 If a check still fails after you've tried to fix it, **don't open a pull request**. Report what
 failed and why in your final message instead.
@@ -87,8 +96,12 @@ Adds one example sentence to <N> words that didn't have one (HSK <levels>, <firs
 ## Skipped
 (Words you weren't confident about, with one line on why. "None" if none.)
 
+## English translations that look wrong
+(Table of word | what `english` says | what it actually means. "None" if none.)
+
 ## Checks
 - `check-vocab --changed`: passed (<N> words changed, <N> new examples)
+- Pinyin vs pinyin-pro: <N> differences reviewed, <N> fixed (one line on the kinds of difference)
 - Tests: passed
 - Build: passed
 ```
