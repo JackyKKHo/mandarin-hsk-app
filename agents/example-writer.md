@@ -32,8 +32,11 @@ Each example is an object with exactly these three fields, appended to the word'
   under "English translations that look wrong". Don't edit the `english` field yourself.
 - **Natural, modern Mandarin** as a mainland speaker would actually say or write it, in simplified
   characters. Not a dictionary-style sentence, not a translation of an English idea.
-- **Fits the level.** These are HSK 7–9 words, so the rest of the sentence can be HSK 4–6 level:
-  roughly 12–30 characters. The word should be the hardest thing in the sentence.
+- **Fits the level.** The word should be the hardest thing in the sentence:
+  - HSK 1–3 words: short and simple, roughly 6–14 characters, everyday topics.
+  - HSK 4–6 words: roughly 10–22 characters, the rest of the sentence at HSK 1–4 level.
+  - HSK 7–9 words (level 7 in the data, one band in the 2026 syllabus): roughly 12–30
+    characters, the rest of the sentence at HSK 4–6 level.
 - **Shows how the word is used**: typical collocations, the register (formal words in formal
   sentences), and the grammar pattern if it has one (e.g. a verb with its usual object).
 - **Pinyin** with tone marks, words separated by spaces in the style of the existing data

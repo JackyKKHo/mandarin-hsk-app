@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react'
+import { LEVELS, levelLabel } from '../data/levels'
 
 const KEY = 'hsk-milestones-v1'
 
@@ -24,11 +25,11 @@ const SPECS: Array<Milestone & { check: CheckFn }> = [
   { id: 's30',   icon: '🔥', title: 'Monthly Master',     desc: '30-day streak',             check: (_, s) => s >= 30 },
   { id: 's100',  icon: '⚡', title: 'Centurion',          desc: '100-day streak',            check: (_, s) => s >= 100 },
   { id: 's365',  icon: '🐉', title: 'Year of the Dragon', desc: '365-day streak',            check: (_, s) => s >= 365 },
-  ...[1,2,3,4,5,6,7,8,9].map((l, i) => ({
+  ...LEVELS.map((l, i) => ({
     id: `hsk${l}`,
     icon: '🏮',
-    title: `HSK ${l} Ready`,
-    desc: `Mastered 70% of HSK ${l}`,
+    title: `HSK ${levelLabel(l)} Ready`,
+    desc: `Mastered 70% of HSK ${levelLabel(l)}`,
     check: (_: number, __: number, p: number[]) => (p[i] ?? 0) >= 70,
   })),
 ]

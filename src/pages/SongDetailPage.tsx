@@ -5,6 +5,7 @@ import TonedPinyin from '../components/TonedPinyin'
 import RecordButton from '../components/RecordButton'
 import { useSEO } from '../hooks/useSEO'
 import { SONGS } from '../data/songs'
+import { levelLabel } from '../data/levels'
 
 const HSK_COLOR: Record<number, string> = {
   1: '#27ae60', 2: '#2ecc71', 3: '#f39c12',
@@ -138,7 +139,7 @@ export default function SongDetailPage() {
                     className="song-vocab-hsk"
                     style={{ background: HSK_COLOR[v.hskLevel] + '22', color: HSK_COLOR[v.hskLevel] }}
                   >
-                    HSK {v.hskLevel}
+                    HSK {levelLabel(v.hskLevel)}
                   </span>
                 </div>
                 <TonedPinyin pinyin={v.pinyin} className="song-vocab-pinyin" />

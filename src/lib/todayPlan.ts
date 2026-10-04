@@ -1,5 +1,6 @@
 // The Today screen's daily plan: which new words to learn today and whether
 // the speaking rep is done. Stored per device; SRS progress itself syncs via useSRS.
+import { TOP_LEVEL } from '../data/levels'
 
 const PLAN_KEY = 'hsk-today-plan'
 const LEVEL_KEY = 'hsk-level'
@@ -39,7 +40,7 @@ export function markSpokenToday() {
 export function getSavedLevel(): number {
   try {
     const n = Number(localStorage.getItem(LEVEL_KEY))
-    return n >= 1 && n <= 9 ? n : 1
+    return n >= 1 ? Math.min(n, TOP_LEVEL) : 1
   } catch {
     return 1
   }

@@ -99,7 +99,7 @@ function readBatchIds() {
 
 const args = process.argv.slice(2)
 const levelArgs = args.filter(a => /^\d+$/.test(a)).map(Number)
-const levels = levelArgs.length ? levelArgs : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const levels = levelArgs.length ? levelArgs : [1, 2, 3, 4, 5, 6, 7]
 
 if (args.includes('--apply')) {
   const ids = readBatchIds()

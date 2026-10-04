@@ -1,0 +1,4982 @@
+{
+ "一下|yíxià": {
+  "english": "once; a bit; in a moment",
+  "traditional": "一下"
+ },
+ "一丝不苟|yìsī-bùgǒu": {
+  "english": "meticulous",
+  "traditional": "一絲不苟"
+ },
+ "一举两得|yìjǔ-liǎngdé": {
+  "english": "to kill two birds with one stone",
+  "traditional": "一舉兩得"
+ },
+ "一并|yíbìng": {
+  "english": "together; along with",
+  "traditional": "一併"
+ },
+ "一针见血|yìzhēn-jiànxiě": {
+  "english": "to hit the nail on the head",
+  "traditional": "一針見血"
+ },
+ "万物|wànwù": {
+  "english": "all things",
+  "traditional": "萬物"
+ },
+ "上传|shàngchuán": {
+  "english": "to upload",
+  "traditional": "上傳"
+ },
+ "上半场|shàngbànchǎng": {
+  "english": "first half (of a match)",
+  "traditional": "上半場"
+ },
+ "上层|shàngcéng": {
+  "english": "upper level; upper class",
+  "traditional": "上層"
+ },
+ "上行|shàngxíng": {
+  "english": "upward; going up",
+  "traditional": "上行"
+ },
+ "上调|shàngtiáo": {
+  "english": "to raise (prices, rates)",
+  "traditional": "上調"
+ },
+ "上进|shàngjìn": {
+  "english": "to make progress; ambitious",
+  "traditional": "上進"
+ },
+ "下半场|xiàbànchǎng": {
+  "english": "second half (of a match)",
+  "traditional": "下半場"
+ },
+ "下单|xiàdān": {
+  "english": "to place an order",
+  "traditional": "下單"
+ },
+ "下滑|xiàhuá": {
+  "english": "to slide; to decline",
+  "traditional": "下滑"
+ },
+ "下线|xiàxiàn": {
+  "english": "to go offline",
+  "traditional": "下線"
+ },
+ "下行|xiàxíng": {
+  "english": "downward; going down",
+  "traditional": "下行"
+ },
+ "下调|xiàtiáo": {
+  "english": "to lower (prices, rates)",
+  "traditional": "下調"
+ },
+ "下达|xiàdá": {
+  "english": "to issue (an order)",
+  "traditional": "下達"
+ },
+ "不下|búxià": {
+  "english": "no less than",
+  "traditional": "不下"
+ },
+ "不乏|bùfá": {
+  "english": "there is no lack of",
+  "traditional": "不乏"
+ },
+ "不力|búlì": {
+  "english": "ineffective",
+  "traditional": "不力"
+ },
+ "不动产|búdòngchǎn": {
+  "english": "real estate",
+  "traditional": "不動產"
+ },
+ "不厌其烦|búyàn-qífán": {
+  "english": "to take great pains; patiently",
+  "traditional": "不厭其煩"
+ },
+ "不及|bùjí": {
+  "english": "to fall short of; too late",
+  "traditional": "不及"
+ },
+ "不可或缺|bùkě-huòquē": {
+  "english": "indispensable",
+  "traditional": "不可或缺"
+ },
+ "不妙|búmiào": {
+  "english": "not good; bad sign",
+  "traditional": "不妙"
+ },
+ "不当|búdàng": {
+  "english": "improper; inappropriate",
+  "traditional": "不當"
+ },
+ "不得|bùdé": {
+  "english": "must not; may not",
+  "traditional": "不得"
+ },
+ "不愧|búkuì": {
+  "english": "to deserve to be called",
+  "traditional": "不愧"
+ },
+ "不折不扣|bùzhé-búkòu": {
+  "english": "out-and-out; to the letter",
+  "traditional": "不折不扣"
+ },
+ "不法|bùfǎ": {
+  "english": "illegal",
+  "traditional": "不法"
+ },
+ "不知所措|bùzhī-suǒcuò": {
+  "english": "at a loss",
+  "traditional": "不知所措"
+ },
+ "不符|bùfú": {
+  "english": "to not match; to be inconsistent",
+  "traditional": "不符"
+ },
+ "不肖|búxiào": {
+  "english": "unworthy (of one's parents)",
+  "traditional": "不肖"
+ },
+ "不言而喻|bùyán’éryù": {
+  "english": "it goes without saying",
+  "traditional": "不言而喻"
+ },
+ "专卖|zhuānmài": {
+  "english": "to sell exclusively",
+  "traditional": "專賣"
+ },
+ "专科|zhuānkē": {
+  "english": "specialty; junior college",
+  "traditional": "專科"
+ },
+ "专项|zhuānxiàng": {
+  "english": "special item; dedicated",
+  "traditional": "專項"
+ },
+ "世人|shìrén": {
+  "english": "people; the world",
+  "traditional": "世人"
+ },
+ "世间|shìjiān": {
+  "english": "in the world",
+  "traditional": "世間"
+ },
+ "丛|cóng": {
+  "english": "measure word for clumps (of plants)",
+  "traditional": "叢"
+ },
+ "丢三落四|diūsān-làsì": {
+  "english": "forgetful; scatterbrained",
+  "traditional": "丟三落四"
+ },
+ "两下子|liǎngxiàzi": {
+  "english": "real skill; a few times",
+  "traditional": "兩下子"
+ },
+ "两极|liǎngjí": {
+  "english": "the two poles; two extremes",
+  "traditional": "兩極"
+ },
+ "两翼|liǎngyì": {
+  "english": "both wings; both flanks",
+  "traditional": "兩翼"
+ },
+ "严寒|yánhán": {
+  "english": "severe cold",
+  "traditional": "嚴寒"
+ },
+ "中叶|zhōngyè": {
+  "english": "middle period (of a century)",
+  "traditional": "中葉"
+ },
+ "中暑|zhòngshǔ": {
+  "english": "heatstroke; to get heatstroke",
+  "traditional": "中暑"
+ },
+ "丸子|wánzi": {
+  "english": "meatball; ball",
+  "traditional": "丸子"
+ },
+ "主打|zhǔdǎ": {
+  "english": "to feature; flagship",
+  "traditional": "主打"
+ },
+ "主播|zhǔbō": {
+  "english": "host; streamer; to host",
+  "traditional": "主播"
+ },
+ "主题曲|zhǔtíqǔ": {
+  "english": "theme song",
+  "traditional": "主題曲"
+ },
+ "举棋不定|jǔqí-búdìng": {
+  "english": "to hesitate; indecisive",
+  "traditional": "舉棋不定"
+ },
+ "举足轻重|jǔzú-qīngzhòng": {
+  "english": "crucially important",
+  "traditional": "舉足輕重"
+ },
+ "久远|jiǔyuǎn": {
+  "english": "long ago; ancient",
+  "traditional": "久遠"
+ },
+ "之际|zhījì": {
+  "english": "at the time of",
+  "traditional": "之際"
+ },
+ "乌龟|wūguī": {
+  "english": "turtle; tortoise",
+  "traditional": "烏龜"
+ },
+ "乏力|fálì": {
+  "english": "weak; lacking strength",
+  "traditional": "乏力"
+ },
+ "乐于|lèyú": {
+  "english": "to be happy to",
+  "traditional": "樂於"
+ },
+ "乐此不疲|lècǐ-bùpí": {
+  "english": "to never tire of something",
+  "traditional": "樂此不疲"
+ },
+ "乐谱|yuèpǔ": {
+  "english": "sheet music",
+  "traditional": "樂譜"
+ },
+ "乘务员|chéngwùyuán": {
+  "english": "flight attendant; train attendant",
+  "traditional": "乘務員"
+ },
+ "书画|shūhuà": {
+  "english": "calligraphy and painting",
+  "traditional": "書畫"
+ },
+ "争相|zhēngxiāng": {
+  "english": "to vie with each other",
+  "traditional": "爭相"
+ },
+ "争辩|zhēngbiàn": {
+  "english": "to argue",
+  "traditional": "爭辯"
+ },
+ "亏待|kuīdài": {
+  "english": "to treat unfairly",
+  "traditional": "虧待"
+ },
+ "五官|wǔguān": {
+  "english": "facial features",
+  "traditional": "五官"
+ },
+ "五湖四海|wǔhú-sìhǎi": {
+  "english": "all over the country",
+  "traditional": "五湖四海"
+ },
+ "井底之蛙|jǐngdǐzhīwā": {
+  "english": "frog in a well; narrow-minded person",
+  "traditional": "井底之蛙"
+ },
+ "亚洲|Yàzhōu": {
+  "english": "Asia",
+  "traditional": "亞洲"
+ },
+ "交互|jiāohù": {
+  "english": "interactive; in turn",
+  "traditional": "交互"
+ },
+ "交织|jiāozhī": {
+  "english": "to interweave",
+  "traditional": "交織"
+ },
+ "产业链|chǎnyèliàn": {
+  "english": "industrial chain",
+  "traditional": "產業鏈"
+ },
+ "产出|chǎnchū": {
+  "english": "to produce; output",
+  "traditional": "產出"
+ },
+ "产权|chǎnquán": {
+  "english": "property rights",
+  "traditional": "產權"
+ },
+ "享用|xiǎngyòng": {
+  "english": "to enjoy",
+  "traditional": "享用"
+ },
+ "亭子|tíngzi": {
+  "english": "pavilion",
+  "traditional": "亭子"
+ },
+ "人山人海|rénshān-rénhǎi": {
+  "english": "huge crowds of people",
+  "traditional": "人山人海"
+ },
+ "人际|rénjì": {
+  "english": "interpersonal",
+  "traditional": "人際"
+ },
+ "亿万|yìwàn": {
+  "english": "hundreds of millions",
+  "traditional": "億萬"
+ },
+ "仓促|cāngcù": {
+  "english": "hasty",
+  "traditional": "倉促"
+ },
+ "代言|dàiyán": {
+  "english": "to endorse; to be a spokesperson",
+  "traditional": "代言"
+ },
+ "仰望|yǎngwàng": {
+  "english": "to look up at; to look up to",
+  "traditional": "仰望"
+ },
+ "任性|rénxìng": {
+  "english": "willful; headstrong",
+  "traditional": "任性"
+ },
+ "任重道远|rènzhòng-dàoyuǎn": {
+  "english": "a heavy task and a long road ahead",
+  "traditional": "任重道遠"
+ },
+ "仿真|fǎngzhēn": {
+  "english": "simulation; lifelike",
+  "traditional": "仿真"
+ },
+ "优胜劣汰|yōushèng-liètài": {
+  "english": "survival of the fittest",
+  "traditional": "優勝劣汰"
+ },
+ "传|zhuàn": {
+  "english": "biography",
+  "traditional": "傳"
+ },
+ "传单|chuándān": {
+  "english": "leaflet; flyer",
+  "traditional": "傳單"
+ },
+ "低落|dīluò": {
+  "english": "low; downcast",
+  "traditional": "低落"
+ },
+ "体态|tǐtài": {
+  "english": "posture; figure",
+  "traditional": "體態"
+ },
+ "体裁|tǐcái": {
+  "english": "genre; literary form",
+  "traditional": "體裁"
+ },
+ "体魄|tǐpò": {
+  "english": "physique",
+  "traditional": "體魄"
+ },
+ "何|hé": {
+  "english": "what; why; how",
+  "traditional": "何"
+ },
+ "何止|hézhǐ": {
+  "english": "far more than",
+  "traditional": "何止"
+ },
+ "何等|héděng": {
+  "english": "what kind of; how (exclamatory)",
+  "traditional": "何等"
+ },
+ "佛|fó": {
+  "english": "Buddha; Buddhism",
+  "traditional": "佛"
+ },
+ "作息|zuòxī": {
+  "english": "work and rest routine",
+  "traditional": "作息"
+ },
+ "作料|zuòliao": {
+  "english": "seasoning",
+  "traditional": "作料"
+ },
+ "你好|nǐ hǎo": {
+  "english": "hello",
+  "traditional": "你好"
+ },
+ "佩戴|pèidài": {
+  "english": "to wear (a badge or accessory)",
+  "traditional": "佩戴"
+ },
+ "佳肴|jiāyáo": {
+  "english": "delicacies",
+  "traditional": "佳餚"
+ },
+ "使馆|shǐguǎn": {
+  "english": "embassy",
+  "traditional": "使館"
+ },
+ "侃侃而谈|kǎnkǎn’értán": {
+  "english": "to speak confidently",
+  "traditional": "侃侃而談"
+ },
+ "侄子|zhízi": {
+  "english": "nephew (brother's son)",
+  "traditional": "侄子"
+ },
+ "供养|gōngyǎng": {
+  "english": "to support (parents)",
+  "traditional": "供養"
+ },
+ "供应链|gōngyìngliàn": {
+  "english": "supply chain",
+  "traditional": "供應鏈"
+ },
+ "供需|gōngxū": {
+  "english": "supply and demand",
+  "traditional": "供需"
+ },
+ "依附|yīfù": {
+  "english": "to depend on; to attach to",
+  "traditional": "依附"
+ },
+ "侥幸|jiǎoxìng": {
+  "english": "lucky; by a fluke",
+  "traditional": "僥倖"
+ },
+ "侦探|zhēntàn": {
+  "english": "detective",
+  "traditional": "偵探"
+ },
+ "侦查|zhēnchá": {
+  "english": "to investigate (a crime)",
+  "traditional": "偵查"
+ },
+ "便宜|piányi": {
+  "english": "cheap; inexpensive",
+  "traditional": "便宜"
+ },
+ "便携式|biànxiéshì": {
+  "english": "portable",
+  "traditional": "便攜式"
+ },
+ "俗称|súchēng": {
+  "english": "commonly known as",
+  "traditional": "俗稱"
+ },
+ "俯视|fǔshì": {
+  "english": "to look down on",
+  "traditional": "俯視"
+ },
+ "倍增|bèizēng": {
+  "english": "to double; to multiply",
+  "traditional": "倍增"
+ },
+ "倒退|dàotuì": {
+  "english": "to go backwards",
+  "traditional": "倒退"
+ },
+ "债券|zhàiquàn": {
+  "english": "bond (finance)",
+  "traditional": "債券"
+ },
+ "倾倒|qīngdǎo": {
+  "english": "to topple; to be infatuated",
+  "traditional": "傾倒"
+ },
+ "偏旁|piānpáng": {
+  "english": "component of a character",
+  "traditional": "偏旁"
+ },
+ "偏爱|piān’ài": {
+  "english": "to favor; to prefer",
+  "traditional": "偏愛"
+ },
+ "偏离|piānlí": {
+  "english": "to deviate",
+  "traditional": "偏離"
+ },
+ "做主|zuòzhǔ": {
+  "english": "to decide; to be in charge",
+  "traditional": "做主"
+ },
+ "停滞|tíngzhì": {
+  "english": "to stagnate",
+  "traditional": "停滯"
+ },
+ "健身房|jiànshēnfáng": {
+  "english": "gym",
+  "traditional": "健身房"
+ },
+ "储量|chǔliàng": {
+  "english": "reserves",
+  "traditional": "儲量"
+ },
+ "僵硬|jiāngyìng": {
+  "english": "stiff; rigid",
+  "traditional": "僵硬"
+ },
+ "元宵|yuánxiāo": {
+  "english": "sweet rice ball; Lantern Festival",
+  "traditional": "元宵"
+ },
+ "充值|chōngzhí": {
+  "english": "to top up (a card or account)",
+  "traditional": "充值"
+ },
+ "充斥|chōngchì": {
+  "english": "to flood; to be full of",
+  "traditional": "充斥"
+ },
+ "充裕|chōngyù": {
+  "english": "plentiful; ample",
+  "traditional": "充裕"
+ },
+ "免税|miǎnshuì": {
+  "english": "tax-free; duty-free",
+  "traditional": "免稅"
+ },
+ "兑|duì": {
+  "english": "to exchange; to add (water)",
+  "traditional": "兌"
+ },
+ "兔子|tùzi": {
+  "english": "rabbit",
+  "traditional": "兔子"
+ },
+ "入住|rùzhù": {
+  "english": "to check in; to move in",
+  "traditional": "入住"
+ },
+ "入手|rùshǒu": {
+  "english": "to start with; to get hold of",
+  "traditional": "入手"
+ },
+ "全身心|quánshēnxīn": {
+  "english": "wholeheartedly",
+  "traditional": "全身心"
+ },
+ "八成|bāchéng": {
+  "english": "eighty percent; most likely",
+  "traditional": "八成"
+ },
+ "公办|gōngbàn": {
+  "english": "state-run",
+  "traditional": "公辦"
+ },
+ "兰花|lánhuā": {
+  "english": "orchid",
+  "traditional": "蘭花"
+ },
+ "共和国|gònghéguó": {
+  "english": "republic",
+  "traditional": "共和國"
+ },
+ "关切|guānqiè": {
+  "english": "to be concerned about",
+  "traditional": "關切"
+ },
+ "兴盛|xīngshèng": {
+  "english": "prosperous; flourishing",
+  "traditional": "興盛"
+ },
+ "兴隆|xīnglóng": {
+  "english": "prosperous; thriving",
+  "traditional": "興隆"
+ },
+ "兹|zī": {
+  "english": "this; now (formal)",
+  "traditional": "茲"
+ },
+ "养育|yǎngyù": {
+  "english": "to raise; to bring up",
+  "traditional": "養育"
+ },
+ "内脏|nèizàng": {
+  "english": "internal organs",
+  "traditional": "內臟"
+ },
+ "再接再厉|zàijiē-zàilì": {
+  "english": "to keep up the good work",
+  "traditional": "再接再厲"
+ },
+ "农田|nóngtián": {
+  "english": "farmland",
+  "traditional": "農田"
+ },
+ "冰天雪地|bīngtiān-xuědì": {
+  "english": "a world of ice and snow",
+  "traditional": "冰天雪地"
+ },
+ "冰山一角|bīngshān-yìjiǎo": {
+  "english": "tip of the iceberg",
+  "traditional": "冰山一角"
+ },
+ "冰激凌|bīngjīlíng": {
+  "english": "ice cream",
+  "traditional": "冰激凌"
+ },
+ "冰雹|bīngbáo": {
+  "english": "hail",
+  "traditional": "冰雹"
+ },
+ "冷却|lěngquè": {
+  "english": "to cool down",
+  "traditional": "冷卻"
+ },
+ "凋谢|diāoxiè": {
+  "english": "to wither",
+  "traditional": "凋謝"
+ },
+ "减负|jiǎnfù": {
+  "english": "to reduce a burden",
+  "traditional": "減負"
+ },
+ "减退|jiǎntuì": {
+  "english": "to decline; to fade",
+  "traditional": "減退"
+ },
+ "凝结|níngjié": {
+  "english": "to condense; to coagulate",
+  "traditional": "凝結"
+ },
+ "凝视|níngshì": {
+  "english": "to gaze at",
+  "traditional": "凝視"
+ },
+ "凤毛麟角|fèngmáo-línjiǎo": {
+  "english": "extremely rare",
+  "traditional": "鳳毛麟角"
+ },
+ "凯旋|kǎixuán": {
+  "english": "to return in triumph",
+  "traditional": "凱旋"
+ },
+ "出力|chūlì": {
+  "english": "to put in effort",
+  "traditional": "出力"
+ },
+ "出征|chūzhēng": {
+  "english": "to go into battle; to set off (to compete)",
+  "traditional": "出征"
+ },
+ "出神|chūshén": {
+  "english": "to be lost in thought",
+  "traditional": "出神"
+ },
+ "击败|jībài": {
+  "english": "to defeat",
+  "traditional": "擊敗"
+ },
+ "函|hán": {
+  "english": "letter; correspondence",
+  "traditional": "函"
+ },
+ "分发|fēnfā": {
+  "english": "to distribute; to hand out",
+  "traditional": "分發"
+ },
+ "分期|fēnqī": {
+  "english": "by stages; in installments",
+  "traditional": "分期"
+ },
+ "分级|fēnjí": {
+  "english": "to grade; to classify",
+  "traditional": "分級"
+ },
+ "切忌|qièjì": {
+  "english": "must avoid",
+  "traditional": "切忌"
+ },
+ "切换|qiēhuàn": {
+  "english": "to switch",
+  "traditional": "切換"
+ },
+ "切磋|qiēcuō": {
+  "english": "to learn from each other",
+  "traditional": "切磋"
+ },
+ "切记|qièjì": {
+  "english": "to be sure to remember",
+  "traditional": "切記"
+ },
+ "刑事|xíngshì": {
+  "english": "criminal (law)",
+  "traditional": "刑事"
+ },
+ "划不来|huábulái": {
+  "english": "not worth it",
+  "traditional": "划不來"
+ },
+ "划得来|huádelái": {
+  "english": "worth it",
+  "traditional": "划得來"
+ },
+ "利弊|lìbì": {
+  "english": "pros and cons",
+  "traditional": "利弊"
+ },
+ "刮目相看|guāmù-xiāngkàn": {
+  "english": "to see someone in a new light",
+  "traditional": "刮目相看"
+ },
+ "刹那|chànà": {
+  "english": "instant; split second",
+  "traditional": "剎那"
+ },
+ "刺眼|cìyǎn": {
+  "english": "dazzling; glaring",
+  "traditional": "刺眼"
+ },
+ "刻不容缓|kèbùrónghuǎn": {
+  "english": "extremely urgent",
+  "traditional": "刻不容緩"
+ },
+ "刻画|kèhuà": {
+  "english": "to portray",
+  "traditional": "刻畫"
+ },
+ "剂量|jìliàng": {
+  "english": "dose; dosage",
+  "traditional": "劑量"
+ },
+ "削|xiāo": {
+  "english": "to peel; to sharpen",
+  "traditional": "削"
+ },
+ "削减|xuējiǎn": {
+  "english": "to cut; to reduce",
+  "traditional": "削減"
+ },
+ "前程|qiánchéng": {
+  "english": "future; prospects",
+  "traditional": "前程"
+ },
+ "剥|bāo": {
+  "english": "to peel; to shell",
+  "traditional": "剝"
+ },
+ "剧变|jùbiàn": {
+  "english": "drastic change",
+  "traditional": "劇變"
+ },
+ "剪彩|jiǎncǎi": {
+  "english": "to cut the ribbon",
+  "traditional": "剪綵"
+ },
+ "剪辑|jiǎnjí": {
+  "english": "to edit (film or video)",
+  "traditional": "剪輯"
+ },
+ "副本|fùběn": {
+  "english": "copy; duplicate",
+  "traditional": "副本"
+ },
+ "功利|gōnglì": {
+  "english": "utilitarian; material gain",
+  "traditional": "功利"
+ },
+ "加之|jiāzhī": {
+  "english": "moreover; in addition",
+  "traditional": "加之"
+ },
+ "加倍|jiābèi": {
+  "english": "to double; doubly",
+  "traditional": "加倍"
+ },
+ "务工|wùgōng": {
+  "english": "to work as a laborer",
+  "traditional": "務工"
+ },
+ "动漫|dòngmàn": {
+  "english": "animation and comics; anime",
+  "traditional": "動漫"
+ },
+ "动车|dòngchē": {
+  "english": "high-speed train (D-train)",
+  "traditional": "動車"
+ },
+ "助力|zhùlì": {
+  "english": "to help; boost",
+  "traditional": "助力"
+ },
+ "劲|jìn": {
+  "english": "strength; energy; spirit",
+  "traditional": "勁"
+ },
+ "劳驾|láojià": {
+  "english": "excuse me (asking a favor)",
+  "traditional": "勞駕"
+ },
+ "勉励|miǎnlì": {
+  "english": "to encourage",
+  "traditional": "勉勵"
+ },
+ "勤俭|qínjiǎn": {
+  "english": "hard-working and thrifty",
+  "traditional": "勤儉"
+ },
+ "勺子|sháozi": {
+  "english": "spoon",
+  "traditional": "勺子"
+ },
+ "勾勒|gōulè": {
+  "english": "to outline; to sketch",
+  "traditional": "勾勒"
+ },
+ "包庇|bāobì": {
+  "english": "to shield (a wrongdoer)",
+  "traditional": "包庇"
+ },
+ "包罗万象|bāoluó-wànxiàng": {
+  "english": "all-embracing; all-inclusive",
+  "traditional": "包羅萬象"
+ },
+ "化学|huàxué": {
+  "english": "chemistry",
+  "traditional": "化學"
+ },
+ "北美洲|Běiměizhōu": {
+  "english": "North America",
+  "traditional": "北美洲"
+ },
+ "区区|qūqū": {
+  "english": "trifling; merely",
+  "traditional": "區區"
+ },
+ "区间|qūjiān": {
+  "english": "range; section",
+  "traditional": "區間"
+ },
+ "千姿百态|qiānzī-bǎitài": {
+  "english": "in many different forms",
+  "traditional": "千姿百態"
+ },
+ "升华|shēnghuá": {
+  "english": "to sublimate; to elevate",
+  "traditional": "昇華"
+ },
+ "半导体|bàndǎotǐ": {
+  "english": "semiconductor",
+  "traditional": "半導體"
+ },
+ "半径|bànjìng": {
+  "english": "radius",
+  "traditional": "半徑"
+ },
+ "卑微|bēiwēi": {
+  "english": "humble; lowly",
+  "traditional": "卑微"
+ },
+ "单价|dānjià": {
+  "english": "unit price",
+  "traditional": "單價"
+ },
+ "南极洲|Nánjízhōu": {
+  "english": "Antarctica",
+  "traditional": "南極洲"
+ },
+ "南美洲|Nánměizhōu": {
+  "english": "South America",
+  "traditional": "南美洲"
+ },
+ "南辕北辙|nányuán-běizhé": {
+  "english": "to act contrary to one's aim",
+  "traditional": "南轅北轍"
+ },
+ "博大精深|bódà-jīngshēn": {
+  "english": "broad and profound",
+  "traditional": "博大精深"
+ },
+ "博学|bóxué": {
+  "english": "learned; erudite",
+  "traditional": "博學"
+ },
+ "博弈|bóyì": {
+  "english": "game; contest of strategy",
+  "traditional": "博弈"
+ },
+ "占比|zhànbǐ": {
+  "english": "proportion; share",
+  "traditional": "佔比"
+ },
+ "占线|zhànxiàn": {
+  "english": "(phone line) busy",
+  "traditional": "佔線"
+ },
+ "卡|qiǎ": {
+  "english": "to get stuck; clip",
+  "traditional": "卡"
+ },
+ "即日|jírì": {
+  "english": "this very day",
+  "traditional": "即日"
+ },
+ "即时|jíshí": {
+  "english": "immediate; instant",
+  "traditional": "即時"
+ },
+ "卸任|xièrèn": {
+  "english": "to leave office",
+  "traditional": "卸任"
+ },
+ "卸载|xièzài": {
+  "english": "to uninstall; to unload",
+  "traditional": "卸載"
+ },
+ "历代|lìdài": {
+  "english": "past dynasties; successive generations",
+  "traditional": "歷代"
+ },
+ "历年|lìnián": {
+  "english": "over the years",
+  "traditional": "歷年"
+ },
+ "压岁钱|yāsuìqián": {
+  "english": "New Year money (given to children)",
+  "traditional": "壓歲錢"
+ },
+ "压榨|yāzhà": {
+  "english": "to squeeze; to exploit",
+  "traditional": "壓榨"
+ },
+ "压轴|yāzhòu": {
+  "english": "grand finale",
+  "traditional": "壓軸"
+ },
+ "厌恶|yànwù": {
+  "english": "to detest",
+  "traditional": "厭惡"
+ },
+ "反之|fǎnzhī": {
+  "english": "conversely; otherwise",
+  "traditional": "反之"
+ },
+ "反射|fǎnshè": {
+  "english": "to reflect; reflex",
+  "traditional": "反射"
+ },
+ "发呆|fādāi": {
+  "english": "to stare blankly; to daydream",
+  "traditional": "發呆"
+ },
+ "发源|fāyuán": {
+  "english": "to originate",
+  "traditional": "發源"
+ },
+ "发芽|fāyá": {
+  "english": "to sprout",
+  "traditional": "發芽"
+ },
+ "发行|fāxíng": {
+  "english": "to issue; to release",
+  "traditional": "發行"
+ },
+ "发音|fāyīn": {
+  "english": "pronunciation; to pronounce",
+  "traditional": "發音"
+ },
+ "取决|qǔjué": {
+  "english": "to depend on",
+  "traditional": "取決"
+ },
+ "取材|qǔcái": {
+  "english": "to draw material from",
+  "traditional": "取材"
+ },
+ "受宠若惊|shòuchǒng-ruòjīng": {
+  "english": "overwhelmed by a favor",
+  "traditional": "受寵若驚"
+ },
+ "受挫|shòucuò": {
+  "english": "to suffer a setback",
+  "traditional": "受挫"
+ },
+ "受益匪浅|shòuyì-fěiqiǎn": {
+  "english": "to benefit greatly",
+  "traditional": "受益匪淺"
+ },
+ "受罪|shòuzuì": {
+  "english": "to suffer",
+  "traditional": "受罪"
+ },
+ "变故|biàngù": {
+  "english": "unexpected misfortune",
+  "traditional": "變故"
+ },
+ "变通|biàntōng": {
+  "english": "to be flexible; to adapt",
+  "traditional": "變通"
+ },
+ "口哨儿|kǒushàor": {
+  "english": "whistle (with the mouth)",
+  "traditional": "口哨兒"
+ },
+ "口头禅|kǒutóuchán": {
+  "english": "catchphrase",
+  "traditional": "口頭禪"
+ },
+ "口岸|kǒu’àn": {
+  "english": "port of entry",
+  "traditional": "口岸"
+ },
+ "古籍|gǔjí": {
+  "english": "ancient books",
+  "traditional": "古籍"
+ },
+ "各抒己见|gèshū-jǐjiàn": {
+  "english": "everyone gives their own view",
+  "traditional": "各抒己見"
+ },
+ "各行各业|gèháng-gèyè": {
+  "english": "every walk of life; all industries",
+  "traditional": "各行各業"
+ },
+ "同仁|tóngrén": {
+  "english": "colleagues",
+  "traditional": "同仁"
+ },
+ "同比|tóngbǐ": {
+  "english": "year-on-year",
+  "traditional": "同比"
+ },
+ "名次|míngcì": {
+  "english": "ranking; place",
+  "traditional": "名次"
+ },
+ "名牌|míngpái": {
+  "english": "famous brand",
+  "traditional": "名牌"
+ },
+ "后世|hòushì": {
+  "english": "later generations",
+  "traditional": "後世"
+ },
+ "吐槽|tǔcáo": {
+  "english": "to complain; to roast",
+  "traditional": "吐槽"
+ },
+ "吝啬|lìnsè": {
+  "english": "stingy",
+  "traditional": "吝嗇"
+ },
+ "吞吞吐吐|tūntūntǔtǔ": {
+  "english": "hesitant (in speech)",
+  "traditional": "吞吞吐吐"
+ },
+ "听觉|tīngjué": {
+  "english": "sense of hearing",
+  "traditional": "聽覺"
+ },
+ "启用|qǐyòng": {
+  "english": "to start using; to launch",
+  "traditional": "啟用"
+ },
+ "启程|qǐchéng": {
+  "english": "to set out",
+  "traditional": "啟程"
+ },
+ "呈|chéng": {
+  "english": "to take on (a form); to present",
+  "traditional": "呈"
+ },
+ "周岁|zhōusuì": {
+  "english": "full years of age",
+  "traditional": "週歲"
+ },
+ "周折|zhōuzhé": {
+  "english": "twists and turns; setbacks",
+  "traditional": "周折"
+ },
+ "周转|zhōuzhuǎn": {
+  "english": "to turn over (funds); cash flow",
+  "traditional": "週轉"
+ },
+ "味|wèi": {
+  "english": "taste; smell",
+  "traditional": "味"
+ },
+ "味觉|wèijué": {
+  "english": "sense of taste",
+  "traditional": "味覺"
+ },
+ "呵|hē": {
+  "english": "to breathe out; to scold",
+  "traditional": "呵"
+ },
+ "呻吟|shēnyín": {
+  "english": "to moan; to groan",
+  "traditional": "呻吟"
+ },
+ "呼|hū": {
+  "english": "to breathe out; to call",
+  "traditional": "呼"
+ },
+ "呼啸|hūxiào": {
+  "english": "to whistle; to roar",
+  "traditional": "呼嘯"
+ },
+ "咀嚼|jǔjué": {
+  "english": "to chew; to ponder",
+  "traditional": "咀嚼"
+ },
+ "和好|héhǎo": {
+  "english": "to make up; to reconcile",
+  "traditional": "和好"
+ },
+ "咳|ké": {
+  "english": "to cough",
+  "traditional": "咳"
+ },
+ "品味|pǐnwèi": {
+  "english": "to savor; taste (in style)",
+  "traditional": "品味"
+ },
+ "哈|hā": {
+  "english": "ha (laughter); aha",
+  "traditional": "哈"
+ },
+ "哨|shào": {
+  "english": "whistle; sentry post",
+  "traditional": "哨"
+ },
+ "哪个|nǎge": {
+  "english": "which; which one",
+  "traditional": "哪個"
+ },
+ "哲理|zhélǐ": {
+  "english": "philosophy; philosophical idea",
+  "traditional": "哲理"
+ },
+ "哺乳|bǔrǔ": {
+  "english": "to breastfeed; to suckle",
+  "traditional": "哺乳"
+ },
+ "哽咽|gěngyè": {
+  "english": "to choke with sobs",
+  "traditional": "哽咽"
+ },
+ "唤醒|huànxǐng": {
+  "english": "to wake up; to awaken",
+  "traditional": "喚醒"
+ },
+ "售票员|shòupiàoyuán": {
+  "english": "ticket seller; conductor",
+  "traditional": "售票員"
+ },
+ "唯有|wéiyǒu": {
+  "english": "only",
+  "traditional": "唯有"
+ },
+ "唾弃|tuòqì": {
+  "english": "to spurn",
+  "traditional": "唾棄"
+ },
+ "商家|shāngjiā": {
+  "english": "merchant; seller",
+  "traditional": "商家"
+ },
+ "商机|shāngjī": {
+  "english": "business opportunity",
+  "traditional": "商機"
+ },
+ "商用|shāngyòng": {
+  "english": "commercial use",
+  "traditional": "商用"
+ },
+ "商议|shāngyì": {
+  "english": "to discuss; to confer",
+  "traditional": "商議"
+ },
+ "啰唆|luōsuo": {
+  "english": "long-winded; to nag",
+  "traditional": "囉唆"
+ },
+ "喜闻乐见|xǐwén-lèjiàn": {
+  "english": "popular; well-loved",
+  "traditional": "喜聞樂見"
+ },
+ "嗅|xiù": {
+  "english": "to smell; to sniff",
+  "traditional": "嗅"
+ },
+ "嗓音|sǎngyīn": {
+  "english": "voice",
+  "traditional": "嗓音"
+ },
+ "嗯|ǹg": {
+  "english": "mm; yes (agreeing)",
+  "traditional": "嗯"
+ },
+ "嘀咕|dígu": {
+  "english": "to mutter; to have misgivings",
+  "traditional": "嘀咕"
+ },
+ "嘈杂|cáozá": {
+  "english": "noisy",
+  "traditional": "嘈雜"
+ },
+ "嘱托|zhǔtuō": {
+  "english": "to entrust",
+  "traditional": "囑託"
+ },
+ "器具|qìjù": {
+  "english": "utensil; appliance",
+  "traditional": "器具"
+ },
+ "器重|qìzhòng": {
+  "english": "to think highly of",
+  "traditional": "器重"
+ },
+ "噩耗|èhào": {
+  "english": "sad news (of a death)",
+  "traditional": "噩耗"
+ },
+ "嚣张|xiāozhāng": {
+  "english": "arrogant; rampant",
+  "traditional": "囂張"
+ },
+ "嚼|jiáo": {
+  "english": "to chew",
+  "traditional": "嚼"
+ },
+ "四方|sìfāng": {
+  "english": "all sides; square",
+  "traditional": "四方"
+ },
+ "四肢|sìzhī": {
+  "english": "limbs",
+  "traditional": "四肢"
+ },
+ "四通八达|sìtōng-bādá": {
+  "english": "accessible from all directions",
+  "traditional": "四通八達"
+ },
+ "回合|huíhé": {
+  "english": "round (of a match)",
+  "traditional": "回合"
+ },
+ "因地制宜|yīndì-zhìyí": {
+  "english": "to suit local conditions",
+  "traditional": "因地制宜"
+ },
+ "园区|yuánqū": {
+  "english": "park (business or industrial)",
+  "traditional": "園區"
+ },
+ "围棋|wéiqí": {
+  "english": "go (board game)",
+  "traditional": "圍棋"
+ },
+ "围观|wéiguān": {
+  "english": "to gather round to watch",
+  "traditional": "圍觀"
+ },
+ "固体|gùtǐ": {
+  "english": "solid",
+  "traditional": "固體"
+ },
+ "固化|gùhuà": {
+  "english": "to solidify; to entrench",
+  "traditional": "固化"
+ },
+ "固有|gùyǒu": {
+  "english": "inherent",
+  "traditional": "固有"
+ },
+ "国务院|guówùyuàn": {
+  "english": "State Council",
+  "traditional": "國務院"
+ },
+ "圈|juàn": {
+  "english": "pen; enclosure (for animals)",
+  "traditional": "圈"
+ },
+ "圈|juān": {
+  "english": "to pen in; to shut in",
+  "traditional": "圈"
+ },
+ "在所难免|zàisuǒnánmiǎn": {
+  "english": "unavoidable",
+  "traditional": "在所難免"
+ },
+ "地|dì": {
+  "english": "ground; land; earth",
+  "traditional": "地"
+ },
+ "地势|dìshì": {
+  "english": "terrain",
+  "traditional": "地勢"
+ },
+ "场次|chǎngcì": {
+  "english": "showing; session (of a film or show)",
+  "traditional": "場次"
+ },
+ "均|jūn": {
+  "english": "equal; all",
+  "traditional": "均"
+ },
+ "坎坷|kǎnkě": {
+  "english": "bumpy; full of setbacks",
+  "traditional": "坎坷"
+ },
+ "坚果|jiānguǒ": {
+  "english": "nut",
+  "traditional": "堅果"
+ },
+ "坠落|zhuìluò": {
+  "english": "to fall; to drop",
+  "traditional": "墜落"
+ },
+ "坦言|tǎnyán": {
+  "english": "to say frankly",
+  "traditional": "坦言"
+ },
+ "垂直|chuízhí": {
+  "english": "vertical; perpendicular",
+  "traditional": "垂直"
+ },
+ "埋头苦干|máitóu-kǔgàn": {
+  "english": "to work hard quietly",
+  "traditional": "埋頭苦幹"
+ },
+ "埋葬|máizàng": {
+  "english": "to bury",
+  "traditional": "埋葬"
+ },
+ "基建|jījiàn": {
+  "english": "infrastructure; capital construction",
+  "traditional": "基建"
+ },
+ "基金会|jījīnhuì": {
+  "english": "foundation (organization)",
+  "traditional": "基金會"
+ },
+ "堆积|duījī": {
+  "english": "to pile up",
+  "traditional": "堆積"
+ },
+ "增速|zēngsù": {
+  "english": "growth rate; to speed up",
+  "traditional": "增速"
+ },
+ "壁垒|bìlěi": {
+  "english": "barrier",
+  "traditional": "壁壘"
+ },
+ "壮烈|zhuàngliè": {
+  "english": "heroic",
+  "traditional": "壯烈"
+ },
+ "声势|shēngshì": {
+  "english": "momentum; impetus",
+  "traditional": "聲勢"
+ },
+ "声调|shēngdiào": {
+  "english": "tone",
+  "traditional": "聲調"
+ },
+ "处事|chǔshì": {
+  "english": "to handle affairs",
+  "traditional": "處事"
+ },
+ "备|bèi": {
+  "english": "to prepare; fully",
+  "traditional": "備"
+ },
+ "备份|bèifèn": {
+  "english": "backup; to back up",
+  "traditional": "備份"
+ },
+ "备忘录|bèiwànglù": {
+  "english": "memo; memorandum",
+  "traditional": "備忘錄"
+ },
+ "备战|bèizhàn": {
+  "english": "to prepare for a match or war",
+  "traditional": "備戰"
+ },
+ "夕阳|xīyáng": {
+  "english": "setting sun",
+  "traditional": "夕陽"
+ },
+ "外向|wàixiàng": {
+  "english": "extroverted",
+  "traditional": "外向"
+ },
+ "外在|wàizài": {
+  "english": "external",
+  "traditional": "外在"
+ },
+ "外甥|wàisheng": {
+  "english": "nephew (sister's son)",
+  "traditional": "外甥"
+ },
+ "多才多艺|duōcái-duōyì": {
+  "english": "versatile; multi-talented",
+  "traditional": "多才多藝"
+ },
+ "夜宵|yèxiāo": {
+  "english": "late-night snack",
+  "traditional": "夜宵"
+ },
+ "大不了|dàbuliǎo": {
+  "english": "at worst; serious",
+  "traditional": "大不了"
+ },
+ "大为|dàwéi": {
+  "english": "greatly",
+  "traditional": "大為"
+ },
+ "大夫|dàifu": {
+  "english": "doctor",
+  "traditional": "大夫"
+ },
+ "大幅|dàfú": {
+  "english": "substantially; by a large margin",
+  "traditional": "大幅"
+ },
+ "大洋洲|Dàyángzhōu": {
+  "english": "Oceania",
+  "traditional": "大洋洲"
+ },
+ "天伦之乐|tiānlúnzhīlè": {
+  "english": "family happiness",
+  "traditional": "天倫之樂"
+ },
+ "天敌|tiāndí": {
+  "english": "natural enemy",
+  "traditional": "天敵"
+ },
+ "天花板|tiānhuābǎn": {
+  "english": "ceiling",
+  "traditional": "天花板"
+ },
+ "夯实|hāngshí": {
+  "english": "to consolidate; to tamp down",
+  "traditional": "夯實"
+ },
+ "失事|shīshì": {
+  "english": "to have an accident (plane, ship)",
+  "traditional": "失事"
+ },
+ "失态|shītài": {
+  "english": "to lose one's composure",
+  "traditional": "失態"
+ },
+ "失礼|shīlǐ": {
+  "english": "impolite; to be rude",
+  "traditional": "失禮"
+ },
+ "头痛|tóutòng": {
+  "english": "headache; to have a headache",
+  "traditional": "頭痛"
+ },
+ "夹子|jiāzi": {
+  "english": "clip; clamp",
+  "traditional": "夾子"
+ },
+ "夹杂|jiāzá": {
+  "english": "to be mixed with",
+  "traditional": "夾雜"
+ },
+ "奇观|qíguān": {
+  "english": "wonder; spectacle",
+  "traditional": "奇觀"
+ },
+ "奔驰|bēnchí": {
+  "english": "to gallop; to speed",
+  "traditional": "奔馳"
+ },
+ "奖赏|jiǎngshǎng": {
+  "english": "to reward",
+  "traditional": "獎賞"
+ },
+ "奚落|xīluò": {
+  "english": "to mock",
+  "traditional": "奚落"
+ },
+ "女方|nǚfāng": {
+  "english": "the woman's side (in a marriage)",
+  "traditional": "女方"
+ },
+ "奶酪|nǎilào": {
+  "english": "cheese",
+  "traditional": "奶酪"
+ },
+ "好不|hǎobù": {
+  "english": "how; so very (emphatic)",
+  "traditional": "好不"
+ },
+ "好受|hǎoshòu": {
+  "english": "comfortable; feeling better",
+  "traditional": "好受"
+ },
+ "好胜|hàoshèng": {
+  "english": "competitive; eager to win",
+  "traditional": "好勝"
+ },
+ "如期|rúqī": {
+  "english": "on schedule",
+  "traditional": "如期"
+ },
+ "如痴如醉|rúchī-rúzuì": {
+  "english": "enthralled",
+  "traditional": "如痴如醉"
+ },
+ "姑且|gūqiě": {
+  "english": "for the time being",
+  "traditional": "姑且"
+ },
+ "威望|wēiwàng": {
+  "english": "prestige",
+  "traditional": "威望"
+ },
+ "媒介|méijiè": {
+  "english": "medium; media",
+  "traditional": "媒介"
+ },
+ "孔|kǒng": {
+  "english": "hole",
+  "traditional": "孔"
+ },
+ "存储|cúnchǔ": {
+  "english": "to store; storage",
+  "traditional": "存儲"
+ },
+ "存活|cúnhuó": {
+  "english": "to survive",
+  "traditional": "存活"
+ },
+ "存货|cúnhuò": {
+  "english": "stock; inventory",
+  "traditional": "存貨"
+ },
+ "季军|jìjūn": {
+  "english": "third place",
+  "traditional": "季軍"
+ },
+ "学识|xuéshí": {
+  "english": "learning; knowledge",
+  "traditional": "學識"
+ },
+ "守信|shǒuxìn": {
+  "english": "to keep one's word",
+  "traditional": "守信"
+ },
+ "安全带|ānquándài": {
+  "english": "seat belt",
+  "traditional": "安全帶"
+ },
+ "安详|ānxiáng": {
+  "english": "serene; composed",
+  "traditional": "安詳"
+ },
+ "定制|dìngzhì": {
+  "english": "to custom-make",
+  "traditional": "定製"
+ },
+ "定律|dìnglǜ": {
+  "english": "law (of science)",
+  "traditional": "定律"
+ },
+ "宜人|yírén": {
+  "english": "pleasant",
+  "traditional": "宜人"
+ },
+ "宜居|yíjū": {
+  "english": "livable",
+  "traditional": "宜居"
+ },
+ "实时|shíshí": {
+  "english": "real-time",
+  "traditional": "實時"
+ },
+ "审|shěn": {
+  "english": "to examine; to try (a case)",
+  "traditional": "審"
+ },
+ "审理|shěnlǐ": {
+  "english": "to hear (a case)",
+  "traditional": "審理"
+ },
+ "审计|shěnjì": {
+  "english": "to audit",
+  "traditional": "審計"
+ },
+ "客服|kèfú": {
+  "english": "customer service",
+  "traditional": "客服"
+ },
+ "家世|jiāshì": {
+  "english": "family background",
+  "traditional": "家世"
+ },
+ "家居|jiājū": {
+  "english": "home furnishings",
+  "traditional": "家居"
+ },
+ "家常|jiācháng": {
+  "english": "everyday family life; home-style",
+  "traditional": "家常"
+ },
+ "容器|róngqì": {
+  "english": "container",
+  "traditional": "容器"
+ },
+ "容貌|róngmào": {
+  "english": "appearance; looks",
+  "traditional": "容貌"
+ },
+ "密布|mìbù": {
+  "english": "to cover densely",
+  "traditional": "密佈"
+ },
+ "寒冬|hándōng": {
+  "english": "severe winter",
+  "traditional": "寒冬"
+ },
+ "寒带|hándài": {
+  "english": "frigid zone",
+  "traditional": "寒帶"
+ },
+ "寒暄|hánxuān": {
+  "english": "to exchange pleasantries",
+  "traditional": "寒暄"
+ },
+ "对岸|duì’àn": {
+  "english": "opposite bank",
+  "traditional": "對岸"
+ },
+ "对接|duìjiē": {
+  "english": "to connect; to link up",
+  "traditional": "對接"
+ },
+ "对流|duìliú": {
+  "english": "convection",
+  "traditional": "對流"
+ },
+ "对牛弹琴|duìniú-tánqín": {
+  "english": "to cast pearls before swine",
+  "traditional": "對牛彈琴"
+ },
+ "对症下药|duìzhèng-xiàyào": {
+  "english": "to suit the remedy to the problem",
+  "traditional": "對症下藥"
+ },
+ "将就|jiāngjiu": {
+  "english": "to make do",
+  "traditional": "將就"
+ },
+ "小菜一碟|xiǎocài-yìdié": {
+  "english": "a piece of cake",
+  "traditional": "小菜一碟"
+ },
+ "尚且|shàngqiě": {
+  "english": "even",
+  "traditional": "尚且"
+ },
+ "就此|jiùcǐ": {
+  "english": "at this point; thereupon",
+  "traditional": "就此"
+ },
+ "就绪|jiùxù": {
+  "english": "to be ready",
+  "traditional": "就緒"
+ },
+ "屁股|pìgu": {
+  "english": "bottom; buttocks",
+  "traditional": "屁股"
+ },
+ "居于|jūyú": {
+  "english": "to be in (a position)",
+  "traditional": "居於"
+ },
+ "居安思危|jū’ān-sīwēi": {
+  "english": "to be prepared for danger in times of peace",
+  "traditional": "居安思危"
+ },
+ "居高不下|jūgāo bú xià": {
+  "english": "to remain high",
+  "traditional": "居高不下"
+ },
+ "屋檐|wūyán": {
+  "english": "eaves",
+  "traditional": "屋簷"
+ },
+ "屎|shǐ": {
+  "english": "poop; excrement",
+  "traditional": "屎"
+ },
+ "屏蔽|píngbì": {
+  "english": "to block; to shield",
+  "traditional": "屏蔽"
+ },
+ "屏障|píngzhàng": {
+  "english": "protective screen; barrier",
+  "traditional": "屏障"
+ },
+ "属相|shǔxiàng": {
+  "english": "Chinese zodiac animal",
+  "traditional": "屬相"
+ },
+ "屡屡|lǚlǚ": {
+  "english": "repeatedly",
+  "traditional": "屢屢"
+ },
+ "山脉|shānmài": {
+  "english": "mountain range",
+  "traditional": "山脈"
+ },
+ "岔|chà": {
+  "english": "fork (in a road); to branch off",
+  "traditional": "岔"
+ },
+ "崇敬|chóngjìng": {
+  "english": "to revere",
+  "traditional": "崇敬"
+ },
+ "崎岖|qíqū": {
+  "english": "rugged; bumpy",
+  "traditional": "崎嶇"
+ },
+ "州|zhōu": {
+  "english": "state; prefecture",
+  "traditional": "州"
+ },
+ "巡回|xúnhuí": {
+  "english": "to tour; touring",
+  "traditional": "巡迴"
+ },
+ "巡视|xúnshì": {
+  "english": "to inspect; to patrol",
+  "traditional": "巡視"
+ },
+ "巢穴|cháoxué": {
+  "english": "nest; lair",
+  "traditional": "巢穴"
+ },
+ "工匠|gōngjiàng": {
+  "english": "craftsman",
+  "traditional": "工匠"
+ },
+ "巴掌|bāzhang": {
+  "english": "palm; slap",
+  "traditional": "巴掌"
+ },
+ "巴结|bājie": {
+  "english": "to fawn on; to curry favor with",
+  "traditional": "巴結"
+ },
+ "巷|xiàng": {
+  "english": "lane; alley",
+  "traditional": "巷"
+ },
+ "市值|shìzhí": {
+  "english": "market value",
+  "traditional": "市值"
+ },
+ "幢|zhuàng": {
+  "english": "measure word for buildings",
+  "traditional": "幢"
+ },
+ "干劲|gànjìn": {
+  "english": "drive; enthusiasm",
+  "traditional": "幹勁"
+ },
+ "干枯|gānkū": {
+  "english": "dried up; withered",
+  "traditional": "乾枯"
+ },
+ "平庸|píngyōng": {
+  "english": "mediocre",
+  "traditional": "平庸"
+ },
+ "平房|píngfáng": {
+  "english": "single-story house",
+  "traditional": "平房"
+ },
+ "平行|píngxíng": {
+  "english": "parallel",
+  "traditional": "平行"
+ },
+ "年均|niánjūn": {
+  "english": "annual average",
+  "traditional": "年均"
+ },
+ "年报|niánbào": {
+  "english": "annual report",
+  "traditional": "年報"
+ },
+ "年轮|niánlún": {
+  "english": "tree ring",
+  "traditional": "年輪"
+ },
+ "并发症|bìngfāzhèng": {
+  "english": "complication (medical)",
+  "traditional": "併發症"
+ },
+ "并肩|bìngjiān": {
+  "english": "side by side",
+  "traditional": "並肩"
+ },
+ "庄重|zhuāngzhòng": {
+  "english": "solemn; dignified",
+  "traditional": "莊重"
+ },
+ "床单|chuángdān": {
+  "english": "bed sheet",
+  "traditional": "床單"
+ },
+ "序列|xùliè": {
+  "english": "sequence",
+  "traditional": "序列"
+ },
+ "序言|xùyán": {
+  "english": "preface",
+  "traditional": "序言"
+ },
+ "库存|kùcún": {
+  "english": "inventory; stock",
+  "traditional": "庫存"
+ },
+ "店铺|diànpù": {
+  "english": "shop; store",
+  "traditional": "店鋪"
+ },
+ "废弃|fèiqì": {
+  "english": "to abandon; to discard",
+  "traditional": "廢棄"
+ },
+ "开庭|kāitíng": {
+  "english": "to hold a court session",
+  "traditional": "開庭"
+ },
+ "开明|kāimíng": {
+  "english": "open-minded; enlightened",
+  "traditional": "開明"
+ },
+ "弃权|qìquán": {
+  "english": "to abstain; to forfeit",
+  "traditional": "棄權"
+ },
+ "引人入胜|yǐnrén-rùshèng": {
+  "english": "fascinating; absorbing",
+  "traditional": "引人入勝"
+ },
+ "引荐|yǐnjiàn": {
+  "english": "to recommend (someone)",
+  "traditional": "引薦"
+ },
+ "弱项|ruòxiàng": {
+  "english": "weak point",
+  "traditional": "弱項"
+ },
+ "弹|tán": {
+  "english": "to play (piano, guitar); to flick",
+  "traditional": "彈"
+ },
+ "归于|guīyú": {
+  "english": "to attribute to; to belong to",
+  "traditional": "歸於"
+ },
+ "当机立断|dāngjī-lìduàn": {
+  "english": "to decide promptly",
+  "traditional": "當機立斷"
+ },
+ "录用|lùyòng": {
+  "english": "to hire; to employ",
+  "traditional": "錄用"
+ },
+ "径直|jìngzhí": {
+  "english": "directly; straight",
+  "traditional": "徑直"
+ },
+ "徒劳|túláo": {
+  "english": "futile",
+  "traditional": "徒勞"
+ },
+ "得|děi": {
+  "english": "to have to; must",
+  "traditional": "得"
+ },
+ "得心应手|déxīn-yìngshǒu": {
+  "english": "to do with ease",
+  "traditional": "得心應手"
+ },
+ "得益|déyì": {
+  "english": "to benefit",
+  "traditional": "得益"
+ },
+ "微|wēi": {
+  "english": "slightly",
+  "traditional": "微"
+ },
+ "微小|wēixiǎo": {
+  "english": "tiny",
+  "traditional": "微小"
+ },
+ "微微|wēiwēi": {
+  "english": "slightly",
+  "traditional": "微微"
+ },
+ "微生物|wēishēngwù": {
+  "english": "microorganism",
+  "traditional": "微生物"
+ },
+ "德才兼备|décái-jiānbèi": {
+  "english": "to have both integrity and ability",
+  "traditional": "德才兼備"
+ },
+ "心底|xīndǐ": {
+  "english": "bottom of one's heart",
+  "traditional": "心底"
+ },
+ "心甘情愿|xīngān-qíngyuàn": {
+  "english": "willingly",
+  "traditional": "心甘情願"
+ },
+ "忌妒|jìdu": {
+  "english": "to be jealous of",
+  "traditional": "忌妒"
+ },
+ "志向|zhìxiàng": {
+  "english": "ambition; aspiration",
+  "traditional": "志向"
+ },
+ "忠告|zhōnggào": {
+  "english": "advice; to advise",
+  "traditional": "忠告"
+ },
+ "忽冷忽热|hūlěng-hūrè": {
+  "english": "hot and cold; changeable",
+  "traditional": "忽冷忽熱"
+ },
+ "怀|huái": {
+  "english": "bosom; to keep in mind; to be pregnant",
+  "traditional": "懷"
+ },
+ "态势|tàishì": {
+  "english": "situation; trend",
+  "traditional": "態勢"
+ },
+ "怂恿|sǒngyǒng": {
+  "english": "to egg on",
+  "traditional": "慫恿"
+ },
+ "思绪|sīxù": {
+  "english": "train of thought",
+  "traditional": "思緒"
+ },
+ "怡然自得|yírán-zìdé": {
+  "english": "happy and content",
+  "traditional": "怡然自得"
+ },
+ "急中生智|jízhōng-shēngzhì": {
+  "english": "to think fast in an emergency",
+  "traditional": "急中生智"
+ },
+ "急于求成|jíyú-qiúchéng": {
+  "english": "impatient for success",
+  "traditional": "急於求成"
+ },
+ "急促|jícù": {
+  "english": "hurried; rapid",
+  "traditional": "急促"
+ },
+ "急切|jíqiè": {
+  "english": "eager; urgent",
+  "traditional": "急切"
+ },
+ "急功近利|jígōng-jìnlì": {
+  "english": "eager for quick success",
+  "traditional": "急功近利"
+ },
+ "急躁|jízào": {
+  "english": "impatient; irritable",
+  "traditional": "急躁"
+ },
+ "性感|xìnggǎn": {
+  "english": "sexy",
+  "traditional": "性感"
+ },
+ "总和|zǒnghé": {
+  "english": "sum; total",
+  "traditional": "總和"
+ },
+ "恒星|héngxīng": {
+  "english": "star (astronomy)",
+  "traditional": "恆星"
+ },
+ "恩爱|ēn’ài": {
+  "english": "loving (of a couple)",
+  "traditional": "恩愛"
+ },
+ "恭敬|gōngjìng": {
+  "english": "respectful",
+  "traditional": "恭敬"
+ },
+ "恳切|kěnqiè": {
+  "english": "earnest; sincere",
+  "traditional": "懇切"
+ },
+ "恶作剧|èzuòjù": {
+  "english": "prank",
+  "traditional": "惡作劇"
+ },
+ "恼火|nǎohuǒ": {
+  "english": "annoyed",
+  "traditional": "惱火"
+ },
+ "情商|qíngshāng": {
+  "english": "emotional intelligence (EQ)",
+  "traditional": "情商"
+ },
+ "情境|qíngjìng": {
+  "english": "situation; context",
+  "traditional": "情境"
+ },
+ "情理|qínglǐ": {
+  "english": "reason; common sense",
+  "traditional": "情理"
+ },
+ "惊动|jīngdòng": {
+  "english": "to alarm; to disturb",
+  "traditional": "驚動"
+ },
+ "惊吓|jīngxià": {
+  "english": "to frighten; fright",
+  "traditional": "驚嚇"
+ },
+ "惬意|qièyì": {
+  "english": "pleasant; satisfied",
+  "traditional": "愜意"
+ },
+ "愈|yù": {
+  "english": "the more…; to heal",
+  "traditional": "愈"
+ },
+ "愈加|yùjiā": {
+  "english": "all the more",
+  "traditional": "愈加"
+ },
+ "愉悦|yúyuè": {
+  "english": "joyful",
+  "traditional": "愉悅"
+ },
+ "意味|yìwèi": {
+  "english": "meaning; implication",
+  "traditional": "意味"
+ },
+ "愚昧|yúmèi": {
+  "english": "ignorant",
+  "traditional": "愚昧"
+ },
+ "感悟|gǎnwù": {
+  "english": "to realize; insight",
+  "traditional": "感悟"
+ },
+ "憔悴|qiáocuì": {
+  "english": "haggard",
+  "traditional": "憔悴"
+ },
+ "憧憬|chōngjǐng": {
+  "english": "to long for",
+  "traditional": "憧憬"
+ },
+ "憨厚|hānhòu": {
+  "english": "simple and honest",
+  "traditional": "憨厚"
+ },
+ "成全|chéngquán": {
+  "english": "to help someone achieve their aim",
+  "traditional": "成全"
+ },
+ "成家立业|chéngjiā-lìyè": {
+  "english": "to marry and start a career",
+  "traditional": "成家立業"
+ },
+ "成心|chéngxīn": {
+  "english": "on purpose",
+  "traditional": "成心"
+ },
+ "战役|zhànyì": {
+  "english": "campaign; battle",
+  "traditional": "戰役"
+ },
+ "才干|cáigàn": {
+  "english": "ability; competence",
+  "traditional": "才幹"
+ },
+ "扑灭|pūmiè": {
+  "english": "to put out (a fire); to wipe out",
+  "traditional": "撲滅"
+ },
+ "打下手|dǎ xiàshǒu": {
+  "english": "to act as an assistant",
+  "traditional": "打下手"
+ },
+ "打卡|dǎkǎ": {
+  "english": "to clock in; to check in (at a spot)",
+  "traditional": "打卡"
+ },
+ "打喷嚏|dǎ pēntì": {
+  "english": "to sneeze",
+  "traditional": "打噴嚏"
+ },
+ "打消|dǎxiāo": {
+  "english": "to dispel; to give up (an idea)",
+  "traditional": "打消"
+ },
+ "打赌|dǎdǔ": {
+  "english": "to bet",
+  "traditional": "打賭"
+ },
+ "托运|tuōyùn": {
+  "english": "to check (luggage); to ship",
+  "traditional": "託運"
+ },
+ "扩充|kuòchōng": {
+  "english": "to expand",
+  "traditional": "擴充"
+ },
+ "扫帚|sàozhou": {
+  "english": "broom",
+  "traditional": "掃帚"
+ },
+ "扫码|sǎomǎ": {
+  "english": "to scan a QR code",
+  "traditional": "掃碼"
+ },
+ "承接|chéngjiē": {
+  "english": "to undertake; to continue",
+  "traditional": "承接"
+ },
+ "抉择|juézé": {
+  "english": "to choose; choice",
+  "traditional": "抉擇"
+ },
+ "投掷|tóuzhì": {
+  "english": "to throw",
+  "traditional": "投擲"
+ },
+ "投放|tóufàng": {
+  "english": "to put in; to launch (a product)",
+  "traditional": "投放"
+ },
+ "折|shé": {
+  "english": "to break; to lose money",
+  "traditional": "折"
+ },
+ "报案|bào’àn": {
+  "english": "to report a case to the police",
+  "traditional": "報案"
+ },
+ "抵|dǐ": {
+  "english": "to resist; to arrive; to be equal to",
+  "traditional": "抵"
+ },
+ "抹杀|mǒshā": {
+  "english": "to erase; to deny",
+  "traditional": "抹殺"
+ },
+ "抽查|chōuchá": {
+  "english": "to spot-check",
+  "traditional": "抽查"
+ },
+ "抽样|chōuyàng": {
+  "english": "to sample",
+  "traditional": "抽樣"
+ },
+ "拇指|mǔzhǐ": {
+  "english": "thumb",
+  "traditional": "拇指"
+ },
+ "拉链|lāliàn": {
+  "english": "zipper",
+  "traditional": "拉鏈"
+ },
+ "招商|zhāoshāng": {
+  "english": "to attract investment",
+  "traditional": "招商"
+ },
+ "拳击|quánjī": {
+  "english": "boxing",
+  "traditional": "拳擊"
+ },
+ "拼接|pīnjiē": {
+  "english": "to piece together",
+  "traditional": "拼接"
+ },
+ "拼音|pīnyīn": {
+  "english": "pinyin; to spell in pinyin",
+  "traditional": "拼音"
+ },
+ "拽|zhuài": {
+  "english": "to pull; to drag",
+  "traditional": "拽"
+ },
+ "拾|shí": {
+  "english": "to pick up",
+  "traditional": "拾"
+ },
+ "持平|chípíng": {
+  "english": "to stay level; unchanged",
+  "traditional": "持平"
+ },
+ "指控|zhǐkòng": {
+  "english": "to accuse; accusation",
+  "traditional": "指控"
+ },
+ "指纹|zhǐwén": {
+  "english": "fingerprint",
+  "traditional": "指紋"
+ },
+ "按理|ànlǐ": {
+  "english": "normally; by rights",
+  "traditional": "按理"
+ },
+ "按钮|ànniǔ": {
+  "english": "button",
+  "traditional": "按鈕"
+ },
+ "挑拨|tiǎobō": {
+  "english": "to sow discord",
+  "traditional": "挑撥"
+ },
+ "挥舞|huīwǔ": {
+  "english": "to wave; to brandish",
+  "traditional": "揮舞"
+ },
+ "挥霍|huīhuò": {
+  "english": "to squander",
+  "traditional": "揮霍"
+ },
+ "挫败|cuòbài": {
+  "english": "to defeat; setback",
+  "traditional": "挫敗"
+ },
+ "挺拔|tǐngbá": {
+  "english": "tall and straight",
+  "traditional": "挺拔"
+ },
+ "捕获|bǔhuò": {
+  "english": "to capture",
+  "traditional": "捕獲"
+ },
+ "捕食|bǔshí": {
+  "english": "to prey on",
+  "traditional": "捕食"
+ },
+ "换乘|huànchéng": {
+  "english": "to transfer (between lines or vehicles)",
+  "traditional": "換乘"
+ },
+ "捷径|jiéjìng": {
+  "english": "shortcut",
+  "traditional": "捷徑"
+ },
+ "掌舵|zhǎngduò": {
+  "english": "to steer; to be at the helm",
+  "traditional": "掌舵"
+ },
+ "掏腰包|tāo yāobāo": {
+  "english": "to pay out of one's pocket",
+  "traditional": "掏腰包"
+ },
+ "排查|páichá": {
+  "english": "to investigate; to screen",
+  "traditional": "排查"
+ },
+ "探究|tànjiū": {
+  "english": "to investigate; to probe",
+  "traditional": "探究"
+ },
+ "推崇|tuīchóng": {
+  "english": "to praise highly",
+  "traditional": "推崇"
+ },
+ "推论|tuīlùn": {
+  "english": "inference; to infer",
+  "traditional": "推論"
+ },
+ "掩耳盗铃|yǎn’ěr-dàolíng": {
+  "english": "to fool oneself",
+  "traditional": "掩耳盜鈴"
+ },
+ "掺|chān": {
+  "english": "to mix",
+  "traditional": "摻"
+ },
+ "提及|tíjí": {
+  "english": "to mention",
+  "traditional": "提及"
+ },
+ "提取|tíqǔ": {
+  "english": "to extract; to withdraw",
+  "traditional": "提取"
+ },
+ "提纲|tígāng": {
+  "english": "outline",
+  "traditional": "提綱"
+ },
+ "插座|chāzuò": {
+  "english": "power socket",
+  "traditional": "插座"
+ },
+ "插曲|chāqǔ": {
+  "english": "episode; incidental music",
+  "traditional": "插曲"
+ },
+ "揠苗助长|yàmiáo-zhùzhǎng": {
+  "english": "to spoil things by excessive haste",
+  "traditional": "揠苗助長"
+ },
+ "摄像头|shèxiàngtóu": {
+  "english": "camera; webcam",
+  "traditional": "攝像頭"
+ },
+ "摘要|zhāiyào": {
+  "english": "summary; abstract",
+  "traditional": "摘要"
+ },
+ "摧残|cuīcán": {
+  "english": "to devastate; to wreck",
+  "traditional": "摧殘"
+ },
+ "摩托车|mótuōchē": {
+  "english": "motorcycle",
+  "traditional": "摩托車"
+ },
+ "撤回|chèhuí": {
+  "english": "to withdraw; to recall (a message)",
+  "traditional": "撤回"
+ },
+ "撤退|chètuì": {
+  "english": "to retreat",
+  "traditional": "撤退"
+ },
+ "播种|bōzhǒng": {
+  "english": "to sow seeds",
+  "traditional": "播種"
+ },
+ "撵|niǎn": {
+  "english": "to drive out; to chase",
+  "traditional": "攆"
+ },
+ "操练|cāoliàn": {
+  "english": "to drill; to practice",
+  "traditional": "操練"
+ },
+ "攀|pān": {
+  "english": "to climb",
+  "traditional": "攀"
+ },
+ "攀登|pāndēng": {
+  "english": "to climb",
+  "traditional": "攀登"
+ },
+ "支架|zhījià": {
+  "english": "stand; bracket",
+  "traditional": "支架"
+ },
+ "支流|zhīliú": {
+  "english": "tributary",
+  "traditional": "支流"
+ },
+ "收割|shōugē": {
+  "english": "to harvest",
+  "traditional": "收割"
+ },
+ "改天|gǎitiān": {
+  "english": "another day; some other time",
+  "traditional": "改天"
+ },
+ "改观|gǎiguān": {
+  "english": "to change in appearance; to change one's view",
+  "traditional": "改觀"
+ },
+ "攻克|gōngkè": {
+  "english": "to capture; to overcome",
+  "traditional": "攻克"
+ },
+ "攻势|gōngshì": {
+  "english": "offensive",
+  "traditional": "攻勢"
+ },
+ "放宽|fàngkuān": {
+  "english": "to relax (rules); to ease",
+  "traditional": "放寬"
+ },
+ "放射|fàngshè": {
+  "english": "to radiate",
+  "traditional": "放射"
+ },
+ "放飞|fàngfēi": {
+  "english": "to fly (a kite); to set free",
+  "traditional": "放飛"
+ },
+ "敌视|díshì": {
+  "english": "to be hostile to",
+  "traditional": "敵視"
+ },
+ "救死扶伤|jiùsǐ-fúshāng": {
+  "english": "to heal the wounded and save lives",
+  "traditional": "救死扶傷"
+ },
+ "散落|sànluò": {
+  "english": "to scatter",
+  "traditional": "散落"
+ },
+ "敬畏|jìngwèi": {
+  "english": "to revere; awe",
+  "traditional": "敬畏"
+ },
+ "数一数二|shǔyī-shǔ’èr": {
+  "english": "one of the very best",
+  "traditional": "數一數二"
+ },
+ "数字化|shùzìhuà": {
+  "english": "to digitize; digital",
+  "traditional": "數字化"
+ },
+ "数学|shùxué": {
+  "english": "mathematics",
+  "traditional": "數學"
+ },
+ "敷衍|fūyǎn": {
+  "english": "to do perfunctorily; to fob off",
+  "traditional": "敷衍"
+ },
+ "文档|wéndàng": {
+  "english": "document; file",
+  "traditional": "文檔"
+ },
+ "斑马线|bānmǎxiàn": {
+  "english": "zebra crossing",
+  "traditional": "斑馬線"
+ },
+ "斟酌|zhēnzhuó": {
+  "english": "to consider carefully",
+  "traditional": "斟酌"
+ },
+ "斩钉截铁|zhǎndīng-jiétiě": {
+  "english": "resolute; decisive",
+  "traditional": "斬釘截鐵"
+ },
+ "断然|duànrán": {
+  "english": "resolutely; flatly",
+  "traditional": "斷然"
+ },
+ "断章取义|duànzhāng-qǔyì": {
+  "english": "to quote out of context",
+  "traditional": "斷章取義"
+ },
+ "断绝|duànjué": {
+  "english": "to break off; to cut off",
+  "traditional": "斷絕"
+ },
+ "新媒体|xīnméitǐ": {
+  "english": "new media",
+  "traditional": "新媒體"
+ },
+ "新春|xīnchūn": {
+  "english": "Spring Festival; early spring",
+  "traditional": "新春"
+ },
+ "新能源|xīnnéngyuán": {
+  "english": "new energy",
+  "traditional": "新能源"
+ },
+ "方位|fāngwèi": {
+  "english": "direction; position",
+  "traditional": "方位"
+ },
+ "方圆|fāngyuán": {
+  "english": "surrounding area; circumference",
+  "traditional": "方圓"
+ },
+ "施展|shīzhǎn": {
+  "english": "to put to use (skills)",
+  "traditional": "施展"
+ },
+ "旁人|pángrén": {
+  "english": "other people",
+  "traditional": "旁人"
+ },
+ "无从|wúcóng": {
+  "english": "to have no way to",
+  "traditional": "無從"
+ },
+ "无价之宝|wújiàzhībǎo": {
+  "english": "priceless treasure",
+  "traditional": "無價之寶"
+ },
+ "无动于衷|wúdòngyúzhōng": {
+  "english": "unmoved; indifferent",
+  "traditional": "無動於衷"
+ },
+ "无耻|wúchǐ": {
+  "english": "shameless",
+  "traditional": "無恥"
+ },
+ "无赖|wúlài": {
+  "english": "scoundrel; shameless",
+  "traditional": "無賴"
+ },
+ "无边无际|wúbiān-wújì": {
+  "english": "boundless",
+  "traditional": "無邊無際"
+ },
+ "日用品|rìyòngpǐn": {
+  "english": "daily necessities",
+  "traditional": "日用品"
+ },
+ "旬|xún": {
+  "english": "ten-day period",
+  "traditional": "旬"
+ },
+ "时差|shíchā": {
+  "english": "time difference; jet lag",
+  "traditional": "時差"
+ },
+ "易于|yìyú": {
+  "english": "easy to",
+  "traditional": "易於"
+ },
+ "星球|xīngqiú": {
+  "english": "planet; heavenly body",
+  "traditional": "星球"
+ },
+ "星系|xīngxì": {
+  "english": "galaxy",
+  "traditional": "星系"
+ },
+ "星级|xīngjí": {
+  "english": "star rating",
+  "traditional": "星級"
+ },
+ "显微镜|xiǎnwēijìng": {
+  "english": "microscope",
+  "traditional": "顯微鏡"
+ },
+ "显性|xiǎnxìng": {
+  "english": "dominant; visible",
+  "traditional": "顯性"
+ },
+ "显露|xiǎnlù": {
+  "english": "to show; to reveal",
+  "traditional": "顯露"
+ },
+ "晋级|jìnjí": {
+  "english": "to advance; to be promoted",
+  "traditional": "晉級"
+ },
+ "晕头转向|yūntóu-zhuànxiàng": {
+  "english": "confused and disoriented",
+  "traditional": "暈頭轉向"
+ },
+ "晚霞|wǎnxiá": {
+  "english": "sunset glow",
+  "traditional": "晚霞"
+ },
+ "晾|liàng": {
+  "english": "to dry in the air",
+  "traditional": "晾"
+ },
+ "暂且|zànqiě": {
+  "english": "for the moment",
+  "traditional": "暫且"
+ },
+ "暧昧|àimèi": {
+  "english": "ambiguous; shady",
+  "traditional": "曖昧"
+ },
+ "暨|jì": {
+  "english": "and (formal)",
+  "traditional": "暨"
+ },
+ "曲艺|qǔyì": {
+  "english": "folk performing arts",
+  "traditional": "曲藝"
+ },
+ "更正|gēngzhèng": {
+  "english": "to correct",
+  "traditional": "更正"
+ },
+ "替补|tìbǔ": {
+  "english": "substitute",
+  "traditional": "替補"
+ },
+ "月光|yuèguāng": {
+  "english": "moonlight",
+  "traditional": "月光"
+ },
+ "有劲|yǒujìn": {
+  "english": "strong; interesting",
+  "traditional": "有勁"
+ },
+ "有时|yǒushí": {
+  "english": "sometimes",
+  "traditional": "有時"
+ },
+ "有条不紊|yǒutiáo-bùwěn": {
+  "english": "methodical; orderly",
+  "traditional": "有條不紊"
+ },
+ "服气|fúqì": {
+  "english": "to be convinced; to accept defeat",
+  "traditional": "服氣"
+ },
+ "权限|quánxiàn": {
+  "english": "authority; access rights",
+  "traditional": "權限"
+ },
+ "材质|cáizhì": {
+  "english": "material",
+  "traditional": "材質"
+ },
+ "束手无策|shùshǒu-wúcè": {
+  "english": "helpless; at a loss",
+  "traditional": "束手無策"
+ },
+ "杠杆|gànggǎn": {
+  "english": "lever; leverage",
+  "traditional": "槓桿"
+ },
+ "条理|tiáolǐ": {
+  "english": "orderliness",
+  "traditional": "條理"
+ },
+ "来之不易|láizhī-búyì": {
+  "english": "hard-won",
+  "traditional": "來之不易"
+ },
+ "松懈|sōngxiè": {
+  "english": "slack; to relax",
+  "traditional": "鬆懈"
+ },
+ "枕|zhěn": {
+  "english": "to rest one's head on",
+  "traditional": "枕"
+ },
+ "枯竭|kūjié": {
+  "english": "exhausted; dried up",
+  "traditional": "枯竭"
+ },
+ "枯萎|kūwěi": {
+  "english": "withered",
+  "traditional": "枯萎"
+ },
+ "查获|cháhuò": {
+  "english": "to seize; to track down",
+  "traditional": "查獲"
+ },
+ "柴油|cháiyóu": {
+  "english": "diesel",
+  "traditional": "柴油"
+ },
+ "标点|biāodiǎn": {
+  "english": "punctuation",
+  "traditional": "標點"
+ },
+ "标记|biāojì": {
+  "english": "mark; to mark",
+  "traditional": "標記"
+ },
+ "标识|biāoshí": {
+  "english": "sign; logo; to mark",
+  "traditional": "標識"
+ },
+ "树干|shùgàn": {
+  "english": "tree trunk",
+  "traditional": "樹幹"
+ },
+ "样式|yàngshì": {
+  "english": "style; design",
+  "traditional": "樣式"
+ },
+ "核查|héchá": {
+  "english": "to check; to verify",
+  "traditional": "核查"
+ },
+ "格子|gézi": {
+  "english": "check pattern; grid",
+  "traditional": "格子"
+ },
+ "栽赃|zāizāng": {
+  "english": "to frame (by planting evidence)",
+  "traditional": "栽贓"
+ },
+ "案例|ànlì": {
+  "english": "case; example",
+  "traditional": "案例"
+ },
+ "桨|jiǎng": {
+  "english": "oar; paddle",
+  "traditional": "槳"
+ },
+ "梦寐以求|mèngmèiyǐqiú": {
+  "english": "to dream of",
+  "traditional": "夢寐以求"
+ },
+ "检票|jiǎnpiào": {
+  "english": "to check tickets",
+  "traditional": "檢票"
+ },
+ "棕色|zōngsè": {
+  "english": "brown",
+  "traditional": "棕色"
+ },
+ "棚|péng": {
+  "english": "shed; canopy",
+  "traditional": "棚"
+ },
+ "森林|sēnlín": {
+  "english": "forest",
+  "traditional": "森林"
+ },
+ "椭圆|tuǒyuán": {
+  "english": "oval; ellipse",
+  "traditional": "橢圓"
+ },
+ "概|gài": {
+  "english": "without exception; totally",
+  "traditional": "概"
+ },
+ "橙子|chéngzi": {
+  "english": "orange",
+  "traditional": "橙子"
+ },
+ "橱窗|chúchuāng": {
+  "english": "shop window",
+  "traditional": "櫥窗"
+ },
+ "次品|cìpǐn": {
+  "english": "defective product",
+  "traditional": "次品"
+ },
+ "次序|cìxù": {
+  "english": "order; sequence",
+  "traditional": "次序"
+ },
+ "次要|cìyào": {
+  "english": "secondary",
+  "traditional": "次要"
+ },
+ "欧洲|Ōuzhōu": {
+  "english": "Europe",
+  "traditional": "歐洲"
+ },
+ "款|kuǎn": {
+  "english": "sum of money; style; measure word for models",
+  "traditional": "款"
+ },
+ "款待|kuǎndài": {
+  "english": "to entertain (guests)",
+  "traditional": "款待"
+ },
+ "歌谣|gēyáo": {
+  "english": "ballad; folk song",
+  "traditional": "歌謠"
+ },
+ "正月|zhēngyuè": {
+  "english": "first month of the lunar year",
+  "traditional": "正月"
+ },
+ "正气|zhèngqì": {
+  "english": "integrity; healthy atmosphere",
+  "traditional": "正氣"
+ },
+ "正经|zhèngjing": {
+  "english": "serious; decent",
+  "traditional": "正經"
+ },
+ "武侠|wǔxiá": {
+  "english": "martial arts hero; wuxia",
+  "traditional": "武俠"
+ },
+ "母语|mǔyǔ": {
+  "english": "mother tongue",
+  "traditional": "母語"
+ },
+ "毕生|bìshēng": {
+  "english": "lifetime; lifelong",
+  "traditional": "畢生"
+ },
+ "民事|mínshì": {
+  "english": "civil (law)",
+  "traditional": "民事"
+ },
+ "民宿|mínsù": {
+  "english": "homestay; B&B",
+  "traditional": "民宿"
+ },
+ "民居|mínjū": {
+  "english": "residential house; folk dwelling",
+  "traditional": "民居"
+ },
+ "民生|mínshēng": {
+  "english": "people's livelihood",
+  "traditional": "民生"
+ },
+ "民营|mínyíng": {
+  "english": "privately run",
+  "traditional": "民營"
+ },
+ "气压|qìyā": {
+  "english": "air pressure",
+  "traditional": "氣壓"
+ },
+ "气流|qìliú": {
+  "english": "airflow; air current",
+  "traditional": "氣流"
+ },
+ "气色|qìsè": {
+  "english": "complexion",
+  "traditional": "氣色"
+ },
+ "水产|shuǐchǎn": {
+  "english": "aquatic products",
+  "traditional": "水產"
+ },
+ "水土|shuǐtǔ": {
+  "english": "water and soil; local climate",
+  "traditional": "水土"
+ },
+ "水汽|shuǐqì": {
+  "english": "water vapor",
+  "traditional": "水汽"
+ },
+ "水流|shuǐliú": {
+  "english": "current; flow of water",
+  "traditional": "水流"
+ },
+ "水滴石穿|shuǐdī-shíchuān": {
+  "english": "dripping water wears through stone",
+  "traditional": "水滴石穿"
+ },
+ "求同存异|qiútóng-cúnyì": {
+  "english": "to seek common ground while keeping differences",
+  "traditional": "求同存異"
+ },
+ "汉服|Hànfú": {
+  "english": "Hanfu (traditional Han clothing)",
+  "traditional": "漢服"
+ },
+ "汗马功劳|hànmǎ-gōngláo": {
+  "english": "great contributions",
+  "traditional": "汗馬功勞"
+ },
+ "江山|jiāngshān": {
+  "english": "rivers and mountains; country",
+  "traditional": "江山"
+ },
+ "池|chí": {
+  "english": "pool; pond",
+  "traditional": "池"
+ },
+ "污蔑|wūmiè": {
+  "english": "to slander",
+  "traditional": "汙衊"
+ },
+ "汲取|jíqǔ": {
+  "english": "to draw (lessons, strength)",
+  "traditional": "汲取"
+ },
+ "沉睡|chénshuì": {
+  "english": "to sleep soundly; dormant",
+  "traditional": "沉睡"
+ },
+ "沐浴|mùyù": {
+  "english": "to bathe; to be immersed in",
+  "traditional": "沐浴"
+ },
+ "没事|méishì": {
+  "english": "it's nothing; to be free",
+  "traditional": "沒事"
+ },
+ "油条|yóutiáo": {
+  "english": "deep-fried dough stick",
+  "traditional": "油條"
+ },
+ "油漆|yóuqī": {
+  "english": "paint; to paint",
+  "traditional": "油漆"
+ },
+ "油腻|yóunì": {
+  "english": "greasy",
+  "traditional": "油膩"
+ },
+ "沿用|yányòng": {
+  "english": "to continue to use",
+  "traditional": "沿用"
+ },
+ "泄露|xièlòu": {
+  "english": "to leak; to divulge",
+  "traditional": "洩露"
+ },
+ "法人|fǎrén": {
+  "english": "legal person; legal entity",
+  "traditional": "法人"
+ },
+ "法则|fǎzé": {
+  "english": "rule; law",
+  "traditional": "法則"
+ },
+ "法定|fǎdìng": {
+  "english": "legal; statutory",
+  "traditional": "法定"
+ },
+ "法治|fǎzhì": {
+  "english": "rule of law",
+  "traditional": "法治"
+ },
+ "泥泞|nínìng": {
+  "english": "muddy",
+  "traditional": "泥濘"
+ },
+ "注释|zhùshì": {
+  "english": "note; annotation",
+  "traditional": "註釋"
+ },
+ "注销|zhùxiāo": {
+  "english": "to cancel; to close (an account)",
+  "traditional": "註銷"
+ },
+ "洁白|jiébái": {
+  "english": "pure white",
+  "traditional": "潔白"
+ },
+ "洗涤|xǐdí": {
+  "english": "to wash",
+  "traditional": "洗滌"
+ },
+ "洗漱|xǐshù": {
+  "english": "to wash up",
+  "traditional": "洗漱"
+ },
+ "洞穴|dòngxué": {
+  "english": "cave",
+  "traditional": "洞穴"
+ },
+ "派出所|pàichūsuǒ": {
+  "english": "local police station",
+  "traditional": "派出所"
+ },
+ "流派|liúpài": {
+  "english": "school (of thought or art)",
+  "traditional": "流派"
+ },
+ "流逝|liúshì": {
+  "english": "to pass (of time)",
+  "traditional": "流逝"
+ },
+ "浅显|qiǎnxiǎn": {
+  "english": "plain and simple",
+  "traditional": "淺顯"
+ },
+ "浩瀚|hàohàn": {
+  "english": "vast",
+  "traditional": "浩瀚"
+ },
+ "浮动|fúdòng": {
+  "english": "to float; to fluctuate",
+  "traditional": "浮動"
+ },
+ "海豚|hǎitún": {
+  "english": "dolphin",
+  "traditional": "海豚"
+ },
+ "消磨|xiāomó": {
+  "english": "to while away; to wear down",
+  "traditional": "消磨"
+ },
+ "涉猎|shèliè": {
+  "english": "to dabble in; to read widely",
+  "traditional": "涉獵"
+ },
+ "涨幅|zhǎngfú": {
+  "english": "rise (in price, percent)",
+  "traditional": "漲幅"
+ },
+ "淡水|dànshuǐ": {
+  "english": "fresh water",
+  "traditional": "淡水"
+ },
+ "淤泥|yūní": {
+  "english": "silt; sludge",
+  "traditional": "淤泥"
+ },
+ "深情厚谊|shēnqíng-hòuyì": {
+  "english": "deep friendship",
+  "traditional": "深情厚誼"
+ },
+ "深沉|shēnchén": {
+  "english": "deep; reserved",
+  "traditional": "深沉"
+ },
+ "深造|shēnzào": {
+  "english": "to pursue advanced studies",
+  "traditional": "深造"
+ },
+ "深邃|shēnsuì": {
+  "english": "deep; profound",
+  "traditional": "深邃"
+ },
+ "淳朴|chúnpǔ": {
+  "english": "honest and simple",
+  "traditional": "淳樸"
+ },
+ "淹没|yānmò": {
+  "english": "to flood; to drown out",
+  "traditional": "淹沒"
+ },
+ "添加剂|tiānjiājì": {
+  "english": "additive",
+  "traditional": "添加劑"
+ },
+ "清扫|qīngsǎo": {
+  "english": "to clean up; to sweep",
+  "traditional": "清掃"
+ },
+ "清澈|qīngchè": {
+  "english": "clear (of water)",
+  "traditional": "清澈"
+ },
+ "渣|zhā": {
+  "english": "dregs; residue",
+  "traditional": "渣"
+ },
+ "温差|wēnchà": {
+  "english": "temperature difference",
+  "traditional": "溫差"
+ },
+ "温带|wēndài": {
+  "english": "temperate zone",
+  "traditional": "溫帶"
+ },
+ "港湾|gǎngwān": {
+  "english": "harbor",
+  "traditional": "港灣"
+ },
+ "湿地|shīdì": {
+  "english": "wetland",
+  "traditional": "溼地"
+ },
+ "源远流长|yuányuǎn-liúcháng": {
+  "english": "long-standing",
+  "traditional": "源遠流長"
+ },
+ "溪|xī": {
+  "english": "stream; creek",
+  "traditional": "溪"
+ },
+ "溺水|nìshuǐ": {
+  "english": "to drown",
+  "traditional": "溺水"
+ },
+ "滋生|zīshēng": {
+  "english": "to breed; to cause",
+  "traditional": "滋生"
+ },
+ "滑行|huáxíng": {
+  "english": "to glide; to slide; to taxi",
+  "traditional": "滑行"
+ },
+ "漂泊|piāobó": {
+  "english": "to drift; to wander",
+  "traditional": "漂泊"
+ },
+ "漂流|piāoliú": {
+  "english": "to drift; rafting",
+  "traditional": "漂流"
+ },
+ "漂浮|piāofú": {
+  "english": "to float (on water)",
+  "traditional": "漂浮"
+ },
+ "漆黑|qīhēi": {
+  "english": "pitch-dark",
+  "traditional": "漆黑"
+ },
+ "演化|yǎnhuà": {
+  "english": "to evolve",
+  "traditional": "演化"
+ },
+ "潜伏|qiánfú": {
+  "english": "to lie hidden; to lurk",
+  "traditional": "潛伏"
+ },
+ "潜入|qiánrù": {
+  "english": "to sneak into",
+  "traditional": "潛入"
+ },
+ "潜心|qiánxīn": {
+  "english": "to devote oneself to",
+  "traditional": "潛心"
+ },
+ "潮水|cháoshuǐ": {
+  "english": "tide",
+  "traditional": "潮水"
+ },
+ "澎湃|péngpài": {
+  "english": "surging",
+  "traditional": "澎湃"
+ },
+ "激增|jīzēng": {
+  "english": "to surge; to soar",
+  "traditional": "激增"
+ },
+ "激荡|jīdàng": {
+  "english": "to surge; to stir up",
+  "traditional": "激盪"
+ },
+ "濒临|bīnlín": {
+  "english": "to be on the verge of",
+  "traditional": "瀕臨"
+ },
+ "濒危|bīnwēi": {
+  "english": "endangered",
+  "traditional": "瀕危"
+ },
+ "火爆|huǒbào": {
+  "english": "hugely popular; fiery",
+  "traditional": "火爆"
+ },
+ "灶|zào": {
+  "english": "stove",
+  "traditional": "灶"
+ },
+ "炊烟|chuīyān": {
+  "english": "smoke from kitchen chimneys",
+  "traditional": "炊煙"
+ },
+ "点击|diǎnjī": {
+  "english": "to click",
+  "traditional": "點擊"
+ },
+ "点赞|diǎnzàn": {
+  "english": "to like (a post)",
+  "traditional": "點贊"
+ },
+ "烈日|lièrì": {
+  "english": "scorching sun",
+  "traditional": "烈日"
+ },
+ "烘|hōng": {
+  "english": "to dry by a fire; to bake",
+  "traditional": "烘"
+ },
+ "烘焙|hōngbèi": {
+  "english": "to bake; to roast (coffee)",
+  "traditional": "烘焙"
+ },
+ "热度|rèdù": {
+  "english": "heat; popularity",
+  "traditional": "熱度"
+ },
+ "热泪盈眶|rèlèi-yíngkuàng": {
+  "english": "eyes brimming with tears",
+  "traditional": "熱淚盈眶"
+ },
+ "热议|rèyì": {
+  "english": "to discuss heatedly",
+  "traditional": "熱議"
+ },
+ "热销|rèxiāo": {
+  "english": "to sell well",
+  "traditional": "熱銷"
+ },
+ "烹饪|pēngrèn": {
+  "english": "to cook; cooking",
+  "traditional": "烹飪"
+ },
+ "焕然一新|huànrán-yìxīn": {
+  "english": "to look brand new",
+  "traditional": "煥然一新"
+ },
+ "煎熬|jiān’áo": {
+  "english": "to suffer; torment",
+  "traditional": "煎熬"
+ },
+ "照射|zhàoshè": {
+  "english": "to shine on",
+  "traditional": "照射"
+ },
+ "熄灭|xīmiè": {
+  "english": "to go out; to extinguish",
+  "traditional": "熄滅"
+ },
+ "熨|yùn": {
+  "english": "to iron",
+  "traditional": "熨"
+ },
+ "爱慕|àimù": {
+  "english": "to adore",
+  "traditional": "愛慕"
+ },
+ "爱戴|àidài": {
+  "english": "to love and respect",
+  "traditional": "愛戴"
+ },
+ "片刻|piànkè": {
+  "english": "a moment",
+  "traditional": "片刻"
+ },
+ "版本|bǎnběn": {
+  "english": "version; edition",
+  "traditional": "版本"
+ },
+ "版权|bǎnquán": {
+  "english": "copyright",
+  "traditional": "版權"
+ },
+ "牢骚|láosāo": {
+  "english": "complaint; grumbling",
+  "traditional": "牢騷"
+ },
+ "物力|wùlì": {
+  "english": "material resources",
+  "traditional": "物力"
+ },
+ "物理|wùlǐ": {
+  "english": "physics",
+  "traditional": "物理"
+ },
+ "物种|wùzhǒng": {
+  "english": "species",
+  "traditional": "物種"
+ },
+ "物美价廉|wùměi-jiàlián": {
+  "english": "good value for money",
+  "traditional": "物美價廉"
+ },
+ "物色|wùsè": {
+  "english": "to look for; to seek out",
+  "traditional": "物色"
+ },
+ "特此|tècǐ": {
+  "english": "hereby",
+  "traditional": "特此"
+ },
+ "犀利|xīlì": {
+  "english": "sharp; incisive",
+  "traditional": "犀利"
+ },
+ "狐狸|húli": {
+  "english": "fox",
+  "traditional": "狐狸"
+ },
+ "狭义|xiáyì": {
+  "english": "narrow sense",
+  "traditional": "狹義"
+ },
+ "狼吞虎咽|lángtūn-hǔyàn": {
+  "english": "to wolf down food",
+  "traditional": "狼吞虎嚥"
+ },
+ "猎物|lièwù": {
+  "english": "prey",
+  "traditional": "獵物"
+ },
+ "猴子|hóuzi": {
+  "english": "monkey",
+  "traditional": "猴子"
+ },
+ "率|shuài": {
+  "english": "to lead",
+  "traditional": "率"
+ },
+ "王朝|wángcháo": {
+  "english": "dynasty",
+  "traditional": "王朝"
+ },
+ "玩|wán": {
+  "english": "to play; to have fun",
+  "traditional": "玩"
+ },
+ "玩弄|wánnòng": {
+  "english": "to play with; to toy with",
+  "traditional": "玩弄"
+ },
+ "环比|huánbǐ": {
+  "english": "compared with the previous period",
+  "traditional": "環比"
+ },
+ "现代化|xiàndàihuà": {
+  "english": "to modernize; modernization",
+  "traditional": "現代化"
+ },
+ "现存|xiàncún": {
+  "english": "existing; in stock",
+  "traditional": "現存"
+ },
+ "现货|xiànhuò": {
+  "english": "goods in stock",
+  "traditional": "現貨"
+ },
+ "珍稀|zhēnxī": {
+  "english": "rare and precious",
+  "traditional": "珍稀"
+ },
+ "琐碎|suǒsuì": {
+  "english": "trivial",
+  "traditional": "瑣碎"
+ },
+ "琢磨|zuómo": {
+  "english": "to ponder; to think over",
+  "traditional": "琢磨"
+ },
+ "琴棋书画|qín-qí-shū-huà": {
+  "english": "music, chess, calligraphy and painting",
+  "traditional": "琴棋書畫"
+ },
+ "瑕疵|xiácī": {
+  "english": "flaw",
+  "traditional": "瑕疵"
+ },
+ "璀璨|cuǐcàn": {
+  "english": "bright; resplendent",
+  "traditional": "璀璨"
+ },
+ "瓦解|wǎjiě": {
+  "english": "to collapse; to disintegrate",
+  "traditional": "瓦解"
+ },
+ "甜品|tiánpǐn": {
+  "english": "dessert",
+  "traditional": "甜品"
+ },
+ "生产线|shēngchǎnxiàn": {
+  "english": "production line",
+  "traditional": "生產線"
+ },
+ "生命力|shēngmìnglì": {
+  "english": "vitality",
+  "traditional": "生命力"
+ },
+ "生疏|shēngshū": {
+  "english": "unfamiliar; out of practice",
+  "traditional": "生疏"
+ },
+ "生肖|shēngxiào": {
+  "english": "Chinese zodiac sign",
+  "traditional": "生肖"
+ },
+ "田园|tiányuán": {
+  "english": "countryside; pastoral",
+  "traditional": "田園"
+ },
+ "田野|tiányě": {
+  "english": "fields; countryside",
+  "traditional": "田野"
+ },
+ "田间|tiánjiān": {
+  "english": "in the fields",
+  "traditional": "田間"
+ },
+ "申诉|shēnsù": {
+  "english": "to appeal; to complain",
+  "traditional": "申訴"
+ },
+ "电商|diànshāng": {
+  "english": "e-commerce",
+  "traditional": "電商"
+ },
+ "电子书|diànzǐshū": {
+  "english": "e-book",
+  "traditional": "電子書"
+ },
+ "男方|nánfāng": {
+  "english": "the man's side (in a marriage)",
+  "traditional": "男方"
+ },
+ "畜牧|xùmù": {
+  "english": "animal husbandry",
+  "traditional": "畜牧"
+ },
+ "疏远|shūyuǎn": {
+  "english": "distant; to drift apart",
+  "traditional": "疏遠"
+ },
+ "疙瘩|gēda": {
+  "english": "lump; knot",
+  "traditional": "疙瘩"
+ },
+ "疤|bā": {
+  "english": "scar",
+  "traditional": "疤"
+ },
+ "疼爱|téngài": {
+  "english": "to love dearly",
+  "traditional": "疼愛"
+ },
+ "病历|bìnglì": {
+  "english": "medical record",
+  "traditional": "病歷"
+ },
+ "瘸|qué": {
+  "english": "to limp; lame",
+  "traditional": "瘸"
+ },
+ "登场|dēngchǎng": {
+  "english": "to come on stage; to appear",
+  "traditional": "登場"
+ },
+ "登顶|dēngdǐng": {
+  "english": "to reach the summit",
+  "traditional": "登頂"
+ },
+ "百般|bǎibān": {
+  "english": "in every possible way",
+  "traditional": "百般"
+ },
+ "皆大欢喜|jiēdàhuānxǐ": {
+  "english": "everyone is happy",
+  "traditional": "皆大歡喜"
+ },
+ "皮革|pígé": {
+  "english": "leather",
+  "traditional": "皮革"
+ },
+ "皱纹|zhòuwén": {
+  "english": "wrinkle",
+  "traditional": "皺紋"
+ },
+ "盆地|péndì": {
+  "english": "basin (geography)",
+  "traditional": "盆地"
+ },
+ "盘旋|pánxuán": {
+  "english": "to circle; to hover",
+  "traditional": "盤旋"
+ },
+ "盛|chéng": {
+  "english": "to fill (a bowl); to ladle",
+  "traditional": "盛"
+ },
+ "盛产|shèngchǎn": {
+  "english": "to abound in",
+  "traditional": "盛產"
+ },
+ "盛夏|shèngxià": {
+  "english": "midsummer",
+  "traditional": "盛夏"
+ },
+ "盛宴|shèngyàn": {
+  "english": "feast; banquet",
+  "traditional": "盛宴"
+ },
+ "盛情|shèngqíng": {
+  "english": "great kindness; hospitality",
+  "traditional": "盛情"
+ },
+ "直辖市|zhíxiáshì": {
+  "english": "municipality (directly under the central government)",
+  "traditional": "直轄市"
+ },
+ "相册|xiàngcè": {
+  "english": "photo album",
+  "traditional": "相冊"
+ },
+ "相貌|xiàngmào": {
+  "english": "appearance; looks",
+  "traditional": "相貌"
+ },
+ "相近|xiāngjìn": {
+  "english": "close; similar",
+  "traditional": "相近"
+ },
+ "省份|shěngfèn": {
+  "english": "province",
+  "traditional": "省份"
+ },
+ "省会|shěnghuì": {
+  "english": "provincial capital",
+  "traditional": "省會"
+ },
+ "看守|kānshǒu": {
+  "english": "to guard; guard",
+  "traditional": "看守"
+ },
+ "真是|zhēnshi": {
+  "english": "really (expressing annoyance)",
+  "traditional": "真是"
+ },
+ "眯|mī": {
+  "english": "to squint",
+  "traditional": "眯"
+ },
+ "眺望|tiàowàng": {
+  "english": "to look into the distance",
+  "traditional": "眺望"
+ },
+ "着|zháo": {
+  "english": "to touch; to catch (fire, cold); to fall asleep",
+  "traditional": "著"
+ },
+ "着凉|zháoliáng": {
+  "english": "to catch a cold",
+  "traditional": "著涼"
+ },
+ "矗立|chùlì": {
+  "english": "to stand tall",
+  "traditional": "矗立"
+ },
+ "知足常乐|zhīzú-chánglè": {
+  "english": "happiness lies in contentment",
+  "traditional": "知足常樂"
+ },
+ "矿产|kuàngchǎn": {
+  "english": "minerals",
+  "traditional": "礦產"
+ },
+ "砍伐|kǎnfá": {
+  "english": "to fell (trees)",
+  "traditional": "砍伐"
+ },
+ "破例|pòlì": {
+  "english": "to make an exception",
+  "traditional": "破例"
+ },
+ "碟|dié": {
+  "english": "small plate; dish; disc",
+  "traditional": "碟"
+ },
+ "磁铁|cítiě": {
+  "english": "magnet",
+  "traditional": "磁鐵"
+ },
+ "磨炼|móliàn": {
+  "english": "to temper oneself",
+  "traditional": "磨鍊"
+ },
+ "礼尚往来|lǐshàngwǎnglái": {
+  "english": "courtesy demands reciprocity",
+  "traditional": "禮尚往來"
+ },
+ "礼节|lǐjié": {
+  "english": "etiquette",
+  "traditional": "禮節"
+ },
+ "秉持|bǐngchí": {
+  "english": "to uphold",
+  "traditional": "秉持"
+ },
+ "种地|zhòngdì": {
+  "english": "to farm",
+  "traditional": "種地"
+ },
+ "积攒|jīzǎn": {
+  "english": "to save up bit by bit",
+  "traditional": "積攢"
+ },
+ "称心如意|chènxīn-rúyì": {
+  "english": "just as one wishes",
+  "traditional": "稱心如意"
+ },
+ "稀有|xīyǒu": {
+  "english": "rare",
+  "traditional": "稀有"
+ },
+ "稚嫩|zhìnèn": {
+  "english": "tender; immature",
+  "traditional": "稚嫩"
+ },
+ "稿件|gǎojiàn": {
+  "english": "manuscript; submission",
+  "traditional": "稿件"
+ },
+ "空洞|kōngdòng": {
+  "english": "empty; hollow",
+  "traditional": "空洞"
+ },
+ "空闲|kòngxián": {
+  "english": "free time; idle",
+  "traditional": "空閒"
+ },
+ "空间站|kōngjiānzhàn": {
+  "english": "space station",
+  "traditional": "空間站"
+ },
+ "穿梭|chuānsuō": {
+  "english": "to shuttle back and forth",
+  "traditional": "穿梭"
+ },
+ "突兀|tūwù": {
+  "english": "abrupt; towering",
+  "traditional": "突兀"
+ },
+ "窗|chuāng": {
+  "english": "window",
+  "traditional": "窗"
+ },
+ "立案|lì’àn": {
+  "english": "to file a case",
+  "traditional": "立案"
+ },
+ "立法|lìfǎ": {
+  "english": "to legislate",
+  "traditional": "立法"
+ },
+ "竖立|shùlì": {
+  "english": "to erect; to stand upright",
+  "traditional": "豎立"
+ },
+ "章程|zhāngchéng": {
+  "english": "rules; charter",
+  "traditional": "章程"
+ },
+ "笔墨|bǐmò": {
+  "english": "pen and ink; writing",
+  "traditional": "筆墨"
+ },
+ "笨拙|bènzhuō": {
+  "english": "clumsy",
+  "traditional": "笨拙"
+ },
+ "筛查|shāichá": {
+  "english": "to screen (for disease)",
+  "traditional": "篩查"
+ },
+ "简练|jiǎnliàn": {
+  "english": "concise",
+  "traditional": "簡練"
+ },
+ "算数|suànshù": {
+  "english": "to count; to mean what one says",
+  "traditional": "算數"
+ },
+ "籍贯|jíguàn": {
+  "english": "place of origin; ancestral home",
+  "traditional": "籍貫"
+ },
+ "籽|zǐ": {
+  "english": "seed",
+  "traditional": "籽"
+ },
+ "粉末|fěnmò": {
+  "english": "powder",
+  "traditional": "粉末"
+ },
+ "粘贴|zhāntiē": {
+  "english": "to paste",
+  "traditional": "粘貼"
+ },
+ "精准|jīngzhǔn": {
+  "english": "precise; accurate",
+  "traditional": "精準"
+ },
+ "精密|jīngmì": {
+  "english": "precise",
+  "traditional": "精密"
+ },
+ "精巧|jīngqiǎo": {
+  "english": "exquisite; ingenious",
+  "traditional": "精巧"
+ },
+ "精度|jīngdù": {
+  "english": "precision",
+  "traditional": "精度"
+ },
+ "精彩纷呈|jīngcǎi-fēnchéng": {
+  "english": "full of highlights",
+  "traditional": "精彩紛呈"
+ },
+ "精湛|jīngzhàn": {
+  "english": "superb; consummate",
+  "traditional": "精湛"
+ },
+ "糟粕|zāopò": {
+  "english": "dross; waste",
+  "traditional": "糟粕"
+ },
+ "糟蹋|zāotà": {
+  "english": "to waste; to ruin",
+  "traditional": "糟蹋"
+ },
+ "系|jì": {
+  "english": "to tie; to fasten",
+  "traditional": "系"
+ },
+ "累赘|léizhui": {
+  "english": "burden; cumbersome",
+  "traditional": "累贅"
+ },
+ "繁多|fánduō": {
+  "english": "numerous; various",
+  "traditional": "繁多"
+ },
+ "繁杂|fánzá": {
+  "english": "numerous and complicated",
+  "traditional": "繁雜"
+ },
+ "繁衍|fányǎn": {
+  "english": "to multiply; to reproduce",
+  "traditional": "繁衍"
+ },
+ "红利|hónglì": {
+  "english": "dividend; bonus",
+  "traditional": "紅利"
+ },
+ "红绿灯|hóng-lǜdēng": {
+  "english": "traffic lights",
+  "traditional": "紅綠燈"
+ },
+ "纪要|jìyào": {
+  "english": "summary; minutes",
+  "traditional": "紀要"
+ },
+ "纵横|zònghéng": {
+  "english": "vertical and horizontal; to sweep across",
+  "traditional": "縱橫"
+ },
+ "纸上谈兵|zhǐshàng-tánbīng": {
+  "english": "armchair strategy",
+  "traditional": "紙上談兵"
+ },
+ "纸巾|zhǐjīn": {
+  "english": "tissue; paper napkin",
+  "traditional": "紙巾"
+ },
+ "纸币|zhǐbì": {
+  "english": "banknote",
+  "traditional": "紙幣"
+ },
+ "线上|xiànshàng": {
+  "english": "online",
+  "traditional": "線上"
+ },
+ "线下|xiànxià": {
+  "english": "offline; in person",
+  "traditional": "線下"
+ },
+ "终极|zhōngjí": {
+  "english": "ultimate",
+  "traditional": "終極"
+ },
+ "终端|zhōngduān": {
+  "english": "terminal; end device",
+  "traditional": "終端"
+ },
+ "绊|bàn": {
+  "english": "to trip",
+  "traditional": "絆"
+ },
+ "绊脚石|bànjiǎoshí": {
+  "english": "stumbling block",
+  "traditional": "絆腳石"
+ },
+ "结算|jiésuàn": {
+  "english": "to settle accounts",
+  "traditional": "結算"
+ },
+ "结账|jiézhàng": {
+  "english": "to pay the bill; to check out",
+  "traditional": "結賬"
+ },
+ "绕远儿|ràoyuǎnr": {
+  "english": "to take the long way",
+  "traditional": "繞遠兒"
+ },
+ "绘制|huìzhì": {
+  "english": "to draw; to plot",
+  "traditional": "繪製"
+ },
+ "绝迹|juéjì": {
+  "english": "to die out",
+  "traditional": "絕跡"
+ },
+ "绩效|jìxiào": {
+  "english": "performance (at work)",
+  "traditional": "績效"
+ },
+ "续航|xùháng": {
+  "english": "battery life; range",
+  "traditional": "續航"
+ },
+ "维权|wéiquán": {
+  "english": "to defend one's rights",
+  "traditional": "維權"
+ },
+ "综艺|zōngyì": {
+  "english": "variety show",
+  "traditional": "綜藝"
+ },
+ "绿洲|lǜzhōu": {
+  "english": "oasis",
+  "traditional": "綠洲"
+ },
+ "编程|biānchéng": {
+  "english": "to program; programming",
+  "traditional": "編程"
+ },
+ "编织|biānzhī": {
+  "english": "to weave; to knit",
+  "traditional": "編織"
+ },
+ "缠绕|chánrào": {
+  "english": "to wind around; to entangle",
+  "traditional": "纏繞"
+ },
+ "缩减|suōjiǎn": {
+  "english": "to cut back",
+  "traditional": "縮減"
+ },
+ "网购|wǎnggòu": {
+  "english": "to shop online",
+  "traditional": "網購"
+ },
+ "美学|měixué": {
+  "english": "aesthetics",
+  "traditional": "美學"
+ },
+ "美誉|měiyù": {
+  "english": "fine reputation",
+  "traditional": "美譽"
+ },
+ "羞耻|xiūchǐ": {
+  "english": "shame",
+  "traditional": "羞恥"
+ },
+ "翻新|fānxīn": {
+  "english": "to renovate; to refurbish",
+  "traditional": "翻新"
+ },
+ "翻身|fānshēn": {
+  "english": "to turn over; to free oneself",
+  "traditional": "翻身"
+ },
+ "老虎|lǎohǔ": {
+  "english": "tiger",
+  "traditional": "老虎"
+ },
+ "老鼠|lǎoshǔ": {
+  "english": "mouse; rat",
+  "traditional": "老鼠"
+ },
+ "考古|kǎogǔ": {
+  "english": "archaeology",
+  "traditional": "考古"
+ },
+ "考查|kǎochá": {
+  "english": "to examine; to assess",
+  "traditional": "考查"
+ },
+ "耐用|nàiyòng": {
+  "english": "durable",
+  "traditional": "耐用"
+ },
+ "耕|gēng": {
+  "english": "to plow",
+  "traditional": "耕"
+ },
+ "耕耘|gēngyún": {
+  "english": "to cultivate; to work hard at",
+  "traditional": "耕耘"
+ },
+ "耳环|ěrhuán": {
+  "english": "earring",
+  "traditional": "耳環"
+ },
+ "耸|sǒng": {
+  "english": "to shrug; to tower",
+  "traditional": "聳"
+ },
+ "聆听|língtīng": {
+  "english": "to listen attentively",
+  "traditional": "聆聽"
+ },
+ "职场|zhíchǎng": {
+  "english": "workplace",
+  "traditional": "職場"
+ },
+ "职称|zhíchēng": {
+  "english": "professional title",
+  "traditional": "職稱"
+ },
+ "聚焦|jùjiāo": {
+  "english": "to focus",
+  "traditional": "聚焦"
+ },
+ "聚餐|jùcān": {
+  "english": "to have a meal together",
+  "traditional": "聚餐"
+ },
+ "肆无忌惮|sìwú-jìdàn": {
+  "english": "brazen; unscrupulous",
+  "traditional": "肆無忌憚"
+ },
+ "肤浅|fūqiǎn": {
+  "english": "superficial; shallow",
+  "traditional": "膚淺"
+ },
+ "肺炎|fèiyán": {
+  "english": "pneumonia",
+  "traditional": "肺炎"
+ },
+ "胆小鬼|dǎnxiǎoguǐ": {
+  "english": "coward",
+  "traditional": "膽小鬼"
+ },
+ "胆量|dǎnliàng": {
+  "english": "courage",
+  "traditional": "膽量"
+ },
+ "背影|bèiyǐng": {
+  "english": "view of someone from behind",
+  "traditional": "背影"
+ },
+ "背负|bēifù": {
+  "english": "to carry on one's back; to bear",
+  "traditional": "揹負"
+ },
+ "胖乎乎|pànghūhū": {
+  "english": "chubby",
+  "traditional": "胖乎乎"
+ },
+ "胡乱|húluàn": {
+  "english": "carelessly; at random",
+  "traditional": "胡亂"
+ },
+ "胡同|hútòng": {
+  "english": "alley; hutong",
+  "traditional": "衚衕"
+ },
+ "胸|xiōng": {
+  "english": "chest",
+  "traditional": "胸"
+ },
+ "胸怀|xiōnghuái": {
+  "english": "mind; breadth of mind",
+  "traditional": "胸懷"
+ },
+ "脚踏实地|jiǎotāshídì": {
+  "english": "down-to-earth; steady",
+  "traditional": "腳踏實地"
+ },
+ "腹|fù": {
+  "english": "abdomen; belly",
+  "traditional": "腹"
+ },
+ "腼腆|miǎntiǎn": {
+  "english": "shy; bashful",
+  "traditional": "靦腆"
+ },
+ "臀|tún": {
+  "english": "buttocks",
+  "traditional": "臀"
+ },
+ "自习|zìxí": {
+  "english": "to study on one's own",
+  "traditional": "自習"
+ },
+ "自律|zìlǜ": {
+  "english": "self-discipline",
+  "traditional": "自律"
+ },
+ "自治区|zìzhìqū": {
+  "english": "autonomous region",
+  "traditional": "自治區"
+ },
+ "自满|zìmǎn": {
+  "english": "complacent",
+  "traditional": "自滿"
+ },
+ "自首|zìshǒu": {
+  "english": "to turn oneself in",
+  "traditional": "自首"
+ },
+ "舒展|shūzhǎn": {
+  "english": "to stretch out; relaxed",
+  "traditional": "舒展"
+ },
+ "节制|jiézhì": {
+  "english": "to restrain; moderation",
+  "traditional": "節制"
+ },
+ "花朵|huāduǒ": {
+  "english": "flower",
+  "traditional": "花朵"
+ },
+ "花蕾|huālěi": {
+  "english": "flower bud",
+  "traditional": "花蕾"
+ },
+ "苍白|cāngbái": {
+  "english": "pale",
+  "traditional": "蒼白"
+ },
+ "若是|ruòshì": {
+  "english": "if",
+  "traditional": "若是"
+ },
+ "苦尽甘来|kǔjìn-gānlái": {
+  "english": "after hardship comes happiness",
+  "traditional": "苦盡甘來"
+ },
+ "苦涩|kǔsè": {
+  "english": "bitter",
+  "traditional": "苦澀"
+ },
+ "英明|yīngmíng": {
+  "english": "wise; brilliant",
+  "traditional": "英明"
+ },
+ "茁壮|zhuózhuàng": {
+  "english": "sturdy; healthy",
+  "traditional": "茁壯"
+ },
+ "茉莉|mòlì": {
+  "english": "jasmine",
+  "traditional": "茉莉"
+ },
+ "茫茫|mángmáng": {
+  "english": "vast; boundless",
+  "traditional": "茫茫"
+ },
+ "草丛|cǎocóng": {
+  "english": "thick grass",
+  "traditional": "草叢"
+ },
+ "草率|cǎoshuài": {
+  "english": "careless; rash",
+  "traditional": "草率"
+ },
+ "草药|cǎoyào": {
+  "english": "herbal medicine",
+  "traditional": "草藥"
+ },
+ "荒唐|huāngtáng": {
+  "english": "absurd; ridiculous",
+  "traditional": "荒唐"
+ },
+ "荣耀|róngyào": {
+  "english": "glory; honor",
+  "traditional": "榮耀"
+ },
+ "荤|hūn": {
+  "english": "meat dishes",
+  "traditional": "葷"
+ },
+ "莅临|lìlín": {
+  "english": "to grace with one's presence",
+  "traditional": "蒞臨"
+ },
+ "莫大|mòdà": {
+  "english": "greatest; immense",
+  "traditional": "莫大"
+ },
+ "菜肴|càiyáo": {
+  "english": "dishes; cuisine",
+  "traditional": "菜餚"
+ },
+ "营利|yínglì": {
+  "english": "to make a profit",
+  "traditional": "營利"
+ },
+ "营销|yíngxiāo": {
+  "english": "marketing",
+  "traditional": "營銷"
+ },
+ "落|là": {
+  "english": "to leave behind; to forget",
+  "traditional": "落"
+ },
+ "落成|luòchéng": {
+  "english": "to be completed (of a building)",
+  "traditional": "落成"
+ },
+ "著称|zhùchēng": {
+  "english": "to be famous for",
+  "traditional": "著稱"
+ },
+ "蒸发|zhēngfā": {
+  "english": "to evaporate",
+  "traditional": "蒸發"
+ },
+ "蔑视|mièshì": {
+  "english": "to show contempt for",
+  "traditional": "蔑視"
+ },
+ "蔚蓝|wèilán": {
+  "english": "azure",
+  "traditional": "蔚藍"
+ },
+ "蕴含|yùnhán": {
+  "english": "to contain; to hold",
+  "traditional": "蘊含"
+ },
+ "薪酬|xīnchóu": {
+  "english": "pay; salary",
+  "traditional": "薪酬"
+ },
+ "藐视|miǎoshì": {
+  "english": "to despise; to look down on",
+  "traditional": "藐視"
+ },
+ "藤蔓|téngwàn": {
+  "english": "vine",
+  "traditional": "藤蔓"
+ },
+ "虚荣|xūróng": {
+  "english": "vanity",
+  "traditional": "虛榮"
+ },
+ "蚂蚁|mǎyǐ": {
+  "english": "ant",
+  "traditional": "螞蟻"
+ },
+ "蛀牙|zhùyá": {
+  "english": "tooth decay; cavity",
+  "traditional": "蛀牙"
+ },
+ "蝴蝶|húdié": {
+  "english": "butterfly",
+  "traditional": "蝴蝶"
+ },
+ "螃蟹|pángxiè": {
+  "english": "crab",
+  "traditional": "螃蟹"
+ },
+ "融资|róngzī": {
+  "english": "to raise funds; financing",
+  "traditional": "融資"
+ },
+ "血|xiě": {
+  "english": "blood",
+  "traditional": "血"
+ },
+ "血型|xuèxíng": {
+  "english": "blood type",
+  "traditional": "血型"
+ },
+ "行|háng": {
+  "english": "line; row; profession",
+  "traditional": "行"
+ },
+ "行星|xíngxīng": {
+  "english": "planet",
+  "traditional": "行星"
+ },
+ "街坊|jiēfang": {
+  "english": "neighbors",
+  "traditional": "街坊"
+ },
+ "衣裳|yīshang": {
+  "english": "clothes",
+  "traditional": "衣裳"
+ },
+ "表示|biǎoshì": {
+  "english": "to express; to indicate",
+  "traditional": "表示"
+ },
+ "衰落|shuāiluò": {
+  "english": "to decline",
+  "traditional": "衰落"
+ },
+ "袋子|dàizi": {
+  "english": "bag",
+  "traditional": "袋子"
+ },
+ "袖子|xiùzi": {
+  "english": "sleeve",
+  "traditional": "袖子"
+ },
+ "裁员|cáiyuán": {
+  "english": "to lay off staff",
+  "traditional": "裁員"
+ },
+ "裁缝|cáifeng": {
+  "english": "tailor",
+  "traditional": "裁縫"
+ },
+ "裸体|luǒtǐ": {
+  "english": "naked",
+  "traditional": "裸體"
+ },
+ "褒贬|bāobiǎn": {
+  "english": "to judge; to praise and criticize",
+  "traditional": "褒貶"
+ },
+ "见利忘义|jiànlì-wàngyì": {
+  "english": "to forget principles for profit",
+  "traditional": "見利忘義"
+ },
+ "见多识广|jiànduō-shíguǎng": {
+  "english": "experienced and knowledgeable",
+  "traditional": "見多識廣"
+ },
+ "见闻|jiànwén": {
+  "english": "what one sees and hears; knowledge",
+  "traditional": "見聞"
+ },
+ "规章|guīzhāng": {
+  "english": "rules; regulations",
+  "traditional": "規章"
+ },
+ "解渴|jiěkě": {
+  "english": "to quench thirst",
+  "traditional": "解渴"
+ },
+ "解约|jiěyuē": {
+  "english": "to terminate a contract",
+  "traditional": "解約"
+ },
+ "警戒|jǐngjiè": {
+  "english": "to be on guard",
+  "traditional": "警戒"
+ },
+ "警报|jǐngbào": {
+  "english": "alarm; alert",
+  "traditional": "警報"
+ },
+ "警犬|jǐngquǎn": {
+  "english": "police dog",
+  "traditional": "警犬"
+ },
+ "警示|jǐngshì": {
+  "english": "to warn; warning",
+  "traditional": "警示"
+ },
+ "订阅|dìngyuè": {
+  "english": "to subscribe",
+  "traditional": "訂閱"
+ },
+ "记性|jìxing": {
+  "english": "memory",
+  "traditional": "記性"
+ },
+ "讲理|jiǎnglǐ": {
+  "english": "to be reasonable",
+  "traditional": "講理"
+ },
+ "许愿|xǔyuàn": {
+  "english": "to make a wish",
+  "traditional": "許願"
+ },
+ "证券|zhèngquàn": {
+  "english": "securities",
+  "traditional": "證券"
+ },
+ "诉求|sùqiú": {
+  "english": "demand; appeal",
+  "traditional": "訴求"
+ },
+ "诉诸|sùzhū": {
+  "english": "to resort to",
+  "traditional": "訴諸"
+ },
+ "诗词|shīcí": {
+  "english": "poetry",
+  "traditional": "詩詞"
+ },
+ "诠释|quánshì": {
+  "english": "to interpret; to explain",
+  "traditional": "詮釋"
+ },
+ "诡计|guǐjì": {
+  "english": "trick; scheme",
+  "traditional": "詭計"
+ },
+ "诬陷|wūxiàn": {
+  "english": "to frame (someone)",
+  "traditional": "誣陷"
+ },
+ "语文|yǔwén": {
+  "english": "Chinese (school subject)",
+  "traditional": "語文"
+ },
+ "请示|qǐngshì": {
+  "english": "to ask for instructions",
+  "traditional": "請示"
+ },
+ "读物|dúwù": {
+  "english": "reading material",
+  "traditional": "讀物"
+ },
+ "调|tiáo": {
+  "english": "to adjust; to mix",
+  "traditional": "調"
+ },
+ "调剂|tiáojì": {
+  "english": "to adjust; to redistribute",
+  "traditional": "調劑"
+ },
+ "调和|tiáohé": {
+  "english": "harmonious; to reconcile",
+  "traditional": "調和"
+ },
+ "谈及|tánjí": {
+  "english": "to talk about",
+  "traditional": "談及"
+ },
+ "谋划|móuhuà": {
+  "english": "to plan; to scheme",
+  "traditional": "謀劃"
+ },
+ "谋取|móuqǔ": {
+  "english": "to seek; to gain",
+  "traditional": "謀取"
+ },
+ "谜|mí": {
+  "english": "riddle; mystery",
+  "traditional": "謎"
+ },
+ "谢绝|xièjué": {
+  "english": "to decline politely",
+  "traditional": "謝絕"
+ },
+ "谷物|gǔwù": {
+  "english": "grain; cereal",
+  "traditional": "穀物"
+ },
+ "象棋|xiàngqí": {
+  "english": "Chinese chess",
+  "traditional": "象棋"
+ },
+ "豪迈|háomài": {
+  "english": "bold and generous; heroic",
+  "traditional": "豪邁"
+ },
+ "负重|fùzhòng": {
+  "english": "to carry a heavy load",
+  "traditional": "負重"
+ },
+ "败坏|bàihuài": {
+  "english": "to ruin; to corrupt",
+  "traditional": "敗壞"
+ },
+ "贪吃|tānchī": {
+  "english": "greedy (for food)",
+  "traditional": "貪吃"
+ },
+ "贫乏|pínfá": {
+  "english": "lacking; poor",
+  "traditional": "貧乏"
+ },
+ "贬低|biǎndī": {
+  "english": "to belittle",
+  "traditional": "貶低"
+ },
+ "贵姓|guìxìng": {
+  "english": "your surname (polite)",
+  "traditional": "貴姓"
+ },
+ "费力|fèilì": {
+  "english": "strenuous; to take effort",
+  "traditional": "費力"
+ },
+ "资质|zīzhì": {
+  "english": "qualifications; aptitude",
+  "traditional": "資質"
+ },
+ "赏识|shǎngshí": {
+  "english": "to appreciate (someone's talent)",
+  "traditional": "賞識"
+ },
+ "赛事|sàishì": {
+  "english": "sports event; competition",
+  "traditional": "賽事"
+ },
+ "赛季|sàijì": {
+  "english": "season (sports)",
+  "traditional": "賽季"
+ },
+ "赤道|chìdào": {
+  "english": "equator",
+  "traditional": "赤道"
+ },
+ "走势|zǒushì": {
+  "english": "trend",
+  "traditional": "走勢"
+ },
+ "走向|zǒuxiàng": {
+  "english": "direction; trend",
+  "traditional": "走向"
+ },
+ "走漏|zǒulòu": {
+  "english": "to leak (news)",
+  "traditional": "走漏"
+ },
+ "起哄|qǐhòng": {
+  "english": "to jeer; to kick up a fuss",
+  "traditional": "起鬨"
+ },
+ "足不出户|zúbùchūhù": {
+  "english": "to stay at home",
+  "traditional": "足不出戶"
+ },
+ "跌幅|diēfú": {
+  "english": "drop; decline (percentage)",
+  "traditional": "跌幅"
+ },
+ "跟进|gēnjìn": {
+  "english": "to follow up",
+  "traditional": "跟進"
+ },
+ "跨度|kuàdù": {
+  "english": "span",
+  "traditional": "跨度"
+ },
+ "路径|lùjìng": {
+  "english": "path; route",
+  "traditional": "路徑"
+ },
+ "践踏|jiàntà": {
+  "english": "to trample",
+  "traditional": "踐踏"
+ },
+ "踪迹|zōngjì": {
+  "english": "trace; track",
+  "traditional": "蹤跡"
+ },
+ "蹊跷|qīqiao": {
+  "english": "strange; fishy",
+  "traditional": "蹊蹺"
+ },
+ "身|shēn": {
+  "english": "body; measure word for clothes",
+  "traditional": "身"
+ },
+ "车库|chēkù": {
+  "english": "garage",
+  "traditional": "車庫"
+ },
+ "转发|zhuǎnfā": {
+  "english": "to forward; to share (a post)",
+  "traditional": "轉發"
+ },
+ "轻视|qīngshì": {
+  "english": "to look down on",
+  "traditional": "輕視"
+ },
+ "轻重|qīngzhòng": {
+  "english": "weight; relative importance",
+  "traditional": "輕重"
+ },
+ "较为|jiàowéi": {
+  "english": "relatively; fairly",
+  "traditional": "較為"
+ },
+ "辖区|xiáqū": {
+  "english": "jurisdiction; district",
+  "traditional": "轄區"
+ },
+ "辗转|zhǎnzhuǎn": {
+  "english": "to pass through many hands; to toss and turn",
+  "traditional": "輾轉"
+ },
+ "辩证|biànzhèng": {
+  "english": "dialectical",
+  "traditional": "辯證"
+ },
+ "迁徙|qiānxǐ": {
+  "english": "to migrate",
+  "traditional": "遷徙"
+ },
+ "迅猛|xùnměng": {
+  "english": "swift and powerful",
+  "traditional": "迅猛"
+ },
+ "过量|guòliàng": {
+  "english": "excessive; overdose",
+  "traditional": "過量"
+ },
+ "过问|guòwèn": {
+  "english": "to concern oneself with; to intervene",
+  "traditional": "過問"
+ },
+ "迎面|yíngmiàn": {
+  "english": "head-on; face to face",
+  "traditional": "迎面"
+ },
+ "运筹帷幄|yùnchóu-wéiwò": {
+  "english": "to plan strategy",
+  "traditional": "運籌帷幄"
+ },
+ "运算|yùnsuàn": {
+  "english": "to calculate; operation",
+  "traditional": "運算"
+ },
+ "运费|yùnfèi": {
+  "english": "shipping cost",
+  "traditional": "運費"
+ },
+ "还|huán": {
+  "english": "to give back; to return",
+  "traditional": "還"
+ },
+ "这个|zhège": {
+  "english": "this; this one",
+  "traditional": "這個"
+ },
+ "进军|jìnjūn": {
+  "english": "to march; to enter (a market)",
+  "traditional": "進軍"
+ },
+ "进取|jìnqǔ": {
+  "english": "to be enterprising",
+  "traditional": "進取"
+ },
+ "连同|liántóng": {
+  "english": "together with",
+  "traditional": "連同"
+ },
+ "连年|liánnián": {
+  "english": "for years in a row",
+  "traditional": "連年"
+ },
+ "连贯|liánguàn": {
+  "english": "coherent; to link up",
+  "traditional": "連貫"
+ },
+ "连连|liánlián": {
+  "english": "repeatedly",
+  "traditional": "連連"
+ },
+ "迟缓|chíhuǎn": {
+  "english": "slow",
+  "traditional": "遲緩"
+ },
+ "迟钝|chídùn": {
+  "english": "slow-witted; sluggish",
+  "traditional": "遲鈍"
+ },
+ "迸发|bèngfā": {
+  "english": "to burst out",
+  "traditional": "迸發"
+ },
+ "追悼|zhuīdào": {
+  "english": "to mourn",
+  "traditional": "追悼"
+ },
+ "追捧|zhuīpěng": {
+  "english": "to rave about; to chase after",
+  "traditional": "追捧"
+ },
+ "退化|tuìhuà": {
+  "english": "to degenerate",
+  "traditional": "退化"
+ },
+ "退步|tuìbù": {
+  "english": "to fall behind; to regress",
+  "traditional": "退步"
+ },
+ "退税|tuìshuì": {
+  "english": "tax refund",
+  "traditional": "退稅"
+ },
+ "退还|tuìhuán": {
+  "english": "to return; to refund",
+  "traditional": "退還"
+ },
+ "逆境|nìjìng": {
+  "english": "adversity",
+  "traditional": "逆境"
+ },
+ "逆行|nìxíng": {
+  "english": "to go the wrong way",
+  "traditional": "逆行"
+ },
+ "逐一|zhúyī": {
+  "english": "one by one",
+  "traditional": "逐一"
+ },
+ "递增|dìzēng": {
+  "english": "to increase progressively",
+  "traditional": "遞增"
+ },
+ "逗留|dòuliú": {
+  "english": "to stay; to stop over",
+  "traditional": "逗留"
+ },
+ "通货膨胀|tōnghuò péngzhàng": {
+  "english": "inflation",
+  "traditional": "通貨膨脹"
+ },
+ "道别|dàobié": {
+  "english": "to say goodbye",
+  "traditional": "道別"
+ },
+ "遗失|yíshī": {
+  "english": "to lose",
+  "traditional": "遺失"
+ },
+ "遗漏|yílòu": {
+  "english": "to leave out; omission",
+  "traditional": "遺漏"
+ },
+ "遮挡|zhēdǎng": {
+  "english": "to block; to shelter",
+  "traditional": "遮擋"
+ },
+ "避让|bìràng": {
+  "english": "to give way; to avoid",
+  "traditional": "避讓"
+ },
+ "那个|nàge": {
+  "english": "that; that one",
+  "traditional": "那個"
+ },
+ "邮寄|yóujì": {
+  "english": "to send by post",
+  "traditional": "郵寄"
+ },
+ "郁闷|yùmèn": {
+  "english": "depressed; frustrated",
+  "traditional": "鬱悶"
+ },
+ "部首|bùshǒu": {
+  "english": "radical (of a character)",
+  "traditional": "部首"
+ },
+ "配方|pèifāng": {
+  "english": "formula; recipe",
+  "traditional": "配方"
+ },
+ "配角|pèijué": {
+  "english": "supporting role",
+  "traditional": "配角"
+ },
+ "采摘|cǎizhāi": {
+  "english": "to pick (fruit, tea)",
+  "traditional": "採摘"
+ },
+ "重|chóng": {
+  "english": "again; to repeat",
+  "traditional": "重"
+ },
+ "重用|zhòngyòng": {
+  "english": "to put in an important position",
+  "traditional": "重用"
+ },
+ "重重|chóngchóng": {
+  "english": "layer upon layer; numerous",
+  "traditional": "重重"
+ },
+ "量化|liànghuà": {
+  "english": "to quantify",
+  "traditional": "量化"
+ },
+ "钢铁|gāngtiě": {
+  "english": "steel",
+  "traditional": "鋼鐵"
+ },
+ "链接|liànjiē": {
+  "english": "link; to link",
+  "traditional": "鏈接"
+ },
+ "锄|chú": {
+  "english": "hoe; to hoe",
+  "traditional": "鋤"
+ },
+ "锋利|fēnglì": {
+  "english": "sharp",
+  "traditional": "鋒利"
+ },
+ "锡纸|xīzhǐ": {
+  "english": "tin foil",
+  "traditional": "錫紙"
+ },
+ "锤|chuí": {
+  "english": "hammer; to hammer",
+  "traditional": "錘"
+ },
+ "锦上添花|jǐnshàng-tiānhuā": {
+  "english": "to make a good thing better",
+  "traditional": "錦上添花"
+ },
+ "锲而不舍|qiè’érbùshě": {
+  "english": "to persevere",
+  "traditional": "鍥而不捨"
+ },
+ "镇静|zhènjìng": {
+  "english": "calm",
+  "traditional": "鎮靜"
+ },
+ "长|cháng": {
+  "english": "long",
+  "traditional": "長"
+ },
+ "闲置|xiánzhì": {
+  "english": "to lie idle",
+  "traditional": "閒置"
+ },
+ "闲话|xiánhuà": {
+  "english": "gossip; chit-chat",
+  "traditional": "閒話"
+ },
+ "间歇|jiànxiē": {
+  "english": "intermittent; interval",
+  "traditional": "間歇"
+ },
+ "闷热|mēnrè": {
+  "english": "hot and humid",
+  "traditional": "悶熱"
+ },
+ "阁楼|gélóu": {
+  "english": "attic; loft",
+  "traditional": "閣樓"
+ },
+ "阅览|yuèlǎn": {
+  "english": "to read",
+  "traditional": "閱覽"
+ },
+ "阐释|chǎnshì": {
+  "english": "to explain; to interpret",
+  "traditional": "闡釋"
+ },
+ "阳历|yánglì": {
+  "english": "solar calendar",
+  "traditional": "陽曆"
+ },
+ "阴历|yīnlì": {
+  "english": "lunar calendar",
+  "traditional": "陰曆"
+ },
+ "阵地|zhèndì": {
+  "english": "position; front",
+  "traditional": "陣地"
+ },
+ "阵雨|zhènyǔ": {
+  "english": "shower (of rain)",
+  "traditional": "陣雨"
+ },
+ "降水|jiàngshuǐ": {
+  "english": "precipitation; rainfall",
+  "traditional": "降水"
+ },
+ "陡峭|dǒuqiào": {
+  "english": "steep",
+  "traditional": "陡峭"
+ },
+ "陷害|xiànhài": {
+  "english": "to frame; to set up",
+  "traditional": "陷害"
+ },
+ "隐含|yǐnhán": {
+  "english": "to imply",
+  "traditional": "隱含"
+ },
+ "难能可贵|nánnéng-kěguì": {
+  "english": "commendable; rare and precious",
+  "traditional": "難能可貴"
+ },
+ "雄性|xióngxìng": {
+  "english": "male (of animals)",
+  "traditional": "雄性"
+ },
+ "集市|jíshì": {
+  "english": "market; fair",
+  "traditional": "集市"
+ },
+ "集思广益|jísī-guǎngyì": {
+  "english": "to pool everyone's wisdom",
+  "traditional": "集思廣益"
+ },
+ "雌性|cíxìng": {
+  "english": "female (of animals)",
+  "traditional": "雌性"
+ },
+ "雕像|diāoxiàng": {
+  "english": "statue",
+  "traditional": "雕像"
+ },
+ "雪糕|xuěgāo": {
+  "english": "ice cream bar",
+  "traditional": "雪糕"
+ },
+ "零星|língxīng": {
+  "english": "sporadic; scattered",
+  "traditional": "零星"
+ },
+ "零碎|língsuì": {
+  "english": "scattered; odds and ends",
+  "traditional": "零碎"
+ },
+ "雷|léi": {
+  "english": "thunder",
+  "traditional": "雷"
+ },
+ "雷达|léidá": {
+  "english": "radar",
+  "traditional": "雷達"
+ },
+ "震荡|zhèndàng": {
+  "english": "to shake; to fluctuate",
+  "traditional": "震盪"
+ },
+ "露|lòu": {
+  "english": "to show; to reveal",
+  "traditional": "露"
+ },
+ "露营|lùyíng": {
+  "english": "to camp",
+  "traditional": "露營"
+ },
+ "霸道|bàdào": {
+  "english": "domineering; overbearing",
+  "traditional": "霸道"
+ },
+ "青睐|qīnglài": {
+  "english": "to favor",
+  "traditional": "青睞"
+ },
+ "青铜器|qīngtóngqì": {
+  "english": "bronze ware",
+  "traditional": "青銅器"
+ },
+ "非但|fēidàn": {
+  "english": "not only",
+  "traditional": "非但"
+ },
+ "非洲|Fēizhōu": {
+  "english": "Africa",
+  "traditional": "非洲"
+ },
+ "面孔|miànkǒng": {
+  "english": "face",
+  "traditional": "面孔"
+ },
+ "顺延|shùnyán": {
+  "english": "to postpone",
+  "traditional": "順延"
+ },
+ "须知|xūzhī": {
+  "english": "notes; one should know",
+  "traditional": "須知"
+ },
+ "顾名思义|gùmíng-sīyì": {
+  "english": "as the name suggests",
+  "traditional": "顧名思義"
+ },
+ "预警|yùjǐng": {
+  "english": "early warning",
+  "traditional": "預警"
+ },
+ "颈椎|jǐngzhuī": {
+  "english": "cervical vertebrae; neck",
+  "traditional": "頸椎"
+ },
+ "颗粒|kēlì": {
+  "english": "grain; particle",
+  "traditional": "顆粒"
+ },
+ "额度|édù": {
+  "english": "limit; quota",
+  "traditional": "額度"
+ },
+ "颠倒黑白|diāndǎo-hēibái": {
+  "english": "to twist the facts",
+  "traditional": "顛倒黑白"
+ },
+ "颠簸|diānbǒ": {
+  "english": "to jolt; to bump",
+  "traditional": "顛簸"
+ },
+ "风吹雨打|fēngchuī-yǔdǎ": {
+  "english": "battered by wind and rain; hardships",
+  "traditional": "風吹雨打"
+ },
+ "风土人情|fēngtǔ-rénqíng": {
+  "english": "local customs and conditions",
+  "traditional": "風土人情"
+ },
+ "风景线|fēngjǐngxiàn": {
+  "english": "scenic sight; attraction",
+  "traditional": "風景線"
+ },
+ "风雨无阻|fēngyǔ-wúzǔ": {
+  "english": "rain or shine",
+  "traditional": "風雨無阻"
+ },
+ "飘扬|piāoyáng": {
+  "english": "to flutter",
+  "traditional": "飄揚"
+ },
+ "飘浮|piāofú": {
+  "english": "to float (in the air)",
+  "traditional": "飄浮"
+ },
+ "飞碟|fēidié": {
+  "english": "flying saucer; UFO",
+  "traditional": "飛碟"
+ },
+ "飞禽走兽|fēiqín-zǒushòu": {
+  "english": "birds and beasts",
+  "traditional": "飛禽走獸"
+ },
+ "饱经沧桑|bǎojīng-cāngsāng": {
+  "english": "to have been through a lot",
+  "traditional": "飽經滄桑"
+ },
+ "馅|xiàn": {
+  "english": "filling; stuffing",
+  "traditional": "餡"
+ },
+ "首付|shǒufù": {
+  "english": "down payment",
+  "traditional": "首付"
+ },
+ "驻扎|zhùzhā": {
+  "english": "to be stationed",
+  "traditional": "駐紮"
+ },
+ "驻足|zhùzú": {
+  "english": "to stop; to halt",
+  "traditional": "駐足"
+ },
+ "骨架|gǔjià": {
+  "english": "skeleton; framework",
+  "traditional": "骨架"
+ },
+ "骨骼|gǔgé": {
+  "english": "skeleton",
+  "traditional": "骨骼"
+ },
+ "高端|gāoduān": {
+  "english": "high-end",
+  "traditional": "高端"
+ },
+ "高见|gāojiàn": {
+  "english": "your opinion (polite)",
+  "traditional": "高見"
+ },
+ "魔力|mólì": {
+  "english": "magic power; charm",
+  "traditional": "魔力"
+ },
+ "魔法|mófǎ": {
+  "english": "magic",
+  "traditional": "魔法"
+ },
+ "鲜为人知|xiǎnwéirénzhī": {
+  "english": "little known",
+  "traditional": "鮮為人知"
+ },
+ "鲤鱼|lǐyú": {
+  "english": "carp",
+  "traditional": "鯉魚"
+ },
+ "鲸|jīng": {
+  "english": "whale",
+  "traditional": "鯨"
+ },
+ "鸣|míng": {
+  "english": "to chirp; to sound",
+  "traditional": "鳴"
+ },
+ "麦克风|màikèfēng": {
+  "english": "microphone",
+  "traditional": "麥克風"
+ },
+ "黑名单|hēimíngdān": {
+  "english": "blacklist",
+  "traditional": "黑名單"
+ },
+ "龙头|lóngtóu": {
+  "english": "tap; leading company",
+  "traditional": "龍頭"
+ }
+}

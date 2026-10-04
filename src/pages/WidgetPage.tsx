@@ -2,8 +2,8 @@ import { useState } from 'react'
 import AppHeader from '../components/AppHeader'
 import { useSEO } from '../hooks/useSEO'
 import { getSavedLevel } from '../lib/todayPlan'
+import { LEVELS, levelLabel } from '../data/levels'
 
-const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const SPEEDS = [
   { min: 60, label: 'Every hour' },
   { min: 30, label: 'Every 30 min' },
@@ -50,11 +50,11 @@ export default function WidgetPage() {
               <span className="widget-range">
                 HSK
                 <select value={from} onChange={e => setFrom(Number(e.target.value))} aria-label="From level">
-                  {LEVELS.map(l => <option key={l} value={l}>{l}</option>)}
+                  {LEVELS.map(l => <option key={l} value={l}>{levelLabel(l)}</option>)}
                 </select>
                 to
                 <select value={to} onChange={e => setTo(Number(e.target.value))} aria-label="To level">
-                  {LEVELS.map(l => <option key={l} value={l}>{l}</option>)}
+                  {LEVELS.map(l => <option key={l} value={l}>{levelLabel(l)}</option>)}
                 </select>
               </span>
             </label>

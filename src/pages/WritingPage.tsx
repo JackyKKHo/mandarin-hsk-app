@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import HanziWriter from 'hanzi-writer'
 import TonedPinyin from '../components/TonedPinyin'
 import { useVocab } from '../hooks/useVocab'
+import { levelLabel, toLevel } from '../data/levels'
 
 type Stage = 'idle' | 'writing' | 'complete'
 
@@ -19,7 +20,7 @@ const SIZE = 200
 
 export default function WritingPage() {
   const { level } = useParams<{ level: string }>()
-  const currentLevel = Number(level) || 1
+  const currentLevel = toLevel(level)
 
   const { words: vocabLevel } = useVocab(currentLevel)
   const levelWords = useMemo(() =>
@@ -126,9 +127,9 @@ export default function WritingPage() {
   if (stage === 'idle') {
     return (
       <div className="practice-page">
-        <Link to={`/hsk/${currentLevel}`} className="back-link">← HSK {currentLevel}</Link>
+        <Link to={`/hsk/${currentLevel}`} className="back-link">← HSK {levelLabel(currentLevel)}</Link>
         <div className="practice-start-card">
-          <div className="practice-start-level">HSK {currentLevel}</div>
+          <div className="practice-start-level">HSK {levelLabel(currentLevel)}</div>
           <h2>Writing Practice</h2>
           {levelWords.length === 0 ? (
             <p className="empty-state">No single-character words for this level.</p>
@@ -204,7 +205,7 @@ export default function WritingPage() {
     <div className="practice-page">
       <div className="practice-topbar">
         <Link to={`/hsk/${currentLevel}`} className="back-link" style={{ marginBottom: 0 }}>
-          ← HSK {currentLevel}
+          ← HSK {levelLabel(currentLevel)}
         </Link>
         <span className="practice-counter">{index + 1} / {queue.length}</span>
         <span className="practice-score-inline">

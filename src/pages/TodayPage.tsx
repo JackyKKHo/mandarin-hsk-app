@@ -7,12 +7,12 @@ import { useSRS } from '../hooks/useSRS'
 import { useStreak } from '../hooks/useStreak'
 import { useSEO } from '../hooks/useSEO'
 import type { VocabItem } from '../types'
+import { LEVELS, levelLabel } from '../data/levels'
 import {
   NEW_WORDS_PER_DAY, type TodayPlan,
   todayKey, loadPlan, savePlan, getSavedLevel, saveLevel,
 } from '../lib/todayPlan'
 
-const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 // Unseen words starting at `level`, then the levels above it, then below it
 function pickNewWords(vocab: VocabItem[], level: number, isSeen: (id: string) => boolean, keep: string[]): string[] {
@@ -140,7 +140,7 @@ export default function TodayPage() {
                       onChange={e => changeLevel(Number(e.target.value))}
                       aria-label="Level for new words"
                     >
-                      {LEVELS.map(l => <option key={l} value={l}>{l}</option>)}
+                      {LEVELS.map(l => <option key={l} value={l}>{levelLabel(l)}</option>)}
                     </select>
                   </div>
                   {newWords.length > 0 ? (

@@ -5,6 +5,7 @@ import { useVocab } from '../hooks/useVocab'
 import { useProgress } from '../hooks/useProgress'
 import { useSEO } from '../hooks/useSEO'
 import { normalizePOS } from '../types'
+import { LEVELS, levelLabel } from '../data/levels'
 
 const COVERAGE = [
   { label: 'HSK 1', cumWords: 497,  pct: 64, desc: 'Basic greetings, numbers, daily essentials' },
@@ -84,7 +85,7 @@ export default function FrequencyPage() {
   // POS breakdown per level
   const posBreakdown = useMemo(() => {
     if (!words.length) return []
-    return [1,2,3,4,5,6,7,8,9].map(l => {
+    return LEVELS.map(l => {
       const lw = words.filter(w => w.hskLevel === l)
       const counts: Record<string, number> = {}
       for (const w of lw) {
@@ -172,7 +173,7 @@ export default function FrequencyPage() {
           <div className="pos-breakdown">
             {posBreakdown.map(({ level, total, counts }) => (
               <div key={level} className="pos-row">
-                <span className="pos-row-label" style={{ color: LEVEL_COLORS[level] }}>HSK {level}</span>
+                <span className="pos-row-label" style={{ color: LEVEL_COLORS[level] }}>HSK {levelLabel(level)}</span>
                 <div className="pos-bar">
                   {posKeys.map(p => {
                     const w = ((counts[p] ?? 0) / total) * 100
@@ -205,7 +206,7 @@ export default function FrequencyPage() {
                   style={activeLevels.has(l) ? { background: LEVEL_COLORS[l], borderColor: LEVEL_COLORS[l] } : {}}
                   onClick={() => toggleLevel(l)}
                 >
-                  HSK {l}
+                  HSK {levelLabel(l)}
                 </button>
               ))}
             </div>

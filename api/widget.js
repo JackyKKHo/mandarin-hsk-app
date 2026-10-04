@@ -3,6 +3,7 @@
 //
 //   GET /api/widget?level=3          HSK 3
 //   GET /api/widget?level=2-4        HSK 2 to 4
+//   GET /api/widget?level=7          HSK 7–9 (one band in the 2026 syllabus; 8 and 9 also mean this)
 //   GET /api/widget?level=3&every=30 new word every 30 minutes (15-1440, default 60)
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -52,9 +53,10 @@ export function parseLevels(param) {
   if (!m) return [1]
   const a = Number(m[1])
   const b = Number(m[2] ?? m[1])
-  const levels = []
-  for (let l = Math.min(a, b); l <= Math.max(a, b); l++) levels.push(l)
-  return levels
+  const levels = new Set()
+  // HSK 7, 8 and 9 are one band (stored as level 7); older widget settings may still say 8 or 9
+  for (let l = Math.min(a, b); l <= Math.max(a, b); l++) levels.add(Math.min(l, 7))
+  return [...levels]
 }
 
 export function pickWord(levels, everyMin, now = Date.now()) {
@@ -83,6 +85,7 @@ export default function handler(req, res) {
     res.status(200).json({
       id: w.id,
       level: w.hskLevel,
+      levelLabel: w.hskLevel >= 7 ? '7–9' : String(w.hskLevel),
       hanzi: w.simplified,
       pinyin: w.pinyin,
       syllables: syllables(w.pinyin),

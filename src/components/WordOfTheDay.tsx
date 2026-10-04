@@ -4,6 +4,7 @@ import { useVocab } from '../hooks/useVocab'
 import TonedPinyin from './TonedPinyin'
 import AudioButton from './AudioButton'
 import { normalizePOS } from '../types'
+import { levelLabel } from '../data/levels'
 
 function dateSeed(s: string): number {
   let h = 0
@@ -37,7 +38,7 @@ export default function WordOfTheDay() {
           <div className="wotd-example">{word.examples[0].chinese}</div>
         )}
         <div className="wotd-footer">
-          <span className="badge badge-level" style={{ fontSize: '0.72rem' }}>HSK {word.hskLevel}</span>
+          <span className="badge badge-level" style={{ fontSize: '0.72rem' }}>HSK {levelLabel(word.hskLevel)}</span>
           <AudioButton text={word.simplified} audioUrl={word.audio.wordAudioUrl} label={`Play ${word.simplified}`} />
         </div>
       </Link>

@@ -2,7 +2,7 @@
 // Shows a new HSK word every hour on your home screen or lock screen.
 //
 // Setup: add a Scriptable widget, choose this script, and set Parameter to your
-// level, e.g. "3" for HSK 3 or "2-4" for HSK 2 to 4. Leave it empty for HSK 1.
+// level, e.g. "3" for HSK 3, "2-4" for HSK 2 to 4, or "7" for HSK 7–9. Empty means HSK 1.
 // Optional: add a speed after a comma, e.g. "3,30" for a new word every 30 minutes.
 
 const API = 'https://www.mandarindaily.app/api/widget'
@@ -95,7 +95,7 @@ function build(w, family) {
 
   const header = lw.addStack()
   header.centerAlignContent()
-  const tag = header.addText(`HSK ${w.level}`)
+  const tag = header.addText(`HSK ${w.levelLabel ?? w.level}`)
   tag.font = Font.semiboldSystemFont(10)
   tag.textColor = RED
   header.addSpacer()

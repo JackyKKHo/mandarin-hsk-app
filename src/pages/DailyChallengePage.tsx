@@ -7,6 +7,7 @@ import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
 import RecordButton from '../components/RecordButton'
 import type { VocabItem } from '../types'
+import { levelLabel } from '../data/levels'
 
 interface WordResult { word: VocabItem; correct: boolean }
 
@@ -194,7 +195,7 @@ export default function DailyChallengePage() {
               </p>
               <div className="daily-preview">
                 {dailyWords.map(w => (
-                  <span key={w.id} className="daily-preview-tag">HSK {w.hskLevel}</span>
+                  <span key={w.id} className="daily-preview-tag">HSK {levelLabel(w.hskLevel)}</span>
                 ))}
               </div>
               <button className="btn-primary" onClick={start}>Start challenge</button>
@@ -282,7 +283,7 @@ export default function DailyChallengePage() {
       <div className="quiz-prompt">
         <div className="quiz-prompt-chinese">{word.simplified}</div>
         <div className="quiz-prompt-sub">
-          <span className="badge badge-level" style={{ fontSize: '0.75rem' }}>HSK {word.hskLevel}</span>
+          <span className="badge badge-level" style={{ fontSize: '0.75rem' }}>HSK {levelLabel(word.hskLevel)}</span>
           <AudioButton text={word.simplified} audioUrl={word.audio.wordAudioUrl} label="Play" />
         </div>
       </div>
