@@ -6,6 +6,7 @@ import { useVocab } from '../hooks/useVocab'
 import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
 import { useFavourites } from '../hooks/useFavourites'
+import { LEVELS, levelLabel } from '../data/levels'
 
 const MAX_RESULTS = 80
 const POS_OPTIONS = ['noun', 'verb', 'adj', 'adv', 'pron', 'conj', 'prep', 'mw', 'particle']
@@ -69,7 +70,7 @@ export default function SearchPage() {
         <div className="search-filter-row">
           <span className="search-filter-label">Level</span>
           <div className="search-filter-chips">
-            {[1,2,3,4,5,6,7,8,9].map(l => (
+            {LEVELS.map(l => (
               <button
                 key={l}
                 className={`filter-chip${levelFilter === l ? ' active' : ''}`}
@@ -117,7 +118,7 @@ export default function SearchPage() {
               <TonedPinyin pinyin={word.pinyin} className="card-pinyin" />
               <div className="card-english">{word.english}</div>
               <div className="card-footer">
-                <span className="card-pos badge badge-level" style={{ fontSize: '0.72rem' }}>HSK {word.hskLevel}</span>
+                <span className="card-pos badge badge-level" style={{ fontSize: '0.72rem' }}>HSK {levelLabel(word.hskLevel)}</span>
                 <div style={{ display: 'flex', gap: '0.3rem' }}>
                   <button
                     className={`action-btn fav-btn${isFavourite(word.id) ? ' active' : ''}`}

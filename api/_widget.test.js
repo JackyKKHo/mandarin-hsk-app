@@ -14,6 +14,10 @@ describe('/api/widget', () => {
   it('parses level params and falls back to HSK 1', () => {
     expect(parseLevels('3')).toEqual([3])
     expect(parseLevels('4-2')).toEqual([2, 3, 4])
+    // HSK 7–9 is one band stored as level 7; old settings of 8 or 9 still work
+    expect(parseLevels('7')).toEqual([7])
+    expect(parseLevels('9')).toEqual([7])
+    expect(parseLevels('5-9')).toEqual([5, 6, 7])
     for (const bad of ['x', '0', '10', undefined, '1-']) expect(parseLevels(bad)).toEqual([1])
   })
 

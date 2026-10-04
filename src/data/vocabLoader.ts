@@ -1,4 +1,5 @@
 import type { VocabItem } from '../types'
+import { LEVELS, toLevel } from './levels'
 
 const cache = new Map<number, VocabItem[]>()
 
@@ -22,7 +23,8 @@ function seededShuffle<T>(arr: T[], seed: number): T[] {
   return out
 }
 
-export async function loadLevel(level: number): Promise<VocabItem[]> {
+export async function loadLevel(requested: number): Promise<VocabItem[]> {
+  const level = toLevel(requested)
   if (cache.has(level)) return cache.get(level)!
   const loaders: Record<number, () => Promise<{ default: VocabItem[] }>> = {
     1: () => import('../../data/hsk1.json'),
@@ -32,8 +34,6 @@ export async function loadLevel(level: number): Promise<VocabItem[]> {
     5: () => import('../../data/hsk5.json'),
     6: () => import('../../data/hsk6.json'),
     7: () => import('../../data/hsk7.json'),
-    8: () => import('../../data/hsk8.json'),
-    9: () => import('../../data/hsk9.json'),
   }
   const mod = await loaders[level]()
   const words = seededShuffle(mod.default as VocabItem[], level * 9973 + 1)
@@ -42,16 +42,15 @@ export async function loadLevel(level: number): Promise<VocabItem[]> {
 }
 
 export async function loadAllLevels(): Promise<VocabItem[]> {
-  const levels = await Promise.all([1, 2, 3, 4, 5, 6, 7, 8, 9].map(loadLevel))
+  const levels = await Promise.all(LEVELS.map(loadLevel))
   return levels.flat()
 }
 
 export function levelFromId(id: string): number {
-  return parseInt(id.replace('hsk', '').split('_')[0]) || 1
+  return toLevel(parseInt(id.replace('hsk', '').split('_')[0]))
 }
 
-// Static word counts — avoids loading all levels just to count
+// Static word counts (official 2026 syllabus) — avoids loading all levels just to count
 export const LEVEL_COUNTS: Record<number, number> = {
-  1: 497, 2: 763, 3: 966, 4: 994, 5: 1067,
-  6: 1134, 7: 1872, 8: 1872, 9: 1871,
+  1: 300, 2: 200, 3: 500, 4: 1000, 5: 1600, 6: 1800, 7: 5600,
 }

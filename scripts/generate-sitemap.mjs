@@ -15,8 +15,6 @@ const STATIC_PAGES = [
   { path: '/hsk/5',        priority: '0.9', changefreq: 'weekly' },
   { path: '/hsk/6',        priority: '0.9', changefreq: 'weekly' },
   { path: '/hsk/7',        priority: '0.8', changefreq: 'weekly' },
-  { path: '/hsk/8',        priority: '0.8', changefreq: 'weekly' },
-  { path: '/hsk/9',        priority: '0.8', changefreq: 'weekly' },
   { path: '/grammar/1',    priority: '0.8', changefreq: 'monthly' },
   { path: '/grammar/2',    priority: '0.8', changefreq: 'monthly' },
   { path: '/grammar/3',    priority: '0.8', changefreq: 'monthly' },
@@ -46,7 +44,7 @@ function url({ path, priority = '0.5', changefreq = 'monthly' }) {
 
 // Collect all word IDs and grammar point IDs
 const wordUrls = []
-for (let level = 1; level <= 9; level++) {
+for (let level = 1; level <= 7; level++) {
   const dataPath = join(ROOT, 'data', `hsk${level}.json`)
   const words = JSON.parse(readFileSync(dataPath, 'utf-8'))
   for (const word of words) {

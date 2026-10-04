@@ -10,7 +10,7 @@
 import { readFileSync } from 'node:fs'
 import { execFileSync } from 'node:child_process'
 
-const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const LEVELS = [1, 2, 3, 4, 5, 6, 7] // 7 = the HSK 7–9 band (official 2026 syllabus)
 const changedMode = process.argv.includes('--changed')
 const base = process.argv.find(a => a.startsWith('--base='))?.slice(7) ?? 'origin/main'
 const allow = process.argv.find(a => a.startsWith('--allow='))?.slice(8) ?? 'examples'

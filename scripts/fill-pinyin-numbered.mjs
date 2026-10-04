@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const dataDir = join(__dirname, '../data')
 
-for (let level = 1; level <= 9; level++) {
+for (let level = 1; level <= 7; level++) {
   const filePath = join(dataDir, `hsk${level}.json`)
   const words = JSON.parse(readFileSync(filePath, 'utf8'))
 

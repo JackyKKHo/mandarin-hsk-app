@@ -4,16 +4,15 @@ import { MaleCharacter, FemaleCharacter } from '../components/WelcomeCharacters'
 import { usePWAInstall } from '../hooks/usePWAInstall'
 import { saveLevel } from '../lib/todayPlan'
 
+// New words per level in the official 2026 syllabus
 const LEVELS = [
-  { level: 1, label: 'HSK 1', words: 500,  tag: 'Beginner',     desc: 'Basic greetings, numbers, family' },
-  { level: 2, label: 'HSK 2', words: 772,  tag: 'Beginner',     desc: 'Simple daily conversations' },
-  { level: 3, label: 'HSK 3', words: 973,  tag: 'Elementary',   desc: 'Travel, shopping, work basics' },
-  { level: 4, label: 'HSK 4', words: 1000, tag: 'Elementary',   desc: 'Wider topics, opinions, feelings' },
-  { level: 5, label: 'HSK 5', words: 1071, tag: 'Intermediate', desc: 'News, literature, abstract topics' },
-  { level: 6, label: 'HSK 6', words: 1140, tag: 'Intermediate', desc: 'Near-fluent, complex texts' },
-  { level: 7, label: 'HSK 7', words: 1872, tag: 'Advanced',     desc: 'Professional and academic use' },
-  { level: 8, label: 'HSK 8', words: 1872, tag: 'Advanced',     desc: 'Nuanced expression and debate' },
-  { level: 9, label: 'HSK 9', words: 1871, tag: 'Advanced',     desc: 'Full native-level proficiency' },
+  { level: 1, label: 'HSK 1',   words: 300,  tag: 'Beginner',     desc: 'Basic greetings, numbers, family' },
+  { level: 2, label: 'HSK 2',   words: 200,  tag: 'Beginner',     desc: 'Simple daily conversations' },
+  { level: 3, label: 'HSK 3',   words: 500,  tag: 'Elementary',   desc: 'Travel, shopping, work basics' },
+  { level: 4, label: 'HSK 4',   words: 1000, tag: 'Elementary',   desc: 'Wider topics, opinions, feelings' },
+  { level: 5, label: 'HSK 5',   words: 1600, tag: 'Intermediate', desc: 'News, literature, abstract topics' },
+  { level: 6, label: 'HSK 6',   words: 1800, tag: 'Intermediate', desc: 'Near-fluent, complex texts' },
+  { level: 7, label: 'HSK 7–9', words: 5600, tag: 'Advanced',     desc: 'Professional, academic and native-level use' },
 ]
 
 const GROUPS = ['Beginner', 'Elementary', 'Intermediate', 'Advanced']

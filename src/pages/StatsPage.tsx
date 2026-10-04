@@ -16,6 +16,7 @@ import MilestoneToast from '../components/MilestoneToast'
 import { useEmailReminders } from '../hooks/useEmailReminders'
 import { useMinedSentences } from '../hooks/useMinedSentences'
 import type { VocabItem } from '../types'
+import { LEVELS, levelLabel } from '../data/levels'
 
 function exportWords(type: 'learned' | 'favourites', vocab: VocabItem[], learned: Set<string>, favourites: Set<string>) {
   const words = vocab.filter(w => type === 'learned' ? learned.has(w.id) : favourites.has(w.id))
@@ -27,7 +28,7 @@ function exportWords(type: 'learned' | 'favourites', vocab: VocabItem[], learned
 
 function exportAnki(vocab: VocabItem[], learned: Set<string>) {
   const words = vocab.filter(w => learned.has(w.id))
-  const lines = words.map(w => `${w.simplified} (${w.pinyin})\t${w.english} [HSK ${w.hskLevel}]`)
+  const lines = words.map(w => `${w.simplified} (${w.pinyin})\t${w.english} [HSK ${levelLabel(w.hskLevel)}]`)
   download('mandarin-daily-anki.txt', lines.join('\n'), 'text/plain')
 }
 
@@ -38,7 +39,6 @@ function download(filename: string, content: string, mime: string) {
   a.click()
 }
 
-const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const TOTAL = Object.values(LEVEL_COUNTS).reduce((a, b) => a + b, 0)
 
 function today() {
@@ -317,7 +317,7 @@ export default function StatsPage() {
               return (
                 <div key={s.level} className="stats-level-row">
                   <div className="stats-level-head">
-                    <Link to={`/hsk/${s.level}`} className="stats-level-name">HSK {s.level}</Link>
+                    <Link to={`/hsk/${s.level}`} className="stats-level-name">HSK {levelLabel(s.level)}</Link>
                     <span className="readiness-pct">{readinessPct}% ready</span>
                     <span className="stats-level-counts">
                       <span className="slc-learned">{s.mastered} mastered</span>

@@ -23,6 +23,13 @@ must be the main one**.
 
 ## What to fix, and what to leave
 
+**Homographs.** The 2026 syllabus sometimes lists the same word twice, at different levels and with
+different parts of speech (本 at HSK 1 is the measure word for books; 本 at HSK 5 means "root;
+origin"). After the migration both entries share one old gloss. When a flagged word has a twin with
+the same characters, give each entry the meaning that fits its own `partOfSpeech` and level, so the
+two glosses differ. If a word's examples only fit the other sense, mention it under "Unsure" (you
+can't edit examples).
+
 Fix:
 - **Wrong meaning.** 官员 "beg" → "official", 风味 "race" → "flavor; local style", 挨 "in order".
 - **Obscure or misleading sense first.** 棒球 "no-hitter" → "baseball", 少女 "signorina" →

@@ -3,6 +3,7 @@ import type { VocabItem } from '../types'
 import { useSRS } from './useSRS'
 import { useVocab } from './useVocab'
 import { loadPlan } from '../lib/todayPlan'
+import { TOP_LEVEL, levelLabel, toLevel } from '../data/levels'
 
 export function usePracticeWords(levelParam: string | undefined): {
   words: VocabItem[]
@@ -12,7 +13,7 @@ export function usePracticeWords(levelParam: string | undefined): {
 } {
   const { isDue, getCard } = useSRS()
   const isNumericLevel = levelParam !== 'favourites' && levelParam !== 'review' && levelParam !== 'smart' && levelParam !== 'today'
-  const numericLevel = isNumericLevel ? Number(levelParam) || 1 : undefined
+  const numericLevel = isNumericLevel ? toLevel(levelParam) : undefined
   const { words: allWords, loading } = useVocab(numericLevel)
 
   return useMemo(() => {
@@ -61,7 +62,7 @@ export function usePracticeWords(levelParam: string | undefined): {
         arr.push(w)
         byLevel.set(w.hskLevel, arr)
       }
-      for (let lvl = 1; lvl <= 9 && stretch.length < 10; lvl++) {
+      for (let lvl = 1; lvl <= TOP_LEVEL && stretch.length < 10; lvl++) {
         const lvlUnseen = byLevel.get(lvl) ?? []
         for (const w of lvlUnseen) {
           if (stretch.length >= 10) break
@@ -75,10 +76,10 @@ export function usePracticeWords(levelParam: string | undefined): {
         loading: false,
       }
     }
-    const level = Number(levelParam) || 1
+    const level = toLevel(levelParam)
     return {
       words: allWords,
-      title: `HSK ${level}`,
+      title: `HSK ${levelLabel(level)}`,
       backPath: `/hsk/${level}`,
       loading: false,
     }

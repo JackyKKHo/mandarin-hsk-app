@@ -11,8 +11,8 @@ import { useSEO } from '../hooks/useSEO'
 import WordOfTheDay from '../components/WordOfTheDay'
 import { normalizePOS } from '../types'
 import Icon from '../components/Icon'
+import { LEVELS, levelLabel, toLevel } from '../data/levels'
 
-const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const UNLOCK_THRESHOLD = 80
 
 function getUnlockKey(level: number) { return `hsk-unlocked-${level}` }
@@ -20,9 +20,14 @@ function getUnlockKey(level: number) { return `hsk-unlocked-${level}` }
 export default function BrowserPage() {
   const { level } = useParams<{ level: string }>()
   const navigate = useNavigate()
-  const currentLevel = Number(level) || 1
+  const currentLevel = toLevel(level)
+
+  // Old links to /hsk/8 and /hsk/9 now point at the combined HSK 7–9 band
+  useEffect(() => {
+    if (level !== String(currentLevel)) navigate(`/hsk/${currentLevel}`, { replace: true })
+  }, [level, currentLevel, navigate])
   useSEO({
-    title: `HSK ${currentLevel} Vocabulary — ${LEVEL_COUNTS[currentLevel] ?? ''} Words`,
+    title: `HSK ${levelLabel(currentLevel)} Vocabulary — ${LEVEL_COUNTS[currentLevel] ?? ''} Words`,
     description: `Browse and study all HSK Level ${currentLevel} Mandarin Chinese vocabulary. ${LEVEL_COUNTS[currentLevel] ?? ''} words with pinyin, examples, audio and spaced repetition flashcards.`,
     path: `/hsk/${currentLevel}`,
   })
@@ -112,7 +117,7 @@ export default function BrowserPage() {
       {/* Level unlock banner */}
       {unlockBanner && (
         <div className="unlock-banner">
-          <span>{progressPct}% of HSK {unlockBanner} learned — milestone reached</span>
+          <span>{progressPct}% of HSK {levelLabel(unlockBanner)} learned — milestone reached</span>
           <button className="unlock-dismiss" onClick={() => setUnlockBanner(null)} aria-label="Dismiss"><Icon name="x" size={16} /></button>
         </div>
       )}
@@ -125,7 +130,7 @@ export default function BrowserPage() {
             onClick={() => switchLevel(l)}
             aria-current={l === currentLevel ? 'page' : undefined}
           >
-            HSK {l}
+            HSK {levelLabel(l)}
             <span className="level-count">{LEVEL_COUNTS[l]}</span>
           </button>
         ))}

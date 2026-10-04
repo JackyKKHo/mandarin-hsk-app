@@ -21,7 +21,7 @@ Rules:
 
 async function loadWordsNeedingExplanations() {
   const all = []
-  for (let level = 1; level <= 9; level++) {
+  for (let level = 1; level <= 7; level++) {
     const words = JSON.parse(readFileSync(join(dataDir, `hsk${level}.json`), 'utf8'))
     for (const w of words) {
       if (!w.explanation) all.push(w)
@@ -79,7 +79,7 @@ async function applyBatches(batchIds) {
   }
 
   let totalUpdated = 0
-  for (let level = 1; level <= 9; level++) {
+  for (let level = 1; level <= 7; level++) {
     const filePath = join(dataDir, `hsk${level}.json`)
     const words = JSON.parse(readFileSync(filePath, 'utf8'))
     let updated = 0

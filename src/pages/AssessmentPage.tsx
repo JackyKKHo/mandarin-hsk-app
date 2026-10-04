@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { loadLevel } from '../data/vocabLoader'
 import TonedPinyin from '../components/TonedPinyin'
 import type { VocabItem } from '../types'
+import { TOP_LEVEL, levelLabel } from '../data/levels'
 
 type QuestionType = 'char-to-english' | 'english-to-char' | 'listening' | 'pinyin' | 'reading'
 type Stage = 'intro' | 'loading' | 'question' | 'feedback' | 'result'
@@ -96,7 +97,7 @@ function computeRecommended(answered: Answered[]): number {
 
   // Positive signal: highest level where you got strictly more right than wrong
   let positiveRec = 1
-  for (let l = 1; l <= 9; l++) {
+  for (let l = 1; l <= TOP_LEVEL; l++) {
     const s = byLevel[l]
     if (s && s.c > s.w) positiveRec = l
   }
@@ -290,22 +291,22 @@ export default function AssessmentPage() {
     return (
       <div className="assessment-page">
         <div className="assessment-result-card">
-          <div className="assessment-result-badge">HSK {recommended}</div>
-          <h2>We recommend <strong>HSK {recommended}</strong></h2>
+          <div className="assessment-result-badge">HSK {levelLabel(recommended)}</div>
+          <h2>We recommend <strong>HSK {levelLabel(recommended)}</strong></h2>
           <p className="assessment-result-tag">{LEVEL_LABELS[recommended]}</p>
           <p className="assessment-result-score">{correct} of {answered.length} correct ({pct}%)</p>
           <div className="assessment-result-actions">
             <button className="btn-primary" onClick={() => goToLevel(recommended)}>
-              Start at HSK {recommended} →
+              Start at HSK {levelLabel(recommended)} →
             </button>
             {recommended < 9 && (
               <button className="btn-secondary" onClick={() => goToLevel(recommended + 1)}>
-                Try HSK {recommended + 1} instead
+                Try HSK {levelLabel(recommended + 1)} instead
               </button>
             )}
             {recommended > 1 && (
               <button className="btn-secondary" onClick={() => goToLevel(recommended - 1)}>
-                Start easier at HSK {recommended - 1}
+                Start easier at HSK {levelLabel(recommended - 1)}
               </button>
             )}
           </div>
@@ -323,7 +324,7 @@ export default function AssessmentPage() {
       <div className="assessment-topbar">
         <span className="assessment-counter">{answered.length + 1} / {TOTAL}</span>
         <span className="assessment-type-label">{q ? TYPE_LABELS[q.type] : ''}</span>
-        <span className="assessment-level-badge">HSK {currentLevel}</span>
+        <span className="assessment-level-badge">HSK {levelLabel(currentLevel)}</span>
       </div>
       <div className="progress-bar-wrap" style={{ width: '100%', maxWidth: 480 }}>
         <div className="progress-bar-fill" style={{ width: `${progressPct}%` }} />

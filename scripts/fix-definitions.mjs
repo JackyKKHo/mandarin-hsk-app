@@ -120,7 +120,7 @@ Return ONLY a JSON array with one object per word (${batch.length} total), in or
 
 const levels = process.argv[2]
   ? [parseInt(process.argv[2])]
-  : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  : [1, 2, 3, 4, 5, 6, 7]
 
 for (const level of levels) {
   await fixLevel(level)

@@ -13,9 +13,13 @@
 ## What's Been Built
 
 ### Data
-- `data/hsk1.json` → `data/hsk9.json` — 11,036 words across HSK 1–9
-- All words have: `simplified`, `traditional`, `pinyin`, `pinyinNumbered`, `english`, `examples`
-- `partOfSpeech` — filled via batch script (see Scripts below)
+- **Official 2026 HSK syllabus** (《HSK考试大纲》, published 2025-11): 11,000 words.
+  `data/hsk1.json` → `data/hsk6.json`, plus `data/hsk7.json` = the **HSK 7–9 band** (one exam, 5,600 words).
+  New words per level: 300 / 200 / 500 / 1,000 / 1,600 / 1,800 / 5,600.
+- Level helpers live in `src/data/levels.ts` (`LEVELS`, `levelLabel(7) === '7–9'`, `toLevel` clamps old 8/9 links). Never hard-code 1–9.
+- Built by `scripts/migrate-hsk-2026.mjs` from `data/source/hsk-2026-syllabus.json` (official list) + the pre-2026 data (content reused when characters and reading match) + `data/source/new-words-2026.json` (glosses for 1,245 new words).
+- `src/data/idMap2026.json` maps pre-2026 word ids to new ones; `src/lib/migrateVocab2026.ts` translates saved progress on each device once. Supabase rows still hold old ids.
+- All words have: `simplified`, `traditional`, `pinyin` (official), `pinyinNumbered`, `english`, `partOfSpeech` (from the official list), `examples`
 - `data/grammar.json` — grammar reference
 
 ### Pages
@@ -110,7 +114,8 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 ## Known Issues / TODO
 
 - [x] **`explanation`** — filled for all 11,036 words
-- [ ] **`examples`** — 4,310 words have none (nearly all HSK 7–9); the Example Writer agent adds ~150/week (see `agents/`)
+- [ ] **`examples`** — 4,798 words have none after the 2026 migration (785 in HSK 1–6, 4,013 in HSK 7–9); the Example Writer agent adds ~150/week, lowest level first (see `agents/`)
+- [ ] **`explanation`** — empty for the 1,245 words new in the 2026 list
 - [x] **`partOfSpeech`** — 100% filled across all levels
 - [x] **Bundle size** — lazy-loaded per level via `vocabLoader.ts` dynamic imports
 - [x] **SRS "again" re-queue** — cards loop back within the same session

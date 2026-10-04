@@ -16,7 +16,7 @@ const plain = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ü/g, 'v'
 
 let checked = 0
 let diffs = 0
-for (let level = 1; level <= 9; level++) {
+for (let level = 1; level <= 7; level++) {
   const path = `data/hsk${level}.json`
   const now = JSON.parse(readFileSync(path, 'utf8'))
   const before = new Map(JSON.parse(execFileSync('git', ['show', `${base}:${path}`], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })).map(w => [w.id, w.examples ?? []]))

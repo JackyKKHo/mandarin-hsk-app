@@ -15,6 +15,7 @@ import { levelFromId } from '../data/vocabLoader'
 import { useSEO } from '../hooks/useSEO'
 import { normalizePOS } from '../types'
 import { useMinedSentences } from '../hooks/useMinedSentences'
+import { levelLabel } from '../data/levels'
 
 function WordSEO({ word }: { word: { id: string; simplified: string; pinyin: string; english: string; hskLevel: number; partOfSpeech: string | string[] } }) {
   const posStr = normalizePOS(word.partOfSpeech).join(', ')
@@ -79,7 +80,7 @@ export default function DetailPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mandarindaily.app/' },
-      { '@type': 'ListItem', position: 2, name: `HSK ${word.hskLevel}`, item: `https://www.mandarindaily.app/hsk/${word.hskLevel}` },
+      { '@type': 'ListItem', position: 2, name: `HSK ${levelLabel(word.hskLevel)}`, item: `https://www.mandarindaily.app/hsk/${word.hskLevel}` },
       { '@type': 'ListItem', position: 3, name: `${word.simplified} — ${word.english}`, item: `https://www.mandarindaily.app/word/${word.id}` },
     ],
   }
@@ -91,7 +92,7 @@ export default function DetailPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <div className="detail-nav">
         <Link to={`/hsk/${word.hskLevel}`} className="back-link" style={{ marginBottom: 0 }}>
-          ← HSK {word.hskLevel}
+          ← HSK {levelLabel(word.hskLevel)}
         </Link>
         <div className="detail-prev-next">
           <button
@@ -143,7 +144,7 @@ export default function DetailPage() {
               </span>
             )}
           </div>
-          <span className="badge badge-level">HSK {word.hskLevel}</span>
+          <span className="badge badge-level">HSK {levelLabel(word.hskLevel)}</span>
           <button
             className={`badge ${learned ? 'badge-learned' : 'badge-mark-learned'}`}
             onClick={() => learned ? unmarkLearned(word.id) : markLearned(word.id)}
