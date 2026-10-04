@@ -20940,7 +20940,13 @@
     "pinyinNumbered": "sheng1",
     "english": "give birth to",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她去年生了一个女儿，全家都很高兴。",
+        "pinyin": "Tā qùnián shēngle yī gè nǚ'ér, quánjiā dōu hěn gāoxìng.",
+        "english": "She gave birth to a daughter last year, and the whole family was delighted."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,

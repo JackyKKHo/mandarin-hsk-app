@@ -2308,7 +2308,13 @@
     "pinyinNumbered": "cheng1 hao4",
     "english": "name",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他因为多年的贡献，获得了“优秀教师”的称号。",
+        "pinyin": "Tā yīnwèi duō nián de gòngxiàn, huòdéle \"yōuxiù jiàoshī\" de chēnghào.",
+        "english": "He was given the title \"Outstanding Teacher\" for his many years of contributions."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2394,7 +2400,13 @@
     "pinyinNumbered": "cheng2 yu3",
     "english": "Chinese set expression",
     "partOfSpeech": "phrase",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "学习成语可以帮助我们更好地了解中国文化。",
+        "pinyin": "Xuéxí chéngyǔ kěyǐ bāngzhù wǒmen gèng hǎo de liǎojiě Zhōngguó wénhuà.",
+        "english": "Learning idioms can help us understand Chinese culture better."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,

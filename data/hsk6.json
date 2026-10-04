@@ -284,7 +284,13 @@
     "pinyinNumbered": "bao3 jian4",
     "english": "health care",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "年纪大了以后，他开始重视身体保健。",
+        "pinyin": "Niánjì dàle yǐhòu, tā kāishǐ zhòngshì shēntǐ bǎojiàn.",
+        "english": "As he got older, he began to pay more attention to looking after his health."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4993,7 +4999,13 @@
     "pinyinNumbered": "di1",
     "english": "a drop",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "窗户上还挂着几滴雨水。",
+        "pinyin": "Chuānghu shang hái guàzhe jǐ dī yǔshuǐ.",
+        "english": "A few drops of rain are still hanging on the window."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -10369,7 +10381,13 @@
     "pinyinNumbered": "jie2 zou4",
     "english": "pacing",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这首歌节奏很快，听了让人想跳舞。",
+        "pinyin": "Zhè shǒu gē jiézòu hěn kuài, tīngle ràng rén xiǎng tiàowǔ.",
+        "english": "This song has a fast rhythm that makes you want to dance."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -11467,7 +11485,13 @@
     "pinyinNumbered": "kan4 de0 qi3",
     "english": "to show respect for",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "只要你努力，别人自然会看得起你。",
+        "pinyin": "Zhǐyào nǐ nǔlì, biérén zìrán huì kàndeqǐ nǐ.",
+        "english": "As long as you work hard, other people will naturally respect you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -12082,7 +12106,13 @@
     "pinyinNumbered": "leng3 qi4",
     "english": "air conditioning",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "办公室的冷气开得太大，我得穿件外套。",
+        "pinyin": "Bàngōngshì de lěngqì kāi de tài dà, wǒ děi chuān jiàn wàitào.",
+        "english": "The air conditioning in the office is turned up too high, so I have to wear a jacket."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -12766,7 +12796,13 @@
     "pinyinNumbered": "lu4 yin1 ji1",
     "english": "(tape) recording machine",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "小时候，我常用录音机听英语磁带。",
+        "pinyin": "Xiǎoshíhou, wǒ cháng yòng lùyīnjī tīng Yīngyǔ cídài.",
+        "english": "When I was little, I often used a tape recorder to listen to English tapes."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -12990,7 +13026,13 @@
     "pinyinNumbered": "mei2 hua1",
     "english": "plum blossom",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "冬天快结束的时候，公园里的梅花开了。",
+        "pinyin": "Dōngtiān kuài jiéshù de shíhou, gōngyuán li de méihuā kāi le.",
+        "english": "Near the end of winter, the plum blossoms in the park came out."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -13858,7 +13900,13 @@
     "pinyinNumbered": "ni2",
     "english": "mud",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "下了一夜的雨，路上全是泥。",
+        "pinyin": "Xiàle yī yè de yǔ, lùshang quán shì ní.",
+        "english": "After a whole night of rain, the road was covered in mud."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -17256,7 +17304,13 @@
     "pinyinNumbered": "shu3 pian4",
     "english": "fried potato chips",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "看电影的时候，他一个人吃了一大袋薯片。",
+        "pinyin": "Kàn diànyǐng de shíhou, tā yī gè rén chīle yī dà dài shǔpiàn.",
+        "english": "While watching the movie, he ate a whole big bag of potato chips by himself."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -18423,7 +18477,13 @@
     "pinyinNumbered": "tong1 xing2",
     "english": "pass/go through",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这座桥正在维修，暂时禁止车辆通行。",
+        "pinyin": "Zhè zuò qiáo zhèngzài wéixiū, zànshí jìnzhǐ chēliàng tōngxíng.",
+        "english": "This bridge is under repair, so vehicles are temporarily not allowed through."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -19889,7 +19949,13 @@
     "pinyinNumbered": "xi3 yi1 fen3",
     "english": "laundry detergent",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "家里的洗衣粉用完了，你下班顺便买一袋吧。",
+        "pinyin": "Jiāli de xǐyīfěn yòngwán le, nǐ xiàbān shùnbiàn mǎi yī dài ba.",
+        "english": "We're out of laundry detergent. Could you pick up a bag on your way home from work?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -22850,7 +22916,13 @@
     "pinyinNumbered": "yu3 yi1",
     "english": "raincoat",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "外面雨很大，出门记得穿雨衣。",
+        "pinyin": "Wàimiàn yǔ hěn dà, chūmén jìde chuān yǔyī.",
+        "english": "It's raining hard outside, so remember to wear a raincoat when you go out."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24891,7 +24963,13 @@
     "pinyinNumbered": "zhu1 bao3",
     "english": "pearls",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这家店主要卖手表和珠宝，价格都不便宜。",
+        "pinyin": "Zhè jiā diàn zhǔyào mài shǒubiǎo hé zhūbǎo, jiàgé dōu bù piányi.",
+        "english": "This shop mainly sells watches and jewelry, and none of it is cheap."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25092,7 +25170,13 @@
     "pinyinNumbered": "zhu4 zi0",
     "english": "pillar",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "大厅中间有四根红色的柱子。",
+        "pinyin": "Dàtīng zhōngjiān yǒu sì gēn hóngsè de zhùzi.",
+        "english": "There are four red pillars in the middle of the hall."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
