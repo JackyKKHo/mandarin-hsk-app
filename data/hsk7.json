@@ -2030,7 +2030,7 @@
     "traditional": "棒球",
     "pinyin": "bàngqiú",
     "pinyinNumbered": "bang4 qiu2",
-    "english": "no-hitter",
+    "english": "baseball",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -4261,7 +4261,7 @@
     "traditional": "變遷",
     "pinyin": "biànqiān",
     "pinyinNumbered": "bian4 qian1",
-    "english": "vicissitudinary",
+    "english": "changes over time",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -16750,7 +16750,7 @@
     "traditional": "帶頭人",
     "pinyin": "dàitóurén",
     "pinyinNumbered": "dai4 tou2 ren2",
-    "english": "Take the leader",
+    "english": "leader; pioneer",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -25651,7 +25651,7 @@
     "traditional": "分化",
     "pinyin": "fēnhuà",
     "pinyinNumbered": "fen1 hua4",
-    "english": "disintegrate",
+    "english": "to split; to become divided",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -26295,7 +26295,7 @@
     "traditional": "風采",
     "pinyin": "fēngcǎi",
     "pinyinNumbered": "feng1 cai3",
-    "english": "carriage",
+    "english": "elegant bearing; style",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -26640,7 +26640,7 @@
     "traditional": "風味",
     "pinyin": "fēngwèi",
     "pinyinNumbered": "feng1 wei4",
-    "english": "race",
+    "english": "flavor; local style",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -27100,7 +27100,7 @@
     "traditional": "服飾",
     "pinyin": "fúshì",
     "pinyinNumbered": "fu2 shi4",
-    "english": "neckline",
+    "english": "clothing and accessories",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -31631,7 +31631,7 @@
     "traditional": "宮殿",
     "pinyin": "gōngdiàn",
     "pinyinNumbered": "gong1 dian4",
-    "english": "palatium",
+    "english": "palace",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -31792,7 +31792,7 @@
     "traditional": "共識",
     "pinyin": "gòngshí",
     "pinyinNumbered": "gong4 shi2",
-    "english": "wavelength",
+    "english": "consensus",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -32252,7 +32252,7 @@
     "traditional": "古董",
     "pinyin": "gǔdǒng",
     "pinyinNumbered": "gu3 dong3",
-    "english": "old fogey",
+    "english": "antique",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -32459,7 +32459,7 @@
     "traditional": "骨幹",
     "pinyin": "gǔgàn",
     "pinyinNumbered": "gu3 gan4",
-    "english": "diaphysis (long segment of a bone)",
+    "english": "backbone; key member",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -32643,7 +32643,7 @@
     "traditional": "顧不得",
     "pinyin": "gùbude",
     "pinyinNumbered": "gu4 bu4 de2",
-    "english": "unable to change sth",
+    "english": "to have no time to care about",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -32689,7 +32689,7 @@
     "traditional": "顧及",
     "pinyin": "gù jí",
     "pinyinNumbered": "gu4 ji2",
-    "english": "study",
+    "english": "to take into account",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -32827,7 +32827,7 @@
     "traditional": "雇主",
     "pinyin": "gùzhǔ",
     "pinyinNumbered": "gu4 zhu3",
-    "english": "gaffer",
+    "english": "employer",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -33034,7 +33034,7 @@
     "traditional": "乖",
     "pinyin": "guāi",
     "pinyinNumbered": "guai1",
-    "english": "be at variance",
+    "english": "well-behaved (of a child)",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -33402,7 +33402,7 @@
     "traditional": "觀望",
     "pinyin": "guānwàng",
     "pinyinNumbered": "guan1 wang4",
-    "english": "straddle",
+    "english": "to wait and see",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -33517,7 +33517,7 @@
     "traditional": "官員",
     "pinyin": "guānyuán",
     "pinyinNumbered": "guan1 yuan2",
-    "english": "beg",
+    "english": "official",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -33678,7 +33678,7 @@
     "traditional": "管子",
     "pinyin": "guǎnzi",
     "pinyinNumbered": "guan3 zi3",
-    "english": "Guanzi or Guan Zhong 管仲 (-645 BC)",
+    "english": "tube; pipe",
     "partOfSpeech": "proper noun",
     "examples": [
       {
@@ -34138,7 +34138,7 @@
     "traditional": "光澤",
     "pinyin": "guāngzé",
     "pinyinNumbered": "guang1 ze2",
-    "english": "Guangze county in Nanping 南平[Nan2 ping2] Fujian",
+    "english": "luster; sheen",
     "partOfSpeech": "proper noun",
     "examples": [
       {
@@ -34552,7 +34552,7 @@
     "traditional": "貴族",
     "pinyin": "guìzú",
     "pinyinNumbered": "gui4 zu2",
-    "english": "baron",
+    "english": "nobility; aristocrat",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -34874,7 +34874,7 @@
     "traditional": "果園",
     "pinyin": "guǒyuán",
     "pinyinNumbered": "guo3 yuan2",
-    "english": "arbour",
+    "english": "orchard",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -35518,7 +35518,7 @@
     "traditional": "海面",
     "pinyin": "hǎimiàn",
     "pinyinNumbered": "hai3 mian4",
-    "english": "offing",
+    "english": "sea surface",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -35633,7 +35633,7 @@
     "traditional": "海域",
     "pinyin": "hǎiyù",
     "pinyinNumbered": "hai3 yu4",
-    "english": "water",
+    "english": "sea area; waters",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -35863,7 +35863,7 @@
     "traditional": "含蓄",
     "pinyin": "hánxù",
     "pinyinNumbered": "han2 xu4",
-    "english": "to contain",
+    "english": "subtle; implicit",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -35932,7 +35932,7 @@
     "traditional": "涵義",
     "pinyin": "hányì",
     "pinyinNumbered": "han2 yi4",
-    "english": "content",
+    "english": "meaning; connotation",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -36484,7 +36484,7 @@
     "traditional": "好評",
     "pinyin": "hǎopíng",
     "pinyinNumbered": "hao3 ping2",
-    "english": "reputation",
+    "english": "favorable review; praise",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -36691,7 +36691,7 @@
     "traditional": "好奇心",
     "pinyin": "hàoqíxīn",
     "pinyinNumbered": "hao4 qi2 xin1",
-    "english": "interest in sth",
+    "english": "curiosity",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -36806,7 +36806,7 @@
     "traditional": "呵護",
     "pinyin": "hēhù",
     "pinyinNumbered": "he1 hu4",
-    "english": "to bless",
+    "english": "to cherish and protect",
     "partOfSpeech": "verb",
     "examples": [
       {
