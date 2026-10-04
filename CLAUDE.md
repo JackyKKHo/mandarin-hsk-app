@@ -103,12 +103,14 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 | `node scripts/fill-explanations.mjs --status` | Check explanation batch status |
 | `node scripts/fill-explanations.mjs --apply` | Apply explanation batch results to JSON files |
 | `node scripts/generate-examples.mjs [level]` | Generate example sentences for a level |
+| `node scripts/check-vocab.mjs [--changed]` | Validate vocab files; `--changed` compares with origin/main and allows only new, well-formed examples |
 
 ---
 
 ## Known Issues / TODO
 
-- [ ] **`explanation`** — batch script ready (`fill-explanations.mjs`), run to fill all 11k words
+- [x] **`explanation`** — filled for all 11,036 words
+- [ ] **`examples`** — 4,310 words have none (nearly all HSK 7–9); the Example Writer agent adds ~150/week (see `agents/`)
 - [x] **`partOfSpeech`** — 100% filled across all levels
 - [x] **Bundle size** — lazy-loaded per level via `vocabLoader.ts` dynamic imports
 - [x] **SRS "again" re-queue** — cards loop back within the same session
@@ -117,6 +119,10 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 - [x] **Empty review state** — empty state with next-action suggestions shown
 
 ---
+
+## Agents
+
+Scheduled Claude agents open pull requests (never push to `main`). Job descriptions live in `agents/`; see `agents/README.md`.
 
 ## Product Principles
 
