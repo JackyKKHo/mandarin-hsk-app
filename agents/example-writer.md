@@ -55,8 +55,9 @@ a wrong example. Skipped words don't count towards the 150.
 - Change **only** the `examples` array of words that had none. Never edit other fields, other
   words' examples, or app code.
 - Keep the file format exactly: read with `JSON.parse`, write with
-  `JSON.stringify(data, null, 2)`, convert line endings to CRLF (`\r\n`), no trailing newline.
-  Do this with a small Node script, not by hand-editing the JSON text.
+  `JSON.stringify(data, null, 2)`, no trailing newline, and **keep the line endings the file
+  already has**: if the text you read contains `\r\n`, write `\r\n`; otherwise write `\n` (the
+  cloud checkout is LF). Do this with a small Node script, not by hand-editing the JSON text.
 - Don't add, remove or reorder words.
 
 ## Checks: all must pass before you open a pull request

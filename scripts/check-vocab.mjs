@@ -17,8 +17,9 @@ const errors = []
 const warnings = []
 const stats = { words: 0, missingExamples: 0, changedWords: 0, newExamples: 0 }
 
-// Same layout the files use today: 2-space JSON, CRLF line endings, raw UTF-8, no final newline
-const serialize = data => JSON.stringify(data, null, 2).replace(/\n/g, '\r\n')
+// Same layout the files use today: 2-space JSON, raw UTF-8, no final newline. Line endings are
+// whatever this checkout uses: git stores LF, and Windows checkouts (core.autocrlf) see CRLF.
+const serialize = (data, eol) => JSON.stringify(data, null, 2).replace(/\n/g, eol)
 const HAN = /\p{Script=Han}/u
 const TONE_MARK = /[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/i
 
@@ -52,8 +53,9 @@ for (const level of LEVELS) {
     errors.push(`${path}: invalid JSON (${e.message})`)
     continue
   }
-  if (serialize(data) !== raw) {
-    errors.push(`${path}: formatting changed. Write it with JSON.stringify(data, null, 2), CRLF line endings, no trailing newline`)
+  const eol = raw.includes('\r\n') ? '\r\n' : '\n'
+  if (serialize(data, eol) !== raw) {
+    errors.push(`${path}: formatting changed. Write it with JSON.stringify(data, null, 2), keep the line endings the file already had (${eol === '\r\n' ? 'CRLF' : 'LF'} here), no trailing newline`)
   }
 
   data.forEach((w, i) => {
@@ -97,6 +99,16 @@ for (const level of LEVELS) {
     }
     if (newEx.length > 2) warnings.push(`${path} ${w.id}: now has ${newEx.length} examples`)
   })
+
+  // Ask git what it would commit. Appending examples to a word removes exactly one line (the old
+  // `"examples": []` or closing `}`), so more removed lines than changed words means the file was
+  // reformatted, e.g. CRLF written into an LF checkout, which rewrites every line in git's eyes.
+  const changedInFile = data.filter((w, i) => JSON.stringify(w.examples) !== JSON.stringify(baseData[i].examples)).length
+  const numstat = execFileSync('git', ['diff', '--numstat', base, '--', path], { encoding: 'utf8' }).trim()
+  const removed = numstat ? Number(numstat.split('\t')[1]) : 0
+  if (removed > changedInFile) {
+    errors.push(`${path}: git sees ${removed} removed lines for ${changedInFile} changed words. The file was reformatted; keep its existing line endings and layout`)
+  }
 }
 
 console.log(`Words: ${stats.words}. Still missing an example: ${stats.missingExamples}.`)
