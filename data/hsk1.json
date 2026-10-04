@@ -501,7 +501,7 @@
     "traditional": "包子",
     "pinyin": "bāozi",
     "pinyinNumbered": "bao1 zi3",
-    "english": "dumpling",
+    "english": "steamed stuffed bun",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -633,7 +633,7 @@
     "traditional": "本",
     "pinyin": "běn",
     "pinyinNumbered": "ben3",
-    "english": "volume or copy",
+    "english": "measure word for books",
     "partOfSpeech": "measure word",
     "examples": [
       {
@@ -1062,7 +1062,7 @@
     "traditional": "菜",
     "pinyin": "cài",
     "pinyinNumbered": "cai4",
-    "english": "food",
+    "english": "dish; vegetable",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -2159,7 +2159,7 @@
     "traditional": "等",
     "pinyin": "děng",
     "pinyinNumbered": "deng3",
-    "english": "and so on",
+    "english": "to wait; and so on",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -3553,7 +3553,7 @@
     "traditional": "分",
     "pinyin": "fēn",
     "pinyinNumbered": "fen1",
-    "english": "portion",
+    "english": "minute; cent; to divide",
     "partOfSpeech": "measure word",
     "examples": [
       {
@@ -3850,7 +3850,7 @@
     "traditional": "幹什麼",
     "pinyin": "gànshénme",
     "pinyinNumbered": "gan4 shen2 me0",
-    "english": "do",
+    "english": "to do what; why",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -4345,7 +4345,7 @@
     "traditional": "過",
     "pinyin": "guò",
     "pinyinNumbered": "guo4",
-    "english": "experience",
+    "english": "to pass; (marks past experience)",
     "partOfSpeech": "auxiliary verb",
     "examples": [
       {
@@ -4774,7 +4774,7 @@
     "traditional": "後",
     "pinyin": "hòu",
     "pinyinNumbered": "hou4",
-    "english": "back",
+    "english": "behind; after",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -6901,7 +6901,7 @@
     "traditional": "累",
     "pinyin": "lèi",
     "pinyinNumbered": "lei4",
-    "english": "tire",
+    "english": "tired",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -7495,7 +7495,7 @@
     "traditional": "慢",
     "pinyin": "màn",
     "pinyinNumbered": "man4",
-    "english": "not fast",
+    "english": "slow",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -7528,7 +7528,7 @@
     "traditional": "忙",
     "pinyin": "máng",
     "pinyinNumbered": "mang2",
-    "english": "very busy",
+    "english": "busy",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -9483,7 +9483,7 @@
     "traditional": "起",
     "pinyin": "qǐ",
     "pinyinNumbered": "qi3",
-    "english": "begin",
+    "english": "to rise; to start",
     "partOfSpeech": "auxiliary verb",
     "examples": [
       {
@@ -9681,7 +9681,7 @@
     "traditional": "請",
     "pinyin": "qǐng",
     "pinyinNumbered": "qing3",
-    "english": "ask",
+    "english": "please; to invite",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -9813,7 +9813,7 @@
     "traditional": "請進",
     "pinyin": "qǐngjìn",
     "pinyinNumbered": "qing3 jin4",
-    "english": "come in",
+    "english": "please come in",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -9846,7 +9846,7 @@
     "traditional": "請坐",
     "pinyin": "qǐng zuò",
     "pinyinNumbered": "qing3 zuo4",
-    "english": "sit down",
+    "english": "please sit down",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -10621,7 +10621,7 @@
     "traditional": "少",
     "pinyin": "shǎo",
     "pinyinNumbered": "shao3",
-    "english": "not much",
+    "english": "few; little",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -11644,7 +11644,7 @@
     "traditional": "什麼",
     "pinyin": "shénme",
     "pinyinNumbered": "shen2 me0",
-    "english": "What; which thing",
+    "english": "what; which thing",
     "partOfSpeech": "pronoun",
     "examples": [
       {
@@ -11677,7 +11677,7 @@
     "traditional": "她",
     "pinyin": "tā",
     "pinyinNumbered": "ta1",
-    "english": "She",
+    "english": "she",
     "partOfSpeech": "pronoun",
     "examples": [
       {
@@ -11710,7 +11710,7 @@
     "traditional": "她們",
     "pinyin": "tāmen",
     "pinyinNumbered": "ta1 men0",
-    "english": "They (female)",
+    "english": "they (female)",
     "partOfSpeech": "pronoun",
     "examples": [
       {
@@ -11743,7 +11743,7 @@
     "traditional": "天",
     "pinyin": "tiān",
     "pinyinNumbered": "tian1",
-    "english": "Day",
+    "english": "day; sky",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -11784,7 +11784,7 @@
     "traditional": "他",
     "pinyin": "tā",
     "pinyinNumbered": "ta1",
-    "english": "He",
+    "english": "he",
     "partOfSpeech": "pronoun",
     "examples": [
       {
@@ -11817,7 +11817,7 @@
     "traditional": "太",
     "pinyin": "tài",
     "pinyinNumbered": "tai4",
-    "english": "Too; very",
+    "english": "too; very",
     "partOfSpeech": "adverb",
     "examples": [
       {
@@ -11850,7 +11850,7 @@
     "traditional": "天氣",
     "pinyin": "tiānqì",
     "pinyinNumbered": "tian1 qi4",
-    "english": "Weather",
+    "english": "weather",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -11883,7 +11883,7 @@
     "traditional": "聽到",
     "pinyin": "tīngdào",
     "pinyinNumbered": "ting1 dao4",
-    "english": "Hear",
+    "english": "hear",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -11916,7 +11916,7 @@
     "traditional": "聽見",
     "pinyin": "tīng jian",
     "pinyinNumbered": "ting1 jian4",
-    "english": "Hear",
+    "english": "hear",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -11949,7 +11949,7 @@
     "traditional": "聽寫",
     "pinyin": "tīngxiě",
     "pinyinNumbered": "ting1 xie3",
-    "english": "Dictation",
+    "english": "dictation",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -11982,7 +11982,7 @@
     "traditional": "聽",
     "pinyin": "tīng",
     "pinyinNumbered": "ting1",
-    "english": "Listen",
+    "english": "listen",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -12015,7 +12015,7 @@
     "traditional": "圖書館",
     "pinyin": "túshūguǎn",
     "pinyinNumbered": "tu2 shu1 guan3",
-    "english": "Library",
+    "english": "library",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -12048,7 +12048,7 @@
     "traditional": "外",
     "pinyin": "wài",
     "pinyinNumbered": "wai4",
-    "english": "Outside",
+    "english": "outside",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -12081,7 +12081,7 @@
     "traditional": "外邊",
     "pinyin": "wàibian",
     "pinyinNumbered": "wai4 bian1",
-    "english": "Outside",
+    "english": "outside",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -12114,7 +12114,7 @@
     "traditional": "同學",
     "pinyin": "tóngxué",
     "pinyinNumbered": "tong2 xue2",
-    "english": "Classmate",
+    "english": "classmate",
     "partOfSpeech": "noun",
     "examples": [
       {
