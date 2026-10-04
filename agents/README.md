@@ -7,13 +7,14 @@ change how the agent behaves.
 | Agent | File | Schedule | Changes |
 |---|---|---|---|
 | Example Writer | [example-writer.md](example-writer.md) | Weekly | Adds example sentences to words that have none (`data/hsk*.json` only) |
+| Translation Fixer | [translation-fixer.md](translation-fixer.md) | Weekly | Fixes wrong or broken English meanings (`english` field only), 400 words reviewed per run |
 
 ## How you stay in control
 
 - **Pull requests only.** Agents open a pull request and stop. Nothing reaches the live site
   until you merge it. `main` is protected on GitHub so agents can't push to it directly.
 - **Automatic checks.** `scripts/check-vocab.mjs --changed` fails if anything other than new
-  examples changed, if the file format changed, or if a new example breaks the rules. Agents
+  examples changed (or, with `--allow=english`, anything other than English meanings), if the file format changed, or if a new example breaks the rules. Agents
   must pass it, plus tests and the build, before opening a pull request.
   `scripts/compare-pinyin.mjs` lists pinyin that differs from a reference library for review.
 - **Readable summaries.** Every pull request says what changed, lists 10 examples to spot-check,

@@ -1,9 +1,10 @@
-// Guardrail for edits to data/hsk*.json, used by the example-writer agent and by humans.
+// Guardrail for edits to data/hsk*.json, used by the agents in agents/ and by humans.
 //
-//   node scripts/check-vocab.mjs              check format + basic schema of all files
-//   node scripts/check-vocab.mjs --changed    also compare with origin/main: only `examples`
-//                                             may change, and every new example must pass
-//                                             the stricter rules below
+//   node scripts/check-vocab.mjs                          check format + basic schema of all files
+//   node scripts/check-vocab.mjs --changed                compare with origin/main: only new
+//                                                         examples may be added (Example Writer)
+//   node scripts/check-vocab.mjs --changed --allow=english  only `english` may change
+//                                                         (Translation Fixer)
 //
 // Exits 1 on any error. Prints a summary either way.
 import { readFileSync } from 'node:fs'
@@ -12,6 +13,12 @@ import { execFileSync } from 'node:child_process'
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const changedMode = process.argv.includes('--changed')
 const base = process.argv.find(a => a.startsWith('--base='))?.slice(7) ?? 'origin/main'
+const allow = process.argv.find(a => a.startsWith('--allow='))?.slice(8) ?? 'examples'
+if (!['examples', 'english'].includes(allow)) {
+  console.error(`--allow must be "examples" or "english", not "${allow}"`)
+  process.exit(2)
+}
+const MAX_ENGLISH_CHANGES = 80
 
 const errors = []
 const warnings = []
@@ -41,6 +48,21 @@ function checkNewExample(w, ex, where) {
   if (!/^[A-ZĀÁǍÀĒÉĚÈŌÓǑÒ]/.test(py)) fail(`pinyin should start with a capital letter: ${py}`)
   if (!/[.!?]$/.test(py)) fail(`pinyin should end with . ! or ?: ${py}`)
   if (en.length < 8 || HAN.test(en) || !/[.!?"']$/.test(en)) fail(`English translation looks wrong: ${en}`)
+}
+
+// A gloss as shown on cards and quizzes: short, plain, primary meaning first
+function checkNewEnglish(w, en, where) {
+  const fail = msg => errors.push(`${where} ${w.id} ${w.simplified}: ${msg}: "${en}"`)
+  if (typeof en !== 'string' || !en.trim()) return fail('english is empty')
+  if (en !== en.trim() || /\s{2,}/.test(en)) fail('extra spaces')
+  if (en.length > 60) fail(`too long (${en.length} chars, max 60)`)
+  if (HAN.test(en)) fail('contains Chinese characters')
+  if (/[_*#`|]/.test(en)) fail('contains stray symbols (_ * # ` |)')
+  if ((en.match(/\(/g) ?? []).length !== (en.match(/\)/g) ?? []).length) fail('unbalanced brackets')
+  if (/[.;,:]$/.test(en)) fail('ends with punctuation')
+  // Can't tell proper nouns (Beijing, Chinese) from stray capitals (Look like), so just flag it
+  if (/^[A-Z]/.test(en)) warnings.push(`${where} ${w.id} ${w.simplified}: starts with a capital, fine only for a proper noun: "${en}"`)
+  if (/^(n|v|adj|adv|conj|prep)\.?:/i.test(en)) fail('starts with a part-of-speech label')
 }
 
 for (const level of LEVELS) {
@@ -77,42 +99,56 @@ for (const level of LEVELS) {
     continue
   }
   if (baseData.length !== data.length || baseData.some((b, i) => b.id !== data[i]?.id)) {
-    errors.push(`${path}: words were added, removed or reordered. Only add examples to existing words`)
+    errors.push(`${path}: words were added, removed or reordered. Words must stay as they are`)
     continue
   }
+  let changedInFile = 0
   data.forEach((w, i) => {
     const b = baseData[i]
-    const { examples: newEx, ...restNew } = w
-    const { examples: oldEx, ...restOld } = b
+    const { [allow]: newVal, ...restNew } = w
+    const { [allow]: oldVal, ...restOld } = b
     if (JSON.stringify(restNew) !== JSON.stringify(restOld)) {
-      errors.push(`${path} ${w.id}: fields other than "examples" changed`)
+      errors.push(`${path} ${w.id}: fields other than "${allow}" changed`)
     }
-    if (JSON.stringify(newEx) === JSON.stringify(oldEx)) return
+    if (JSON.stringify(newVal) === JSON.stringify(oldVal)) return
     stats.changedWords++
-    const old = oldEx ?? []
-    if (newEx.length < old.length || old.some((e, k) => JSON.stringify(e) !== JSON.stringify(newEx[k]))) {
+    changedInFile++
+
+    if (allow === 'english') {
+      checkNewEnglish(w, newVal, path)
+      return
+    }
+    const old = oldVal ?? []
+    if (newVal.length < old.length || old.some((e, k) => JSON.stringify(e) !== JSON.stringify(newVal[k]))) {
       errors.push(`${path} ${w.id}: existing examples were edited or removed. Only append new ones`)
     }
-    for (const ex of newEx.slice(old.length)) {
+    for (const ex of newVal.slice(old.length)) {
       stats.newExamples++
       checkNewExample(w, ex, path)
     }
-    if (newEx.length > 2) warnings.push(`${path} ${w.id}: now has ${newEx.length} examples`)
+    if (newVal.length > 2) warnings.push(`${path} ${w.id}: now has ${newVal.length} examples`)
   })
 
-  // Ask git what it would commit. Appending examples to a word removes exactly one line (the old
-  // `"examples": []` or closing `}`), so more removed lines than changed words means the file was
-  // reformatted, e.g. CRLF written into an LF checkout, which rewrites every line in git's eyes.
-  const changedInFile = data.filter((w, i) => JSON.stringify(w.examples) !== JSON.stringify(baseData[i].examples)).length
+  // Ask git what it would commit. Each changed word should remove exactly one line (the old
+  // `"examples": []` / closing `}`, or the old "english" line), so more removed lines than changed
+  // words means the file was reformatted, e.g. CRLF written into an LF checkout.
   const numstat = execFileSync('git', ['diff', '--numstat', base, '--', path], { encoding: 'utf8' }).trim()
   const removed = numstat ? Number(numstat.split('\t')[1]) : 0
   if (removed > changedInFile) {
-    errors.push(`${path}: git sees ${removed} removed lines for ${changedInFile} changed words. The file was reformatted; keep its existing line endings and layout`)
+    errors.push(`${path}: git sees ${removed} removed lines but only ${changedInFile} words changed their "${allow}". Other fields were edited or the file was reformatted (keep its line endings and layout)`)
   }
 }
 
+if (changedMode && allow === 'english' && stats.changedWords > MAX_ENGLISH_CHANGES) {
+  errors.push(`${stats.changedWords} english fields changed; the limit per run is ${MAX_ENGLISH_CHANGES}`)
+}
+
 console.log(`Words: ${stats.words}. Still missing an example: ${stats.missingExamples}.`)
-if (changedMode) console.log(`Compared with ${base}: ${stats.changedWords} words changed, ${stats.newExamples} new examples.`)
+if (changedMode) {
+  console.log(allow === 'english'
+    ? `Compared with ${base}: ${stats.changedWords} english fields changed.`
+    : `Compared with ${base}: ${stats.changedWords} words changed, ${stats.newExamples} new examples.`)
+}
 for (const w of warnings) console.log(`warning: ${w}`)
 if (errors.length) {
   console.log(`\n${errors.length} error(s):`)
