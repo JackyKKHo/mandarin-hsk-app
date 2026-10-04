@@ -15,6 +15,7 @@ change how the agent behaves.
 - **Automatic checks.** `scripts/check-vocab.mjs --changed` fails if anything other than new
   examples changed, if the file format changed, or if a new example breaks the rules. Agents
   must pass it, plus tests and the build, before opening a pull request.
+  `scripts/compare-pinyin.mjs` lists pinyin that differs from a reference library for review.
 - **Readable summaries.** Every pull request says what changed, lists 10 examples to spot-check,
   and lists anything the agent skipped.
 - **Run history.** Each run's full transcript is in Claude Code on the web.
