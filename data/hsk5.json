@@ -970,7 +970,7 @@
     "traditional": "背",
     "pinyin": "bèi",
     "pinyinNumbered": "bei4",
-    "english": "carry on back; memorize",
+    "english": "back (of the body); to memorize",
     "partOfSpeech": [
       "noun",
       "verb",
@@ -1104,7 +1104,7 @@
     "traditional": "本",
     "pinyin": "běn",
     "pinyinNumbered": "ben3",
-    "english": "measure word for books",
+    "english": "this; originally",
     "partOfSpeech": [
       "adverb",
       "pronoun"
@@ -2220,7 +2220,7 @@
     "traditional": "才",
     "pinyin": "cái",
     "pinyinNumbered": "cai2",
-    "english": "only; just",
+    "english": "talent; ability",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -4707,7 +4707,7 @@
     "traditional": "處",
     "pinyin": "chǔ",
     "pinyinNumbered": "chu3",
-    "english": "m.[general]",
+    "english": "to deal with; to handle",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -4794,7 +4794,7 @@
     "traditional": "處",
     "pinyin": "chù",
     "pinyinNumbered": "chu4",
-    "english": "m.[general]",
+    "english": "place; location",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -6574,7 +6574,7 @@
     "traditional": "當",
     "pinyin": "dàng",
     "pinyinNumbered": "dang4",
-    "english": "when",
+    "english": "to regard as; to treat as",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -6653,7 +6653,7 @@
     "traditional": "倒",
     "pinyin": "dǎo",
     "pinyinNumbered": "dao3",
-    "english": "instead",
+    "english": "to fall over; to collapse",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -9788,7 +9788,7 @@
     "traditional": "副",
     "pinyin": "fù",
     "pinyinNumbered": "fu4",
-    "english": "m.[general]",
+    "english": "measure word for a pair or set",
     "partOfSpeech": "measure word",
     "examples": [
       {
@@ -12459,7 +12459,7 @@
     "traditional": "好",
     "pinyin": "hào",
     "pinyinNumbered": "hao4",
-    "english": "good",
+    "english": "to be fond of; to like",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -17250,7 +17250,7 @@
     "traditional": "看",
     "pinyin": "kān",
     "pinyinNumbered": "kan1",
-    "english": "watch",
+    "english": "to look after; to watch over",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -18903,7 +18903,7 @@
     "traditional": "量",
     "pinyin": "liàng",
     "pinyinNumbered": "liang4",
-    "english": "to measure",
+    "english": "amount; quantity",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -20133,7 +20133,7 @@
     "traditional": "面",
     "pinyin": "miàn",
     "pinyinNumbered": "mian4",
-    "english": "noodles",
+    "english": "face; surface",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -21656,7 +21656,7 @@
     "traditional": "批",
     "pinyin": "pī",
     "pinyinNumbered": "pi1",
-    "english": "m.[general]",
+    "english": "measure word for a batch or group",
     "partOfSpeech": "measure word",
     "examples": [
       {
@@ -21679,7 +21679,7 @@
     "traditional": "批",
     "pinyin": "pī",
     "pinyinNumbered": "pi1",
-    "english": "m.[general]",
+    "english": "to criticize; to approve",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -24857,7 +24857,7 @@
     "traditional": "扇",
     "pinyin": "shān",
     "pinyinNumbered": "shan1",
-    "english": "m.[general]",
+    "english": "to fan; to slap",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -25842,7 +25842,7 @@
     "traditional": "升",
     "pinyin": "shēng",
     "pinyinNumbered": "sheng1",
-    "english": "liter",
+    "english": "to rise; to ascend",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -27800,7 +27800,7 @@
     "traditional": "數",
     "pinyin": "shǔ",
     "pinyinNumbered": "shu3",
-    "english": "number",
+    "english": "to count",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -28685,7 +28685,7 @@
     "traditional": "所",
     "pinyin": "suǒ",
     "pinyinNumbered": "suo3",
-    "english": "that which",
+    "english": "measure word for buildings or institutions",
     "partOfSpeech": [
       "measure word",
       "noun"
@@ -30047,7 +30047,7 @@
     "traditional": "頭",
     "pinyin": "tou",
     "pinyinNumbered": "tou0",
-    "english": "head",
+    "english": "noun suffix with no independent meaning",
     "partOfSpeech": "suffix",
     "meanings": [
       {
@@ -31277,7 +31277,7 @@
     "traditional": "喂",
     "pinyin": "wèi",
     "pinyinNumbered": "wei4",
-    "english": "hello (to get attention)",
+    "english": "to feed",
     "partOfSpeech": "verb",
     "meanings": [
       {

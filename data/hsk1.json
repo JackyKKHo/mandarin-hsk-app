@@ -7098,7 +7098,7 @@
     "traditional": "晚",
     "pinyin": "wǎn",
     "pinyinNumbered": "wan3",
-    "english": "Late",
+    "english": "late",
     "partOfSpeech": "adjective",
     "meanings": [
       {
@@ -7131,7 +7131,7 @@
     "traditional": "晚飯",
     "pinyin": "wǎnfàn",
     "pinyinNumbered": "wan3 fan4",
-    "english": "Dinner",
+    "english": "dinner",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -7164,7 +7164,7 @@
     "traditional": "晚上",
     "pinyin": "wǎnshang",
     "pinyinNumbered": "wan3 shang0",
-    "english": "Evening",
+    "english": "evening",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -7905,7 +7905,7 @@
     "traditional": "些",
     "pinyin": "xiē",
     "pinyinNumbered": "xie1",
-    "english": "m.[proximation]",
+    "english": "some; a few",
     "partOfSpeech": "measure word",
     "examples": [
       {
@@ -9166,7 +9166,7 @@
     "traditional": "怎麼樣",
     "pinyin": "zěnmeyàng",
     "pinyinNumbered": "zen3 me0 yang4",
-    "english": "How are things?",
+    "english": "how are things; how about it",
     "partOfSpeech": "pronoun",
     "examples": [
       {
@@ -9472,7 +9472,7 @@
     "traditional": "只",
     "pinyin": "zhī",
     "pinyinNumbered": "zhi1",
-    "english": "only",
+    "english": "measure word for animals or one of a pair",
     "partOfSpeech": "measure word",
     "examples": [
       {
@@ -9594,7 +9594,7 @@
     "traditional": "中午",
     "pinyin": "zhōngwǔ",
     "pinyinNumbered": "zhong1 wu3",
-    "english": "Noon",
+    "english": "noon",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -9627,7 +9627,7 @@
     "traditional": "中學",
     "pinyin": "zhōngxué",
     "pinyinNumbered": "zhong1 xue2",
-    "english": "Middle school",
+    "english": "middle school",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -9660,7 +9660,7 @@
     "traditional": "中學生",
     "pinyin": "zhōngxuéshēng",
     "pinyinNumbered": "zhong1 xue2 sheng1",
-    "english": "Middle school student",
+    "english": "middle school student",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -9693,7 +9693,7 @@
     "traditional": "住",
     "pinyin": "zhù",
     "pinyinNumbered": "zhu4",
-    "english": "Live",
+    "english": "live",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -9726,7 +9726,7 @@
     "traditional": "桌子",
     "pinyin": "zhuōzi",
     "pinyinNumbered": "zhuo1 zi0",
-    "english": "Table",
+    "english": "table",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -9759,7 +9759,7 @@
     "traditional": "字",
     "pinyin": "zì",
     "pinyinNumbered": "zi4",
-    "english": "Character",
+    "english": "character",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -9792,7 +9792,7 @@
     "traditional": "昨天",
     "pinyin": "zuótiān",
     "pinyinNumbered": "zuo2 tian1",
-    "english": "Yesterday",
+    "english": "yesterday",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -9825,7 +9825,7 @@
     "traditional": "坐",
     "pinyin": "zuò",
     "pinyinNumbered": "zuo4",
-    "english": "Sit",
+    "english": "sit",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -9858,7 +9858,7 @@
     "traditional": "做",
     "pinyin": "zuò",
     "pinyinNumbered": "zuo4",
-    "english": "Do",
+    "english": "do",
     "partOfSpeech": "verb",
     "meanings": [
       {
