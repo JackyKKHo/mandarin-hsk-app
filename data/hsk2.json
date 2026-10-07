@@ -1180,7 +1180,7 @@
     "traditional": "點",
     "pinyin": "diǎn",
     "pinyinNumbered": "dian3",
-    "english": "o'clock",
+    "english": "to order (food); to touch",
     "partOfSpeech": [
       "verb",
       "noun",
@@ -1217,7 +1217,7 @@
     "traditional": "懂",
     "pinyin": "dǒng",
     "pinyinNumbered": "dong3",
-    "english": "Understand",
+    "english": "understand",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -1555,7 +1555,7 @@
     "traditional": "過",
     "pinyin": "guò",
     "pinyinNumbered": "guo4",
-    "english": "to pass; (marks past experience)",
+    "english": "to pass; to spend (time)",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -1654,7 +1654,7 @@
     "traditional": "過去",
     "pinyin": "guòqù",
     "pinyinNumbered": "guo4 qu4",
-    "english": "in the past",
+    "english": "to go over; to pass by",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -1921,7 +1921,7 @@
     "traditional": "花",
     "pinyin": "huā",
     "pinyinNumbered": "hua1",
-    "english": "spend money",
+    "english": "flower",
     "partOfSpeech": [
       "noun",
       "adjective"
@@ -6214,7 +6214,7 @@
     "traditional": "站",
     "pinyin": "zhàn",
     "pinyinNumbered": "zhan4",
-    "english": "stand",
+    "english": "station; stop",
     "partOfSpeech": "noun",
     "meanings": [
       {

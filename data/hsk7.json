@@ -78,7 +78,7 @@
     "traditional": "挨",
     "pinyin": "ái",
     "pinyinNumbered": "ai2",
-    "english": "next to; one after another",
+    "english": "to suffer; to endure (something unpleasant)",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -15591,7 +15591,7 @@
     "traditional": "打",
     "pinyin": "dǎ",
     "pinyinNumbered": "da3",
-    "english": "hit",
+    "english": "from; since (dialectal)",
     "partOfSpeech": "preposition",
     "meanings": [
       {
@@ -16289,7 +16289,7 @@
     "traditional": "大意",
     "pinyin": "dàyi",
     "pinyinNumbered": "da4 yi0",
-    "english": "general idea",
+    "english": "careless; negligent",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -26799,7 +26799,7 @@
     "traditional": "縫",
     "pinyin": "fèng",
     "pinyinNumbered": "feng4",
-    "english": "to sew",
+    "english": "a seam; a crack; a gap",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -35601,7 +35601,7 @@
     "traditional": "和",
     "pinyin": "hé",
     "pinyinNumbered": "he2",
-    "english": "and",
+    "english": "harmonious; mild",
     "partOfSpeech": "adjective",
     "meanings": [
       {
@@ -44512,7 +44512,7 @@
     "traditional": "儘",
     "pinyin": "jǐn",
     "pinyinNumbered": "jin3",
-    "english": "use up",
+    "english": "as much as possible; to the utmost",
     "partOfSpeech": [
       "verb",
       "adverb"
@@ -54780,7 +54780,7 @@
     "traditional": "麻",
     "pinyin": "má",
     "pinyinNumbered": "ma2",
-    "english": "generic name for hemp",
+    "english": "numb; tingling",
     "partOfSpeech": "adjective",
     "examples": [],
     "tags": [],
@@ -54797,7 +54797,7 @@
     "traditional": "麻",
     "pinyin": "má",
     "pinyinNumbered": "ma2",
-    "english": "generic name for hemp",
+    "english": "hemp",
     "partOfSpeech": "noun",
     "examples": [],
     "tags": [],
@@ -54902,7 +54902,7 @@
     "traditional": "碼",
     "pinyin": "mǎ",
     "pinyinNumbered": "ma3",
-    "english": "m.[standard]",
+    "english": "yard (unit of length)",
     "partOfSpeech": "measure word",
     "examples": [],
     "tags": [],
@@ -54919,7 +54919,7 @@
     "traditional": "碼",
     "pinyin": "mǎ",
     "pinyinNumbered": "ma3",
-    "english": "m.[standard]",
+    "english": "to stack; to pile up",
     "partOfSpeech": "verb",
     "examples": [],
     "tags": [],
@@ -57106,7 +57106,7 @@
     "traditional": "命",
     "pinyin": "mìng",
     "pinyinNumbered": "ming4",
-    "english": "life",
+    "english": "to order; to command",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -59174,7 +59174,7 @@
     "traditional": "擰",
     "pinyin": "níng",
     "pinyinNumbered": "ning2",
-    "english": "to pinch",
+    "english": "to wring; to twist (with force)",
     "partOfSpeech": "verb",
     "examples": [],
     "tags": [],
@@ -59280,7 +59280,7 @@
     "traditional": "擰",
     "pinyin": "nǐng",
     "pinyinNumbered": "ning3",
-    "english": "to pinch",
+    "english": "to turn; to screw (a cap, bolt)",
     "partOfSpeech": "verb",
     "examples": [],
     "tags": [],
@@ -64199,7 +64199,7 @@
     "traditional": "嗆",
     "pinyin": "qiàng",
     "pinyinNumbered": "qiang4",
-    "english": "to choke (because of swallowing the wrong way)",
+    "english": "to irritate (the throat, from smoke or fumes)",
     "partOfSpeech": "verb",
     "examples": [],
     "tags": [],
@@ -97616,7 +97616,7 @@
     "traditional": "漲",
     "pinyin": "zhàng",
     "pinyinNumbered": "zhang4",
-    "english": "rise",
+    "english": "to swell; to bloat",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -100490,7 +100490,7 @@
     "traditional": "制服",
     "pinyin": "zhìfú",
     "pinyinNumbered": "zhi4 fu2",
-    "english": "uniform",
+    "english": "to subdue; to bring under control",
     "partOfSpeech": "verb",
     "examples": [],
     "tags": [],
@@ -103715,7 +103715,7 @@
     "traditional": "自負",
     "pinyin": "zìfù",
     "pinyinNumbered": "zi4 fu4",
-    "english": "conceited",
+    "english": "to bear responsibility (for oneself)",
     "partOfSpeech": "verb",
     "examples": [],
     "tags": [],
