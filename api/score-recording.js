@@ -30,8 +30,8 @@ function splitInitialFinal(syllable) {
   return { initial: '', final: s }
 }
 
-function toPinyinArr(text) {
-  return pinyin(text, { toneType: 'num', type: 'array', nonZh: 'consecutive' })
+function toPinyinArr(text, toneSandhi = true) {
+  return pinyin(text, { toneType: 'num', type: 'array', nonZh: 'consecutive', toneSandhi })
 }
 
 function splitTonedSyllable(p) {
@@ -152,6 +152,24 @@ function isHalfThirdContour(slice, median, detectedTone) {
   return false
 }
 
+// A 2nd tone that comes from a tone change (你好's 你, 一个's 一, 不是's 不) is often said as
+// a low rise that dips briefly at the start, which classifyTone can read as a 3rd tone (or as
+// level, when the rise is short before a 4th tone). Accept it if the pitch ends clearly higher
+// than it started, or rises well above an early low point. A real dipping 3rd tone has its
+// low point in the middle and ends near where it started, so it's still caught.
+function isRisingContour(slice, median) {
+  const voiced = slice.filter(s => s.f != null)
+  if (voiced.length < 4 || !median) return false
+  const semis = voiced.map(s => 12 * Math.log2(s.f / median))
+  const third = Math.max(1, Math.floor(semis.length / 3))
+  const start = semis.slice(0, third).reduce((a, y) => a + y, 0) / third
+  const end = semis.slice(-third).reduce((a, y) => a + y, 0) / third
+  const min = Math.min(...semis)
+  const minAt = semis.indexOf(min) / (semis.length - 1)
+  if (end - start >= 1) return true
+  return minAt < 0.35 && end - min >= 1.5
+}
+
 async function transcribeWhisper(wavBuf) {
   const form = new FormData()
   form.append('file', new Blob([wavBuf], { type: 'audio/wav' }), 'recording.wav')
@@ -234,6 +252,7 @@ export default async function handler(req, res) {
       expectedPinyins.map(p => splitTonedSyllable(p).tone),
       hanPhraseIds(target),
       targetClean,
+      toPinyinArr(targetClean.join(''), false).map(p => splitTonedSyllable(p).tone),
     )
 
     const windows = alignCharsToTime(targetChars, span.tStart, span.tEnd)
@@ -264,7 +283,9 @@ export default async function handler(req, res) {
       const finalOk = heard ? heardFinal === expFinal : null
 
       const toneOk = detectedTone == null ? null
-        : spoken.accept.includes(detectedTone) || (spoken.halfThird && isHalfThirdContour(slice, median, detectedTone))
+        : spoken.accept.includes(detectedTone)
+          || (spoken.halfThird && isHalfThirdContour(slice, median, detectedTone))
+          || (spoken.sandhi && expTone === 2 && isRisingContour(slice, median))
 
       const sameChar = heard === w.char
 
@@ -273,7 +294,7 @@ export default async function handler(req, res) {
         expected: {
           pinyin: spoken.sandhi ? `${expBase}${expTone}` : expRaw,
           base: expBase, initial: expInitial, final: expFinal, tone: expTone,
-          ...(spoken.sandhi && { citationTone, sandhi: true, acceptTones: spoken.accept }),
+          ...(spoken.sandhi && { citationTone: spoken.citationTone ?? citationTone, sandhi: true, sandhiRule: spoken.rule, sandhiNote: spoken.note, acceptTones: spoken.accept }),
           ...(spoken.neutral && { neutral: true }),
           ...(spoken.halfThird && { halfThird: true }),
         },

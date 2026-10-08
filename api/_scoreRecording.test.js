@@ -13,6 +13,8 @@ const CONTOUR = {
   4: t => 4 - 8 * t,
   h: t => -2.5 - 2.5 * t, // half-third: low, slight fall, no rise
   n: t => -1 - 1.5 * t,   // neutral: light, follows the previous syllable
+  r: t => (t < 0.25 ? -3 - 3 * t : -3.75 + 6 * (t - 0.25)), // sandhi 2nd tone: low start, brief dip, then rise
+  s: t => 1 + 1.5 * t,    // short, shallow rise (一/不 before a 4th tone)
 }
 
 function makeWav(shapes) {
@@ -65,8 +67,16 @@ describe('score-recording tone changes', () => {
     ['什么', [2, 'n']],
     ['想想', [2, 'n']],                   // xiáng xiang
     ['姐姐', ['h', 'n']],
-    ['不是', [2, 4]],                     // 不 change (from pinyin-pro)
-    ['一起', [4, 3]],                     // 一 change (from pinyin-pro)
+    ['不是', [2, 4]],                     // 不 change
+    ['一起', [4, 3]],                     // 一 change
+    ['你好', ['r', 3]],                   // sandhi 2nd tone said as a low rise with a dip
+    ['我有三个苹果', ['r', 3, 1, 4, 2, 3]],
+    ['一个', ['s', 4]],                   // yí gè with a short rise
+    ['不是', ['s', 4]],
+    ['不对', ['r', 4]],
+    ['看不见', [4, 'n', 4]],              // light 不 in a potential complement
+    ['对不起', [4, 'n', 3]],
+    ['是不是', [4, 'n', 4]],
   ])('accepts correct %s', async (target, shapes) => {
     expect(await toneScores(target, shapes)).not.toContain('miss')
   })
@@ -74,6 +84,10 @@ describe('score-recording tone changes', () => {
   // Said wrongly: the wrong syllable must still be caught.
   it.each([
     ['我有三个苹果', [3, 3, 1, 4, 2, 3], 0], // wǒ yǒu without sandhi
+    ['你好', [3, 3], 0],                     // full dip on 你
+    ['有一个', ['h', 1, 4], 1],              // yī gè: level, no rise (mid-phrase; see onset note above)
+    ['一个', [4, 4], 0],                     // falling 一
+    ['不是', [4, 4], 0],                     // bù shì without the change
     ['我们', [1, 'n'], 0],                   // high level 我
     ['我们', [2, 'n'], 0],                   // rising 我
     ['好吃', [4, 1], 0],                     // full 4th instead of half-third
