@@ -13,11 +13,22 @@ type Status = 'idle' | 'recording' | 'analyzing' | 'done' | 'error'
 
 interface PitchPoint { t: number; s: number }
 
+type SandhiRule = 'third' | 'yi' | 'bu'
+
+const SANDHI_TITLE: Record<SandhiRule, string> = {
+  third: 'Third-tone sandhi: a 3rd tone before another 3rd tone is said as a 2nd tone',
+  yi: '一 changes tone: 2nd before a 4th tone, 4th before tones 1–3, but 1st on its own, at the end, or in numbers and dates',
+  bu: '不 changes tone: 2nd before a 4th tone, and light in the middle of 是不是 / 看不见 patterns',
+}
+
 interface CharScore {
   char: string
-  // sandhi: tone changed from citationTone because the next syllable is also tone 3
+  // sandhi: tone changed from citationTone by a tone-change rule (3-3, 一 or 不); sandhiNote says how
   // neutral: light syllable, any pitch accepted; halfThird: 3rd tone said low without the rise
-  expected: { pinyin: string; base: string; initial: string; final: string; tone: number; citationTone?: number; sandhi?: boolean; neutral?: boolean; halfThird?: boolean }
+  expected: {
+    pinyin: string; base: string; initial: string; final: string; tone: number
+    citationTone?: number; sandhi?: boolean; sandhiRule?: SandhiRule; sandhiNote?: string; neutral?: boolean; halfThird?: boolean
+  }
   heard: { char: string | null; pinyin: string; base: string; initial: string; final: string; toneFromText: number | null }
   scores: { initial: 'ok' | 'miss' | 'unknown'; final: 'ok' | 'miss' | 'unknown'; tone: 'ok' | 'miss' | 'unknown' }
   detectedTone: number | null
@@ -411,8 +422,8 @@ export default function RecordPage() {
                       <div className="record-char-han" style={{ color: TONE_COLOR[c.expected.tone] ?? 'var(--text)' }}>{c.char}</div>
                       <div className="record-char-py">{c.expected.pinyin}</div>
                       {c.expected.sandhi && (
-                        <div className="record-char-sandhi" title="Third-tone sandhi: a 3rd tone before another 3rd tone is said as a 2nd tone">
-                          {c.expected.citationTone} → {c.expected.tone} before 3rd tone
+                        <div className="record-char-sandhi" title={SANDHI_TITLE[c.expected.sandhiRule ?? 'third']}>
+                          {c.expected.sandhiNote ?? `${c.expected.citationTone} → ${c.expected.tone} before 3rd tone`}
                         </div>
                       )}
                       {c.expected.halfThird && (
@@ -420,7 +431,7 @@ export default function RecordPage() {
                           half-3rd: low, no rise
                         </div>
                       )}
-                      {c.expected.neutral && (
+                      {c.expected.neutral && !c.expected.sandhi && (
                         <div className="record-char-sandhi" title="Neutral tone: short and light; its pitch follows the syllable before">
                           light / neutral
                         </div>

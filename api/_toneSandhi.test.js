@@ -4,14 +4,14 @@ import { applyThirdToneSandhi, hanPhraseIds } from './_toneSandhi.js'
 // Dictionary tones as the scorer gets them from pinyin-pro
 function scored(text) {
   const han = [...text].filter(c => /\p{Script=Han}/u.test(c)).join('')
-  const tones = pinyin(han, { toneType: 'num', type: 'array' }).map(p => Number(p.slice(-1)) || 0)
-  return applyThirdToneSandhi(tones, hanPhraseIds(text), [...han])
+  const toneOf = toneSandhi => pinyin(han, { toneType: 'num', type: 'array', toneSandhi }).map(p => Number(p.slice(-1)) || 0)
+  return applyThirdToneSandhi(toneOf(true), hanPhraseIds(text), [...han], toneOf(false))
 }
 
 describe('applyThirdToneSandhi', () => {
   it('turns the first of two 3rd tones into a 2nd tone', () => {
     const r = scored('我有三个苹果。')
-    expect(r[0]).toEqual({ tone: 2, accept: [2], sandhi: true }) // 我 wó
+    expect(r[0]).toMatchObject({ tone: 2, accept: [2], sandhi: true, citationTone: 3, rule: 'third', note: '3 → 2 before 3rd tone' }) // 我 wó
     expect(r[1]).toMatchObject({ tone: 3, accept: [3], sandhi: false, halfThird: true }) // 有 yǒu, mid-phrase
     expect(r.slice(2).every(c => !c.sandhi)).toBe(true)
   })
@@ -49,8 +49,27 @@ describe('applyThirdToneSandhi', () => {
     expect(scored('你好。')[1].halfThird).toBeUndefined()
   })
 
-  it('leaves the 一/不 changes pinyin-pro already made alone', () => {
-    expect(scored('不是').map(c => c.tone)).toEqual([2, 4])
-    expect(scored('一起').map(c => c.tone)).toEqual([4, 3])
+  it('changes 一 by the next tone, and marks the change', () => {
+    expect(scored('一个')[0]).toMatchObject({ tone: 2, accept: [2], sandhi: true, citationTone: 1, rule: 'yi', note: '1 → 2 before 4th tone' })
+    expect(scored('一起')[0]).toMatchObject({ tone: 4, sandhi: true, rule: 'yi', note: '1 → 4 before 3rd tone' })
+    expect(scored('一天')[0]).toMatchObject({ tone: 4, rule: 'yi' })
+    for (const w of ['第一', '一月', '十一', '统一']) {
+      expect(scored(w).find((_, i) => [...w][i] === '一')).toMatchObject({ tone: 1, sandhi: false })
+    }
+    expect(scored('看一看')[1].neutral).toBe(true)
+  })
+
+  it('changes 不 to 2nd tone before a 4th tone only', () => {
+    expect(scored('不是')[0]).toMatchObject({ tone: 2, sandhi: true, citationTone: 4, rule: 'bu', note: '4 → 2 before 4th tone' })
+    expect(scored('说一不二')[2]).toMatchObject({ tone: 2, rule: 'bu' }) // pinyin-pro misses this one
+    for (const w of ['不好', '不忙', '不来', '我不懂', '人不多']) {
+      expect(scored(w)[[...w].indexOf('不')]).toMatchObject({ tone: 4, sandhi: false })
+    }
+  })
+
+  it('makes 不 light in A不A questions and potential complements', () => {
+    for (const w of ['是不是', '好不好', '看不见', '听不懂', '对不起', '来不及', '差不多', '找不到']) {
+      expect(scored(w)[[...w].indexOf('不')]).toMatchObject({ tone: 0, neutral: true, accept: [0, 1, 2, 3, 4], rule: 'bu' })
+    }
   })
 })

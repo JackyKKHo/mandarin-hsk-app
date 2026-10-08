@@ -49,7 +49,14 @@ export default async function handler(req, res) {
     if (scores?.final === 'miss') issues.push(`Final wrong: expected "${expected.final}", student produced "${heard?.final ?? '?'}".`)
     if (scores?.tone === 'miss') issues.push(`Tone wrong: expected tone ${expected.tone} (${expectedToneName}); detected tone ${detectedTone} (${detectedToneName}).`)
     if (scores?.tone === 'miss' && expected.halfThird) issues.push('Note: this is a 3rd tone in the middle of a phrase, so it should be a "half-third": low and slightly falling, without rising back up. Coach that, not the full dip.')
-    if (scores?.tone === 'miss' && expected.sandhi) issues.push(`Note: this character is tone ${expected.citationTone} in the dictionary, but third-tone sandhi applies because the next syllable is also tone 3, so it is spoken as tone 2. Mention this rule briefly.`)
+    if (scores?.tone === 'miss' && expected.sandhi) {
+      const rule = expected.sandhiRule === 'yi'
+        ? `the 一 tone change applies (2nd tone before a 4th tone, 4th tone before tones 1-3), so here it is spoken as tone ${expected.tone}`
+        : expected.sandhiRule === 'bu'
+          ? `the 不 tone change applies (2nd tone before a 4th tone), so here it is spoken as tone ${expected.tone}`
+          : 'third-tone sandhi applies because the next syllable is also tone 3, so it is spoken as tone 2'
+      issues.push(`Note: this character is tone ${expected.citationTone} in the dictionary, but ${rule}. Mention this rule briefly.`)
+    }
     if (!issues.length) issues.push('Character was close but flagged for review.')
 
     const userMessage = `Character: ${char}\nExpected pinyin: ${expected.pinyin}\nHeard character: ${heard?.char ?? 'not transcribed'}\n\n${issues.join('\n')}\n\nGive a concrete coaching note in 2-3 sentences.`
