@@ -6175,3 +6175,8 @@ html.dark .record-explanation { background: rgba(25, 118, 210, 0.16); }
 .widget-error { margin-top: 0.4rem; font-size: 0.85rem; color: var(--red); }
 .widget-note { margin-top: 1.75rem; font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
 @media (max-width: 640px) { .widget-main { padding: 1.25rem 1rem 6rem; } }
+
+/* ── Privacy policy ── */
+.privacy-main h2 { font-size: 1.1rem; font-weight: 700; margin: 1.75rem 0 0.5rem; scroll-margin-top: 5rem; }
+.privacy-main p, .privacy-main li { line-height: 1.65; }
+.privacy-main ul { padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; }
