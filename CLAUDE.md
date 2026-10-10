@@ -40,6 +40,7 @@
 | `/favourites` | Favourited words |
 | `/search` | Cross-level search |
 | `/stats` | Progress stats, streak, SRS due count |
+| `/tones` | Tone Gym — live on-device pitch tracking for syllables and tone pairs (`src/lib/pitchTracker.ts`, `src/lib/toneGym.ts`; tone rules shared with Record & Score in `api/_toneContour.js`) |
 
 ### Components
 - `AppHeader` — nav with Sign in/out button
@@ -108,6 +109,7 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 | `node scripts/fill-explanations.mjs --apply` | Apply explanation batch results to JSON files |
 | `node scripts/generate-examples.mjs [level]` | Generate example sentences for a level |
 | `node scripts/check-vocab.mjs [--changed]` | Validate vocab files; `--changed` compares with origin/main and allows only new, well-formed examples |
+| `node scripts/build-tone-gym.mjs` | Rebuild `src/data/toneGym.json` (Tone Gym syllables + tone-pair words) from the HSK lists |
 
 ---
 

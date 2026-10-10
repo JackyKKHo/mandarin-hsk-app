@@ -161,6 +161,7 @@ export default function TonePage() {
               <button className="btn-primary" onClick={start}>
                 Start {sessionLength ?? eligible.length} questions
               </button>
+              <Link to="/tones" className="practice-start-desc">Want to practise saying them? Try the Tone Gym →</Link>
             </>
           )}
         </div>

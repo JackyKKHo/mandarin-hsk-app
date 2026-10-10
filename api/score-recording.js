@@ -1,6 +1,7 @@
 import { YIN } from 'pitchfinder'
 import { pinyin } from 'pinyin-pro'
 import { applyThirdToneSandhi, hanPhraseIds } from './_toneSandhi.js'
+import { classifyContour, isHalfThirdContour, isRisingContour } from './_toneContour.js'
 
 export const config = { api: { bodyParser: { sizeLimit: '6mb' } } }
 
@@ -98,76 +99,22 @@ function voicedSpan(frames) {
   return { tStart: frames[startIdx].t, tEnd: frames[endIdx].t }
 }
 
+const toSemis = (slice, median) =>
+  slice.filter(s => s.f != null).map(s => ({ t: s.t, y: 12 * Math.log2(s.f / median) }))
+
 function classifyTone(slice, median) {
-  const voiced = slice.filter(s => s.f != null)
-  if (voiced.length < 4 || !median) return null
-
-  const semis = voiced.map(s => ({ t: s.t, y: 12 * Math.log2(s.f / median) }))
-  const tMin = semis[0].t
-  const tMax = semis[semis.length - 1].t
-  const dur = tMax - tMin
-  if (dur < 0.04) return null
-
-  const n = semis.length
-  const sumT = semis.reduce((a, s) => a + s.t, 0)
-  const sumY = semis.reduce((a, s) => a + s.y, 0)
-  const sumTT = semis.reduce((a, s) => a + s.t * s.t, 0)
-  const sumTY = semis.reduce((a, s) => a + s.t * s.y, 0)
-  const meanT = sumT / n
-  const meanY = sumY / n
-  const slope = (sumTY - n * meanT * meanY) / (sumTT - n * meanT * meanT)
-  const slopePerSec = slope
-
-  const thirdSize = Math.max(1, Math.floor(n / 3))
-  const startMean = semis.slice(0, thirdSize).reduce((a, s) => a + s.y, 0) / thirdSize
-  const endMean = semis.slice(-thirdSize).reduce((a, s) => a + s.y, 0) / thirdSize
-  const midSlice = semis.slice(thirdSize, n - thirdSize)
-  const midMin = midSlice.length ? Math.min(...midSlice.map(s => s.y)) : Math.min(startMean, endMean)
-
-  if (slopePerSec > 8 && endMean - startMean > 1.5) return 2
-  if (slopePerSec < -8 && startMean - endMean > 1.5) return 4
-  if (midMin < startMean - 1 && midMin < endMean - 1 && endMean - midMin > 1) return 3
-  if (Math.abs(slopePerSec) < 6 && meanY > -1) return 1
-  if (meanY < -2 && endMean > midMin) return 3
-  if (slopePerSec > 4) return 2
-  if (slopePerSec < -4) return 4
-  return 1
+  if (!median) return null
+  return classifyContour(toSemis(slice, median))
 }
 
-// A half-third tone sags gently (2-3 semitones) and doesn't rise again; classifyTone
-// tends to call that a 4th tone. A real 4th tone falls much further, from the top of the
-// voice. Register alone can't tell them apart in short phrases where every syllable is low
-// (我们), so this looks at the size of the fall and whether the pitch sits low.
-function isHalfThirdContour(slice, median, detectedTone) {
-  const voiced = slice.filter(s => s.f != null)
-  if (voiced.length < 4 || !median) return false
-  const semis = voiced.map(s => 12 * Math.log2(s.f / median))
-  const third = Math.max(1, Math.floor(semis.length / 3))
-  const start = semis.slice(0, third).reduce((a, y) => a + y, 0) / third
-  const end = semis.slice(-third).reduce((a, y) => a + y, 0) / third
-  const mean = semis.reduce((a, y) => a + y, 0) / semis.length
-  if (start - end >= 4.5) return false                     // a full fall is a real 4th tone
-  if (start < 0 && mean < -1.5) return true                // clearly low in the voice
-  if (detectedTone === 4 && start - end < 4) return true    // a gentle sag, not a full fall
-  return false
+function isHalfThirdTone(slice, median, detectedTone) {
+  if (!median) return false
+  return isHalfThirdContour(toSemis(slice, median).map(p => p.y), detectedTone)
 }
 
-// A 2nd tone that comes from a tone change (你好's 你, 一个's 一, 不是's 不) is often said as
-// a low rise that dips briefly at the start, which classifyTone can read as a 3rd tone (or as
-// level, when the rise is short before a 4th tone). Accept it if the pitch ends clearly higher
-// than it started, or rises well above an early low point. A real dipping 3rd tone has its
-// low point in the middle and ends near where it started, so it's still caught.
-function isRisingContour(slice, median) {
-  const voiced = slice.filter(s => s.f != null)
-  if (voiced.length < 4 || !median) return false
-  const semis = voiced.map(s => 12 * Math.log2(s.f / median))
-  const third = Math.max(1, Math.floor(semis.length / 3))
-  const start = semis.slice(0, third).reduce((a, y) => a + y, 0) / third
-  const end = semis.slice(-third).reduce((a, y) => a + y, 0) / third
-  const min = Math.min(...semis)
-  const minAt = semis.indexOf(min) / (semis.length - 1)
-  if (end - start >= 1) return true
-  return minAt < 0.35 && end - min >= 1.5
+function isRisingTone(slice, median) {
+  if (!median) return false
+  return isRisingContour(toSemis(slice, median).map(p => p.y))
 }
 
 async function transcribeWhisper(wavBuf) {
@@ -284,8 +231,8 @@ export default async function handler(req, res) {
 
       const toneOk = detectedTone == null ? null
         : spoken.accept.includes(detectedTone)
-          || (spoken.halfThird && isHalfThirdContour(slice, median, detectedTone))
-          || (spoken.sandhi && expTone === 2 && isRisingContour(slice, median))
+          || (spoken.halfThird && isHalfThirdTone(slice, median, detectedTone))
+          || (spoken.sandhi && expTone === 2 && isRisingTone(slice, median))
 
       const sameChar = heard === w.char
 
