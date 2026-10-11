@@ -453,7 +453,13 @@
     "pinyinNumbered": "chang2",
     "english": "long",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她的头发很长。",
+        "pinyin": "Tā de tóufa hěn cháng.",
+        "english": "Her hair is very long."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3290,7 +3296,13 @@
     "pinyinNumbered": "mei2 yi4 si0",
     "english": "boring",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这本书一点儿没意思。",
+        "pinyin": "Zhè běn shū yìdiǎnr méi yìsi.",
+        "english": "This book isn't interesting at all."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6032,7 +6044,13 @@
     "pinyinNumbered": "you3 shi2",
     "english": "sometimes",
     "partOfSpeech": "adverb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有时骑自行车上班。",
+        "pinyin": "Wǒ yǒushí qí zìxíngchē shàngbān.",
+        "english": "Sometimes I ride a bike to work."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,

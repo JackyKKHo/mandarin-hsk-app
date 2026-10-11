@@ -992,7 +992,13 @@
     "pinyinNumbered": "biao3 shi4",
     "english": "to express; to indicate",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他点点头,表示同意我的看法。",
+        "pinyin": "Tā diǎndiǎn tóu, biǎoshì tóngyì wǒ de kànfǎ.",
+        "english": "He nodded, indicating that he agreed with my opinion."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2449,7 +2455,13 @@
       "adverb",
       "verb"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这篇作文要重写一遍。",
+        "pinyin": "Zhè piān zuòwén yào chóngxiě yí biàn.",
+        "english": "This essay needs to be rewritten."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2692,7 +2704,13 @@
     "pinyinNumbered": "chuang1",
     "english": "window",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她打开窗,让新鲜空气进来。",
+        "pinyin": "Tā dǎkāi chuāng, ràng xīnxiān kōngqì jìnlái.",
+        "english": "She opened the window to let in some fresh air."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3504,7 +3522,13 @@
     "pinyinNumbered": "dai4 fu0",
     "english": "doctor",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "大夫让他多休息,少吃辣的。",
+        "pinyin": "Dàifu ràng tā duō xiūxi, shǎo chī là de.",
+        "english": "The doctor told him to rest more and eat less spicy food."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -3711,7 +3735,13 @@
     "pinyinNumbered": "dai4 zi0",
     "english": "bag",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她把水果都装进了袋子里。",
+        "pinyin": "Tā bǎ shuǐguǒ dōu zhuāng jìn le dàizi lǐ.",
+        "english": "She put all the fruit into the bag."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4696,7 +4726,13 @@
     "pinyinNumbered": "dong4 che1",
     "english": "high-speed train (D-train)",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "坐动车去上海只要五个小时。",
+        "pinyin": "Zuò dòngchē qù Shànghǎi zhǐyào wǔ ge xiǎoshí.",
+        "english": "Taking the high-speed train to Shanghai only takes five hours."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -8843,7 +8879,13 @@
     "pinyinNumbered": "huan4 cheng2",
     "english": "to transfer (between lines or vehicles)",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "在这一站换乘二号线。",
+        "pinyin": "Zài zhè yī zhàn huànchéng èr hào xiàn.",
+        "english": "Transfer to Line 2 at this station."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -10191,7 +10233,13 @@
     "pinyinNumbered": "jian4 shen1 fang2",
     "english": "gym",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他每天下班后都去健身房锻炼。",
+        "pinyin": "Tā měitiān xiàbān hòu dōu qù jiànshēnfáng duànliàn.",
+        "english": "He goes to the gym to work out every day after work."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -11110,7 +11158,13 @@
     "pinyinNumbered": "jie2 zhang4",
     "english": "to pay the bill; to check out",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "吃完饭我们去前台结账。",
+        "pinyin": "Chī wán fàn wǒmen qù qiántái jiézhàng.",
+        "english": "After we finish eating, let's go pay the bill at the counter."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -11623,7 +11677,13 @@
     "pinyinNumbered": "jing3 qu1",
     "english": "scenic area",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "节假日景区里的游客特别多。",
+        "pinyin": "Jiéjiàrì jǐngqū lǐ de yóukè tèbié duō.",
+        "english": "There are especially many tourists in the scenic area during holidays."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -11879,7 +11939,13 @@
     "pinyinNumbered": "ju3 li4",
     "english": "instance",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "老师举例说明了这个语法。",
+        "pinyin": "Lǎoshī jǔlì shuōmíng le zhège yǔfǎ.",
+        "english": "The teacher gave an example to explain this grammar point."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -11952,7 +12018,13 @@
     "pinyinNumbered": "ju4 can1",
     "english": "to have a meal together",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "周末同事们一起聚餐庆祝。",
+        "pinyin": "Zhōumò tóngshìmen yīqǐ jùcān qìngzhù.",
+        "english": "This weekend the coworkers are having a meal together to celebrate."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -12043,7 +12115,13 @@
     "pinyinNumbered": "ju4 yuan4",
     "english": "theater",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个剧院今晚有一场话剧。",
+        "pinyin": "Zhège jùyuàn jīnwǎn yǒu yī chǎng huàjù.",
+        "english": "There's a play at this theater tonight."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -12126,7 +12204,13 @@
     "pinyinNumbered": "kao3",
     "english": "oven broil",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "妈妈烤了一只鸡给我们吃。",
+        "pinyin": "Māma kǎo le yī zhī jī gěi wǒmen chī.",
+        "english": "Mom roasted a chicken for us to eat."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -12291,7 +12375,13 @@
     "pinyinNumbered": "ke2",
     "english": "to cough",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他咳了几声,喝了点水。",
+        "pinyin": "Tā ké le jǐ shēng, hē le diǎn shuǐ.",
+        "english": "He coughed a few times and drank some water."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -12307,7 +12397,13 @@
     "pinyinNumbered": "ke2 sou0",
     "english": "to cough",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她感冒了,一直咳嗽不停。",
+        "pinyin": "Tā gǎnmào le, yīzhí késou bù tíng.",
+        "english": "She caught a cold and keeps coughing nonstop."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -13083,7 +13179,13 @@
     "pinyinNumbered": "lao3 hu3",
     "english": "tiger",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "动物园里的老虎正在睡觉。",
+        "pinyin": "Dòngwùyuán lǐ de lǎohǔ zhèngzài shuìjiào.",
+        "english": "The tiger at the zoo is sleeping."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -13728,7 +13830,13 @@
     "pinyinNumbered": "ling2 hua1 qian2",
     "english": "pocket money",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "爸爸每周给我一点零花钱。",
+        "pinyin": "Bàba měi zhōu gěi wǒ yīdiǎn línghuāqián.",
+        "english": "Dad gives me a bit of pocket money every week."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -13745,7 +13853,13 @@
     "pinyinNumbered": "ling2 qian2",
     "english": "change (of money)",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我没有零钱,只能用手机支付。",
+        "pinyin": "Wǒ méiyǒu língqián, zhǐ néng yòng shǒujī zhīfù.",
+        "english": "I don't have any change, so I'll have to pay with my phone."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -14464,7 +14578,13 @@
     "pinyinNumbered": "mei3 jing3",
     "english": "vision",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "站在山顶,眼前的美景让人陶醉。",
+        "pinyin": "Zhàn zài shāndǐng, yǎnqián de měijǐng ràng rén táozuì.",
+        "english": "Standing on the mountaintop, the beautiful scenery was breathtaking."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -14925,7 +15045,13 @@
     "pinyinNumbered": "mu4 di4 di4",
     "english": "bourn",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "导航显示还有十分钟到达目的地。",
+        "pinyin": "Dǎoháng xiǎnshì hái yǒu shí fēnzhōng dàodá mùdìdì.",
+        "english": "The navigation shows we'll reach our destination in ten more minutes."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -15357,7 +15483,13 @@
     "pinyinNumbered": "",
     "english": "mm; yes (agreeing)",
     "partOfSpeech": "interjection",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我问他饿不饿,他嗯了一声。",
+        "pinyin": "Wǒ wèn tā è bù è, tā ǹg le yī shēng.",
+        "english": "I asked him if he was hungry, and he just said 'mm'."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -16021,7 +16153,13 @@
     "pinyinNumbered": "ping1 pang1 qiu2",
     "english": "table tennis",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "周末我们一起打乒乓球吧。",
+        "pinyin": "Zhōumò wǒmen yīqǐ dǎ pīngpāngqiú ba.",
+        "english": "Let's play table tennis together this weekend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -16857,7 +16995,13 @@
     "pinyinNumbered": "qin1 qi0",
     "english": "belongings",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "过年的时候,很多亲戚都来我家。",
+        "pinyin": "Guònián de shíhou, hěn duō qīnqi dōu lái wǒ jiā.",
+        "english": "During the New Year, many relatives come to visit my home."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -18080,7 +18224,13 @@
     "pinyinNumbered": "ru4 zhu4",
     "english": "to check in; to move in",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们下午三点才能入住酒店。",
+        "pinyin": "Wǒmen xiàwǔ sān diǎn cái néng rùzhù jiǔdiàn.",
+        "english": "We can't check in to the hotel until 3pm."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -18129,7 +18279,13 @@
     "pinyinNumbered": "sao3 ma3",
     "english": "to scan a QR code",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请扫码关注我们的公众号。",
+        "pinyin": "Qǐng sǎomǎ guānzhù wǒmen de gōngzhònghào.",
+        "english": "Please scan the QR code to follow our official account."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -18145,7 +18301,13 @@
     "pinyinNumbered": "sen1 lin2",
     "english": "forest",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们在森林里迷路了。",
+        "pinyin": "Wǒmen zài sēnlín lǐ mílù le.",
+        "english": "We got lost in the forest."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -18319,7 +18481,13 @@
     "pinyinNumbered": "shao3 jian4",
     "english": "rare",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这种天气在南方很少见。",
+        "pinyin": "Zhè zhǒng tiānqì zài nánfāng hěn shǎojiàn.",
+        "english": "This kind of weather is rare in the south."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -18336,7 +18504,13 @@
     "pinyinNumbered": "shao3 liang4",
     "english": "dribblet",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "汤里只需要加少量的盐。",
+        "pinyin": "Tāng lǐ zhǐ xūyào jiā shǎoliàng de yán.",
+        "english": "You only need to add a small amount of salt to the soup."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -18432,7 +18606,13 @@
     "pinyinNumbered": "she4 shi4 du4",
     "english": "degrees centigrade",
     "partOfSpeech": "measure word",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "今天最高温度是三十摄氏度。",
+        "pinyin": "Jīntiān zuìgāo wēndù shì sānshí shèshìdù.",
+        "english": "Today's high temperature is 30 degrees Celsius."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -18452,7 +18632,13 @@
       "noun",
       "measure word"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她穿了一身红色的衣服。",
+        "pinyin": "Tā chuān le yī shēn hóngsè de yīfu.",
+        "english": "She was dressed in a red outfit from head to toe."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -18952,7 +19138,13 @@
     "pinyinNumbered": "shi2 jian1 biao3",
     "english": "time_sheet",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "老师把考试时间表发给了我们。",
+        "pinyin": "Lǎoshī bǎ kǎoshì shíjiānbiǎo fā gěi le wǒmen.",
+        "english": "The teacher gave us the exam schedule."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -19127,7 +19319,13 @@
     "pinyinNumbered": "shi2 zi4 lu4 kou3",
     "english": "crossroads",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "前面的十字路口左转就是银行。",
+        "pinyin": "Qiánmiàn de shízì lùkǒu zuǒ zhuǎn jiùshì yínháng.",
+        "english": "Turn left at the intersection ahead and you'll reach the bank."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -19177,7 +19375,13 @@
     "pinyinNumbered": "shi3 guan3",
     "english": "embassy",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "办签证要先去使馆预约。",
+        "pinyin": "Bàn qiānzhèng yào xiān qù shǐguǎn yùyuē.",
+        "english": "To apply for a visa, you first need to book an appointment at the embassy."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -19700,7 +19904,13 @@
     "pinyinNumbered": "shou4 piao4 yuan2",
     "english": "ticket seller; conductor",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "售票员告诉我们下一站下车。",
+        "pinyin": "Shòupiàoyuán gàosu wǒmen xià yī zhàn xià chē.",
+        "english": "The conductor told us to get off at the next stop."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -20017,7 +20227,13 @@
     "pinyinNumbered": "shun4 bian4",
     "english": "incidentally",
     "partOfSpeech": "adverb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你去超市的话,顺便买点牛奶。",
+        "pinyin": "Nǐ qù chāoshì dehuà, shùnbiàn mǎi diǎn niúnǎi.",
+        "english": "If you're going to the supermarket, pick up some milk while you're there."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -20644,7 +20860,13 @@
     "pinyinNumbered": "tan2",
     "english": "to play (piano, guitar); to flick",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她从小就会弹钢琴。",
+        "pinyin": "Tā cóngxiǎo jiù huì tán gāngqín.",
+        "english": "She's been able to play the piano since she was a child."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -21073,7 +21295,13 @@
     "pinyinNumbered": "ti3 wen1",
     "english": "(body) temperature",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "护士每天给病人测体温。",
+        "pinyin": "Hùshi měitiān gěi bìngrén cè tǐwēn.",
+        "english": "The nurse checks the patients' temperature every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -21113,7 +21341,13 @@
     "pinyinNumbered": "tian2 xie3",
     "english": "fill in a form",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请在表格上填写你的姓名和电话。",
+        "pinyin": "Qǐng zài biǎogé shàng tiánxiě nǐ de xìngmíng hé diànhuà.",
+        "english": "Please fill in your name and phone number on the form."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -21562,7 +21796,13 @@
     "pinyinNumbered": "tong3",
     "english": "bucket",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他提着一桶水走进厨房。",
+        "pinyin": "Tā tí zhe yī tǒng shuǐ zǒu jìn chúfáng.",
+        "english": "He carried a bucket of water into the kitchen."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -21615,7 +21855,13 @@
     "pinyinNumbered": "tou2 tong4",
     "english": "headache; to have a headache",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我昨晚没睡好,现在头痛。",
+        "pinyin": "Wǒ zuówǎn méi shuì hǎo, xiànzài tóutòng.",
+        "english": "I didn't sleep well last night, and now I have a headache."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -22017,7 +22263,13 @@
     "pinyinNumbered": "wang3 gou4",
     "english": "to shop online",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "现在越来越多的人喜欢网购。",
+        "pinyin": "Xiànzài yuè lái yuè duō de rén xǐhuan wǎnggòu.",
+        "english": "More and more people nowadays like shopping online."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -22222,7 +22474,13 @@
     "pinyinNumbered": "wei4",
     "english": "taste; smell",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这道菜的味有点儿咸。",
+        "pinyin": "Zhè dào cài de wèi yǒudiǎnr xián.",
+        "english": "This dish tastes a bit salty."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -22771,7 +23029,13 @@
     "pinyinNumbered": "xi4 xin1",
     "english": "careful",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "医生检查得非常细心。",
+        "pinyin": "Yīshēng jiǎnchá de fēicháng xìxīn.",
+        "english": "The doctor examined very carefully."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -22913,7 +23177,13 @@
     "pinyinNumbered": "xian4 mu4",
     "english": "to envy",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我很羡慕他能流利地说英语。",
+        "pinyin": "Wǒ hěn xiànmù tā néng liúlì de shuō Yīngyǔ.",
+        "english": "I really envy that he can speak English fluently."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -22930,7 +23200,13 @@
     "pinyinNumbered": "xian4 shang4",
     "english": "online",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这门课可以线上学习。",
+        "pinyin": "Zhè mén kè kěyǐ xiànshàng xuéxí.",
+        "english": "This course can be studied online."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -22946,7 +23222,13 @@
     "pinyinNumbered": "xian4 xia4",
     "english": "offline; in person",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他们更喜欢线下见面聊天。",
+        "pinyin": "Tāmen gèng xǐhuan xiànxià jiànmiàn liáotiān.",
+        "english": "They prefer meeting and chatting in person."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -23491,7 +23773,13 @@
     "pinyinNumbered": "xie3",
     "english": "blood",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他摔倒了,膝盖流了点血。",
+        "pinyin": "Tā shuāidǎo le, xīgài liú le diǎn xiě.",
+        "english": "He fell down, and his knee bled a little."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24198,7 +24486,13 @@
     "pinyinNumbered": "ya2 gao1",
     "english": "toothpaste",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "牙膏快用完了,要再买一管。",
+        "pinyin": "Yágāo kuài yòng wán le, yào zài mǎi yī guǎn.",
+        "english": "The toothpaste is almost finished; we need to buy another tube."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24215,7 +24509,13 @@
     "pinyinNumbered": "ya4 zhou1",
     "english": "Asia",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "中国是亚洲最大的国家之一。",
+        "pinyin": "Zhōngguó shì Yàzhōu zuìdà de guójiā zhī yī.",
+        "english": "China is one of the largest countries in Asia."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24723,7 +25023,13 @@
     "pinyinNumbered": "yao4 shi0",
     "english": "key",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我把家里的钥匙忘在办公室了。",
+        "pinyin": "Wǒ bǎ jiālǐ de yàoshi wàng zài bàngōngshì le.",
+        "english": "I forgot my house key at the office."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24809,7 +25115,13 @@
     "pinyinNumbered": "ye4 wan3",
     "english": "night",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "寂静的夜晚,只能听见风声。",
+        "pinyin": "Jìjìng de yèwǎn, zhǐ néng tīngjiàn fēngshēng.",
+        "english": "In the quiet night, only the sound of the wind could be heard."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25182,7 +25494,13 @@
     "pinyinNumbered": "ying4 pin4",
     "english": "to accept a job offer",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他正在应聘一家外企的工作。",
+        "pinyin": "Tā zhèngzài yìngpìn yī jiā wàiqǐ de gōngzuò.",
+        "english": "He is applying for a job at a foreign company."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25564,7 +25882,13 @@
     "pinyinNumbered": "you3 qing2",
     "english": "friendly feelings",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他们之间的友情已经十年了。",
+        "pinyin": "Tāmen zhī jiān de yǒuqíng yǐjīng shí nián le.",
+        "english": "The friendship between them has already lasted ten years."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26506,7 +26830,13 @@
     "pinyinNumbered": "zhao2",
     "english": "to touch; to catch (fire, cold); to fall asleep",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他躺下没多久就睡着了。",
+        "pinyin": "Tā tǎng xià méi duō jiǔ jiù shuìzháo le.",
+        "english": "He fell asleep not long after lying down."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27381,7 +27711,13 @@
     "pinyinNumbered": "zhi3 jin1",
     "english": "tissue; paper napkin",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请给我拿一张纸巾擦手。",
+        "pinyin": "Qǐng gěi wǒ ná yī zhāng zhǐjīn cā shǒu.",
+        "english": "Please hand me a tissue to wipe my hands."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27923,7 +28259,13 @@
     "pinyinNumbered": "zhuan3 fa1",
     "english": "to forward; to share (a post)",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她把这条消息转发给了朋友。",
+        "pinyin": "Tā bǎ zhè tiáo xiāoxi zhuǎnfā gěi le péngyou.",
+        "english": "She forwarded this message to her friend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27939,7 +28281,13 @@
     "pinyinNumbered": "zhuan3 ji1",
     "english": "turn for better",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "从北京到纽约需要在东京转机。",
+        "pinyin": "Cóng Běijīng dào Niǔyuē xūyào zài Dōngjīng zhuǎnjī.",
+        "english": "Going from Beijing to New York requires a flight connection in Tokyo."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -28226,7 +28574,13 @@
     "pinyinNumbered": "zi4 xi2",
     "english": "to study on one's own",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "晚上七点大家在教室自习。",
+        "pinyin": "Wǎnshang qī diǎn dàjiā zài jiàoshì zìxí.",
+        "english": "At 7pm everyone studies on their own in the classroom."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
