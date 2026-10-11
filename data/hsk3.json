@@ -1106,7 +1106,13 @@
     "pinyinNumbered": "bing1 ji1 ling2",
     "english": "ice cream",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "夏天吃冰激凌最舒服。",
+        "pinyin": "Xiàtiān chī bīngjīlíng zuì shūfu.",
+        "english": "Eating ice cream in summer is the most refreshing."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2753,7 +2759,13 @@
     "pinyinNumbered": "dei3",
     "english": "to have to; must",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我得去医院看病。",
+        "pinyin": "Wǒ děi qù yīyuàn kànbìng.",
+        "english": "I have to go to the hospital to see a doctor."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2802,7 +2814,13 @@
     "pinyinNumbered": "di4",
     "english": "ground; land; earth",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这片地种满了玉米。",
+        "pinyin": "Zhè piàn dì zhòng mǎnle yùmǐ.",
+        "english": "This plot of land is planted full of corn."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -2976,7 +2994,13 @@
     "pinyinNumbered": "dian4 zi3 shu1",
     "english": "e-book",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我喜欢在手机上看电子书。",
+        "pinyin": "Wǒ xǐhuan zài shǒujī shàng kàn diànzǐshū.",
+        "english": "I like reading e-books on my phone."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5327,7 +5351,13 @@
     "pinyinNumbered": "hong2 lu4 deng1",
     "english": "traffic lights",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "过马路要看红绿灯。",
+        "pinyin": "Guò mǎlù yào kàn hóng-lǜdēng.",
+        "english": "You should watch the traffic lights when crossing the street."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5574,7 +5604,13 @@
     "pinyinNumbered": "huan2",
     "english": "to give back; to return",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我明天把书还给你。",
+        "pinyin": "Wǒ míngtiān bǎ shū huán gěi nǐ.",
+        "english": "I'll give the book back to you tomorrow."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6265,7 +6301,13 @@
     "pinyinNumbered": "jian3 piao4",
     "english": "to check tickets",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请大家排队检票上车。",
+        "pinyin": "Qǐng dàjiā páiduì jiǎnpiào shàng chē.",
+        "english": "Everyone please line up to have your tickets checked before boarding."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -10250,7 +10292,13 @@
     "pinyinNumbered": "shao2 zi0",
     "english": "spoon",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请给我拿一把勺子。",
+        "pinyin": "Qǐng gěi wǒ ná yì bǎ sháozi.",
+        "english": "Please bring me a spoon."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -10773,7 +10821,13 @@
     "pinyinNumbered": "shu4 xue2",
     "english": "mathematics",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我的数学成绩不太好。",
+        "pinyin": "Wǒ de shùxué chéngjì bù tài hǎo.",
+        "english": "My math grades aren't very good."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -10911,7 +10965,13 @@
     "pinyinNumbered": "si4 ji4",
     "english": "four seasons",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这里四季都很暖和。",
+        "pinyin": "Zhèlǐ sìjì dōu hěn nuǎnhuo.",
+        "english": "It's warm here all year round."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -12499,7 +12559,13 @@
     "pinyinNumbered": "xiao3 qu1",
     "english": "neighborhood",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们小区旁边有个超市。",
+        "pinyin": "Wǒmen xiǎoqū pángbiān yǒu ge chāoshì.",
+        "english": "There's a supermarket next to our neighborhood."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,

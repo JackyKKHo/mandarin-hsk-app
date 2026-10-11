@@ -4065,7 +4065,13 @@
     "pinyinNumbered": "mei2 shi4",
     "english": "it's nothing; to be free",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "没事,你慢慢说。",
+        "pinyin": "Méishì, nǐ mànman shuō.",
+        "english": "It's okay, take your time."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4414,7 +4420,13 @@
     "pinyinNumbered": "na3 ge0",
     "english": "which; which one",
     "partOfSpeech": "pronoun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你要哪个颜色？",
+        "pinyin": "Nǐ yào nǎge yánsè?",
+        "english": "Which color do you want?"
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4598,7 +4610,13 @@
     "pinyinNumbered": "na4 ge0",
     "english": "that; that one",
     "partOfSpeech": "pronoun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "那个人是我的老师。",
+        "pinyin": "Nàge rén shì wǒ de lǎoshī.",
+        "english": "That person is my teacher."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -4878,7 +4896,13 @@
     "pinyinNumbered": "ni3 hao3",
     "english": "hello",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "你好,很高兴认识你。",
+        "pinyin": "Nǐ hǎo, hěn gāoxìng rènshi nǐ.",
+        "english": "Hello, nice to meet you."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -5184,7 +5208,13 @@
     "pinyinNumbered": "pian2 yi0",
     "english": "cheap; inexpensive",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这件衣服很便宜。",
+        "pinyin": "Zhè jiàn yīfu hěn piányi.",
+        "english": "This piece of clothing is very cheap."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -7084,7 +7114,13 @@
     "pinyinNumbered": "wan2",
     "english": "to play; to have fun",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "孩子们在公园里玩。",
+        "pinyin": "Háizimen zài gōngyuán lǐ wán.",
+        "english": "The children are playing in the park."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -8568,7 +8604,13 @@
       "numeral-classifier",
       "adverb"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请等一下,我马上回来。",
+        "pinyin": "Qǐng děng yīxià, wǒ mǎshàng huílái.",
+        "english": "Please wait a moment, I'll be right back."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -9290,7 +9332,13 @@
     "pinyinNumbered": "zhe4 ge0",
     "english": "this; this one",
     "partOfSpeech": "pronoun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个苹果很好吃。",
+        "pinyin": "Zhège píngguǒ hěn hǎochī.",
+        "english": "This apple is very delicious."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
