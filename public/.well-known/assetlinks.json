@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.mandarindaily",
+      "sha256_cert_fingerprints": [
+        "1C:7F:3B:26:F7:C3:BE:CF:F7:78:14:C1:06:3D:B1:02:DF:79:89:54:D5:46:20:93:0A:01:FA:7D:FE:44:04:5C"
+      ]
+    }
+  }
+]

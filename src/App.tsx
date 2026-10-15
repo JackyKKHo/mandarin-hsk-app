@@ -11,6 +11,7 @@ import SearchPage from './pages/SearchPage'
 import StatsPage from './pages/StatsPage'
 import TodayPage from './pages/TodayPage'
 import WidgetPage from './pages/WidgetPage'
+import PrivacyPage from './pages/PrivacyPage'
 import QuizPage from './pages/QuizPage'
 import WritingPage from './pages/WritingPage'
 import ListeningPage from './pages/ListeningPage'
@@ -97,6 +98,7 @@ export default function App() {
         <Route path="/verb-frameworks" element={<VerbFrameworksPage />} />
         <Route path="/record" element={<RecordPage />} />
         <Route path="/pro" element={<ProPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>
