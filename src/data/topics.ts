@@ -12,6 +12,8 @@ export interface Topic {
   zh: string
   /** Shown to the tagger so borderline words land in the right place */
   hint: string
+  /** Concrete enough to show as a photo (used by the picture quiz and scripts/fill-images.mjs) */
+  pictures?: boolean
 }
 
 export interface TopicGroup {

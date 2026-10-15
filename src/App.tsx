@@ -25,6 +25,7 @@ import DialoguePage from './pages/DialoguePage'
 import WelcomePage, { shouldShowWelcome } from './pages/WelcomePage'
 import TonePage from './pages/TonePage'
 import ScramblePage from './pages/ScramblePage'
+import PicturePage from './pages/PicturePage'
 import DailyChallengePage from './pages/DailyChallengePage'
 import RadicalsPage from './pages/RadicalsPage'
 import MeasureWordsPage from './pages/MeasureWordsPage'
@@ -82,6 +83,7 @@ export default function App() {
         <Route path="/dialogue/:id" element={<DialoguePage />} />
         <Route path="/tone/:level" element={<TonePage />} />
         <Route path="/scramble/:level" element={<ScramblePage />} />
+        <Route path="/picture/:level" element={<PicturePage />} />
         <Route path="/daily" element={<DailyChallengePage />} />
         <Route path="/radicals" element={<RadicalsPage />} />
         <Route path="/measure-words" element={<MeasureWordsPage />} />

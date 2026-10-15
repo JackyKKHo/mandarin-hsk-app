@@ -3,6 +3,7 @@ import { precacheAndRoute } from 'workbox-precaching'
 import { registerRoute } from 'workbox-routing'
 import { CacheFirst, NetworkOnly } from 'workbox-strategies'
 import { ExpirationPlugin } from 'workbox-expiration'
+import { CacheableResponsePlugin } from 'workbox-cacheable-response'
 
 declare const self: ServiceWorkerGlobalScope
 
@@ -14,6 +15,18 @@ registerRoute(
   new CacheFirst({
     cacheName: 'hanzi-data-cache',
     plugins: [new ExpirationPlugin({ maxEntries: 500, maxAgeSeconds: 60 * 60 * 24 * 30 })],
+  })
+)
+
+// Picture quiz photos from Wikimedia Commons (cross-origin, so responses are opaque: status 0)
+registerRoute(
+  ({ url }) => url.hostname === 'upload.wikimedia.org',
+  new CacheFirst({
+    cacheName: 'picture-quiz-images',
+    plugins: [
+      new CacheableResponsePlugin({ statuses: [0, 200] }),
+      new ExpirationPlugin({ maxEntries: 400, maxAgeSeconds: 60 * 60 * 24 * 30, purgeOnQuotaError: true }),
+    ],
   })
 )
 

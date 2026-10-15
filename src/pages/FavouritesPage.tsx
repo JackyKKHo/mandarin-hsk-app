@@ -46,6 +46,7 @@ export default function FavouritesPage() {
                   { path: '/quiz/favourites',     label: 'Quiz',        sub: 'Multiple choice' },
                   { path: '/listen/favourites',   label: 'Listening',   sub: 'Hear & identify' },
                   { path: '/fill/favourites',     label: 'Fill blank',   sub: 'Complete sentences' },
+                  { path: '/picture/favourites',  label: 'Picture quiz', sub: 'Name the photo in Chinese' },
                 ].map(({ path, label, sub }) => (
                   <button key={path} className="practice-menu-item" style={{ width: '100%', textAlign: 'left', border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => openPractice(path)}>
                     <span className="pmi-label">{label}</span>

@@ -21,6 +21,7 @@
 - `src/data/idMap2026.json` maps pre-2026 word ids to new ones; `src/lib/migrateVocab2026.ts` translates saved progress on each device once. Supabase rows still hold old ids.
 - All words have: `simplified`, `traditional`, `pinyin` (official), `pinyinNumbered`, `english`, `partOfSpeech` (from the official list), `examples`
 - `data/grammar.json` — grammar reference
+- `data/images.json` — word id → openly licensed Wikimedia Commons photo (`src`, `page`, `author`, `license`, `wikidata`) for the picture quiz; `null` = no picture, never retried. Loaded on demand via `src/data/images.ts`. Credit is shown under every photo — keep it.
 
 ### Pages
 | Route | Page |
@@ -33,6 +34,7 @@
 | `/write/:level` | Stroke order writing practice |
 | `/listen/:level` | Listening comprehension |
 | `/fill/:level` | Fill in the blank |
+| `/picture/:level` | Picture quiz: photo → Chinese, multiple choice or typed (characters or pinyin); `level` can be `all`, takes `?topics=` |
 | `/pronunciation` | Pronunciation guide (tones, initials, finals) |
 | `/review` | SRS due-card review (self-rated flashcards: Again / Good / Easy) |
 | `/grammar/:level` | Grammar list by level |
@@ -109,6 +111,7 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 | `node scripts/generate-examples.mjs [level]` | Generate example sentences for a level |
 | `node scripts/fill-tags.mjs` | Submit Anthropic batch to tag words with topics (`tags`, ids from `src/data/topics.json`); `--all` re-tags everything, `--level=N` one level |
 | `node scripts/fill-tags.mjs --status` / `--apply` | Check the tagging batch / write results, then `check-vocab.mjs --changed --allow=tags` |
+| `node scripts/fill-images.mjs` | Find photos (Wikidata → Commons, PD/CC0/CC BY/CC BY-SA only) for nouns in picture topics; `--nouns`, `--level=N`, `--word=苹果`, `--limit=N`, `--redo`. Writes `scripts/images-review.html` to eyeball results |
 | `node scripts/check-vocab.mjs [--changed]` | Validate vocab files; `--changed` compares with origin/main and allows only new, well-formed examples |
 
 ---

@@ -280,6 +280,7 @@ export default function BrowserPage() {
                 { mode: 'write',    label: 'Writing',      sub: 'Stroke order tracing' },
                 { mode: 'tone',     label: 'Tone trainer', sub: 'Identify tones' },
                 { mode: 'scramble', label: 'Scramble',    sub: 'Reorder sentences' },
+                { mode: 'picture',  label: 'Picture quiz', sub: 'Name the photo in Chinese' },
               ]
                 // Writing practice works per level and doesn't take a topic filter yet
                 .filter(({ mode }) => !(selectedTopics.length && mode === 'write'))
