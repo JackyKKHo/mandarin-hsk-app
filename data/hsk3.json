@@ -151,7 +151,7 @@
     "traditional": "把",
     "pinyin": "bǎ",
     "pinyinNumbered": "ba3",
-    "english": "Preposition marking the object",
+    "english": "preposition marking the object",
     "partOfSpeech": [
       "measure word",
       "preposition"
@@ -187,7 +187,7 @@
     "traditional": "搬",
     "pinyin": "bān",
     "pinyinNumbered": "ban1",
-    "english": "Move or carry",
+    "english": "to move; to carry",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -220,7 +220,7 @@
     "traditional": "班級",
     "pinyin": "bānjí",
     "pinyinNumbered": "ban1 ji2",
-    "english": "Class or classroom group",
+    "english": "class; classroom group",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -253,7 +253,7 @@
     "traditional": "搬家",
     "pinyin": "bānjiā",
     "pinyinNumbered": "ban1 jia1",
-    "english": "Move house or relocate",
+    "english": "to move house; to relocate",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -1126,7 +1126,7 @@
     "traditional": "冰箱",
     "pinyin": "bīngxiāng",
     "pinyinNumbered": "bing1 xiang1",
-    "english": "frig",
+    "english": "refrigerator; fridge",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -3103,7 +3103,7 @@
     "traditional": "東方",
     "pinyin": "dōngfāng",
     "pinyinNumbered": "dong1 fang1",
-    "english": "East direction",
+    "english": "east",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -3136,7 +3136,7 @@
     "traditional": "東南",
     "pinyin": "dōngnán",
     "pinyinNumbered": "dong1 nan2",
-    "english": "Southeast direction",
+    "english": "southeast",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -3169,7 +3169,7 @@
     "traditional": "冬天",
     "pinyin": "dōngtiān",
     "pinyinNumbered": "dong1 tian1",
-    "english": "Winter season",
+    "english": "winter",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -3202,7 +3202,7 @@
     "traditional": "懂得",
     "pinyin": "dǒngde",
     "pinyinNumbered": "dong3 de0",
-    "english": "Understand",
+    "english": "to understand",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -3235,7 +3235,7 @@
     "traditional": "動物",
     "pinyin": "dòngwù",
     "pinyinNumbered": "dong4 wu4",
-    "english": "Animal",
+    "english": "animal",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -3268,7 +3268,7 @@
     "traditional": "動物園",
     "pinyin": "dòngwùyuán",
     "pinyinNumbered": "dong4 wu4 yuan2",
-    "english": "Zoo",
+    "english": "zoo",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -3301,7 +3301,7 @@
     "traditional": "短",
     "pinyin": "duǎn",
     "pinyinNumbered": "duan3",
-    "english": "Short",
+    "english": "short",
     "partOfSpeech": "adjective",
     "meanings": [
       {
@@ -3367,7 +3367,7 @@
     "traditional": "段",
     "pinyin": "duàn",
     "pinyinNumbered": "duan4",
-    "english": "Measure word for sections",
+    "english": "measure word for sections",
     "partOfSpeech": "measure word",
     "meanings": [
       {
@@ -3423,7 +3423,7 @@
     "traditional": "對話",
     "pinyin": "duìhuà",
     "pinyinNumbered": "dui4 hua4",
-    "english": "Conversation",
+    "english": "conversation; dialogue",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -3489,7 +3489,7 @@
     "traditional": "而且",
     "pinyin": "érqiě",
     "pinyinNumbered": "er2 qie3",
-    "english": "And also",
+    "english": "and also; moreover",
     "partOfSpeech": "conjunction",
     "meanings": [
       {
@@ -3522,7 +3522,7 @@
     "traditional": "耳朵",
     "pinyin": "ěrduo",
     "pinyinNumbered": "er3 duo0",
-    "english": "auricle",
+    "english": "ear",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -4194,7 +4194,7 @@
     "traditional": "附近",
     "pinyin": "fùjìn",
     "pinyinNumbered": "fu4 jin4",
-    "english": "neighborship",
+    "english": "nearby; vicinity",
     "partOfSpeech": "noun",
     "examples": [
       {

@@ -4149,7 +4149,7 @@
     "traditional": "沖",
     "pinyin": "chòng",
     "pinyinNumbered": "chong4",
-    "english": "charge",
+    "english": "towards; facing",
     "partOfSpeech": [
       "verb",
       "preposition"
@@ -9553,7 +9553,7 @@
     "traditional": "該",
     "pinyin": "gāi",
     "pinyinNumbered": "gai1",
-    "english": "should",
+    "english": "that; the said",
     "partOfSpeech": "pronoun",
     "meanings": [
       {
@@ -13107,7 +13107,7 @@
     "traditional": "劃",
     "pinyin": "huà",
     "pinyinNumbered": "hua4",
-    "english": "to cut",
+    "english": "to plan; to delimit",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -15555,7 +15555,7 @@
     "traditional": "結",
     "pinyin": "jiē",
     "pinyinNumbered": "jie1",
-    "english": "tie",
+    "english": "to bear fruit",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -17122,7 +17122,7 @@
     "traditional": "捲",
     "pinyin": "juǎn",
     "pinyinNumbered": "juan3",
-    "english": "volume",
+    "english": "to roll up; a roll",
     "partOfSpeech": [
       "verb",
       "noun",
@@ -24904,7 +24904,7 @@
     "traditional": "散",
     "pinyin": "sǎn",
     "pinyinNumbered": "san3",
-    "english": "break up",
+    "english": "loose; scattered",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -29280,7 +29280,7 @@
     "traditional": "吐",
     "pinyin": "tǔ",
     "pinyinNumbered": "tu3",
-    "english": "articulation",
+    "english": "to spit; to utter",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -29320,7 +29320,7 @@
     "traditional": "吐",
     "pinyin": "tù",
     "pinyinNumbered": "tu4",
-    "english": "articulation",
+    "english": "to vomit",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -38512,7 +38512,7 @@
     "traditional": "轉",
     "pinyin": "zhuàn",
     "pinyinNumbered": "zhuan4",
-    "english": "turn; rotate",
+    "english": "to rotate; to spin",
     "partOfSpeech": "verb",
     "meanings": [
       {

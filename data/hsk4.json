@@ -6,7 +6,7 @@
     "traditional": "啊",
     "pinyin": "ā",
     "pinyinNumbered": "a1",
-    "english": "interjection expressing surprise or softening",
+    "english": "ah; oh (expresses surprise)",
     "partOfSpeech": "interjection",
     "meanings": [
       {
@@ -3687,7 +3687,7 @@
     "traditional": "待",
     "pinyin": "dāi",
     "pinyinNumbered": "dai1",
-    "english": "till",
+    "english": "to stay",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -14576,7 +14576,7 @@
     "traditional": "美景",
     "pinyin": "měijǐng",
     "pinyinNumbered": "mei3 jing3",
-    "english": "vision",
+    "english": "beautiful scenery; view",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -15043,7 +15043,7 @@
     "traditional": "目的地",
     "pinyin": "mùdìdì",
     "pinyinNumbered": "mu4 di4 di4",
-    "english": "bourn",
+    "english": "destination",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -16993,7 +16993,7 @@
     "traditional": "親戚",
     "pinyin": "qīnqi",
     "pinyinNumbered": "qin1 qi0",
-    "english": "belongings",
+    "english": "relative",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -18502,7 +18502,7 @@
     "traditional": "少量",
     "pinyin": "shǎoliàng",
     "pinyinNumbered": "shao3 liang4",
-    "english": "dribblet",
+    "english": "a small amount of",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -18790,7 +18790,7 @@
     "traditional": "生",
     "pinyin": "shēng",
     "pinyinNumbered": "sheng1",
-    "english": "give birth to",
+    "english": "raw; unfamiliar",
     "partOfSpeech": [
       "adjective",
       "adverb"
@@ -19136,7 +19136,7 @@
     "traditional": "時間表",
     "pinyin": "shíjiānbiǎo",
     "pinyinNumbered": "shi2 jian1 biao3",
-    "english": "time_sheet",
+    "english": "schedule; timetable",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -25492,7 +25492,7 @@
     "traditional": "應聘",
     "pinyin": "yìngpìn",
     "pinyinNumbered": "ying4 pin4",
-    "english": "to accept a job offer",
+    "english": "to apply for a job",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -27238,7 +27238,7 @@
     "traditional": "之",
     "pinyin": "zhī",
     "pinyinNumbered": "zhi1",
-    "english": "it",
+    "english": "of",
     "partOfSpeech": "particle",
     "examples": [],
     "tags": [],
@@ -28279,7 +28279,7 @@
     "traditional": "轉機",
     "pinyin": "zhuǎnjī",
     "pinyinNumbered": "zhuan3 ji1",
-    "english": "turn for better",
+    "english": "to turn for the better",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -29001,7 +29001,7 @@
     "traditional": "作為",
     "pinyin": "zuòwéi",
     "pinyinNumbered": "zuo4 wei2",
-    "english": "regard as",
+    "english": "as; in the capacity of",
     "partOfSpeech": [
       "verb",
       "preposition"
