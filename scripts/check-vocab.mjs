@@ -5,6 +5,8 @@
 //                                                         examples may be added (Example Writer)
 //   node scripts/check-vocab.mjs --changed --allow=english  only `english` may change
 //                                                         (Translation Fixer)
+//   node scripts/check-vocab.mjs --changed --allow=tags   only topic `tags` may change
+//                                                         (scripts/fill-tags.mjs)
 //
 // Exits 1 on any error. Prints a summary either way.
 import { readFileSync } from 'node:fs'
@@ -14,11 +16,12 @@ const LEVELS = [1, 2, 3, 4, 5, 6, 7] // 7 = the HSK 7–9 band (official 2026 sy
 const changedMode = process.argv.includes('--changed')
 const base = process.argv.find(a => a.startsWith('--base='))?.slice(7) ?? 'origin/main'
 const allow = process.argv.find(a => a.startsWith('--allow='))?.slice(8) ?? 'examples'
-if (!['examples', 'english'].includes(allow)) {
-  console.error(`--allow must be "examples" or "english", not "${allow}"`)
+if (!['examples', 'english', 'tags'].includes(allow)) {
+  console.error(`--allow must be "examples", "english" or "tags", not "${allow}"`)
   process.exit(2)
 }
 const MAX_ENGLISH_CHANGES = 80
+const TOPIC_IDS = new Set(JSON.parse(readFileSync('src/data/topics.json', 'utf8')).flatMap(g => g.topics.map(t => t.id)))
 
 const errors = []
 const warnings = []
@@ -65,6 +68,15 @@ function checkNewEnglish(w, en, where) {
   if (/^(n|v|adj|adv|conj|prep)\.?:/i.test(en)) fail('starts with a part-of-speech label')
 }
 
+// Topic tags: ids from src/data/topics.json, at most 3, no repeats
+function checkTags(w, tags, where) {
+  const fail = msg => errors.push(`${where} ${w.id} ${w.simplified}: ${msg}`)
+  if (!Array.isArray(tags)) return fail('tags must be an array')
+  if (tags.length > 3) fail(`at most 3 tags (has ${tags.length})`)
+  if (new Set(tags).size !== tags.length) fail(`repeated tag: ${tags.join(', ')}`)
+  for (const t of tags) if (!TOPIC_IDS.has(t)) fail(`unknown tag "${t}" (not in src/data/topics.json)`)
+}
+
 for (const level of LEVELS) {
   const path = `data/hsk${level}.json`
   const raw = readFileSync(path, 'utf8')
@@ -87,6 +99,7 @@ for (const level of LEVELS) {
     if (!w.simplified || !w.pinyin || !w.english) errors.push(`${where} ${w.id}: missing simplified/pinyin/english`)
     if (!Array.isArray(w.examples)) errors.push(`${where} ${w.id}: examples must be an array`)
     else if (w.examples.length === 0) stats.missingExamples++
+    checkTags(w, w.tags, where)
   })
 
   if (!changedMode) continue
@@ -118,6 +131,7 @@ for (const level of LEVELS) {
       checkNewEnglish(w, newVal, path)
       return
     }
+    if (allow === 'tags') return // checked for every word above
     const old = oldVal ?? []
     if (newVal.length < old.length || old.some((e, k) => JSON.stringify(e) !== JSON.stringify(newVal[k]))) {
       errors.push(`${path} ${w.id}: existing examples were edited or removed. Only append new ones`)
@@ -145,8 +159,8 @@ if (changedMode && allow === 'english' && stats.changedWords > MAX_ENGLISH_CHANG
 
 console.log(`Words: ${stats.words}. Still missing an example: ${stats.missingExamples}.`)
 if (changedMode) {
-  console.log(allow === 'english'
-    ? `Compared with ${base}: ${stats.changedWords} english fields changed.`
+  console.log(allow !== 'examples'
+    ? `Compared with ${base}: ${stats.changedWords} ${allow} fields changed.`
     : `Compared with ${base}: ${stats.changedWords} words changed, ${stats.newExamples} new examples.`)
 }
 for (const w of warnings) console.log(`warning: ${w}`)

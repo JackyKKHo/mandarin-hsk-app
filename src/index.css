@@ -225,6 +225,99 @@ button, input, select, textarea { font-family: inherit; }
 }
 .level-tab.active .level-count { background: rgba(255,255,255,0.25); }
 
+/* ── Topic filter (vocab browser) ── */
+.topic-filter {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem 0;
+}
+.topic-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.topic-toggle,
+.topic-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+.topic-toggle:hover,
+.topic-chip:hover { background: var(--hover); }
+.topic-toggle.active { border-color: var(--red); color: var(--red); }
+.topic-chip.selected { background: var(--red); border-color: var(--red); color: white; }
+.topic-chip.selected:hover { background: var(--red); filter: brightness(1.08); }
+.topic-chip-zh { color: var(--muted); font-weight: 400; }
+.topic-chip-count {
+  font-size: 0.7rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.topic-chip.selected .topic-chip-zh,
+.topic-chip.selected .topic-chip-count { color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.18); }
+.topic-chip.selected .topic-chip-zh { background: none; }
+.topic-scope {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.topic-clear {
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+.topic-clear:hover { color: var(--text); }
+.topic-panel {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem 1.25rem;
+}
+.topic-group-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+.topic-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.topic-panel-note { grid-column: 1 / -1; font-size: 0.75rem; color: var(--muted); }
+.practice-menu-note {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+@media (max-width: 640px) {
+  .topic-filter { padding: 0.75rem 1rem 0; }
+  .topic-panel { grid-template-columns: 1fr; }
+}
+
 /* ── Browser controls ── */
 .browser-controls {
   display: flex;
