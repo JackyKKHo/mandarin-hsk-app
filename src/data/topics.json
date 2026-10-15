@@ -1,0 +1,241 @@
+[
+  {
+    "label": "Food & drink",
+    "topics": [
+      {
+        "id": "fruit",
+        "label": "Fruit",
+        "zh": "水果",
+        "hint": "individual fruits and nuts, e.g. apple, banana, grape"
+      },
+      {
+        "id": "vegetables",
+        "label": "Vegetables",
+        "zh": "蔬菜",
+        "hint": "vegetables, beans, mushrooms, herbs"
+      },
+      {
+        "id": "food",
+        "label": "Food & cooking",
+        "zh": "食物",
+        "hint": "dishes, meals, staples, meat, seafood, snacks, flavours, cooking methods, kitchen items, restaurants"
+      },
+      {
+        "id": "drinks",
+        "label": "Drinks",
+        "zh": "饮料",
+        "hint": "tea, coffee, alcohol, juice, water"
+      }
+    ]
+  },
+  {
+    "label": "Everyday life",
+    "topics": [
+      {
+        "id": "home",
+        "label": "Home",
+        "zh": "家",
+        "hint": "rooms, furniture, household items, chores"
+      },
+      {
+        "id": "clothing",
+        "label": "Clothing",
+        "zh": "衣服",
+        "hint": "clothes, shoes, accessories, fabrics"
+      },
+      {
+        "id": "shopping-money",
+        "label": "Shopping & money",
+        "zh": "购物",
+        "hint": "buying, prices, payment, personal money"
+      },
+      {
+        "id": "time",
+        "label": "Time & dates",
+        "zh": "时间",
+        "hint": "days, months, clock time, frequency, past/future words"
+      },
+      {
+        "id": "numbers",
+        "label": "Numbers & measures",
+        "zh": "数字",
+        "hint": "numbers, quantities, units, measure words for counting"
+      },
+      {
+        "id": "colours-shapes",
+        "label": "Colours & shapes",
+        "zh": "颜色",
+        "hint": "colours, shapes, sizes"
+      },
+      {
+        "id": "directions",
+        "label": "Directions & position",
+        "zh": "方位",
+        "hint": "left/right, above, inside, near, compass directions"
+      }
+    ]
+  },
+  {
+    "label": "People",
+    "topics": [
+      {
+        "id": "family",
+        "label": "Family",
+        "zh": "家人",
+        "hint": "relatives, marriage, children, family events"
+      },
+      {
+        "id": "people",
+        "label": "People & relationships",
+        "zh": "人际",
+        "hint": "friends, social roles, ages, meeting people, etiquette"
+      },
+      {
+        "id": "body",
+        "label": "Body",
+        "zh": "身体",
+        "hint": "body parts, senses, physical actions of the body"
+      },
+      {
+        "id": "health",
+        "label": "Health & medicine",
+        "zh": "健康",
+        "hint": "illness, symptoms, doctors, hospitals, medicine"
+      },
+      {
+        "id": "emotions",
+        "label": "Feelings & personality",
+        "zh": "情感",
+        "hint": "emotions, moods, character traits, attitudes"
+      }
+    ]
+  },
+  {
+    "label": "Out & about",
+    "topics": [
+      {
+        "id": "places",
+        "label": "Places in town",
+        "zh": "地方",
+        "hint": "buildings, shops, public places, city, countryside"
+      },
+      {
+        "id": "transport",
+        "label": "Transport",
+        "zh": "交通",
+        "hint": "vehicles, roads, driving, stations, tickets"
+      },
+      {
+        "id": "travel",
+        "label": "Travel",
+        "zh": "旅游",
+        "hint": "tourism, hotels, luggage, passports, sightseeing"
+      },
+      {
+        "id": "countries",
+        "label": "Countries & languages",
+        "zh": "国家",
+        "hint": "countries, nationalities, languages, world geography names"
+      }
+    ]
+  },
+  {
+    "label": "Nature",
+    "topics": [
+      {
+        "id": "animals",
+        "label": "Animals",
+        "zh": "动物",
+        "hint": "animals, birds, fish, insects, pets"
+      },
+      {
+        "id": "plants",
+        "label": "Plants",
+        "zh": "植物",
+        "hint": "trees, flowers, grass, farming crops"
+      },
+      {
+        "id": "weather",
+        "label": "Weather & seasons",
+        "zh": "天气",
+        "hint": "weather, temperature, seasons, climate"
+      },
+      {
+        "id": "nature",
+        "label": "Landscape & environment",
+        "zh": "自然",
+        "hint": "mountains, rivers, sea, sky, earth, pollution, energy"
+      }
+    ]
+  },
+  {
+    "label": "Study & work",
+    "topics": [
+      {
+        "id": "school",
+        "label": "School & study",
+        "zh": "学校",
+        "hint": "classes, exams, teachers, students, subjects, studying"
+      },
+      {
+        "id": "work",
+        "label": "Work & jobs",
+        "zh": "工作",
+        "hint": "jobs, professions, offices, employment, meetings"
+      },
+      {
+        "id": "business",
+        "label": "Business & economy",
+        "zh": "经济",
+        "hint": "companies, trade, markets, finance, industry, investment"
+      },
+      {
+        "id": "technology",
+        "label": "Technology",
+        "zh": "科技",
+        "hint": "computers, phones, internet, machines, engineering"
+      },
+      {
+        "id": "science",
+        "label": "Science & maths",
+        "zh": "科学",
+        "hint": "science, research, maths, physics, chemistry, biology"
+      },
+      {
+        "id": "language",
+        "label": "Language & communication",
+        "zh": "语言",
+        "hint": "speaking, writing, reading, words, letters, media, news"
+      }
+    ]
+  },
+  {
+    "label": "Culture & society",
+    "topics": [
+      {
+        "id": "hobbies",
+        "label": "Sports & hobbies",
+        "zh": "爱好",
+        "hint": "sports, games, exercise, leisure activities"
+      },
+      {
+        "id": "arts",
+        "label": "Arts & entertainment",
+        "zh": "艺术",
+        "hint": "music, film, TV, painting, literature, performance"
+      },
+      {
+        "id": "culture",
+        "label": "History & culture",
+        "zh": "文化",
+        "hint": "history, traditions, festivals, religion, philosophy"
+      },
+      {
+        "id": "society",
+        "label": "Government & law",
+        "zh": "社会",
+        "hint": "politics, law, police, military, public policy, social issues"
+      }
+    ]
+  }
+]

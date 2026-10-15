@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
 import type { VocabItem } from '../types'
 import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
@@ -26,6 +26,7 @@ function truncate(s: string, n = 55): string {
 
 export default function QuizPage() {
   const { level } = useParams<{ level: string }>()
+  const { search } = useLocation()
   const { review } = useSRS()
   const { recordStudy } = useStreak()
   const { words: levelWords, title, backPath, loading } = usePracticeWords(level)
@@ -194,7 +195,7 @@ export default function QuizPage() {
           </div>
           <div className="complete-actions">
             <button className="btn-primary" onClick={start}>Play again</button>
-            <Link to={backPath === '/favourites' ? '/practice/favourites' : `/practice/${level}`} className="btn-secondary">Flashcards</Link>
+            <Link to={backPath === '/favourites' ? '/practice/favourites' : `/practice/${level}${search}`} className="btn-secondary">Flashcards</Link>
             <Link to={backPath} className="btn-secondary">Browse words</Link>
           </div>
           <MissedWords title="Missed words" words={wrongWords} />
