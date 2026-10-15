@@ -13331,7 +13331,7 @@
     "traditional": "河流",
     "pinyin": "héliú",
     "pinyinNumbered": "he2 liu2",
-    "english": "freshet",
+    "english": "river",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -14045,7 +14045,7 @@
     "traditional": "緩慢",
     "pinyin": "huǎnmàn",
     "pinyinNumbered": "huan3 man4",
-    "english": "largo",
+    "english": "slow; slowly",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -14399,7 +14399,7 @@
     "traditional": "貨物",
     "pinyin": "huòwù",
     "pinyinNumbered": "huo4 wu4",
-    "english": "portage",
+    "english": "goods; cargo",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -14869,7 +14869,7 @@
     "traditional": "急診",
     "pinyin": "jízhěn",
     "pinyinNumbered": "ji2 zhen3",
-    "english": "emergency call",
+    "english": "emergency room",
     "partOfSpeech": [
       "verb",
       "noun"
@@ -15080,7 +15080,7 @@
     "traditional": "紀錄片",
     "pinyin": "jìlùpiàn",
     "pinyinNumbered": "ji4 lu4 pian4",
-    "english": "newsreel",
+    "english": "documentary",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -17325,7 +17325,7 @@
     "traditional": "精神",
     "pinyin": "jīngshen",
     "pinyinNumbered": "jing1 shen0",
-    "english": "spirit",
+    "english": "spirit; energy",
     "partOfSpeech": [
       "noun",
       "adjective"
@@ -19530,7 +19530,7 @@
     "traditional": "離職",
     "pinyin": "lízhí",
     "pinyinNumbered": "li2 zhi2",
-    "english": "to retire",
+    "english": "to resign; to quit a job",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -20406,7 +20406,7 @@
     "traditional": "領域",
     "pinyin": "lǐngyù",
     "pinyinNumbered": "ling3 yu4",
-    "english": "demesne",
+    "english": "field; domain",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -20503,7 +20503,7 @@
     "traditional": "瀏覽",
     "pinyin": "liúlǎn",
     "pinyinNumbered": "liu2 lan3",
-    "english": "thumb",
+    "english": "to browse",
     "partOfSpeech": "verb",
     "examples": [
       {

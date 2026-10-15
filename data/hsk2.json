@@ -6,7 +6,7 @@
     "traditional": "啊",
     "pinyin": "a",
     "pinyinNumbered": "a0",
-    "english": "interjection expressing surprise or softening",
+    "english": "ah (softens a statement)",
     "partOfSpeech": "particle",
     "meanings": [
       {
@@ -3995,7 +3995,7 @@
     "traditional": "跑步",
     "pinyin": "pǎobù",
     "pinyinNumbered": "pao3 bu4",
-    "english": "Run",
+    "english": "to run",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -4066,7 +4066,7 @@
     "traditional": "妻子",
     "pinyin": "qīzi",
     "pinyinNumbered": "qi1 zi0",
-    "english": "frow",
+    "english": "wife",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -4889,7 +4889,7 @@
     "traditional": "踢",
     "pinyin": "tī",
     "pinyinNumbered": "ti1",
-    "english": "shin",
+    "english": "to kick",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -5062,7 +5062,7 @@
     "traditional": "外國",
     "pinyin": "wàiguó",
     "pinyinNumbered": "wai4 guo2",
-    "english": "Foreign country",
+    "english": "foreign country",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -5244,7 +5244,7 @@
     "traditional": "網上",
     "pinyin": "wǎngshang",
     "pinyinNumbered": "wang3 shang0",
-    "english": "Online",
+    "english": "online",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -5279,7 +5279,7 @@
     "traditional": "忘",
     "pinyin": "wàng",
     "pinyinNumbered": "wang4",
-    "english": "Forget",
+    "english": "to forget",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -5631,7 +5631,7 @@
     "traditional": "小時候",
     "pinyin": "xiǎoshíhou",
     "pinyinNumbered": "xiao3 shi2 hou0",
-    "english": "Childhood",
+    "english": "childhood",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -6166,7 +6166,7 @@
     "traditional": "游",
     "pinyin": "yóu",
     "pinyinNumbered": "you2",
-    "english": "Swim",
+    "english": "to swim",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -6209,7 +6209,7 @@
     "traditional": "游泳",
     "pinyin": "yóuyǒng",
     "pinyinNumbered": "you2 yong3",
-    "english": "Swim",
+    "english": "to swim",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -6516,7 +6516,7 @@
     "traditional": "丈夫",
     "pinyin": "zhàngfu",
     "pinyinNumbered": "zhang4 fu0",
-    "english": "masterman",
+    "english": "husband",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -6694,7 +6694,7 @@
     "traditional": "準備",
     "pinyin": "zhǔnbèi",
     "pinyinNumbered": "zhun3 bei4",
-    "english": "Prepare",
+    "english": "to prepare",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -6760,7 +6760,7 @@
     "traditional": "走",
     "pinyin": "zǒu",
     "pinyinNumbered": "zou3",
-    "english": "Walk",
+    "english": "to walk",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -6795,7 +6795,7 @@
     "traditional": "走路",
     "pinyin": "zǒulù",
     "pinyinNumbered": "zou3 lu4",
-    "english": "Walk",
+    "english": "to walk",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -6865,7 +6865,7 @@
     "traditional": "最",
     "pinyin": "zuì",
     "pinyinNumbered": "zui4",
-    "english": "Most",
+    "english": "most",
     "partOfSpeech": "adverb",
     "meanings": [
       {
@@ -6898,7 +6898,7 @@
     "traditional": "左",
     "pinyin": "zuǒ",
     "pinyinNumbered": "zuo3",
-    "english": "Left",
+    "english": "left",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -6933,7 +6933,7 @@
     "traditional": "左邊",
     "pinyin": "zuǒbian",
     "pinyinNumbered": "zuo3 bian0",
-    "english": "Left side",
+    "english": "left side",
     "partOfSpeech": "noun",
     "meanings": [
       {
