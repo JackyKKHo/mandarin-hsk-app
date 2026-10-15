@@ -26,9 +26,11 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 /** Three wrong answers, from the same topic where possible so the picture has to be read */
-function buildOptions(word: VocabItem, pool: VocabItem[]): VocabItem[] {
+function buildOptions(word: VocabItem, pool: VocabItem[], images: ImageMap): VocabItem[] {
   const tags = new Set(word.tags ?? [])
-  const others = pool.filter(w => w.id !== word.id && w.simplified !== word.simplified)
+  // Words sharing this photo (饭店 / 饭馆) would both be right, so they can't be wrong options
+  const src = images[word.id]?.src
+  const others = pool.filter(w => w.id !== word.id && w.simplified !== word.simplified && !(src && images[w.id]?.src === src))
   const sameTopic = shuffle(others.filter(w => w.tags?.some(t => tags.has(t))))
   const rest = shuffle(others.filter(w => !w.tags?.some(t => tags.has(t))))
   const picked: VocabItem[] = []
@@ -124,7 +126,7 @@ export default function PicturePage() {
     setTyped('')
     setResult(null)
     // Distractors come from every word in the deck, not only pictured ones
-    setOptions(buildOptions(w, words))
+    setOptions(buildOptions(w, words, images))
     setStage('question')
   }
 
@@ -146,7 +148,11 @@ export default function PicturePage() {
   function submitTyped(e?: React.FormEvent) {
     e?.preventDefault()
     if (stage !== 'question' || !typed.trim()) return
-    finish(matchAnswer(typed, word))
+    // Any word shown with this same photo is accepted too
+    const src = images[word.id]?.src
+    const accepted = [word, ...words.filter(w => w.id !== word.id && src && images[w.id]?.src === src)]
+    const results = accepted.map(w => matchAnswer(typed, w))
+    finish(results.includes('exact') ? 'exact' : results.includes('toneless') ? 'toneless' : 'wrong')
   }
 
   function next() {
