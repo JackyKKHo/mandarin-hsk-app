@@ -7,6 +7,7 @@
 //   node scripts/fill-images.mjs --word=苹果      one word, prints what it picked (for testing)
 //   node scripts/fill-images.mjs --limit=200     stop after 200 words (it resumes where it left off)
 //   node scripts/fill-images.mjs --redo          look again at words already decided
+//   node scripts/fill-images.mjs --review        only rebuild scripts/images-review.html
 //
 // Every run also writes scripts/images-review.html: open it, scan the pictures, and for any
 // that are wrong set that word's entry in data/images.json to null. null means "no picture,
@@ -20,6 +21,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
 const imagesPath = join(root, 'data/images.json')
 const reviewPath = join(__dirname, 'images-review.html')
+// Markdown table of this run's new photos (GitHub renders the images), for PRs / run summaries
+const newPhotosPath = join(__dirname, 'images-new.md')
 const LEVELS = [1, 2, 3, 4, 5, 6, 7]
 const THUMB_WIDTH = 640
 const CONCURRENCY = 4
@@ -101,7 +104,28 @@ figure{margin:0}img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8
 <h1>${cards.length} pictures</h1><p>Wrong picture? Set that id to <code>null</code> in data/images.json.</p><div>${cards.join('')}</div>`, 'utf8')
 }
 
+function allWords() {
+  return LEVELS.flatMap(level => JSON.parse(readFileSync(join(root, `data/hsk${level}.json`), 'utf8')))
+}
+
+function writeNewPhotos(ids, words) {
+  const byId = new Map(words.map(w => [w.id, w]))
+  const cell = s => String(s ?? '').replace(/\|/g, '/')
+  const rows = ids.slice(0, 80).map(id => {
+    const w = byId.get(id)
+    const v = images[id]
+    return `| ${cell(w?.simplified)} | ${cell(w?.english)} | <img src="${v.src}" width="140"> | [${cell(v.license)}](${v.page}) |`
+  })
+  const more = ids.length > 80 ? `\n…and ${ids.length - 80} more (see data/images.json).` : ''
+  writeFileSync(newPhotosPath, `### ${ids.length} new photos\n\nWrong one? Set that word to \`null\` in data/images.json.\n\n| Word | Meaning | Photo | Licence |\n|---|---|---|---|\n${rows.join('\n')}${more}\n`, 'utf8')
+}
+
 const images = loadImages()
+if (args.includes('--review')) {
+  writeReview(images, allWords())
+  console.log('Wrote scripts/images-review.html')
+  process.exit(0)
+}
 const todo = candidates(images).slice(0, limit)
 if (!todo.length) {
   console.log(onlyWord ? `No word "${onlyWord}" found.` : 'Nothing to do. (No tagged nouns? Run fill-tags.mjs first, or use --nouns.)')
@@ -110,6 +134,7 @@ if (!todo.length) {
 }
 
 let found = 0
+const newIds = []
 let done = 0
 const skipped = []
 let next = 0
@@ -118,7 +143,7 @@ async function worker() {
     const w = todo[next++]
     try {
       const result = await findImage(w)
-      if (result.src) { images[w.id] = result; found++ }
+      if (result.src) { images[w.id] = result; found++; newIds.push(w.id) }
       else { images[w.id] = null; skipped.push(`${w.simplified} (${w.english}): ${result.reason}`) }
       if (onlyWord) console.log(result)
     } catch (e) {
@@ -131,9 +156,9 @@ await Promise.all(Array.from({ length: CONCURRENCY }, worker))
 
 if (todo.length) {
   saveImages(images)
-  const all = []
-  for (const level of LEVELS) all.push(...JSON.parse(readFileSync(join(root, `data/hsk${level}.json`), 'utf8')))
+  const all = allWords()
   writeReview(images, all)
+  if (newIds.length) writeNewPhotos(newIds, all)
   console.log(`\nDone: ${found} new pictures, ${skipped.length} words without one.`)
   console.log(`Total in data/images.json: ${Object.values(images).filter(Boolean).length}.`)
   console.log(`Check them: open scripts/images-review.html`)
