@@ -6,25 +6,29 @@
         "id": "fruit",
         "label": "Fruit",
         "zh": "水果",
-        "hint": "individual fruits and nuts, e.g. apple, banana, grape"
+        "hint": "individual fruits and nuts, e.g. apple, banana, grape",
+        "pictures": true
       },
       {
         "id": "vegetables",
         "label": "Vegetables",
         "zh": "蔬菜",
-        "hint": "vegetables, beans, mushrooms, herbs"
+        "hint": "vegetables, beans, mushrooms, herbs",
+        "pictures": true
       },
       {
         "id": "food",
         "label": "Food & cooking",
         "zh": "食物",
-        "hint": "dishes, meals, staples, meat, seafood, snacks, flavours, cooking methods, kitchen items, restaurants"
+        "hint": "dishes, meals, staples, meat, seafood, snacks, flavours, cooking methods, kitchen items, restaurants",
+        "pictures": true
       },
       {
         "id": "drinks",
         "label": "Drinks",
         "zh": "饮料",
-        "hint": "tea, coffee, alcohol, juice, water"
+        "hint": "tea, coffee, alcohol, juice, water",
+        "pictures": true
       }
     ]
   },
@@ -35,13 +39,15 @@
         "id": "home",
         "label": "Home",
         "zh": "家",
-        "hint": "rooms, furniture, household items, chores"
+        "hint": "rooms, furniture, household items, chores",
+        "pictures": true
       },
       {
         "id": "clothing",
         "label": "Clothing",
         "zh": "衣服",
-        "hint": "clothes, shoes, accessories, fabrics"
+        "hint": "clothes, shoes, accessories, fabrics",
+        "pictures": true
       },
       {
         "id": "shopping-money",
@@ -65,7 +71,8 @@
         "id": "colours-shapes",
         "label": "Colours & shapes",
         "zh": "颜色",
-        "hint": "colours, shapes, sizes"
+        "hint": "colours, shapes, sizes",
+        "pictures": true
       },
       {
         "id": "directions",
@@ -94,7 +101,8 @@
         "id": "body",
         "label": "Body",
         "zh": "身体",
-        "hint": "body parts, senses, physical actions of the body"
+        "hint": "body parts, senses, physical actions of the body",
+        "pictures": true
       },
       {
         "id": "health",
@@ -117,13 +125,15 @@
         "id": "places",
         "label": "Places in town",
         "zh": "地方",
-        "hint": "buildings, shops, public places, city, countryside"
+        "hint": "buildings, shops, public places, city, countryside",
+        "pictures": true
       },
       {
         "id": "transport",
         "label": "Transport",
         "zh": "交通",
-        "hint": "vehicles, roads, driving, stations, tickets"
+        "hint": "vehicles, roads, driving, stations, tickets",
+        "pictures": true
       },
       {
         "id": "travel",
@@ -146,25 +156,29 @@
         "id": "animals",
         "label": "Animals",
         "zh": "动物",
-        "hint": "animals, birds, fish, insects, pets"
+        "hint": "animals, birds, fish, insects, pets",
+        "pictures": true
       },
       {
         "id": "plants",
         "label": "Plants",
         "zh": "植物",
-        "hint": "trees, flowers, grass, farming crops"
+        "hint": "trees, flowers, grass, farming crops",
+        "pictures": true
       },
       {
         "id": "weather",
         "label": "Weather & seasons",
         "zh": "天气",
-        "hint": "weather, temperature, seasons, climate"
+        "hint": "weather, temperature, seasons, climate",
+        "pictures": true
       },
       {
         "id": "nature",
         "label": "Landscape & environment",
         "zh": "自然",
-        "hint": "mountains, rivers, sea, sky, earth, pollution, energy"
+        "hint": "mountains, rivers, sea, sky, earth, pollution, energy",
+        "pictures": true
       }
     ]
   },
@@ -193,7 +207,8 @@
         "id": "technology",
         "label": "Technology",
         "zh": "科技",
-        "hint": "computers, phones, internet, machines, engineering"
+        "hint": "computers, phones, internet, machines, engineering",
+        "pictures": true
       },
       {
         "id": "science",
@@ -216,7 +231,8 @@
         "id": "hobbies",
         "label": "Sports & hobbies",
         "zh": "爱好",
-        "hint": "sports, games, exercise, leisure activities"
+        "hint": "sports, games, exercise, leisure activities",
+        "pictures": true
       },
       {
         "id": "arts",

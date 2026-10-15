@@ -5,3 +5,5 @@ dist/
 .env
 .vercel
 .env*.local
+scripts/images-review.html
+scripts/images-new.md

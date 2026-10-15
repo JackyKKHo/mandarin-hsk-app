@@ -21,6 +21,7 @@
 - `src/data/idMap2026.json` maps pre-2026 word ids to new ones; `src/lib/migrateVocab2026.ts` translates saved progress on each device once. Supabase rows still hold old ids.
 - All words have: `simplified`, `traditional`, `pinyin` (official), `pinyinNumbered`, `english`, `partOfSpeech` (from the official list), `examples`
 - `data/grammar.json` — grammar reference
+- `data/images.json` — word id → openly licensed Wikimedia Commons photo (`src`, `page`, `author`, `license`, `wikidata`) for the picture quiz; `null` = no picture, never retried. Loaded on demand via `src/data/images.ts`. Credit is shown under every photo — keep it.
 
 ### Pages
 | Route | Page |
@@ -33,6 +34,7 @@
 | `/write/:level` | Stroke order writing practice |
 | `/listen/:level` | Listening comprehension |
 | `/fill/:level` | Fill in the blank |
+| `/picture/:level` | Picture quiz: photo → Chinese, multiple choice or typed (characters or pinyin); `level` can be `all`, takes `?topics=` |
 | `/pronunciation` | Pronunciation guide (tones, initials, finals) |
 | `/review` | SRS due-card review (self-rated flashcards: Again / Good / Easy) |
 | `/grammar/:level` | Grammar list by level |
@@ -109,6 +111,7 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 | `node scripts/generate-examples.mjs [level]` | Generate example sentences for a level |
 | `node scripts/fill-tags.mjs` | Submit Anthropic batch to tag words with topics (`tags`, ids from `src/data/topics.json`); `--all` re-tags everything, `--level=N` one level |
 | `node scripts/fill-tags.mjs --status` / `--apply` | Check the tagging batch / write results, then `check-vocab.mjs --changed --allow=tags` |
+| `node scripts/fill-images.mjs` | Find photos (Wikidata → Commons, PD/CC0/CC BY/CC BY-SA only) for nouns in picture topics; `--nouns`, `--level=N`, `--word=苹果`, `--limit=N`, `--redo`, `--review`. Writes `scripts/images-review.html` to eyeball results. Runs weekly on GitHub Actions (`.github/workflows/picture-quiz-photos.yml`), which opens a PR with new photos |
 | `node scripts/check-vocab.mjs [--changed]` | Validate vocab files; `--changed` compares with origin/main and allows only new, well-formed examples |
 
 ---
@@ -119,7 +122,7 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 - [ ] **`examples`** — 4,798 words have none after the 2026 migration (785 in HSK 1–6, 4,013 in HSK 7–9); the Example Writer agent adds ~150/week, lowest level first (see `agents/`)
 - [ ] **`explanation`** — empty for the 1,245 words new in the 2026 list
 - [x] **`partOfSpeech`** — 100% filled across all levels
-- [ ] **`tags`** (topics) — empty until `scripts/fill-tags.mjs` is run; the browser hides the topic filter until words have tags
+- [x] **`tags`** (topics) — 5,555 of 11,000 words tagged (grammar/abstract words have none); re-run `scripts/fill-tags.mjs` only for new words
 - [x] **Bundle size** — lazy-loaded per level via `vocabLoader.ts` dynamic imports
 - [x] **SRS "again" re-queue** — cards loop back within the same session
 - [x] **Lin Wei error UI** — 429/errors shown as chat messages

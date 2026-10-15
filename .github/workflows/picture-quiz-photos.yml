@@ -1,0 +1,67 @@
+# Finds openly licensed photos for the picture quiz (scripts/fill-images.mjs) and saves them
+# to data/images.json. Runs on GitHub's servers, which can reach Wikidata and Wikimedia Commons.
+#
+# - Every Monday on main: looks up words that don't have a decision yet (new or newly tagged
+#   words) and opens a pull request with any new photos, so nothing goes live unreviewed.
+# - On a feature branch that changes the picture script: fills that branch directly.
+# - Run it by hand from the Actions tab ("Run workflow").
+name: Picture quiz photos
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+  push:
+    branches-ignore: [main]
+    paths:
+      - scripts/fill-images.mjs
+      - scripts/_imagePick.mjs
+      - .github/workflows/picture-quiz-photos.yml
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: picture-quiz-photos-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Find photos
+        run: |
+          node scripts/fill-images.mjs | tee fill-images.log
+          if [ -f scripts/images-new.md ]; then cat scripts/images-new.md >> "$GITHUB_STEP_SUMMARY"; fi
+
+      - name: Save results
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data/images.json; then
+            echo "No new photos."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          summary=$(grep -E '^(Done|Total)' fill-images.log | tr '\n' ' ')
+          if [ "$GITHUB_REF_NAME" = "main" ]; then
+            branch="bot/picture-photos-$(date +%Y%m%d)"
+            git switch -c "$branch"
+            git commit -am "Picture quiz: new photos ($summary)"
+            git push -u origin "$branch"
+            gh pr create --base main --head "$branch" \
+              --title "Picture quiz: new photos $(date +%Y-%m-%d)" \
+              --body-file scripts/images-new.md \
+              || echo "Couldn't open a PR (allow Actions to create pull requests in repo Settings → Actions). Branch pushed: $branch"
+          else
+            git commit -am "Picture quiz: photos ($summary)"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi

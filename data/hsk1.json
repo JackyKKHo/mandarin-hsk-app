@@ -25,7 +25,9 @@
         "english": "I love my family."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -58,7 +60,9 @@
         "english": "I have eight apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -91,7 +95,9 @@
         "english": "My dad is very tall."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -157,7 +163,9 @@
         "english": "I work during the daytime and rest in the evening."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -190,7 +198,9 @@
         "english": "This piece of clothing costs one hundred yuan."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -226,7 +236,9 @@
         "english": "I ate half an apple."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -259,7 +271,9 @@
         "english": "I like to eat steamed buns."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -292,7 +306,10 @@
         "english": "I like this tumbler."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -325,7 +342,9 @@
         "english": "This book is very interesting."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -361,7 +380,9 @@
         "english": "My home is on the edge of the city."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -397,7 +418,9 @@
         "english": "I got sick yesterday, so I didn't go to work."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -463,7 +486,9 @@
         "english": "Thank you for your help. You're welcome, it's what I should do."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -529,7 +554,10 @@
         "english": "I like to eat green vegetables."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food",
+      "vegetables"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -562,7 +590,9 @@
         "english": "I like to drink tea."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -595,7 +625,10 @@
         "english": "The little bird is singing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts",
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -628,7 +661,10 @@
         "english": "I go to the supermarket to buy groceries every week."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -661,7 +697,9 @@
         "english": "My car is very new."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -694,7 +732,9 @@
         "english": "I eat breakfast every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -727,7 +767,9 @@
         "english": "I take a taxi to work every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -760,7 +802,9 @@
         "english": "I wore a blue shirt."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -793,7 +837,10 @@
         "english": "I call my mom every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology",
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -859,7 +906,9 @@
         "english": "Everyone likes the food at this restaurant."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -892,7 +941,9 @@
         "english": "I want to study at Peking University."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -925,7 +976,9 @@
         "english": "He is a university student."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1057,7 +1110,9 @@
         "english": "This is my younger brother."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1093,7 +1148,9 @@
         "english": "It's almost three o'clock now."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1126,7 +1183,10 @@
         "english": "I like to go to that coffee shop."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1159,7 +1219,9 @@
         "english": "I need to make a phone call."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1192,7 +1254,9 @@
         "english": "I have a computer."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1225,7 +1289,10 @@
         "english": "I like to watch TV."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology",
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1258,7 +1325,9 @@
         "english": "I like to watch movies."
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1291,7 +1360,10 @@
         "english": "I want to go to the cinema to watch a movie."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1390,7 +1462,10 @@
         "english": "I read books every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1423,7 +1498,9 @@
         "english": "I like to read."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1494,7 +1571,9 @@
         "english": "I'm late, I'm sorry."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1566,7 +1645,9 @@
         "english": "How much is this apple?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1599,7 +1680,9 @@
         "english": "This is my son."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1632,7 +1715,9 @@
         "english": "I have two apples, do you want one?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1665,7 +1750,9 @@
         "english": "I like to eat rice."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1698,7 +1785,10 @@
         "english": "I like to eat at this restaurant."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1731,7 +1821,9 @@
         "english": "This is my apartment."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1797,7 +1889,9 @@
         "english": "I want to take a plane to Beijing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1834,7 +1928,10 @@
         "english": "This apple is divided into two parts."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time",
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1867,7 +1964,9 @@
         "english": "Wait for me five minutes, I'll be right there."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1900,7 +1999,9 @@
         "english": "I'm very glad to see you."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1933,7 +2034,9 @@
         "english": "I like to sing songs."
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1966,7 +2069,9 @@
         "english": "This is my big brother."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1999,7 +2104,9 @@
         "english": "I have one apple."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2068,7 +2175,10 @@
         "english": "I work at a big company."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work",
+      "business"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2104,7 +2214,9 @@
         "english": "I have to go to work every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2137,7 +2249,9 @@
         "english": "My dog really likes to play with a ball."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2170,7 +2284,9 @@
         "english": "This phone is very expensive."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2203,7 +2319,9 @@
         "english": "Guo is my surname."
       }
     ],
-    "tags": [],
+    "tags": [
+      "countries"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2269,7 +2387,9 @@
         "english": "This kid is very smart."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2302,7 +2422,9 @@
         "english": "I like to study Chinese language."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2335,7 +2457,9 @@
         "english": "I like learning Chinese characters."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2405,7 +2529,9 @@
         "english": "This apple is very delicious."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2471,7 +2597,9 @@
         "english": "This music is very pleasant to listen to."
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2504,7 +2632,9 @@
         "english": "This game is really fun!"
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2540,7 +2670,9 @@
         "english": "My phone number is 13812345678."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2573,7 +2705,9 @@
         "english": "I drink water."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2675,7 +2809,10 @@
         "english": "I sit behind him."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2785,7 +2922,9 @@
         "english": "I like to take the train."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2818,7 +2957,9 @@
         "english": "I ate an egg this morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2854,7 +2995,9 @@
         "english": "How many friends do you have?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2891,7 +3034,10 @@
         "english": "My family is very large."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2924,7 +3070,9 @@
         "english": "My family members are all very well."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2990,7 +3138,9 @@
         "english": "I received a package."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3023,7 +3173,9 @@
         "english": "Mom made a lot of dumplings today, and I ate ten of them."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3100,7 +3252,9 @@
         "english": "My older sister is in Beijing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3133,7 +3287,9 @@
         "english": "The weather is very nice this year."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3166,7 +3322,9 @@
         "english": "The weather is very nice today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3199,7 +3357,9 @@
         "english": "I have nine apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3306,7 +3466,9 @@
         "english": "I drive to work every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3380,7 +3542,9 @@
         "english": "I need to go to the hospital to see a doctor today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3482,7 +3646,9 @@
         "english": "I like math class."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3518,7 +3684,9 @@
         "english": "I have one mouth."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3551,7 +3719,10 @@
         "english": "I have a piece of chocolate."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers",
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3617,7 +3788,9 @@
         "english": "My teacher is very nice."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3683,7 +3856,9 @@
         "english": "The weather is very cold today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3716,7 +3891,9 @@
         "english": "My book is in the bag."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3749,7 +3926,9 @@
         "english": "I have two apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3782,7 +3961,9 @@
         "english": "The temperature is five degrees below zero."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3815,7 +3996,9 @@
         "english": "I have six apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3848,7 +4031,9 @@
         "english": "I love my mummy."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3914,7 +4099,9 @@
         "english": "I'm going to buy vegetables."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3947,7 +4134,9 @@
         "english": "My mom sells fruit at the market."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4016,7 +4205,9 @@
         "english": "I have a black cat at home."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4140,7 +4331,9 @@
         "english": "This is my little sister."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4206,7 +4399,9 @@
         "english": "I like to eat rice."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4239,7 +4434,9 @@
         "english": "I like to eat buns."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4272,7 +4469,9 @@
         "english": "I like to eat noodles."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4305,7 +4504,9 @@
         "english": "Next year I want to go to China."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4338,7 +4539,9 @@
         "english": "Tomorrow we will go to the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4371,7 +4574,9 @@
         "english": "What is your name?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4748,7 +4953,9 @@
         "english": "This is a boy."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4781,7 +4988,9 @@
         "english": "This is my boyfriend."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4903,7 +5112,9 @@
         "english": "Hello, nice to meet you."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4935,7 +5146,9 @@
         "english": "Hello, you all!"
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4971,7 +5184,9 @@
         "english": "I am twenty years old this year."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5037,7 +5252,9 @@
         "english": "I drink milk every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5070,7 +5287,9 @@
         "english": "This is a girl."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5103,7 +5322,9 @@
         "english": "This is my daughter."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5136,7 +5357,9 @@
         "english": "This is my girlfriend."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5159,7 +5382,9 @@
         "english": "This lady is my English teacher."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5192,7 +5417,9 @@
         "english": "He is my good friend."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5215,7 +5442,9 @@
         "english": "This piece of clothing is very cheap."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5280,7 +5509,9 @@
         "english": "Mom made a delicious dish with mincemeat."
       }
     ],
-    "tags": [],
+    "tags": [
+      "fruit"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5313,7 +5544,9 @@
         "english": "I have seven apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5346,7 +5579,10 @@
         "english": "I get up at seven o'clock every morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time",
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5379,7 +5615,9 @@
         "english": "This piece of clothing will cost one thousand yuan."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5412,7 +5650,9 @@
         "english": "I sit in front of you."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5445,7 +5685,9 @@
         "english": "I have some money."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5478,7 +5720,9 @@
         "english": "Please sit down."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5511,7 +5755,9 @@
         "english": "Excuse me, where is the bathroom?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5577,7 +5823,9 @@
         "english": "Last year I went to Beijing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5610,7 +5858,9 @@
         "english": "The weather is very hot today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5643,7 +5893,9 @@
         "english": "This is a person."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5684,7 +5936,9 @@
         "english": "I know him."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5720,7 +5974,9 @@
         "english": "Today is Monday, we have to go to work."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5753,7 +6009,9 @@
         "english": "I have three apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5786,7 +6044,10 @@
         "english": "I like to buy things at that store."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5830,7 +6091,9 @@
         "english": "The book is on the desk."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5863,7 +6126,9 @@
         "english": "I start work at 8 o'clock every morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5896,7 +6161,9 @@
         "english": "I attend class at eight o'clock every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5929,7 +6196,9 @@
         "english": "I have class in the morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5962,7 +6231,9 @@
         "english": "I have to attend school every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6031,7 +6302,9 @@
         "english": "Who are you?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6097,7 +6370,9 @@
         "english": "I came down with an illness yesterday, so I didn't go to work."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6130,7 +6405,9 @@
         "english": "I have ten apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6163,7 +6440,9 @@
         "english": "When I was little, I really liked to play."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6196,7 +6475,9 @@
         "english": "I don't have time right now."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6295,7 +6576,9 @@
         "english": "My cell phone is here."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6328,7 +6611,10 @@
         "english": "This is a very good book."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6361,7 +6647,10 @@
         "english": "I like to go to the bookstore to buy books."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6394,7 +6683,9 @@
         "english": "I drink water."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6427,7 +6718,9 @@
         "english": "I like to eat fruit."
       }
     ],
-    "tags": [],
+    "tags": [
+      "fruit"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6460,7 +6753,9 @@
         "english": "I sleep eight hours every night."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6493,7 +6788,9 @@
         "english": "I'm very tired, I need to go to bed now."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6526,7 +6823,9 @@
         "english": "I want to say hello to you."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6559,7 +6858,9 @@
         "english": "He likes to talk."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6592,7 +6893,9 @@
         "english": "I have four apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6625,7 +6928,10 @@
         "english": "I am twenty years old this year."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time",
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6856,7 +7162,9 @@
         "english": "This apple is too sweet."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6900,7 +7208,10 @@
         "english": "The weather is very nice today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time",
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6933,7 +7244,9 @@
         "english": "The weather is very nice today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7032,7 +7345,10 @@
         "english": "My classmate is called Li Ming."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7065,7 +7381,9 @@
         "english": "I'm waiting for you outside."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7098,7 +7416,9 @@
         "english": "It's raining outside, so we're playing at home."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7121,7 +7441,9 @@
         "english": "The children are playing in the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7186,7 +7508,10 @@
         "english": "Let's eat dinner together."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7219,7 +7544,9 @@
         "english": "I like to watch TV in the evening."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7252,7 +7579,9 @@
         "english": "Hello! Are you Li Ming?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7326,7 +7655,9 @@
         "english": "This problem is very simple, I can help you."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7425,7 +7756,9 @@
         "english": "I have five apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7458,7 +7791,10 @@
         "english": "I eat lunch at twelve o'clock every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7491,7 +7827,9 @@
         "english": "I like to eat apples."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7528,7 +7866,9 @@
         "english": "Under the teacher's guidance, we learned new Chinese characters."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7561,7 +7901,9 @@
         "english": "It's raining today, so we can't go to the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7594,7 +7936,9 @@
         "english": "I get off work at five o'clock."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7627,7 +7971,9 @@
         "english": "Class is over, let's go play together."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7660,7 +8006,9 @@
         "english": "In the afternoon, we'll go to the park together to play."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7693,7 +8041,9 @@
         "english": "I went to see a Chinese medicine doctor."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7726,7 +8076,9 @@
         "english": "What time is it now?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7828,7 +8180,10 @@
         "english": "Hello, child!"
       }
     ],
-    "tags": [],
+    "tags": [
+      "people",
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7861,7 +8216,9 @@
         "english": "I study for two hours every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7894,7 +8251,9 @@
         "english": "My younger sister studies at primary school."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7927,7 +8286,9 @@
         "english": "I am a primary pupil, and I really like going to school."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7983,7 +8344,10 @@
         "english": "I write in my diary every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language",
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8016,7 +8380,9 @@
         "english": "Thank you for your help."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8082,7 +8448,9 @@
         "english": "On Sunday I like to play with friends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8115,7 +8483,9 @@
         "english": "On Sunday, I go to the park with my family."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8148,7 +8518,9 @@
         "english": "On Sunday, I like to go to the park with my family."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8214,7 +8586,9 @@
         "english": "I study English every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8247,7 +8621,9 @@
         "english": "I am a student."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8280,7 +8656,9 @@
         "english": "I study Chinese every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8313,7 +8691,10 @@
         "english": "I go to school every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8346,7 +8727,9 @@
         "english": "It snowed yesterday, and it's very cold outside today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8453,7 +8836,9 @@
         "english": "I have one apple."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8486,7 +8871,9 @@
         "english": "My clothes are very beautiful."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8519,7 +8906,10 @@
         "english": "My father is a doctor."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health",
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8552,7 +8942,10 @@
         "english": "I went to the hospital to see a doctor."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8585,7 +8978,9 @@
         "english": "Half of this apple is red."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8643,7 +9038,9 @@
         "english": "Please sit on the chair."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8885,7 +9282,9 @@
         "english": "It rained today, and I don't want to go out."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8918,7 +9317,10 @@
         "english": "This apple costs three yuan, five yuan per catty."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money",
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8951,7 +9353,9 @@
         "english": "The moon tonight is very beautiful."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9054,7 +9458,9 @@
         "english": "Okay, see you tomorrow. Goodbye!"
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9120,7 +9526,10 @@
         "english": "I eat breakfast every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9153,7 +9562,9 @@
         "english": "I drink coffee in the early morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9316,7 +9727,9 @@
         "english": "Please sit on this side."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9371,7 +9784,9 @@
         "english": "This place is very quiet."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9595,7 +10010,9 @@
         "english": "I come from China."
       }
     ],
-    "tags": [],
+    "tags": [
+      "countries"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9628,7 +10045,10 @@
         "english": "I study Chinese."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language",
+      "countries"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9661,7 +10081,9 @@
         "english": "I eat lunch at noon."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9694,7 +10116,9 @@
         "english": "My older brother is studying at middle school."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9727,7 +10151,9 @@
         "english": "He is a middle-school student and has to go to school every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9760,7 +10186,9 @@
         "english": "I live in Beijing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9793,7 +10221,9 @@
         "english": "This is a table."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9826,7 +10256,9 @@
         "english": "This character is very difficult to write."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9859,7 +10291,9 @@
         "english": "Yesterday I ate very delicious food."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9958,7 +10392,10 @@
         "english": "My mom cooks in the kitchen every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food",
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
