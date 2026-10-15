@@ -119,7 +119,7 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 - [ ] **`examples`** — 4,798 words have none after the 2026 migration (785 in HSK 1–6, 4,013 in HSK 7–9); the Example Writer agent adds ~150/week, lowest level first (see `agents/`)
 - [ ] **`explanation`** — empty for the 1,245 words new in the 2026 list
 - [x] **`partOfSpeech`** — 100% filled across all levels
-- [ ] **`tags`** (topics) — empty until `scripts/fill-tags.mjs` is run; the browser hides the topic filter until words have tags
+- [x] **`tags`** (topics) — 5,555 of 11,000 words tagged (grammar/abstract words have none); re-run `scripts/fill-tags.mjs` only for new words
 - [x] **Bundle size** — lazy-loaded per level via `vocabLoader.ts` dynamic imports
 - [x] **SRS "again" re-queue** — cards loop back within the same session
 - [x] **Lin Wei error UI** — 429/errors shown as chat messages

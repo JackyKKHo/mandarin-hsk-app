@@ -15,7 +15,10 @@
         "english": "My aunt works in Beijing, and she is a doctor."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family",
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -38,7 +41,9 @@
         "english": "He is short in stature, but he is very smart and has the best academic performance in the class."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -71,7 +76,9 @@
         "english": "My spouse works in Beijing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -104,7 +111,9 @@
         "english": "Mom's singing lulled the baby to sleep."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -137,7 +146,9 @@
         "english": "Wearing a seatbelt in the car is very safe."
       }
     ],
-    "tags": [],
+    "tags": [
+      "society"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -206,7 +217,9 @@
         "english": "He only mechanically copied other people's ideas without any creativity of his own."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -239,7 +252,9 @@
         "english": "Our class has thirty students, and everyone is very friendly."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -272,7 +287,9 @@
         "english": "We are going to move house to a new apartment next month."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -371,7 +388,10 @@
         "english": "My office is on the third floor."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -404,7 +424,9 @@
         "english": "We didn't see him for half the day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -470,7 +492,9 @@
         "english": "This meal is delicious, and I ate until I was very full."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -503,7 +527,9 @@
         "english": "I read the newspaper every morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -536,7 +562,9 @@
         "english": "My home is in the north."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -569,7 +597,9 @@
         "english": "My home is in the north, and it's very cold in winter."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -635,7 +665,9 @@
         "english": "I took a lot of notes during class."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -705,7 +737,9 @@
         "english": "I bought a new notebook to record my daily plans."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -774,7 +808,9 @@
         "english": "There's a soccer match tomorrow. Do you want to go watch it?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -873,7 +909,9 @@
         "english": "I cleaned the room once."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -975,7 +1013,9 @@
         "english": "I watched a wonderful dance performance last night."
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1064,7 +1104,10 @@
         "english": "We stayed at a guesthouse in the city center for three days, and the staff there were very friendly."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1090,7 +1133,9 @@
         "english": "It's very refreshing to drink ice water in summer."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1113,7 +1158,9 @@
         "english": "Eating ice cream in summer is the most refreshing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1135,7 +1182,9 @@
         "english": "I put the leftover food in the fridge, and I can continue eating it tomorrow."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1168,7 +1217,9 @@
         "english": "The doctor is examining the patient."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1433,7 +1484,9 @@
         "english": "Please give me a menu."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1466,7 +1519,9 @@
         "english": "I want to join your party."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1499,7 +1554,9 @@
         "english": "That female sheep gave birth to two lambs."
       }
     ],
-    "tags": [],
+    "tags": [
+      "plants"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1532,7 +1589,9 @@
         "english": "We had a picnic on the lawn."
       }
     ],
-    "tags": [],
+    "tags": [
+      "plants"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1565,7 +1624,9 @@
         "english": "This building has twenty floors."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1693,7 +1754,9 @@
         "english": "I've tasted the new dishes at this restaurant, and they really taste quite good."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1858,7 +1921,9 @@
         "english": "This blue shirt suits you very well."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1891,7 +1956,9 @@
         "english": "My math grade is very good."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1924,7 +1991,9 @@
         "english": "I like living in the city because there are many interesting things to do there."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1947,7 +2016,10 @@
         "english": "I was late yesterday because of traffic, and my boss was very angry."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1980,7 +2052,9 @@
         "english": "We will depart tomorrow morning at 8 o'clock to go traveling."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2013,7 +2087,9 @@
         "english": "My younger sister was born last year."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2046,7 +2122,9 @@
         "english": "My dad is leaving the hospital tomorrow, and we are all very happy."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2079,7 +2157,9 @@
         "english": "My younger brother started junior high school this year, and he is very happy."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2145,7 +2225,9 @@
         "english": "We're taking a boat to go traveling."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2178,7 +2260,10 @@
         "english": "Spring has arrived, and the weather has become warmer."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2211,7 +2296,10 @@
         "english": "I use a dictionary to learn new words every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language",
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2234,7 +2322,9 @@
         "english": "Although she is very intelligent, she has never been arrogant, which is what I admire most about her."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2257,7 +2347,9 @@
         "english": "Every weekend, I clean my own room."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2363,7 +2455,9 @@
         "english": "My mother is a very good grownup."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2396,7 +2490,9 @@
         "english": "These two apples are about the same size."
       }
     ],
-    "tags": [],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2419,7 +2515,9 @@
         "english": "The giant panda is China's national treasure, and many tourists come to the zoo to see them every year."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2452,7 +2550,9 @@
         "english": "Winter is very cold, so I put on a thick overcoat."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2519,7 +2619,9 @@
         "english": "I'm worried about tomorrow's exam because I haven't prepared enough."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2542,7 +2644,9 @@
         "english": "This cake looks very appetizing, but I'm worried it might be too sweet."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2710,7 +2814,9 @@
         "english": "He scored the highest in the competition and won the match."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2798,7 +2904,9 @@
         "english": "In the evening, I turn on the lamp to read."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2821,7 +2929,9 @@
         "english": "This plot of land is planted full of corn."
       }
     ],
-    "tags": [],
+    "tags": [
+      "nature"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2853,7 +2963,9 @@
         "english": "Where should we meet?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2886,7 +2998,9 @@
         "english": "I like this place."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2919,7 +3033,10 @@
         "english": "This is a map of China."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel",
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2955,7 +3072,10 @@
         "english": "This room has no electricity."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology",
+      "science"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2978,7 +3098,10 @@
         "english": "The elevator in this building breaks down often, so I have to climb the stairs every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3001,7 +3124,10 @@
         "english": "I like reading e-books on my phone."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology",
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3056,7 +3182,9 @@
         "english": "My home is on the east side of the city."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3089,7 +3217,9 @@
         "english": "My friend is from Northeast China, and he speaks in a very interesting way."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3122,7 +3252,9 @@
         "english": "The sun rises from the east."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3155,7 +3287,9 @@
         "english": "My home is in the southeastern direction of the city."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3188,7 +3322,10 @@
         "english": "In winter, I like to drink hot tea."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3254,7 +3391,9 @@
         "english": "I like to watch animals, especially kittens."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3287,7 +3426,10 @@
         "english": "Last weekend, my family and I went to the zoo."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3320,7 +3462,9 @@
         "english": "These pants are too short; I can't wear them."
       }
     ],
-    "tags": [],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3353,7 +3497,9 @@
         "english": "In summer the weather is very hot, and I like to wear short pants."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3386,7 +3532,9 @@
         "english": "I've been very busy during this period of time."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3409,7 +3557,10 @@
         "english": "Persisting in exercise every day can make your body healthier and stronger."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3442,7 +3593,9 @@
         "english": "My friend and I had a very interesting dialogue."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3475,7 +3628,9 @@
         "english": "I'm very hungry and want to eat."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3531,7 +3686,9 @@
         "english": "His ears are very sensitive; even in a noisy environment, he can hear subtle sounds."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3554,7 +3711,9 @@
         "english": "I'm listening to music with headphones on the subway."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3618,7 +3777,9 @@
         "english": "I had a fever yesterday, so I didn't go to work today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3783,7 +3944,9 @@
         "english": "I really like eating instant noodles because they are cheap and quick."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3849,7 +4012,9 @@
         "english": "I don't know the direction to the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3882,7 +4047,9 @@
         "english": "This is my house."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3956,7 +4123,10 @@
         "english": "Tomorrow we have a day off, so we can sleep in."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4022,7 +4192,9 @@
         "english": "School is over today, and I'm very happy."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4088,7 +4260,9 @@
         "english": "The wind is very strong today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4124,7 +4298,10 @@
         "english": "I wrote a letter to my friend."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers",
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4147,7 +4324,9 @@
         "english": "This couple has been married for twenty years, and their relationship is still very good."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4180,7 +4359,9 @@
         "english": "The service at this restaurant is very good, and the staff are very friendly."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4203,7 +4384,9 @@
         "english": "There's a pretty good restaurant near my house. You can try it if you have time."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4236,7 +4419,9 @@
         "english": "There's an exam tomorrow, so I need to review tonight."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4302,7 +4487,9 @@
         "english": "My room is very clean."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4325,7 +4512,9 @@
         "english": "I'm very interested in Chinese culture, so I often go to museums."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4394,7 +4583,9 @@
         "english": "I caught a cold yesterday, so I didn't go to work today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4493,7 +4684,9 @@
         "english": "A moment ago, I saw a little cat in the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4526,7 +4719,9 @@
         "english": "I just finished eating."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4549,7 +4744,9 @@
         "english": "I take the high-speed rail to Beijing for business trips every month."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4642,7 +4839,9 @@
         "english": "This watermelon weighs five kilograms."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4675,7 +4874,10 @@
         "english": "I like to take a walk in the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "nature"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4698,7 +4900,10 @@
         "english": "Our company has a rule that employees cannot be late on workdays and must clock in on time."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4731,7 +4936,10 @@
         "english": "I like listening to my grandmother tell stories."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language",
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4754,7 +4962,9 @@
         "english": "Last night a strong wind blew up and scattered garbage all over the street."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4823,7 +5033,9 @@
         "english": "I'm going to sleep now, let me turn off the device first."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4867,7 +5079,9 @@
         "english": "Our relationship is very good, and we often eat together."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4900,7 +5114,9 @@
         "english": "My mother is very concerned about my studies."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4989,7 +5205,9 @@
         "english": "China is a large country."
       }
     ],
-    "tags": [],
+    "tags": [
+      "countries"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5012,7 +5230,9 @@
         "english": "During Spring Festival, the whole family gets together to celebrate."
       }
     ],
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5045,7 +5265,9 @@
         "english": "Please go over and sit down, don't stand."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5078,7 +5300,9 @@
         "english": "I like taking a walk by the sea."
       }
     ],
-    "tags": [],
+    "tags": [
+      "nature"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5111,7 +5335,9 @@
         "english": "I'm very afraid of the dark, so I always leave the light on when I sleep at night."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5177,7 +5403,9 @@
         "english": "I haven't seen you for quite a while."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5236,7 +5464,9 @@
         "english": "Can you tell me your phone number?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5269,7 +5499,9 @@
         "english": "There is a very long river near our home."
       }
     ],
-    "tags": [],
+    "tags": [
+      "nature"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5335,7 +5567,9 @@
         "english": "The teacher wrote a new word on the blackboard."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5358,7 +5592,9 @@
         "english": "You should watch the traffic lights when crossing the street."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5390,7 +5626,9 @@
         "english": "I went to the park first, and afterwards I also went to the store."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5423,7 +5661,9 @@
         "english": "The year after next, we plan to take a trip to Japan."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5456,7 +5696,9 @@
         "english": "The day after tomorrow we will go play in the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5489,7 +5731,9 @@
         "english": "I need to bring my passport to the airport."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5522,7 +5766,10 @@
         "english": "There is a very large flower garden behind my house."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "plants"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5555,7 +5802,9 @@
         "english": "My uncle is a painter, and he really likes to paint."
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5588,7 +5837,9 @@
         "english": "You are welcome to come to my house and play."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5643,7 +5894,9 @@
         "english": "We need to protect the environment and not pollute the air and water."
       }
     ],
-    "tags": [],
+    "tags": [
+      "nature"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5709,7 +5962,9 @@
         "english": "This car is yellow and very easy to see."
       }
     ],
-    "tags": [],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5783,7 +6038,9 @@
         "english": "I can speak Chinese."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5816,7 +6073,9 @@
         "english": "There is an important meeting tomorrow afternoon, and I need to attend on time."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5918,7 +6177,10 @@
         "english": "I bought a chicken today to make for dinner."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals",
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6089,7 +6351,9 @@
         "english": "Teacher Ji is our math teacher, and he teaches very well."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6112,7 +6376,10 @@
         "english": "Spring is my favorite season because the weather is very pleasant."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6186,7 +6453,10 @@
         "english": "During the summer vacation, our whole family went to the beach."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6252,7 +6522,9 @@
         "english": "The doctor checked my body."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6308,7 +6580,10 @@
         "english": "Everyone please line up to have your tickets checked before boarding."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport",
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6340,7 +6615,9 @@
         "english": "I want to stay healthy, so I go running every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6373,7 +6650,9 @@
         "english": "Shall we meet tomorrow?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6414,7 +6693,9 @@
         "english": "The teacher told an interesting story in class."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6447,7 +6728,10 @@
         "english": "That goat has two long horns."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money",
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6480,7 +6764,9 @@
         "english": "My foot hurts a lot, and I can't walk."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6554,7 +6840,9 @@
         "english": "On weekends, I like to go shopping on the street with friends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6599,7 +6887,10 @@
         "english": "This year for the Spring Festival, I want to go home and celebrate with my family."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "culture"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6632,7 +6923,9 @@
         "english": "My older sister is going to get married next year, and the whole family is very happy."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6665,7 +6958,9 @@
         "english": "There is a very interesting program on TV today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6698,7 +6993,9 @@
         "english": "Spring Festival is the most important festival in China."
       }
     ],
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6787,7 +7084,9 @@
         "english": "My sisters and I often go shopping together on weekends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6861,7 +7160,9 @@
         "english": "This apple weighs two jin."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6930,7 +7231,10 @@
         "english": "Our manager is very friendly and always helps us."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work",
+      "business"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6996,7 +7300,9 @@
         "english": "He likes to drink a little alcohol."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7062,7 +7368,10 @@
         "english": "I don't quite understand this sentence."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers",
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7095,7 +7404,9 @@
         "english": "This sentence is too long, I don't understand it."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7195,7 +7506,9 @@
         "english": "Spring has arrived, and the cherry blossom trees in the garden have bloomed."
       }
     ],
-    "tags": [],
+    "tags": [
+      "plants"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7228,7 +7541,9 @@
         "english": "We need to hold a meeting tomorrow."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7261,7 +7576,9 @@
         "english": "I have to start the machine every morning before I can work."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7294,7 +7611,9 @@
         "english": "The weather is very nice today, and I'm very happy."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7376,7 +7695,9 @@
         "english": "I'm very thirsty and want to drink water."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7409,7 +7730,9 @@
         "english": "This little dog is very cute, and I like it."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7511,7 +7834,9 @@
         "english": "My textbook is in my backpack."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7544,7 +7869,9 @@
         "english": "Mom is preparing food in the kitchen because we have guests coming today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7577,7 +7904,10 @@
         "english": "This text is very simple."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7610,7 +7940,10 @@
         "english": "It's too hot in summer, let's turn on the air conditioner."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7643,7 +7976,9 @@
         "english": "When she saw this sad movie, she couldn't help but cry."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7676,7 +8011,10 @@
         "english": "I eat with chopsticks."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food",
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7699,7 +8037,9 @@
         "english": "I drink mineral spring water every day, which is healthier than drinking soft drinks."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7765,7 +8105,9 @@
         "english": "I like this blue T-shirt."
       }
     ],
-    "tags": [],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7835,7 +8177,9 @@
         "english": "That old man takes a walk in the park every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7901,7 +8245,9 @@
         "english": "I bought a gift for my mom."
       }
     ],
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7924,7 +8270,9 @@
         "english": "I'm very interested in Chinese history and often visit museums."
       }
     ],
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7957,7 +8305,9 @@
         "english": "His face is very red."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -7990,7 +8340,9 @@
         "english": "I practice English for half an hour every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8026,7 +8378,9 @@
         "english": "I have to practice speaking Chinese every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8059,7 +8413,9 @@
         "english": "Drinking ice water in summer is very refreshing and cool."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8092,7 +8448,10 @@
         "english": "My family has two cars."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport",
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8138,7 +8497,10 @@
         "english": "After working all day, we sat in a coffee shop chatting to relax our tense nerves."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language",
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8184,7 +8546,10 @@
         "english": "My neighbor moved recently and went to work in the south."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people",
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8217,7 +8582,10 @@
         "english": "My older brother is studying abroad in the United States, and he is majoring in computer science."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8250,7 +8618,9 @@
         "english": "My friend is a student studying abroad, and he is from Japan."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8273,7 +8643,9 @@
         "english": "Be careful, the stairs are very steep. Walk slowly."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8306,7 +8678,9 @@
         "english": "I had a cup of coffee at a café by the roadside."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8339,7 +8713,10 @@
         "english": "I'm waiting for you at the crossing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport",
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8372,7 +8749,9 @@
         "english": "I rode a horse once, and it was a very interesting experience."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8405,7 +8784,10 @@
         "english": "I am walking on the road."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8471,7 +8853,9 @@
         "english": "I am very satisfied with this gift."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8507,7 +8891,10 @@
         "english": "The hair on my brush is falling out."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body",
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8540,7 +8927,9 @@
         "english": "I eat rice every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8573,7 +8962,9 @@
         "english": "There is a cup of tea in front of me."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8642,7 +9033,9 @@
         "english": "The teacher wrote the student checklist on the blackboard."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8665,7 +9058,9 @@
         "english": "That celebrity said some interesting things on television."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8698,7 +9093,9 @@
         "english": "I come from the south."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8767,7 +9164,9 @@
         "english": "My home is in the south, and it's very warm there."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8800,7 +9199,9 @@
         "english": "He felt very sad when he heard this news."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8866,7 +9267,9 @@
         "english": "That man is very tall."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8899,7 +9302,10 @@
         "english": "This is my male friend."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8932,7 +9338,9 @@
         "english": "This math problem is very difficult to solve."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -8998,7 +9406,9 @@
         "english": "My daughter is in third grade now."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9031,7 +9441,9 @@
         "english": "My older brother is still very young, only twenty-five years old this year."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9067,7 +9479,9 @@
         "english": "There are many oxen on the farm, and they eat grass every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9103,7 +9517,9 @@
         "english": "I study Chinese very hard every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9136,7 +9552,9 @@
         "english": "She is a woman."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9169,7 +9587,10 @@
         "english": "That schoolgirl is my friend."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9202,7 +9623,9 @@
         "english": "The ants are swarming toward the food."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9238,7 +9661,9 @@
         "english": "I'm afraid of the cold, so I wore a lot of clothes."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9261,7 +9686,10 @@
         "english": "We took pictures in the park as a keepsake."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9284,7 +9712,10 @@
         "english": "Mom put the hot soup in a plate and told me to be careful not to burn myself."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9317,7 +9748,9 @@
         "english": "My dog has become a bit fat recently."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9350,7 +9783,9 @@
         "english": "We went to the bar with friends to drink beer together."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9416,7 +9851,9 @@
         "english": "There is water in this bottle."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9449,7 +9886,9 @@
         "english": "I ride my bicycle to work every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9482,7 +9921,9 @@
         "english": "I think he's a bit strange today; he didn't say a single word."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9617,7 +10058,9 @@
         "english": "The airplane is about to take off soon, please sit down."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9650,7 +10093,9 @@
         "english": "This is a car."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9673,7 +10118,9 @@
         "english": "He used a pencil to sketch the outline of the building, and only then did he use a pen to depict the details."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9706,7 +10153,9 @@
         "english": "The year before last I traveled to Beijing, and this year I want to go to Shanghai."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9739,7 +10188,9 @@
         "english": "The day before yesterday I went to the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9808,7 +10259,9 @@
         "english": "I need to take leave tomorrow because I'm sick."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9841,7 +10294,10 @@
         "english": "I'm treating today, let's go eat Peking duck."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food",
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9874,7 +10330,10 @@
         "english": "Autumn has arrived, and the tree leaves have turned yellow."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9907,7 +10366,10 @@
         "english": "We often go to the basketball court to play basketball on weekends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9940,7 +10402,9 @@
         "english": "This red skirt is very pretty, and I want to buy it."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -9986,7 +10450,9 @@
         "english": "He is very enthusiastic and always helps others."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10075,7 +10541,9 @@
         "english": "I study Chinese seriously."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10154,7 +10622,9 @@
         "english": "It's raining, I forgot to bring an umbrella, so I had to run back home."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10177,7 +10647,9 @@
         "english": "Mom sweeps and mops the floor every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10210,7 +10682,9 @@
         "english": "I like sitting on the lounge watching TV."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10243,7 +10717,9 @@
         "english": "This mountain is very high."
       }
     ],
-    "tags": [],
+    "tags": [
+      "nature"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10276,7 +10752,9 @@
         "english": "This jacket is very beautiful, and I want to buy it."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10299,7 +10777,10 @@
         "english": "Please bring me a spoon."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10344,7 +10825,9 @@
         "english": "My height is 1.75 meters, which is a bit shorter than my older brother's."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10406,7 +10889,9 @@
         "english": "My life is very simple. Every day I work, eat, and sleep."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10439,7 +10924,9 @@
         "english": "He got angry because I was late."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10462,7 +10949,9 @@
         "english": "Your voice sounds very nice."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10495,7 +10984,9 @@
         "english": "There is a large market near my home that sells a lot of fresh vegetables."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10528,7 +11019,9 @@
         "english": "Do you want to try this cake?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10561,7 +11054,9 @@
         "english": "Mr. Shi is my math teacher."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10594,7 +11089,9 @@
         "english": "I want to see what the world outside is like."
       }
     ],
-    "tags": [],
+    "tags": [
+      "countries"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10716,7 +11213,9 @@
         "english": "He's been working too hard recently, eating irregularly, and has become much skinnier."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10772,7 +11271,9 @@
         "english": "My uncle is a doctor and he works at a city hospital."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10805,7 +11306,9 @@
         "english": "That is a big tree."
       }
     ],
-    "tags": [],
+    "tags": [
+      "plants"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10828,7 +11331,10 @@
         "english": "My math grades aren't very good."
       }
     ],
-    "tags": [],
+    "tags": [
+      "science",
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10850,7 +11356,9 @@
         "english": "I brush my teeth every morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10883,7 +11391,9 @@
         "english": "I bought a pair of new shoes."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10949,7 +11459,10 @@
         "english": "This driver drives very carefully."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport",
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -10972,7 +11485,9 @@
         "english": "It's warm here all year round."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11005,7 +11520,9 @@
         "english": "The sun is very bright today, I need to wear sunglasses."
       }
     ],
-    "tags": [],
+    "tags": [
+      "nature"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11038,7 +11555,9 @@
         "english": "There's a lot of sugar in this cake, and it tastes very sweet."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11140,7 +11659,10 @@
         "english": "Our school's physical education class is in the afternoon."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11173,7 +11695,10 @@
         "english": "Our school's stadium is very large, and it has a basketball court and a swimming pool inside."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11206,7 +11731,9 @@
         "english": "This cake is very sweet, and I really like eating it."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11239,7 +11766,9 @@
         "english": "The bullet ricocheted off the wall and flew into the distance."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11341,7 +11870,9 @@
         "english": "My colleague is very friendly, and we work together every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11407,7 +11938,9 @@
         "english": "My hair is very long."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11473,7 +12006,10 @@
         "english": "I like going to the library to read books."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11506,7 +12042,9 @@
         "english": "I like to eat ham and eggs."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11539,7 +12077,9 @@
         "english": "My friend is from another part of the country; he is from Beijing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11575,7 +12115,9 @@
         "english": "I'm very tired today and don't want to cook. Let's order takeout."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11608,7 +12150,9 @@
         "english": "I like to study foreign languages."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11674,7 +12218,10 @@
         "english": "I need a clean bowl to eat rice."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11697,7 +12244,9 @@
         "english": "Because of bad weather, today's flight might be late."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11730,7 +12279,9 @@
         "english": "There's a school evening party tonight. Do you want to go?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11763,7 +12314,9 @@
         "english": "I like to play tennis on weekends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11796,7 +12349,9 @@
         "english": "This website is very useful, and I often find information on it."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11936,7 +12491,9 @@
         "english": "The restroom is downstairs, and the bathroom is on the second floor."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -11969,7 +12526,9 @@
         "english": "Chinese civilization has a very long history."
       }
     ],
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12002,7 +12561,9 @@
         "english": "This room is very small, but it's very warm."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12035,7 +12596,9 @@
         "english": "My home is on the west side of the city."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12068,7 +12631,9 @@
         "english": "Our company is in the northwest direction of the city."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12101,7 +12666,10 @@
         "english": "I like Western music and movies."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions",
+      "culture"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12124,7 +12692,9 @@
         "english": "In summer, I like eating ice-cold watermelon the most, especially on hot days."
       }
     ],
-    "tags": [],
+    "tags": [
+      "fruit"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12157,7 +12727,9 @@
         "english": "My home is in the southwest direction of the city."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12216,7 +12788,9 @@
         "english": "I like reading books, especially historical novels."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12249,7 +12823,10 @@
         "english": "The washer at my home broke down, I need to go get it fixed."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12282,7 +12859,9 @@
         "english": "I take a bath every evening."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12315,7 +12894,10 @@
         "english": "The weather is very hot in summer."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12381,7 +12963,9 @@
         "english": "I eat a banana every morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "fruit"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12437,7 +13021,9 @@
         "english": "My suitcase is full of clothes and books."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12543,7 +13129,9 @@
         "english": "I want to buy a new camera to go on a trip."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12566,7 +13154,10 @@
         "english": "There's a supermarket next to our neighborhood."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12602,7 +13193,9 @@
         "english": "Be careful when crossing the street!"
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12635,7 +13228,10 @@
         "english": "I like to play with friends together in the schoolyard."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12668,7 +13264,10 @@
         "english": "Our principal is having a meeting at school today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "work"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12701,7 +13300,9 @@
         "english": "My new shoes are very comfortable."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12734,7 +13335,9 @@
         "english": "I'm very happy in my heart."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12767,7 +13370,10 @@
         "english": "Happy New Year!"
       }
     ],
-    "tags": [],
+    "tags": [
+      "culture",
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12800,7 +13406,9 @@
         "english": "I read a very interesting news story today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12823,7 +13431,9 @@
         "english": "The vegetables at this supermarket are very fresh, and I often buy groceries here."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12859,7 +13469,9 @@
         "english": "I received your letter."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12892,7 +13504,9 @@
         "english": "I bought a book with my credit card."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12969,7 +13583,9 @@
         "english": "I have too much luggage and need to buy a new suitcase."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -12992,7 +13608,10 @@
         "english": "I have a great interest in learning Chinese, so I practice every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13025,7 +13644,10 @@
         "english": "Next month I want to take a vacation and go traveling."
       }
     ],
-    "tags": [],
+    "tags": [
+      "work",
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13150,7 +13772,9 @@
         "english": "This school term we have to learn a lot of new things."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13173,7 +13797,9 @@
         "english": "This ivory carving is imported from Africa."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13196,7 +13822,9 @@
         "english": "I brush my teeth with a toothbrush every morning to keep my teeth healthy."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13229,7 +13857,9 @@
         "english": "The doctor said I need to eat kidney to strengthen my body."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13270,7 +13900,9 @@
         "english": "We need to maintain and take good care of our house."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13339,7 +13971,10 @@
         "english": "This book has one hundred pages."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers",
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13408,7 +14043,9 @@
         "english": "We bought three apples altogether."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13510,7 +14147,9 @@
         "english": "I want to study Chinese in the future."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13543,7 +14182,9 @@
         "english": "I used to live in Beijing, but now I live in Shanghai."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13815,7 +14456,9 @@
         "english": "I really like listening to music."
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13848,7 +14491,10 @@
         "english": "Mom uses a jug to hold water."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13881,7 +14527,9 @@
         "english": "My bank card is at home, I'll go to the bank tomorrow."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -13904,7 +14552,9 @@
         "english": "This café has many types of beverages, and I never know which one to choose each time."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14039,7 +14689,10 @@
         "english": "I received an important email today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology",
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14072,7 +14725,9 @@
         "english": "This summer, many travelers came to visit our city."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14105,7 +14760,9 @@
         "english": "I like to play computer games with my friends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14138,7 +14795,9 @@
         "english": "Can you tell me your email address?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14197,7 +14856,9 @@
         "english": "Disney is very well-known."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14294,7 +14955,9 @@
         "english": "Every weekend I play badminton with friends, which is my favorite sport."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14327,7 +14990,9 @@
         "english": "Learning a language requires a lot of time and practice."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14350,7 +15015,10 @@
         "english": "It's raining hard outside, so remember to wear a raincoat when you go out."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing",
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14551,7 +15219,9 @@
         "english": "In the evening, the moon is very bright, and we look at the moon together."
       }
     ],
-    "tags": [],
+    "tags": [
+      "nature"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14574,7 +15244,10 @@
         "english": "The school sports meeting will be held next month, and I want to participate in the running competition."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14597,7 +15270,9 @@
         "english": "That athlete performed excellently in the competition."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14663,7 +15338,9 @@
         "english": "Your hands are very dirty, you need to wash them."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14788,7 +15465,9 @@
         "english": "I bought a movie ticket."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14847,7 +15526,9 @@
         "english": "Don't worry, take your time, we still have time."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14903,7 +15584,9 @@
         "english": "I have to look after my puppy every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14926,7 +15609,10 @@
         "english": "This is a photo I took last year."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -14949,7 +15635,9 @@
         "english": "We took photographs in the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15028,7 +15716,9 @@
         "english": "I wrote a letter on paper."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15176,7 +15866,9 @@
         "english": "I work in a company."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15209,7 +15901,9 @@
         "english": "I sit in the middle."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15275,7 +15969,9 @@
         "english": "I like many kinds of fruits, especially apples and bananas."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15341,7 +16037,9 @@
         "english": "This weekend I want to go play in the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15440,7 +16138,9 @@
         "english": "My grandmother was hospitalized yesterday, and we are all very worried."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15473,7 +16173,10 @@
         "english": "I don't know the meaning of this character, so I need to look it up in a dictionary."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language",
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15506,7 +16209,9 @@
         "english": "I ride my bicycle to work every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15642,7 +16347,9 @@
         "english": "The spigot of the faucet is broken, and water keeps dripping."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15741,7 +16448,9 @@
         "english": "The weather has been very cold recently, so you should wear more clothes."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15774,7 +16483,9 @@
         "english": "On the weekend, I went to visit my friend's house, and we had dinner and chatted together."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -15807,7 +16518,9 @@
         "english": "I have a lot of homework to do today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
