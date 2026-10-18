@@ -1,4 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk'
+import { sanitiseLearner, learnerNote } from './_learnerProfile.js'
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
@@ -54,7 +55,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { message, context, immersion = 'intermediate', history = [] } = req.body ?? {}
+    const { message, context, immersion = 'intermediate', history = [], learner } = req.body ?? {}
+    const learnerText = learnerNote(sanitiseLearner(learner))
 
     if (!message) {
       return res.status(400).send(`Missing message — body: ${JSON.stringify(req.body)}`)
@@ -80,6 +82,7 @@ export default async function handler(req, res) {
       { type: 'text', text: SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } },
       ...(contextNote ? [{ type: 'text', text: `Current word context: ${contextNote}` }] : []),
       ...(immersionNote ? [{ type: 'text', text: `Immersion level: ${immersionNote}` }] : []),
+      ...(learnerText ? [{ type: 'text', text: `About this student: ${learnerText}` }] : []),
     ]
 
     const messages = [

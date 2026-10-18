@@ -21,25 +21,27 @@
 - `src/data/idMap2026.json` maps pre-2026 word ids to new ones; `src/lib/migrateVocab2026.ts` translates saved progress on each device once. Supabase rows still hold old ids.
 - All words have: `simplified`, `traditional`, `pinyin` (official), `pinyinNumbered`, `english`, `partOfSpeech` (from the official list), `examples`
 - `data/grammar.json` — grammar reference
+- `data/images.json` — word id → openly licensed Wikimedia Commons photo (`src`, `page`, `author`, `license`, `wikidata`) for the picture quiz; `null` = no picture, never retried. Loaded on demand via `src/data/images.ts`. Credit is shown under every photo — keep it.
 
 ### Pages
 | Route | Page |
 |-------|------|
 | `/welcome` | One-time onboarding (level picker, shown once via localStorage flag `hsk-onboarded`) |
-| `/hsk/:level` | Vocab browser with search, progress bar, practice dropdown |
+| `/hsk/:level` | Vocab browser with search, topic filter (`?topics=fruit,drinks&scope=all`), progress bar, practice dropdown |
 | `/word/:id` | Word detail — pinyin, examples, stroke order, AI teacher, SRS buttons |
 | `/practice/:level` | Practice mode selector |
 | `/quiz/:level` | Multiple choice quiz (zh→en, en→zh, pinyin→zh) |
 | `/write/:level` | Stroke order writing practice |
 | `/listen/:level` | Listening comprehension |
 | `/fill/:level` | Fill in the blank |
+| `/picture/:level` | Picture quiz: photo → Chinese, multiple choice or typed (characters or pinyin); `level` can be `all`, takes `?topics=` |
 | `/pronunciation` | Pronunciation guide (tones, initials, finals) |
 | `/review` | SRS due-card review (self-rated flashcards: Again / Good / Easy) |
 | `/grammar/:level` | Grammar list by level |
 | `/grammar/point/:id` | Grammar detail |
 | `/favourites` | Favourited words |
 | `/search` | Cross-level search |
-| `/stats` | Progress stats, streak, SRS due count |
+| `/stats` | Progress stats, streak, SRS due count, HSK readiness with cumulative exam coverage and a countdown to `NEXT_EXAM` (`src/data/exam.ts` — update when new exam dates are published) |
 | `/tones` | Tone Gym — live on-device pitch tracking for syllables and tone pairs (`src/lib/pitchTracker.ts`, `src/lib/toneGym.ts`; tone rules shared with Record & Score in `api/_toneContour.js`) |
 
 ### Components
@@ -58,10 +60,10 @@
 - `useStreak` — daily study streak
 - `useDismissed` — "too easy" words
 - `useDarkMode` — theme toggle
-- `usePracticeWords` — resolves level param → word list (supports `'review'` for due cards)
+- `usePracticeWords` — resolves level param → word list (supports `'review'` for due cards, `'all'` for every level, and `?topics=` to narrow any list to topics)
 
 ### API (Vercel serverless)
-- `api/teacher.js` — Lin Wei AI tutor (Anthropic SDK + prompt caching + rate limit: 50 req/IP/hour)
+- `api/teacher.js` — Lin Wei AI tutor (Anthropic SDK + prompt caching + rate limit: 50 req/IP/hour). Takes an optional `learner` profile (`level`, `mastered`, up to 12 `weakWords`) built by `src/lib/learnerProfile.ts` from on-device SRS data; `api/_learnerProfile.js` sanitises it (Han-only words) before it reaches the prompt
 - `api/tts.js` — Google TTS endpoint (24h cache)
 
 ### Auth
@@ -108,6 +110,9 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 | `node scripts/fill-explanations.mjs --status` | Check explanation batch status |
 | `node scripts/fill-explanations.mjs --apply` | Apply explanation batch results to JSON files |
 | `node scripts/generate-examples.mjs [level]` | Generate example sentences for a level |
+| `node scripts/fill-tags.mjs` | Submit Anthropic batch to tag words with topics (`tags`, ids from `src/data/topics.json`); `--all` re-tags everything, `--level=N` one level |
+| `node scripts/fill-tags.mjs --status` / `--apply` | Check the tagging batch / write results, then `check-vocab.mjs --changed --allow=tags` |
+| `node scripts/fill-images.mjs` | Find photos (Wikidata → Commons, PD/CC0/CC BY/CC BY-SA only) for nouns in picture topics; `--nouns`, `--level=N`, `--word=苹果`, `--limit=N`, `--redo`, `--review`. Writes `scripts/images-review.html` to eyeball results. Runs weekly on GitHub Actions (`.github/workflows/picture-quiz-photos.yml`), which opens a PR with new photos |
 | `node scripts/check-vocab.mjs [--changed]` | Validate vocab files; `--changed` compares with origin/main and allows only new, well-formed examples |
 | `node scripts/build-tone-gym.mjs` | Rebuild `src/data/toneGym.json` (Tone Gym syllables + tone-pair words) from the HSK lists |
 
@@ -119,6 +124,7 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 - [ ] **`examples`** — 4,798 words have none after the 2026 migration (785 in HSK 1–6, 4,013 in HSK 7–9); the Example Writer agent adds ~150/week, lowest level first (see `agents/`)
 - [ ] **`explanation`** — empty for the 1,245 words new in the 2026 list
 - [x] **`partOfSpeech`** — 100% filled across all levels
+- [x] **`tags`** (topics) — 5,555 of 11,000 words tagged (grammar/abstract words have none); re-run `scripts/fill-tags.mjs` only for new words
 - [x] **Bundle size** — lazy-loaded per level via `vocabLoader.ts` dynamic imports
 - [x] **SRS "again" re-queue** — cards loop back within the same session
 - [x] **Lin Wei error UI** — 429/errors shown as chat messages

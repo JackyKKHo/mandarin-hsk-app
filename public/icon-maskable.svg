@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#b52a1e"/>
+  <text x="256" y="262" dominant-baseline="middle" text-anchor="middle" font-family="'Noto Serif SC','Noto Sans SC','PingFang SC','Microsoft YaHei',serif" font-size="230" font-weight="700" fill="white">汉</text>
+  <text x="256" y="388" dominant-baseline="middle" text-anchor="middle" font-family="system-ui,sans-serif" font-size="34" font-weight="500" fill="#d4a017" letter-spacing="5">每日普通话</text>
+</svg>

@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from 'react'
-import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useParams, Link, useNavigate, useSearchParams } from 'react-router-dom'
 import AudioButton from '../components/AudioButton'
 import AppHeader from '../components/AppHeader'
 import TonedPinyin from '../components/TonedPinyin'
@@ -12,6 +12,7 @@ import WordOfTheDay from '../components/WordOfTheDay'
 import { normalizePOS } from '../types'
 import Icon from '../components/Icon'
 import { LEVELS, levelLabel, toLevel } from '../data/levels'
+import { TOPIC_GROUPS, countTopics, filterByTopics, parseTopics, topicLabel } from '../data/topics'
 
 const UNLOCK_THRESHOLD = 80
 
@@ -24,8 +25,28 @@ export default function BrowserPage() {
 
   // Old links to /hsk/8 and /hsk/9 now point at the combined HSK 7–9 band
   useEffect(() => {
-    if (level !== String(currentLevel)) navigate(`/hsk/${currentLevel}`, { replace: true })
+    if (level !== String(currentLevel)) navigate(`/hsk/${currentLevel}${window.location.search}`, { replace: true })
   }, [level, currentLevel, navigate])
+
+  // Topic filter lives in the URL (?topics=fruit,vegetables&scope=all) so it survives
+  // navigation, can be shared, and practice links can pass it on
+  const [params, setParams] = useSearchParams()
+  const selectedTopics = useMemo(() => parseTopics(params.get('topics')), [params])
+  const allLevels = selectedTopics.length > 0 && params.get('scope') === 'all'
+  const [topicsOpen, setTopicsOpen] = useState(false)
+
+  function setTopicParams(topics: string[], scopeAll: boolean) {
+    const next = new URLSearchParams(params)
+    if (topics.length) next.set('topics', topics.join(','))
+    else next.delete('topics')
+    if (topics.length && scopeAll) next.set('scope', 'all')
+    else next.delete('scope')
+    setParams(next, { replace: true })
+  }
+  function toggleTopic(id: string) {
+    const next = selectedTopics.includes(id) ? selectedTopics.filter(t => t !== id) : [...selectedTopics, id]
+    setTopicParams(next, allLevels)
+  }
   useSEO({
     title: `HSK ${levelLabel(currentLevel)} Vocabulary — ${LEVEL_COUNTS[currentLevel] ?? ''} Words`,
     description: `Browse and study all HSK Level ${currentLevel} Mandarin Chinese vocabulary. ${LEVEL_COUNTS[currentLevel] ?? ''} words with pinyin, examples, audio and spaced repetition flashcards.`,
@@ -38,7 +59,10 @@ export default function BrowserPage() {
   const practiceRef = useRef<HTMLDivElement>(null)
   const { learned, todayCount } = useProgress()
   const { isFavourite, toggleFavourite } = useFavourites()
-  const { words: levelWords, loading } = useVocab(currentLevel)
+  const { words: levelWords, loading } = useVocab(allLevels ? undefined : currentLevel)
+  const topicCounts = useMemo(() => countTopics(levelWords), [levelWords])
+  // Hide the topic filter until the vocab files have been tagged (scripts/fill-tags.mjs)
+  const hasTopics = topicCounts.size > 0 || selectedTopics.length > 0
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -78,22 +102,24 @@ export default function BrowserPage() {
 
   const words = useMemo(() => {
     const q = search.trim().toLowerCase()
+    const pool = filterByTopics(levelWords, selectedTopics)
     let result = q
-      ? levelWords.filter(
+      ? pool.filter(
           w =>
             w.simplified.includes(search.trim()) ||
             w.pinyin.toLowerCase().includes(q) ||
             w.english.toLowerCase().includes(q)
         )
-      : [...levelWords]
+      : [...pool]
     if (sort === 'unlearned') result.sort((a, b) => (learned.has(a.id) ? 1 : 0) - (learned.has(b.id) ? 1 : 0))
     else if (sort === 'az') result.sort((a, b) => a.pinyin.localeCompare(b.pinyin))
     return result
-  }, [levelWords, search, sort, learned])
+  }, [levelWords, selectedTopics, search, sort, learned])
 
   function switchLevel(l: number) {
     setSearch('')
-    navigate(`/hsk/${l}`)
+    // Keep the topic filter when switching level; switching level means "this level only"
+    navigate(selectedTopics.length ? `/hsk/${l}?topics=${selectedTopics.join(',')}` : `/hsk/${l}`)
   }
 
   return (
@@ -126,7 +152,7 @@ export default function BrowserPage() {
         {LEVELS.map(l => (
           <button
             key={l}
-            className={`level-tab${l === currentLevel ? ' active' : ''}`}
+            className={`level-tab${l === currentLevel && !allLevels ? ' active' : ''}`}
             onClick={() => switchLevel(l)}
             aria-current={l === currentLevel ? 'page' : undefined}
           >
@@ -146,6 +172,71 @@ export default function BrowserPage() {
               ? `Almost there! Only ${currentLevelTotal - currentLevelLearned} words left`
               : `${currentLevelLearned} / ${currentLevelTotal} learned (${progressPct}%)`}
           </span>
+        </div>
+      )}
+
+      {hasTopics && (
+        <div className="topic-filter">
+          <div className="topic-bar">
+            <button
+              className={`topic-toggle${selectedTopics.length ? ' active' : ''}`}
+              onClick={() => setTopicsOpen(o => !o)}
+              aria-expanded={topicsOpen}
+              aria-controls="topic-panel"
+            >
+              Topics{selectedTopics.length ? ` · ${selectedTopics.length}` : ''} {topicsOpen ? '▴' : '▾'}
+            </button>
+            {selectedTopics.map(id => (
+              <button key={id} className="topic-chip selected" onClick={() => toggleTopic(id)} aria-label={`Remove ${topicLabel(id)}`}>
+                {topicLabel(id)} <Icon name="x" size={12} />
+              </button>
+            ))}
+            {selectedTopics.length > 0 && (
+              <>
+                <div className="topic-scope" role="group" aria-label="Which levels">
+                  <button className={`sort-btn${!allLevels ? ' active' : ''}`} onClick={() => setTopicParams(selectedTopics, false)}>
+                    HSK {levelLabel(currentLevel)}
+                  </button>
+                  <button className={`sort-btn${allLevels ? ' active' : ''}`} onClick={() => setTopicParams(selectedTopics, true)}>
+                    All levels
+                  </button>
+                </div>
+                <button className="topic-clear" onClick={() => setTopicParams([], false)}>Clear</button>
+              </>
+            )}
+          </div>
+          {topicsOpen && (
+            <div className="topic-panel" id="topic-panel">
+              {TOPIC_GROUPS.map(group => {
+                const topics = group.topics.filter(t => topicCounts.has(t.id) || selectedTopics.includes(t.id))
+                if (!topics.length) return null
+                return (
+                  <div key={group.label} className="topic-group">
+                    <div className="topic-group-label">{group.label}</div>
+                    <div className="topic-chips">
+                      {topics.map(t => {
+                        const on = selectedTopics.includes(t.id)
+                        return (
+                          <button
+                            key={t.id}
+                            className={`topic-chip${on ? ' selected' : ''}`}
+                            onClick={() => toggleTopic(t.id)}
+                            aria-pressed={on}
+                          >
+                            {t.label} <span className="topic-chip-zh">{t.zh}</span>
+                            <span className="topic-chip-count">{topicCounts.get(t.id) ?? 0}</span>
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )
+              })}
+              {!allLevels && (
+                <p className="topic-panel-note">Counts are for HSK {levelLabel(currentLevel)}. Pick a topic, then “All levels” to see every level.</p>
+              )}
+            </div>
+          )}
         </div>
       )}
 
@@ -178,15 +269,29 @@ export default function BrowserPage() {
           </button>
           {practiceOpen && (
             <div className="practice-menu-dropdown">
+              {selectedTopics.length > 0 && (
+                <div className="practice-menu-note">Practising {words.length} {selectedTopics.map(topicLabel).join(' + ')} words</div>
+              )}
               {[
-                { to: `/practice/${currentLevel}`, label: '🃏 Flashcards', sub: 'Spaced repetition' },
-                { to: `/quiz/${currentLevel}`,     label: 'Quiz',        sub: 'Multiple choice' },
-                { to: `/listen/${currentLevel}`,   label: 'Listening',   sub: 'Hear & identify' },
-                { to: `/fill/${currentLevel}`,     label: 'Fill blank',   sub: 'Complete sentences' },
-                { to: `/write/${currentLevel}`,    label: 'Writing',      sub: 'Stroke order tracing' },
-                { to: `/tone/${currentLevel}`,     label: 'Tone trainer', sub: 'Identify tones' },
-                { to: `/scramble/${currentLevel}`, label: 'Scramble',    sub: 'Reorder sentences' },
-              ].map(({ to, label, sub }) => (
+                { mode: 'practice', label: '🃏 Flashcards', sub: 'Spaced repetition' },
+                { mode: 'quiz',     label: 'Quiz',        sub: 'Multiple choice' },
+                { mode: 'listen',   label: 'Listening',   sub: 'Hear & identify' },
+                { mode: 'fill',     label: 'Fill blank',   sub: 'Complete sentences' },
+                { mode: 'write',    label: 'Writing',      sub: 'Stroke order tracing' },
+                { mode: 'tone',     label: 'Tone trainer', sub: 'Identify tones' },
+                { mode: 'scramble', label: 'Scramble',    sub: 'Reorder sentences' },
+                { mode: 'picture',  label: 'Picture quiz', sub: 'Name the photo in Chinese' },
+              ]
+                // Writing practice works per level and doesn't take a topic filter yet
+                .filter(({ mode }) => !(selectedTopics.length && mode === 'write'))
+                .map(({ mode, label, sub }) => ({
+                  to: selectedTopics.length
+                    ? `/${mode}/${allLevels ? 'all' : currentLevel}?topics=${selectedTopics.join(',')}`
+                    : `/${mode}/${currentLevel}`,
+                  label,
+                  sub,
+                }))
+                .map(({ to, label, sub }) => (
                 <Link key={to} to={to} className="practice-menu-item" onClick={() => setPracticeOpen(false)}>
                   <span className="pmi-label">{label}</span>
                   <span className="pmi-sub">{sub}</span>
@@ -200,7 +305,11 @@ export default function BrowserPage() {
       {loading ? (
         <p className="empty-state">Loading…</p>
       ) : words.length === 0 ? (
-        <p className="empty-state">No results match your search.</p>
+        <p className="empty-state">
+          {selectedTopics.length && !search.trim() && !allLevels
+            ? <>No {selectedTopics.map(topicLabel).join(' or ')} words in HSK {levelLabel(currentLevel)}. <button className="topic-clear" onClick={() => setTopicParams(selectedTopics, true)}>Show all levels</button></>
+            : 'No results match your search.'}
+        </p>
       ) : (
         <div className="vocab-grid">
           {words.map(word => (

@@ -12,6 +12,7 @@ import SearchPage from './pages/SearchPage'
 import StatsPage from './pages/StatsPage'
 import TodayPage from './pages/TodayPage'
 import WidgetPage from './pages/WidgetPage'
+import PrivacyPage from './pages/PrivacyPage'
 // Lazy: carries its own syllable data and pitch detector, which no other page needs
 const ToneGymPage = lazy(() => import('./pages/ToneGymPage'))
 import QuizPage from './pages/QuizPage'
@@ -28,6 +29,7 @@ import DialoguePage from './pages/DialoguePage'
 import WelcomePage, { shouldShowWelcome } from './pages/WelcomePage'
 import TonePage from './pages/TonePage'
 import ScramblePage from './pages/ScramblePage'
+import PicturePage from './pages/PicturePage'
 import DailyChallengePage from './pages/DailyChallengePage'
 import RadicalsPage from './pages/RadicalsPage'
 import MeasureWordsPage from './pages/MeasureWordsPage'
@@ -85,6 +87,7 @@ export default function App() {
         <Route path="/dialogue/:id" element={<DialoguePage />} />
         <Route path="/tone/:level" element={<TonePage />} />
         <Route path="/scramble/:level" element={<ScramblePage />} />
+        <Route path="/picture/:level" element={<PicturePage />} />
         <Route path="/daily" element={<DailyChallengePage />} />
         <Route path="/radicals" element={<RadicalsPage />} />
         <Route path="/measure-words" element={<MeasureWordsPage />} />
@@ -101,6 +104,7 @@ export default function App() {
         <Route path="/record" element={<RecordPage />} />
         <Route path="/tones" element={<Suspense fallback={null}><ToneGymPage /></Suspense>} />
         <Route path="/pro" element={<ProPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
       </Routes>
     </BrowserRouter>
     </AuthProvider>

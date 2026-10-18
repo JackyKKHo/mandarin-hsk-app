@@ -6,7 +6,7 @@
     "traditional": "啊",
     "pinyin": "a",
     "pinyinNumbered": "a0",
-    "english": "interjection expressing surprise or softening",
+    "english": "ah (softens a statement)",
     "partOfSpeech": "particle",
     "meanings": [
       {
@@ -61,7 +61,9 @@
         "english": "My hobby is reading books."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -94,7 +96,9 @@
         "english": "I like wearing white clothes."
       }
     ],
-    "tags": [],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -130,7 +134,9 @@
         "english": "I have to go to work every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -266,7 +272,9 @@
         "english": "I have a new book."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -338,7 +346,10 @@
         "english": "I wrote a letter with a pen."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school",
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -437,7 +448,9 @@
         "english": "I'm sorry, I'm late."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -453,8 +466,16 @@
     "pinyinNumbered": "chang2",
     "english": "long",
     "partOfSpeech": "adjective",
-    "examples": [],
-    "tags": [],
+    "examples": [
+      {
+        "chinese": "她的头发很长。",
+        "pinyin": "Tā de tóufa hěn cháng.",
+        "english": "Her hair is very long."
+      }
+    ],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -486,7 +507,10 @@
         "english": "I'm waiting for you at the station."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -552,7 +576,9 @@
         "english": "I want to go abroad for a trip this year."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -618,7 +644,9 @@
         "english": "I go out at seven o'clock every morning to go to work."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -684,7 +712,9 @@
         "english": "My bed is very comfortable."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -717,7 +747,9 @@
         "english": "What does this word mean?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -753,7 +785,9 @@
         "english": "This is my first time coming here."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -929,7 +963,9 @@
         "english": "I'm taking a taxi to the airport today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1166,7 +1202,9 @@
         "english": "I take the subway to work every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1203,7 +1241,9 @@
         "english": "It's almost three o'clock now."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1302,7 +1342,10 @@
         "english": "The food at this restaurant is very delicious."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1335,7 +1378,9 @@
         "english": "A small bird is flying in the sky."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1404,7 +1449,9 @@
         "english": "My older brother is studying in senior middle school now."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1437,7 +1484,9 @@
         "english": "Mom told me to study hard."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1470,7 +1519,9 @@
         "english": "He is very tall, a whole head taller than me."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1541,7 +1592,9 @@
         "english": "I take the public bus to work every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1640,7 +1693,9 @@
         "english": "This year I want to spend New Year at home."
       }
     ],
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1775,7 +1830,9 @@
         "english": "I like wearing black clothes."
       }
     ],
-    "tags": [],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1808,7 +1865,9 @@
         "english": "I like drinking black tea the most, especially in winter."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1841,7 +1900,9 @@
         "english": "I like this red piece of clothing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1874,7 +1935,9 @@
         "english": "Behind the cinema there is a parking lot."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1907,7 +1970,9 @@
         "english": "I spent a lot of money buying books."
       }
     ],
-    "tags": [],
+    "tags": [
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1943,7 +2008,9 @@
         "english": "I spent a lot of money buying books."
       }
     ],
-    "tags": [],
+    "tags": [
+      "plants"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -1979,7 +2046,9 @@
         "english": "I like to paint on weekends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2111,7 +2180,10 @@
         "english": "We're going to the airport to pick you up."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2144,7 +2216,10 @@
         "english": "I bought an air ticket to Beijing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport",
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2213,7 +2288,10 @@
         "english": "I am reading a book in the room."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2246,7 +2324,9 @@
         "english": "The teacher teaches us English."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2279,7 +2359,9 @@
         "english": "Our classroom is very large and has thirty students."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2312,7 +2394,9 @@
         "english": "Let me introduce my friend to you."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2510,7 +2594,10 @@
         "english": "This hotel is very cheap, and I like it a lot."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2587,7 +2674,9 @@
         "english": "I drink a cup of coffee every morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2656,7 +2745,9 @@
         "english": "We're going to start school on September 1st."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2689,7 +2780,9 @@
         "english": "I have an exam tomorrow."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2725,7 +2818,9 @@
         "english": "I have an examination tomorrow."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2795,7 +2890,9 @@
         "english": "These breeches are too expensive; I can't afford them."
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2872,7 +2969,9 @@
         "english": "I feel very happy when eating together with my family."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2938,7 +3037,9 @@
         "english": "I like to play basketball with my friends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -2974,7 +3075,9 @@
         "english": "I am very tired today."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3040,7 +3143,9 @@
         "english": "My keys are inside my bag."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3073,7 +3178,9 @@
         "english": "I live on the fifth floor."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3106,7 +3213,9 @@
         "english": "This road is very long."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3172,7 +3281,9 @@
         "english": "I want to take a trip to Japan this year."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3205,7 +3316,9 @@
         "english": "I like to drink a cup of green tea every morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3241,7 +3354,9 @@
         "english": "I like wearing green clothes."
       }
     ],
-    "tags": [],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3290,8 +3405,16 @@
     "pinyinNumbered": "mei2 yi4 si0",
     "english": "boring",
     "partOfSpeech": "adjective",
-    "examples": [],
-    "tags": [],
+    "examples": [
+      {
+        "chinese": "这本书一点儿没意思。",
+        "pinyin": "Zhè běn shū yìdiǎnr méi yìsi.",
+        "english": "This book isn't interesting at all."
+      }
+    ],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3360,7 +3483,9 @@
         "english": "Please close the door."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3393,7 +3518,9 @@
         "english": "I'm waiting for you at the porch."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3426,7 +3553,10 @@
         "english": "How much is this ticket?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel",
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3464,7 +3594,9 @@
         "english": "I like to eat noodles."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3500,7 +3632,9 @@
         "english": "He is a very famous actor."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3635,7 +3769,9 @@
         "english": "I like to drink a cup of milk tea every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "drinks"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3668,7 +3804,9 @@
         "english": "My nanna likes me very much."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3701,7 +3839,9 @@
         "english": "That boy is called Xiaoming."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3734,7 +3874,9 @@
         "english": "There is a little bird singing outside the window."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3767,7 +3909,9 @@
         "english": "This is a girl."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3800,7 +3944,9 @@
         "english": "My friend is sitting by my side."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3833,7 +3979,9 @@
         "english": "The child is running in the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3847,7 +3995,7 @@
     "traditional": "跑步",
     "pinyin": "pǎobù",
     "pinyinNumbered": "pao3 bu4",
-    "english": "Run",
+    "english": "to run",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -3866,7 +4014,9 @@
         "english": "I go to the park to run every morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3899,7 +4049,10 @@
         "english": "I bought a movie ticket."
       }
     ],
-    "tags": [],
+    "tags": [
+      "travel",
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3913,7 +4066,7 @@
     "traditional": "妻子",
     "pinyin": "qīzi",
     "pinyinNumbered": "qi1 zi0",
-    "english": "frow",
+    "english": "wife",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -3922,7 +4075,9 @@
         "english": "His wife is a teacher; she teaches English at a primary school."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -3996,7 +4151,9 @@
         "english": "Look, there's a supermarket in front."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4029,7 +4186,9 @@
         "english": "The weather is very clear today, let's go play in the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4062,7 +4221,9 @@
         "english": "I like to play ball/football."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4121,7 +4282,9 @@
         "english": "I like to eat meat."
       }
     ],
-    "tags": [],
+    "tags": [
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4154,7 +4317,10 @@
         "english": "My mom and I went to the department store to buy clothes."
       }
     ],
-    "tags": [],
+    "tags": [
+      "places",
+      "shopping-money"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4220,7 +4386,9 @@
         "english": "There is a book and a cup of tea on the surface of the table."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4286,7 +4454,9 @@
         "english": "I go online every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4319,7 +4489,9 @@
         "english": "My body is very healthy."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4352,7 +4524,9 @@
         "english": "Today is my birthday."
       }
     ],
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4454,7 +4628,9 @@
         "english": "I write characters with my hand."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4487,7 +4663,9 @@
         "english": "My wristwatch is broken. What time is it now?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "clothing"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4520,7 +4698,9 @@
         "english": "My bag is on the bed."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4553,7 +4733,9 @@
         "english": "This sofa is very comfortable, and I really like sitting here."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4586,7 +4768,9 @@
         "english": "I'll give you a gift."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4688,7 +4872,10 @@
         "english": "My head hurts a lot, I need to rest."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health",
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4702,7 +4889,7 @@
     "traditional": "踢",
     "pinyin": "tī",
     "pinyinNumbered": "ti1",
-    "english": "shin",
+    "english": "to kick",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -4711,7 +4898,9 @@
         "english": "He accidentally kicked the table leg and jumped in pain."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4744,7 +4933,9 @@
         "english": "This question is very difficult, I don't know how to do it."
       }
     ],
-    "tags": [],
+    "tags": [
+      "school"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4780,7 +4971,9 @@
         "english": "I bought a bar of chocolate."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4813,7 +5006,10 @@
         "english": "On weekends, I like to go dancing with friends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "arts"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4850,7 +5046,9 @@
         "english": "My head hurts a little."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4864,7 +5062,7 @@
     "traditional": "外國",
     "pinyin": "wàiguó",
     "pinyinNumbered": "wai4 guo2",
-    "english": "Foreign country",
+    "english": "foreign country",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -4883,7 +5081,9 @@
         "english": "I have a foreign friend."
       }
     ],
-    "tags": [],
+    "tags": [
+      "countries"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4916,7 +5116,9 @@
         "english": "The outside of this box is very beautiful, but the inside is empty."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -4982,7 +5184,9 @@
         "english": "This city has several million people."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5040,7 +5244,7 @@
     "traditional": "網上",
     "pinyin": "wǎngshang",
     "pinyinNumbered": "wang3 shang0",
-    "english": "Online",
+    "english": "online",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -5059,7 +5263,9 @@
         "english": "I bought a book online."
       }
     ],
-    "tags": [],
+    "tags": [
+      "technology"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5073,7 +5279,7 @@
     "traditional": "忘",
     "pinyin": "wàng",
     "pinyinNumbered": "wang4",
-    "english": "Forget",
+    "english": "to forget",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -5125,7 +5331,9 @@
         "english": "Please sit in this seat."
       }
     ],
-    "tags": [],
+    "tags": [
+      "numbers"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5191,7 +5399,9 @@
         "english": "I hope the weather is nice tomorrow so we can go play in the park."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5224,7 +5434,9 @@
         "english": "I wash my face every morning."
       }
     ],
-    "tags": [],
+    "tags": [
+      "home"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5257,7 +5469,10 @@
         "english": "Where is the toilet?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "home",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5331,7 +5546,9 @@
         "english": "Next, let me introduce my family members to you."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5397,7 +5614,10 @@
         "english": "That child is very cute."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family",
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5411,7 +5631,7 @@
     "traditional": "小時候",
     "pinyin": "xiǎoshíhou",
     "pinyinNumbered": "xiao3 shi2 hou0",
-    "english": "Childhood",
+    "english": "childhood",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -5430,7 +5650,9 @@
         "english": "I really liked eating candy when I was a child."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5463,7 +5685,9 @@
         "english": "She is very happy and keeps smiling."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5499,7 +5723,9 @@
         "english": "What is your last name?"
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5532,7 +5758,9 @@
         "english": "Please tell me your surname and personal name."
       }
     ],
-    "tags": [],
+    "tags": [
+      "people"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5565,7 +5793,9 @@
         "english": "I like the color of this piece of clothing."
       }
     ],
-    "tags": [],
+    "tags": [
+      "colours-shapes"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5598,7 +5828,9 @@
         "english": "His eyes are very big."
       }
     ],
-    "tags": [],
+    "tags": [
+      "body"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5631,7 +5863,9 @@
         "english": "I caught a cold, and the doctor prescribed me some medicine."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5664,7 +5898,10 @@
         "english": "I need to go to the pharmacy to buy cold medicine."
       }
     ],
-    "tags": [],
+    "tags": [
+      "health",
+      "places"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5697,7 +5934,9 @@
         "english": "My grandad is very old."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5840,7 +6079,9 @@
         "english": "This question is very interesting; I want to understand more about it."
       }
     ],
-    "tags": [],
+    "tags": [
+      "language"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5873,7 +6114,9 @@
         "english": "The weather is very overcast today, it might rain."
       }
     ],
-    "tags": [],
+    "tags": [
+      "weather"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5923,7 +6166,7 @@
     "traditional": "游",
     "pinyin": "yóu",
     "pinyinNumbered": "you2",
-    "english": "Swim",
+    "english": "to swim",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -5950,7 +6193,9 @@
         "english": "In summer, I like to go swimming with friends."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -5964,7 +6209,7 @@
     "traditional": "游泳",
     "pinyin": "yóuyǒng",
     "pinyinNumbered": "you2 yong3",
-    "english": "Swim",
+    "english": "to swim",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -5983,7 +6228,9 @@
         "english": "I like to go swimming at the swimming pool every weekend."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6016,7 +6263,9 @@
         "english": "This movie is very interesting, I really like it."
       }
     ],
-    "tags": [],
+    "tags": [
+      "emotions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6032,7 +6281,13 @@
     "pinyinNumbered": "you3 shi2",
     "english": "sometimes",
     "partOfSpeech": "adverb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我有时骑自行车上班。",
+        "pinyin": "Wǒ yǒushí qí zìxíngchē shàngbān.",
+        "english": "Sometimes I ride a bike to work."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -6065,7 +6320,9 @@
         "english": "My right side is my friend."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6098,7 +6355,9 @@
         "english": "My book is on the right side."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6131,7 +6390,10 @@
         "english": "I like eating fish, especially braised fish."
       }
     ],
-    "tags": [],
+    "tags": [
+      "animals",
+      "food"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6164,7 +6426,9 @@
         "english": "The school is very far from my home."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6200,7 +6464,10 @@
         "english": "I like to do sports every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies",
+      "health"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6233,7 +6500,9 @@
         "english": "I'm standing here waiting for you."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6247,7 +6516,7 @@
     "traditional": "丈夫",
     "pinyin": "zhàngfu",
     "pinyinNumbered": "zhang4 fu0",
-    "english": "masterman",
+    "english": "husband",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -6256,7 +6525,9 @@
         "english": "My husband is busy every day, but he always makes time to spend with me."
       }
     ],
-    "tags": [],
+    "tags": [
+      "family"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6407,7 +6678,9 @@
         "english": "My friend Zhou Ming is a doctor."
       }
     ],
-    "tags": [],
+    "tags": [
+      "time"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6421,7 +6694,7 @@
     "traditional": "準備",
     "pinyin": "zhǔnbèi",
     "pinyinNumbered": "zhun3 bei4",
-    "english": "Prepare",
+    "english": "to prepare",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -6487,7 +6760,7 @@
     "traditional": "走",
     "pinyin": "zǒu",
     "pinyinNumbered": "zou3",
-    "english": "Walk",
+    "english": "to walk",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -6506,7 +6779,9 @@
         "english": "You scram! / Get out of here!"
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6520,7 +6795,7 @@
     "traditional": "走路",
     "pinyin": "zǒulù",
     "pinyinNumbered": "zou3 lu4",
-    "english": "Walk",
+    "english": "to walk",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -6539,7 +6814,9 @@
         "english": "I walk to work every day."
       }
     ],
-    "tags": [],
+    "tags": [
+      "transport"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6572,7 +6849,9 @@
         "english": "I play soccer with my friends every week."
       }
     ],
-    "tags": [],
+    "tags": [
+      "hobbies"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6586,7 +6865,7 @@
     "traditional": "最",
     "pinyin": "zuì",
     "pinyinNumbered": "zui4",
-    "english": "Most",
+    "english": "most",
     "partOfSpeech": "adverb",
     "meanings": [
       {
@@ -6619,7 +6898,7 @@
     "traditional": "左",
     "pinyin": "zuǒ",
     "pinyinNumbered": "zuo3",
-    "english": "Left",
+    "english": "left",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -6638,7 +6917,9 @@
         "english": "My book is on the left side."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []
@@ -6652,7 +6933,7 @@
     "traditional": "左邊",
     "pinyin": "zuǒbian",
     "pinyinNumbered": "zuo3 bian0",
-    "english": "Left side",
+    "english": "left side",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -6671,7 +6952,9 @@
         "english": "My book is on the left."
       }
     ],
-    "tags": [],
+    "tags": [
+      "directions"
+    ],
     "audio": {
       "wordAudioUrl": null,
       "exampleAudioUrls": []

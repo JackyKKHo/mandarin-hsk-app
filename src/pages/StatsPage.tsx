@@ -17,6 +17,8 @@ import { useEmailReminders } from '../hooks/useEmailReminders'
 import { useMinedSentences } from '../hooks/useMinedSentences'
 import type { VocabItem } from '../types'
 import { LEVELS, levelLabel } from '../data/levels'
+import { NEXT_EXAM, daysUntil, cumulativeCoverage } from '../data/exam'
+import { getSavedLevel } from '../lib/todayPlan'
 
 function exportWords(type: 'learned' | 'favourites', vocab: VocabItem[], learned: Set<string>, favourites: Set<string>) {
   const words = vocab.filter(w => type === 'learned' ? learned.has(w.id) : favourites.has(w.id))
@@ -96,6 +98,10 @@ export default function StatsPage() {
     () => levelStats.map(s => s.total > 0 ? Math.round((s.mastered / s.total) * 100) : 0),
     [levelStats]
   )
+  const examCoverage = useMemo(() => cumulativeCoverage(levelStats), [levelStats])
+  const examDays = daysUntil(NEXT_EXAM.date)
+  const myLevel = getSavedLevel()
+  const myExamLevel = Math.min(myLevel, NEXT_EXAM.maxLevel)
   const { pending: pendingMilestones, claim: claimMilestone } = useMilestones(totalMastered, streak, levelPcts)
   const { enabled: emailEnabled, loading: emailLoading, loaded: emailLoaded, toggle: toggleEmail } = useEmailReminders()
 
@@ -302,14 +308,30 @@ export default function StatsPage() {
         {/* HSK Readiness */}
         <div className="stats-section">
           <h3 className="stats-section-title">HSK Readiness</h3>
-          <p className="stats-section-desc">How well you know each level — based on spaced repetition history.</p>
+          <p className="stats-section-desc">How well you know each level — based on spaced repetition history. HSK exams are cumulative, so <strong>exam coverage</strong> counts every word from HSK 1 up to that level.</p>
+          {examDays >= 0 && (
+            <div className="stats-goal-card" style={{ marginBottom: '0.75rem' }}>
+              <div>
+                <div className="stats-goal-label">
+                  {examDays === 0 ? `The ${NEXT_EXAM.name} is today` : `${examDays} day${examDays === 1 ? '' : 's'} to the ${NEXT_EXAM.name}`}
+                  {' '}({new Date(`${NEXT_EXAM.date}T00:00:00Z`).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })})
+                </div>
+                <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.2rem' }}>
+                  You've mastered {examCoverage[myExamLevel - 1] ?? 0}% of the words on the HSK {myExamLevel} exam.
+                  {myLevel <= NEXT_EXAM.maxLevel && levelStats[myExamLevel - 1] && levelStats[myExamLevel - 1].due > 0 && (
+                    <> <Link to={`/practice/${myExamLevel}`} className="stats-link">Practise HSK {myExamLevel} →</Link></>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
           <div className="readiness-legend">
             <span className="rl-item"><span className="rl-dot rl-mastered" />Mastered (21+ day interval)</span>
             <span className="rl-item"><span className="rl-dot rl-familiar" />Familiar (7–20 days)</span>
             <span className="rl-item"><span className="rl-dot rl-learning" />Learning</span>
           </div>
           <div className="stats-levels">
-            {levelStats.map(s => {
+            {levelStats.map((s, i) => {
               const masteredPct = s.total > 0 ? (s.mastered / s.total) * 100 : 0
               const familiarPct = s.total > 0 ? (s.familiar / s.total) * 100 : 0
               const learningPct = s.total > 0 ? (s.learning / s.total) * 100 : 0
@@ -319,6 +341,11 @@ export default function StatsPage() {
                   <div className="stats-level-head">
                     <Link to={`/hsk/${s.level}`} className="stats-level-name">HSK {levelLabel(s.level)}</Link>
                     <span className="readiness-pct">{readinessPct}% ready</span>
+                    {s.level > 1 && (
+                      <span className="slc-total" title={`Mastered words across HSK 1–${levelLabel(s.level)}`}>
+                        exam coverage {examCoverage[i]}%
+                      </span>
+                    )}
                     <span className="stats-level-counts">
                       <span className="slc-learned">{s.mastered} mastered</span>
                       {s.due > 0 && <span className="slc-due">{s.due} due</span>}

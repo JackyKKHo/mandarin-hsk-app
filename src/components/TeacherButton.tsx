@@ -2,6 +2,10 @@ import { useState, useRef, useEffect } from 'react'
 import { playAudio } from '../audio'
 import { getSpeechRecognition, type SpeechRecognitionLike, type SpeechRecognitionEventLike } from '../types/speech'
 import Icon from './Icon'
+import { loadSRSCards } from '../hooks/useSRS'
+import { pickWeakIds, countMastered, type LearnerProfile } from '../lib/learnerProfile'
+import { loadLevel, levelFromId } from '../data/vocabLoader'
+import { getSavedLevel } from '../lib/todayPlan'
 
 type SpeechRecWithCache = SpeechRecognitionLike & { lastTranscript?: string }
 
@@ -45,6 +49,27 @@ export default function TeacherButton({ context }: Props) {
   const [immersion, setImmersion] = useState<ImmersionLevel>(getImmersion)
   const [showImmersionMenu, setShowImmersionMenu] = useState(false)
 
+  const [learner, setLearner] = useState<LearnerProfile | null>(null)
+
+  // Resolve the learner's weakest words once the chat is opened, so Lin Wei can pitch
+  // examples at their level and bring those words back. Only their levels' files load.
+  useEffect(() => {
+    if (!open) return
+    let cancelled = false
+    const cards = loadSRSCards()
+    const weakIds = pickWeakIds(cards)
+    const base = { level: getSavedLevel(), mastered: countMastered(cards) }
+    const levels = [...new Set(weakIds.map(levelFromId))]
+    Promise.all(levels.map(loadLevel))
+      .then(lists => {
+        const byId = new Map(lists.flat().map(w => [w.id, w.simplified]))
+        const weakWords = weakIds.map(id => byId.get(id)).filter((w): w is string => !!w && w !== context.simplified)
+        if (!cancelled) setLearner({ ...base, weakWords })
+      })
+      .catch(() => { if (!cancelled) setLearner({ ...base, weakWords: [] }) })
+    return () => { cancelled = true }
+  }, [open, context.simplified])
+
   const recognitionRef = useRef<SpeechRecWithCache | null>(null)
   const bottomRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -82,6 +107,7 @@ export default function TeacherButton({ context }: Props) {
           message,
           context,
           immersion,
+          learner,
           history: history.slice(0, -1), // exclude the message we're sending
         }),
       })
