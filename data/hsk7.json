@@ -24749,7 +24749,7 @@
     "traditional": "反倒",
     "pinyin": "fǎndào",
     "pinyinNumbered": "fan3 dao4",
-    "english": "conj.: on the contrary",
+    "english": "on the contrary; instead",
     "partOfSpeech": "adverb",
     "examples": [
       {
@@ -33430,7 +33430,7 @@
     "traditional": "故",
     "pinyin": "gù",
     "pinyinNumbered": "gu4",
-    "english": "conj.: hence",
+    "english": "therefore; hence",
     "partOfSpeech": [
       "adverb",
       "conjunction"
@@ -33585,7 +33585,7 @@
     "traditional": "固然",
     "pinyin": "gùrán",
     "pinyinNumbered": "gu4 ran2",
-    "english": "conj.: though",
+    "english": "admittedly; it is true that",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -37675,7 +37675,7 @@
     "traditional": "何況",
     "pinyin": "hékuàng",
     "pinyinNumbered": "he2 kuang4",
-    "english": "conj.: much less",
+    "english": "let alone; not to mention",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -43289,7 +43289,7 @@
     "traditional": "假使",
     "pinyin": "jiǎshǐ",
     "pinyinNumbered": "jia3 shi3",
-    "english": "conj.: if",
+    "english": "if; supposing",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -44508,7 +44508,7 @@
     "traditional": "鑒於",
     "pinyin": "jiànyú",
     "pinyinNumbered": "jian4 yu2",
-    "english": "conj.: in view of",
+    "english": "in view of; considering",
     "partOfSpeech": [
       "preposition",
       "conjunction"
@@ -52499,7 +52499,7 @@
     "traditional": "況且",
     "pinyin": "kuàngqiě",
     "pinyinNumbered": "kuang4 qie3",
-    "english": "conj.: moreover",
+    "english": "moreover; besides",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -59189,7 +59189,7 @@
     "traditional": "免得",
     "pinyin": "miǎnde",
     "pinyinNumbered": "mian3 de0",
-    "english": "conj.: so as not to",
+    "english": "so as not to; lest",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -61141,7 +61141,7 @@
     "traditional": "乃至",
     "pinyin": "nǎizhì",
     "pinyinNumbered": "nai3 zhi4",
-    "english": "conj.: even",
+    "english": "and even; to the extent of",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -67688,7 +67688,7 @@
     "traditional": "且",
     "pinyin": "qiě",
     "pinyinNumbered": "qie3",
-    "english": "conj.:",
+    "english": "and; moreover",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -71256,7 +71256,7 @@
     "traditional": "若",
     "pinyin": "ruò",
     "pinyinNumbered": "ruo4",
-    "english": "conj.: if",
+    "english": "if",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -71279,7 +71279,7 @@
     "traditional": "若干",
     "pinyin": "ruògān",
     "pinyinNumbered": "ruo4 gan1",
-    "english": "det.: a certain number",
+    "english": "several; a certain number",
     "partOfSpeech": "pronoun",
     "examples": [],
     "tags": [],
@@ -79350,7 +79350,7 @@
     "traditional": "雖說",
     "pinyin": "suīshuō",
     "pinyinNumbered": "sui1 shuo1",
-    "english": "conj.: though",
+    "english": "although; though",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -80449,7 +80449,7 @@
     "traditional": "倘若",
     "pinyin": "tǎngruò",
     "pinyinNumbered": "tang3 ruo4",
-    "english": "conj.: if",
+    "english": "if; supposing",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -92947,7 +92947,7 @@
     "traditional": "許",
     "pinyin": "xǔ",
     "pinyinNumbered": "xu3",
-    "english": "det.: or so",
+    "english": "perhaps; approximately; or so",
     "partOfSpeech": [
       "verb",
       "adverb"
@@ -96600,7 +96600,7 @@
     "traditional": "以致",
     "pinyin": "yǐzhì",
     "pinyinNumbered": "yi3 zhi4",
-    "english": "conj.: so that",
+    "english": "so that (with a bad result); with the result that",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -96617,7 +96617,7 @@
     "traditional": "以至於",
     "pinyin": "yǐzhìyú",
     "pinyinNumbered": "yi3 zhi4 yu2",
-    "english": "conj.: down/up to",
+    "english": "to the extent that; so... that",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -99396,7 +99396,7 @@
     "traditional": "余",
     "pinyin": "yú",
     "pinyinNumbered": "yu2",
-    "english": "det.: odd",
+    "english": "more than; odd (as in ten-odd people)",
     "partOfSpeech": [
       "verb",
       "numeral"
