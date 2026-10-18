@@ -28462,7 +28462,13 @@
     "pinyinNumbered": "zhi1",
     "english": "of",
     "partOfSpeech": "particle",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他是我最好的朋友之一。",
+        "pinyin": "Tā shì wǒ zuì hǎo de péngyou zhī yī.",
+        "english": "He is one of my best friends."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
