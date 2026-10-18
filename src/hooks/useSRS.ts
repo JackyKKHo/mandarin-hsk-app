@@ -33,6 +33,9 @@ function loadLocal(): Record<string, SRSCard> {
   }
 }
 
+/** SRS cards as last synced to this device — for read-only uses that shouldn't refetch. */
+export const loadSRSCards = loadLocal
+
 function saveLocal(data: Record<string, SRSCard>) {
   localStorage.setItem(KEY, JSON.stringify(data))
 }
