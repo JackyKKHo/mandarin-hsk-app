@@ -4809,7 +4809,7 @@
     "traditional": "除非",
     "pinyin": "chúfēi",
     "pinyinNumbered": "chu2 fei1",
-    "english": "conj.: only if/when",
+    "english": "unless; only if",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -9019,7 +9019,7 @@
     "traditional": "凡是",
     "pinyin": "fánshì",
     "pinyinNumbered": "fan2 shi4",
-    "english": "conj.: whatever",
+    "english": "every; all; whatever",
     "partOfSpeech": "adverb",
     "examples": [
       {
@@ -17412,7 +17412,7 @@
     "traditional": "進而",
     "pinyin": "jìn’ér",
     "pinyinNumbered": "jin4 er2",
-    "english": "conj.: proceeding to the next step",
+    "english": "and then; further; going a step further",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -18058,7 +18058,7 @@
     "traditional": "就算",
     "pinyin": "jiùsuàn",
     "pinyinNumbered": "jiu4 suan4",
-    "english": "conj.: even if",
+    "english": "even if",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -29320,7 +29320,7 @@
     "traditional": "雖",
     "pinyin": "suī",
     "pinyinNumbered": "sui1",
-    "english": "conj.: though",
+    "english": "although; though",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -36259,7 +36259,7 @@
     "traditional": "以便",
     "pinyin": "yǐbiàn",
     "pinyinNumbered": "yi3 bian4",
-    "english": "conj.: so that",
+    "english": "so that; in order to",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -36282,7 +36282,7 @@
     "traditional": "以免",
     "pinyin": "yǐmiǎn",
     "pinyinNumbered": "yi3 mian3",
-    "english": "conj.: in order to avoid",
+    "english": "so as to avoid; lest",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -36582,7 +36582,7 @@
     "traditional": "因",
     "pinyin": "yīn",
     "pinyinNumbered": "yin1",
-    "english": "conj.: because",
+    "english": "because; because of",
     "partOfSpeech": [
       "preposition",
       "conjunction"
@@ -39370,7 +39370,7 @@
     "traditional": "之所以",
     "pinyin": "zhīsuǒyǐ",
     "pinyinNumbered": "zhi1 suo3 yi3",
-    "english": "conj.: why",
+    "english": "the reason why",
     "partOfSpeech": "conjunction",
     "examples": [],
     "tags": [],
@@ -40345,7 +40345,7 @@
     "traditional": "諸多",
     "pinyin": "zhūduō",
     "pinyinNumbered": "zhu1 duo1",
-    "english": "det.: a good deal",
+    "english": "many; a great deal of",
     "partOfSpeech": "adjective",
     "examples": [],
     "tags": [],

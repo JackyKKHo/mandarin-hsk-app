@@ -1613,7 +1613,7 @@
     "traditional": "不管",
     "pinyin": "bùguǎn",
     "pinyinNumbered": "bu4 guan3",
-    "english": "conj.: no matter",
+    "english": "no matter (what/how); regardless of",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -2998,7 +2998,7 @@
     "traditional": "此外",
     "pinyin": "cǐwài",
     "pinyinNumbered": "ci3 wai4",
-    "english": "conj.: besides",
+    "english": "in addition; besides",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -5474,7 +5474,7 @@
     "traditional": "而",
     "pinyin": "ér",
     "pinyinNumbered": "er2",
-    "english": "conj.: and yet",
+    "english": "and; but; whereas",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -6162,7 +6162,7 @@
     "traditional": "否則",
     "pinyin": "fǒuzé",
     "pinyinNumbered": "fou3 ze2",
-    "english": "conj.: otherwise",
+    "english": "otherwise; or else",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -9895,7 +9895,7 @@
     "traditional": "即使",
     "pinyin": "jíshǐ",
     "pinyinNumbered": "ji2 shi3",
-    "english": "conj.: even",
+    "english": "even if; even though",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -9918,7 +9918,7 @@
     "traditional": "既",
     "pinyin": "jì",
     "pinyinNumbered": "ji4",
-    "english": "conj.: since...then",
+    "english": "both... and...; since",
     "partOfSpeech": [
       "adverb",
       "conjunction"
@@ -10007,7 +10007,7 @@
     "traditional": "既然",
     "pinyin": "jìrán",
     "pinyinNumbered": "ji4 ran2",
-    "english": "conj.: since",
+    "english": "since; now that",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -10283,7 +10283,7 @@
     "traditional": "加上",
     "pinyin": "jiāshàng",
     "pinyinNumbered": "jia1 shang4",
-    "english": "conj.: in addition (to)",
+    "english": "plus; in addition to",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -11790,7 +11790,7 @@
     "traditional": "儘管",
     "pinyin": "jǐnguǎn",
     "pinyinNumbered": "jing3 uan3",
-    "english": "conj.: even though",
+    "english": "although; even though",
     "partOfSpeech": [
       "adverb",
       "conjunction"
@@ -14540,7 +14540,7 @@
     "traditional": "另",
     "pinyin": "lìng",
     "pinyinNumbered": "ling4",
-    "english": "det.: another",
+    "english": "another; other",
     "partOfSpeech": [
       "pronoun",
       "adverb"
@@ -18544,7 +18544,7 @@
     "traditional": "然而",
     "pinyin": "rán’ér",
     "pinyinNumbered": "ran2 er2",
-    "english": "conj.: even so",
+    "english": "however; yet",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -19355,7 +19355,7 @@
     "traditional": "少數",
     "pinyin": "shǎoshù",
     "pinyinNumbered": "shao3 shu4",
-    "english": "det.: a few",
+    "english": "a few; a small number; minority",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -23862,7 +23862,7 @@
     "traditional": "無論",
     "pinyin": "wúlùn",
     "pinyinNumbered": "wu2 lun4",
-    "english": "conj.: no matter what/how/etc.",
+    "english": "no matter (what/how); regardless",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -27212,7 +27212,7 @@
     "traditional": "於是",
     "pinyin": "yúshì",
     "pinyinNumbered": "yu2 shi4",
-    "english": "conj.: thereupon",
+    "english": "so; therefore; thereupon",
     "partOfSpeech": "conjunction",
     "examples": [
       {

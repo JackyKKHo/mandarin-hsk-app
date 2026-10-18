@@ -2255,7 +2255,7 @@
     "traditional": "不然",
     "pinyin": "bùrán",
     "pinyinNumbered": "bu4 ran2",
-    "english": "conj.: otherwise",
+    "english": "otherwise; or else",
     "partOfSpeech": [
       "conjunction",
       "adjective"
@@ -5609,7 +5609,7 @@
     "traditional": "從而",
     "pinyin": "cóng’ér",
     "pinyinNumbered": "cong2 er2",
-    "english": "conj.: thus",
+    "english": "thus; thereby",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -9215,7 +9215,7 @@
     "traditional": "反而",
     "pinyin": "fǎn’ér",
     "pinyinNumbered": "fan3 er2",
-    "english": "conj.: on the contrary",
+    "english": "on the contrary; instead",
     "partOfSpeech": "adverb",
     "examples": [
       {
@@ -14373,7 +14373,7 @@
     "traditional": "或是",
     "pinyin": "huòshì",
     "pinyinNumbered": "huo4 shi4",
-    "english": "conj.: or",
+    "english": "or",
     "partOfSpeech": [
       "adverb",
       "conjunction"
@@ -15499,7 +15499,7 @@
     "traditional": "甲",
     "pinyin": "jiǎ",
     "pinyinNumbered": "jia3",
-    "english": "det.: first",
+    "english": "first (in a series); A",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -15522,7 +15522,7 @@
     "traditional": "假如",
     "pinyin": "jiǎrú",
     "pinyinNumbered": "jia3 ru2",
-    "english": "conj.: if",
+    "english": "if; supposing",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -18746,7 +18746,7 @@
     "traditional": "空間",
     "pinyin": "kōngjiān",
     "pinyinNumbered": "kong1 jian1",
-    "english": "elbow room",
+    "english": "space; room",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -23851,7 +23851,7 @@
     "traditional": "其",
     "pinyin": "qí",
     "pinyinNumbered": "qi2",
-    "english": "det.: its",
+    "english": "its; his; her; their",
     "partOfSpeech": "pronoun",
     "examples": [
       {
@@ -31868,7 +31868,7 @@
     "traditional": "同",
     "pinyin": "tóng",
     "pinyinNumbered": "tong2",
-    "english": "det.: simialr",
+    "english": "same; similar",
     "partOfSpeech": [
       "adjective",
       "verb",
@@ -32913,7 +32913,7 @@
     "traditional": "萬一",
     "pinyin": "wànyī",
     "pinyinNumbered": "wan4 yi1",
-    "english": "conj.: just in case",
+    "english": "in case; just in case",
     "partOfSpeech": [
       "noun",
       "conjunction"
@@ -37722,7 +37722,7 @@
     "traditional": "一旦",
     "pinyin": "yídàn",
     "pinyinNumbered": "yi2 dan4",
-    "english": "conj.: once",
+    "english": "once; in case (something happens)",
     "partOfSpeech": "adverb",
     "examples": [
       {
@@ -37906,7 +37906,7 @@
     "traditional": "乙",
     "pinyin": "yǐ",
     "pinyinNumbered": "yi3",
-    "english": "det.: second",
+    "english": "second (in a series); B",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -37955,7 +37955,7 @@
     "traditional": "以及",
     "pinyin": "yǐjí",
     "pinyinNumbered": "yi3 ji2",
-    "english": "conj.: as well as",
+    "english": "as well as; and",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -38198,7 +38198,7 @@
     "traditional": "因而",
     "pinyin": "yīn’ér",
     "pinyinNumbered": "yin1 er2",
-    "english": "conj.: consequently",
+    "english": "therefore; consequently",
     "partOfSpeech": "conjunction",
     "examples": [
       {
