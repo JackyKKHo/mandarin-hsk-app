@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
 import BrowserPage from './pages/BrowserPage'
@@ -12,6 +13,8 @@ import StatsPage from './pages/StatsPage'
 import TodayPage from './pages/TodayPage'
 import WidgetPage from './pages/WidgetPage'
 import PrivacyPage from './pages/PrivacyPage'
+// Lazy: carries its own syllable data and pitch detector, which no other page needs
+const ToneGymPage = lazy(() => import('./pages/ToneGymPage'))
 import QuizPage from './pages/QuizPage'
 import WritingPage from './pages/WritingPage'
 import ListeningPage from './pages/ListeningPage'
@@ -99,6 +102,7 @@ export default function App() {
         <Route path="/sentences/review" element={<SentenceReviewPage />} />
         <Route path="/verb-frameworks" element={<VerbFrameworksPage />} />
         <Route path="/record" element={<RecordPage />} />
+        <Route path="/tones" element={<Suspense fallback={null}><ToneGymPage /></Suspense>} />
         <Route path="/pro" element={<ProPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
       </Routes>

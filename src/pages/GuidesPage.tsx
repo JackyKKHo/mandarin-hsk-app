@@ -12,9 +12,10 @@ const GUIDES = [
 ]
 
 const PRACTICE = [
+  { to: '/tones', emoji: '调', title: 'Tone Gym', desc: 'Say a syllable or word and see your pitch live against the target tone. Instant feedback, unlimited reps.' },
   { to: '/record', emoji: '录', title: 'Record & Score', desc: 'Read a phrase aloud and get instant AI feedback on tones, initials, and finals — per character.' },
   { to: '/daily', emoji: '日', title: 'Daily Challenge', desc: 'Ten words from across all HSK levels — refreshes every day.' },
-  { to: '/tone/1', emoji: '声', title: 'Tone Trainer', desc: 'Listen and identify the correct tones. Per HSK level.' },
+  { to: '/tone/1', emoji: '声', title: 'Tone Listening', desc: 'Hear a word and pick its tones. Per HSK level.' },
   { to: '/scramble/1', emoji: '句', title: 'Sentence Scramble', desc: 'Reconstruct scrambled example sentences character by character.' },
 ]
 

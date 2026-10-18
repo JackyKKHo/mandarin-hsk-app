@@ -42,6 +42,7 @@
 | `/favourites` | Favourited words |
 | `/search` | Cross-level search |
 | `/stats` | Progress stats, streak, SRS due count, HSK readiness with cumulative exam coverage and a countdown to `NEXT_EXAM` (`src/data/exam.ts` — update when new exam dates are published) |
+| `/tones` | Tone Gym — live on-device pitch tracking for syllables and tone pairs (`src/lib/pitchTracker.ts`, `src/lib/toneGym.ts`; tone rules shared with Record & Score in `api/_toneContour.js`) |
 
 ### Components
 - `AppHeader` — nav with Sign in/out button
@@ -113,6 +114,7 @@ Same as above — `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` must be set f
 | `node scripts/fill-tags.mjs --status` / `--apply` | Check the tagging batch / write results, then `check-vocab.mjs --changed --allow=tags` |
 | `node scripts/fill-images.mjs` | Find photos (Wikidata → Commons, PD/CC0/CC BY/CC BY-SA only) for nouns in picture topics; `--nouns`, `--level=N`, `--word=苹果`, `--limit=N`, `--redo`, `--review`. Writes `scripts/images-review.html` to eyeball results. Runs weekly on GitHub Actions (`.github/workflows/picture-quiz-photos.yml`), which opens a PR with new photos |
 | `node scripts/check-vocab.mjs [--changed]` | Validate vocab files; `--changed` compares with origin/main and allows only new, well-formed examples |
+| `node scripts/build-tone-gym.mjs` | Rebuild `src/data/toneGym.json` (Tone Gym syllables + tone-pair words) from the HSK lists |
 
 ---
 
