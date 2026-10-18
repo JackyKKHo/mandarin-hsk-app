@@ -41,7 +41,7 @@
 | `/grammar/point/:id` | Grammar detail |
 | `/favourites` | Favourited words |
 | `/search` | Cross-level search |
-| `/stats` | Progress stats, streak, SRS due count |
+| `/stats` | Progress stats, streak, SRS due count, HSK readiness with cumulative exam coverage and a countdown to `NEXT_EXAM` (`src/data/exam.ts` — update when new exam dates are published) |
 
 ### Components
 - `AppHeader` — nav with Sign in/out button
@@ -62,7 +62,7 @@
 - `usePracticeWords` — resolves level param → word list (supports `'review'` for due cards, `'all'` for every level, and `?topics=` to narrow any list to topics)
 
 ### API (Vercel serverless)
-- `api/teacher.js` — Lin Wei AI tutor (Anthropic SDK + prompt caching + rate limit: 50 req/IP/hour)
+- `api/teacher.js` — Lin Wei AI tutor (Anthropic SDK + prompt caching + rate limit: 50 req/IP/hour). Takes an optional `learner` profile (`level`, `mastered`, up to 12 `weakWords`) built by `src/lib/learnerProfile.ts` from on-device SRS data; `api/_learnerProfile.js` sanitises it (Han-only words) before it reaches the prompt
 - `api/tts.js` — Google TTS endpoint (24h cache)
 
 ### Auth
