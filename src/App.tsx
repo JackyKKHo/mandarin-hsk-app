@@ -6,6 +6,7 @@ import DetailPage from './pages/DetailPage'
 import PracticePage from './pages/PracticePage'
 import GrammarListPage from './pages/GrammarListPage'
 import GrammarDetailPage from './pages/GrammarDetailPage'
+import GrammarDrillPage from './pages/GrammarDrillPage'
 import StopAudioOnNavigate from './components/StopAudioOnNavigate'
 import FavouritesPage from './pages/FavouritesPage'
 import SearchPage from './pages/SearchPage'
@@ -69,6 +70,7 @@ export default function App() {
         <Route path="/practice/:level" element={<PracticePage />} />
         <Route path="/grammar/:level" element={<GrammarListPage />} />
         <Route path="/grammar/point/:id" element={<GrammarDetailPage />} />
+        <Route path="/grammar/drill/:level" element={<GrammarDrillPage />} />
         <Route path="/favourites" element={<FavouritesPage />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/today" element={<TodayPage />} />

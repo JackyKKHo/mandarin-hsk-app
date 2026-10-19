@@ -1977,6 +1977,63 @@ html.dark .missed-word-card:hover { background: #3a1515; }
   margin-bottom: 0.35rem;
 }
 
+/* ── Grammar drill (auto-marked exercises) ── */
+.grammar-drill-cta {
+  display: flex; flex-direction: column; gap: 0.15rem;
+  margin: 0 0 1rem; padding: 0.85rem 1rem;
+  border: 1.5px solid var(--red); border-radius: var(--radius);
+  background: var(--red-light); color: var(--text); text-decoration: none;
+}
+.grammar-drill-cta:hover { box-shadow: var(--shadow); }
+.grammar-drill-cta-title { font-weight: 700; color: var(--red); }
+.grammar-drill-cta-sub { font-size: 0.82rem; color: var(--muted); }
+.grammar-drill-start { margin-top: 1.5rem; text-align: center; }
+.grammar-drill-start-desc { margin: 0.5rem 0 0; font-size: 0.82rem; color: var(--muted); }
+.grammar-drill-panel {
+  margin-top: 1.5rem; padding: 1.1rem;
+  border: 1.5px solid var(--red); border-radius: var(--radius-lg);
+}
+.grammar-drill { display: flex; flex-direction: column; gap: 0.75rem; }
+.grammar-drill-top { display: flex; align-items: center; gap: 0.75rem; }
+.grammar-drill-top .practice-score-inline { margin-left: auto; }
+.grammar-drill-close { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 1rem; padding: 0.25rem; }
+.grammar-drill-point { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+.grammar-drill-card {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem; text-align: center;
+}
+.grammar-drill-instruction { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.grammar-drill-english { font-size: 0.95rem; color: var(--muted); }
+.grammar-drill-sentence { font-size: 1.5rem; font-weight: 600; line-height: 1.6; }
+.grammar-drill-blank {
+  display: inline-block; min-width: 2.2em; margin: 0 0.15em; padding: 0 0.2em;
+  border-bottom: 2.5px solid var(--red); color: var(--red);
+}
+.grammar-drill-blank.filled { border-bottom-color: #27ae60; color: #27ae60; }
+.grammar-drill-sentence-options .quiz-option { font-size: 1.15rem; }
+.grammar-drill-slots { min-height: 3.2rem; flex-wrap: wrap; }
+.grammar-drill .scramble-slot,
+.grammar-drill .scramble-tile { width: auto; min-width: 2.75rem; padding: 0 0.6rem; white-space: nowrap; }
+.grammar-drill-slots .scramble-slot { cursor: pointer; font-family: inherit; }
+.grammar-drill-slots-hint { color: var(--muted); font-size: 0.85rem; align-self: center; }
+.grammar-drill-feedback {
+  border-radius: var(--radius); padding: 0.8rem 1rem; border-left: 3px solid #27ae60;
+  background: var(--green-bg);
+}
+.grammar-drill-feedback.is-wrong { border-left-color: var(--red); background: var(--red-light); }
+.grammar-drill-verdict { font-weight: 700; font-size: 0.85rem; margin-bottom: 0.35rem; }
+.grammar-drill-feedback.is-right .grammar-drill-verdict { color: var(--green); }
+.grammar-drill-feedback.is-wrong .grammar-drill-verdict { color: var(--red); }
+.grammar-drill-answer { display: flex; align-items: center; gap: 0.5rem; }
+.grammar-drill-answer-zh { font-size: 1.15rem; font-weight: 600; }
+.grammar-drill-explain { margin: 0.4rem 0 0; font-size: 0.88rem; line-height: 1.5; }
+.grammar-drill-next { width: 100%; }
+.grammar-drill-missed { margin: 1rem 0; display: flex; flex-direction: column; gap: 0.4rem; text-align: left; }
+.grammar-drill-missed-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.grammar-drill-missed-link { color: var(--red); text-decoration: none; font-weight: 600; }
+html.dark .grammar-drill-feedback { background: #0d2d1a; }
+html.dark .grammar-drill-feedback.is-wrong { background: #2d0a0a; }
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   /* Header */

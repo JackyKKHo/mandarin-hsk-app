@@ -5,17 +5,17 @@ import type { GrammarPoint } from '../types'
 import AppHeader from '../components/AppHeader'
 import TonedPinyin from '../components/TonedPinyin'
 import { useSEO } from '../hooks/useSEO'
+import { LEVELS, levelLabel, toLevel } from '../data/levels'
 
 const grammar = grammarData as GrammarPoint[]
-const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 export default function GrammarListPage() {
   const { level } = useParams<{ level: string }>()
   const navigate = useNavigate()
-  const currentLevel = Number(level) || 1
+  const currentLevel = toLevel(level)
   useSEO({
-    title: `HSK ${currentLevel} Grammar Patterns`,
-    description: `Learn HSK Level ${currentLevel} Mandarin grammar patterns with explanations and example sentences.`,
+    title: `HSK ${levelLabel(currentLevel)} Grammar Patterns`,
+    description: `Learn HSK Level ${levelLabel(currentLevel)} Mandarin grammar patterns with explanations and example sentences.`,
     path: `/grammar/${currentLevel}`,
   })
   const [search, setSearch] = useState('')
@@ -38,6 +38,11 @@ export default function GrammarListPage() {
     )
   }, [currentLevel, search])
 
+  const exerciseCount = useMemo(
+    () => grammar.filter(g => g.hskLevel === currentLevel).reduce((n, g) => n + (g.exercises?.length ?? 0), 0),
+    [currentLevel]
+  )
+
   function switchLevel(l: number) {
     setSearch('')
     navigate(`/grammar/${l}`)
@@ -55,7 +60,7 @@ export default function GrammarListPage() {
             onClick={() => switchLevel(l)}
             aria-current={l === currentLevel ? 'page' : undefined}
           >
-            HSK {l}
+            HSK {levelLabel(l)}
             {levelCounts[l] > 0 && (
               <span className="level-count">{levelCounts[l]}</span>
             )}
@@ -77,10 +82,17 @@ export default function GrammarListPage() {
         </span>
       </div>
 
+      {exerciseCount > 0 && (
+        <Link to={`/grammar/drill/${currentLevel}`} className="grammar-drill-cta">
+          <span className="grammar-drill-cta-title">Drill all HSK {levelLabel(currentLevel)} grammar</span>
+          <span className="grammar-drill-cta-sub">{exerciseCount} auto-marked exercises, mixed</span>
+        </Link>
+      )}
+
       {points.length === 0 ? (
         <p className="empty-state">
           {levelCounts[currentLevel] === 0
-            ? `No grammar points yet for HSK ${currentLevel}.`
+            ? `No grammar points yet for HSK ${levelLabel(currentLevel)}.`
             : 'No results match your search.'}
         </p>
       ) : (
