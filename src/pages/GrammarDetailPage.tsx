@@ -4,6 +4,8 @@ import grammarData from '../../data/grammar.json'
 import type { GrammarPoint } from '../types'
 import TonedPinyin from '../components/TonedPinyin'
 import AudioButton from '../components/AudioButton'
+import GrammarDrill from '../components/GrammarDrill'
+import { buildDrill, type DrillItem } from '../lib/grammarDrill'
 
 const grammar = grammarData as GrammarPoint[]
 
@@ -72,7 +74,7 @@ function GrammarTest({ point }: { point: GrammarPoint }) {
     return (
       <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
         <button className="btn-primary" onClick={startTest}>
-          Practice this grammar ({examples.length} sentence{examples.length !== 1 ? 's' : ''})
+          Translate with AI feedback ({examples.length} sentence{examples.length !== 1 ? 's' : ''})
         </button>
       </div>
     )
@@ -130,6 +132,33 @@ function GrammarTest({ point }: { point: GrammarPoint }) {
           </button>
         </>
       )}
+    </div>
+  )
+}
+
+function QuickDrill({ point }: { point: GrammarPoint }) {
+  const [items, setItems] = useState<DrillItem[] | null>(null)
+  const count = point.exercises?.length ?? 0
+  if (count === 0) return null
+
+  if (!items) {
+    return (
+      <div className="grammar-drill-start">
+        <button className="btn-primary" onClick={() => setItems(buildDrill([point]))}>
+          Quick drill ({count} questions)
+        </button>
+        <p className="grammar-drill-start-desc">Fill the gap, spot the correct sentence and put words in order — marked instantly.</p>
+      </div>
+    )
+  }
+
+  return (
+    <div className="grammar-drill-panel">
+      <GrammarDrill
+        items={items}
+        onRestart={() => setItems(buildDrill([point]))}
+        onClose={() => setItems(null)}
+      />
     </div>
   )
 }
@@ -194,6 +223,8 @@ export default function GrammarDetailPage() {
             <p>{point.notes}</p>
           </div>
         )}
+
+        <QuickDrill key={point.id} point={point} />
 
         {point.examples.length > 0 && <GrammarTest point={point} />}
       </div>

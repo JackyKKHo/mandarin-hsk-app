@@ -4,6 +4,27 @@ export interface GrammarExample {
   english: string
 }
 
+/** Pick the right word for the blank (＿＿), or the one correct sentence */
+export interface GrammarChoiceExercise {
+  type: 'choice'
+  prompt: string
+  english: string
+  options: string[]
+  answer: string
+  explain: string
+}
+
+/** Put the shuffled tiles in the right order; `alt` lists other accepted orders */
+export interface GrammarOrderExercise {
+  type: 'order'
+  english: string
+  tokens: string[]
+  alt?: string[]
+  explain?: string
+}
+
+export type GrammarExercise = GrammarChoiceExercise | GrammarOrderExercise
+
 export interface GrammarPoint {
   id: string
   hskLevel: number
@@ -13,6 +34,7 @@ export interface GrammarPoint {
   examples: GrammarExample[]
   notes?: string
   tags: string[]
+  exercises?: GrammarExercise[]
 }
 
 export interface Example {

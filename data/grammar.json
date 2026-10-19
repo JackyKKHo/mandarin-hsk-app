@@ -11,7 +11,15 @@
       {"chinese": "这是我的书。", "pinyin": "Zhè shì wǒ de shū.", "english": "This is my book."}
     ],
     "notes": "Don't say 天气是好 ✗. Use 天气很好 ✓. 是 is only for nouns, not adjectives.",
-    "tags": ["copula", "verb", "essential"]
+    "tags": ["copula", "verb", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "我＿＿学生。", "english": "I am a student.", "options": ["是", "很", "有", "在"], "answer": "是", "explain": "是 links a subject to a noun: 我是学生."},
+      {"type": "choice", "prompt": "这＿＿我的书。", "english": "This is my book.", "options": ["是", "很", "在", "也"], "answer": "是", "explain": "是 links 这 to the noun phrase 我的书."},
+      {"type": "choice", "prompt": "今天天气＿＿好。", "english": "The weather is very nice today.", "options": ["很", "是", "有", "都"], "answer": "很", "explain": "Adjectives don't take 是. Use 很 + adjective: 天气很好."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "She is a teacher.", "options": ["她是老师。", "她很老师。", "她老师是。"], "answer": "她是老师。", "explain": "Subject + 是 + noun. 很 only goes before adjectives."},
+      {"type": "order", "english": "He is my friend.", "tokens": ["他", "是", "我的", "朋友"]},
+      {"type": "order", "english": "Is that your phone?", "tokens": ["那", "是", "你的", "手机", "吗"]}
+    ]
   },
   {
     "id": "hsk1_gram_002",
@@ -23,7 +31,15 @@
       {"chinese": "我不是老师。", "pinyin": "Wǒ bú shì lǎoshī.", "english": "I am not a teacher."},
       {"chinese": "这不是我的书。", "pinyin": "Zhè bú shì wǒ de shū.", "english": "This is not my book."}
     ],
-    "tags": ["negation", "copula", "essential"]
+    "tags": ["negation", "copula", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "我＿＿老师，我是学生。", "english": "I'm not a teacher, I'm a student.", "options": ["不是", "没是", "不有", "没有"], "answer": "不是", "explain": "是 is always negated with 不, never 没."},
+      {"type": "choice", "prompt": "这不＿＿我的书。", "english": "This isn't my book.", "options": ["是", "有", "很", "在"], "answer": "是", "explain": "不是 = is not."},
+      {"type": "choice", "prompt": "她＿＿医生。", "english": "She is not a doctor.", "options": ["不是", "没是", "是不", "不"], "answer": "不是", "explain": "不 goes before 是: 她不是医生."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "He is not Chinese.", "options": ["他不是中国人。", "他没是中国人。", "他是不中国人。"], "answer": "他不是中国人。", "explain": "Negate 是 with 不, placed before it. 没是 is never correct."},
+      {"type": "order", "english": "This is not my cup.", "tokens": ["这", "不是", "我的", "杯子"]},
+      {"type": "order", "english": "They are not students.", "tokens": ["他们", "不是", "学生"]}
+    ]
   },
   {
     "id": "hsk1_gram_003",
@@ -37,7 +53,15 @@
       {"chinese": "桌子上有一本书。", "pinyin": "Zhuōzi shàng yǒu yī běn shū.", "english": "There is a book on the table."}
     ],
     "notes": "NEVER say 不有 ✗ — the negation of 有 is always 没有.",
-    "tags": ["verb", "possession", "existence", "essential"]
+    "tags": ["verb", "possession", "existence", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "我＿＿两个哥哥。", "english": "I have two older brothers.", "options": ["有", "是", "在", "很"], "answer": "有", "explain": "有 = to have."},
+      {"type": "choice", "prompt": "我＿＿钱。", "english": "I don't have any money.", "options": ["没有", "不有", "不是", "没是"], "answer": "没有", "explain": "有 is negated with 没, never 不: 没有."},
+      {"type": "choice", "prompt": "你＿＿没有时间？", "english": "Do you have time?", "options": ["有", "是", "在", "要"], "answer": "有", "explain": "有没有 is the 'have or not' question form."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "There is nobody in the room.", "options": ["房间里没有人。", "房间里不有人。", "房间里没是人。"], "answer": "房间里没有人。", "explain": "Place + 没有 + noun = there isn't any… . 不有 does not exist."},
+      {"type": "order", "english": "I have a younger sister.", "tokens": ["我", "有", "一个", "妹妹"]},
+      {"type": "order", "english": "There are no books on the table.", "tokens": ["桌子上", "没有", "书"]}
+    ]
   },
   {
     "id": "hsk1_gram_004",
@@ -51,7 +75,15 @@
       {"chinese": "这本书很有意思。", "pinyin": "Zhè běn shū hěn yǒu yìsi.", "english": "This book is very interesting."}
     ],
     "notes": "Omitting 很 implies a comparison: 今天天气好 can mean 'today's weather is good (compared to yesterday)'.",
-    "tags": ["adjective", "predicate", "essential"]
+    "tags": ["adjective", "predicate", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "他的中文＿＿好。", "english": "His Chinese is very good.", "options": ["很", "是", "有", "的"], "answer": "很", "explain": "Subject + 很 + adjective. No 是 before adjectives."},
+      {"type": "choice", "prompt": "这个苹果＿＿大。", "english": "This apple isn't big.", "options": ["不", "没", "不是", "没有"], "answer": "不", "explain": "Adjectives are negated with plain 不: 不大."},
+      {"type": "choice", "prompt": "这个菜＿＿好吃。", "english": "This dish is very tasty.", "options": ["很", "是", "的", "有"], "answer": "很", "explain": "很 links the subject to an adjective (好吃)."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I'm very busy.", "options": ["我很忙。", "我是忙。", "我忙很。"], "answer": "我很忙。", "explain": "很 comes before the adjective; 是 is not used with adjectives."},
+      {"type": "order", "english": "My mum is very pretty.", "tokens": ["我", "妈妈", "很", "漂亮"]},
+      {"type": "order", "english": "This restaurant isn't big.", "tokens": ["这个", "饭馆", "不", "大"]}
+    ]
   },
   {
     "id": "hsk1_gram_005",
@@ -65,7 +97,15 @@
       {"chinese": "漂亮的衣服", "pinyin": "piàoliang de yīfú", "english": "beautiful clothes"}
     ],
     "notes": "With close relationships 的 can be dropped: 我妈妈 is natural for 'my mum'.",
-    "tags": ["particle", "possessive", "essential"]
+    "tags": ["particle", "possessive", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "这是我＿＿书。", "english": "This is my book.", "options": ["的", "是", "很", "了"], "answer": "的", "explain": "的 marks possession: 我的书."},
+      {"type": "choice", "prompt": "我很喜欢红色＿＿衣服。", "english": "I really like red clothes.", "options": ["的", "了", "吗", "很"], "answer": "的", "explain": "的 links a describing word to the noun: 红色的衣服."},
+      {"type": "choice", "prompt": "那个穿白衣服＿＿人是谁？", "english": "Who is that person wearing white?", "options": ["的", "了", "是", "在"], "answer": "的", "explain": "A whole phrase can describe a noun with 的: 穿白衣服的人."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "This is the teacher's book.", "options": ["这是老师的书。", "这是的老师书。", "这老师是的书。"], "answer": "这是老师的书。", "explain": "Owner + 的 + thing: 老师的书."},
+      {"type": "order", "english": "This is my computer.", "tokens": ["这", "是", "我", "的", "电脑"]},
+      {"type": "order", "english": "She is my good friend.", "tokens": ["她", "是", "我", "的", "好朋友"]}
+    ]
   },
   {
     "id": "hsk1_gram_006",
@@ -78,7 +118,15 @@
       {"chinese": "你喝茶吗？", "pinyin": "Nǐ hē chá ma?", "english": "Do you drink tea?"},
       {"chinese": "他有猫吗？", "pinyin": "Tā yǒu māo ma?", "english": "Does he have a cat?"}
     ],
-    "tags": ["question", "particle", "essential"]
+    "tags": ["question", "particle", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "你是学生＿＿？", "english": "Are you a student?", "options": ["吗", "呢", "了", "的"], "answer": "吗", "explain": "Add 吗 to the end of a statement to make a yes/no question."},
+      {"type": "choice", "prompt": "他是你的老师＿＿？", "english": "Is he your teacher?", "options": ["吗", "是", "很", "在"], "answer": "吗", "explain": "吗 goes at the very end of the sentence."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "Do you like drinking tea?", "options": ["你喜欢喝茶吗？", "你吗喜欢喝茶？", "吗你喜欢喝茶？"], "answer": "你喜欢喝茶吗？", "explain": "吗 always comes last."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "Are you busy?", "options": ["你忙吗？", "你忙不忙吗？", "你吗忙？"], "answer": "你忙吗？", "explain": "Use either 吗 or the A-not-A form (忙不忙), never both."},
+      {"type": "order", "english": "Are you Chinese?", "tokens": ["你", "是", "中国人", "吗"]},
+      {"type": "order", "english": "Is he coming tomorrow?", "tokens": ["他", "明天", "来", "吗"], "alt": ["明天他来吗"]}
+    ]
   },
   {
     "id": "hsk1_gram_007",
@@ -92,7 +140,15 @@
       {"chinese": "他不是我的朋友。", "pinyin": "Tā bú shì wǒ de péngyǒu.", "english": "He is not my friend."}
     ],
     "notes": "Use 没 for past actions: 我没去 ✓ (I didn't go). 不 is for habit, present, and future.",
-    "tags": ["negation", "essential"]
+    "tags": ["negation", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "我＿＿喜欢喝咖啡。", "english": "I don't like drinking coffee.", "options": ["不", "没", "没有", "不是"], "answer": "不", "explain": "Habits and preferences are negated with 不."},
+      {"type": "choice", "prompt": "明天我＿＿去学校。", "english": "I'm not going to school tomorrow.", "options": ["不", "没", "没有", "了"], "answer": "不", "explain": "Future plans use 不. 没 is for things that didn't happen."},
+      {"type": "choice", "prompt": "他＿＿是老师。", "english": "He isn't a teacher.", "options": ["不", "没", "很", "也"], "answer": "不", "explain": "是 is always negated with 不."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I didn't go yesterday.", "options": ["我昨天没去。", "我昨天不去了。", "我昨天没去了。"], "answer": "我昨天没去。", "explain": "Past actions are negated with 没, and 了 is dropped. 不去了 means 'not going any more'."},
+      {"type": "order", "english": "I don't want to go.", "tokens": ["我", "不", "想", "去"]},
+      {"type": "order", "english": "She isn't working today.", "tokens": ["她", "今天", "不", "工作"], "alt": ["今天她不工作"]}
+    ]
   },
   {
     "id": "hsk1_gram_008",
@@ -105,7 +161,15 @@
       {"chinese": "她也喜欢吃苹果。", "pinyin": "Tā yě xǐhuān chī píngguǒ.", "english": "She also likes eating apples."}
     ],
     "notes": "我也去 ✓ (I'm also going). NOT 我去也 ✗ — 也 goes before the verb, not after.",
-    "tags": ["adverb", "essential"]
+    "tags": ["adverb", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "我是学生，他＿＿是学生。", "english": "I'm a student, and he is a student too.", "options": ["也", "都", "很", "的"], "answer": "也", "explain": "也 = also. It goes after the subject."},
+      {"type": "choice", "prompt": "我不去，她＿＿不去。", "english": "I'm not going, and she isn't either.", "options": ["也", "很", "是", "的"], "answer": "也", "explain": "也 + 不 = not … either."},
+      {"type": "choice", "prompt": "他也＿＿忙。", "english": "He is very busy too.", "options": ["很", "是", "有", "的"], "answer": "很", "explain": "也 comes before 很 + adjective: 也很忙."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I also like tea.", "options": ["我也喜欢茶。", "也我喜欢茶。", "我喜欢也茶。"], "answer": "我也喜欢茶。", "explain": "也 always sits after the subject and before the verb, never at the start."},
+      {"type": "order", "english": "I'm a teacher too.", "tokens": ["我", "也", "是", "老师"]},
+      {"type": "order", "english": "They don't drink alcohol either.", "tokens": ["他们", "也", "不", "喝", "酒"]}
+    ]
   },
   {
     "id": "hsk1_gram_009",
@@ -119,7 +183,15 @@
       {"chinese": "我和她都去。", "pinyin": "Wǒ hé tā dōu qù.", "english": "Both she and I are going."}
     ],
     "notes": "他们都来了 ✓, not 都他们来了 ✗ — the subject must come first.",
-    "tags": ["adverb", "essential"]
+    "tags": ["adverb", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "我们＿＿是学生。", "english": "We are all students.", "options": ["都", "很", "有", "在"], "answer": "都", "explain": "都 = all. It goes after the subject (which is plural)."},
+      {"type": "choice", "prompt": "他们都＿＿去。", "english": "None of them are going.", "options": ["不", "是", "很", "有"], "answer": "不", "explain": "都不 = none of them."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "We all like Chinese food.", "options": ["我们都喜欢中国菜。", "都我们喜欢中国菜。", "我们喜欢都中国菜。"], "answer": "我们都喜欢中国菜。", "explain": "都 goes after the subject and before the verb."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "Not all of them are students.", "options": ["他们不都是学生。", "他们都不是学生。", "不他们都是学生。"], "answer": "他们不都是学生。", "explain": "不都 = not all. 都不 = none at all."},
+      {"type": "order", "english": "My friends are all busy.", "tokens": ["我的", "朋友", "都", "很", "忙"]},
+      {"type": "order", "english": "We all like drinking tea.", "tokens": ["我们", "都", "喜欢", "喝茶"]}
+    ]
   },
   {
     "id": "hsk1_gram_010",
@@ -132,7 +204,15 @@
       {"chinese": "书在桌子上。", "pinyin": "Shū zài zhuōzi shàng.", "english": "The book is on the table."},
       {"chinese": "他在学校工作。", "pinyin": "Tā zài xuéxiào gōngzuò.", "english": "He works at the school."}
     ],
-    "tags": ["verb", "preposition", "location", "essential"]
+    "tags": ["verb", "preposition", "location", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "我＿＿家。", "english": "I'm at home.", "options": ["在", "是", "有", "去"], "answer": "在", "explain": "在 + place = to be at a place."},
+      {"type": "choice", "prompt": "他＿＿学校学习中文。", "english": "He studies Chinese at school.", "options": ["在", "是", "有", "很"], "answer": "在", "explain": "在 + place comes before the verb."},
+      {"type": "choice", "prompt": "你的手机＿＿桌子上。", "english": "Your phone is on the table.", "options": ["在", "有", "是", "很"], "answer": "在", "explain": "Thing + 在 + place = the thing is located there."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I work in Beijing.", "options": ["我在北京工作。", "我北京在工作。", "我工作北京在。"], "answer": "我在北京工作。", "explain": "Subject + 在 + place + verb."},
+      {"type": "order", "english": "My mum works at a hospital.", "tokens": ["我妈妈", "在", "医院", "工作"]},
+      {"type": "order", "english": "The cat is under the chair.", "tokens": ["猫", "在", "椅子", "下面"]}
+    ]
   },
   {
     "id": "hsk1_gram_011",
@@ -146,7 +226,15 @@
       {"chinese": "昨天下雨了。", "pinyin": "Zuótiān xià yǔ le.", "english": "It rained yesterday."}
     ],
     "notes": "了 at sentence-end can also signal a change of state: 他来了 means 'He has arrived (he wasn't here before)'.",
-    "tags": ["particle", "aspect", "completion"]
+    "tags": ["particle", "aspect", "completion"],
+    "exercises": [
+      {"type": "choice", "prompt": "我昨天买＿＿一本书。", "english": "I bought a book yesterday.", "options": ["了", "吗", "很", "在"], "answer": "了", "explain": "Verb + 了 marks a completed action."},
+      {"type": "choice", "prompt": "他已经走＿＿。", "english": "He has already left.", "options": ["了", "吗", "的", "在"], "answer": "了", "explain": "已经 … 了 = already done."},
+      {"type": "choice", "prompt": "你吃饭＿＿吗？", "english": "Have you eaten?", "options": ["了", "是", "很", "在"], "answer": "了", "explain": "了吗 asks whether something has happened."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I didn't eat breakfast.", "options": ["我没吃早饭。", "我没吃了早饭。", "我不吃了早饭。"], "answer": "我没吃早饭。", "explain": "Negate a completed action with 没 and drop 了."},
+      {"type": "order", "english": "I drank two cups of coffee.", "tokens": ["我", "喝", "了", "两杯", "咖啡"]},
+      {"type": "order", "english": "She went to Beijing yesterday.", "tokens": ["她", "昨天", "去", "了", "北京"], "alt": ["她昨天去北京了", "昨天她去了北京", "昨天她去北京了"]}
+    ]
   },
   {
     "id": "hsk1_gram_012",
@@ -161,7 +249,15 @@
       {"chinese": "五张纸", "pinyin": "wǔ zhāng zhǐ", "english": "five sheets of paper (张 for flat things)"}
     ],
     "notes": "Use 两 (liǎng) not 二 (èr) before measure words: 两个 ✓, 二个 ✗.",
-    "tags": ["measure-word", "grammar", "essential"]
+    "tags": ["measure-word", "grammar", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "我有三＿＿书。", "english": "I have three books.", "options": ["本", "个", "只", "张"], "answer": "本", "explain": "本 is the measure word for books."},
+      {"type": "choice", "prompt": "桌子上有一＿＿纸。", "english": "There's a sheet of paper on the table.", "options": ["张", "本", "条", "件"], "answer": "张", "explain": "张 is for flat things: paper, tables, tickets."},
+      {"type": "choice", "prompt": "我家有两＿＿猫。", "english": "My family has two cats.", "options": ["只", "本", "张", "件"], "answer": "只", "explain": "只 is used for most animals."},
+      {"type": "choice", "prompt": "我买了一＿＿衣服。", "english": "I bought an item of clothing.", "options": ["件", "本", "张", "只"], "answer": "件", "explain": "件 is for clothes (tops) and matters/things."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "There are two people.", "options": ["有两个人。", "有二个人。", "有两人个。"], "answer": "有两个人。", "explain": "Use 两 (not 二) before a measure word, and the measure word goes between the number and the noun."},
+      {"type": "order", "english": "I'd like to buy a cup of coffee.", "tokens": ["我", "想", "买", "一", "杯", "咖啡"]}
+    ]
   },
   {
     "id": "hsk1_gram_013",
@@ -174,7 +270,15 @@
       {"chinese": "你想吃什么？", "pinyin": "Nǐ xiǎng chī shénme?", "english": "What do you want to eat?"},
       {"chinese": "她想学汉语。", "pinyin": "Tā xiǎng xué Hànyǔ.", "english": "She wants to learn Chinese."}
     ],
-    "tags": ["modal", "desire"]
+    "tags": ["modal", "desire"],
+    "exercises": [
+      {"type": "choice", "prompt": "我＿＿去中国。", "english": "I want to go to China.", "options": ["想", "是", "很", "在"], "answer": "想", "explain": "想 + verb = would like to / want to."},
+      {"type": "choice", "prompt": "他＿＿学中文。", "english": "He wants to learn Chinese.", "options": ["想", "是", "很", "的"], "answer": "想", "explain": "想 comes directly before the verb."},
+      {"type": "choice", "prompt": "你想＿＿什么？", "english": "What do you want to eat?", "options": ["吃", "是", "很", "的"], "answer": "吃", "explain": "想 is followed by a verb: 想吃."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I don't want to go.", "options": ["我不想去。", "我没想去。", "我想去不。"], "answer": "我不想去。", "explain": "Negate 想 with 不, placed before it."},
+      {"type": "order", "english": "I'd like a glass of water.", "tokens": ["我", "想", "喝", "一杯", "水"]},
+      {"type": "order", "english": "Where do you want to go?", "tokens": ["你", "想", "去", "哪儿"]}
+    ]
   },
   {
     "id": "hsk1_gram_014",
@@ -188,7 +292,15 @@
       {"chinese": "我今天不能来。", "pinyin": "Wǒ jīntiān bù néng lái.", "english": "I can't come today. (circumstance)"}
     ],
     "notes": "If you learned it → 会. If it depends on the situation or physical possibility → 能.",
-    "tags": ["modal", "ability"]
+    "tags": ["modal", "ability"],
+    "exercises": [
+      {"type": "choice", "prompt": "我＿＿说中文。", "english": "I can speak Chinese (I've learned it).", "options": ["会", "能", "想", "在"], "answer": "会", "explain": "会 = can, as a learned skill."},
+      {"type": "choice", "prompt": "明天我有事，不＿＿来。", "english": "I'm busy tomorrow, so I can't come.", "options": ["能", "会", "是", "在"], "answer": "能", "explain": "能 = able to, given the circumstances. 不会来 would mean 'won't come'."},
+      {"type": "choice", "prompt": "这里＿＿抽烟吗？", "english": "Is smoking allowed here?", "options": ["能", "会", "想", "是"], "answer": "能", "explain": "能 also asks about permission."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "Can you swim?", "options": ["你会游泳吗？", "你是游泳吗？", "你游泳会吗？"], "answer": "你会游泳吗？", "explain": "Swimming is a learned skill, so use 会 before the verb."},
+      {"type": "order", "english": "My mum can cook Chinese food.", "tokens": ["我妈妈", "会", "做", "中国菜"]},
+      {"type": "order", "english": "Can you come tomorrow?", "tokens": ["你", "明天", "能", "来", "吗"], "alt": ["明天你能来吗"]}
+    ]
   },
   {
     "id": "hsk1_gram_015",
@@ -202,7 +314,15 @@
       {"chinese": "明天他来我家。", "pinyin": "Míngtiān tā lái wǒ jiā.", "english": "Tomorrow he'll come to my home."}
     ],
     "notes": "我去学校今天 ✗ — time words cannot go at the end of a sentence.",
-    "tags": ["time", "word-order", "essential"]
+    "tags": ["time", "word-order", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I went to Beijing yesterday.", "options": ["我昨天去了北京。", "我去了北京昨天。", "我去昨天北京了。"], "answer": "我昨天去了北京。", "explain": "Time words go before the verb, never at the end like in English."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I study Chinese every day.", "options": ["我每天学习中文。", "我学习中文每天。", "我学习每天中文。"], "answer": "我每天学习中文。", "explain": "每天 goes before the verb."},
+      {"type": "choice", "prompt": "他＿＿八点起床。", "english": "He gets up at eight every day.", "options": ["每天", "很", "了", "是"], "answer": "每天", "explain": "Time word + time + verb: 每天八点起床."},
+      {"type": "order", "english": "I'm going to school tomorrow morning.", "tokens": ["我", "明天", "早上", "去", "学校"], "alt": ["明天早上我去学校"]},
+      {"type": "order", "english": "She has class at three in the afternoon.", "tokens": ["她", "下午", "三点", "上课"], "alt": ["下午三点她上课"]},
+      {"type": "order", "english": "We eat dinner at seven in the evening.", "tokens": ["我们", "晚上", "七点", "吃饭"], "alt": ["晚上七点我们吃饭"]}
+    ]
   },
   {
     "id": "hsk2_gram_001",
@@ -216,7 +336,15 @@
       {"chinese": "苹果比西瓜小。", "pinyin": "Píngguǒ bǐ xīguā xiǎo.", "english": "Apples are smaller than watermelons."}
     ],
     "notes": "他比我很高 ✗ — no 很 in comparisons. For 'much taller' say 他比我高多了.",
-    "tags": ["comparison", "essential"]
+    "tags": ["comparison", "essential"],
+    "exercises": [
+      {"type": "choice", "prompt": "他＿＿我高。", "english": "He is taller than me.", "options": ["比", "很", "跟", "是"], "answer": "比", "explain": "A + 比 + B + adjective."},
+      {"type": "choice", "prompt": "我比他大＿＿岁。", "english": "I'm two years older than him.", "options": ["两", "很", "非常", "了"], "answer": "两", "explain": "The exact difference goes after the adjective: 大两岁."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "Today is hotter than yesterday.", "options": ["今天比昨天热。", "今天比昨天很热。", "今天热比昨天。"], "answer": "今天比昨天热。", "explain": "Don't use 很 in a 比 sentence."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "My brother is much taller than me.", "options": ["哥哥比我高多了。", "哥哥比我很高。", "哥哥比我非常高。"], "answer": "哥哥比我高多了。", "explain": "To say 'much more', add 多了 or 得多 after the adjective."},
+      {"type": "order", "english": "This one is cheaper than that one.", "tokens": ["这个", "比", "那个", "便宜"]},
+      {"type": "order", "english": "Flying is faster than taking the train.", "tokens": ["坐飞机", "比", "坐火车", "快"]}
+    ]
   },
   {
     "id": "hsk2_gram_002",
@@ -228,7 +356,15 @@
       {"chinese": "从北京到上海很远。", "pinyin": "Cóng Běijīng dào Shànghǎi hěn yuǎn.", "english": "From Beijing to Shanghai is very far."},
       {"chinese": "我从早上八点到下午五点工作。", "pinyin": "Wǒ cóng zǎoshang bā diǎn dào xiàwǔ wǔ diǎn gōngzuò.", "english": "I work from 8 am to 5 pm."}
     ],
-    "tags": ["preposition", "range"]
+    "tags": ["preposition", "range"],
+    "exercises": [
+      {"type": "choice", "prompt": "我＿＿九点到五点工作。", "english": "I work from nine to five.", "options": ["从", "在", "比", "跟"], "answer": "从", "explain": "从 … 到 … = from … to …"},
+      {"type": "choice", "prompt": "从北京＿＿上海要多长时间？", "english": "How long does it take from Beijing to Shanghai?", "options": ["到", "从", "在", "比"], "answer": "到", "explain": "从 A 到 B."},
+      {"type": "choice", "prompt": "从这儿＿＿那儿远吗？", "english": "Is it far from here to there?", "options": ["到", "从", "比", "在"], "answer": "到", "explain": "从这儿到那儿 = from here to there."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I work from Monday to Friday.", "options": ["我从星期一到星期五工作。", "我到星期一从星期五工作。", "我工作星期一从到星期五。"], "answer": "我从星期一到星期五工作。", "explain": "从 … 到 … goes before the verb."},
+      {"type": "order", "english": "It takes me half an hour from home to the office.", "tokens": ["我", "从家", "到公司", "要", "半个小时"], "alt": ["从家到公司我要半个小时"]},
+      {"type": "order", "english": "The shop is open from 8 a.m. to 10 p.m.", "tokens": ["商店", "从早上八点", "开到", "晚上十点"]}
+    ]
   },
   {
     "id": "hsk2_gram_003",
@@ -241,7 +377,15 @@
       {"chinese": "因为我很忙，所以我没来。", "pinyin": "Yīnwèi wǒ hěn máng, suǒyǐ wǒ méi lái.", "english": "Because I was busy, I didn't come."}
     ],
     "notes": "You can use either word alone, but using both is the most natural pattern.",
-    "tags": ["conjunction", "cause-effect"]
+    "tags": ["conjunction", "cause-effect"],
+    "exercises": [
+      {"type": "choice", "prompt": "＿＿下雨，所以我没去。", "english": "Because it rained, I didn't go.", "options": ["因为", "但是", "虽然", "如果"], "answer": "因为", "explain": "因为 introduces the reason."},
+      {"type": "choice", "prompt": "因为他病了，＿＿没来上课。", "english": "He was ill, so he didn't come to class.", "options": ["所以", "但是", "因为", "还是"], "answer": "所以", "explain": "所以 introduces the result."},
+      {"type": "choice", "prompt": "我今天很忙，＿＿不能去看电影。", "english": "I'm busy today, so I can't go to the cinema.", "options": ["所以", "因为", "但是", "还是"], "answer": "所以", "explain": "所以 can be used on its own for the result."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "Because I'm tired, I want to sleep.", "options": ["因为我很累，所以我想睡觉。", "所以我很累，因为我想睡觉。", "因为我很累，但是我想睡觉。"], "answer": "因为我很累，所以我想睡觉。", "explain": "Reason first with 因为, result second with 所以."},
+      {"type": "order", "english": "Because it was too expensive, I didn't buy it.", "tokens": ["因为", "太贵了，", "所以", "我", "没买"]},
+      {"type": "order", "english": "Because it's raining today, we're not going to the park.", "tokens": ["因为", "今天下雨，", "所以", "我们", "不去公园"], "alt": ["今天因为下雨所以我们不去公园"]}
+    ]
   },
   {
     "id": "hsk2_gram_004",
@@ -253,7 +397,15 @@
       {"chinese": "他很忙，但是很高兴。", "pinyin": "Tā hěn máng, dànshì hěn gāoxìng.", "english": "He is very busy, but very happy."},
       {"chinese": "我想去，但是没有时间。", "pinyin": "Wǒ xiǎng qù, dànshì méiyǒu shíjiān.", "english": "I want to go, but I don't have time."}
     ],
-    "tags": ["conjunction", "contrast"]
+    "tags": ["conjunction", "contrast"],
+    "exercises": [
+      {"type": "choice", "prompt": "这件衣服很漂亮，＿＿太贵了。", "english": "This item of clothing is pretty, but too expensive.", "options": ["但是", "所以", "因为", "和"], "answer": "但是", "explain": "但是 introduces a contrast."},
+      {"type": "choice", "prompt": "我想去，但是我＿＿时间。", "english": "I want to go, but I don't have time.", "options": ["没有", "不有", "不是", "没是"], "answer": "没有", "explain": "有 is negated with 没."},
+      {"type": "choice", "prompt": "他说中文，＿＿说得不太好。", "english": "He speaks Chinese, but not very well.", "options": ["但是", "和", "所以", "因为"], "answer": "但是", "explain": "但是 starts the second clause."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "Chinese is hard, but very interesting.", "options": ["中文很难，但是很有意思。", "中文很难，所以很有意思。", "但是中文很难，很有意思。"], "answer": "中文很难，但是很有意思。", "explain": "但是 goes at the start of the second clause."},
+      {"type": "order", "english": "I'm tired, but happy.", "tokens": ["我很累，", "但是", "我", "很开心"]},
+      {"type": "order", "english": "This restaurant is small, but the food is delicious.", "tokens": ["这个饭馆很小，", "但是", "菜", "很好吃"]}
+    ]
   },
   {
     "id": "hsk2_gram_005",
@@ -265,7 +417,15 @@
       {"chinese": "他一边吃饭，一边看电视。", "pinyin": "Tā yībiān chīfàn, yībiān kàn diànshì.", "english": "He eats while watching TV."},
       {"chinese": "我喜欢一边听音乐，一边学习。", "pinyin": "Wǒ xǐhuān yībiān tīng yīnyuè, yībiān xuéxí.", "english": "I like studying while listening to music."}
     ],
-    "tags": ["concurrent-actions", "adverb"]
+    "tags": ["concurrent-actions", "adverb"],
+    "exercises": [
+      {"type": "choice", "prompt": "他一边吃饭，＿＿看电视。", "english": "He watches TV while eating.", "options": ["一边", "也", "都", "和"], "answer": "一边", "explain": "一边 A 一边 B: both parts need 一边."},
+      {"type": "choice", "prompt": "我喜欢一边听音乐一边＿＿。", "english": "I like doing homework while listening to music.", "options": ["做作业", "很好", "是学生", "了"], "answer": "做作业", "explain": "Each 一边 is followed by an action verb."},
+      {"type": "choice", "prompt": "我们一边走＿＿聊天。", "english": "We chatted as we walked.", "options": ["一边", "也", "就", "还"], "answer": "一边", "explain": "Repeat 一边 before the second action."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "She sings while dancing.", "options": ["她一边唱歌一边跳舞。", "她一边唱歌和跳舞。", "一边她唱歌一边跳舞。"], "answer": "她一边唱歌一边跳舞。", "explain": "Subject first, then 一边 + verb, 一边 + verb."},
+      {"type": "order", "english": "He drinks coffee while reading.", "tokens": ["他", "一边", "喝咖啡", "一边", "看书"], "alt": ["他一边看书一边喝咖啡"]},
+      {"type": "order", "english": "Don't talk on the phone while driving.", "tokens": ["不要", "一边", "开车", "一边", "打电话"], "alt": ["不要一边打电话一边开车"]}
+    ]
   },
   {
     "id": "hsk2_gram_006",
@@ -278,7 +438,15 @@
       {"chinese": "我正在吃饭呢。", "pinyin": "Wǒ zhèngzài chīfàn ne.", "english": "I'm eating right now."},
       {"chinese": "她正在打电话。", "pinyin": "Tā zhèngzài dǎ diànhuà.", "english": "She is on the phone."}
     ],
-    "tags": ["aspect", "progressive"]
+    "tags": ["aspect", "progressive"],
+    "exercises": [
+      {"type": "choice", "prompt": "我＿＿吃饭，等一下。", "english": "I'm eating right now, wait a moment.", "options": ["正在", "已经", "了", "过"], "answer": "正在", "explain": "正在 + verb = in the middle of doing."},
+      {"type": "choice", "prompt": "他正在看书＿＿。", "english": "He is reading.", "options": ["呢", "吗", "了", "过"], "answer": "呢", "explain": "呢 often ends a 正在 sentence."},
+      {"type": "choice", "prompt": "你＿＿做什么？", "english": "What are you doing?", "options": ["在", "了", "过", "很"], "answer": "在", "explain": "在 alone can also mark an ongoing action."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I wasn't sleeping.", "options": ["我没在睡觉。", "我不正在睡觉。", "我正在没睡觉。"], "answer": "我没在睡觉。", "explain": "Negate an ongoing action with 没 (在), not 不."},
+      {"type": "order", "english": "Mum is cooking.", "tokens": ["妈妈", "正在", "做饭", "呢"]},
+      {"type": "order", "english": "When I called, he was in class.", "tokens": ["我打电话的时候，", "他", "正在", "上课"]}
+    ]
   },
   {
     "id": "hsk2_gram_007",
@@ -290,7 +458,15 @@
       {"chinese": "我先吃饭，然后去学校。", "pinyin": "Wǒ xiān chīfàn, ránhòu qù xuéxiào.", "english": "I'll eat first, then go to school."},
       {"chinese": "先写作业，然后看电视。", "pinyin": "Xiān xiě zuòyè, ránhòu kàn diànshì.", "english": "Do homework first, then watch TV."}
     ],
-    "tags": ["sequence", "conjunction"]
+    "tags": ["sequence", "conjunction"],
+    "exercises": [
+      {"type": "choice", "prompt": "我们先吃饭，＿＿去看电影。", "english": "Let's eat first, then go to the cinema.", "options": ["然后", "所以", "但是", "因为"], "answer": "然后", "explain": "先 … 然后 … = first … then …"},
+      {"type": "choice", "prompt": "＿＿洗手，然后吃饭。", "english": "Wash your hands first, then eat.", "options": ["先", "很", "就", "也"], "answer": "先", "explain": "先 marks the first step."},
+      {"type": "choice", "prompt": "我先去银行，然后＿＿去超市。", "english": "I'll go to the bank first, then the supermarket.", "options": ["再", "先", "都", "很"], "answer": "再", "explain": "然后再 is a common pairing for the next step."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "Do your homework first, then play.", "options": ["先做作业，然后再玩。", "然后做作业，先玩。", "先做作业，所以玩。"], "answer": "先做作业，然后再玩。", "explain": "先 for the first action, 然后 for the next."},
+      {"type": "order", "english": "I'll shower first, then sleep.", "tokens": ["我", "先", "洗澡，", "然后", "睡觉"]},
+      {"type": "order", "english": "Go straight first, then turn right.", "tokens": ["先", "往前走，", "然后", "往右转"]}
+    ]
   },
   {
     "id": "hsk2_gram_008",
@@ -303,6 +479,14 @@
       {"chinese": "你去北京还是上海？", "pinyin": "Nǐ qù Běijīng háishi Shànghǎi?", "english": "Are you going to Beijing or Shanghai?"}
     ],
     "notes": "还是 = 'or' in questions. 或者 = 'or' in statements. Don't mix them up.",
-    "tags": ["question", "conjunction"]
+    "tags": ["question", "conjunction"],
+    "exercises": [
+      {"type": "choice", "prompt": "你喝茶＿＿喝咖啡？", "english": "Do you drink tea or coffee?", "options": ["还是", "或者", "和", "也"], "answer": "还是", "explain": "In questions, 'or' is 还是. 或者 is for statements."},
+      {"type": "choice", "prompt": "我们今天去＿＿明天去？", "english": "Shall we go today or tomorrow?", "options": ["还是", "或者", "和", "都"], "answer": "还是", "explain": "A 还是 B asks the listener to choose."},
+      {"type": "choice", "prompt": "你是中国人＿＿日本人？", "english": "Are you Chinese or Japanese?", "options": ["还是", "或者", "吗", "也"], "answer": "还是", "explain": "还是 questions don't take 吗."},
+      {"type": "choice", "prompt": "Which sentence is correct?", "english": "I'll go on Saturday or Sunday (either is fine).", "options": ["我星期六或者星期天去。", "我星期六还是星期天去。", "我星期六和还是星期天去。"], "answer": "我星期六或者星期天去。", "explain": "In a statement, 'or' is 或者."},
+      {"type": "order", "english": "Do you want rice or noodles?", "tokens": ["你", "要", "米饭", "还是", "面条"], "alt": ["你要面条还是米饭"]},
+      {"type": "order", "english": "Is this one better or that one?", "tokens": ["这个好", "还是", "那个好"], "alt": ["那个好还是这个好"]}
+    ]
   }
 ]

@@ -20,7 +20,7 @@
 - Built by `scripts/migrate-hsk-2026.mjs` from `data/source/hsk-2026-syllabus.json` (official list) + the pre-2026 data (content reused when characters and reading match) + `data/source/new-words-2026.json` (glosses for 1,245 new words).
 - `src/data/idMap2026.json` maps pre-2026 word ids to new ones; `src/lib/migrateVocab2026.ts` translates saved progress on each device once. Supabase rows still hold old ids.
 - All words have: `simplified`, `traditional`, `pinyin` (official), `pinyinNumbered`, `english`, `partOfSpeech` (from the official list), `examples`
-- `data/grammar.json` — grammar reference
+- `data/grammar.json` — grammar reference; each point has `exercises` (auto-marked: `choice` = fill the ＿＿ blank or pick the correct sentence, `order` = word tiles with optional `alt` orders). Helpers + data validation in `src/lib/grammarDrill.ts` (tests check every exercise)
 - `data/images.json` — word id → openly licensed Wikimedia Commons photo (`src`, `page`, `author`, `license`, `wikidata`) for the picture quiz; `null` = no picture, never retried. Loaded on demand via `src/data/images.ts`. Credit is shown under every photo — keep it.
 
 ### Pages
@@ -38,7 +38,8 @@
 | `/pronunciation` | Pronunciation guide (tones, initials, finals) |
 | `/review` | SRS due-card review (self-rated flashcards: Again / Good / Easy) |
 | `/grammar/:level` | Grammar list by level |
-| `/grammar/point/:id` | Grammar detail |
+| `/grammar/point/:id` | Grammar detail — quick drill (auto-marked) + AI-feedback translation practice |
+| `/grammar/drill/:level` | Mixed grammar drill for a level (10 / 20 / all questions) |
 | `/favourites` | Favourited words |
 | `/search` | Cross-level search |
 | `/stats` | Progress stats, streak, SRS due count, HSK readiness with cumulative exam coverage and a countdown to `NEXT_EXAM` (`src/data/exam.ts` — update when new exam dates are published) |
