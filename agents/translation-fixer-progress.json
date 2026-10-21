@@ -1,11 +1,15 @@
 {
-  "lastReviewedId": "hsk3_0133",
-  "reviewedTotal": 633,
-  "changedTotal": 226,
+  "lastReviewedId": "hsk4_0033",
+  "reviewedTotal": 1033,
+  "changedTotal": 288,
   "flagged": [
+    "hsk3_0193",
+    "hsk3_0225",
+    "hsk3_0455",
+    "hsk3_0492",
     "hsk6_0548",
     "hsk7_1658",
     "hsk7_2681"
   ],
-  "note": "The remaining flagged ids are homograph pairs (横 at hsk6_0548/hsk7_1658: both read héng, unclear if the hsk7 entry is meant to carry the fierce/unruly sense that's usually the hèng tone) or a pos/explanation mismatch (露 at hsk7_2681: tagged noun but its explanation only describes the verb sense 'to reveal/expose' - possible it should be the noun sense 'dew' instead, not confident enough to guess)."
+  "note": "季 at hsk3_0193 and 园 at hsk3_0455 are tagged 'surname Ji'/'surname Yuan' with an explanation saying the season/garden sense is more common, but each word's own example sentence (季老师, 园教授) uses the surname, so I left them. 卡 at hsk3_0225 (kǎ, noun) may need to become 'card' to differ from the homograph hsk7_3196 (qiǎ, 'to get stuck; clip'), but its own example is about a key getting physically stuck, so I'm not confident. 子 at hsk3_0492 is tagged partOfSpeech 'suffix' only but glossed as the standalone noun 'child'; fixed the stray capital but not confident whether the suffix sense (as in 桌子) should replace it. The remaining flagged ids are homograph pairs (横 at hsk6_0548/hsk7_1658: both read héng, unclear if the hsk7 entry is meant to carry the fierce/unruly sense that's usually the hèng tone) or a pos/explanation mismatch (露 at hsk7_2681: tagged noun but its explanation only describes the verb sense 'to reveal/expose' - possible it should be the noun sense 'dew' instead, not confident enough to guess)."
 }
