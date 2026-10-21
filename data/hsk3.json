@@ -5455,7 +5455,7 @@
     "traditional": "號碼",
     "pinyin": "hàomǎ",
     "pinyinNumbered": "hao4 ma3",
-    "english": "pressmark",
+    "english": "number",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -6194,7 +6194,7 @@
     "traditional": "幾乎",
     "pinyin": "jīhū",
     "pinyinNumbered": "ji1 hu1",
-    "english": "chiefly",
+    "english": "almost; nearly",
     "partOfSpeech": "adverb",
     "examples": [
       {
@@ -6250,7 +6250,7 @@
     "traditional": "極",
     "pinyin": "jí",
     "pinyinNumbered": "ji2",
-    "english": "extraordinary",
+    "english": "extremely; exceedingly",
     "partOfSpeech": "adverb",
     "examples": [
       {
@@ -7497,7 +7497,7 @@
     "traditional": "開花",
     "pinyin": "kāihuā",
     "pinyinNumbered": "kai1 hua1",
-    "english": "burst forth",
+    "english": "to bloom; to flower",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -8261,7 +8261,7 @@
     "traditional": "歷史",
     "pinyin": "lìshǐ",
     "pinyinNumbered": "li4 shi3",
-    "english": "past records",
+    "english": "history",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -8465,7 +8465,7 @@
     "traditional": "聊",
     "pinyin": "liáo",
     "pinyinNumbered": "liao2",
-    "english": "endure",
+    "english": "to chat",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -9049,7 +9049,7 @@
     "traditional": "名人",
     "pinyin": "míngrén",
     "pinyinNumbered": "ming2 ren2",
-    "english": "notability",
+    "english": "celebrity; famous person",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -9457,7 +9457,7 @@
     "traditional": "牛",
     "pinyin": "niú",
     "pinyinNumbered": "niu2",
-    "english": "Cow",
+    "english": "cow",
     "partOfSpeech": [
       "noun",
       "adjective"
@@ -10418,7 +10418,7 @@
     "traditional": "然後",
     "pinyin": "ránhòu",
     "pinyinNumbered": "ran2 hou4",
-    "english": "therewith",
+    "english": "then; afterwards",
     "partOfSpeech": "conjunction",
     "examples": [
       {
@@ -10499,7 +10499,7 @@
     "traditional": "認為",
     "pinyin": "rènwéi",
     "pinyinNumbered": "ren4 wei2",
-    "english": "find",
+    "english": "to think; to believe",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -10613,7 +10613,7 @@
     "traditional": "傘",
     "pinyin": "sǎn",
     "pinyinNumbered": "san3",
-    "english": "fimbria",
+    "english": "umbrella",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -10841,7 +10841,7 @@
     "traditional": "聲",
     "pinyin": "shēng",
     "pinyinNumbered": "sheng1",
-    "english": "m.[activity]",
+    "english": "sound; voice",
     "partOfSpeech": [
       "noun",
       "measure word"
@@ -11171,7 +11171,7 @@
     "traditional": "受",
     "pinyin": "shòu",
     "pinyinNumbered": "shou4",
-    "english": "passive marker",
+    "english": "to receive; to suffer",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -12131,7 +12131,7 @@
     "traditional": "外語",
     "pinyin": "wàiyǔ",
     "pinyinNumbered": "wai4 yu3",
-    "english": "Foreign language",
+    "english": "foreign language",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -12365,7 +12365,7 @@
     "traditional": "忘記",
     "pinyin": "wàngjì",
     "pinyinNumbered": "wang4 ji4",
-    "english": "Forget",
+    "english": "forget",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -12743,7 +12743,7 @@
     "traditional": "習慣",
     "pinyin": "xíguàn",
     "pinyinNumbered": "xi2 guan4",
-    "english": "Habit",
+    "english": "habit",
     "partOfSpeech": [
       "verb",
       "noun"
@@ -12804,7 +12804,7 @@
     "traditional": "洗衣機",
     "pinyin": "xǐyījī",
     "pinyinNumbered": "xi3 yi1 ji1",
-    "english": "Washing machine",
+    "english": "washing machine",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -12840,7 +12840,7 @@
     "traditional": "洗澡",
     "pinyin": "xǐzǎo",
     "pinyinNumbered": "xi3 zao3",
-    "english": "Take a bath",
+    "english": "take a bath",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -12875,7 +12875,7 @@
     "traditional": "夏天",
     "pinyin": "xiàtiān",
     "pinyinNumbered": "xia4 tian1",
-    "english": "Summer",
+    "english": "summer",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -12979,7 +12979,7 @@
     "traditional": "相信",
     "pinyin": "xiāngxìn",
     "pinyinNumbered": "xiang1 xin4",
-    "english": "Believe",
+    "english": "believe",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -13037,7 +13037,7 @@
     "traditional": "嚮",
     "pinyin": "xiàng",
     "pinyinNumbered": "xiang4",
-    "english": "Toward",
+    "english": "toward",
     "partOfSpeech": [
       "verb",
       "preposition"
@@ -13110,7 +13110,7 @@
     "traditional": "相機",
     "pinyin": "xiàngjī",
     "pinyinNumbered": "xiang4 ji1",
-    "english": "Camera",
+    "english": "camera",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -13171,7 +13171,7 @@
     "traditional": "小心",
     "pinyin": "xiǎoxīn",
     "pinyinNumbered": "xiao3 xin1",
-    "english": "Careful",
+    "english": "careful",
     "partOfSpeech": [
       "verb",
       "adjective"
@@ -13209,7 +13209,7 @@
     "traditional": "校園",
     "pinyin": "xiàoyuán",
     "pinyinNumbered": "xiao4 yuan2",
-    "english": "Campus",
+    "english": "campus",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -13422,7 +13422,7 @@
     "traditional": "新鮮",
     "pinyin": "xīnxiān",
     "pinyinNumbered": "xin1 xian1",
-    "english": "freshen",
+    "english": "fresh",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -13599,7 +13599,7 @@
     "traditional": "興趣",
     "pinyin": "xìngqù",
     "pinyinNumbered": "xing4 qu4",
-    "english": "relish",
+    "english": "interest",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -13788,7 +13788,7 @@
     "traditional": "牙",
     "pinyin": "yá",
     "pinyinNumbered": "ya2",
-    "english": "ivory",
+    "english": "tooth",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -14543,7 +14543,7 @@
     "traditional": "飲料",
     "pinyin": "yǐnliào",
     "pinyinNumbered": "yin3 liao4",
-    "english": "stuff",
+    "english": "drink; beverage",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -14741,7 +14741,7 @@
     "traditional": "遊戲",
     "pinyin": "yóuxì",
     "pinyinNumbered": "you2 xi4",
-    "english": "Game",
+    "english": "game",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -14776,7 +14776,7 @@
     "traditional": "郵箱",
     "pinyin": "yóuxiāng",
     "pinyinNumbered": "you2 xiang1",
-    "english": "Email address",
+    "english": "email address",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -15101,7 +15101,7 @@
     "traditional": "員",
     "pinyin": "yuán",
     "pinyinNumbered": "yuan2",
-    "english": "Member",
+    "english": "member",
     "partOfSpeech": "suffix",
     "meanings": [
       {
@@ -15443,7 +15443,7 @@
     "traditional": "張",
     "pinyin": "zhāng",
     "pinyinNumbered": "zhang1",
-    "english": "Measure word for flat objects",
+    "english": "measure word for flat objects",
     "partOfSpeech": [
       "verb",
       "measure word"
@@ -15985,7 +15985,7 @@
     "traditional": "重要",
     "pinyin": "zhòngyào",
     "pinyinNumbered": "zhong4 yao4",
-    "english": "Important",
+    "english": "important",
     "partOfSpeech": "adjective",
     "meanings": [
       {
@@ -16225,7 +16225,7 @@
     "traditional": "子",
     "pinyin": "zi",
     "pinyinNumbered": "zi0",
-    "english": "Child",
+    "english": "child",
     "partOfSpeech": "suffix",
     "meanings": [
       {
@@ -16363,7 +16363,7 @@
     "traditional": "最好",
     "pinyin": "zuìhǎo",
     "pinyinNumbered": "zui4 hao3",
-    "english": "Best",
+    "english": "best",
     "partOfSpeech": "adverb",
     "meanings": [
       {
@@ -16396,7 +16396,7 @@
     "traditional": "最後",
     "pinyin": "zuìhòu",
     "pinyinNumbered": "zui4 hou4",
-    "english": "Last",
+    "english": "last",
     "partOfSpeech": "noun",
     "meanings": [
       {
