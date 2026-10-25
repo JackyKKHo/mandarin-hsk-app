@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import type { VocabItem } from '../types'
 import AppHeader from '../components/AppHeader'
+import Icon from '../components/Icon'
+import PremiumWall from '../components/PremiumWall'
+import { useAuth } from '../context/AuthContext'
 import ClickableText from '../components/ClickableText'
 import ReadAloud from '../components/ReadAloud'
 import SpeedToggle from '../components/SpeedToggle'
@@ -86,6 +89,7 @@ export default function DescribePage() {
   const [showPinyin, setShowPinyin] = useState(true)
   const [openEnglish, setOpenEnglish] = useState<Set<number>>(new Set())
   const { review, getCard } = useSRS()
+  const { session: auth } = useAuth()
 
   useEffect(() => {
     loadAllLevels().then(words => setLookup(buildLookup(words)))
@@ -105,7 +109,10 @@ export default function DescribePage() {
         : { image: image.split(',')[1], mediaType: image.slice(5, image.indexOf(';')) }
       const res = await fetch('/api/teacher?action=describe-image', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...(auth && { Authorization: `Bearer ${auth.access_token}` }),
+        },
         body: JSON.stringify(body),
       })
       const data = await res.json().catch(() => null)
@@ -169,10 +176,14 @@ export default function DescribePage() {
               </div>
             </div>
           ) : (
-            <>
+            <PremiumWall
+              feature="describe-it"
+              title="Describe It is part of Pro"
+              description="Each photo is described by Claude, which costs us per photo. Sign in with a Pro account to use it."
+            >
               <label className="describe-upload">
                 <input type="file" accept="image/*" onChange={onFile} />
-                <span className="describe-upload-icon" aria-hidden="true">📷</span>
+                <span className="describe-upload-icon" aria-hidden="true"><Icon name="camera" size={34} /></span>
                 <span className="describe-upload-text">Take or choose a photo</span>
                 <span className="describe-upload-sub">Something from your day works best: a street, a meal, your desk</span>
               </label>
@@ -196,7 +207,7 @@ export default function DescribePage() {
                 Your photo is sent to Anthropic (Claude) to write the descriptions and isn't stored by us. Avoid photos
                 with personal details you wouldn't want to share.
               </p>
-            </>
+            </PremiumWall>
           )}
         </div>
       </div>

@@ -68,7 +68,8 @@
 
 ### API (Vercel serverless)
 - `api/teacher.js` — Lin Wei AI tutor (Anthropic SDK + prompt caching + rate limit: 50 req/IP/hour). Takes an optional `learner` profile (`level`, `mastered`, up to 12 `weakWords`) built by `src/lib/learnerProfile.ts` from on-device SRS data; `api/_learnerProfile.js` sanitises it (Han-only words) before it reaches the prompt
-- `api/teacher?action=describe-image` (handler in `api/_describeImage.js`, dispatched from `api/teacher.js` — the Vercel Hobby plan caps a deployment at 12 functions and `api/` is at 12, so add new endpoints this way) — Describe It ladder (Claude Opus 5.5 vision, structured JSON output, server-side refusal fallback, 10 photos/IP/hour). Rungs, prompt, schema, image validation and output sanitising in `api/_pictureLadder.js` (tested); keep `RUNGS` in `src/pages/DescribePage.tsx` in sync
+- `api/teacher?action=describe-image` (handler in `api/_describeImage.js`, dispatched from `api/teacher.js` — the Vercel Hobby plan caps a deployment at 12 functions and `api/` is at 12, so add new endpoints this way) — Describe It ladder — **Pro only** (Claude Sonnet 5.5 vision, structured JSON output, server-side refusal fallback, 20 photos/user/hour). Rungs, prompt, schema, image validation and output sanitising in `api/_pictureLadder.js` (tested); keep `RUNGS` in `src/pages/DescribePage.tsx` in sync
+- `api/teacher?action=pro-status` (`api/_pro.js`) — Pro check until billing exists: a signed-in user whose email is in the `PRO_EMAILS` env var (comma-separated). `usePro()` asks it; paid endpoints call `proUser(req)` themselves
 - `api/tts.js` — Google TTS endpoint (24h cache)
 
 ### Auth

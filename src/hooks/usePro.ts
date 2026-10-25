@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useAuth } from '../context/AuthContext'
 
 const KEY = 'hsk-pro-status'
@@ -10,6 +10,7 @@ export type ProFeature =
   | 'advanced-stats'      // detailed heatmap + retention analytics
   | 'deck-export'         // export custom decks (CSV / Anki / Mochi)
   | 'offline-audio'       // pre-cache TTS for offline review
+  | 'describe-it'         // Describe It photo ladders (paid vision calls)
 
 const PRO_FEATURES: ReadonlySet<ProFeature> = new Set([
   'unlimited-teacher',
@@ -17,6 +18,7 @@ const PRO_FEATURES: ReadonlySet<ProFeature> = new Set([
   'advanced-stats',
   'deck-export',
   'offline-audio',
+  'describe-it',
 ])
 
 interface ProStatus {
@@ -33,15 +35,40 @@ function loadStatus(): ProStatus {
   return { active: false, plan: null, since: null }
 }
 
+// One server check per access token, shared by every usePro() on the page
+let serverCheck: { token: string; pro: Promise<boolean> } | null = null
+function checkServerPro(token: string): Promise<boolean> {
+  if (serverCheck?.token !== token) {
+    serverCheck = {
+      token,
+      pro: fetch('/api/teacher?action=pro-status', { headers: { Authorization: `Bearer ${token}` } })
+        .then(r => (r.ok ? r.json() : null))
+        .then(d => Boolean(d?.pro))
+        .catch(() => false),
+    }
+  }
+  return serverCheck.pro
+}
+
 /**
- * Pro entitlement check. Currently sources from localStorage; when Stripe is
- * wired in, swap the loader for a Supabase / webhook-backed read.
+ * Pro entitlement check. Signed-in accounts listed in PRO_EMAILS on the server are Pro
+ * (api/_pro.js, which also guards the paid endpoints); the localStorage status is kept
+ * for when Stripe is wired in.
  */
 export function usePro() {
-  const { user: _user } = useAuth()
+  const { session } = useAuth()
   const [status, setStatus] = useState<ProStatus>(loadStatus)
+  const [serverPro, setServerPro] = useState(false)
+  const token = session?.access_token
 
-  const isPro = status.active
+  useEffect(() => {
+    if (!token) { setServerPro(false); return }
+    let live = true
+    checkServerPro(token).then(pro => { if (live) setServerPro(pro) })
+    return () => { live = false }
+  }, [token])
+
+  const isPro = status.active || serverPro
   const hasFeature = useCallback(
     (f: ProFeature) => isPro && PRO_FEATURES.has(f),
     [isPro]

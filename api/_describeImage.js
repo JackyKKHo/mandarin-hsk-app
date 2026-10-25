@@ -2,40 +2,45 @@
 // because the Hobby plan allows at most 12 functions per deployment; files starting with _ aren't functions.
 import Anthropic from '@anthropic-ai/sdk'
 import { SYSTEM_PROMPT, OUTPUT_SCHEMA, imageBlock, sanitiseLadder } from './_pictureLadder.js'
+import { proUser } from './_pro.js'
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
-const MODEL = 'claude-opus-5-5'
+// Created on first use, so non-Pro requests (and tests) never build a client
+let client = null
+const anthropic = () => (client ??= new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY }))
+// Sonnet 5.5 is half Opus 5.5's price and plenty for graded descriptions
+const MODEL = 'claude-sonnet-5-5'
 
-// Rate limit: 10 photos per IP per hour (each one is a vision call writing seven rungs)
-const LIMIT = 10
+// Pro only. Rate limit: 20 photos per user per hour (each one is a vision call writing seven rungs)
+const LIMIT = 20
 const WINDOW_MS = 60 * 60 * 1000
 const ipMap = new Map()
 
-function isRateLimited(ip) {
+function isRateLimited(key) {
   const now = Date.now()
-  const entry = ipMap.get(ip) ?? { count: 0, resetAt: now + WINDOW_MS }
+  const entry = ipMap.get(key) ?? { count: 0, resetAt: now + WINDOW_MS }
   if (now > entry.resetAt) {
     entry.count = 0
     entry.resetAt = now + WINDOW_MS
   }
   entry.count++
-  ipMap.set(ip, entry)
+  ipMap.set(key, entry)
   return entry.count > LIMIT
 }
 
 export async function describeImage(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
 
-  const ip = req.headers['x-forwarded-for']?.split(',')[0].trim() ?? req.socket?.remoteAddress ?? 'unknown'
-  if (isRateLimited(ip)) {
-    return res.status(429).json({ error: "You've described 10 photos this hour — please try again later." })
+  const user = await proUser(req)
+  if (!user) return res.status(403).json({ error: 'Describe It is a Pro feature — sign in with a Pro account.' })
+  if (isRateLimited(user.id)) {
+    return res.status(429).json({ error: `You've described ${LIMIT} photos this hour — please try again later.` })
   }
 
   const { block, error } = imageBlock(req.body)
   if (error) return res.status(400).json({ error })
 
   try {
-    const response = await client.beta.messages.create({
+    const response = await anthropic().beta.messages.create({
       model: MODEL,
       max_tokens: 16000,
       // Server-side fallback: if a safety classifier declines, the API retries on Anthropic's recommended model

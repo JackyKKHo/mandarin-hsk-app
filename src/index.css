@@ -6580,7 +6580,7 @@ html.dark .record-explanation { background: rgba(25, 118, 210, 0.16); }
 }
 .describe-upload:hover, .describe-upload:focus-within { border-color: var(--red); }
 .describe-upload input { position: absolute; width: 1px; height: 1px; opacity: 0; }
-.describe-upload-icon { font-size: 2rem; }
+.describe-upload-icon { color: var(--muted); display: inline-flex; }
 .describe-upload-text { font-weight: 700; font-size: 1.05rem; color: var(--text); }
 .describe-upload-sub { font-size: 0.82rem; color: var(--muted); }
 .describe-error { color: var(--red); font-size: 0.88rem; margin-top: 0.75rem; }
