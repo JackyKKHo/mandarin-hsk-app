@@ -103,7 +103,7 @@ export default function DescribePage() {
       const body = credit
         ? { imageUrl: image }
         : { image: image.split(',')[1], mediaType: image.slice(5, image.indexOf(';')) }
-      const res = await fetch('/api/describe-image', {
+      const res = await fetch('/api/teacher?action=describe-image', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),

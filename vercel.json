@@ -15,7 +15,7 @@
     "api/widget.js": {
       "includeFiles": "data/hsk*.json"
     },
-    "api/describe-image.js": {
+    "api/teacher.js": {
       "maxDuration": 120
     }
   }

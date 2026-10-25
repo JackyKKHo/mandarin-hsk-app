@@ -1,3 +1,5 @@
+// Describe It handler, served by api/teacher.js as /api/teacher?action=describe-image,
+// because the Hobby plan allows at most 12 functions per deployment; files starting with _ aren't functions.
 import Anthropic from '@anthropic-ai/sdk'
 import { SYSTEM_PROMPT, OUTPUT_SCHEMA, imageBlock, sanitiseLadder } from './_pictureLadder.js'
 
@@ -21,7 +23,7 @@ function isRateLimited(ip) {
   return entry.count > LIMIT
 }
 
-export default async function handler(req, res) {
+export async function describeImage(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
 
   const ip = req.headers['x-forwarded-for']?.split(',')[0].trim() ?? req.socket?.remoteAddress ?? 'unknown'
