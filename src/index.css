@@ -5804,44 +5804,56 @@ html.dark .vf-warning { background: #2a2000; border-color: #6d5100; color: #ffd5
 .pro-active-help { color: var(--muted); font-size: 0.85rem; }
 
 /* === Record & Score page === */
+.record-page { padding-top: 1rem; }
+.record-head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+.record-title { font-size: 1.35rem; font-weight: 700; margin: 0; }
+.record-head-link { font-size: 0.85rem; color: var(--muted); text-decoration: none; }
+.record-head-link:hover { color: var(--red); }
 .record-source-tabs {
   display: flex;
-  gap: 0.5rem;
-  margin: 1rem 0 0.75rem;
-  flex-wrap: wrap;
-}
-.record-tab {
-  flex: 1 1 auto;
-  min-width: 100px;
-  padding: 0.55rem 0.9rem;
+  gap: 2px;
+  padding: 3px;
+  margin-bottom: 0.6rem;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 999px;
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.15s ease;
 }
-.record-tab:hover { color: var(--text); }
-.record-tab.active {
-  background: var(--text);
-  color: var(--bg);
-  border-color: var(--text);
-}
-.record-topic-row {
-  display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-  margin-bottom: 0.75rem;
-}
-.record-topic-chip {
-  padding: 0.35rem 0.75rem;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
+.record-tab {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0.4rem 0.3rem;
+  background: none;
+  border: none;
   border-radius: 999px;
   color: var(--muted);
   font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.record-tab:hover { color: var(--text); }
+.record-tab:disabled { opacity: 0.4; cursor: not-allowed; }
+.record-tab.active {
+  background: var(--text);
+  color: var(--bg);
+}
+.record-topic-row {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+.record-topic-chip {
+  padding: 0.3rem 0.7rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.82rem;
   cursor: pointer;
 }
 .record-topic-chip.active {
@@ -5853,7 +5865,7 @@ html.dark .vf-warning { background: #2a2000; border-color: #6d5100; color: #ffd5
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
 }
 .record-custom-input,
 .record-custom-pinyin {
@@ -5866,38 +5878,133 @@ html.dark .vf-warning { background: #2a2000; border-color: #6d5100; color: #ffd5
   border-radius: var(--radius-sm);
   font-family: inherit;
 }
-.record-custom-input { min-height: 64px; resize: vertical; }
-.record-target-card {
+.record-custom-input { min-height: 56px; resize: vertical; }
+.record-hint { font-size: 0.82rem; color: var(--muted); text-align: center; margin: 0.6rem 0 0; line-height: 1.5; }
+
+/* Story picker */
+.record-story-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+.record-story-card {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 0.15rem;
+  padding: 0.75rem 0.85rem;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.25rem 1rem;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+.record-story-card:hover { border-color: var(--red); }
+.record-story-zh { font-size: 1.15rem; font-weight: 700; }
+.record-story-en { font-size: 0.85rem; color: var(--muted); }
+.record-story-meta { display: flex; gap: 0.5rem; align-items: center; font-size: 0.75rem; color: var(--muted); margin-top: 0.2rem; }
+
+/* Story reader: the whole passage, tap a sentence to jump to it */
+.record-story { margin-bottom: 0.6rem; }
+.record-story-bar { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.35rem; }
+.record-story-name { flex: 1; font-weight: 700; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.record-story-name span { font-weight: 400; color: var(--muted); font-size: 0.85rem; margin-left: 0.3rem; }
+.record-story-count { font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.record-link-btn {
+  background: none; border: none; padding: 0; cursor: pointer;
+  color: var(--red); font: inherit; font-size: 0.85rem;
+}
+.record-link-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.record-story-steps { display: flex; align-items: center; gap: 0.3rem; flex-wrap: wrap; }
+.record-step {
+  min-width: 2rem; height: 1.7rem;
+  padding: 0 0.35rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.record-step:disabled { cursor: not-allowed; }
+.record-step.good { background: #e8f5e9; border-color: #a5d6a7; color: #1b5e20; }
+.record-step.fair { background: #fff8e1; border-color: #ffe082; color: #8a5a00; }
+.record-step.low { background: #ffebee; border-color: #ef9a9a; color: #b71c1c; }
+html.dark .record-step.good { background: #1b3a1f; border-color: #2e5c33; color: #b8e8c0; }
+html.dark .record-step.fair { background: #3a2f12; border-color: #5a4a20; color: #ffd27a; }
+html.dark .record-step.low { background: #3a1212; border-color: #5a1f1f; color: #ff9a9a; }
+.record-step.current { outline: 2px solid #1976d2; outline-offset: 1px; color: var(--text); }
+.record-story-toggle { margin-left: auto; }
+.record-passage {
+  margin: 0.45rem 0 0;
+  padding: 0.55rem 0.7rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+.record-passage-line {
+  padding: 0.1rem 0;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.record-passage-line.good { color: var(--text); border-bottom-color: #66bb6a; }
+.record-passage-line.fair { color: var(--text); border-bottom-color: #f0b429; }
+.record-passage-line.low { color: var(--text); border-bottom-color: #ef5350; }
+.record-passage-line.current { color: var(--text); background: rgba(25, 118, 210, 0.12); border-radius: 3px; }
+html.dark .record-passage-line.current { background: rgba(25, 118, 210, 0.28); }
+
+/* Practice stage: target, controls and results in one card */
+.record-stage {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
   text-align: center;
-  margin: 0.5rem 0 1rem;
 }
 .record-target-zh {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
   color: var(--text);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 .record-target-pinyin {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #1976d2;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 .record-target-en {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--muted);
+  margin-top: 0.2rem;
 }
 .record-target-empty {
   color: var(--muted);
   font-style: italic;
-  padding: 1rem;
 }
+.record-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.85rem;
+  flex-wrap: wrap;
+}
+.record-round-btn {
+  width: 2.1rem; height: 2.1rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text);
+  cursor: pointer;
+}
+.record-round-btn:hover { border-color: var(--red); background: var(--red-light); }
 .record-next-phrase {
-  margin-top: 0.75rem;
   padding: 0.4rem 0.9rem;
   background: transparent;
   border: 1px solid var(--border);
@@ -5907,14 +6014,10 @@ html.dark .vf-warning { background: #2a2000; border-color: #6d5100; color: #ffd5
   cursor: pointer;
 }
 .record-next-phrase:hover { color: var(--text); }
-.record-mic-row {
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0;
-}
+.record-next-phrase:disabled { opacity: 0.4; cursor: not-allowed; }
 .record-mic-btn {
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
+  padding: 0.7rem 1.6rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 999px;
   border: none;
@@ -5930,6 +6033,7 @@ html.dark .vf-warning { background: #2a2000; border-color: #6d5100; color: #ffd5
 .record-mic-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 .record-mic-btn.recording {
   background: #4a4a4a;
+  font-variant-numeric: tabular-nums;
   animation: record-glow 1.2s ease-in-out infinite;
 }
 @keyframes record-glow {
@@ -5948,7 +6052,7 @@ html.dark .vf-warning { background: #2a2000; border-color: #6d5100; color: #ffd5
 .record-analyzing {
   display: inline-flex; align-items: center; gap: 0.6rem;
   color: var(--muted); font-size: 0.95rem;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
 }
 .record-spinner {
   width: 16px; height: 16px;
@@ -5965,9 +6069,9 @@ html.dark .vf-warning { background: #2a2000; border-color: #6d5100; color: #ffd5
   background: #ffebee;
   color: #c62828;
   border: 1px solid #ffcdd2;
-  padding: 0.75rem 1rem;
+  padding: 0.6rem 0.9rem;
   border-radius: var(--radius-sm);
-  margin: 0.5rem 0;
+  margin-top: 0.6rem;
   font-size: 0.9rem;
 }
 html.dark .record-error { background: #3a1212; border-color: #5a1f1f; color: #ff9a9a; }
@@ -5975,9 +6079,9 @@ html.dark .record-error { background: #3a1212; border-color: #5a1f1f; color: #ff
   background: #fff3e0;
   color: #e65100;
   border: 1px solid #ffe0b2;
-  padding: 0.75rem 1rem;
+  padding: 0.6rem 0.9rem;
   border-radius: var(--radius-sm);
-  margin: 0.5rem 0;
+  margin-top: 0.6rem;
   font-size: 0.9rem;
 }
 html.dark .record-warning { background: #3a2a12; border-color: #5a4520; color: #ffc080; }
@@ -5990,62 +6094,114 @@ html.dark .record-warning { background: #3a2a12; border-color: #5a4520; color: #
   color: var(--muted);
   margin-top: 1.5rem;
 }
-.record-results { margin-top: 1rem; }
-.record-perfect {
-  background: var(--green-bg);
-  border: 1px solid #66bb6a;
-  color: #1b5e20;
-  padding: 0.9rem 1rem;
-  border-radius: var(--radius);
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+
+/* Scored sentence: pinyin over each character, mini pitch trace under it */
+.record-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 3px 2px;
 }
-html.dark .record-perfect { background: var(--green-bg); color: #b8e8c0; }
-.record-summary {
-  color: var(--muted);
-  font-size: 0.9rem;
-  text-align: center;
-  margin-bottom: 0.75rem;
+.record-cell {
+  display: flex; flex-direction: column; align-items: center; gap: 1px;
+  min-width: 2.4rem;
+  padding: 0.2rem 0.15rem 0.25rem;
+  background: none;
+  border: 1px solid transparent;
+  border-bottom: 3px solid #66bb6a;
+  border-radius: var(--radius-xs);
+  font-family: inherit;
+  cursor: pointer;
 }
-.record-char-grid {
+.record-cell.miss { background: #ffebee; border-bottom-color: #e53935; }
+.record-cell.unknown { border-bottom-color: var(--border); }
+html.dark .record-cell.miss { background: #3a1212; }
+.record-cell.sel { border-color: #1976d2; border-bottom-color: #1976d2; }
+.record-cell:hover { border-color: var(--border); }
+.record-cell.sel:hover { border-color: #1976d2; }
+.record-cell-py { font-size: 0.72rem; color: var(--muted); line-height: 1.1; }
+.record-cell.miss .record-cell-py { color: #c62828; font-weight: 600; }
+html.dark .record-cell.miss .record-cell-py { color: #ff9a9a; }
+.record-cell-han { font-size: 1.65rem; font-weight: 700; line-height: 1.15; }
+.record-cell-nopitch { height: 12px; }
+.record-cell .record-pitch-svg { background: none; }
+.record-cell-group { display: inline-flex; align-items: flex-end; }
+.record-line-punct { font-size: 1.3rem; color: var(--muted); padding-bottom: 1.1rem; width: 0.6rem; }
+
+.record-scorebar {
+  display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+  margin-top: 0.75rem;
+  text-align: left;
+}
+.record-scorebar-text { display: flex; flex-direction: column; font-size: 0.88rem; color: var(--text); }
+.record-heard { color: var(--muted); font-size: 0.8rem; }
+.record-pct {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  background: var(--border);
+  color: var(--text);
+}
+.record-pct.big { font-size: 1.15rem; padding: 0.25rem 0.7rem; }
+.record-pct.good { background: #e8f5e9; color: #1b5e20; }
+.record-pct.fair { background: #fff8e1; color: #8a5a00; }
+.record-pct.low { background: #ffebee; color: #b71c1c; }
+html.dark .record-pct.good { background: #1b3a1f; color: #b8e8c0; }
+html.dark .record-pct.fair { background: #3a2f12; color: #ffd27a; }
+html.dark .record-pct.low { background: #3a1212; color: #ff9a9a; }
+
+/* Detail for the selected character */
+.record-detail {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  text-align: left;
+}
+.record-detail.miss { border-color: #ef9a9a; }
+html.dark .record-detail.miss { border-color: #5a1f1f; }
+.record-detail-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "char badges pitch" "notes notes why";
+  align-items: center;
+  gap: 0.5rem 0.75rem;
 }
-.record-char-card {
-  background: var(--card-bg);
-  border: 2px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.75rem;
-}
-.record-char-card.ok { border-color: #66bb6a; }
-.record-char-card.miss { border-color: #ef9a9a; }
-.record-char-top {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.record-char-han { font-size: 2rem; font-weight: 700; line-height: 1; }
-.record-char-py { color: var(--muted); font-size: 0.9rem; }
-.record-char-sandhi { font-size: 0.7rem; font-weight: 600; color: var(--gold); cursor: help; }
+.record-detail-char { grid-area: char; }
+.record-char-scores { grid-area: badges; }
+.record-detail-pitch { grid-area: pitch; }
+.record-detail-notes { grid-area: notes; }
+.record-detail .record-why-btn { grid-area: why; justify-self: end; margin-top: 0; }
+.record-detail-char { display: flex; flex-direction: column; align-items: center; min-width: 3rem; }
+.record-detail-han { font-size: 2.1rem; font-weight: 700; line-height: 1.1; }
+.record-detail-py { font-size: 0.85rem; color: var(--muted); }
+.record-detail-pitch { display: flex; flex-direction: column; align-items: center; gap: 0.1rem; }
+.record-detail-legend { font-size: 0.68rem; color: var(--muted); }
+.record-char-sandhi { font-size: 0.78rem; font-weight: 600; color: var(--gold); }
 .record-char-scores {
-  display: flex; flex-direction: column; gap: 0.35rem;
+  display: flex; gap: 0.35rem; min-width: 0;
 }
 .record-score-badge {
-  display: flex; align-items: center; gap: 0.4rem;
-  padding: 0.3rem 0.55rem;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 0.05rem;
+  flex: 1 1 0;
+  padding: 0.3rem 0.5rem;
   border-radius: var(--radius-sm);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   background: rgba(0, 0, 0, 0.03);
+  min-width: 0;
 }
 html.dark .record-score-badge { background: rgba(255, 255, 255, 0.04); }
 .record-score-badge .sb-label {
-  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em;
-  color: var(--muted); min-width: 48px;
+  font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em;
+  color: var(--muted);
 }
 .record-score-badge .sb-value { font-weight: 600; }
 .record-score-badge .sb-heard {
-  margin-left: auto; color: #c62828; font-size: 0.8rem; font-style: italic;
+  color: #c62828; font-size: 0.75rem; font-style: italic;
 }
 html.dark .record-score-badge .sb-heard { color: #ff9a9a; }
 .record-score-badge.sb-ok { background: #e8f5e9; }
@@ -6056,7 +6212,7 @@ html.dark .record-score-badge.sb-miss { background: #3a1212; }
 html.dark .record-score-badge.sb-unknown { background: #22263a; }
 .record-why-btn {
   margin-top: 0.5rem;
-  padding: 0.35rem 0.75rem;
+  padding: 0.3rem 0.75rem;
   background: var(--text);
   color: var(--bg);
   border: none;
@@ -6068,7 +6224,7 @@ html.dark .record-score-badge.sb-unknown { background: #22263a; }
 .record-why-btn:disabled { opacity: 0.6; cursor: wait; }
 .record-explanation {
   margin-top: 0.5rem;
-  padding: 0.6rem 0.75rem;
+  padding: 0.55rem 0.75rem;
   background: rgba(25, 118, 210, 0.08);
   border-left: 3px solid #1976d2;
   border-radius: var(--radius-xs);
@@ -6077,36 +6233,45 @@ html.dark .record-score-badge.sb-unknown { background: #22263a; }
   line-height: 1.5;
 }
 html.dark .record-explanation { background: rgba(25, 118, 210, 0.16); }
-.record-transcript {
-  margin-top: 1rem;
-  padding: 0.6rem 0.85rem;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  font-size: 0.9rem;
-}
-.record-transcript-label { color: var(--muted); margin-right: 0.5rem; }
-.record-transcript-text { font-weight: 600; color: var(--text); }
-
-.record-playback {
-  display: flex; flex-direction: column; align-items: stretch; gap: 0.5rem;
-  margin: 0.75rem auto 0; max-width: 480px;
-}
-.record-audio { width: 100%; height: 36px; }
-.record-pitch-toggle {
-  display: flex; align-items: center; gap: 0.4rem;
-  font-size: 0.85rem; color: var(--muted);
-  user-select: none; cursor: pointer;
-  justify-content: center;
-}
-.record-pitch-toggle input { cursor: pointer; }
 .record-pitch-svg {
   display: block;
-  width: 100%;
-  height: 36px;
-  margin: 0.4rem 0 0.2rem;
   background: var(--bg);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xs);
+}
+
+.record-story-done {
+  display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+}
+.record-story-done-text { flex: 1; min-width: 10rem; }
+
+@media (max-width: 480px) {
+  .record-page { padding-top: 0.6rem; }
+  .record-title { font-size: 1.15rem; }
+  .record-head { margin-bottom: 0.45rem; }
+  .record-source-tabs { margin-bottom: 0.45rem; }
+  .record-tab { padding: 0.35rem 0.2rem; font-size: 0.8rem; }
+  .record-story { margin-bottom: 0.45rem; }
+  .record-stage { padding: 0.7rem 0.5rem; }
+  .record-line { gap: 2px 1px; }
+  .record-cell { min-width: 1.95rem; padding: 0.1rem 0.05rem 0.2rem; }
+  .record-cell-py { font-size: 0.66rem; }
+  .record-cell-han { font-size: 1.35rem; }
+  .record-line-punct { width: 0.45rem; font-size: 1.1rem; }
+  .record-target-zh { font-size: 1.5rem; }
+  .record-controls { margin-top: 0.65rem; }
+  .record-scorebar { margin-top: 0.55rem; }
+  .record-detail { margin-top: 0.55rem; padding: 0.55rem; }
+  .record-detail-han { font-size: 1.8rem; }
+  /* Why? sits left of centre so the floating feedback button can't cover it */
+  .record-detail-grid { grid-template-areas: "char badges badges" "pitch pitch why" "notes notes notes"; grid-template-columns: auto auto 1fr; gap: 0.45rem 0.6rem; }
+  .record-detail .record-why-btn { justify-self: start; }
+  .record-detail-legend { display: none; }
 }
 
 .record-btn {

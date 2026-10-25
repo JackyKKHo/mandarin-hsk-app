@@ -42,6 +42,14 @@ describe('applyThirdToneSandhi', () => {
     expect(scored('想想')[0]).toMatchObject({ tone: 2, sandhi: true }) // xiáng xiang
   })
 
+  it('treats particle 得 and 地 as light, but not inside words', () => {
+    const at = (w, c) => scored(w)[[...w].indexOf(c)]
+    for (const w of ['走得很慢', '紧张得手都出汗了', '填得满满的']) expect(at(w, '得')).toMatchObject({ tone: 0, neutral: true })
+    for (const w of ['认真地做', '小心地放回去', '匆匆忙忙地生活']) expect(at(w, '地')).toMatchObject({ tone: 0, neutral: true })
+    for (const w of ['获得', '得到', '难得']) expect(at(w, '得').neutral).toBeUndefined()
+    for (const w of ['外地工作', '地方', '这块地', '草地上']) expect(at(w, '地').neutral).toBeUndefined()
+  })
+
   it('flags half-third tones: a 3rd tone with more of the phrase after it', () => {
     expect(scored('好吃')[0].halfThird).toBe(true)
     expect(scored('我爱你')[0].halfThird).toBe(true)

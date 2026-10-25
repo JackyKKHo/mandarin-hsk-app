@@ -19,6 +19,9 @@
 //   depends on the syllable before it, so any detected tone is accepted. The second
 //   syllable of a reduplication (谢谢, 看看, 想想) is usually neutral in speech even when
 //   the dictionary gives a full tone, so it gets the same treatment.
+// - The particles 得 (走得很慢) and 地 (认真地做) are light too, but pinyin-pro often reads
+//   them as dé / dì. They're treated as neutral unless they look like part of a word
+//   (获得 huòdé, 得到 dédào, 外地 wàidì, 地方 dìfang).
 // - A 3rd tone that isn't phrase-final and isn't followed by another 3rd tone is a
 //   'half-third': low and falling, without the rise (我们, 好吃). `halfThird` tells the
 //   scorer to accept a low contour even if it reads as a fall.
@@ -31,6 +34,12 @@ const BU_COMPLEMENTS = new Set('起见懂及完动住清到')
 const LIGHT_BU_WORDS = ['差不多', '受不了', '免不了', '少不了', '舍不得', '恨不得', '怪不得', '说不定']
 // Characters before 不 that mean it's plain negation, not a complement (我不懂 'I don't understand')
 const NOT_VERBS = new Set('我你他她它您们也都还就很又再才可并决绝从千万且而')
+// 得 is a full dé after these (获得 'obtain', 难得 'rare') and before these (得到 'get', 得分 'score')
+const DE_WORD_BEFORE = new Set('获取难心赢')
+const DE_WORD_AFTER = new Set('到出知分意以罪奖')
+// 地 is the noun dì after these (外地, 草地, 土地) and before these (地方, 地铁, 地上)
+const DI_WORD_BEFORE = new Set('外本当各场土草田陆基工天山内产目境领遍满墓园大高平原余营驻盆')
+const DI_WORD_AFTER = new Set('方铁图址区点球震位板毯面下上里带域道主理')
 
 const ORDINAL = ['neutral', '1st', '2nd', '3rd', '4th']
 
@@ -57,6 +66,17 @@ export function applyThirdToneSandhi(tones, phraseIds = tones.map(() => 0), char
     } else {
       spoken[i] = next && citation[i + 1] === 4 ? 2 : 4
     }
+  })
+  chars.forEach((c, i) => {
+    if ((c !== '得' && c !== '地') || spoken[i] === 0) return
+    const prev = same(i, i - 1) ? chars[i - 1] : null
+    const next = same(i, i + 1) ? chars[i + 1] : null
+    if (!prev) return
+    // Adverbial 地 always has a verb after it; at the end of a phrase it's the noun
+    const light = c === '得'
+      ? !DE_WORD_BEFORE.has(prev) && !(next && DE_WORD_AFTER.has(next))
+      : next != null && !DI_WORD_BEFORE.has(prev) && !DI_WORD_AFTER.has(next)
+    if (light) spoken[i] = 0
   })
 
   const out = spoken.map((t, i) => {
