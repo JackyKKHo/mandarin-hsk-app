@@ -5,7 +5,7 @@ import { classifyContour, isHalfThirdContour, isRisingContour } from './_toneCon
 
 export const config = { api: { bodyParser: { sizeLimit: '6mb' } } }
 
-const LIMIT = 30
+const LIMIT = 60
 const WINDOW_MS = 60 * 60 * 1000
 const ipMap = new Map()
 
@@ -206,9 +206,12 @@ export default async function handler(req, res) {
 
     const charResults = windows.map((w, i) => {
       const expRaw = expectedPinyins[i] ?? ''
-      const { base: expBase, tone: citationTone } = splitTonedSyllable(expRaw)
+      const { base: dictBase, tone: citationTone } = splitTonedSyllable(expRaw)
       const spoken = spokenTones[i] ?? { tone: citationTone, accept: [citationTone], sandhi: false }
       const expTone = spoken.tone
+      // Particle 得 / 地 made light by applyThirdToneSandhi: both are said 'de'
+      const lightParticle = expTone === 0 && citationTone !== 0 && !spoken.sandhi && (w.char === '得' || w.char === '地')
+      const expBase = lightParticle ? 'de' : dictBase
       const { initial: expInitial, final: expFinal } = splitInitialFinal(expBase)
 
       const heard = bestHeardChar(transcriptChars, i, w.char)
@@ -239,7 +242,7 @@ export default async function handler(req, res) {
       return {
         char: w.char,
         expected: {
-          pinyin: spoken.sandhi ? `${expBase}${expTone}` : expRaw,
+          pinyin: spoken.sandhi || lightParticle ? `${expBase}${expTone}` : expRaw,
           base: expBase, initial: expInitial, final: expFinal, tone: expTone,
           ...(spoken.sandhi && { citationTone: spoken.citationTone ?? citationTone, sandhi: true, sandhiRule: spoken.rule, sandhiNote: spoken.note, acceptTones: spoken.accept }),
           ...(spoken.neutral && { neutral: true }),
