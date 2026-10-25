@@ -1,7 +1,7 @@
 // Describe It handler, served by api/teacher.js as /api/teacher?action=describe-image,
 // because the Hobby plan allows at most 12 functions per deployment; files starting with _ aren't functions.
 import Anthropic from '@anthropic-ai/sdk'
-import { SYSTEM_PROMPT, OUTPUT_SCHEMA, imageBlock, sanitiseLadder } from './_pictureLadder.js'
+import { SYSTEM_PROMPT, OUTPUT_SCHEMA, imageBlock, inlineImage, sanitiseLadder } from './_pictureLadder.js'
 import { proUser } from './_pro.js'
 
 // Created on first use, so non-Pro requests (and tests) never build a client
@@ -36,8 +36,10 @@ export async function describeImage(req, res) {
     return res.status(429).json({ error: `You've described ${LIMIT} photos this hour — please try again later.` })
   }
 
-  const { block, error } = imageBlock(req.body)
-  if (error) return res.status(400).json({ error })
+  const parsed = imageBlock(req.body)
+  if (parsed.error) return res.status(400).json({ error: parsed.error })
+  const { block, error } = await inlineImage(parsed.block)
+  if (error) return res.status(502).json({ error })
 
   try {
     const response = await anthropic().beta.messages.create({

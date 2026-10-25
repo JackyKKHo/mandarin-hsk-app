@@ -1,4 +1,4 @@
-import { RUNGS, SYSTEM_PROMPT, imageBlock, sanitiseLadder } from './_pictureLadder.js'
+import { RUNGS, SYSTEM_PROMPT, imageBlock, inlineImage, sanitiseLadder } from './_pictureLadder.js'
 
 const rung = (i, extra = {}) => ({
   zh: `第${i}级。`, pinyin: 'dì jí.', en: `Rung ${i}.`, focus: 'Focus', ask: '这是什么？', askEn: 'What is this?',
@@ -57,5 +57,25 @@ describe('sanitiseLadder', () => {
     expect(out.levels).toHaveLength(7)
     expect(out.levels[0].keywords).toHaveLength(4)
     expect(out.levels[0].keywords.every(k => k.zh === '栏杆')).toBe(true)
+  })
+})
+
+describe('inlineImage', () => {
+  const urlBlock = { type: 'image', source: { type: 'url', url: 'https://upload.wikimedia.org/a.jpg' } }
+  const fakeFetch = (status, type, bytes = [1, 2, 3]) => async () =>
+    new Response(new Uint8Array(bytes), { status, headers: { 'content-type': type } })
+
+  it('fetches sample photos and sends them as base64', async () => {
+    const { block } = await inlineImage(urlBlock, fakeFetch(200, 'image/jpeg'))
+    expect(block.source).toEqual({ type: 'base64', media_type: 'image/jpeg', data: 'AQID' })
+  })
+  it('passes uploaded photos through', async () => {
+    const b64 = { type: 'image', source: { type: 'base64', media_type: 'image/png', data: 'AA==' } }
+    expect((await inlineImage(b64, () => { throw new Error('no fetch') })).block).toBe(b64)
+  })
+  it('rejects failed downloads and non-images', async () => {
+    expect((await inlineImage(urlBlock, fakeFetch(404, 'image/jpeg'))).error).toBeTruthy()
+    expect((await inlineImage(urlBlock, fakeFetch(200, 'text/html'))).error).toBeTruthy()
+    expect((await inlineImage(urlBlock, async () => { throw new Error('offline') })).error).toBeTruthy()
   })
 })

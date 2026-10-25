@@ -87,6 +87,27 @@ export function imageBlock(body) {
   return { block: { type: 'image', source: { type: 'base64', media_type: mediaType, data: image } } }
 }
 
+// Wikimedia asks every client to identify itself: https://meta.wikimedia.org/wiki/User-Agent_policy
+const FETCH_HEADERS = { 'User-Agent': 'MandarinDaily-describe-it/1.0 (https://www.mandarindaily.app)' }
+
+/**
+ * Anthropic can't download Wikimedia URLs itself ("Unable to download the file"), so sample
+ * photos are fetched here and sent as base64. Other blocks pass through unchanged.
+ */
+export async function inlineImage(block, fetchImpl = fetch) {
+  if (block.source.type !== 'url') return { block }
+  try {
+    const res = await fetchImpl(block.source.url, { headers: FETCH_HEADERS })
+    const mediaType = res.headers.get('content-type')?.split(';')[0].trim()
+    if (!res.ok || !MEDIA_TYPES.has(mediaType)) return { error: "That sample photo couldn't be loaded — try another one." }
+    const data = Buffer.from(await res.arrayBuffer()).toString('base64')
+    if (data.length > MAX_BASE64) return { error: 'That sample photo is too large — try another one.' }
+    return { block: { type: 'image', source: { type: 'base64', media_type: mediaType, data } } }
+  } catch {
+    return { error: "That sample photo couldn't be loaded — try another one." }
+  }
+}
+
 const str = (v, max) => (typeof v === 'string' ? v.trim().slice(0, max) : '')
 
 /** Keeps only well-formed rungs, trimmed and capped, so the page never renders surprises */
