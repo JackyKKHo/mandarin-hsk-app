@@ -20,6 +20,7 @@ const PRACTICE = [
 ]
 
 const CULTURE = [
+  { to: '/reader', emoji: '读', title: 'Read Anything', desc: 'Paste any Chinese text: see how much you already know, tap new words for pinyin and meaning, add them to review, and listen at your own speed.' },
   { to: '/songs', emoji: '歌', title: 'Learn Through Songs', desc: 'Famous Chinese songs broken down line by line — lyrics, pinyin, vocab, and cultural notes.' },
   { to: '/cantonese', emoji: '粵', title: 'Cantonese → Mandarin', desc: 'Tone mapping, sound shifts, and vocabulary differences between Cantonese and Mandarin.' },
 ]

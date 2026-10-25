@@ -4,6 +4,8 @@ import passages, { getPassagesByLevel, type ReadingPassage } from '../data/readi
 import { loadLevel } from '../data/vocabLoader'
 import type { VocabItem } from '../types'
 import ClickableText from '../components/ClickableText'
+import ReadAloud from '../components/ReadAloud'
+import SpeedToggle from '../components/SpeedToggle'
 
 type View = 'list' | 'test' | 'result'
 
@@ -59,6 +61,10 @@ function ReadingTest({
       <div className="reading-passage-card">
         <h2 className="reading-passage-title">{passage.title}</h2>
         <p className="reading-passage-title-en">{passage.titleEn}</p>
+        <div className="reading-listen">
+          <ReadAloud text={passage.text} label="Listen to passage" />
+          <SpeedToggle />
+        </div>
         <div className="reading-passage-text">
           {passage.text.split('\n').map((line, i) => (
             <p key={i}><ClickableText text={line} lookup={lookup} /></p>

@@ -43,12 +43,14 @@
 | `/favourites` | Favourited words |
 | `/search` | Cross-level search |
 | `/stats` | Progress stats, streak, SRS due count, HSK readiness with cumulative exam coverage and a countdown to `NEXT_EXAM` (`src/data/exam.ts` — update when new exam dates are published) |
+| `/reader` | Read Anything — paste any text; words coloured known / learning / new from SRS + progress, pinyin over unknown words only, tap to add to review, coverage % and estimated HSK level (`src/lib/reader.ts`, segmenter in `src/lib/segment.ts`), read aloud via chunked TTS |
 | `/tones` | Tone Gym — live on-device pitch tracking for syllables and tone pairs (`src/lib/pitchTracker.ts`, `src/lib/toneGym.ts`; tone rules shared with Record & Score in `api/_toneContour.js`) |
 
 ### Components
 - `AppHeader` — nav with Sign in/out button
 - `AuthModal` — email OTP sign-in (2-step: email → 8-char code)
 - `AudioButton` — plays TTS audio
+- `ReadAloud` — reads a whole text via sentence-sized TTS requests; `SpeedToggle` — 1× / 0.75× / 0.5× playback, stored in localStorage `hsk-audio-speed` and applied by `playAudio`
 - `PronunciationChecker` — speech recording feedback
 - `StrokeOrder` — hanzi-writer stroke animation
 - `TeacherButton` — opens Lin Wei chat

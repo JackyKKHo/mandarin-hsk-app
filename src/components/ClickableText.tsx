@@ -3,47 +3,7 @@ import { Link } from 'react-router-dom'
 import type { VocabItem } from '../types'
 import { normalizePOS } from '../types'
 import TonedPinyin from './TonedPinyin'
-
-interface Token {
-  text: string
-  vocab?: VocabItem
-}
-
-const CJK = /[\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF]/
-
-function segment(text: string, lookup: Map<string, VocabItem>): Token[] {
-  const tokens: Token[] = []
-  let i = 0
-  while (i < text.length) {
-    const ch = text[i]
-    if (!CJK.test(ch)) {
-      const last = tokens[tokens.length - 1]
-      if (last && !last.vocab) {
-        last.text += ch
-      } else {
-        tokens.push({ text: ch })
-      }
-      i++
-      continue
-    }
-    let matched = false
-    for (let len = 4; len >= 2; len--) {
-      if (i + len > text.length) continue
-      const candidate = text.slice(i, i + len)
-      if (lookup.has(candidate)) {
-        tokens.push({ text: candidate, vocab: lookup.get(candidate)! })
-        i += len
-        matched = true
-        break
-      }
-    }
-    if (!matched) {
-      tokens.push({ text: ch, vocab: lookup.get(ch) })
-      i++
-    }
-  }
-  return tokens
-}
+import { segment } from '../lib/segment'
 
 interface Props {
   text: string

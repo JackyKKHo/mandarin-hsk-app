@@ -6461,3 +6461,109 @@ html.dark .record-explanation { background: rgba(25, 118, 210, 0.16); }
 .picture-answer-han { font-size: 1.3rem; font-weight: 600; }
 .picture-answer-row { display: flex; align-items: center; gap: 0.5rem; }
 @media (hover: none) { .picture-options .quiz-key { display: none; } }
+
+/* ── Audio speed + read aloud ─────────────────────────────────────────────── */
+.speed-toggle {
+  margin-left: auto; min-width: 3.2rem; padding: 0.3rem 0.6rem;
+  border-radius: 999px; border: 1px solid var(--border); background: var(--surface);
+  color: var(--muted); font-size: 0.8rem; font-weight: 700; cursor: pointer;
+  font-variant-numeric: tabular-nums;
+}
+.speed-toggle-slow { color: var(--blue); border-color: var(--blue); }
+.read-aloud-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.4rem 0.85rem; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  font-size: 0.85rem; font-weight: 600; cursor: pointer;
+}
+.read-aloud-btn.playing { color: var(--red); border-color: var(--red); }
+.read-aloud-btn:disabled { opacity: 0.5; cursor: default; }
+.reading-listen { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+.reading-listen .speed-toggle { margin-left: 0; }
+
+/* ── Read Anything (/reader) ──────────────────────────────────────────────── */
+.reader-page { padding-bottom: 6rem; }
+.reader-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.4rem; }
+.reader-desc { color: var(--muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 1rem; }
+.reader-input {
+  width: 100%; box-sizing: border-box; padding: 0.85rem; resize: vertical;
+  border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);
+  color: var(--text); font-family: var(--font-sans); font-size: 1.05rem; line-height: 1.8;
+}
+.reader-input:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
+.reader-input-meta { text-align: right; font-size: 0.75rem; color: var(--muted); margin: 0.25rem 0 0.75rem; }
+.reader-actions { display: flex; gap: 0.5rem; }
+.reader-samples { margin-top: 1.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.reader-samples-title { font-size: 0.8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.reader-sample {
+  text-align: left; padding: 0.65rem 0.8rem; border-radius: var(--radius-sm);
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  font-size: 0.9rem; cursor: pointer;
+}
+.reader-sample:hover { background: var(--hover); }
+.reader-sample .rpb-badge { background: var(--red); margin-right: 0.35rem; }
+
+.reader-topbar { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+.reader-edit-btn { background: none; border: none; cursor: pointer; margin-bottom: 0; padding: 0; }
+.reader-topbar .read-aloud-btn { margin-left: auto; }
+.reader-topbar .speed-toggle { margin-left: 0; }
+
+.reader-stats {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 0.9rem 1rem; margin-bottom: 0.75rem;
+}
+.reader-coverage { display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
+.reader-coverage-num { font-size: 1.6rem; font-weight: 800; color: var(--text); font-variant-numeric: tabular-nums; }
+.reader-coverage-label { font-size: 0.85rem; color: var(--muted); }
+.reader-bar { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: var(--hover); margin: 0.6rem 0; }
+.rd-bar-known { background: var(--green); }
+.rd-bar-learning { background: var(--gold); }
+.rd-bar-new { background: var(--red); }
+.reader-legend { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; font-size: 0.78rem; color: var(--muted); }
+.reader-legend span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.rd-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.rd-dot-known { background: var(--green); }
+.rd-dot-learning { background: var(--gold); }
+.rd-dot-new { background: var(--red); }
+.rd-dot-outside { background: var(--muted); }
+
+.reader-pinyin-modes { display: flex; align-items: center; gap: 0.35rem; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.75rem; flex-wrap: wrap; }
+.reader-mode {
+  padding: 0.25rem 0.65rem; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--muted); font-size: 0.78rem; cursor: pointer;
+}
+.reader-mode.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+.reader-text {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 1rem 1.1rem; font-size: 1.25rem; line-height: 2.4; overflow-wrap: anywhere;
+}
+.reader-text p { margin: 0 0 0.6rem; }
+.reader-text p:last-child { margin-bottom: 0; }
+.reader-text rt { font-size: 0.55rem; color: var(--muted); letter-spacing: 0; }
+.rd-word {
+  font: inherit; color: inherit; background: none; border: none; padding: 0 0.05rem;
+  margin: 0; cursor: pointer; border-radius: 4px; line-height: inherit;
+}
+.rd-word:hover { background: var(--hover); }
+.rd-new { background: var(--red-light); box-shadow: inset 0 -2px 0 var(--red); }
+.rd-learning { box-shadow: inset 0 -2px 0 var(--gold); }
+.rd-active { outline: 2px solid var(--blue); }
+.rd-outside { color: var(--muted); }
+
+.reader-new { margin-top: 1.5rem; }
+.reader-new-head { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.6rem; }
+.reader-new-head h2 { font-size: 1.05rem; margin: 0; }
+.reader-new-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+.reader-new-item {
+  width: 100%; display: grid; grid-template-columns: auto auto 1fr auto; align-items: baseline; gap: 0.6rem;
+  text-align: left; padding: 0.55rem 0.75rem; border-radius: var(--radius-sm);
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer;
+}
+.reader-new-item:hover { background: var(--hover); }
+.reader-new-char { font-size: 1.15rem; font-weight: 700; }
+.reader-new-en { font-size: 0.85rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.reader-new-level { font-size: 0.7rem; color: var(--muted); }
+.reader-popup-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 0.4rem 0 0.7rem; }
+.reader-popup-actions .btn-secondary { padding: 0.4rem 0.9rem; font-size: 0.85rem; }
+.reader-popup-state { font-size: 0.85rem; color: var(--green); font-weight: 600; }
