@@ -44,6 +44,7 @@
 | `/search` | Cross-level search |
 | `/stats` | Progress stats, streak, SRS due count, HSK readiness with cumulative exam coverage and a countdown to `NEXT_EXAM` (`src/data/exam.ts` — update when new exam dates are published) |
 | `/reader` | Read Anything — paste any text; words coloured known / learning / new from SRS + progress, pinyin over unknown words only, tap to add to review, coverage % and estimated HSK level (`src/lib/reader.ts`, segmenter in `src/lib/segment.ts`), read aloud via chunked TTS |
+| `/describe` | Describe It (看图说话) — upload/take a photo (downscaled to 1024px JPEG on device) or pick a Wikimedia sample; Claude writes a 7-rung ladder, one per HSK level (What → Where → Details → Why → Inference → Opinion → Written style). Each locked rung shows a Chinese question to try first; revealed rungs have tap-to-define, pinyin, hidden English, read-aloud and keywords to add to review. Last ladder kept in localStorage `hsk-describe-last` |
 | `/tones` | Tone Gym — live on-device pitch tracking for syllables and tone pairs (`src/lib/pitchTracker.ts`, `src/lib/toneGym.ts`; tone rules shared with Record & Score in `api/_toneContour.js`) |
 
 ### Components
@@ -67,6 +68,7 @@
 
 ### API (Vercel serverless)
 - `api/teacher.js` — Lin Wei AI tutor (Anthropic SDK + prompt caching + rate limit: 50 req/IP/hour). Takes an optional `learner` profile (`level`, `mastered`, up to 12 `weakWords`) built by `src/lib/learnerProfile.ts` from on-device SRS data; `api/_learnerProfile.js` sanitises it (Han-only words) before it reaches the prompt
+- `api/describe-image.js` — Describe It ladder (Claude Opus 5.5 vision, structured JSON output, server-side refusal fallback, 10 photos/IP/hour). Rungs, prompt, schema, image validation and output sanitising in `api/_pictureLadder.js` (tested); keep `RUNGS` in `src/pages/DescribePage.tsx` in sync
 - `api/tts.js` — Google TTS endpoint (24h cache)
 
 ### Auth
