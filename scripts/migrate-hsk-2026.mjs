@@ -13,6 +13,7 @@
 // A word reuses existing content when the characters match and the pinyin matches ignoring tones
 // and spacing (so 谁 shéi/shuí or neutral-tone spellings still match, but 还 hái vs huán doesn't).
 import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs'
+import { numbered } from './lib/pinyinNumbered.mjs'
 
 const report = process.argv.includes('--report')
 const syllabus = JSON.parse(readFileSync('data/source/hsk-2026-syllabus.json', 'utf8')).words
@@ -48,21 +49,6 @@ function mapPos(pos) {
   const parts = pos.split('、').map(p => p.replace(/[（）()]/g, '').trim()).filter(Boolean)
   const mapped = [...new Set(parts.map(p => POS[p]).filter(Boolean))]
   return mapped.length === 0 ? null : mapped.length === 1 ? mapped[0] : mapped
-}
-
-// Tone-marked pinyin → numbered, syllable by syllable ("Běijīng" → "bei3 jing1")
-const SYL = /(zh|ch|sh|[bpmfdtnlgkhjqxzcsryw])?[aāáǎàeēéěèiīíǐìoōóǒòuūúǔùüǖǘǚǜ]+(?:ng?)?(?:r(?![aāáǎàeēéěèiīíǐìoōóǒòuūúǔùüǖǘǚǜ]))?/gi
-const TONES = [/[āēīōūǖ]/i, /[áéíóúǘ]/i, /[ǎěǐǒǔǚ]/i, /[àèìòùǜ]/i]
-// Same format as the existing data (and TonePage): one syllable per character, neutral tone as 0,
-// ü written as ü, and the erhua 儿 as its own "er2" ("miàntiáor" → "mian4 tiao2 er2")
-function numbered(pinyin) {
-  return (pinyin.split('/')[0].match(SYL) ?? []).flatMap(s => {
-    const t = TONES.findIndex(re => re.test(s)) + 1
-    let syl = base(s).replace(/v/g, 'ü')
-    const erhua = syl.endsWith('r') && syl !== 'er'
-    if (erhua) syl = syl.slice(0, -1)
-    return erhua ? [`${syl}${t}`, 'er2'] : [`${syl}${t}`]
-  }).join(' ')
 }
 
 // Errors in the official PDF itself (both independent transcriptions agree on the source text)

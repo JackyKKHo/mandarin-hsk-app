@@ -18,6 +18,7 @@ const TONE_TABLE: Record<string, string[]> = {
   o: ['ō','ó','ǒ','ò','o'],
   u: ['ū','ú','ǔ','ù','u'],
   v: ['ǖ','ǘ','ǚ','ǜ','ü'],
+  ü: ['ǖ','ǘ','ǚ','ǜ','ü'],
 }
 
 function applyTone(base: string, tone: number): string {

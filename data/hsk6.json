@@ -341,7 +341,7 @@
     "simplified": "拜年",
     "traditional": "拜年",
     "pinyin": "bàinián",
-    "pinyinNumbered": "bain4 ian2",
+    "pinyinNumbered": "bai4 nian2",
     "english": "to pay a New Year call",
     "partOfSpeech": "verb",
     "examples": [
@@ -562,7 +562,7 @@
     "simplified": "保暖",
     "traditional": "保暖",
     "pinyin": "bǎonuǎn",
-    "pinyinNumbered": "baon3 uan3",
+    "pinyinNumbered": "bao3 nuan3",
     "english": "to stay warm",
     "partOfSpeech": "verb",
     "examples": [
@@ -2370,7 +2370,7 @@
     "simplified": "才能",
     "traditional": "才能",
     "pinyin": "cáinéng",
-    "pinyinNumbered": "cain2 eng2",
+    "pinyinNumbered": "cai2 neng2",
     "english": "talent; ability",
     "partOfSpeech": "noun",
     "meanings": [
@@ -2580,7 +2580,7 @@
     "simplified": "采纳",
     "traditional": "採納",
     "pinyin": "cǎinà",
-    "pinyinNumbered": "cain3 a4",
+    "pinyinNumbered": "cai3 na4",
     "english": "to accept",
     "partOfSpeech": "verb",
     "examples": [
@@ -2807,7 +2807,7 @@
     "simplified": "策略",
     "traditional": "策略",
     "pinyin": "cèlüè",
-    "pinyinNumbered": "ce4 lue4",
+    "pinyinNumbered": "ce4 lüe4",
     "english": "coup",
     "partOfSpeech": "noun",
     "examples": [
@@ -4933,7 +4933,7 @@
     "simplified": "穿过",
     "traditional": "穿過",
     "pinyin": "chuānguò",
-    "pinyinNumbered": "chuang1 uo4",
+    "pinyinNumbered": "chuan1 guo4",
     "english": "thread",
     "partOfSpeech": "verb",
     "examples": [
@@ -7416,7 +7416,7 @@
     "simplified": "电饭锅",
     "traditional": "電飯鍋",
     "pinyin": "diànfànguō",
-    "pinyinNumbered": "dian4 fang4 uo1",
+    "pinyinNumbered": "dian4 fan4 guo1",
     "english": "electric rice cooker",
     "partOfSpeech": "noun",
     "examples": [
@@ -9510,7 +9510,7 @@
     "simplified": "分工",
     "traditional": "分工",
     "pinyin": "fēngōng",
-    "pinyinNumbered": "feng1 ong1",
+    "pinyinNumbered": "fen1 gong1",
     "english": "division of labour",
     "partOfSpeech": "verb",
     "examples": [
@@ -10323,7 +10323,7 @@
     "simplified": "概率",
     "traditional": "概率",
     "pinyin": "gàilǜ",
-    "pinyinNumbered": "gai4 lu4",
+    "pinyinNumbered": "gai4 lü4",
     "english": "probability (math.)",
     "partOfSpeech": "noun",
     "examples": [
@@ -10400,7 +10400,7 @@
     "simplified": "尴尬",
     "traditional": "尷尬",
     "pinyin": "gāngà",
-    "pinyinNumbered": "gang1 a4",
+    "pinyinNumbered": "gan1 ga4",
     "english": "awkward",
     "partOfSpeech": "adjective",
     "examples": [
@@ -12203,7 +12203,7 @@
     "simplified": "观光",
     "traditional": "觀光",
     "pinyin": "guānguāng",
-    "pinyinNumbered": "guang1 uang1",
+    "pinyinNumbered": "guan1 guang1",
     "english": "rubberneck",
     "partOfSpeech": "verb",
     "examples": [
@@ -13846,7 +13846,7 @@
     "simplified": "忽略",
     "traditional": "忽略",
     "pinyin": "hūlüè",
-    "pinyinNumbered": "hu1 lue4",
+    "pinyinNumbered": "hu1 lüe4",
     "english": "overpass",
     "partOfSpeech": "verb",
     "examples": [
@@ -14242,7 +14242,7 @@
     "simplified": "怀念",
     "traditional": "懷念",
     "pinyin": "huáiniàn",
-    "pinyinNumbered": "huain2 ian4",
+    "pinyinNumbered": "huai2 nian4",
     "english": "cherish memory of",
     "partOfSpeech": "verb",
     "examples": [
@@ -15539,7 +15539,7 @@
     "simplified": "纪律",
     "traditional": "紀律",
     "pinyin": "jìlǜ",
-    "pinyinNumbered": "ji4 lu4",
+    "pinyinNumbered": "ji4 lü4",
     "english": "disciplinary",
     "partOfSpeech": "noun",
     "examples": [
@@ -16062,7 +16062,7 @@
     "simplified": "坚固",
     "traditional": "堅固",
     "pinyin": "jiāngù",
-    "pinyinNumbered": "jiang1 u4",
+    "pinyinNumbered": "jian1 gu4",
     "english": "firm",
     "partOfSpeech": "adjective",
     "examples": [
@@ -16432,7 +16432,7 @@
     "simplified": "间隔",
     "traditional": "間隔",
     "pinyin": "jiàngé",
-    "pinyinNumbered": "jiang4 e2",
+    "pinyinNumbered": "jian4 ge2",
     "english": "compartment",
     "partOfSpeech": [
       "noun",
@@ -16756,7 +16756,7 @@
     "simplified": "焦虑",
     "traditional": "焦慮",
     "pinyin": "jiāolǜ",
-    "pinyinNumbered": "jiao1 lu4",
+    "pinyinNumbered": "jiao1 lü4",
     "english": "anxious",
     "partOfSpeech": "adjective",
     "examples": [
@@ -17125,7 +17125,7 @@
     "simplified": "节能",
     "traditional": "節能",
     "pinyin": "jiénéng",
-    "pinyinNumbered": "jien2 eng2",
+    "pinyinNumbered": "jie2 neng2",
     "english": "to save energy",
     "partOfSpeech": "verb",
     "examples": [
@@ -20728,7 +20728,7 @@
     "simplified": "理念",
     "traditional": "理念",
     "pinyin": "lǐniàn",
-    "pinyinNumbered": "lin3 ian4",
+    "pinyinNumbered": "li3 nian4",
     "english": "sense",
     "partOfSpeech": "noun",
     "examples": [
@@ -20897,7 +20897,7 @@
     "simplified": "历年",
     "traditional": "歷年",
     "pinyin": "lìnián",
-    "pinyinNumbered": "lin4 ian2",
+    "pinyinNumbered": "li4 nian2",
     "english": "over the years",
     "partOfSpeech": "noun",
     "examples": [
@@ -21635,7 +21635,7 @@
     "simplified": "旅程",
     "traditional": "旅程",
     "pinyin": "lǚchéng",
-    "pinyinNumbered": "lu3 cheng2",
+    "pinyinNumbered": "lü3 cheng2",
     "english": "travel plan",
     "partOfSpeech": "noun",
     "examples": [
@@ -21660,7 +21660,7 @@
     "simplified": "旅途",
     "traditional": "旅途",
     "pinyin": "lǚtú",
-    "pinyinNumbered": "lu3 tu2",
+    "pinyinNumbered": "lü3 tu2",
     "english": "way",
     "partOfSpeech": "noun",
     "examples": [
@@ -21685,7 +21685,7 @@
     "simplified": "履行",
     "traditional": "履行",
     "pinyin": "lǚxíng",
-    "pinyinNumbered": "lu3 xing2",
+    "pinyinNumbered": "lü3 xing2",
     "english": "to fulfill (one's obligations)",
     "partOfSpeech": "verb",
     "examples": [
@@ -21708,7 +21708,7 @@
     "simplified": "率",
     "traditional": "率",
     "pinyin": "lǜ",
-    "pinyinNumbered": "lu4",
+    "pinyinNumbered": "lü4",
     "english": "lead",
     "partOfSpeech": "suffix",
     "examples": [
@@ -21731,7 +21731,7 @@
     "simplified": "绿化",
     "traditional": "綠化",
     "pinyin": "lǜhuà",
-    "pinyinNumbered": "lu4 hua4",
+    "pinyinNumbered": "lü4 hua4",
     "english": "make (a place) green",
     "partOfSpeech": "verb",
     "examples": [
@@ -22816,7 +22816,7 @@
     "simplified": "民歌",
     "traditional": "民歌",
     "pinyin": "míngē",
-    "pinyinNumbered": "ming2 e1",
+    "pinyinNumbered": "min2 ge1",
     "english": "folk song",
     "partOfSpeech": "noun",
     "examples": [
@@ -23173,7 +23173,7 @@
     "simplified": "模拟",
     "traditional": "模擬",
     "pinyin": "mónǐ",
-    "pinyinNumbered": "mon2 i3",
+    "pinyinNumbered": "mo2 ni3",
     "english": "imitate",
     "partOfSpeech": "verb",
     "examples": [
@@ -24609,7 +24609,7 @@
     "simplified": "频率",
     "traditional": "頻率",
     "pinyin": "pínlǜ",
-    "pinyinNumbered": "pin2 lu4",
+    "pinyinNumbered": "pin2 lü4",
     "english": "relative frequency",
     "partOfSpeech": "noun",
     "examples": [],
@@ -26855,7 +26855,7 @@
     "simplified": "人工智能",
     "traditional": "人工智能",
     "pinyin": "réngōng zhìnéng",
-    "pinyinNumbered": "reng2 ong1 zhin4 eng2",
+    "pinyinNumbered": "ren2 gong1 zhi4 neng2",
     "english": "artificial intelligence (AI)",
     "partOfSpeech": "noun",
     "examples": [],
@@ -29959,7 +29959,7 @@
     "simplified": "水泥",
     "traditional": "水泥",
     "pinyin": "shuǐní",
-    "pinyinNumbered": "shuin3 i2",
+    "pinyinNumbered": "shui3 ni2",
     "english": "cement",
     "partOfSpeech": "noun",
     "examples": [
@@ -30018,7 +30018,7 @@
     "simplified": "思念",
     "traditional": "思念",
     "pinyin": "sīniàn",
-    "pinyinNumbered": "sin1 ian4",
+    "pinyinNumbered": "si1 nian4",
     "english": "to think of",
     "partOfSpeech": "verb",
     "examples": [],
@@ -31806,7 +31806,7 @@
     "simplified": "头脑",
     "traditional": "頭腦",
     "pinyin": "tóunǎo",
-    "pinyinNumbered": "toun2 ao3",
+    "pinyinNumbered": "tou2 nao3",
     "english": "mind",
     "partOfSpeech": "noun",
     "meanings": [
@@ -33018,7 +33018,7 @@
     "simplified": "为难",
     "traditional": "為難",
     "pinyin": "wéinán",
-    "pinyinNumbered": "wein2 an2",
+    "pinyinNumbered": "wei2 nan2",
     "english": "disoblige",
     "partOfSpeech": [
       "adjective",
@@ -36177,7 +36177,7 @@
     "simplified": "眼光",
     "traditional": "眼光",
     "pinyin": "yǎnguāng",
-    "pinyinNumbered": "yang3 uang1",
+    "pinyinNumbered": "yan3 guang1",
     "english": "brainstorm",
     "partOfSpeech": "noun",
     "examples": [
@@ -36956,7 +36956,7 @@
     "simplified": "一律",
     "traditional": "一律",
     "pinyin": "yílǜ",
-    "pinyinNumbered": "yi2 lu4",
+    "pinyinNumbered": "yi2 lü4",
     "english": "equally",
     "partOfSpeech": "adverb",
     "examples": [
@@ -38956,7 +38956,7 @@
     "simplified": "灾难",
     "traditional": "災難",
     "pinyin": "zāinàn",
-    "pinyinNumbered": "zain1 an4",
+    "pinyinNumbered": "zai1 nan4",
     "english": "affliction",
     "partOfSpeech": "noun",
     "examples": [
@@ -42125,7 +42125,7 @@
     "simplified": "自律",
     "traditional": "自律",
     "pinyin": "zìlǜ",
-    "pinyinNumbered": "zi4 lu4",
+    "pinyinNumbered": "zi4 lü4",
     "english": "self-discipline",
     "partOfSpeech": "verb",
     "examples": [],
