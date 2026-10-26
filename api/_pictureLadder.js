@@ -29,6 +29,8 @@ For every rung give:
 
 Also give title (2–6 Chinese characters naming the scene) and titleEn.
 
+Also give labels, for a picture-dictionary view of the photo: 4–8 distinct things that are clearly visible, spread across the photo. For each: zh (one word, the lowest HSK level that names it), pinyin, en, and x and y = the centre of that thing as a percentage of the photo's width and height (x 0 = left edge, 100 = right edge; y 0 = top, 100 = bottom). Leave out anything you can't place.
+
 Describe only what can be seen or reasonably inferred. Never guess who a real person is, their name, ethnicity, religion, health or other sensitive traits; refer to people as 一个人, 一位女士, 一个孩子 and so on. If the photo contains text, you may mention what it says. If the photo is unclear, describe what you can.`
 
 const keyword = {
@@ -38,13 +40,24 @@ const keyword = {
   properties: { zh: { type: 'string' }, pinyin: { type: 'string' }, en: { type: 'string' } },
 }
 
+const label = {
+  type: 'object',
+  additionalProperties: false,
+  required: ['zh', 'pinyin', 'en', 'x', 'y'],
+  properties: {
+    zh: { type: 'string' }, pinyin: { type: 'string' }, en: { type: 'string' },
+    x: { type: 'number' }, y: { type: 'number' },
+  },
+}
+
 export const OUTPUT_SCHEMA = {
   type: 'object',
   additionalProperties: false,
-  required: ['title', 'titleEn', 'levels'],
+  required: ['title', 'titleEn', 'labels', 'levels'],
   properties: {
     title: { type: 'string' },
     titleEn: { type: 'string' },
+    labels: { type: 'array', items: label },
     levels: {
       type: 'array',
       items: {
@@ -126,5 +139,11 @@ export function sanitiseLadder(raw) {
       .slice(0, 4),
   }))
   if (levels.length < RUNGS.length || levels.some(l => !l.zh)) return null
-  return { title: str(raw.title, 20), titleEn: str(raw.titleEn, 80), levels }
+  const pct = v => Math.round(Math.min(100, Math.max(0, v)))
+  const labels = (Array.isArray(raw.labels) ? raw.labels : [])
+    .filter(l => Number.isFinite(l?.x) && Number.isFinite(l?.y))
+    .map(l => ({ zh: str(l.zh, 8), pinyin: str(l.pinyin, 40), en: str(l.en, 40), x: pct(l.x), y: pct(l.y) }))
+    .filter(l => l.zh && /\p{Script=Han}/u.test(l.zh))
+    .slice(0, 8)
+  return { title: str(raw.title, 20), titleEn: str(raw.titleEn, 80), labels, levels }
 }

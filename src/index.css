@@ -6608,12 +6608,46 @@ html.dark .record-explanation { background: rgba(25, 118, 210, 0.16); }
 .describe-heading { display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
 .describe-heading h1 { font-size: 1.4rem; margin: 0; }
 .describe-heading span { color: var(--muted); font-size: 0.9rem; }
-.describe-progress { display: flex; align-items: center; gap: 0.3rem; margin-bottom: 1rem; flex-wrap: wrap; }
-.describe-step {
-  min-width: 2rem; height: 2rem; padding: 0 0.35rem; border-radius: 999px; border: 1px solid var(--border);
-  background: var(--surface); color: var(--muted); font-size: 0.75rem; font-weight: 700; cursor: pointer;
+.describe-photo-wrap { position: relative; width: fit-content; max-width: 100%; margin: 0 auto; }
+.describe-photo-wrap .describe-photo { width: auto; max-width: 100%; max-height: 340px; object-fit: initial; }
+.describe-pin {
+  position: absolute; display: flex; align-items: center; gap: 4px;
+  transform: translate(-7px, -50%); background: none; border: 0; padding: 0; cursor: pointer; font: inherit;
 }
-.describe-step.done { background: var(--red); border-color: var(--red); color: #fff; }
+.describe-pin.left { flex-direction: row-reverse; transform: translate(calc(-100% + 7px), -50%); }
+.describe-pin.active { z-index: 2; }
+.describe-pin-dot { flex: none; width: 14px; height: 14px; border-radius: 50%; background: var(--red); border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.35); }
+.describe-pin-tag {
+  display: flex; flex-direction: column; align-items: flex-start; white-space: nowrap;
+  background: rgba(255,255,255,0.94); color: #1f1d1a; border-radius: 6px; padding: 2px 7px 3px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25); line-height: 1.15;
+}
+.describe-pin.left .describe-pin-tag { align-items: flex-end; }
+.describe-pin-tag b { font-size: 0.92rem; }
+.describe-pin-tag small { font-size: 0.64rem; color: #6b665e; }
+.describe-stairs { list-style: none; margin: 0 0 0.6rem; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; align-items: end; }
+.describe-stair {
+  width: 100%; display: flex; flex-direction: column; align-items: stretch; gap: 3px;
+  background: none; border: 0; padding: 0; cursor: pointer; font: inherit; color: var(--muted);
+}
+.describe-stair-count { font-size: 0.66rem; font-weight: 600; text-align: center; min-height: 0.9rem; }
+.describe-stair-block {
+  height: var(--h); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 0.25rem;
+  border: 2px dashed var(--border); border-radius: var(--radius-sm); font-weight: 800; font-size: 0.85rem;
+}
+.describe-stair.next .describe-stair-block { border-color: var(--red); color: var(--red); }
+.describe-stair.open .describe-stair-block { border: 0; background: color-mix(in srgb, var(--red) var(--shade), var(--surface)); color: var(--text); }
+.describe-stair.open.deep .describe-stair-block { color: #fff; }
+.describe-stair-layer { font-size: 0.64rem; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.describe-stair.open .describe-stair-layer { color: var(--text); font-weight: 600; }
+.describe-tools { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.describe-tools .describe-pinyin-toggle { margin-left: 0; }
+.describe-save-btn {
+  margin-left: auto; border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  border-radius: 999px; font-size: 0.8rem; font-weight: 600; padding: 0.3rem 0.85rem; cursor: pointer;
+}
+.describe-save-btn:disabled { opacity: 0.6; cursor: default; }
+.describe-rung { scroll-margin-top: 1rem; }
 .describe-pinyin-toggle { margin-left: auto; font-size: 0.8rem; color: var(--muted); display: inline-flex; align-items: center; gap: 0.3rem; }
 
 .describe-ladder { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; }

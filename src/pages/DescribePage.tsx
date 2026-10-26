@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, type CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import type { VocabItem } from '../types'
 import AppHeader from '../components/AppHeader'
@@ -14,16 +14,17 @@ import { loadAllLevels } from '../data/vocabLoader'
 import { loadImages, type WordImage } from '../data/images'
 import { levelLabel } from '../data/levels'
 import { buildLookup } from '../lib/reader'
+import { placeLabels, renderDescribeCard, shareOrDownload, stairShade } from '../lib/describeCard'
 
-// Mirrors RUNGS in api/_pictureLadder.js
+// Mirrors RUNGS in api/_pictureLadder.js; `short` labels the staircase steps
 const RUNGS = [
-  { level: 1, layer: 'What', hint: 'Who or what, doing what?' },
-  { level: 2, layer: 'Where', hint: 'Add where it is.' },
-  { level: 3, layer: 'Details', hint: 'Colours, materials, how many.' },
-  { level: 4, layer: 'Why', hint: 'Reasons and purpose.' },
-  { level: 5, layer: 'Inference', hint: 'What happened before or comes next? How do they feel?' },
-  { level: 6, layer: 'Opinion', hint: 'Comment on the scene.' },
-  { level: 7, layer: 'Written style', hint: 'Formal written Chinese, with an idiom.' },
+  { level: 1, layer: 'What', short: 'What', hint: 'Who or what, doing what?' },
+  { level: 2, layer: 'Where', short: 'Where', hint: 'Add where it is.' },
+  { level: 3, layer: 'Details', short: 'Details', hint: 'Colours, materials, how many.' },
+  { level: 4, layer: 'Why', short: 'Why', hint: 'Reasons and purpose.' },
+  { level: 5, layer: 'Inference', short: 'Next', hint: 'What happened before or comes next? How do they feel?' },
+  { level: 6, layer: 'Opinion', short: 'Opinion', hint: 'Comment on the scene.' },
+  { level: 7, layer: 'Written style', short: 'Written', hint: 'Formal written Chinese, with an idiom.' },
 ]
 
 // Scenes from the picture quiz photos (word ids in data/images.json)
@@ -39,13 +40,83 @@ const MAX_SIDE = 1024
 
 interface Keyword { zh: string; pinyin: string; en: string }
 interface Rung { zh: string; pinyin: string; en: string; focus: string; ask: string; askEn: string; keywords: Keyword[] }
-interface Ladder { title: string; titleEn: string; levels: Rung[] }
+interface PhotoLabel { zh: string; pinyin: string; en: string; x: number; y: number }
+// labels is missing on ladders saved before the picture-dictionary view existed
+interface Ladder { title: string; titleEn: string; labels?: PhotoLabel[]; levels: Rung[] }
 interface Session {
   image: string
   credit?: WordImage
   ladder: Ladder
   revealed: number
   attempts: Record<number, string>
+}
+
+const hanCount = (s: string) => [...s].filter(c => /\p{Script=Han}/u.test(c)).length
+
+/** The photo with picture-dictionary pins; tap a pin for its English */
+function LabelledPhoto({ src, alt, labels }: { src: string; alt: string; labels: PhotoLabel[] }) {
+  const [active, setActive] = useState<number | null>(null)
+  const [box, setBox] = useState<{ w: number; h: number } | null>(null)
+  const img = useRef<HTMLImageElement>(null)
+
+  useEffect(() => {
+    const el = img.current
+    if (!el) return
+    const measure = () => { if (el.clientWidth) setBox({ w: el.clientWidth, h: el.clientHeight }) }
+    const ro = new ResizeObserver(measure)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
+
+  // Tag sizes estimated from the CSS (0.92rem characters, 0.64rem pinyin) so tags can be placed before they render
+  const placed = box ? placeLabels(labels, box.w, box.h, l => ({ w: Math.max([...l.zh].length * 15, l.pinyin.length * 6) + 16, h: 36 })) : []
+
+  return (
+    <div className="describe-photo-wrap">
+      <img ref={img} src={src} alt={alt} className="describe-photo" />
+      {placed.map(({ label: l, left, dy }, i) => (
+        <button
+          key={i}
+          className={`describe-pin${left ? ' left' : ''}${active === i ? ' active' : ''}`}
+          style={{ left: `${l.x}%`, top: `${l.y}%` }}
+          onClick={() => setActive(active === i ? null : i)}
+          aria-label={`${l.zh} ${l.pinyin}: ${l.en}`}
+        >
+          <span className="describe-pin-dot" aria-hidden="true" />
+          <span className="describe-pin-tag" style={dy ? { transform: `translateY(${dy}px)` } : undefined}>
+            <b lang="zh-CN">{l.zh}</b>
+            <small>{active === i ? l.en : l.pinyin}</small>
+          </span>
+        </button>
+      ))}
+    </div>
+  )
+}
+
+/** Seven steps, each taller than the last; revealed steps fill in and show how many characters that level used */
+function Staircase({ levels, revealed, onStep }: { levels: Rung[]; revealed: number; onStep: (level: number) => void }) {
+  return (
+    <ol className="describe-stairs" aria-label={`Level ${revealed} of ${RUNGS.length} revealed`}>
+      {RUNGS.map((r, i) => {
+        const open = r.level <= revealed
+        const shade = stairShade(i, RUNGS.length)
+        return (
+          <li key={r.level}>
+            <button
+              className={`describe-stair${open ? ' open' : ''}${r.level === revealed + 1 ? ' next' : ''}${shade > 60 ? ' deep' : ''}`}
+              style={{ '--h': `${1.6 + i * 0.7}rem`, '--shade': `${shade}%` } as CSSProperties}
+              onClick={() => onStep(r.level)}
+              title={`HSK ${levelLabel(r.level)} · ${r.layer}`}
+            >
+              <span className="describe-stair-count">{open ? `${hanCount(levels[i].zh)}字` : ''}</span>
+              <span className="describe-stair-block">{levelLabel(r.level)}</span>
+              <span className="describe-stair-layer">{r.short}</span>
+            </button>
+          </li>
+        )
+      })}
+    </ol>
+  )
 }
 
 function loadLast(): Session | null {
@@ -88,6 +159,8 @@ export default function DescribePage() {
   const [lookup, setLookup] = useState<Map<string, VocabItem>>(new Map())
   const [showPinyin, setShowPinyin] = useState(true)
   const [openEnglish, setOpenEnglish] = useState<Set<number>>(new Set())
+  const [showLabels, setShowLabels] = useState(true)
+  const [saving, setSaving] = useState(false)
   const { review, getCard } = useSRS()
   const { session: auth } = useAuth()
 
@@ -139,6 +212,35 @@ export default function DescribePage() {
 
   function reveal(n: number) {
     setSession(s => s && { ...s, revealed: Math.max(s.revealed, n) })
+  }
+
+  function goToStep(level: number) {
+    reveal(level)
+    // Wait a frame so a newly revealed level exists before scrolling to it
+    requestAnimationFrame(() => document.getElementById(`describe-rung-${level}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+  }
+
+  async function saveImage() {
+    if (!session) return
+    setSaving(true)
+    setError(null)
+    try {
+      const { ladder, revealed, credit } = session
+      const blob = await renderDescribeCard({
+        image: session.image,
+        title: ladder.title,
+        titleEn: ladder.titleEn,
+        labels: showLabels ? ladder.labels ?? [] : [],
+        levels: ladder.levels.slice(0, revealed).map((l, i) => ({ badge: `HSK ${levelLabel(RUNGS[i].level)}`, layer: RUNGS[i].layer, zh: l.zh })),
+        totalLevels: RUNGS.length,
+        credit: credit && `Photo: ${credit.author}, ${credit.license}, via Wikimedia Commons`,
+      })
+      await shareOrDownload(blob, `describe-it-${ladder.titleEn.toLowerCase().replace(/[^a-z0-9]+/g, '-') || 'photo'}.png`, ladder.title)
+    } catch {
+      setError("Couldn't make the image — try again.")
+    } finally {
+      setSaving(false)
+    }
   }
 
   function setAttempt(level: number, text: string) {
@@ -228,7 +330,7 @@ export default function DescribePage() {
         </div>
 
         <figure className="describe-figure">
-          <img src={session.image} alt={ladder.titleEn || 'Your photo'} className="describe-photo" />
+          <LabelledPhoto src={session.image} alt={ladder.titleEn || 'Your photo'} labels={showLabels ? ladder.labels ?? [] : []} />
           {session.credit && (
             <figcaption>
               Photo: <a href={session.credit.page} target="_blank" rel="noopener noreferrer">{session.credit.author}</a>, {session.credit.license}, via Wikimedia Commons
@@ -241,27 +343,28 @@ export default function DescribePage() {
           <span>{ladder.titleEn}</span>
         </div>
 
-        <div className="describe-progress" aria-label={`Level ${revealed} of 7 revealed`}>
-          {RUNGS.map(r => (
-            <button
-              key={r.level}
-              className={`describe-step${r.level <= revealed ? ' done' : ''}`}
-              onClick={() => reveal(r.level)}
-              title={`HSK ${levelLabel(r.level)} · ${r.layer}`}
-            >
-              {levelLabel(r.level)}
-            </button>
-          ))}
+        <Staircase levels={ladder.levels} revealed={revealed} onStep={goToStep} />
+
+        <div className="describe-tools">
+          {(ladder.labels?.length ?? 0) > 0 && (
+            <label className="describe-pinyin-toggle">
+              <input type="checkbox" checked={showLabels} onChange={e => setShowLabels(e.target.checked)} /> Labels
+            </label>
+          )}
           <label className="describe-pinyin-toggle">
             <input type="checkbox" checked={showPinyin} onChange={e => setShowPinyin(e.target.checked)} /> Pinyin
           </label>
+          <button className="describe-save-btn" onClick={saveImage} disabled={saving}>
+            {saving ? 'Saving…' : 'Save image'}
+          </button>
         </div>
+        {error && <p className="describe-error" role="alert">{error}</p>}
 
         <ol className="describe-ladder">
           {ladder.levels.slice(0, revealed).map((rung, i) => {
             const meta = RUNGS[i]
             return (
-              <li key={meta.level} className="describe-rung">
+              <li key={meta.level} id={`describe-rung-${meta.level}`} className="describe-rung">
                 <div className="describe-rung-head">
                   <span className="describe-rung-badge">HSK {levelLabel(meta.level)}</span>
                   <span className="describe-rung-layer">{meta.layer}</span>
@@ -304,7 +407,7 @@ export default function DescribePage() {
           })}
 
           {next && (
-            <li className="describe-rung describe-rung-locked">
+            <li id={`describe-rung-${next.level}`} className="describe-rung describe-rung-locked">
               <div className="describe-rung-head">
                 <span className="describe-rung-badge">HSK {levelLabel(next.level)}</span>
                 <span className="describe-rung-layer">{next.layer}</span>

@@ -58,6 +58,20 @@ describe('sanitiseLadder', () => {
     expect(out.levels[0].keywords).toHaveLength(4)
     expect(out.levels[0].keywords.every(k => k.zh === '栏杆')).toBe(true)
   })
+  it('keeps photo labels, clamped to the photo, and tolerates ladders saved before labels existed', () => {
+    const l = ladder()
+    l.labels = [
+      { zh: '喷泉', pinyin: 'pēnquán', en: 'fountain', x: 48.6, y: 62 },
+      { zh: '树', pinyin: 'shù', en: 'tree', x: 130, y: -5 },
+      { zh: 'tree', pinyin: '', en: '', x: 10, y: 10 },
+      { zh: '草地', pinyin: 'cǎodì', en: 'lawn', x: 'left', y: 80 },
+    ]
+    expect(sanitiseLadder(l).labels).toEqual([
+      { zh: '喷泉', pinyin: 'pēnquán', en: 'fountain', x: 49, y: 62 },
+      { zh: '树', pinyin: 'shù', en: 'tree', x: 100, y: 0 },
+    ])
+    expect(sanitiseLadder(ladder()).labels).toEqual([])
+  })
 })
 
 describe('inlineImage', () => {
