@@ -155,6 +155,34 @@
     "license": "CC BY-SA 3.0",
     "wikidata": "Q12896105"
   },
+  "hsk1_0250": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Plato%27s_Academy_mosaic_from_Pompeii.jpg/960px-Plato%27s_Academy_mosaic_from_Pompeii.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Plato%27s_Academy_mosaic_from_Pompeii.jpg",
+    "author": "Unknown author Unknown author",
+    "license": "Public domain",
+    "wikidata": "Q3914"
+  },
+  "hsk1_0251": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/D%C3%BCsseldorf_Hofgarten_2009.jpg/960px-D%C3%BCsseldorf_Hofgarten_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_Hofgarten_2009.jpg",
+    "author": "-- Stöhrfall ( talk ) 11:31, 6 May 2010 (UTC)",
+    "license": "Public domain",
+    "wikidata": "Q7561"
+  },
+  "hsk1_0255": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Clothes.jpg/960px-Clothes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Clothes.jpg",
+    "author": "Unknown author Unknown author",
+    "license": "Public domain",
+    "wikidata": "Q11460"
+  },
+  "hsk1_0257": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Hospital_room_ubt.jpeg/960px-Hospital_room_ubt.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Hospital_room_ubt.jpeg",
+    "author": "Tomasz Sienicki [user: tsca , mail: tomasz.sienicki at gmail.com]",
+    "license": "Public domain",
+    "wikidata": "Q16917"
+  },
   "hsk1_0260": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Silla-Abuelo.jpg/960px-Silla-Abuelo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "page": "https://commons.wikimedia.org/wiki/File:Silla-Abuelo.jpg",
@@ -305,6 +333,28 @@
     "wikidata": "Q18545"
   },
   "hsk2_0123": null,
+  "hsk2_0124": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Tiran%C3%AB%2C_Albania_January_2023_-_Toptani_Qendra_tregtare_shopping_center_Christmas_tree.jpg/960px-Tiran%C3%AB%2C_Albania_January_2023_-_Toptani_Qendra_tregtare_shopping_center_Christmas_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Tiran%C3%AB,_Albania_January_2023_-_Toptani_Qendra_tregtare_shopping_center_Christmas_tree.jpg",
+    "author": "Sharon Hahn Darlin",
+    "license": "CC BY 2.0",
+    "wikidata": "Q11315"
+  },
+  "hsk2_0129": null,
+  "hsk2_0133": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Playing_with_hands.JPG/960px-Playing_with_hands.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Playing_with_hands.JPG",
+    "author": "Ibex73",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q33767"
+  },
+  "hsk2_0134": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Pocket_watch_with_chain.jpg/960px-Pocket_watch_with_chain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Pocket_watch_with_chain.jpg",
+    "author": "No machine-readable author provided. Roger McLassus 1951 assumed (based on co…",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q178794"
+  },
   "hsk2_0145": null,
   "hsk2_0151": null,
   "hsk2_0157": null,
@@ -453,6 +503,28 @@
     "wikidata": "Q223269"
   },
   "hsk3_0112": null,
+  "hsk3_0113": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Audio-Technica_ATH-A500_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Audio-Technica_ATH-A500_(2).jpg",
+    "author": "Iainf",
+    "license": "Public domain",
+    "wikidata": "Q186819"
+  },
+  "hsk3_0120": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Instantnoodles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Instantnoodles.jpg",
+    "author": "Eptalon",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q1051265"
+  },
+  "hsk3_0123": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ranch_style_home_in_Salinas%2C_California.JPG/960px-Ranch_style_home_in_Salinas%2C_California.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Ranch_style_home_in_Salinas,_California.JPG",
+    "author": "BrendelSignature at en.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q3947"
+  },
+  "hsk3_0129": null,
   "hsk3_0144": null,
   "hsk3_0148": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Brussels_Cinquantenaire_R04.jpg/960px-Brussels_Cinquantenaire_R04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -592,6 +664,109 @@
   },
   "hsk3_0324": null,
   "hsk3_0325": null,
+  "hsk3_0327": null,
+  "hsk3_0329": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Life_News_Newsdesk.jpg/960px-Life_News_Newsdesk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Life_News_Newsdesk.jpg",
+    "author": "Sergey Samoylov Life",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q4042868"
+  },
+  "hsk3_0332": null,
+  "hsk3_0334": null,
+  "hsk3_0342": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Alnus_glutinosa_011.jpg/960px-Alnus_glutinosa_011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Alnus_glutinosa_011.jpg",
+    "author": "Willow",
+    "license": "CC BY 2.5",
+    "wikidata": "Q10884"
+  },
+  "hsk3_0347": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Fut_bov_kond.JPG/960px-Fut_bov_kond.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Fut_bov_kond.JPG",
+    "author": "Julien Bertrand",
+    "license": "Public domain",
+    "wikidata": "Q352388"
+  },
+  "hsk3_0348": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Antonio_Vivaldi%2C_Cimento_dell%27_Armonia_e_dell%27_Inventione%2C_Op._8%2C_ribro_primo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Antonio_Vivaldi,_Cimento_dell%27_Armonia_e_dell%27_Inventione,_Op._8,_ribro_primo.png",
+    "author": "Michel-Charles Le Cène",
+    "license": "CC0",
+    "wikidata": "Q12016"
+  },
+  "hsk3_0349": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Our_Sun_at_a_distance_of_150_Mio._km.jpg/960px-Our_Sun_at_a_distance_of_150_Mio._km.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Our_Sun_at_a_distance_of_150_Mio._km.jpg",
+    "author": "Burkhard Mücke",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q525"
+  },
+  "hsk3_0350": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Sugar_2xmacro.jpg/960px-Sugar_2xmacro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sugar_2xmacro.jpg",
+    "author": "Lauri Andler (Phantom)",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q11002"
+  },
+  "hsk3_0353": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Youth-soccer-indiana.jpg/960px-Youth-soccer-indiana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Youth-soccer-indiana.jpg",
+    "author": "Tysto",
+    "license": "Public domain",
+    "wikidata": "Q349"
+  },
+  "hsk3_0354": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/2007-08_K%C3%B6then_%28Anhalt%29_32.jpg/960px-2007-08_K%C3%B6then_%28Anhalt%29_32.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:2007-08_K%C3%B6then_(Anhalt)_32.jpg",
+    "author": "Ralf Lotys (Sicherlich)",
+    "license": "CC BY 2.5",
+    "wikidata": "Q14092"
+  },
+  "hsk3_0361": null,
+  "hsk3_0363": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg/960px-Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Austria_-_G%C3%B6ttweig_Abbey_-_2015.jpg",
+    "author": "Jorge Royan",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q7075"
+  },
+  "hsk3_0364": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/Beine.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Beine.JPG",
+    "author": "Kersti 18:04, 18 January 2007 (UTC)",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q133105"
+  },
+  "hsk3_0365": null,
+  "hsk3_0366": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/UberEats_cyclist_in_Amsterdam.jpg/960px-UberEats_cyclist_in_Amsterdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:UberEats_cyclist_in_Amsterdam.jpg",
+    "author": "Franklin Heijnen",
+    "license": "CC BY-SA 2.0",
+    "wikidata": "Q10932402"
+  },
+  "hsk3_0369": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ancient_Roman_clay_bowl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Ancient_Roman_clay_bowl.jpg",
+    "author": "Unknown author Unknown author",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q153988"
+  },
+  "hsk3_0372": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Roger_Federer_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Roger_Federer_2.jpg",
+    "author": "Aleksmot at English Wikipedia",
+    "license": "Public domain",
+    "wikidata": "Q847"
+  },
+  "hsk3_0373": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Activite3.2.1_Pr%C3%A9parer_un_document_Web_%C3%A0_l%E2%80%99accessibilit%C3%A9.png/960px-Activite3.2.1_Pr%C3%A9parer_un_document_Web_%C3%A0_l%E2%80%99accessibilit%C3%A9.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Activite3.2.1_Pr%C3%A9parer_un_document_Web_%C3%A0_l%E2%80%99accessibilit%C3%A9.png",
+    "author": "Cned-PA",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q35127"
+  },
   "hsk3_0377": null,
   "hsk3_0379": null,
   "hsk3_0383": null,
@@ -736,6 +911,34 @@
   "hsk4_0077": null,
   "hsk4_0080": null,
   "hsk4_0093": null,
+  "hsk4_0094": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Cooks_050918_154402.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Cooks_050918_154402.jpg",
+    "author": "David Monniaux",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q156839"
+  },
+  "hsk4_0095": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Santorin_%28GR%29%2C_Fira_--_2017_--_2624.jpg/960px-Santorin_%28GR%29%2C_Fira_--_2017_--_2624.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Santorin_(GR),_Fira_--_2017_--_2624.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q35473"
+  },
+  "hsk4_0096": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Santorin_%28GR%29%2C_Fira_--_2017_--_2624.jpg/960px-Santorin_%28GR%29%2C_Fira_--_2017_--_2624.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Santorin_(GR),_Fira_--_2017_--_2624.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q35473"
+  },
+  "hsk4_0107": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Betley-_The_main_road%2C_looking_north%2C_the_postmans_bike_at_rest_-_geograph.org.uk_-_147874.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Betley-_The_main_road,_looking_north,_the_postmans_bike_at_rest_-_geograph.org.uk_-_147874.jpg",
+    "author": "Philip Coops",
+    "license": "CC BY-SA 2.0",
+    "wikidata": "Q532"
+  },
   "hsk4_0120": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Canon_S520_ink_jet_printer.jpg/960px-Canon_S520_ink_jet_printer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "page": "https://commons.wikimedia.org/wiki/File:Canon_S520_ink_jet_printer.jpg",
@@ -819,7 +1022,69 @@
   },
   "hsk4_0341": null,
   "hsk4_0343": null,
+  "hsk4_0353": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Salle_de_musculation_de_l%27%C3%89cole_polytechnique.jpg/960px-Salle_de_musculation_de_l%27%C3%89cole_polytechnique.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Salle_de_musculation_de_l%27%C3%89cole_polytechnique.jpg",
+    "author": "Jérémy Barande",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q1065656"
+  },
   "hsk4_0355": null,
+  "hsk4_0373": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Dogos_Waterpolo_equipo_Hot_Dogos_en_el_mundial_IGLA%2B_2024.jpg/960px-Dogos_Waterpolo_equipo_Hot_Dogos_en_el_mundial_IGLA%2B_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Dogos_Waterpolo_equipo_Hot_Dogos_en_el_mundial_IGLA%2B_2024.jpg",
+    "author": "Diegodlh",
+    "license": "CC BY 4.0",
+    "wikidata": "Q41583"
+  },
+  "hsk4_0379": null,
+  "hsk4_0401": null,
+  "hsk4_0402": null,
+  "hsk4_0403": null,
+  "hsk4_0406": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Mirror-vase.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Mirror-vase.jpg",
+    "author": "Cgn , aufgehellt geschärft durch Elya at de.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q35197"
+  },
+  "hsk4_0418": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Theater_Orange.jpg/960px-Theater_Orange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Theater_Orange.jpg",
+    "author": "Andim",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q24354"
+  },
+  "hsk4_0425": null,
+  "hsk4_0434": null,
+  "hsk4_0437": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Top_of_Atmosphere.jpg/960px-Top_of_Atmosphere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Top_of_Atmosphere.jpg",
+    "author": "NASA Earth Observatory",
+    "license": "Public domain",
+    "wikidata": "Q7391292"
+  },
+  "hsk4_0442": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/In-N-Out_Burger_cheeseburgers.jpg/960px-In-N-Out_Burger_cheeseburgers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:In-N-Out_Burger_cheeseburgers.jpg",
+    "author": "Jef Poskanzer from Berkeley, California, USA",
+    "license": "CC BY 2.0",
+    "wikidata": "Q81799"
+  },
+  "hsk4_0448": null,
+  "hsk4_0455": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Adult_male_Royal_Bengal_tiger.jpg/960px-Adult_male_Royal_Bengal_tiger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Adult_male_Royal_Bengal_tiger.jpg",
+    "author": "Seemaleena",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q19939"
+  },
+  "hsk4_0456": null,
+  "hsk4_0465": null,
+  "hsk4_0479": null,
+  "hsk4_0488": null,
+  "hsk4_0489": null,
+  "hsk4_0495": null,
   "hsk4_0497": null,
   "hsk4_0498": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Jersei-coll-alt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -952,6 +1217,16 @@
   },
   "hsk4_0733": null,
   "hsk4_0734": null,
+  "hsk4_0741": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Tel_Aviv_parking_lot.jpg/960px-Tel_Aviv_parking_lot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Tel_Aviv_parking_lot.jpg",
+    "author": "Dolev",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q6501349"
+  },
+  "hsk4_0749": null,
+  "hsk4_0754": null,
+  "hsk4_0759": null,
   "hsk4_0761": null,
   "hsk4_0764": null,
   "hsk4_0767": {
@@ -1059,7 +1334,61 @@
   },
   "hsk5_0029": null,
   "hsk5_0034": null,
+  "hsk5_0036": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Gray1211.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Gray1211.png",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "wikidata": "Q133279"
+  },
+  "hsk5_0039": null,
+  "hsk5_0041": null,
   "hsk5_0046": null,
+  "hsk5_0059": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Nasmir_Mart.jpg/960px-Nasmir_Mart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nasmir_Mart.jpg",
+    "author": "Chongkian",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q7361709"
+  },
+  "hsk5_0065": null,
+  "hsk5_0067": null,
+  "hsk5_0068": null,
+  "hsk5_0071": null,
+  "hsk5_0072": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/GD-EG-Caire-Mus%C3%A9e007.JPG/960px-GD-EG-Caire-Mus%C3%A9e007.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:GD-EG-Caire-Mus%C3%A9e007.JPG",
+    "author": "Gérard Ducher ( user:Néfermaât )",
+    "license": "CC BY-SA 2.5",
+    "wikidata": "Q33506"
+  },
+  "hsk5_0084": null,
+  "hsk5_0087": null,
+  "hsk5_0090": null,
+  "hsk5_0102": null,
+  "hsk5_0116": null,
+  "hsk5_0124": null,
+  "hsk5_0125": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Garage_der_Hellmuth-Ulrici-Klinik.jpg/960px-Garage_der_Hellmuth-Ulrici-Klinik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Garage_der_Hellmuth-Ulrici-Klinik.jpg",
+    "author": "Shisma",
+    "license": "CC0",
+    "wikidata": "Q22733"
+  },
+  "hsk5_0126": null,
+  "hsk5_0127": null,
+  "hsk5_0128": null,
+  "hsk5_0144": null,
+  "hsk5_0149": null,
+  "hsk5_0150": null,
+  "hsk5_0153": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/960px-Oranges_-_whole-halved-segment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Oranges_-_whole-halved-segment.jpg",
+    "author": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q13191"
+  },
+  "hsk5_0154": null,
   "hsk5_0157": null,
   "hsk5_0165": null,
   "hsk5_0166": {
@@ -1184,6 +1513,28 @@
   },
   "hsk5_0447": null,
   "hsk5_0449": null,
+  "hsk5_0453": null,
+  "hsk5_0462": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Plateau_van_zeevruchten.jpg/960px-Plateau_van_zeevruchten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Plateau_van_zeevruchten.jpg",
+    "author": "Frits Hoogesteger at nl.wikibooks",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q192935"
+  },
+  "hsk5_0466": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Dick_T%C3%A4rnstr%C3%B6m_%28cropped1%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Dick_T%C3%A4rnstr%C3%B6m_(cropped1).JPG",
+    "author": "Egon Eagle",
+    "license": "Public domain",
+    "wikidata": "Q3503092"
+  },
+  "hsk5_0476": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/HK_%E8%A7%80%E5%A1%98_Kwun_Tong_Hung_Sing_Fortune_restaurant_take-away_curry_chicken_rice_box_lunch_November_2018_SSG_01.jpg/960px-HK_%E8%A7%80%E5%A1%98_Kwun_Tong_Hung_Sing_Fortune_restaurant_take-away_curry_chicken_rice_box_lunch_November_2018_SSG_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:HK_%E8%A7%80%E5%A1%98_Kwun_Tong_Hung_Sing_Fortune_restaurant_take-away_curry_chicken_rice_box_lunch_November_2018_SSG_01.jpg",
+    "author": "ZHUM Deaimr Kwan",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q108873790"
+  },
   "hsk5_0478": null,
   "hsk5_0480": null,
   "hsk5_0484": {
@@ -1300,6 +1651,68 @@
   "hsk5_0715": null,
   "hsk5_0718": null,
   "hsk5_0721": null,
+  "hsk5_0723": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Church_bell_cutaway.png/960px-Church_bell_cutaway.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Church_bell_cutaway.png",
+    "author": "William Henry Stone",
+    "license": "Public domain",
+    "wikidata": "Q101401"
+  },
+  "hsk5_0726": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Dress-pinstripe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Dress-pinstripe.jpg",
+    "author": "Tore Nergaard",
+    "license": "Public domain",
+    "wikidata": "Q44416"
+  },
+  "hsk5_0735": null,
+  "hsk5_0736": null,
+  "hsk5_0739": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/AYool_topography_15min.png/960px-AYool_topography_15min.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:AYool_topography_15min.png",
+    "author": "Plumbago",
+    "license": "CC BY 2.5",
+    "wikidata": "Q11081619"
+  },
+  "hsk5_0742": null,
+  "hsk5_0744": null,
+  "hsk5_0756": null,
+  "hsk5_0757": null,
+  "hsk5_0759": null,
+  "hsk5_0767": null,
+  "hsk5_0787": null,
+  "hsk5_0794": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/2010-07-20_Black_windup_alarm_clock_face.jpg/960px-2010-07-20_Black_windup_alarm_clock_face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:2010-07-20_Black_windup_alarm_clock_face.jpg",
+    "author": "Sun Ladder",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q212758"
+  },
+  "hsk5_0800": null,
+  "hsk5_0835": null,
+  "hsk5_0846": null,
+  "hsk5_0847": null,
+  "hsk5_0857": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Balloon_on_a_children%27s_birthday_party.jpg/960px-Balloon_on_a_children%27s_birthday_party.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Balloon_on_a_children%27s_birthday_party.jpg",
+    "author": "Friedrich Haag",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q9706"
+  },
+  "hsk5_0858": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Gasoline_in_mason_jar.jpg/960px-Gasoline_in_mason_jar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Gasoline_in_mason_jar.jpg",
+    "author": "Burger",
+    "license": "Public domain",
+    "wikidata": "Q39558"
+  },
+  "hsk5_0869": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/2015_Zak%C5%82ad_Karny_w_K%C5%82odzku_02.JPG/960px-2015_Zak%C5%82ad_Karny_w_K%C5%82odzku_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:2015_Zak%C5%82ad_Karny_w_K%C5%82odzku_02.JPG",
+    "author": "Jacek Halicki",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q42948"
+  },
   "hsk5_0896": null,
   "hsk5_0914": null,
   "hsk5_0918": null,
@@ -1430,7 +1843,29 @@
     "license": "CC BY 2.0",
     "wikidata": "Q3216816"
   },
+  "hsk5_1102": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Staircase_in_the_H%C3%B4tel_d%27Ansembourg.jpg/960px-Staircase_in_the_H%C3%B4tel_d%27Ansembourg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Staircase_in_the_H%C3%B4tel_d%27Ansembourg.jpg",
+    "author": "Neoclassicism Enthusiast",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q13222221"
+  },
+  "hsk5_1105": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Autumn_Red_peaches.jpg/960px-Autumn_Red_peaches.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Autumn_Red_peaches.jpg",
+    "author": "Jack Dykinga, USDA",
+    "license": "Public domain",
+    "wikidata": "Q13189"
+  },
   "hsk5_1107": null,
+  "hsk5_1120": null,
+  "hsk5_1124": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Sky_over_Munich_02.jpg/960px-Sky_over_Munich_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sky_over_Munich_02.jpg",
+    "author": "Kritzolina",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q527"
+  },
   "hsk5_1125": null,
   "hsk5_1127": null,
   "hsk5_1137": null,
@@ -1559,7 +1994,91 @@
   "hsk5_1404": null,
   "hsk5_1407": null,
   "hsk5_1416": null,
+  "hsk5_1418": null,
   "hsk5_1421": null,
+  "hsk5_1426": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Corntassel_7095.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Corntassel_7095.jpg",
+    "author": "Spedona",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q11575"
+  },
+  "hsk5_1429": null,
+  "hsk5_1438": null,
+  "hsk5_1469": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Kollam_Platform%27s_eastern_end.jpg/960px-Kollam_Platform%27s_eastern_end.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Kollam_Platform%27s_eastern_end.jpg",
+    "author": "Arunvrparavur",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q325358"
+  },
+  "hsk5_1475": null,
+  "hsk5_1516": null,
+  "hsk5_1526": null,
+  "hsk5_1530": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%B5_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD.jpg/960px-%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%B5_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%B5_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD.jpg",
+    "author": "Alexander Klepnev",
+    "license": "CC BY 4.0",
+    "wikidata": "Q40763"
+  },
+  "hsk5_1536": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/OMBRE_CHINOISE_SANGLIER.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:OMBRE_CHINOISE_SANGLIER.jpg",
+    "author": "Alice-astro",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q877261"
+  },
+  "hsk5_1539": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Aurea_amb_brots.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Aurea_amb_brots.JPG",
+    "author": "No machine-readable author provided. Jordi Coll Costa assumed (based on copyr…",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q670887"
+  },
+  "hsk5_1546": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Speltkorrels.jpg/960px-Speltkorrels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Speltkorrels.jpg",
+    "author": "Huijts at Dutch Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q736427"
+  },
+  "hsk5_1550": null,
+  "hsk5_1552": null,
+  "hsk5_1560": null,
+  "hsk5_1571": null,
+  "hsk5_1587": null,
+  "hsk5_1593": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Peripheral_nerve%2C_cross_section.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Peripheral_nerve,_cross_section.jpg",
+    "author": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q40397"
+  },
+  "hsk5_1594": null,
+  "hsk6_0001": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Thames_estuary_coast_line_-_geograph.org.uk_-_2527882.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Thames_estuary_coast_line_-_geograph.org.uk_-_2527882.jpg",
+    "author": "Oast House Archive",
+    "license": "CC BY-SA 2.0",
+    "wikidata": "Q468756"
+  },
+  "hsk6_0017": null,
+  "hsk6_0021": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Zack_Greinke_on_July_29%2C_2009.jpg/960px-Zack_Greinke_on_July_29%2C_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Zack_Greinke_on_July_29,_2009.jpg",
+    "author": "Keith Allison on Flickr",
+    "license": "CC BY-SA 2.0",
+    "wikidata": "Q5369"
+  },
+  "hsk6_0037": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/North_Pole%2C_Alaska_-_aerial_view_-_P1040581.jpg/960px-North_Pole%2C_Alaska_-_aerial_view_-_P1040581.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:North_Pole,_Alaska_-_aerial_view_-_P1040581.jpg",
+    "author": "Vmenkov",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q79494"
+  },
+  "hsk6_0041": null,
   "hsk6_0061": null,
   "hsk6_0066": null,
   "hsk6_0078": {
@@ -1666,8 +2185,18 @@
   "hsk6_0434": null,
   "hsk6_0436": null,
   "hsk6_0437": null,
+  "hsk6_0438": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Plato_Putorana_01.jpg/960px-Plato_Putorana_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Plato_Putorana_01.jpg",
+    "author": "jxandreani",
+    "license": "CC BY 2.0",
+    "wikidata": "Q75520"
+  },
   "hsk6_0443": null,
   "hsk6_0451": null,
+  "hsk6_0453": null,
+  "hsk6_0471": null,
+  "hsk6_0480": null,
   "hsk6_0485": null,
   "hsk6_0496": null,
   "hsk6_0497": null,
@@ -1787,6 +2316,86 @@
     "author": "Uk2108",
     "license": "CC BY-SA 4.0",
     "wikidata": "Q2562511"
+  },
+  "hsk6_0685": null,
+  "hsk6_0701": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/1980_Summer_Olympics_%E2%80%93_Dainis_K%C5%ABla_gold_medal.jpg/960px-1980_Summer_Olympics_%E2%80%93_Dainis_K%C5%ABla_gold_medal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:1980_Summer_Olympics_%E2%80%93_Dainis_K%C5%ABla_gold_medal.jpg",
+    "author": "Edgars Košovojs",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q406039"
+  },
+  "hsk6_0729": null,
+  "hsk6_0733": null,
+  "hsk6_0743": null,
+  "hsk6_0749": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Savile_Club_New_Bar_2.JPG/960px-Savile_Club_New_Bar_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Savile_Club_New_Bar_2.JPG",
+    "author": "Creator:Savile Club",
+    "license": "CC0",
+    "wikidata": "Q988108"
+  },
+  "hsk6_0762": null,
+  "hsk6_0787": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/NeoplanSkyliner.jpg/960px-NeoplanSkyliner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:NeoplanSkyliner.jpg",
+    "author": "RXUYDC at English Wikipedia",
+    "license": "Public domain",
+    "wikidata": "Q12334006"
+  },
+  "hsk6_0793": null,
+  "hsk6_0795": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Mechelen_St-Rombouts_waterspuwers_33.jpg/960px-Mechelen_St-Rombouts_waterspuwers_33.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Mechelen_St-Rombouts_waterspuwers_33.jpg",
+    "author": "Ad Meskens You are free to use this picture for any purpose as long as you cr…",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q9635"
+  },
+  "hsk6_0797": null,
+  "hsk6_0806": null,
+  "hsk6_0811": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Madame_Jeanette_and_other_chillies.jpg/960px-Madame_Jeanette_and_other_chillies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Madame_Jeanette_and_other_chillies.jpg",
+    "author": "Takeaway",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q165199"
+  },
+  "hsk6_0817": null,
+  "hsk6_0818": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/PhalaenopsisOphrysPaphiopedilumMaxillaria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:PhalaenopsisOphrysPaphiopedilumMaxillaria.jpg",
+    "author": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q25308"
+  },
+  "hsk6_0820": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/960px-Eurasian_wolf_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Eurasian_wolf_2.jpg",
+    "author": "User:Mas3cf",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q18498"
+  },
+  "hsk6_0825": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/De_Alice%27s_Abenteuer_im_Wunderland_Carroll_pic_08.jpg/960px-De_Alice%27s_Abenteuer_im_Wunderland_Carroll_pic_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:De_Alice%27s_Abenteuer_im_Wunderland_Carroll_pic_08.jpg",
+    "author": "Lewis Carroll",
+    "license": "Public domain",
+    "wikidata": "Q6926011"
+  },
+  "hsk6_0828": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Thunder.jpg/960px-Thunder.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Thunder.jpg",
+    "author": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q83301"
+  },
+  "hsk6_0847": null,
+  "hsk6_0856": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Wiki_Smartphones.jpg/960px-Wiki_Smartphones.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Wiki_Smartphones.jpg",
+    "author": "Samsung Galaxy Note 10",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q6368"
   },
   "hsk6_0857": null,
   "hsk6_0860": null,
@@ -2042,6 +2651,51 @@
     "wikidata": "Q542"
   },
   "hsk6_1307": null,
+  "hsk6_1408": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Wilson1900Fig2.jpg/960px-Wilson1900Fig2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Wilson1900Fig2.jpg",
+    "author": "Edmund Beecher Wilson",
+    "license": "Public domain",
+    "wikidata": "Q7868"
+  },
+  "hsk6_1416": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/%D0%94%D0%B5%D0%BD%D1%8C_%D0%9D%D0%B5%D0%BF%D1%82%D1%83%D0%BD%D0%B0_%D0%BD%D0%B0_%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D1%85_%D0%BF%D1%80%D1%83%D0%B4%D0%B0%D1%85_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5.JPG/960px-%D0%94%D0%B5%D0%BD%D1%8C_%D0%9D%D0%B5%D0%BF%D1%82%D1%83%D0%BD%D0%B0_%D0%BD%D0%B0_%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D1%85_%D0%BF%D1%80%D1%83%D0%B4%D0%B0%D1%85_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%B5%D0%BD%D1%8C_%D0%9D%D0%B5%D0%BF%D1%82%D1%83%D0%BD%D0%B0_%D0%BD%D0%B0_%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D1%85_%D0%BF%D1%80%D1%83%D0%B4%D0%B0%D1%85_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5.JPG",
+    "author": "Барвенковский",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q876852"
+  },
+  "hsk6_1427": null,
+  "hsk6_1435": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/P%C3%B8lse_med_potetmos.jpg/960px-P%C3%B8lse_med_potetmos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:P%C3%B8lse_med_potetmos.jpg",
+    "author": "Kjetil Ree",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q131419"
+  },
+  "hsk6_1439": null,
+  "hsk6_1441": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Captured_Pearls_Necklace.jpg/960px-Captured_Pearls_Necklace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Captured_Pearls_Necklace.jpg",
+    "author": "Ashley",
+    "license": "CC BY 2.0",
+    "wikidata": "Q189299"
+  },
+  "hsk6_1442": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Escacs_Xinesos.jpg/960px-Escacs_Xinesos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Escacs_Xinesos.jpg",
+    "author": "Francesc Fort",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q191448"
+  },
+  "hsk6_1450": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Wheat_close-up.JPG/960px-Wheat_close-up.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Wheat_close-up.JPG",
+    "author": "User:Bluemoose",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q15645384"
+  },
+  "hsk6_1462": null,
   "hsk6_1464": null,
   "hsk6_1466": null,
   "hsk6_1472": null,
@@ -2163,7 +2817,17 @@
   "hsk6_1736": null,
   "hsk6_1737": null,
   "hsk6_1742": null,
+  "hsk6_1745": null,
   "hsk6_1756": null,
+  "hsk6_1758": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Brick.jpg/960px-Brick.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Brick.jpg",
+    "author": "Andrewlister",
+    "license": "Public domain",
+    "wikidata": "Q40089"
+  },
+  "hsk6_1771": null,
+  "hsk6_1772": null,
   "hsk6_1778": null,
   "hsk6_1786": null,
   "hsk6_1791": null,
@@ -2281,8 +2945,77 @@
     "wikidata": "Q207766"
   },
   "hsk7_0404": null,
+  "hsk7_0427": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Diesel_in_mason_jar.JPG/960px-Diesel_in_mason_jar.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Diesel_in_mason_jar.JPG",
+    "author": "Burger",
+    "license": "Public domain",
+    "wikidata": "Q38423"
+  },
+  "hsk7_0433": null,
+  "hsk7_0460": null,
   "hsk7_0462": null,
+  "hsk7_0463": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Hausrotschwanz_Brutpflege_2006-05-24_211.jpg/960px-Hausrotschwanz_Brutpflege_2006-05-24_211.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Hausrotschwanz_Brutpflege_2006-05-24_211.jpg",
+    "author": "Stefan-Xp",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q4785"
+  },
+  "hsk7_0496": null,
+  "hsk7_0507": null,
   "hsk7_0509": null,
+  "hsk7_0521": null,
+  "hsk7_0528": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/World_map_with_equator.jpg/960px-World_map_with_equator.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:World_map_with_equator.jpg",
+    "author": "User:Cburnett",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q23538"
+  },
+  "hsk7_0554": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Szuflada.jpg/960px-Szuflada.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Szuflada.jpg",
+    "author": "https://www.metmuseum.org/art/collection/search/1996",
+    "license": "CC0",
+    "wikidata": "Q223575"
+  },
+  "hsk7_0597": null,
+  "hsk7_0605": null,
+  "hsk7_0610": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Health%2C_Inclusivity_%28Braille%2C_Unesco_Review%29_-_UNESCO_-_PHOTO0000000840_0001.tiff/lossy-page1-960px-Health%2C_Inclusivity_%28Braille%2C_Unesco_Review%29_-_UNESCO_-_PHOTO0000000840_0001.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Health,_Inclusivity_(Braille,_Unesco_Review)_-_UNESCO_-_PHOTO0000000840_0001.tiff",
+    "author": "Michel Claude",
+    "license": "CC BY-SA 3.0 igo",
+    "wikidata": "Q1289489"
+  },
+  "hsk7_0621": null,
+  "hsk7_0622": null,
+  "hsk7_0624": null,
+  "hsk7_0632": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Gordijnen_aan_venster.JPG/960px-Gordijnen_aan_venster.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Gordijnen_aan_venster.JPG",
+    "author": "Nieuw~commonswiki",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q49005"
+  },
+  "hsk7_0634": null,
+  "hsk7_0639": null,
+  "hsk7_0642": null,
+  "hsk7_0654": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Magnetic_tape_hg.jpg/960px-Magnetic_tape_hg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Magnetic_tape_hg.jpg",
+    "author": "Hannes Grobe 19:05, 3 September 2006 (UTC)",
+    "license": "CC BY-SA 2.5",
+    "wikidata": "Q193663"
+  },
+  "hsk7_0660": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Sow_with_piglet.jpg/960px-Sow_with_piglet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sow_with_piglet.jpg",
+    "author": "Scott Bauer, USDA",
+    "license": "Public domain",
+    "wikidata": "Q43445"
+  },
   "hsk7_0670": null,
   "hsk7_0674": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/HK_SYP_Best_of_Best_Vegetable_Peking_Welsh_onion_Allium_Aug-2012.JPG/960px-HK_SYP_Best_of_Best_Vegetable_Peking_Welsh_onion_Allium_Aug-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2404,7 +3137,23 @@
   "hsk7_1011": null,
   "hsk7_1020": null,
   "hsk7_1023": null,
+  "hsk7_1029": null,
   "hsk7_1050": null,
+  "hsk7_1053": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Valve.jpg/960px-Valve.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Valve.jpg",
+    "author": "Heather Smith",
+    "license": "CC BY 3.0",
+    "wikidata": "Q208443"
+  },
+  "hsk7_1059": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/The_heads_and_shoulders_of_five_women_with_their_hair_combed_Wellcome_V0019889EL.jpg/960px-The_heads_and_shoulders_of_five_women_with_their_hair_combed_Wellcome_V0019889EL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:The_heads_and_shoulders_of_five_women_with_their_hair_combed_Wellcome_V0019889EL.jpg",
+    "author": "Wikimedia Commons contributor",
+    "license": "CC BY 4.0",
+    "wikidata": "Q327496"
+  },
+  "hsk7_1060": null,
   "hsk7_1061": null,
   "hsk7_1095": null,
   "hsk7_1097": {
@@ -2526,7 +3275,93 @@
     "wikidata": "Q16560"
   },
   "hsk7_1382": null,
+  "hsk7_1418": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Gesmede_ijzeren_last-_of_schenkelhaak_-_O36ZFL_-_60015878_-_RCE.jpg/960px-Gesmede_ijzeren_last-_of_schenkelhaak_-_O36ZFL_-_60015878_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Gesmede_ijzeren_last-_of_schenkelhaak_-_O36ZFL_-_60015878_-_RCE.jpg",
+    "author": "Unknown author Unknown author",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q4243098"
+  },
   "hsk7_1439": null,
+  "hsk7_1447": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Various_grains_edit2.jpg/960px-Various_grains_edit2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Various_grains_edit2.jpg",
+    "author": "Peggy Greb; edited by Fir0002",
+    "license": "Public domain",
+    "wikidata": "Q12117"
+  },
+  "hsk7_1464": null,
+  "hsk7_1479": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Joints_1_--_Smart-Servier.png/960px-Joints_1_--_Smart-Servier.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Joints_1_--_Smart-Servier.png",
+    "author": "Laboratoires Servier",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q9644"
+  },
+  "hsk7_1489": null,
+  "hsk7_1508": null,
+  "hsk7_1549": null,
+  "hsk7_1563": null,
+  "hsk7_1567": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Sponge-viscose.jpg/960px-Sponge-viscose.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sponge-viscose.jpg",
+    "author": "Johan",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q1210980"
+  },
+  "hsk7_1568": null,
+  "hsk7_1569": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Parc_Asterix_20.jpg/960px-Parc_Asterix_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Parc_Asterix_20.jpg",
+    "author": "Arnaud 25",
+    "license": "Public domain",
+    "wikidata": "Q7369"
+  },
+  "hsk7_1570": null,
+  "hsk7_1571": null,
+  "hsk7_1572": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg",
+    "author": "Katsushika Hokusai",
+    "license": "Public domain",
+    "wikidata": "Q8070"
+  },
+  "hsk7_1574": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Seaweed.jpg/960px-Seaweed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Seaweed.jpg",
+    "author": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 1.0",
+    "wikidata": "Q237169"
+  },
+  "hsk7_1575": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Koolvlieg_bloemkool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Koolvlieg_bloemkool.jpg",
+    "author": "Rasbak at Dutch Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q2366957"
+  },
+  "hsk7_1581": null,
+  "hsk7_1586": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Hanfu_daopao.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Hanfu_daopao.jpg",
+    "author": "Supersentai",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q1327357"
+  },
+  "hsk7_1597": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Nyk_Aphrodite_p2_approaching_Port_of_Rotterdam%2C_Holland_09-Apr-2007.jpg/960px-Nyk_Aphrodite_p2_approaching_Port_of_Rotterdam%2C_Holland_09-Apr-2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nyk_Aphrodite_p2_approaching_Port_of_Rotterdam,_Holland_09-Apr-2007.jpg",
+    "author": "AlfvanBeem",
+    "license": "CC0",
+    "wikidata": "Q155930"
+  },
+  "hsk7_1625": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Shin-Kori_04790181_%288505820635%29.jpg/960px-Shin-Kori_04790181_%288505820635%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Shin-Kori_04790181_(8505820635).jpg",
+    "author": "IAEA Imagebank",
+    "license": "Public domain",
+    "wikidata": "Q134447"
+  },
   "hsk7_1629": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Sacred_lotus_Nelumbo_nucifera.jpg/960px-Sacred_lotus_Nelumbo_nucifera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "page": "https://commons.wikimedia.org/wiki/File:Sacred_lotus_Nelumbo_nucifera.jpg",
@@ -2670,6 +3505,34 @@
   "hsk7_1996": null,
   "hsk7_2011": null,
   "hsk7_2016": null,
+  "hsk7_2018": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Oars_in_a_boat_on_River_Gosthani_at_Sanghivalasa.jpg/960px-Oars_in_a_boat_on_River_Gosthani_at_Sanghivalasa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Oars_in_a_boat_on_River_Gosthani_at_Sanghivalasa.jpg",
+    "author": "Adityamadhav83",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q2003749"
+  },
+  "hsk7_2019": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/K693.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:K693.jpg",
+    "author": "NarodCup",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q79949218"
+  },
+  "hsk7_2022": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Medal_Nobel_Peace_Prize.jpg/960px-Medal_Nobel_Peace_Prize.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Medal_Nobel_Peace_Prize.jpg",
+    "author": "ProtoplasmaKid",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q618779"
+  },
+  "hsk7_2040": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Vanatinai%2C_Louisiade_Archipelago.jpg/960px-Vanatinai%2C_Louisiade_Archipelago.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Vanatinai,_Louisiade_Archipelago.jpg",
+    "author": "NASA image by Jesse Allen and Rob Simmon, using data provided by the United S…",
+    "license": "Public domain",
+    "wikidata": "Q184358"
+  },
   "hsk7_2058": null,
   "hsk7_2073": null,
   "hsk7_2084": null,
@@ -2792,7 +3655,54 @@
     "wikidata": "Q5609555"
   },
   "hsk7_2500": null,
+  "hsk7_2507": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Radar_antenna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Radar_antenna.jpg",
+    "author": "US Army",
+    "license": "Public domain",
+    "wikidata": "Q47528"
+  },
   "hsk7_2519": null,
+  "hsk7_2528": null,
+  "hsk7_2535": null,
+  "hsk7_2537": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Cyprinus_carpio.jpeg/960px-Cyprinus_carpio.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cyprinus_carpio.jpeg",
+    "author": "Dezidor",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q2751223"
+  },
+  "hsk7_2550": null,
+  "hsk7_2573": null,
+  "hsk7_2580": null,
+  "hsk7_2581": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/DriedLotusSeeds.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:DriedLotusSeeds.jpg",
+    "author": "Sjschen at English Wikipedia",
+    "license": "Public domain",
+    "wikidata": "Q7992569"
+  },
+  "hsk7_2582": null,
+  "hsk7_2591": null,
+  "hsk7_2606": null,
+  "hsk7_2609": null,
+  "hsk7_2612": null,
+  "hsk7_2613": null,
+  "hsk7_2616": null,
+  "hsk7_2627": null,
+  "hsk7_2664": null,
+  "hsk7_2666": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Salix_alba_Morton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Salix_alba_Morton.jpg",
+    "author": "Bruce Marlin",
+    "license": "CC BY 3.0",
+    "wikidata": "Q36050"
+  },
+  "hsk7_2671": null,
+  "hsk7_2677": null,
+  "hsk7_2679": null,
+  "hsk7_2680": null,
+  "hsk7_2682": null,
   "hsk7_2685": null,
   "hsk7_2693": null,
   "hsk7_2694": {
@@ -2957,6 +3867,7 @@
     "license": "CC BY 4.0",
     "wikidata": "Q483453"
   },
+  "hsk7_3038": null,
   "hsk7_3059": null,
   "hsk7_3099": null,
   "hsk7_3106": null,
@@ -3019,6 +3930,9 @@
   "hsk7_3475": null,
   "hsk7_3478": null,
   "hsk7_3483": null,
+  "hsk7_3639": null,
+  "hsk7_3642": null,
+  "hsk7_3644": null,
   "hsk7_3671": null,
   "hsk7_3681": null,
   "hsk7_3682": null,
@@ -3153,7 +4067,17 @@
     "wikidata": "Q101680"
   },
   "hsk7_3894": null,
+  "hsk7_3899": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Garlic_bulbs_and_cloves.jpg/960px-Garlic_bulbs_and_cloves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Garlic_bulbs_and_cloves.jpg",
+    "author": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q23400"
+  },
   "hsk7_3911": null,
+  "hsk7_3928": null,
+  "hsk7_3931": null,
+  "hsk7_3941": null,
   "hsk7_3942": null,
   "hsk7_3946": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Char_T_34_noBG.jpg/960px-Char_T_34_noBG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3257,6 +4181,83 @@
   "hsk7_4263": null,
   "hsk7_4266": null,
   "hsk7_4267": null,
+  "hsk7_4268": null,
+  "hsk7_4269": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/-_Thermometer_-.jpg/960px--_Thermometer_-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:-_Thermometer_-.jpg",
+    "author": "User:Nino Barbieri",
+    "license": "CC BY 2.5",
+    "wikidata": "Q646"
+  },
+  "hsk7_4270": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Churning_Caldron.jpg/960px-Churning_Caldron.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Churning_Caldron.jpg",
+    "author": "Brocken Inaglory",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q177380"
+  },
+  "hsk7_4271": null,
+  "hsk7_4280": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Mosquito_Netting.jpg/960px-Mosquito_Netting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Mosquito_Netting.jpg",
+    "author": "Tjeerd Wiersma from Amsterdam, The Netherlands",
+    "license": "CC BY 2.0",
+    "wikidata": "Q696265"
+  },
+  "hsk7_4281": null,
+  "hsk7_4292": null,
+  "hsk7_4294": null,
+  "hsk7_4298": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Beiral.jpg/960px-Beiral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Beiral.jpg",
+    "author": "Eusbarbosa",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q163972"
+  },
+  "hsk7_4300": null,
+  "hsk7_4342": null,
+  "hsk7_4355": null,
+  "hsk7_4361": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Heliconius_mimicry.png/960px-Heliconius_mimicry.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Heliconius_mimicry.png",
+    "author": "see Source",
+    "license": "CC BY 2.5",
+    "wikidata": "Q7432"
+  },
+  "hsk7_4364": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/WeesenerBach.JPG/960px-WeesenerBach.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:WeesenerBach.JPG",
+    "author": "Hajotthu",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q63565252"
+  },
+  "hsk7_4366": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Knee.female.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Knee.female.jpg",
+    "author": "ArnoldReinhold",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q37425"
+  },
+  "hsk7_4380": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/P%C3%A4ij%C3%A4nne_and_p%C3%A4ij%C3%A4tsalo.jpg/960px-P%C3%A4ij%C3%A4nne_and_p%C3%A4ij%C3%A4tsalo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:P%C3%A4ij%C3%A4nne_and_p%C3%A4ij%C3%A4tsalo.jpg",
+    "author": "Joonas Lyytinen",
+    "license": "CC BY 2.0",
+    "wikidata": "Q166564"
+  },
+  "hsk7_4382": null,
+  "hsk7_4389": null,
+  "hsk7_4393": null,
+  "hsk7_4399": null,
+  "hsk7_4403": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Roca_de_la_Ley%2C_Parque_Nacional_de_%C3%9Eingvellir%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_022.JPG/960px-Roca_de_la_Ley%2C_Parque_Nacional_de_%C3%9Eingvellir%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_022.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Roca_de_la_Ley,_Parque_Nacional_de_%C3%9Eingvellir,_Su%C3%B0urland,_Islandia,_2014-08-16,_DD_022.JPG",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "wikidata": "Q150784"
+  },
+  "hsk7_4408": null,
+  "hsk7_4424": null,
   "hsk7_4428": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Grus_japonensis_102480624.jpg/960px-Grus_japonensis_102480624.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "page": "https://commons.wikimedia.org/wiki/File:Grus_japonensis_102480624.jpg",
@@ -3373,7 +4374,17 @@
     "license": "Public domain",
     "wikidata": "Q11460"
   },
+  "hsk7_4815": null,
   "hsk7_4862": null,
+  "hsk7_4911": null,
+  "hsk7_4923": null,
+  "hsk7_4934": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Accipiter_striatusDO1908P02CA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Accipiter_striatusDO1908P02CA.JPG",
+    "author": "Louis Agassiz Fuertes",
+    "license": "Public domain",
+    "wikidata": "Q846664"
+  },
   "hsk7_4941": null,
   "hsk7_4955": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Western_Digital_WD2500BB_Hard_Disk_A.jpg/960px-Western_Digital_WD2500BB_Hard_Disk_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3520,5 +4531,40 @@
     "author": "No machine-readable author provided. Bradipus assumed (based on copyright cla…",
     "license": "CC BY-SA 3.0",
     "wikidata": "Q4817"
+  },
+  "hsk7_5428": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Cat_claw_closeup.jpg/960px-Cat_claw_closeup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cat_claw_closeup.jpg",
+    "author": "Holly Cheng",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q217605"
+  },
+  "hsk7_5457": null,
+  "hsk7_5458": null,
+  "hsk7_5463": null,
+  "hsk7_5482": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Meyerheim_Versteckspiel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Meyerheim_Versteckspiel.jpg",
+    "author": "signed \"Meyerheim\", probably by Friedrich Eduard Meyerheim (1808-1879)",
+    "license": "Public domain",
+    "wikidata": "Q171957"
+  },
+  "hsk7_5501": null,
+  "hsk7_5502": null,
+  "hsk7_5505": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%B5_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD.jpg/960px-%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%B5_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%B5_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD.jpg",
+    "author": "Alexander Klepnev",
+    "license": "CC BY 4.0",
+    "wikidata": "Q40763"
+  },
+  "hsk7_5522": null,
+  "hsk7_5591": null,
+  "hsk7_5595": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Oedelem_Weg_naar_Sint-Kruis_R01.jpg/960px-Oedelem_Weg_naar_Sint-Kruis_R01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Oedelem_Weg_naar_Sint-Kruis_R01.jpg",
+    "author": "Marc Ryckaert ( MJJR )",
+    "license": "CC BY-SA 3.0",
+    "wikidata": "Q235352"
   }
 }
