@@ -43,12 +43,15 @@
 | `/favourites` | Favourited words |
 | `/search` | Cross-level search |
 | `/stats` | Progress stats, streak, SRS due count, HSK readiness with cumulative exam coverage and a countdown to `NEXT_EXAM` (`src/data/exam.ts` — update when new exam dates are published) |
+| `/reader` | Read Anything — paste any text; words coloured known / learning / new from SRS + progress, pinyin over unknown words only, tap to add to review, coverage % and estimated HSK level (`src/lib/reader.ts`, segmenter in `src/lib/segment.ts`), read aloud via chunked TTS |
+| `/describe` | Describe It (看图说话) — upload/take a photo (downscaled to 1024px JPEG on device) or pick a Wikimedia sample; Claude writes a 7-rung ladder, one per HSK level (What → Where → Details → Why → Inference → Opinion → Written style). Infographic view: the photo carries picture-dictionary labels (Claude returns `labels` with x/y %, placed without overlap by `placeLabels`), a seven-step staircase fills in as levels are revealed, and Save image draws the whole card to a PNG on the device (`src/lib/describeCard.ts`). Each locked rung shows a Chinese question to try first; revealed rungs have tap-to-define, pinyin, hidden English, read-aloud and keywords to add to review. Last ladder kept in localStorage `hsk-describe-last` |
 | `/tones` | Tone Gym — live on-device pitch tracking for syllables and tone pairs (`src/lib/pitchTracker.ts`, `src/lib/toneGym.ts`; tone rules shared with Record & Score in `api/_toneContour.js`) |
 
 ### Components
 - `AppHeader` — nav with Sign in/out button
 - `AuthModal` — email OTP sign-in (2-step: email → 8-char code)
 - `AudioButton` — plays TTS audio
+- `ReadAloud` — reads a whole text via sentence-sized TTS requests; `SpeedToggle` — 1× / 0.75× / 0.5× playback, stored in localStorage `hsk-audio-speed` and applied by `playAudio`
 - `PronunciationChecker` — speech recording feedback
 - `StrokeOrder` — hanzi-writer stroke animation
 - `TeacherButton` — opens Lin Wei chat
@@ -65,6 +68,8 @@
 
 ### API (Vercel serverless)
 - `api/teacher.js` — Lin Wei AI tutor (Anthropic SDK + prompt caching + rate limit: 50 req/IP/hour). Takes an optional `learner` profile (`level`, `mastered`, up to 12 `weakWords`) built by `src/lib/learnerProfile.ts` from on-device SRS data; `api/_learnerProfile.js` sanitises it (Han-only words) before it reaches the prompt
+- `api/teacher?action=describe-image` (handler in `api/_describeImage.js`, dispatched from `api/teacher.js` — the Vercel Hobby plan caps a deployment at 12 functions and `api/` is at 12, so add new endpoints this way) — Describe It ladder — **Pro only** (Claude Sonnet 5.5 vision, structured JSON output, server-side refusal fallback, 20 photos/user/hour). Rungs, prompt, schema, image validation and output sanitising in `api/_pictureLadder.js` (tested); keep `RUNGS` in `src/pages/DescribePage.tsx` in sync
+- `api/teacher?action=pro-status` (`api/_pro.js`) — Pro check until billing exists: a signed-in user whose email is in the `PRO_EMAILS` env var (comma-separated). `usePro()` asks it; paid endpoints call `proUser(req)` themselves
 - `api/tts.js` — Google TTS endpoint (24h cache)
 
 ### Auth

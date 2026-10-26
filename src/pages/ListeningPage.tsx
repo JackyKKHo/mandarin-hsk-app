@@ -6,6 +6,8 @@ import { useStreak } from '../hooks/useStreak'
 import { usePracticeWords } from '../hooks/usePracticeWords'
 import TonedPinyin from '../components/TonedPinyin'
 import MissedWords from '../components/MissedWords'
+import SpeedToggle from '../components/SpeedToggle'
+import { getAudioSpeed } from '../audio'
 
 type Stage = 'idle' | 'question' | 'feedback' | 'complete'
 type QuestionType = 'char' | 'english' | 'pinyin'
@@ -65,6 +67,7 @@ export default function ListeningPage() {
     if (url) {
       const audio = new Audio(url)
       audioRef.current = audio
+      audio.playbackRate = getAudioSpeed()
       audio.play().catch(() => {})
     }
   }
@@ -84,6 +87,7 @@ export default function ListeningPage() {
     if (!audioUrl) return
     const audio = new Audio(audioUrl)
     audioRef.current = audio
+    audio.playbackRate = getAudioSpeed()
     audio.play().catch(() => {})
   }
 
@@ -209,6 +213,7 @@ export default function ListeningPage() {
           {' '}
           <span className="missed-count">✗{score.wrong}</span>
         </span>
+        <SpeedToggle />
       </div>
 
       <div className="progress-bar-wrap">

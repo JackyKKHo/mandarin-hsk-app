@@ -4,6 +4,8 @@ import { usePracticeWords } from '../hooks/usePracticeWords'
 import { useSRS } from '../hooks/useSRS'
 import { useStreak } from '../hooks/useStreak'
 import type { VocabItem } from '../types'
+import SpeedToggle from '../components/SpeedToggle'
+import { getAudioSpeed } from '../audio'
 
 type Stage = 'idle' | 'question' | 'feedback' | 'complete'
 
@@ -95,14 +97,14 @@ export default function TonePage() {
     audioRef.current?.pause()
     const url = word.audio.wordAudioUrl
     if (url) {
-      const a = new Audio(url); audioRef.current = a; a.play().catch(() => {})
+      const a = new Audio(url); audioRef.current = a; a.playbackRate = getAudioSpeed(); a.play().catch(() => {})
       return
     }
     try {
       const res = await fetch(`/api/tts?text=${encodeURIComponent(word.simplified)}`)
       if (!res.ok) return
       const objUrl = URL.createObjectURL(await res.blob())
-      const a = new Audio(objUrl); audioRef.current = a; a.play().catch(() => {})
+      const a = new Audio(objUrl); audioRef.current = a; a.playbackRate = getAudioSpeed(); a.play().catch(() => {})
     } catch {}
   }
 
@@ -202,6 +204,7 @@ export default function TonePage() {
           <span className="got-count">✓{score.correct}</span>{' '}
           <span className="missed-count">✗{score.wrong}</span>
         </span>
+        <SpeedToggle />
       </div>
       <div className="progress-bar-wrap">
         <div className="progress-bar-fill" style={{ width: `${progressPct}%` }} />

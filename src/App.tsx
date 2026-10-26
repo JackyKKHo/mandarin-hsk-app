@@ -16,6 +16,8 @@ import WidgetPage from './pages/WidgetPage'
 import PrivacyPage from './pages/PrivacyPage'
 // Lazy: carries its own syllable data and pitch detector, which no other page needs
 const ToneGymPage = lazy(() => import('./pages/ToneGymPage'))
+const ReaderPage = lazy(() => import('./pages/ReaderPage'))
+const DescribePage = lazy(() => import('./pages/DescribePage'))
 import QuizPage from './pages/QuizPage'
 import WritingPage from './pages/WritingPage'
 import ListeningPage from './pages/ListeningPage'
@@ -101,6 +103,8 @@ export default function App() {
         <Route path="/cantonese" element={<CantonesePage />} />
         <Route path="/flashcards" element={<FlashcardsPage />} />
         <Route path="/reading" element={<ReadingPage />} />
+        <Route path="/reader" element={<Suspense fallback={null}><ReaderPage /></Suspense>} />
+        <Route path="/describe" element={<Suspense fallback={null}><DescribePage /></Suspense>} />
         <Route path="/sentences/review" element={<SentenceReviewPage />} />
         <Route path="/verb-frameworks" element={<VerbFrameworksPage />} />
         <Route path="/record" element={<RecordPage />} />

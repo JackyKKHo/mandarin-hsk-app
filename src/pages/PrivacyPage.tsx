@@ -29,6 +29,7 @@ export default function PrivacyPage() {
         <h2>Features that send data to other services</h2>
         <ul>
           <li><strong>Record &amp; Score:</strong> when you record yourself, the audio is sent to OpenAI to transcribe it and is then scored on our server. We don't keep the recording.</li>
+          <li><strong>Describe It:</strong> the photo you choose is shrunk on your device and sent to Anthropic (Claude) to write the descriptions. We don't keep it; the last result is saved only in your browser.</li>
           <li><strong>Lin Wei tutor and sentence feedback:</strong> the messages and sentences you write are sent to Anthropic (Claude) to generate a reply. We don't keep a copy.</li>
           <li><strong>Audio:</strong> Chinese text is sent to Google Text-to-Speech to make pronunciation audio. No personal data is included.</li>
           <li><strong>Emails:</strong> sign-in codes, optional daily reminders and feedback messages are sent through Resend.</li>

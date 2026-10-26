@@ -8,6 +8,7 @@ const FEATURES = [
   { icon: '数', title: 'Advanced stats',         desc: 'Retention curves, leech detection, and goal projections.' },
   { icon: '存', title: 'Deck export',           desc: 'Export custom decks to Anki, CSV, or Mochi.' },
   { icon: '听', title: 'Offline audio',         desc: 'Pre-cache pronunciation audio for review without WiFi.' },
+  { icon: '看', title: 'Describe It',           desc: 'Turn any photo into seven levels of Chinese, from HSK 1 to 7–9.' },
   { icon: '心', title: 'Support indie dev',     desc: 'You keep this app alive and ad-free.' },
 ]
 
@@ -26,7 +27,7 @@ export default function ProPage() {
         <div className="pro-active-card">
           <div className="pro-badge pro-badge-large">PRO</div>
           <h1>You're on Pro</h1>
-          <p>Thanks for supporting Mandarin Daily. You're on the <strong>{plan}</strong> plan.</p>
+          <p>Thanks for supporting Mandarin Daily.{plan && <> You're on the <strong>{plan}</strong> plan.</>}</p>
           <p className="pro-active-help">Manage billing in your account settings (coming soon).</p>
         </div>
       </div>

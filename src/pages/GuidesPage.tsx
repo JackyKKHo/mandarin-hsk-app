@@ -12,6 +12,7 @@ const GUIDES = [
 ]
 
 const PRACTICE = [
+  { to: '/describe', emoji: '看', title: 'Describe It (看图说话) · Pro', desc: 'Snap a photo and climb seven levels of Chinese describing it — what, where, details, why, what happens next, an opinion, then polished written style.' },
   { to: '/tones', emoji: '调', title: 'Tone Gym', desc: 'Say a syllable or word and see your pitch live against the target tone. Instant feedback, unlimited reps.' },
   { to: '/record', emoji: '录', title: 'Record & Score', desc: 'Read a phrase aloud and get instant AI feedback on tones, initials, and finals — per character.' },
   { to: '/daily', emoji: '日', title: 'Daily Challenge', desc: 'Ten words from across all HSK levels — refreshes every day.' },
@@ -20,6 +21,7 @@ const PRACTICE = [
 ]
 
 const CULTURE = [
+  { to: '/reader', emoji: '读', title: 'Read Anything', desc: 'Paste any Chinese text: see how much you already know, tap new words for pinyin and meaning, add them to review, and listen at your own speed.' },
   { to: '/songs', emoji: '歌', title: 'Learn Through Songs', desc: 'Famous Chinese songs broken down line by line — lyrics, pinyin, vocab, and cultural notes.' },
   { to: '/cantonese', emoji: '粵', title: 'Cantonese → Mandarin', desc: 'Tone mapping, sound shifts, and vocabulary differences between Cantonese and Mandarin.' },
 ]
