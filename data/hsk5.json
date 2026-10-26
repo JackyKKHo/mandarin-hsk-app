@@ -28644,7 +28644,7 @@
     "traditional": "食用",
     "pinyin": "shíyòng",
     "pinyinNumbered": "shi2 yong4",
-    "english": "food product",
+    "english": "edible; to consume",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -33963,7 +33963,7 @@
     "traditional": "霧",
     "pinyin": "wù",
     "pinyinNumbered": "wu4",
-    "english": "(soft) rime",
+    "english": "fog; mist",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -34934,7 +34934,7 @@
     "traditional": "相對",
     "pinyin": "xiāngduì",
     "pinyinNumbered": "xiang1 dui4",
-    "english": "be opposite",
+    "english": "relative; relatively",
     "partOfSpeech": [
       "verb",
       "adjective"
@@ -36237,7 +36237,7 @@
     "traditional": "行走",
     "pinyin": "xíngzǒu",
     "pinyinNumbered": "xing2 zou3",
-    "english": "mooch",
+    "english": "to walk; to move about",
     "partOfSpeech": "verb",
     "examples": [
       {
@@ -36965,7 +36965,7 @@
     "traditional": "牙齒",
     "pinyin": "yáchǐ",
     "pinyinNumbered": "ya2 chi3",
-    "english": "ivory",
+    "english": "tooth; teeth",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -39301,7 +39301,7 @@
     "traditional": "有益",
     "pinyin": "yǒuyì",
     "pinyinNumbered": "you3 yi4",
-    "english": "profit",
+    "english": "beneficial",
     "partOfSpeech": "adjective",
     "examples": [
       {
@@ -39401,7 +39401,7 @@
     "traditional": "語氣",
     "pinyin": "yǔqì",
     "pinyinNumbered": "yu3 qi4",
-    "english": "mood",
+    "english": "tone of voice; manner of speech",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -41016,7 +41016,7 @@
     "traditional": "折扣",
     "pinyin": "zhékòu",
     "pinyinNumbered": "zhe2 kou4",
-    "english": "allowance",
+    "english": "discount",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -43617,7 +43617,7 @@
     "traditional": "姿勢",
     "pinyin": "zīshì",
     "pinyinNumbered": "zi1 shi4",
-    "english": "mannerism",
+    "english": "posture; pose",
     "partOfSpeech": "noun",
     "examples": [
       {

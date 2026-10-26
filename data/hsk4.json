@@ -74,7 +74,7 @@
     "traditional": "愛心",
     "pinyin": "àixīn",
     "pinyinNumbered": "ai4 xin1",
-    "english": "Kindness or compassion",
+    "english": "kindness or compassion",
     "partOfSpeech": "noun",
     "meanings": [
       {
@@ -134,7 +134,7 @@
     "traditional": "安排",
     "pinyin": "ānpái",
     "pinyinNumbered": "an1 pai2",
-    "english": "Arrange or plan",
+    "english": "arrange or plan",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -167,7 +167,7 @@
     "traditional": "按",
     "pinyin": "àn",
     "pinyinNumbered": "an4",
-    "english": "According to or by",
+    "english": "according to or by",
     "partOfSpeech": [
       "verb",
       "preposition"
@@ -234,7 +234,7 @@
     "traditional": "按照",
     "pinyin": "ànzhào",
     "pinyinNumbered": "an4 zhao4",
-    "english": "According to or following",
+    "english": "according to or following",
     "partOfSpeech": "preposition",
     "meanings": [
       {
@@ -317,7 +317,7 @@
     "traditional": "辦理",
     "pinyin": "bànlǐ",
     "pinyinNumbered": "ban4 li3",
-    "english": "Handle or process",
+    "english": "handle or process",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -401,7 +401,7 @@
     "traditional": "保護",
     "pinyin": "bǎohù",
     "pinyinNumbered": "bao3 hu4",
-    "english": "Protect or safeguard",
+    "english": "protect or safeguard",
     "partOfSpeech": "verb",
     "meanings": [
       {
@@ -436,7 +436,7 @@
     "traditional": "保證",
     "pinyin": "bǎozhèng",
     "pinyinNumbered": "bao3 zheng4",
-    "english": "Guarantee or promise",
+    "english": "guarantee or promise",
     "partOfSpeech": [
       "verb",
       "noun"
@@ -798,7 +798,7 @@
     "traditional": "鼻子",
     "pinyin": "bízi",
     "pinyinNumbered": "bi2 zi0",
-    "english": "nasal",
+    "english": "nose",
     "partOfSpeech": "noun",
     "examples": [
       {
@@ -873,7 +873,7 @@
     "traditional": "畢業生",
     "pinyin": "bìyèshēng",
     "pinyinNumbered": "bi4 ye4 sheng1",
-    "english": "alumnus",
+    "english": "graduate",
     "partOfSpeech": "noun",
     "examples": [
       {
