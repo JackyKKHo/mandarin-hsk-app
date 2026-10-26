@@ -291,7 +291,7 @@
     "simplified": "办公",
     "traditional": "辦公",
     "pinyin": "bàngōng",
-    "pinyinNumbered": "bang4 ong1",
+    "pinyinNumbered": "ban4 gong1",
     "english": "work (usu. in an office)",
     "partOfSpeech": "verb",
     "examples": [
@@ -1878,7 +1878,7 @@
     "simplified": "参观",
     "traditional": "參觀",
     "pinyin": "cānguān",
-    "pinyinNumbered": "cang1 uan1",
+    "pinyinNumbered": "can1 guan1",
     "english": "visit; tour",
     "partOfSpeech": "verb",
     "meanings": [
@@ -5614,7 +5614,7 @@
     "simplified": "法律",
     "traditional": "法律",
     "pinyin": "fǎlǜ",
-    "pinyinNumbered": "fa3 lu4",
+    "pinyinNumbered": "fa3 lü4",
     "english": "constitution",
     "partOfSpeech": "noun",
     "examples": [
@@ -6303,7 +6303,7 @@
     "simplified": "父女",
     "traditional": "父女",
     "pinyin": "fùnǚ",
-    "pinyinNumbered": "fun4 u3",
+    "pinyinNumbered": "fu4 nü3",
     "english": "father and daughter",
     "partOfSpeech": "noun",
     "examples": [
@@ -7973,7 +7973,7 @@
     "simplified": "姑娘",
     "traditional": "姑娘",
     "pinyin": "gūniang",
-    "pinyinNumbered": "gun1 iang0",
+    "pinyinNumbered": "gu1 niang0",
     "english": "young woman",
     "partOfSpeech": "noun",
     "meanings": [
@@ -11789,7 +11789,7 @@
     "simplified": "尽管",
     "traditional": "儘管",
     "pinyin": "jǐnguǎn",
-    "pinyinNumbered": "jing3 uan3",
+    "pinyinNumbered": "jin3 guan3",
     "english": "although; even though",
     "partOfSpeech": [
       "adverb",
@@ -12789,7 +12789,7 @@
     "simplified": "考虑",
     "traditional": "考慮",
     "pinyin": "kǎolǜ",
-    "pinyinNumbered": "kao3 lu4",
+    "pinyinNumbered": "kao3 lü4",
     "english": "think over",
     "partOfSpeech": "verb",
     "examples": [
@@ -13836,7 +13836,7 @@
     "simplified": "老年",
     "traditional": "老年",
     "pinyin": "lǎonián",
-    "pinyinNumbered": "laon3 ian2",
+    "pinyinNumbered": "lao3 nian2",
     "english": "old age",
     "partOfSpeech": "noun",
     "meanings": [
@@ -14808,7 +14808,7 @@
     "simplified": "旅馆",
     "traditional": "旅館",
     "pinyin": "lǚguǎn",
-    "pinyinNumbered": "lu3 guan3",
+    "pinyinNumbered": "lü3 guan3",
     "english": "hotel",
     "partOfSpeech": "noun",
     "meanings": [
@@ -14844,7 +14844,7 @@
     "simplified": "旅客",
     "traditional": "旅客",
     "pinyin": "lǚkè",
-    "pinyinNumbered": "lu3 ke4",
+    "pinyinNumbered": "lü3 ke4",
     "english": "passenger",
     "partOfSpeech": "noun",
     "meanings": [
@@ -14880,7 +14880,7 @@
     "simplified": "旅行",
     "traditional": "旅行",
     "pinyin": "lǚxíng",
-    "pinyinNumbered": "lu3 xing2",
+    "pinyinNumbered": "lü3 xing2",
     "english": "trip",
     "partOfSpeech": "verb",
     "meanings": [
@@ -14915,7 +14915,7 @@
     "simplified": "律师",
     "traditional": "律師",
     "pinyin": "lǜshī",
-    "pinyinNumbered": "lu4 shi1",
+    "pinyinNumbered": "lü4 shi1",
     "english": "scribe",
     "partOfSpeech": "noun",
     "examples": [
@@ -15586,7 +15586,7 @@
     "simplified": "母女",
     "traditional": "母女",
     "pinyin": "mǔnǚ",
-    "pinyinNumbered": "mun3 u3",
+    "pinyinNumbered": "mu3 nü3",
     "english": "mother-daughter",
     "partOfSpeech": "noun",
     "examples": [
@@ -16353,7 +16353,7 @@
     "simplified": "女性",
     "traditional": "女性",
     "pinyin": "nǚxìng",
-    "pinyinNumbered": "nu3 xing4",
+    "pinyinNumbered": "nü3 xing4",
     "english": "lady",
     "partOfSpeech": "noun",
     "examples": [
@@ -18566,7 +18566,7 @@
     "simplified": "热闹",
     "traditional": "熱鬧",
     "pinyin": "rènao",
-    "pinyinNumbered": "ren4 ao0",
+    "pinyinNumbered": "re4 nao0",
     "english": "lively",
     "partOfSpeech": [
       "adjective",
@@ -19379,7 +19379,7 @@
     "simplified": "少年",
     "traditional": "少年",
     "pinyin": "shàonián",
-    "pinyinNumbered": "shaon4 ian2",
+    "pinyinNumbered": "shao4 nian2",
     "english": "nipper",
     "partOfSpeech": "noun",
     "examples": [
@@ -21607,7 +21607,7 @@
     "simplified": "孙女",
     "traditional": "孫女",
     "pinyin": "sūnnǚ",
-    "pinyinNumbered": "sun1 nu3",
+    "pinyinNumbered": "sun1 nü3",
     "english": "son's daughter",
     "partOfSpeech": "noun",
     "examples": [
@@ -25713,7 +25713,7 @@
     "simplified": "严格",
     "traditional": "嚴格",
     "pinyin": "yángé",
-    "pinyinNumbered": "yang2 e2",
+    "pinyinNumbered": "yan2 ge2",
     "english": "rigorously enforce",
     "partOfSpeech": [
       "adjective",
@@ -26379,7 +26379,7 @@
     "simplified": "以内",
     "traditional": "以內",
     "pinyin": "yǐnèi",
-    "pinyinNumbered": "yin3 ei4",
+    "pinyinNumbered": "yi3 nei4",
     "english": "within",
     "partOfSpeech": "noun",
     "examples": [
