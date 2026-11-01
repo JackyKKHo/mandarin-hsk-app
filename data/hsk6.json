@@ -23440,7 +23440,13 @@
     "pinyinNumbered": "nan2 dian3",
     "english": "difficulty",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这道题的难点在于最后一步计算。",
+        "pinyin": "Zhè dào tí de nándiǎn zàiyú zuìhòu yī bù jìsuàn.",
+        "english": "The difficulty of this problem lies in the final calculation step."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -23457,7 +23463,13 @@
     "pinyinNumbered": "nan2 ji2 zhou1",
     "english": "Antarctica",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "南极洲常年被厚厚的冰雪覆盖。",
+        "pinyin": "Nánjízhōu chángnián bèi hòuhòu de bīngxuě fùgài.",
+        "english": "Antarctica is covered in thick ice and snow all year round."
+      }
+    ],
     "tags": [
       "countries"
     ],
@@ -23475,7 +23487,13 @@
     "pinyinNumbered": "nan2 mei3 zhou1",
     "english": "South America",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他打算明年去南美洲旅行三个月。",
+        "pinyin": "Tā dǎsuàn míngnián qù Nánměizhōu lǚxíng sān gè yuè.",
+        "english": "He plans to travel in South America for three months next year."
+      }
+    ],
     "tags": [
       "countries"
     ],
@@ -23566,7 +23584,13 @@
     "pinyinNumbered": "nei4 han2",
     "english": "intension",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这部电影表面简单，内涵却很深。",
+        "pinyin": "Zhè bù diànyǐng biǎomiàn jiǎndān, nèihán què hěn shēn.",
+        "english": "This film looks simple on the surface, but its inner meaning is very deep."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -23681,7 +23705,13 @@
     "pinyinNumbered": "neng2 yuan2",
     "english": "energy sources",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "太阳能是一种清洁的能源。",
+        "pinyin": "Tàiyángnéng shì yī zhǒng qīngjié de néngyuán.",
+        "english": "Solar power is a clean source of energy."
+      }
+    ],
     "tags": [
       "science",
       "nature"
@@ -23751,7 +23781,13 @@
     "pinyinNumbered": "nian2 zhong1",
     "english": "end of the year",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "公司每年年终都会发一笔奖金。",
+        "pinyin": "Gōngsī měinián niánzhōng dōu huì fā yī bǐ jiǎngjīn.",
+        "english": "The company gives out a bonus at the end of every year."
+      }
+    ],
     "tags": [
       "time"
     ],
@@ -23770,7 +23806,13 @@
     "pinyinNumbered": "nian4 shu1",
     "english": "read",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他从小就很爱念书，成绩一直很好。",
+        "pinyin": "Tā cóngxiǎo jiù hěn ài niànshū, chéngjì yīzhí hěn hǎo.",
+        "english": "He has loved studying since childhood, and his grades have always been good."
+      }
+    ],
     "tags": [
       "school"
     ],
@@ -23838,7 +23880,13 @@
     "pinyinNumbered": "nong2 hou4",
     "english": "thick",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他对中国历史一直有浓厚的兴趣。",
+        "pinyin": "Tā duì Zhōngguó lìshǐ yīzhí yǒu nónghòu de xìngqù.",
+        "english": "He has always had a strong interest in Chinese history."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -23855,7 +23903,13 @@
     "pinyinNumbered": "nong2 tian2",
     "english": "farmland",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "村子周围是一片绿色的农田。",
+        "pinyin": "Cūnzi zhōuwéi shì yī piàn lǜsè de nóngtián.",
+        "english": "Around the village lies a stretch of green farmland."
+      }
+    ],
     "tags": [
       "plants"
     ],
@@ -23974,7 +24028,13 @@
     "pinyinNumbered": "pai2 fang4",
     "english": "discharge",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "工厂必须减少二氧化碳的排放。",
+        "pinyin": "Gōngchǎng bìxū jiǎnshǎo èryǎnghuàtàn de páifàng.",
+        "english": "Factories must reduce their carbon dioxide emissions."
+      }
+    ],
     "tags": [
       "nature"
     ],
@@ -23993,7 +24053,13 @@
     "pinyinNumbered": "pai2 lian4",
     "english": "to rehearse",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "演员们为了晚会已经排练了一个月。",
+        "pinyin": "Yǎnyuánmen wèile wǎnhuì yǐjīng páiliànle yī gè yuè.",
+        "english": "The performers have been rehearsing for the show for a month."
+      }
+    ],
     "tags": [
       "arts"
     ],
@@ -24094,7 +24160,13 @@
     "pinyinNumbered": "pang2 da4",
     "english": "huge",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这家公司已经发展成一个庞大的集团。",
+        "pinyin": "Zhè jiā gōngsī yǐjīng fāzhǎn chéng yī gè pángdà de jítuán.",
+        "english": "This company has grown into a huge conglomerate."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24111,7 +24183,13 @@
     "pinyinNumbered": "pao1",
     "english": "to throw",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他把钥匙抛给了站在门口的朋友。",
+        "pinyin": "Tā bǎ yàoshi pāo gěile zhàn zài ménkǒu de péngyou.",
+        "english": "He tossed the keys to his friend standing at the door."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24253,7 +24331,13 @@
     "pinyinNumbered": "pei4 fu2",
     "english": "admire",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "大家都很佩服她面对困难时的勇气。",
+        "pinyin": "Dàjiā dōu hěn pèifú tā miànduì kùnnán shí de yǒngqì.",
+        "english": "Everyone admires her courage in facing difficulties."
+      }
+    ],
     "tags": [
       "emotions"
     ],
@@ -24321,7 +24405,13 @@
       "verb",
       "measure word"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "小女孩小心地捧着一碗热汤。",
+        "pinyin": "Xiǎo nǚhái xiǎoxīn de pěngzhe yī wǎn rè tāng.",
+        "english": "The little girl carefully held a bowl of hot soup in both hands."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24338,7 +24428,13 @@
     "pinyinNumbered": "peng4 zhuang4",
     "english": "to collide",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "两辆自行车在路口发生了碰撞。",
+        "pinyin": "Liǎng liàng zìxíngchē zài lùkǒu fāshēngle pèngzhuàng.",
+        "english": "Two bicycles collided at the intersection."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24416,7 +24512,13 @@
     "pinyinNumbered": "pi2 lao2",
     "english": "fatigue",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "长时间开车容易让人感到疲劳。",
+        "pinyin": "Cháng shíjiān kāichē róngyì ràng rén gǎndào píláo.",
+        "english": "Driving for a long time easily makes people feel fatigued."
+      }
+    ],
     "tags": [
       "health"
     ],
@@ -24435,7 +24537,13 @@
     "pinyinNumbered": "pian4 ke4",
     "english": "a moment",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他闭上眼睛，安静地休息了片刻。",
+        "pinyin": "Tā bìshàng yǎnjing, ānjìng de xiūxile piànkè.",
+        "english": "He closed his eyes and rested quietly for a moment."
+      }
+    ],
     "tags": [
       "time"
     ],
@@ -24504,7 +24612,13 @@
       "verb",
       "adjective"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "几片黄色的叶子从树上飘了下来。",
+        "pinyin": "Jǐ piàn huángsè de yèzi cóng shù shàng piāole xiàlái.",
+        "english": "A few yellow leaves drifted down from the tree."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24521,7 +24635,13 @@
     "pinyinNumbered": "piao1",
     "english": "to float",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "一只小木船在河面上慢慢地漂着。",
+        "pinyin": "Yī zhī xiǎo mùchuán zài hémiàn shàng mànmàn de piāozhe.",
+        "english": "A small wooden boat was slowly floating on the river."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24612,7 +24732,13 @@
     "pinyinNumbered": "pin2 lu4",
     "english": "relative frequency",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "最近他去健身房的频率明显增加了。",
+        "pinyin": "Zuìjìn tā qù jiànshēnfáng de pínlǜ míngxiǎn zēngjiāle.",
+        "english": "Recently, the frequency of his gym visits has clearly increased."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24629,7 +24755,13 @@
     "pinyinNumbered": "pin3 chang2",
     "english": "to taste a small amount",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "游客们可以在市场品尝各种当地小吃。",
+        "pinyin": "Yóukèmen kěyǐ zài shìchǎng pǐncháng gèzhǒng dāngdì xiǎochī.",
+        "english": "Tourists can taste all kinds of local snacks at the market."
+      }
+    ],
     "tags": [
       "food"
     ],
@@ -24980,7 +25112,13 @@
     "pinyinNumbered": "pu1 mie4",
     "english": "to put out (a fire); to wipe out",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "消防员用了两个小时才扑灭了大火。",
+        "pinyin": "Xiāofángyuán yòngle liǎng gè xiǎoshí cái pūmièle dàhuǒ.",
+        "english": "It took the firefighters two hours to put out the fire."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -24996,7 +25134,13 @@
     "pinyinNumbered": "pu3 su4",
     "english": "plain and simple",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她平时穿着很朴素，从不戴首饰。",
+        "pinyin": "Tā píngshí chuānzhuó hěn pǔsù, cóng bù dài shǒushì.",
+        "english": "She usually dresses very plainly and never wears jewelry."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25013,7 +25157,13 @@
     "pinyinNumbered": "qi1 pian4",
     "english": "cheat",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他为了借钱竟然欺骗了自己的朋友。",
+        "pinyin": "Tā wèile jiè qián jìngrán qīpiànle zìjǐ de péngyou.",
+        "english": "He actually deceived his own friend just to borrow money."
+      }
+    ],
     "tags": [
       "society"
     ],
@@ -25082,7 +25232,13 @@
     "pinyinNumbered": "qi2 jian1",
     "english": "in between",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他在北京住了三年，其间交了很多朋友。",
+        "pinyin": "Tā zài Běijīng zhùle sān nián, qíjiān jiāole hěn duō péngyou.",
+        "english": "He lived in Beijing for three years, during which he made many friends."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25122,7 +25278,13 @@
     "pinyinNumbered": "qi2 zi3",
     "english": "chess piece",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他拿起一个棋子，想了很久才落下。",
+        "pinyin": "Tā náqǐ yī gè qízǐ, xiǎngle hěn jiǔ cái luòxià.",
+        "english": "He picked up a chess piece and thought for a long time before placing it."
+      }
+    ],
     "tags": [
       "hobbies"
     ],
@@ -25141,7 +25303,13 @@
     "pinyinNumbered": "qi3 chu1",
     "english": "initio",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "起初大家都不相信他的话，后来才明白是真的。",
+        "pinyin": "Qǐchū dàjiā dōu bù xiāngxìn tā de huà, hòulái cái míngbai shì zhēn de.",
+        "english": "At first nobody believed what he said, but later they realized it was true."
+      }
+    ],
     "tags": [
       "time"
     ],
@@ -25236,7 +25404,13 @@
       "verb",
       "noun"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这次失败给了他很大的启示。",
+        "pinyin": "Zhè cì shībài gěile tā hěn dà de qǐshì.",
+        "english": "This failure gave him a great deal of insight."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25281,7 +25455,13 @@
       "verb",
       "noun"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个节日起源于一个古老的传说。",
+        "pinyin": "Zhège jiérì qǐyuán yú yī gè gǔlǎo de chuánshuō.",
+        "english": "This festival originated from an ancient legend."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25348,7 +25528,13 @@
     "pinyinNumbered": "qi4 wei4",
     "english": "tang",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "厨房里飘来一股炒菜的气味。",
+        "pinyin": "Chúfáng lǐ piāo lái yī gǔ chǎocài de qìwèi.",
+        "english": "A smell of cooking drifted out of the kitchen."
+      }
+    ],
     "tags": [
       "food"
     ],
@@ -25367,7 +25553,13 @@
     "pinyinNumbered": "qi4 zhi4",
     "english": "kidney",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她举止优雅，很有一种独特的气质。",
+        "pinyin": "Tā jǔzhǐ yōuyǎ, hěn yǒu yī zhǒng dútè de qìzhì.",
+        "english": "She carries herself gracefully, with a distinctive bearing."
+      }
+    ],
     "tags": [
       "emotions"
     ],
@@ -25478,7 +25670,13 @@
     "pinyinNumbered": "qian1 jia1 wan4 hu4",
     "english": "every family (idiom)",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这条新政策将影响千家万户的生活。",
+        "pinyin": "Zhè tiáo xīn zhèngcè jiāng yǐngxiǎng qiānjiā-wànhù de shēnghuó.",
+        "english": "This new policy will affect the lives of countless ordinary families."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25569,7 +25767,13 @@
     "pinyinNumbered": "qian2 qi1",
     "english": "preceding period",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个项目前期的准备工作花了半年时间。",
+        "pinyin": "Zhège xiàngmù qiánqī de zhǔnbèi gōngzuò huāle bàn nián shíjiān.",
+        "english": "The preparation work in the early stage of this project took half a year."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25609,7 +25813,13 @@
     "pinyinNumbered": "qian2 zhe3",
     "english": "predecessor",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "红色和蓝色这两件衣服，我更喜欢前者。",
+        "pinyin": "Hóngsè hé lánsè zhè liǎng jiàn yīfu, wǒ gèng xǐhuan qiánzhě.",
+        "english": "Between the red and blue clothes, I prefer the former."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -25897,7 +26107,13 @@
     "pinyinNumbered": "qin2 lao2",
     "english": "hardworking",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "奶奶一生勤劳，从没抱怨过辛苦。",
+        "pinyin": "Nǎinai yīshēng qínláo, cóng méi bàoyuànguo xīnkǔ.",
+        "english": "Grandma has been hardworking all her life and has never complained about the toil."
+      }
+    ],
     "tags": [
       "emotions"
     ],
@@ -25992,7 +26208,13 @@
     "pinyinNumbered": "qing1 chun1 qi1",
     "english": "puberty",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "孩子进入青春期以后，性格变化很大。",
+        "pinyin": "Háizi jìnrù qīngchūnqī yǐhòu, xìnggé biànhuà hěn dà.",
+        "english": "After entering puberty, the child's personality changed a lot."
+      }
+    ],
     "tags": [
       "body"
     ],
@@ -26011,7 +26233,13 @@
     "pinyinNumbered": "qing1 dan4",
     "english": "light (of food",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "医生建议他最近吃得清淡一些。",
+        "pinyin": "Yīshēng jiànyì tā zuìjìn chī de qīngdàn yīxiē.",
+        "english": "The doctor suggested he eat lighter meals recently."
+      }
+    ],
     "tags": [
       "food"
     ],
@@ -26078,7 +26306,13 @@
     "pinyinNumbered": "qing1 sao3",
     "english": "to clean up; to sweep",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "工人们每天早上都会清扫这条街道。",
+        "pinyin": "Gōngrénmen měitiān zǎoshàng dōu huì qīngsǎo zhè tiáo jiēdào.",
+        "english": "Workers sweep this street clean every morning."
+      }
+    ],
     "tags": [
       "home"
     ],
@@ -26096,7 +26330,13 @@
     "pinyinNumbered": "qing1 ting1",
     "english": "listen attentively to",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "好朋友应该学会耐心倾听对方的烦恼。",
+        "pinyin": "Hǎo péngyou yīnggāi xuéhuì nàixīn qīngtīng duìfāng de fánnǎo.",
+        "english": "Good friends should learn to listen patiently to each other's troubles."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26138,7 +26378,13 @@
     "pinyinNumbered": "qing1 xi1",
     "english": "distinct",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "照片拍得很清晰，连远处的字都能看到。",
+        "pinyin": "Zhàopiàn pāi de hěn qīngxī, lián yuǎnchù de zì dōu néng kàndào.",
+        "english": "The photo was taken very clearly — even the writing in the distance can be seen."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26313,7 +26559,13 @@
     "pinyinNumbered": "qiu2 hun1",
     "english": "to propose marriage",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他选在海边向女朋友求婚。",
+        "pinyin": "Tā xuǎn zài hǎibiān xiàng nǚpéngyou qiúhūn.",
+        "english": "He chose to propose to his girlfriend at the beach."
+      }
+    ],
     "tags": [
       "family",
       "culture"
@@ -26333,7 +26585,13 @@
     "pinyinNumbered": "qiu2 jiu4",
     "english": "to cry for help",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "船上的人用无线电向外界求救。",
+        "pinyin": "Chuán shàng de rén yòng wúxiàndiàn xiàng wàijiè qiújiù.",
+        "english": "The people on the boat used the radio to call for help."
+      }
+    ],
     "tags": [
       "health"
     ],
@@ -26377,7 +26635,13 @@
     "pinyinNumbered": "qiu2 zhu4",
     "english": "invoke",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "遇到法律问题，最好向专业律师求助。",
+        "pinyin": "Yùdào fǎlǜ wèntí, zuìhǎo xiàng zhuānyè lǜshī qiúzhù.",
+        "english": "When facing legal problems, it's best to seek help from a professional lawyer."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26440,7 +26704,13 @@
     "pinyinNumbered": "qu3",
     "english": "surname Qu",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "作曲家为这部电影写了一首优美的曲。",
+        "pinyin": "Zuòqǔjiā wèi zhè bù diànyǐng xiěle yī shǒu yōuměi de qǔ.",
+        "english": "The composer wrote a beautiful tune for this film."
+      }
+    ],
     "tags": [
       "arts"
     ],
@@ -26459,7 +26729,13 @@
     "pinyinNumbered": "qu3",
     "english": "get married",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他打算明年娶自己多年的女朋友。",
+        "pinyin": "Tā dǎsuàn míngnián qǔ zìjǐ duō nián de nǚpéngyou.",
+        "english": "He plans to marry his longtime girlfriend next year."
+      }
+    ],
     "tags": [
       "family"
     ],
@@ -26478,7 +26754,13 @@
     "pinyinNumbered": "qu3 dai4",
     "english": "replace",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "机器正在逐渐取代一些简单的体力劳动。",
+        "pinyin": "Jīqì zhèngzài zhújiàn qǔdài yīxiē jiǎndān de tǐlì láodòng.",
+        "english": "Machines are gradually replacing some simple manual labor."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26495,7 +26777,13 @@
     "pinyinNumbered": "qu4 wei4",
     "english": "playfulness",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这本小说语言幽默，读起来很有趣味。",
+        "pinyin": "Zhè běn xiǎoshuō yǔyán yōumò, dú qǐlái hěn yǒu qùwèi.",
+        "english": "This novel's language is humorous and reading it is very enjoyable."
+      }
+    ],
     "tags": [
       "hobbies"
     ],
@@ -26540,7 +26828,13 @@
     "pinyinNumbered": "quan2 cheng2",
     "english": "the whole distance",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这场比赛他全程都在场边认真观看。",
+        "pinyin": "Zhè chǎng bǐsài tā quánchéng dōu zài chǎngbiān rènzhēn guānkàn.",
+        "english": "He watched the entire match attentively from the sideline."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26752,7 +27046,13 @@
     "pinyinNumbered": "re4 du4",
     "english": "heat; popularity",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个话题在网上的热度一直没有下降。",
+        "pinyin": "Zhège huàtí zài wǎngshàng de rèdù yīzhí méiyǒu xiàjiàng.",
+        "english": "This topic's popularity online has never cooled down."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26842,7 +27142,13 @@
     "pinyinNumbered": "re4 yi4",
     "english": "to discuss heatedly",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这条新闻在网上引发了网友的热议。",
+        "pinyin": "Zhè tiáo xīnwén zài wǎngshàng yǐnfāle wǎngyǒu de rèyì.",
+        "english": "This piece of news sparked heated discussion among netizens online."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26858,7 +27164,13 @@
     "pinyinNumbered": "reng2 ong1 zhin4 eng2",
     "english": "artificial intelligence (AI)",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "人工智能正在改变我们的日常生活。",
+        "pinyin": "Réngōng zhìnéng zhèngzài gǎibiàn wǒmen de rìcháng shēnghuó.",
+        "english": "Artificial intelligence is changing our daily lives."
+      }
+    ],
     "tags": [
       "technology",
       "science"
@@ -26901,7 +27213,13 @@
     "pinyinNumbered": "ren2 jun1",
     "english": "per capita",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这座城市的人均收入近几年提高了不少。",
+        "pinyin": "Zhè zuò chéngshì de rénjūn shōurù jìn jǐ nián tígāole bù shǎo.",
+        "english": "This city's per capita income has risen quite a bit in recent years."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26918,7 +27236,13 @@
     "pinyinNumbered": "ren2 shan1 ren2 hai3",
     "english": "huge crowds of people",
     "partOfSpeech": "",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "节日那天，广场上人山人海，十分热闹。",
+        "pinyin": "Jiérì nà tiān, guǎngchǎng shàng rénshān-rénhǎi, shífēn rènao.",
+        "english": "On the day of the festival, the square was packed with huge crowds, very lively."
+      }
+    ],
     "tags": [
       "people"
     ],
@@ -26959,7 +27283,13 @@
     "pinyinNumbered": "ren2 shi4",
     "english": "personnel",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她最近调到了公司的人事部门工作。",
+        "pinyin": "Tā zuìjìn diào dàole gōngsī de rénshì bùmén gōngzuò.",
+        "english": "She was recently transferred to work in the company's personnel department."
+      }
+    ],
     "tags": [
       "work"
     ],
@@ -26978,7 +27308,13 @@
     "pinyinNumbered": "ren2 wei2",
     "english": "man-made",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这场火灾是人为造成的，不是意外。",
+        "pinyin": "Zhè chǎng huǒzāi shì rénwéi zàochéng de, bùshì yìwài.",
+        "english": "This fire was man-made, not an accident."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -26995,7 +27331,13 @@
     "pinyinNumbered": "ren2 xing2 dao4",
     "english": "sidewalk",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "小朋友过马路前要先走到人行道上。",
+        "pinyin": "Xiǎopéngyou guò mǎlù qián yào xiān zǒu dào rénxíngdào shàng.",
+        "english": "Before crossing the road, children should first walk onto the sidewalk."
+      }
+    ],
     "tags": [
       "transport",
       "places"
@@ -27040,7 +27382,13 @@
     "pinyinNumbered": "ren4 cuo4",
     "english": "to admit an error",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他勇敢地向老师认错，并保证不再犯。",
+        "pinyin": "Tā yǒnggǎn de xiàng lǎoshī rèncuò, bìng bǎozhèng bù zài fàn.",
+        "english": "He bravely admitted his mistake to the teacher and promised not to repeat it."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27136,7 +27484,13 @@
     "pinyinNumbered": "ren4 zhi1",
     "english": "cognize",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这项研究主要关注儿童的认知发展。",
+        "pinyin": "Zhè xiàng yánjiū zhǔyào guānzhù értóng de rènzhī fāzhǎn.",
+        "english": "This research mainly focuses on children's cognitive development."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27176,7 +27530,13 @@
     "pinyinNumbered": "ri4 hou4",
     "english": "in the future",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这些经验会对他日后的工作很有帮助。",
+        "pinyin": "Zhèxiē jīngyàn huì duì tā rìhòu de gōngzuò hěn yǒu bāngzhù.",
+        "english": "This experience will be very helpful for his future work."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27193,7 +27553,13 @@
     "pinyinNumbered": "ri4 qian2",
     "english": "the other day",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "日前，这家公司宣布了新的发展计划。",
+        "pinyin": "Rìqián, zhè jiā gōngsī xuānbùle xīn de fāzhǎn jìhuà.",
+        "english": "The other day, this company announced a new development plan."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27235,7 +27601,13 @@
     "pinyinNumbered": "ri4 yi4",
     "english": "increasingly",
     "partOfSpeech": "adverb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "随着人口增长，城市的交通日益拥挤。",
+        "pinyin": "Suízhe rénkǒu zēngzhǎng, chéngshì de jiāotōng rìyì yōngjǐ.",
+        "english": "As the population grows, the city's traffic is becoming increasingly congested."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27275,7 +27647,13 @@
     "pinyinNumbered": "rong2 hua4",
     "english": "to melt",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "春天一到，山上的雪慢慢融化了。",
+        "pinyin": "Chūntiān yī dào, shān shàng de xuě mànmàn rónghuàle.",
+        "english": "As soon as spring arrived, the snow on the mountain slowly melted."
+      }
+    ],
     "tags": [
       "nature",
       "science"
@@ -27295,7 +27673,13 @@
     "pinyinNumbered": "rong2 liang4",
     "english": "volume",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这款手机的存储容量比上一代大了一倍。",
+        "pinyin": "Zhè kuǎn shǒujī de cúnchǔ róngliàng bǐ shàng yī dài dàle yī bèi.",
+        "english": "This phone's storage capacity is double that of the previous generation."
+      }
+    ],
     "tags": [
       "numbers",
       "science"
@@ -27338,7 +27722,13 @@
     "pinyinNumbered": "rong2 yu4",
     "english": "honour",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "能代表国家参加比赛，是一种荣誉。",
+        "pinyin": "Néng dàibiǎo guójiā cānjiā bǐsài, shì yī zhǒng róngyù.",
+        "english": "Being able to represent the country in a competition is an honor."
+      }
+    ],
     "tags": [
       "society"
     ],
@@ -27357,7 +27747,13 @@
     "pinyinNumbered": "rou2 ruan3",
     "english": "lithe",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这张床垫摸起来非常柔软舒服。",
+        "pinyin": "Zhè zhāng chuángdiàn mō qǐlái fēicháng róuruǎn shūfu.",
+        "english": "This mattress feels very soft and comfortable to the touch."
+      }
+    ],
     "tags": [
       "colours-shapes"
     ],
@@ -27376,7 +27772,13 @@
     "pinyinNumbered": "ru4 jing4",
     "english": "enter a country",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "外国游客入境时需要出示护照。",
+        "pinyin": "Wàiguó yóukè rùjìng shí xūyào chūshì hùzhào.",
+        "english": "Foreign tourists need to show their passports when entering the country."
+      }
+    ],
     "tags": [
       "travel"
     ],
@@ -27421,7 +27823,13 @@
     "pinyinNumbered": "ru4 xuan3",
     "english": "select",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "经过层层选拔，他终于入选了国家队。",
+        "pinyin": "Jīngguò céngcéng xuǎnbá, tā zhōngyú rùxuǎnle guójiāduì.",
+        "english": "After multiple rounds of selection, he was finally selected for the national team."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27438,7 +27846,13 @@
     "pinyinNumbered": "ruo4 dian3",
     "english": "Achilles' heel",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "每个计划都有弱点，关键是提前发现。",
+        "pinyin": "Měi gè jìhuà dōu yǒu ruòdiǎn, guānjiàn shì tíqián fāxiàn.",
+        "english": "Every plan has weak points; the key is to discover them in advance."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27455,7 +27869,13 @@
     "pinyinNumbered": "sa3",
     "english": "to scatter; to sprinkle",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她在菜上撒了一点盐和黑胡椒。",
+        "pinyin": "Tā zài cài shàng sǎle yīdiǎn yán hé hēihújiāo.",
+        "english": "She sprinkled a little salt and black pepper on the dish."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27500,7 +27920,13 @@
     "pinyinNumbered": "sai4 shi4",
     "english": "sports event; competition",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这场国际赛事吸引了全世界的关注。",
+        "pinyin": "Zhè chǎng guójì sàishì xīyǐnle quán shìjiè de guānzhù.",
+        "english": "This international sporting event attracted the attention of the whole world."
+      }
+    ],
     "tags": [
       "hobbies"
     ],
@@ -27590,7 +28016,13 @@
     "pinyinNumbered": "san4 fa1",
     "english": "spray",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "花园里的玫瑰散发出淡淡的香味。",
+        "pinyin": "Huāyuán lǐ de méiguī sànfā chū dàndàn de xiāngwèi.",
+        "english": "The roses in the garden give off a faint fragrance."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27607,7 +28039,13 @@
     "pinyinNumbered": "sang3 zi0",
     "english": "throat",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他唱了一整天的歌，嗓子都哑了。",
+        "pinyin": "Tā chàngle yī zhěng tiān de gē, sǎngzi dōu yǎle.",
+        "english": "He sang all day long and his throat went hoarse."
+      }
+    ],
     "tags": [
       "body"
     ],
@@ -27649,7 +28087,13 @@
     "pinyinNumbered": "sao3 miao2",
     "english": "scan",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请用手机扫描屏幕上的二维码付款。",
+        "pinyin": "Qǐng yòng shǒujī sǎomiáo píngmù shàng de èrwéimǎ fùkuǎn.",
+        "english": "Please use your phone to scan the QR code on the screen to pay."
+      }
+    ],
     "tags": [
       "technology"
     ],
@@ -27696,7 +28140,13 @@
       "verb",
       "noun"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "司机看到红灯，立刻踩了刹车。",
+        "pinyin": "Sījī kàndào hóngdēng, lìkè cǎile shāchē.",
+        "english": "The driver saw the red light and immediately hit the brakes."
+      }
+    ],
     "tags": [
       "transport"
     ],
@@ -27715,7 +28165,13 @@
     "pinyinNumbered": "sha1 yu2",
     "english": "shark",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这片海域里经常能看到鲨鱼出现。",
+        "pinyin": "Zhè piàn hǎiyù lǐ jīngcháng néng kàndào shāyú chūxiàn.",
+        "english": "Sharks are often seen appearing in this stretch of sea."
+      }
+    ],
     "tags": [
       "animals"
     ],
@@ -27734,7 +28190,13 @@
     "pinyinNumbered": "shai1 xuan3",
     "english": "to filter",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "招聘网站会先筛选简历，再安排面试。",
+        "pinyin": "Zhāopìn wǎngzhàn huì xiān shāixuǎn jiǎnlì, zài ānpái miànshì.",
+        "english": "Recruitment websites screen resumes first, then arrange interviews."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -27751,7 +28213,13 @@
     "pinyinNumbered": "shan1 ding3",
     "english": "hilltop",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "我们爬了三个小时，终于到达山顶。",
+        "pinyin": "Wǒmen pále sān gè xiǎoshí, zhōngyú dàodá shāndǐng.",
+        "english": "We climbed for three hours and finally reached the mountaintop."
+      }
+    ],
     "tags": [
       "nature"
     ],
@@ -28047,7 +28515,13 @@
     "pinyinNumbered": "shang4 jin4",
     "english": "to make progress; ambitious",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他是一个很上进的年轻人，总想学到更多。",
+        "pinyin": "Tā shì yī gè hěn shàngjìn de niánqīng rén, zǒng xiǎng xuédào gèng duō.",
+        "english": "He is an ambitious young man who always wants to learn more."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -28088,7 +28562,13 @@
     "pinyinNumbered": "shang4 shu4",
     "english": "above-mentioned",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "上述问题已经在会议上得到了解决。",
+        "pinyin": "Shàngshù wèntí yǐjīng zài huìyì shàng dédàole jiějué.",
+        "english": "The above-mentioned problems have already been resolved at the meeting."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -28128,7 +28608,13 @@
     "pinyinNumbered": "shang4 xun2",
     "english": "first third of a month",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他打算下个月上旬去上海出差。",
+        "pinyin": "Tā dǎsuàn xià gè yuè shàngxún qù Shànghǎi chūchāi.",
+        "english": "He plans to go to Shanghai on a business trip in the first ten days of next month."
+      }
+    ],
     "tags": [
       "time"
     ],
@@ -28345,7 +28831,13 @@
     "pinyinNumbered": "she4 xiang4 tou2",
     "english": "camera; webcam",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "开视频会议之前，请先检查摄像头。",
+        "pinyin": "Kāi shìpín huìyì zhīqián, qǐng xiān jiǎnchá shèxiàngtóu.",
+        "english": "Before starting the video conference, please check the camera first."
+      }
+    ],
     "tags": [
       "technology"
     ],
@@ -28363,7 +28855,13 @@
     "pinyinNumbered": "shen1 xin1",
     "english": "body and mind",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "适当的运动对身心健康都有好处。",
+        "pinyin": "Shìdàng de yùndòng duì shēnxīn jiànkāng dōu yǒu hǎochù.",
+        "english": "Appropriate exercise is good for both physical and mental health."
+      }
+    ],
     "tags": [
       "body",
       "emotions"
@@ -28383,7 +28881,13 @@
     "pinyinNumbered": "shen1 ye4",
     "english": "very late at night",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他常常工作到深夜才回家睡觉。",
+        "pinyin": "Tā chángcháng gōngzuò dào shēnyè cái huí jiā shuìjiào.",
+        "english": "He often works until late at night before going home to sleep."
+      }
+    ],
     "tags": [
       "time"
     ],
@@ -28481,7 +28985,13 @@
     "pinyinNumbered": "shen3 mei3",
     "english": "esthetics",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "每个人的审美标准都不太一样。",
+        "pinyin": "Měi gè rén de shěnměi biāozhǔn dōu bù tài yīyàng.",
+        "english": "Everyone's aesthetic standards are a bit different."
+      }
+    ],
     "tags": [
       "arts"
     ],
@@ -28558,7 +29068,13 @@
     "pinyinNumbered": "sheng1 diao4",
     "english": "tone",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "汉语的声调不同，意思也会完全不同。",
+        "pinyin": "Hànyǔ de shēngdiào bùtóng, yìsi yě huì wánquán bùtóng.",
+        "english": "When the tone in Mandarin differs, the meaning can be completely different too."
+      }
+    ],
     "tags": [
       "language"
     ],
@@ -28576,7 +29092,13 @@
     "pinyinNumbered": "sheng1 ming4 li4",
     "english": "vitality",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这棵老树虽然很老，却依然充满生命力。",
+        "pinyin": "Zhè kē lǎo shù suīrán hěn lǎo, què yīrán chōngmǎn shēngmìnglì.",
+        "english": "Although this old tree is very old, it is still full of vitality."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -28592,7 +29114,13 @@
     "pinyinNumbered": "sheng1 tai4",
     "english": "ecological",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "工厂排放的废水破坏了河里的生态。",
+        "pinyin": "Gōngchǎng páifàng de fèishuǐ pòhuàile hé lǐ de shēngtài.",
+        "english": "The wastewater discharged by the factory damaged the river's ecology."
+      }
+    ],
     "tags": [
       "nature",
       "science"
@@ -28637,7 +29165,13 @@
     "pinyinNumbered": "sheng4 yu2",
     "english": "remainder",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "把剩余的饭菜放进冰箱保存起来。",
+        "pinyin": "Bǎ shèngyú de fàncài fàng jìn bīngxiāng bǎocún qǐlái.",
+        "english": "Put the leftover food in the fridge to keep it."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -28654,7 +29188,13 @@
     "pinyinNumbered": "shi1 ci2",
     "english": "poetry",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "爷爷很喜欢读古代的诗词。",
+        "pinyin": "Yéye hěn xǐhuan dú gǔdài de shīcí.",
+        "english": "Grandpa really enjoys reading classical poetry."
+      }
+    ],
     "tags": [
       "arts",
       "language"
@@ -28673,7 +29213,13 @@
     "pinyinNumbered": "shi1 du4",
     "english": "humidity level",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "南方夏天的湿度比北方高很多。",
+        "pinyin": "Nánfāng xiàtiān de shīdù bǐ běifāng gāo hěn duō.",
+        "english": "The humidity in southern summers is much higher than in the north."
+      }
+    ],
     "tags": [
       "weather",
       "science"
@@ -28744,7 +29290,13 @@
     "pinyinNumbered": "shi1 zi0",
     "english": "leonine",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "动物园里的狮子正趴在地上睡觉。",
+        "pinyin": "Dòngwùyuán lǐ de shīzi zhèng pā zài dìshàng shuìjiào.",
+        "english": "The lion at the zoo is lying on the ground sleeping."
+      }
+    ],
     "tags": [
       "animals"
     ],
@@ -28786,7 +29338,13 @@
     "pinyinNumbered": "shi2",
     "english": "to pick up",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他弯下腰，拾起地上的一张纸。",
+        "pinyin": "Tā wānxià yāo, shíqǐ dìshàng de yī zhāng zhǐ.",
+        "english": "He bent down and picked up a piece of paper from the ground."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -28802,7 +29360,13 @@
     "pinyinNumbered": "shi2 bie2",
     "english": "to distinguish",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "手机可以通过人脸识别来解锁。",
+        "pinyin": "Shǒujī kěyǐ tōngguò rénliǎn shíbié lái jiěsuǒ.",
+        "english": "A phone can be unlocked through facial recognition."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -28844,7 +29408,13 @@
     "pinyinNumbered": "shi2 hua4",
     "english": "truth",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "说实话，我觉得这个计划不太合理。",
+        "pinyin": "Shuō shíhuà, wǒ juéde zhège jìhuà bù tài hélǐ.",
+        "english": "To tell the truth, I don't think this plan is very reasonable."
+      }
+    ],
     "tags": [
       "language"
     ],
@@ -28917,7 +29487,13 @@
       "noun",
       "adjective"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "她对时尚很敏感，总能穿出新潮的感觉。",
+        "pinyin": "Tā duì shíshàng hěn mǐngǎn, zǒng néng chuān chū xīncháo de gǎnjué.",
+        "english": "She is very sensitive to fashion and always manages to dress stylishly."
+      }
+    ],
     "tags": [
       "clothing",
       "arts"
@@ -28937,7 +29513,13 @@
     "pinyinNumbered": "shi2 shi2",
     "english": "real-time",
     "partOfSpeech": "adverb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个软件可以实时显示公交车的位置。",
+        "pinyin": "Zhège ruǎnjiàn kěyǐ shíshí xiǎnshì gōngjiāochē de wèizhi.",
+        "english": "This app can show the bus's location in real time."
+      }
+    ],
     "tags": [
       "technology"
     ],
@@ -28955,7 +29537,13 @@
     "pinyinNumbered": "shi2 su4",
     "english": "speed per hour",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这辆高铁的时速能达到三百公里。",
+        "pinyin": "Zhè liàng gāotiě de shísù néng dádào sānbǎi gōnglǐ.",
+        "english": "This high-speed train can reach a speed of 300 kilometers per hour."
+      }
+    ],
     "tags": [
       "transport"
     ],
@@ -29035,7 +29623,13 @@
     "pinyinNumbered": "shi2 zhi4",
     "english": "quintessence",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这场争论的实质其实是钱的问题。",
+        "pinyin": "Zhè chǎng zhēnglùn de shízhì qíshí shì qián de wèntí.",
+        "english": "The essence of this argument is actually a matter of money."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29123,7 +29717,13 @@
     "pinyinNumbered": "shi4 du4",
     "english": "moderate",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "适度的压力反而能让人更有动力。",
+        "pinyin": "Shìdù de yālì fǎn'ér néng ràng rén gèng yǒu dònglì.",
+        "english": "A moderate amount of pressure can actually make people more motivated."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29163,7 +29763,13 @@
     "pinyinNumbered": "shi4 fang4",
     "english": "release",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "运动是释放压力的一种好方法。",
+        "pinyin": "Yùndòng shì shìfàng yālì de yī zhǒng hǎo fāngfǎ.",
+        "english": "Exercise is a good way to release stress."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29203,7 +29809,13 @@
     "pinyinNumbered": "shi4 jue2",
     "english": "seeing",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这张海报的设计给人很强的视觉效果。",
+        "pinyin": "Zhè zhāng hǎibào de shèjì gěi rén hěn qiáng de shìjué xiàoguǒ.",
+        "english": "This poster's design gives people a strong visual effect."
+      }
+    ],
     "tags": [
       "body"
     ],
@@ -29245,7 +29857,13 @@
     "pinyinNumbered": "shi4 li4",
     "english": "eyeshot",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "长时间看手机会影响孩子的视力。",
+        "pinyin": "Cháng shíjiān kàn shǒujī huì yǐngxiǎng háizi de shìlì.",
+        "english": "Looking at phones for long periods can affect a child's eyesight."
+      }
+    ],
     "tags": [
       "body",
       "health"
@@ -29288,7 +29906,13 @@
     "pinyinNumbered": "shi4 wu4",
     "english": "pursuit",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "妈妈每天要处理不少家里的事务。",
+        "pinyin": "Māma měitiān yào chǔlǐ bùshǎo jiā lǐ de shìwù.",
+        "english": "Mom has to deal with a lot of household affairs every day."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29305,7 +29929,13 @@
     "pinyinNumbered": "shi4 xiang4",
     "english": "issue",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "出发前，导游讲了几点注意事项。",
+        "pinyin": "Chūfā qián, dǎoyóu jiǎngle jǐ diǎn zhùyì shìxiàng.",
+        "english": "Before departure, the tour guide went over a few things to note."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29322,7 +29952,13 @@
     "pinyinNumbered": "shi4 yi2",
     "english": "suitable",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "春天的气候最适宜出去旅行。",
+        "pinyin": "Chūntiān de qìhòu zuì shìyí chūqù lǚxíng.",
+        "english": "Spring weather is most suitable for traveling."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29437,7 +30073,13 @@
     "pinyinNumbered": "shou3 bi4",
     "english": "arm",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "打完球以后，他的手臂有点酸。",
+        "pinyin": "Dǎ wán qiú yǐhòu, tā de shǒubì yǒudiǎn suān.",
+        "english": "After playing ball, his arm felt a bit sore."
+      }
+    ],
     "tags": [
       "body"
     ],
@@ -29479,7 +30121,13 @@
     "pinyinNumbered": "shou3 shi4",
     "english": "sign",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "交警用手势指挥路口的车辆通行。",
+        "pinyin": "Jiāojǐng yòng shǒushì zhǐhuī lùkǒu de chēliàng tōngxíng.",
+        "english": "The traffic police directed vehicles at the intersection with hand gestures."
+      }
+    ],
     "tags": [
       "body",
       "language"
@@ -29499,7 +30147,13 @@
     "pinyinNumbered": "shou3 yao4",
     "english": "chief",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "安全永远是工厂生产的首要任务。",
+        "pinyin": "Ānquán yǒngyuǎn shì gōngchǎng shēngchǎn de shǒuyào rènwù.",
+        "english": "Safety is always the primary task in factory production."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29516,7 +30170,13 @@
     "pinyinNumbered": "shou4 ming4",
     "english": "life",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "多运动、少熬夜可以延长人的寿命。",
+        "pinyin": "Duō yùndòng, shǎo áoyè kěyǐ yáncháng rén de shòumìng.",
+        "english": "Exercising more and staying up late less can extend one's lifespan."
+      }
+    ],
     "tags": [
       "health"
     ],
@@ -29583,7 +30243,13 @@
     "pinyinNumbered": "shu1 hua4",
     "english": "calligraphy and painting",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "爷爷退休以后开始学习书画。",
+        "pinyin": "Yéye tuìxiū yǐhòu kāishǐ xuéxí shūhuà.",
+        "english": "After retiring, Grandpa started learning calligraphy and painting."
+      }
+    ],
     "tags": [
       "arts",
       "culture"
@@ -29602,7 +30268,13 @@
     "pinyinNumbered": "shu1 ji2",
     "english": "volume",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "图书馆新进了一批关于历史的书籍。",
+        "pinyin": "Túshūguǎn xīn jìnle yī pī guānyú lìshǐ de shūjí.",
+        "english": "The library recently brought in a batch of books about history."
+      }
+    ],
     "tags": [
       "language"
     ],
@@ -29621,7 +30293,13 @@
     "pinyinNumbered": "shu1 mian4",
     "english": "written",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "请把你的意见整理成书面报告交给我。",
+        "pinyin": "Qǐng bǎ nǐ de yìjiàn zhěnglǐ chéng shūmiàn bàogào jiāo gěi wǒ.",
+        "english": "Please organize your opinions into a written report and give it to me."
+      }
+    ],
     "tags": [
       "language"
     ],
@@ -29640,7 +30318,13 @@
     "pinyinNumbered": "shu1 song4",
     "english": "to transport",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这条管道专门用来输送天然气。",
+        "pinyin": "Zhè tiáo guǎndào zhuānmén yòng lái shūsòng tiānránqì.",
+        "english": "This pipeline is specially used to transport natural gas."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29657,7 +30341,13 @@
     "pinyinNumbered": "shu1 xie3",
     "english": "write",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "老师要求我们用毛笔书写这几个汉字。",
+        "pinyin": "Lǎoshī yāoqiú wǒmen yòng máobǐ shūxiě zhè jǐ gè Hànzì.",
+        "english": "The teacher asked us to write these Chinese characters with a brush."
+      }
+    ],
     "tags": [
       "language"
     ],
@@ -29738,7 +30428,13 @@
       "verb",
       "noun"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "工人在路口竖起了一个新的路牌。",
+        "pinyin": "Gōngrén zài lùkǒu shùqǐle yī gè xīn de lùpái.",
+        "english": "Workers erected a new road sign at the intersection."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29755,7 +30451,13 @@
     "pinyinNumbered": "shu4 li4",
     "english": "to set up",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "老师在学生心中树立了很好的榜样。",
+        "pinyin": "Lǎoshī zài xuésheng xīn zhōng shùlìle hěn hǎo de bǎngyàng.",
+        "english": "The teacher set a very good example in the students' hearts."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -29797,7 +30499,13 @@
     "pinyinNumbered": "shu4 zi4 hua4",
     "english": "to digitize; digital",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "很多传统行业正在加快数字化的步伐。",
+        "pinyin": "Hěn duō chuántǒng hángyè zhèngzài jiākuài shùzìhuà de bùfá.",
+        "english": "Many traditional industries are speeding up the pace of digitization."
+      }
+    ],
     "tags": [
       "technology"
     ],
@@ -29815,7 +30523,13 @@
     "pinyinNumbered": "shuai1 lao3",
     "english": "to age",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "良好的生活习惯能延缓身体的衰老。",
+        "pinyin": "Liánghǎo de shēnghuó xíguàn néng yánhuǎn shēntǐ de shuāilǎo.",
+        "english": "Good lifestyle habits can slow down the body's aging."
+      }
+    ],
     "tags": [
       "health"
     ],
@@ -29880,7 +30594,13 @@
     "pinyinNumbered": "shui3 dao4",
     "english": "rice",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "南方的农民大多种植水稻。",
+        "pinyin": "Nánfāng de nóngmín dàduō zhòngzhí shuǐdào.",
+        "english": "Farmers in the south mostly grow rice."
+      }
+    ],
     "tags": [
       "plants",
       "food"
@@ -29925,7 +30645,13 @@
     "pinyinNumbered": "shui3 liu2",
     "english": "current; flow of water",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这条河上游的水流特别急。",
+        "pinyin": "Zhè tiáo hé shàngyóu de shuǐliú tèbié jí.",
+        "english": "The current in the upper reaches of this river is especially swift."
+      }
+    ],
     "tags": [
       "nature"
     ],
@@ -29943,7 +30669,13 @@
     "pinyinNumbered": "shui3 mian4",
     "english": "water surface",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "几只白鸟静静地停在水面上。",
+        "pinyin": "Jǐ zhī bái niǎo jìngjìng de tíng zài shuǐmiàn shàng.",
+        "english": "A few white birds were resting quietly on the water's surface."
+      }
+    ],
     "tags": [
       "nature"
     ],
@@ -29987,7 +30719,13 @@
     "pinyinNumbered": "shun4 jian1",
     "english": "moment",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "比赛结束的那一瞬间，全场都欢呼起来。",
+        "pinyin": "Bǐsài jiéshù de nà yī shùnjiān, quánchǎng dōu huānhū qǐlái.",
+        "english": "At the very instant the match ended, the whole stadium cheered."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -30004,7 +30742,13 @@
     "pinyinNumbered": "si1 lu4",
     "english": "train of thought",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "老师的提问帮他打开了解题的思路。",
+        "pinyin": "Lǎoshī de tíwèn bāng tā dǎkāile jiětí de sīlù.",
+        "english": "The teacher's question helped open up his train of thought for solving the problem."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -30021,7 +30765,13 @@
     "pinyinNumbered": "sin1 ian4",
     "english": "to think of",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "出国这几年，他一直很思念家乡的味道。",
+        "pinyin": "Chūguó zhè jǐ nián, tā yīzhí hěn sīniàn jiāxiāng de wèidào.",
+        "english": "During his years abroad, he has always longed for the taste of home."
+      }
+    ],
     "tags": [
       "emotions"
     ],
@@ -30091,7 +30841,13 @@
     "pinyinNumbered": "sou1",
     "english": "m.[general]",
     "partOfSpeech": "measure word",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "海面上停着几艘渔船。",
+        "pinyin": "Hǎimiàn shàng tíngzhe jǐ sōu yúchuán.",
+        "english": "A few fishing boats are anchored on the sea."
+      }
+    ],
     "tags": [
       "numbers",
       "transport"
@@ -30111,7 +30867,13 @@
     "pinyinNumbered": "sou1 ji2",
     "english": "to gather",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "为了写论文，她搜集了大量的资料。",
+        "pinyin": "Wèile xiě lùnwén, tā sōujíle dàliàng de zīliào.",
+        "english": "To write her thesis, she gathered a large amount of material."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -30128,7 +30890,13 @@
     "pinyinNumbered": "su4 zao4",
     "english": "model",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "父母的教育对孩子的性格塑造很重要。",
+        "pinyin": "Fùmǔ de jiàoyù duì háizi de xìnggé sùzào hěn zhòngyào.",
+        "english": "Parents' upbringing is very important in shaping a child's character."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -30295,7 +31063,13 @@
     "pinyinNumbered": "sun3 huai4",
     "english": "to damage",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "搬家时要小心，别损坏了家具。",
+        "pinyin": "Bānjiā shí yào xiǎoxīn, bié sǔnhuàile jiājù.",
+        "english": "Be careful when moving house, don't damage the furniture."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -30312,7 +31086,13 @@
     "pinyinNumbered": "sun3 shang1",
     "english": "to harm",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "长期熬夜会对身体造成损伤。",
+        "pinyin": "Chángqī áoyè huì duì shēntǐ zàochéng sǔnshāng.",
+        "english": "Staying up late for a long time can cause harm to the body."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -30436,7 +31216,13 @@
     "pinyinNumbered": "tai2 qiu2",
     "english": "billiards",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "周末他常常和朋友一起去打台球。",
+        "pinyin": "Zhōumò tā chángcháng hé péngyou yīqǐ qù dǎ táiqiú.",
+        "english": "On weekends he often goes to play billiards with friends."
+      }
+    ],
     "tags": [
       "hobbies"
     ],
@@ -30507,7 +31293,13 @@
     "pinyinNumbered": "tan2 lun4",
     "english": "discuss",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "同学们在课后谈论起了这周的考试。",
+        "pinyin": "Tóngxuémen zài kèhòu tánlùn qǐle zhè zhōu de kǎoshì.",
+        "english": "After class, the students talked about this week's exam."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -30560,7 +31352,13 @@
     "pinyinNumbered": "tan2 xing4",
     "english": "elasticity",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这份工作的上班时间比较有弹性。",
+        "pinyin": "Zhè fèn gōngzuò de shàngbān shíjiān bǐjiào yǒu tánxìng.",
+        "english": "This job's working hours are fairly flexible."
+      }
+    ],
     "tags": [
       "science"
     ],
@@ -30625,7 +31423,13 @@
     "pinyinNumbered": "tang1 yuan2",
     "english": "boiled balls of glutinous rice flour",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "元宵节那天，全家人一起吃汤圆。",
+        "pinyin": "Yuánxiāojié nà tiān, quánjiārén yīqǐ chī tāngyuán.",
+        "english": "On the day of the Lantern Festival, the whole family eats tangyuan together."
+      }
+    ],
     "tags": [
       "food",
       "culture"
@@ -30645,7 +31449,13 @@
     "pinyinNumbered": "tang2 guo3",
     "english": "candy",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "孩子们最喜欢过节时收到糖果。",
+        "pinyin": "Háizimen zuì xǐhuan guòjié shí shōudào tángguǒ.",
+        "english": "Children love receiving candy most during festivals."
+      }
+    ],
     "tags": [
       "food"
     ],
@@ -30667,7 +31477,13 @@
       "verb",
       "adjective"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "小心，这杯水刚烧开，很烫。",
+        "pinyin": "Xiǎoxīn, zhè bēi shuǐ gāng shāokāi, hěn tàng.",
+        "english": "Be careful, this cup of water just boiled, it's very hot."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -30755,7 +31571,13 @@
     "pinyinNumbered": "tao2 qi4",
     "english": "naughty",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个小男孩特别淘气，一刻都不安静。",
+        "pinyin": "Zhège xiǎo nánhái tèbié táoqì, yī kè dōu bù ānjìng.",
+        "english": "This little boy is especially naughty, never staying still for a moment."
+      }
+    ],
     "tags": [
       "emotions"
     ],
@@ -30774,7 +31596,13 @@
     "pinyinNumbered": "tao2 tai4",
     "english": "weed out",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这支球队在第一轮就被淘汰了。",
+        "pinyin": "Zhè zhī qiúduì zài dì yī lún jiù bèi táotàile.",
+        "english": "This team was eliminated in the very first round."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -30839,7 +31667,13 @@
     "pinyinNumbered": "te4 chang2",
     "english": "personal strength",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "画画是她从小就有的特长。",
+        "pinyin": "Huàhuà shì tā cóngxiǎo jiù yǒu de tècháng.",
+        "english": "Drawing has been her special talent since childhood."
+      }
+    ],
     "tags": [
       "work"
     ],
@@ -30973,7 +31807,13 @@
     "pinyinNumbered": "ti2 qu3",
     "english": "to extract; to withdraw",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "他去银行提取了一些现金。",
+        "pinyin": "Tā qù yínháng tíqǔle yīxiē xiànjīn.",
+        "english": "He went to the bank to withdraw some cash."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -31063,7 +31903,13 @@
     "pinyinNumbered": "ti3 xi4",
     "english": "scheme",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这所学校建立了完整的教育体系。",
+        "pinyin": "Zhè suǒ xuéxiào jiànlìle wánzhěng de jiàoyù tǐxì.",
+        "english": "This school has established a complete educational system."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -31128,7 +31974,13 @@
     "pinyinNumbered": "tian1 jia1",
     "english": "to add",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这款酸奶没有添加任何糖分。",
+        "pinyin": "Zhè kuǎn suānnǎi méiyǒu tiānjiā rènhé tángfèn.",
+        "english": "This yogurt has no added sugar."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -31370,7 +32222,13 @@
       "verb",
       "adjective"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这部电影的故事很贴近普通人的生活。",
+        "pinyin": "Zhè bù diànyǐng de gùshi hěn tiējìn pǔtōng rén de shēnghuó.",
+        "english": "This film's story is very close to the lives of ordinary people."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -31387,7 +32245,13 @@
     "pinyinNumbered": "ting1 hua4",
     "english": "to do what one is told",
     "partOfSpeech": "adjective",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这只小狗非常听话，从不乱跑。",
+        "pinyin": "Zhè zhī xiǎogǒu fēicháng tīnghuà, cóng bù luàn pǎo.",
+        "english": "This puppy is very obedient and never runs around."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -31404,7 +32268,13 @@
     "pinyinNumbered": "ting1 jue2",
     "english": "sense of hearing",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "随着年龄增长，他的听觉变得不太灵敏。",
+        "pinyin": "Suízhe niánlíng zēngzhǎng, tā de tīngjué biàn de bù tài língmǐn.",
+        "english": "As he grew older, his hearing became less sharp."
+      }
+    ],
     "tags": [
       "body"
     ],
@@ -31468,7 +32338,13 @@
     "pinyinNumbered": "tong1 feng1",
     "english": "airy",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "厨房做饭的时候要注意开窗通风。",
+        "pinyin": "Chúfáng zuòfàn de shíhou yào zhùyì kāichuāng tōngfēng.",
+        "english": "When cooking in the kitchen, remember to open the windows for ventilation."
+      }
+    ],
     "tags": [
       "home"
     ],
@@ -31596,7 +32472,13 @@
     "pinyinNumbered": "tong2",
     "english": "Cu",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这个古老的铜制花瓶已经有上百年历史。",
+        "pinyin": "Zhège gǔlǎo de tóngzhì huāpíng yǐjīng yǒu shàng bǎi nián lìshǐ.",
+        "english": "This old copper vase already has a history of over a hundred years."
+      }
+    ],
     "tags": [
       "science"
     ],
@@ -31615,7 +32497,13 @@
     "pinyinNumbered": "tong2 ban4",
     "english": "associate",
     "partOfSpeech": "noun",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "旅行时有一个好同伴会让人安心很多。",
+        "pinyin": "Lǚxíng shí yǒu yī gè hǎo tóngbàn huì ràng rén ānxīn hěn duō.",
+        "english": "Having a good companion while traveling puts people's minds at ease."
+      }
+    ],
     "tags": [
       "people"
     ],
@@ -31691,7 +32579,13 @@
       "adjective",
       "noun"
     ],
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "这家商店卖的东西和同类产品相比更便宜。",
+        "pinyin": "Zhè jiā shāngdiàn mài de dōngxi hé tónglèi chǎnpǐn xiāngbǐ gèng piányi.",
+        "english": "What this shop sells is cheaper compared to similar products."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
@@ -31946,7 +32840,13 @@
     "pinyinNumbered": "tou4 guo4",
     "english": "via",
     "partOfSpeech": "verb",
-    "examples": [],
+    "examples": [
+      {
+        "chinese": "透过窗户，我们能看到远处的大海。",
+        "pinyin": "Tòuguò chuānghu, wǒmen néng kàndào yuǎnchù de dàhǎi.",
+        "english": "Through the window, we can see the sea in the distance."
+      }
+    ],
     "tags": [],
     "audio": {
       "wordAudioUrl": null,
